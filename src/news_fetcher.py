@@ -322,23 +322,28 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
     history = load_history()
     all_stories: list[dict] = []
 
-    # RSS sources
+    # RSS sources — include all entries (feeds already serve recent articles)
+    # Deduplication handles repeated content across days
     for source in RSS_SOURCES:
         print(f"  Fetching {source['name']}...")
         raw = _fetch_url(source["url"])
         if raw:
             stories = _parse_rss(raw, source["name"], source["category"])
-            before = len(all_stories)
-            for s in stories:
-                if s["pub_date"] is None or window_start <= s["pub_date"] <= window_end:
-                    all_stories.append(s)
-            added = len(all_stories) - before
-            if added == 0 and stories:
-                # If date filtering removed everything, include anyway (date parsing may have failed)
-                no_date = [s for s in stories if s["pub_date"] is None]
-                all_stories.extend(no_date[:3])
-                if no_date:
-                    print(f"  [{source['name']}] Added {len(no_date[:3])} stories without parseable date")
+            # Accept entries within window, or entries with no parseable date (take top 5)
+            in_window = [s for s in stories if s["pub_date"] and window_start <= s["pub_date"] <= window_end]
+            no_date = [s for s in stories if not s["pub_date"]]
+            if in_window:
+                all_stories.extend(in_window)
+                print(f"  [{source['name']}] {len(in_window)} in window")
+            elif no_date:
+                all_stories.extend(no_date[:5])
+                print(f"  [{source['name']}] {len(no_date[:5])} (no parseable date, taking top)")
+            elif stories:
+                # All have dates but outside window — take 3 most recent as fallback
+                stories_sorted = sorted([s for s in stories if s["pub_date"]], key=lambda x: x["pub_date"], reverse=True)
+                all_stories.extend(stories_sorted[:3])
+                oldest = stories_sorted[0]["pub_date"].strftime("%Y-%m-%d") if stories_sorted else "?"
+                print(f"  [{source['name']}] outside window, newest={oldest}, taking 3 as fallback")
         time.sleep(0.5)
 
     # Hacker News
