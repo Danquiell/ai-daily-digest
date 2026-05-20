@@ -9,20 +9,21 @@ Usage:
 import argparse
 import sys
 import traceback
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, timedelta
 from pathlib import Path
 
-# Make src importable when running as script
 sys.path.insert(0, str(Path(__file__).parent))
 
 from news_fetcher import fetch_news, load_history
 from content_generator import generate_content
-from linkedin_poster import post_text, post_sources_comment
+from image_generator import generate_card
+from linkedin_poster import post_with_image, post_text, post_sources_comment
 from history_updater import update_history, git_commit_history
+
+INSTAGRAM_USERNAME = "@danquiell"  # ajuste para seu @ real
 
 
 def build_linkedin_post(content) -> str:
-    """Combine PT and EN versions into the final LinkedIn post."""
     divider = "\n\n──────────────────\n\n"
     return f"{content.linkedin_pt}{divider}{content.linkedin_en}"
 
@@ -35,7 +36,7 @@ def build_sources_comment(stories: list[dict]) -> str:
         if url and url not in seen:
             seen.add(url)
             lines.append(f"• {s['source']}: {url}")
-    return "\n".join(lines[:8])  # Max 8 links
+    return "\n".join(lines[:8])
 
 
 def run(dry_run: bool = False):
@@ -57,7 +58,7 @@ def run(dry_run: bool = False):
         sys.exit(1)
 
     if not stories:
-        print("[WARN] No new stories found for today. Skipping post.")
+        print("[WARN] No new stories found. Skipping post.")
         sys.exit(0)
 
     history = load_history()
@@ -70,23 +71,53 @@ def run(dry_run: bool = False):
         traceback.print_exc()
         sys.exit(1)
 
-    # 3. Post to LinkedIn
+    # 3. Generate image card (always — used for LinkedIn)
+    card_path = None
+    try:
+        main_story = stories[0]
+        sub = stories[1]["title"] if len(stories) > 1 else main_story.get("summary", "")[:80]
+        card_path = generate_card(
+            headline=main_story["title"],
+            sub_headline=sub,
+            username=INSTAGRAM_USERNAME,
+            today=today,
+            source=main_story["source"],
+            output_filename=f"card_{today.isoformat()}.jpg",
+        )
+        print(f"[image] Card generated: {card_path.name}")
+    except Exception as e:
+        print(f"[ERROR] Image generation failed: {e}")
+        traceback.print_exc()
+
+    # 4. Post to LinkedIn (with image if available, text-only as fallback)
     linkedin_post_id = None
     try:
         linkedin_text = build_linkedin_post(content)
-        linkedin_post_id = post_text(
-            linkedin_text,
-            main_url=content.main_url,
-            dry_run=dry_run,
-        )
+        main_story = stories[0]
+
+        if card_path and card_path.exists():
+            linkedin_post_id = post_with_image(
+                text=linkedin_text,
+                image_path=card_path,
+                image_title=main_story["title"][:100],
+                dry_run=dry_run,
+            )
+        else:
+            print("[linkedin] No image — falling back to text post")
+            linkedin_post_id = post_text(
+                linkedin_text,
+                main_url=content.main_url,
+                dry_run=dry_run,
+            )
+
         sources_comment = build_sources_comment(stories)
         post_sources_comment(linkedin_post_id, sources_comment, dry_run=dry_run)
-        print(f"[OK] LinkedIn post published")
+        print("[OK] LinkedIn post published")
     except Exception as e:
         print(f"[ERROR] LinkedIn post failed: {e}")
         traceback.print_exc()
 
-    # 4. Update history and commit
+    # 5. Update history and commit
     if not dry_run:
         try:
             update_history(stories, date_str)
@@ -98,18 +129,14 @@ def run(dry_run: bool = False):
         print("[history] DRY RUN — skipping history update")
 
     print(f"\n{'='*60}")
-    print(f"  Summary:")
-    print(f"  Stories found:   {len(stories)}")
-    print(f"  LinkedIn:        {'OK' if linkedin_post_id else 'FAILED'}")
+    print(f"  Stories found: {len(stories)}")
+    print(f"  Image card:    {'OK' if card_path and card_path.exists() else 'FAILED'}")
+    print(f"  LinkedIn:      {'OK' if linkedin_post_id else 'FAILED'}")
     print(f"{'='*60}\n")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="AI Daily Digest Poster")
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Fetch and generate content without posting",
-    )
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     run(dry_run=args.dry_run)
