@@ -1,6 +1,6 @@
 """
 Fetches AI/tech news from free RSS feeds and APIs.
-Filters to yesterday's date window and deduplicates against history.json.
+Filters to the last 48h window and deduplicates against history.json.
 """
 import hashlib
 import json
@@ -39,9 +39,19 @@ RSS_SOURCES = [
         "category": "análise",
     },
     {
-        "name": "MIT Tech Review AI",
+        "name": "MIT Tech Review",
         "url": "https://www.technologyreview.com/feed/",
         "category": "pesquisa",
+    },
+    {
+        "name": "Ars Technica AI",
+        "url": "https://feeds.arstechnica.com/arstechnica/index",
+        "category": "análise",
+    },
+    {
+        "name": "Google News AI",
+        "url": "https://news.google.com/rss/search?q=artificial+intelligence+OR+OpenAI+OR+Anthropic+OR+Gemini&hl=en-US&gl=US&ceid=US:en",
+        "category": "geral",
     },
 ]
 
@@ -89,37 +99,44 @@ def is_duplicate(title: str, history: dict) -> bool:
             continue
         if post_date < cutoff:
             continue
-
         if title_h in post.get("title_hashes", []):
             return True
-
         for stored_tokens in post.get("topic_tokens", []):
-            sim = _jaccard(title_tokens, set(stored_tokens))
-            if sim >= SIMILARITY_THRESHOLD:
+            if _jaccard(title_tokens, set(stored_tokens)) >= SIMILARITY_THRESHOLD:
                 return True
     return False
 
 
-def _fetch_url(url: str, timeout: int = 10) -> Optional[str]:
+def _fetch_url(url: str, timeout: int = 15) -> Optional[str]:
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        ),
+        "Accept": "application/rss+xml, application/xml, text/xml, */*",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
     try:
-        req = urllib.request.Request(
-            url,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; AIDigestBot/1.0)"},
-        )
+        req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return resp.read().decode("utf-8", errors="replace")
+            raw = resp.read()
+            # Try UTF-8, fall back to latin-1
+            try:
+                return raw.decode("utf-8")
+            except UnicodeDecodeError:
+                return raw.decode("latin-1", errors="replace")
     except Exception as e:
-        print(f"  [warn] Failed to fetch {url}: {e}")
+        print(f"  [warn] Failed to fetch {url[:60]}: {e}")
         return None
 
 
 def _parse_rss_date(date_str: str) -> Optional[datetime]:
-    """Try multiple date formats found in RSS feeds."""
     formats = [
         "%a, %d %b %Y %H:%M:%S %z",
         "%a, %d %b %Y %H:%M:%S GMT",
         "%Y-%m-%dT%H:%M:%S%z",
         "%Y-%m-%dT%H:%M:%SZ",
+        "%Y-%m-%dT%H:%M:%S.%f%z",
     ]
     for fmt in formats:
         try:
@@ -135,14 +152,16 @@ def _parse_rss_date(date_str: str) -> Optional[datetime]:
 def _parse_rss(xml_text: str, source_name: str, category: str) -> list[dict]:
     items = []
     try:
+        # Strip BOM and whitespace
+        xml_text = xml_text.lstrip("﻿").strip()
         root = ET.fromstring(xml_text)
-    except ET.ParseError:
+    except ET.ParseError as e:
+        print(f"  [warn] XML parse error for {source_name}: {e}")
         return items
 
     ns = {"atom": "http://www.w3.org/2005/Atom"}
-
-    # Handle both RSS 2.0 and Atom
     entries = root.findall(".//item") or root.findall(".//atom:entry", ns)
+    print(f"  [{source_name}] {len(entries)} entries found in feed")
 
     for entry in entries:
         title_el = entry.find("title") or entry.find("atom:title", ns)
@@ -151,7 +170,6 @@ def _parse_rss(xml_text: str, source_name: str, category: str) -> list[dict]:
             entry.find("pubDate")
             or entry.find("atom:published", ns)
             or entry.find("atom:updated", ns)
-            or entry.find("dc:date")
         )
         desc_el = (
             entry.find("description")
@@ -180,53 +198,55 @@ def _parse_rss(xml_text: str, source_name: str, category: str) -> list[dict]:
             summary = re.sub(r"<[^>]+>", "", desc_el.text or "").strip()
             summary = " ".join(summary.split())[:300]
 
-        items.append(
-            {
-                "title": title,
-                "url": link,
-                "pub_date": pub_date,
-                "summary": summary,
-                "source": source_name,
-                "category": category,
-            }
-        )
+        items.append({
+            "title": title,
+            "url": link,
+            "pub_date": pub_date,
+            "summary": summary,
+            "source": source_name,
+            "category": category,
+        })
 
     return items
 
 
-def _fetch_hacker_news(yesterday: datetime) -> list[dict]:
-    """Use Algolia HN API to search for AI stories from yesterday."""
+def _fetch_hacker_news(window_start: datetime, window_end: datetime) -> list[dict]:
     items = []
-    ts_start = int(yesterday.timestamp())
-    ts_end = int((yesterday + timedelta(days=1)).timestamp())
-    query = "AI OR artificial intelligence OR LLM OR machine learning OR OpenAI OR Anthropic OR Google DeepMind"
-    encoded = urllib.parse.quote(query)
-    url = (
-        f"https://hn.algolia.com/api/v1/search_by_date"
-        f"?query={encoded}&numericFilters=created_at_i>{ts_start},"
-        f"created_at_i<{ts_end}&hitsPerPage=20&tags=story"
-    )
-    raw = _fetch_url(url)
-    if not raw:
-        return items
-
-    try:
-        data = json.loads(raw)
-    except json.JSONDecodeError:
-        return items
-
-    for hit in data.get("hits", []):
-        title = hit.get("title", "").strip()
-        if not title:
+    ts_start = int(window_start.timestamp())
+    ts_end = int(window_end.timestamp())
+    queries = [
+        "artificial intelligence OR machine learning OR LLM",
+        "OpenAI OR Anthropic OR Google DeepMind OR Meta AI",
+        "GPT OR Claude OR Gemini OR Llama",
+    ]
+    seen = set()
+    for query in queries:
+        encoded = urllib.parse.quote(query)
+        url = (
+            f"https://hn.algolia.com/api/v1/search_by_date"
+            f"?query={encoded}&numericFilters=created_at_i>{ts_start},"
+            f"created_at_i<{ts_end}&hitsPerPage=15&tags=story"
+        )
+        raw = _fetch_url(url)
+        if not raw:
             continue
-        url_story = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID', '')}"
-        created = hit.get("created_at_i")
-        pub_date = datetime.fromtimestamp(created, tz=timezone.utc) if created else None
-        points = hit.get("points", 0) or 0
-        if points < 10:  # Skip low-signal stories
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
             continue
-        items.append(
-            {
+
+        for hit in data.get("hits", []):
+            title = hit.get("title", "").strip()
+            if not title or title in seen:
+                continue
+            seen.add(title)
+            points = hit.get("points", 0) or 0
+            if points < 5:
+                continue
+            url_story = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID', '')}"
+            created = hit.get("created_at_i")
+            pub_date = datetime.fromtimestamp(created, tz=timezone.utc) if created else None
+            items.append({
                 "title": title,
                 "url": url_story,
                 "pub_date": pub_date,
@@ -234,29 +254,30 @@ def _fetch_hacker_news(yesterday: datetime) -> list[dict]:
                 "source": "Hacker News",
                 "category": "comunidade",
                 "points": points,
-            }
-        )
+            })
+        time.sleep(0.5)
+
+    print(f"  [Hacker News] {len(items)} stories found")
     return items
 
 
-def _fetch_reddit_ml(yesterday: datetime) -> list[dict]:
-    """Fetch top posts from r/MachineLearning and r/artificial from yesterday."""
+def _fetch_reddit(window_start: datetime, window_end: datetime) -> list[dict]:
     items = []
-    subreddits = ["MachineLearning", "artificial", "OpenAI"]
-    ts_start = int(yesterday.timestamp())
-    ts_end = int((yesterday + timedelta(days=1)).timestamp())
+    subreddits = ["MachineLearning", "artificial", "OpenAI", "singularity"]
+    ts_start = int(window_start.timestamp())
+    ts_end = int(window_end.timestamp())
 
     for sub in subreddits:
         url = f"https://www.reddit.com/r/{sub}/new.json?limit=25"
         raw = _fetch_url(url)
         if not raw:
             continue
-
         try:
             data = json.loads(raw)
         except json.JSONDecodeError:
             continue
 
+        count = 0
         for post in data.get("data", {}).get("children", []):
             d = post.get("data", {})
             created = int(d.get("created_utc", 0))
@@ -266,38 +287,37 @@ def _fetch_reddit_ml(yesterday: datetime) -> list[dict]:
             if not title:
                 continue
             score = d.get("score", 0) or 0
-            if score < 5:
+            if score < 3:
                 continue
             link = d.get("url") or f"https://reddit.com{d.get('permalink', '')}"
             pub_date = datetime.fromtimestamp(created, tz=timezone.utc)
-            items.append(
-                {
-                    "title": title,
-                    "url": link,
-                    "pub_date": pub_date,
-                    "summary": d.get("selftext", "")[:200].strip(),
-                    "source": f"Reddit r/{sub}",
-                    "category": "pesquisa",
-                    "score": score,
-                }
-            )
-        time.sleep(1)  # Reddit rate limiting
+            items.append({
+                "title": title,
+                "url": link,
+                "pub_date": pub_date,
+                "summary": d.get("selftext", "")[:200].strip(),
+                "source": f"Reddit r/{sub}",
+                "category": "comunidade",
+                "score": score,
+            })
+            count += 1
+        print(f"  [Reddit r/{sub}] {count} stories found")
+        time.sleep(1)
 
     return items
 
 
 def fetch_news(dry_run: bool = False) -> list[dict]:
     """
-    Fetch yesterday's AI/tech news, filtered and deduplicated.
+    Fetch AI/tech news from the last 48h, filtered and deduplicated.
     Returns list of story dicts sorted by relevance.
     """
     now = datetime.now(timezone.utc)
-    yesterday_start = (now - timedelta(days=1)).replace(
-        hour=0, minute=0, second=0, microsecond=0
-    )
-    yesterday_end = yesterday_start + timedelta(days=1)
+    # 48h window to handle timezone differences and sparse news days
+    window_end = now
+    window_start = now - timedelta(hours=48)
 
-    print(f"[news] Fetching news for {yesterday_start.date()}...")
+    print(f"[news] Fetching news from {window_start.strftime('%Y-%m-%d %H:%M')} UTC to now...")
 
     history = load_history()
     all_stories: list[dict] = []
@@ -308,23 +328,29 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
         raw = _fetch_url(source["url"])
         if raw:
             stories = _parse_rss(raw, source["name"], source["category"])
-            # Filter to yesterday
+            before = len(all_stories)
             for s in stories:
-                if s["pub_date"] and yesterday_start <= s["pub_date"] < yesterday_end:
+                if s["pub_date"] is None or window_start <= s["pub_date"] <= window_end:
                     all_stories.append(s)
+            added = len(all_stories) - before
+            if added == 0 and stories:
+                # If date filtering removed everything, include anyway (date parsing may have failed)
+                no_date = [s for s in stories if s["pub_date"] is None]
+                all_stories.extend(no_date[:3])
+                if no_date:
+                    print(f"  [{source['name']}] Added {len(no_date[:3])} stories without parseable date")
         time.sleep(0.5)
 
     # Hacker News
     print("  Fetching Hacker News...")
-    all_stories.extend(_fetch_hacker_news(yesterday_start))
+    all_stories.extend(_fetch_hacker_news(window_start, window_end))
 
     # Reddit
     print("  Fetching Reddit...")
-    all_stories.extend(_fetch_reddit_ml(yesterday_start))
+    all_stories.extend(_fetch_reddit(window_start, window_end))
 
     print(f"[news] Found {len(all_stories)} raw stories, deduplicating...")
 
-    # Deduplicate against history + within current batch
     seen_titles: set[str] = set()
     filtered = []
     for story in all_stories:
@@ -334,18 +360,19 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
             continue
         seen_titles.add(h)
         if is_duplicate(title, history):
-            print(f"  [skip] Duplicate: {title[:60]}")
+            print(f"  [skip-dup] {title[:60]}")
             continue
         filtered.append(story)
 
-    # Sort: prefer HN points and Reddit score as proxy for relevance
+    # Sort by points/score (proxy for relevance), then recency
     def _rank(s: dict) -> float:
-        base = s.get("points", 0) or s.get("score", 0) or 5
-        return float(base)
+        pts = s.get("points", 0) or s.get("score", 0) or 5
+        recency = s["pub_date"].timestamp() if s.get("pub_date") else 0
+        return pts * 1000 + recency
 
     filtered.sort(key=_rank, reverse=True)
 
-    print(f"[news] {len(filtered)} unique stories after dedup")
+    print(f"[news] {len(filtered)} unique stories ready")
 
     if dry_run:
         for s in filtered[:6]:
@@ -356,4 +383,4 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
 
 if __name__ == "__main__":
     stories = fetch_news(dry_run=True)
-    print(f"\nTop {len(stories)} stories ready for content generation.")
+    print(f"\nTop {len(stories)} stories ready.")

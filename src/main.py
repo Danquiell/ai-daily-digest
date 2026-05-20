@@ -17,9 +17,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from news_fetcher import fetch_news, load_history
 from content_generator import generate_content
-from image_generator import generate_card
 from linkedin_poster import post_text, post_sources_comment
-from instagram_poster import post_image
 from history_updater import update_history, git_commit_history
 
 
@@ -72,25 +70,7 @@ def run(dry_run: bool = False):
         traceback.print_exc()
         sys.exit(1)
 
-    # 3. Generate Instagram card image
-    try:
-        main_story = stories[0]
-        # Sub-headline: second story title or summary of main
-        sub = stories[1]["title"] if len(stories) > 1 else main_story.get("summary", "")[:80]
-        card_path = generate_card(
-            headline=main_story["title"],
-            sub_headline=sub,
-            username="@daniel.rios",  # adjust to real username
-            today=today,
-            source=main_story["source"],
-            output_filename=f"card_{today.isoformat()}.jpg",
-        )
-    except Exception as e:
-        print(f"[ERROR] Image generation failed: {e}")
-        traceback.print_exc()
-        card_path = None
-
-    # 4. Post to LinkedIn
+    # 3. Post to LinkedIn
     linkedin_post_id = None
     try:
         linkedin_text = build_linkedin_post(content)
@@ -106,25 +86,7 @@ def run(dry_run: bool = False):
         print(f"[ERROR] LinkedIn post failed: {e}")
         traceback.print_exc()
 
-    # 5. Post to Instagram
-    instagram_ok = False
-    if card_path and card_path.exists():
-        try:
-            post_image(
-                card_path,
-                content.instagram_caption_pt,
-                content.instagram_comment_en,
-                dry_run=dry_run,
-            )
-            instagram_ok = True
-            print(f"[OK] Instagram post published")
-        except Exception as e:
-            print(f"[ERROR] Instagram post failed: {e}")
-            traceback.print_exc()
-    else:
-        print("[WARN] Skipping Instagram — card image not available")
-
-    # 6. Update history and commit
+    # 4. Update history and commit
     if not dry_run:
         try:
             update_history(stories, date_str)
@@ -139,7 +101,6 @@ def run(dry_run: bool = False):
     print(f"  Summary:")
     print(f"  Stories found:   {len(stories)}")
     print(f"  LinkedIn:        {'OK' if linkedin_post_id else 'FAILED'}")
-    print(f"  Instagram:       {'OK' if instagram_ok else 'FAILED/SKIPPED'}")
     print(f"{'='*60}\n")
 
 
