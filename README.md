@@ -1,5 +1,7 @@
 # AI Daily Digest 🤖
 
+[![AI Daily Digest](https://github.com/Danquiell/ai-daily-digest/actions/workflows/daily_post.yml/badge.svg)](https://github.com/Danquiell/ai-daily-digest/actions/workflows/daily_post.yml)
+
 Postagem automática diária de novidades em IA e tecnologia no **LinkedIn** e **Instagram**,
 às 6h (BRT), com linguagem natural e bilíngue (PT-BR + EN).
 Roda 100% no GitHub Actions — sem servidor, sem máquina ligada.
