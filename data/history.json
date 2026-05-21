@@ -159,6 +159,101 @@
           "finance"
         ]
       ]
+    },
+    {
+      "date": "2026-05-20",
+      "topics": [
+        "The A.I. Race to Go Public - The New York Times",
+        "NEW TECHNOLOGY, ADVANCED MODELS AND ARTIFICIAL INTELLIGENCE DEPLOYED TO IMPROVE HURRICANE FORECASTS - NOAA Research (.gov)",
+        "The White House tore down AI rules. Now it’s building new defenses. - The Washington Post",
+        "OpenEvidence launches hands-free voice AI feature, expands hospital footprint with Cedars-Sinai tie-up - Fierce Healthcare",
+        "Anthropic’s New Consulting Venture Makes Its First Acquisition - Bloomberg.com",
+        "US Artificial Intelligence Market Size Growth & Trends Industry Forecast 2034 - openPR.com"
+      ],
+      "title_hashes": [
+        "c0ca9912b834da4be76889002a7b2cad1d69204e4beb241959550573e1eeae08",
+        "892c2b0f0470ee460866b5077ce6c5810aebc3794be28161c2b787aee7267e74",
+        "f7e968099d7fdd653224c4bca3334cb57aa86d0714e474697681d020518f92c0",
+        "0e2a646df843c0f5efdf17516839d7cd520b35294efa001cd693e500610f0dd4",
+        "ed921e77082b6c31f3f9d4f5f261eb1dfa95b67bca9132d78a881b038053280e",
+        "34ad922025dae169ba6a8d2c7be801dafb2e9e8e1755fef81c37b945a980dcc2"
+      ],
+      "topic_tokens": [
+        [
+          "race",
+          "public",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "new",
+          "technology",
+          "advanced",
+          "models",
+          "artificial",
+          "intelligence",
+          "deployed",
+          "improve",
+          "hurricane",
+          "forecasts",
+          "noaa",
+          "research",
+          "gov"
+        ],
+        [
+          "white",
+          "house",
+          "tore",
+          "down",
+          "rules",
+          "now",
+          "building",
+          "new",
+          "defenses",
+          "washington",
+          "post"
+        ],
+        [
+          "openevidence",
+          "launches",
+          "hands",
+          "free",
+          "voice",
+          "feature",
+          "expands",
+          "hospital",
+          "footprint",
+          "cedars",
+          "sinai",
+          "tie",
+          "fierce",
+          "healthcare"
+        ],
+        [
+          "anthropic",
+          "new",
+          "consulting",
+          "venture",
+          "makes",
+          "its",
+          "first",
+          "acquisition",
+          "bloomberg"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "market",
+          "size",
+          "growth",
+          "trends",
+          "industry",
+          "forecast",
+          "2034",
+          "openpr"
+        ]
+      ]
     }
   ]
 }
