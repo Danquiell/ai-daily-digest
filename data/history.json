@@ -82,6 +82,83 @@
           "2025"
         ]
       ]
+    },
+    {
+      "date": "2026-05-20",
+      "topics": [
+        "Anthropic is expanding to Colossus2. Will use GB200",
+        "Intuit to lay off over 3k employees to refocus on AI",
+        "Google officially announces that ads will be included in AI Mode search results",
+        "Learnings from 100K lines of Rust with AI (2025)",
+        "OpenAI Is Preparing to File for an IPO Soon",
+        "OpenAI, SpaceX and Anthropic will reshape how investors access artificial intelligence - Yahoo Finance UK"
+      ],
+      "title_hashes": [
+        "f9326c71d77ac01f1e334a2be44dc972fe6e7c301de63e08a496d86f0311ac1c",
+        "dd75ed2124f8002ece58f7ee4a52595b35b88caee4067305eb5a5b3f5e688741",
+        "14f2ff0a213d80f399abf54a1036e0ed2bc9669c26af7ba7b7c91bba07ccbc18",
+        "fec063b7e132fb359b6de04751c6932b4f64993a83ec12fbf9d6d2125e6aee6e",
+        "9cf4a9fbe705fa977cb53805f3b0fbdf526e73c8da611ed622b7cad06fe5de8a",
+        "826ef86ded18e237a805ed3d85e0ee81db1e1e32b0396f17a69d99cc0980ed66"
+      ],
+      "topic_tokens": [
+        [
+          "anthropic",
+          "expanding",
+          "colossus2",
+          "will",
+          "use",
+          "gb200"
+        ],
+        [
+          "intuit",
+          "lay",
+          "off",
+          "over",
+          "employees",
+          "refocus"
+        ],
+        [
+          "google",
+          "officially",
+          "announces",
+          "that",
+          "ads",
+          "will",
+          "included",
+          "mode",
+          "search",
+          "results"
+        ],
+        [
+          "learnings",
+          "100k",
+          "lines",
+          "rust",
+          "2025"
+        ],
+        [
+          "openai",
+          "preparing",
+          "file",
+          "ipo",
+          "soon"
+        ],
+        [
+          "openai",
+          "spacex",
+          "anthropic",
+          "will",
+          "reshape",
+          "how",
+          "investors",
+          "access",
+          "artificial",
+          "intelligence",
+          "yahoo",
+          "finance"
+        ]
+      ]
     }
   ]
 }
