@@ -333,6 +333,83 @@
           "thinking"
         ]
       ]
+    },
+    {
+      "date": "2026-05-21",
+      "topics": [
+        "Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark",
+        "CODA: Rewriting Transformer Blocks as GEMM-Epilogue Programs",
+        "The case against boolean logic",
+        "FSFE intervenes against Apple before EUCJ for the second time",
+        "Quick Custom Intelligence expands AI initiative for tribal operators - CDC Gaming",
+        "Microsoft’s GitHub was positioned to win the AI coding race. Outages got in the way - CNBC"
+      ],
+      "title_hashes": [
+        "cb2ae7a47103d36125582c9f3da1e1ded342bd79ff1536b391dbf59d51b4fc06",
+        "4f777401e5bd6e22f7aaf20626509b75b3eb75cef0a8af9c7a2eb0b25c242e44",
+        "13692ee57fc05c6a643201bcb58e78d02a8a36125e6a131afd3c71e5789ff8fe",
+        "f545f2634b8b8cf19e9c1d0e0789eb5ee023ec934fb3b63b286a886a03a9579c",
+        "986686ac2571ce03fcf78c254fc02e57c6acfbaabdc3f3d408a245e968e87759",
+        "79ee268d7e0cbdd95fead070b9ec906338d86afb7d2aecc6562e2d20601f2270"
+      ],
+      "topic_tokens": [
+        [
+          "antigravity",
+          "tops",
+          "openscad",
+          "architectural",
+          "llm",
+          "benchmark"
+        ],
+        [
+          "coda",
+          "rewriting",
+          "transformer",
+          "blocks",
+          "gemm",
+          "epilogue",
+          "programs"
+        ],
+        [
+          "case",
+          "against",
+          "boolean",
+          "logic"
+        ],
+        [
+          "fsfe",
+          "intervenes",
+          "against",
+          "apple",
+          "before",
+          "eucj",
+          "second",
+          "time"
+        ],
+        [
+          "quick",
+          "custom",
+          "intelligence",
+          "expands",
+          "initiative",
+          "tribal",
+          "operators",
+          "cdc",
+          "gaming"
+        ],
+        [
+          "microsoft",
+          "github",
+          "positioned",
+          "win",
+          "coding",
+          "race",
+          "outages",
+          "got",
+          "way",
+          "cnbc"
+        ]
+      ]
     }
   ]
 }
