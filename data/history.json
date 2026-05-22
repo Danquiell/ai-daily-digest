@@ -254,6 +254,85 @@
           "openpr"
         ]
       ]
+    },
+    {
+      "date": "2026-05-21",
+      "topics": [
+        "Project Hail Mary – Stellar Navigation Chart",
+        "Throwing AI-generated walls of text into conversations",
+        "Waymo pauses Atlanta service as its robotaxis keep driving into floods",
+        "Using Kagi Search with Low Vision",
+        "Steve Wozniak cheered after telling students they have AI – actual intelligence",
+        "Multi-Stream LLMs: new paper on parallelizing/separating prompts, thinking, I/O"
+      ],
+      "title_hashes": [
+        "85ac0257b016f5a85a989a9d33f9a2f9ee0c17afe6f5495632710e16b144a024",
+        "f8123758c44e882e7bba041300eab1c5f1c2b08f91dc5f46b84b9b923c78867f",
+        "c70bc2515f2e8d75aa934f13d005cd26b043741d96e15860c846fd2efb713030",
+        "4d81fc0c21a15ac06433e2bc42746505deb52ceb7e7802c553e66d04570341f9",
+        "0e708555420b915454e7a23c31b031c172243755949790a4841e35175b3e0eb4",
+        "f6da1bc1184e66ad2eeb2a01c4fbc23f7acb015e3f44354ec3d59687aed30f45"
+      ],
+      "topic_tokens": [
+        [
+          "project",
+          "hail",
+          "mary",
+          "stellar",
+          "navigation",
+          "chart"
+        ],
+        [
+          "throwing",
+          "generated",
+          "walls",
+          "text",
+          "into",
+          "conversations"
+        ],
+        [
+          "waymo",
+          "pauses",
+          "atlanta",
+          "service",
+          "its",
+          "robotaxis",
+          "keep",
+          "driving",
+          "into",
+          "floods"
+        ],
+        [
+          "using",
+          "kagi",
+          "search",
+          "low",
+          "vision"
+        ],
+        [
+          "steve",
+          "wozniak",
+          "cheered",
+          "after",
+          "telling",
+          "students",
+          "they",
+          "have",
+          "actual",
+          "intelligence"
+        ],
+        [
+          "multi",
+          "stream",
+          "llms",
+          "new",
+          "paper",
+          "parallelizing",
+          "separating",
+          "prompts",
+          "thinking"
+        ]
+      ]
     }
   ]
 }
