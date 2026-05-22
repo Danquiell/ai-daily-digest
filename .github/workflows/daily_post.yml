@@ -1,18 +1,24 @@
 name: AI Daily Digest
 
+# ── Scheduling ────────────────────────────────────────────────────────────────
+# Target: 06:00 BRT (UTC-3) = 09:00 UTC
+# Note: GitHub's schedule trigger can be delayed 2-3h on free plans.
+#
+# For reliable 06:00 BRT timing, use cron-job.org (free) to trigger via API:
+#   URL:    POST https://api.github.com/repos/Danquiell/ai-daily-digest/actions/workflows/daily_post.yml/dispatches
+#   Body:   {"ref":"main"}
+#   Header: Authorization: Bearer <GH_TOKEN>
+#   Schedule: 0 9 * * * (09:00 UTC daily)
+#
+# The schedule below runs as fallback if the external trigger is not configured.
+# ──────────────────────────────────────────────────────────────────────────────
 on:
   schedule:
-    # 09:00 UTC = 06:00 BRT (UTC-3)
     - cron: "0 9 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Run without posting (dry run)"
-        required: false
-        default: "false"
-        type: boolean
-      instagram_only:
-        description: "Skip LinkedIn, post only to Instagram"
         required: false
         default: "false"
         type: boolean
@@ -43,17 +49,12 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
-          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
-          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           FLAGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             FLAGS="--dry-run"
-          elif [ "${{ github.event.inputs.instagram_only }}" = "true" ]; then
-            FLAGS="--instagram-only"
           fi
           python src/main.py $FLAGS
 
@@ -61,7 +62,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: instagram-card-${{ github.run_id }}
+          name: linkedin-card-${{ github.run_id }}
           path: output/*.jpg
           retention-days: 7
           if-no-files-found: ignore
