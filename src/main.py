@@ -18,6 +18,7 @@ from news_fetcher import fetch_news, load_history
 from content_generator import generate_content
 from image_generator import generate_card
 from linkedin_poster import post_with_image, post_text, post_sources_comment
+from instagram_poster import post_image as instagram_post_image
 from history_updater import update_history, git_commit_history
 
 INSTAGRAM_USERNAME = "@danquiell"  # ajuste para seu @ real
@@ -39,14 +40,14 @@ def build_sources_comment(stories: list[dict]) -> str:
     return "\n".join(lines[:8])
 
 
-def run(dry_run: bool = False):
+def run(dry_run: bool = False, instagram_only: bool = False):
     today = date.today()
     yesterday = today - timedelta(days=1)
     date_str = str(yesterday)
 
     print(f"\n{'='*60}")
     print(f"  AI Daily Digest — {today.strftime('%d/%m/%Y')}")
-    print(f"  Mode: {'DRY RUN' if dry_run else 'LIVE'}")
+    print(f"  Mode: {'DRY RUN' if dry_run else 'INSTAGRAM ONLY' if instagram_only else 'LIVE'}")
     print(f"{'='*60}\n")
 
     # 1. Fetch news
@@ -91,33 +92,53 @@ def run(dry_run: bool = False):
 
     # 4. Post to LinkedIn (with image if available, text-only as fallback)
     linkedin_post_id = None
-    try:
-        linkedin_text = build_linkedin_post(content)
-        main_story = stories[0]
+    if instagram_only:
+        print("[linkedin] Skipping LinkedIn (instagram-only mode)")
+    else:
+        try:
+            linkedin_text = build_linkedin_post(content)
+            main_story = stories[0]
 
-        if card_path and card_path.exists():
-            linkedin_post_id = post_with_image(
-                text=linkedin_text,
+            if card_path and card_path.exists():
+                linkedin_post_id = post_with_image(
+                    text=linkedin_text,
+                    image_path=card_path,
+                    image_title=main_story["title"][:100],
+                    dry_run=dry_run,
+                )
+            else:
+                print("[linkedin] No image — falling back to text post")
+                linkedin_post_id = post_text(
+                    linkedin_text,
+                    main_url=content.main_url,
+                    dry_run=dry_run,
+                )
+
+            sources_comment = build_sources_comment(stories)
+            post_sources_comment(linkedin_post_id, sources_comment, dry_run=dry_run)
+            print("[OK] LinkedIn post published")
+        except Exception as e:
+            print(f"[ERROR] LinkedIn post failed: {e}")
+            traceback.print_exc()
+
+    # 5. Post to Instagram
+    instagram_media_id = None
+    if card_path and card_path.exists():
+        try:
+            instagram_media_id = instagram_post_image(
                 image_path=card_path,
-                image_title=main_story["title"][:100],
+                caption_pt=content.instagram_caption_pt,
+                comment_en=content.instagram_comment_en,
                 dry_run=dry_run,
             )
-        else:
-            print("[linkedin] No image — falling back to text post")
-            linkedin_post_id = post_text(
-                linkedin_text,
-                main_url=content.main_url,
-                dry_run=dry_run,
-            )
+            print("[OK] Instagram post published")
+        except Exception as e:
+            print(f"[ERROR] Instagram post failed: {e}")
+            traceback.print_exc()
+    else:
+        print("[instagram] No image — skipping Instagram post")
 
-        sources_comment = build_sources_comment(stories)
-        post_sources_comment(linkedin_post_id, sources_comment, dry_run=dry_run)
-        print("[OK] LinkedIn post published")
-    except Exception as e:
-        print(f"[ERROR] LinkedIn post failed: {e}")
-        traceback.print_exc()
-
-    # 5. Update history and commit
+    # 6. Update history and commit
     if not dry_run:
         try:
             update_history(stories, date_str)
@@ -132,11 +153,13 @@ def run(dry_run: bool = False):
     print(f"  Stories found: {len(stories)}")
     print(f"  Image card:    {'OK' if card_path and card_path.exists() else 'FAILED'}")
     print(f"  LinkedIn:      {'OK' if linkedin_post_id else 'FAILED'}")
+    print(f"  Instagram:     {'OK' if instagram_media_id else 'FAILED'}")
     print(f"{'='*60}\n")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--instagram-only", action="store_true")
     args = parser.parse_args()
-    run(dry_run=args.dry_run)
+    run(dry_run=args.dry_run, instagram_only=args.instagram_only)

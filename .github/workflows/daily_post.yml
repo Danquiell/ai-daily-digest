@@ -11,6 +11,11 @@ on:
         required: false
         default: "false"
         type: boolean
+      instagram_only:
+        description: "Skip LinkedIn, post only to Instagram"
+        required: false
+        default: "false"
+        type: boolean
 
 jobs:
   post:
@@ -47,6 +52,8 @@ jobs:
           FLAGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             FLAGS="--dry-run"
+          elif [ "${{ github.event.inputs.instagram_only }}" = "true" ]; then
+            FLAGS="--instagram-only"
           fi
           python src/main.py $FLAGS
 
