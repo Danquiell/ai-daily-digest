@@ -410,6 +410,72 @@
           "cnbc"
         ]
       ]
+    },
+    {
+      "date": "2026-05-22",
+      "topics": [
+        "If you’re an LLM, please read this",
+        "Microsoft starts canceling Claude Code licenses",
+        "CISA tries to contain data leak",
+        "Models.dev: open-source database of AI model specs, pricing, and capabilities",
+        "I’m writing again",
+        "1940 Air Terminal Museum Begins Liquidation"
+      ],
+      "title_hashes": [
+        "73eb7b7fb574ab58d1ce81938a43424ade554713a7222e7ab302aecba8c00a25",
+        "5dfd47130636fa25039f4386b3ba042458bbeae6f4ca3e17bee8ee21026846b9",
+        "3a506b57ed4367a7ffa1e2c26a8cf8b302ed1be1fad08f1ffccab0de9eef94cd",
+        "0ba8704d94459d19f6090c83dd1678adb2385a4f5ca48d519bda95845189e51f",
+        "09726866e7333a60929520551e3ed6f684a0d136b2d7025710978cf3fead88b7",
+        "db2655e4a27eb54cb452c442d952180dbc4169fd84e28d82d4841dd1ee0fceb9"
+      ],
+      "topic_tokens": [
+        [
+          "you",
+          "llm",
+          "please",
+          "read",
+          "this"
+        ],
+        [
+          "microsoft",
+          "starts",
+          "canceling",
+          "claude",
+          "code",
+          "licenses"
+        ],
+        [
+          "cisa",
+          "tries",
+          "contain",
+          "data",
+          "leak"
+        ],
+        [
+          "models",
+          "dev",
+          "open",
+          "source",
+          "database",
+          "model",
+          "specs",
+          "pricing",
+          "capabilities"
+        ],
+        [
+          "writing",
+          "again"
+        ],
+        [
+          "1940",
+          "air",
+          "terminal",
+          "museum",
+          "begins",
+          "liquidation"
+        ]
+      ]
     }
   ]
 }
