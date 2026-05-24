@@ -476,6 +476,93 @@
           "liquidation"
         ]
       ]
+    },
+    {
+      "date": "2026-05-23",
+      "topics": [
+        "Italy moves to Airbus A330 tankers",
+        "Making deep learning go brrrr from first principles (2022)",
+        "Air France and Airbus found guilty of manslaughter over 2009 plane crash",
+        "This Artificial Intelligence (AI) Stock Just Became Too Cheap to Ignore - The Motley Fool",
+        "OpenAI offers up to $445,000 for AI safety role as focus shifts to self-improving systems - WION",
+        "Opinion | As a Doctor, I Can Understand the Allure of ChatGPT - The New York Times"
+      ],
+      "title_hashes": [
+        "4952d6ef5bd642a76fcf10912c2b0dd53e41098c73f668bbd0146d2c41d1e4e9",
+        "7707dc9539436832f2902e34595634094f760ece66c4c67bbcd91f649cdcaa41",
+        "d811996ad19d4cc9d163fe4c7ffa0e65eacbe9a36c26008202a78c27321bddd0",
+        "2982baed322a70e7d72535e4ff292cb08ec21d6cc03c6f93ab8ad9f870bed291",
+        "7dbd45719fc02b5052076b08ae970a50473bc63f755d6c2a27855a13feb3204a",
+        "3b257d9f300cc439f502267bb17262c58cd038732e0e1e8f6f5e9171cd08f8c2"
+      ],
+      "topic_tokens": [
+        [
+          "italy",
+          "moves",
+          "airbus",
+          "a330",
+          "tankers"
+        ],
+        [
+          "making",
+          "deep",
+          "learning",
+          "brrrr",
+          "first",
+          "principles",
+          "2022"
+        ],
+        [
+          "air",
+          "france",
+          "airbus",
+          "found",
+          "guilty",
+          "manslaughter",
+          "over",
+          "2009",
+          "plane",
+          "crash"
+        ],
+        [
+          "this",
+          "artificial",
+          "intelligence",
+          "stock",
+          "just",
+          "became",
+          "too",
+          "cheap",
+          "ignore",
+          "motley",
+          "fool"
+        ],
+        [
+          "openai",
+          "offers",
+          "445",
+          "000",
+          "safety",
+          "role",
+          "focus",
+          "shifts",
+          "self",
+          "improving",
+          "systems",
+          "wion"
+        ],
+        [
+          "opinion",
+          "doctor",
+          "can",
+          "understand",
+          "allure",
+          "chatgpt",
+          "new",
+          "york",
+          "times"
+        ]
+      ]
     }
   ]
 }
