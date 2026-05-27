@@ -29,6 +29,15 @@ def _title_hash(title: str) -> str:
     return hashlib.sha256(title.lower().strip().encode()).hexdigest()
 
 
+def already_posted(date_str: str) -> bool:
+    """Return True if history.json already has an entry for date_str."""
+    if not HISTORY_PATH.exists():
+        return False
+    with open(HISTORY_PATH) as f:
+        history = json.load(f)
+    return any(p.get("date") == date_str for p in history.get("posts", []))
+
+
 def update_history(stories: list[dict], date_str: str):
     """Append today's stories to history.json, pruning entries older than WINDOW_DAYS."""
     if HISTORY_PATH.exists():

@@ -14,7 +14,7 @@ from news_fetcher import fetch_news, load_history
 from content_generator import generate_content
 from image_generator import generate_card
 from linkedin_poster import post_with_image, post_text, post_sources_comment
-from history_updater import update_history, git_commit_history
+from history_updater import update_history, git_commit_history, already_posted
 
 LINKEDIN_USERNAME = "@danquiell"
 
@@ -44,6 +44,10 @@ def run(dry_run: bool = False):
     print(f"  AI Daily Digest — {today.strftime('%d/%m/%Y')}")
     print(f"  Mode: {'DRY RUN' if dry_run else 'LIVE'}")
     print(f"{'='*60}\n")
+
+    if not dry_run and already_posted(date_str):
+        print(f"[skip] history.json already has entry for {date_str} — exiting cleanly.")
+        sys.exit(0)
 
     # 1. Fetch news
     try:

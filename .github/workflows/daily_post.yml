@@ -14,7 +14,11 @@ name: AI Daily Digest
 # ──────────────────────────────────────────────────────────────────────────────
 on:
   schedule:
+    # Multiple attempts because GitHub free-tier cron is unreliable (skips firings under load).
+    # main.py exits cleanly if today is already in history.json, so duplicates are safe.
     - cron: "0 9 * * *"
+    - cron: "0 11 * * *"
+    - cron: "0 13 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
