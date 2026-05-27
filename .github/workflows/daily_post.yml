@@ -14,11 +14,17 @@ name: AI Daily Digest
 # ──────────────────────────────────────────────────────────────────────────────
 on:
   schedule:
-    # Multiple attempts because GitHub free-tier cron is unreliable (skips firings under load).
-    # main.py exits cleanly if today is already in history.json, so duplicates are safe.
-    - cron: "0 9 * * *"
-    - cron: "0 11 * * *"
-    - cron: "0 13 * * *"
+    # Target: 06:00 BRT (= 09:00 UTC). GitHub's docs warn that scheduled workflows
+    # are delayed during high load and that "high load times include the start of
+    # every hour". We use odd minutes (smaller runner queue) and six attempts in a
+    # ~1h45 window. main.py exits cleanly if today is already in history.json, so
+    # duplicate firings are safe.
+    - cron: "3 9 * * *"     # 06:03 BRT
+    - cron: "17 9 * * *"    # 06:17 BRT
+    - cron: "33 9 * * *"    # 06:33 BRT
+    - cron: "47 9 * * *"    # 06:47 BRT
+    - cron: "11 10 * * *"   # 07:11 BRT (fallback)
+    - cron: "41 10 * * *"   # 07:41 BRT (fallback)
   workflow_dispatch:
     inputs:
       dry_run:
