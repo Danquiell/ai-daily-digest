@@ -649,6 +649,85 @@
           "centre"
         ]
       ]
+    },
+    {
+      "date": "2026-05-26",
+      "topics": [
+        "Using AI to write better code more slowly",
+        "Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licence",
+        "Outsourcing plus local AI will soon become more economical vs. frontier labs",
+        "I'm Tired of Talking to AI",
+        "Claude Code as a Daily Driver: Claude.md, Skills, Subagents, Plugins, and MCPs",
+        "Nvidia Vera CPU Benchmarks: Olympus Cores Delivering Great Performance"
+      ],
+      "title_hashes": [
+        "50a6e250aec41f9e8fa8daf47d61d66bf5e0aea52293822d37b5a89763a436c4",
+        "d7cc88c3503c9b6502290ce151ac35449f282a645eec53323546957d0afe0bc0",
+        "4e97d2d91c816125c3e052e0e1b11d36f239d7fdd55f29d74c4762f1128bbe78",
+        "50fafb35b3633e685d898cf13e6b8291010630a503360ebd6381a9f73716ae83",
+        "d267d007fb77ffd81d7b1fd858842d6cbf0aaa96cfa9d972cd956550b36f87fe",
+        "cf0566fcc5467beec8d7ed998dc456433ce5a4ec8e50014193c7ce7acde2b269"
+      ],
+      "topic_tokens": [
+        [
+          "using",
+          "write",
+          "better",
+          "code",
+          "more",
+          "slowly"
+        ],
+        [
+          "spain",
+          "blocks",
+          "prediction",
+          "markets",
+          "polymarket",
+          "kalshi",
+          "over",
+          "lack",
+          "gambling",
+          "licence"
+        ],
+        [
+          "outsourcing",
+          "plus",
+          "local",
+          "will",
+          "soon",
+          "become",
+          "more",
+          "economical",
+          "frontier",
+          "labs"
+        ],
+        [
+          "tired",
+          "talking"
+        ],
+        [
+          "claude",
+          "code",
+          "daily",
+          "driver",
+          "claude",
+          "skills",
+          "subagents",
+          "plugins",
+          "mcps"
+        ],
+        [
+          "nvidia",
+          "vera",
+          "cpu",
+          "benchmarks",
+          "olympus",
+          "cores",
+          "delivering",
+          "great",
+          "performance"
+        ]
+      ]
     }
   ]
 }
