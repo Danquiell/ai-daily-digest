@@ -728,6 +728,85 @@
           "performance"
         ]
       ]
+    },
+    {
+      "date": "2026-05-27",
+      "topics": [
+        "YouTube to automatically label AI-generated videos",
+        "I think Anthropic and OpenAI have found product-market fit",
+        "DuckDuckGo search saw 28% more visits after Google said people love AI mode",
+        "Rust (and Slint) on a Jailbroken Kindle",
+        "AMD pulls a bait-and-switch on Linux users with Vivado licensing changes",
+        "A Eureka machine that thinks like nature and explores what AI cannot"
+      ],
+      "title_hashes": [
+        "f1d8c1715cca9dc333038d4918633738e874eedd9612e6951b8f2a1a6b91c2fc",
+        "edccf86d1ce2de45e438b5426c111b673998461c9c9bef292e9304b1bc4ad249",
+        "c6dca345450a041d9bff51e6236c8da1161a2499a12b359a3fba97baf05e8d6d",
+        "f7ecaa685bba0363e8f46851b548fd703273df4fb884f36f399f368799919bdd",
+        "c6a43076dee4e860b4e032025998186749ad3ab03d22f2f73d09282cc3a6214f",
+        "d8e6084bdaa3248783643bede197ac2aee470bbbdc1143fccd4fd2e4474a4672"
+      ],
+      "topic_tokens": [
+        [
+          "youtube",
+          "automatically",
+          "label",
+          "generated",
+          "videos"
+        ],
+        [
+          "think",
+          "anthropic",
+          "openai",
+          "have",
+          "found",
+          "product",
+          "market",
+          "fit"
+        ],
+        [
+          "duckduckgo",
+          "search",
+          "saw",
+          "more",
+          "visits",
+          "after",
+          "google",
+          "said",
+          "people",
+          "love",
+          "mode"
+        ],
+        [
+          "rust",
+          "slint",
+          "jailbroken",
+          "kindle"
+        ],
+        [
+          "amd",
+          "pulls",
+          "bait",
+          "switch",
+          "linux",
+          "users",
+          "vivado",
+          "licensing",
+          "changes"
+        ],
+        [
+          "eureka",
+          "machine",
+          "that",
+          "thinks",
+          "like",
+          "nature",
+          "explores",
+          "what",
+          "cannot"
+        ]
+      ]
     }
   ]
 }
