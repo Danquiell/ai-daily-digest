@@ -807,6 +807,77 @@
           "cannot"
         ]
       ]
+    },
+    {
+      "date": "2026-05-28",
+      "topics": [
+        "Claude Opus 4.8",
+        "Various LLM Smells",
+        "Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue",
+        "SF startup is testing robots in Airbnbs, and trashing them, lawsuit claims",
+        "Claude Code – Everything You Can Configure That the Docs Don't Tell You",
+        "Is AI causing a repeat of Front end's Lost Decade?"
+      ],
+      "title_hashes": [
+        "d291dc3f54f6fd06fb1285c77dd870d5bc9b0b691867396ca6a068473c684ea3",
+        "ac3452da3437b9387372f8f4871bd4a152dd51c9613b6fa39be171ec3f610b47",
+        "bfe724068ae551db763081fb6dcbd7b95abe6066ce3bbb119da402c1a0135222",
+        "043b4be4e6e218617f1af4f56902826f624a6acd471ad0a056790ef43e9ec744",
+        "0788db5566ffe3451aefa5f324ea93502302f3ec5d4c29eefa5213b5e0733613",
+        "a9296428c7b75da410a944c912b13851d1bc462d2b44c33acf53843ef914df55"
+      ],
+      "topic_tokens": [
+        [
+          "claude",
+          "opus"
+        ],
+        [
+          "various",
+          "llm",
+          "smells"
+        ],
+        [
+          "show",
+          "continue",
+          "second",
+          "game",
+          "about",
+          "agent",
+          "permission",
+          "fatigue"
+        ],
+        [
+          "startup",
+          "testing",
+          "robots",
+          "airbnbs",
+          "trashing",
+          "them",
+          "lawsuit",
+          "claims"
+        ],
+        [
+          "claude",
+          "code",
+          "everything",
+          "you",
+          "can",
+          "configure",
+          "that",
+          "docs",
+          "don",
+          "tell",
+          "you"
+        ],
+        [
+          "causing",
+          "repeat",
+          "front",
+          "end",
+          "lost",
+          "decade"
+        ]
+      ]
     }
   ]
 }
