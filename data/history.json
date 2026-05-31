@@ -952,6 +952,82 @@
           "robots"
         ]
       ]
+    },
+    {
+      "date": "2026-05-30",
+      "topics": [
+        "Domain expertise has always been the real moat",
+        "OpenRouter raises $113M Series B",
+        "AI job grief: A psychological crisis hitting tech workers",
+        "Show HN: Helios – what plug-in solar could generate for any address in Britain",
+        "Perspective: Behind the AI curtain at Anthropic - Colorado Springs Gazette",
+        "Dr. Daniel Sutter: The AI economy still depends on human nature - Yellowhammer News"
+      ],
+      "title_hashes": [
+        "7564c76a1e5c99a818c067a228636020b37bbb0f5d1ae2a9e53bc2a0a77f345f",
+        "d05b03bfade162bacefd3ffaf0e17b8d89848a6200a3f96fd36eda7250696fbe",
+        "6cc48d3bd5d8322c98d2059eb5f9c863b1c2d282e32de222dde9f6ac586cb8e5",
+        "7412e122efaa927a9441aa2a58bf80e4ca47f62f79672700c2f428a2c7e5c5d9",
+        "1f0854a55b1ec372db9e45fe5f8254e2c2f94186da3158c218211c9db44ee43c",
+        "d08dc70cc62ecaea7105530d4ac6ca75055adefb327178aa76fed704a37c62cc"
+      ],
+      "topic_tokens": [
+        [
+          "domain",
+          "expertise",
+          "has",
+          "always",
+          "real",
+          "moat"
+        ],
+        [
+          "openrouter",
+          "raises",
+          "113m",
+          "series"
+        ],
+        [
+          "job",
+          "grief",
+          "psychological",
+          "crisis",
+          "hitting",
+          "tech",
+          "workers"
+        ],
+        [
+          "show",
+          "helios",
+          "what",
+          "plug",
+          "solar",
+          "could",
+          "generate",
+          "any",
+          "address",
+          "britain"
+        ],
+        [
+          "perspective",
+          "behind",
+          "curtain",
+          "anthropic",
+          "colorado",
+          "springs",
+          "gazette"
+        ],
+        [
+          "daniel",
+          "sutter",
+          "economy",
+          "still",
+          "depends",
+          "human",
+          "nature",
+          "yellowhammer",
+          "news"
+        ]
+      ]
     }
   ]
 }
