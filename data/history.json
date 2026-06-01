@@ -1028,6 +1028,80 @@
           "news"
         ]
       ]
+    },
+    {
+      "date": "2026-05-31",
+      "topics": [
+        "1-Bit Bonsai Image 4B Image Generation for Local Devices",
+        "United Airlines 767 returns to Newark after Bluetooth name sparks alert",
+        "ChatGPT for Google Sheets exfiltrates workbooks",
+        "When AI Crosses the Line: The Matplotlib Incident",
+        "No Raise, No Promotion: 1 in 4 White-Collar Workers Are Stalling Out",
+        "The Pirate Bay Remains Resilient, 20 Years After the Raid"
+      ],
+      "title_hashes": [
+        "c4ff8d69ce238a63da057b560aada3521f53df295a944604b00083937d1e3410",
+        "6f3279ceaa4ccbd5dc66c6f11246a54a0d10d3d18ee5beb788478cbc2854e76f",
+        "e2c50e0bc906e8dcc82b3fe6261c772a1cba2739ce34b41eb9d35d342e96ae09",
+        "942d8f165338ee2232955d5ddcc90714e264af721e2dab8d41cd01b29c18df8e",
+        "e48b4fa68f80335959cfa66b7f5afff67e9a76385cc55c026788f1fc70daf356",
+        "2d355859253bd22a58e80415260fb0ff7f0a6c0880928f9f79f18db962ef0e15"
+      ],
+      "topic_tokens": [
+        [
+          "bit",
+          "bonsai",
+          "image",
+          "image",
+          "generation",
+          "local",
+          "devices"
+        ],
+        [
+          "united",
+          "airlines",
+          "767",
+          "returns",
+          "newark",
+          "after",
+          "bluetooth",
+          "name",
+          "sparks",
+          "alert"
+        ],
+        [
+          "chatgpt",
+          "google",
+          "sheets",
+          "exfiltrates",
+          "workbooks"
+        ],
+        [
+          "when",
+          "crosses",
+          "line",
+          "matplotlib",
+          "incident"
+        ],
+        [
+          "raise",
+          "promotion",
+          "white",
+          "collar",
+          "workers",
+          "stalling",
+          "out"
+        ],
+        [
+          "pirate",
+          "bay",
+          "remains",
+          "resilient",
+          "years",
+          "after",
+          "raid"
+        ]
+      ]
     }
   ]
 }
