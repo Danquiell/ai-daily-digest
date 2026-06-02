@@ -1,89 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-05-19",
-      "topics": [
-        "Tennessee man jailed 37 days for Trump meme wins settlement after lawsuit",
-        "An OpenAI model has disproved a central conjecture in discrete geometry",
-        "Google's AI is being manipulated. The search giant is quietly fighting back",
-        "Not alive, but not dead: disembodied human brains used for drug testing",
-        "Formal Verification Gates for AI Coding Loops",
-        "Qian Xuesen: The missile genius America lost and China gained (2025)"
-      ],
-      "title_hashes": [
-        "051def734d85a7d873cf2e438ee4f7f75150840a5c184ca8f86a23d868402189",
-        "df336d4b64703cb88e45e189370aaee52a50bbcb90a39c40cb51db1a6b18d125",
-        "26fb781a05d0f546e401d82cd6322f75afdbd3cd20750cb0dfa3bffa2ac31466",
-        "87ab082fc823b7e3e415692bcfbf34d47c5decbdc01ef52ae96066e3a32d1e43",
-        "947974dd8d6fdf5aaa5d21b885c3c7bd7b5ab7b885776b17f13b8bcfd18d8de2",
-        "253045ac2f3b7ed90844c7ffcce3bbb9edf532b8a0aaf45ec4a4503becf31862"
-      ],
-      "topic_tokens": [
-        [
-          "tennessee",
-          "man",
-          "jailed",
-          "days",
-          "trump",
-          "meme",
-          "wins",
-          "settlement",
-          "after",
-          "lawsuit"
-        ],
-        [
-          "openai",
-          "model",
-          "has",
-          "disproved",
-          "central",
-          "conjecture",
-          "discrete",
-          "geometry"
-        ],
-        [
-          "google",
-          "being",
-          "manipulated",
-          "search",
-          "giant",
-          "quietly",
-          "fighting",
-          "back"
-        ],
-        [
-          "not",
-          "alive",
-          "not",
-          "dead",
-          "disembodied",
-          "human",
-          "brains",
-          "used",
-          "drug",
-          "testing"
-        ],
-        [
-          "formal",
-          "verification",
-          "gates",
-          "coding",
-          "loops"
-        ],
-        [
-          "qian",
-          "xuesen",
-          "missile",
-          "genius",
-          "america",
-          "lost",
-          "china",
-          "gained",
-          "2025"
-        ]
-      ]
-    },
-    {
       "date": "2026-05-20",
       "topics": [
         "Anthropic is expanding to Colossus2. Will use GB200",
@@ -1100,6 +1017,74 @@
           "years",
           "after",
           "raid"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "topics": [
+        "Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",
+        "AI Agent Guidelines for CS336 at Stanford",
+        "OpenAI frontier models and Codex are now available on AWS",
+        "Chipotlai Max",
+        "Florida sues OpenAI and Sam Altman over AI risks",
+        "Alphabet announces $80B equity capital raise to expand AI infra and compute"
+      ],
+      "title_hashes": [
+        "f2e659f739709f4a1aef8251cf62e09cbbfba81c0b00951a29bf57050082c52f",
+        "a123d9236efb31f5248b75681b735d234ba42ed242fdfffbbaf0f90dd538709d",
+        "4cef53de13322269312516756373068d96b114f6cd6d52e475eed8d072c4f07b",
+        "02dc89cc140c79b787631e5e6ee27ec5782ea1af1194d16c53267459423ee1d5",
+        "6885017ce18044d48ee3f91f52e43e9f45fd98ecaae7fe70252f819cc712c684",
+        "a917d6a62560fa429ef5a66da70c80ff289ad3949e1dd801b5a221ce84d93a04"
+      ],
+      "topic_tokens": [
+        [
+          "can",
+          "stockmarket",
+          "swallow",
+          "anthropic",
+          "spacex",
+          "openai"
+        ],
+        [
+          "agent",
+          "guidelines",
+          "cs336",
+          "stanford"
+        ],
+        [
+          "openai",
+          "frontier",
+          "models",
+          "codex",
+          "now",
+          "available",
+          "aws"
+        ],
+        [
+          "chipotlai",
+          "max"
+        ],
+        [
+          "florida",
+          "sues",
+          "openai",
+          "sam",
+          "altman",
+          "over",
+          "risks"
+        ],
+        [
+          "alphabet",
+          "announces",
+          "80b",
+          "equity",
+          "capital",
+          "raise",
+          "expand",
+          "infra",
+          "compute"
         ]
       ]
     }
