@@ -1,162 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-05-21",
-      "topics": [
-        "Project Hail Mary – Stellar Navigation Chart",
-        "Throwing AI-generated walls of text into conversations",
-        "Waymo pauses Atlanta service as its robotaxis keep driving into floods",
-        "Using Kagi Search with Low Vision",
-        "Steve Wozniak cheered after telling students they have AI – actual intelligence",
-        "Multi-Stream LLMs: new paper on parallelizing/separating prompts, thinking, I/O"
-      ],
-      "title_hashes": [
-        "85ac0257b016f5a85a989a9d33f9a2f9ee0c17afe6f5495632710e16b144a024",
-        "f8123758c44e882e7bba041300eab1c5f1c2b08f91dc5f46b84b9b923c78867f",
-        "c70bc2515f2e8d75aa934f13d005cd26b043741d96e15860c846fd2efb713030",
-        "4d81fc0c21a15ac06433e2bc42746505deb52ceb7e7802c553e66d04570341f9",
-        "0e708555420b915454e7a23c31b031c172243755949790a4841e35175b3e0eb4",
-        "f6da1bc1184e66ad2eeb2a01c4fbc23f7acb015e3f44354ec3d59687aed30f45"
-      ],
-      "topic_tokens": [
-        [
-          "project",
-          "hail",
-          "mary",
-          "stellar",
-          "navigation",
-          "chart"
-        ],
-        [
-          "throwing",
-          "generated",
-          "walls",
-          "text",
-          "into",
-          "conversations"
-        ],
-        [
-          "waymo",
-          "pauses",
-          "atlanta",
-          "service",
-          "its",
-          "robotaxis",
-          "keep",
-          "driving",
-          "into",
-          "floods"
-        ],
-        [
-          "using",
-          "kagi",
-          "search",
-          "low",
-          "vision"
-        ],
-        [
-          "steve",
-          "wozniak",
-          "cheered",
-          "after",
-          "telling",
-          "students",
-          "they",
-          "have",
-          "actual",
-          "intelligence"
-        ],
-        [
-          "multi",
-          "stream",
-          "llms",
-          "new",
-          "paper",
-          "parallelizing",
-          "separating",
-          "prompts",
-          "thinking"
-        ]
-      ]
-    },
-    {
-      "date": "2026-05-21",
-      "topics": [
-        "Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark",
-        "CODA: Rewriting Transformer Blocks as GEMM-Epilogue Programs",
-        "The case against boolean logic",
-        "FSFE intervenes against Apple before EUCJ for the second time",
-        "Quick Custom Intelligence expands AI initiative for tribal operators - CDC Gaming",
-        "Microsoft’s GitHub was positioned to win the AI coding race. Outages got in the way - CNBC"
-      ],
-      "title_hashes": [
-        "cb2ae7a47103d36125582c9f3da1e1ded342bd79ff1536b391dbf59d51b4fc06",
-        "4f777401e5bd6e22f7aaf20626509b75b3eb75cef0a8af9c7a2eb0b25c242e44",
-        "13692ee57fc05c6a643201bcb58e78d02a8a36125e6a131afd3c71e5789ff8fe",
-        "f545f2634b8b8cf19e9c1d0e0789eb5ee023ec934fb3b63b286a886a03a9579c",
-        "986686ac2571ce03fcf78c254fc02e57c6acfbaabdc3f3d408a245e968e87759",
-        "79ee268d7e0cbdd95fead070b9ec906338d86afb7d2aecc6562e2d20601f2270"
-      ],
-      "topic_tokens": [
-        [
-          "antigravity",
-          "tops",
-          "openscad",
-          "architectural",
-          "llm",
-          "benchmark"
-        ],
-        [
-          "coda",
-          "rewriting",
-          "transformer",
-          "blocks",
-          "gemm",
-          "epilogue",
-          "programs"
-        ],
-        [
-          "case",
-          "against",
-          "boolean",
-          "logic"
-        ],
-        [
-          "fsfe",
-          "intervenes",
-          "against",
-          "apple",
-          "before",
-          "eucj",
-          "second",
-          "time"
-        ],
-        [
-          "quick",
-          "custom",
-          "intelligence",
-          "expands",
-          "initiative",
-          "tribal",
-          "operators",
-          "cdc",
-          "gaming"
-        ],
-        [
-          "microsoft",
-          "github",
-          "positioned",
-          "win",
-          "coding",
-          "race",
-          "outages",
-          "got",
-          "way",
-          "cnbc"
-        ]
-      ]
-    },
-    {
       "date": "2026-05-22",
       "topics": [
         "If you’re an LLM, please read this",
@@ -979,6 +823,85 @@
           "any",
           "online",
           "device"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "topics": [
+        "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
+        "Artificial intelligence is not conscious – Ted Chiang",
+        "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
+        "I built a vulnerable app and spent $1,500 seeing if LLMs could hack it",
+        "Mathematicians issue warning as AI rapidly gains ground",
+        "UK media fails to disclose defence sector links in nearly 60% of cases"
+      ],
+      "title_hashes": [
+        "ea1c96f2623cb4be965ad5fa9668bbb153ebd26ae416d33f190453759a59e867",
+        "9f21c01d51c104bf6de274af7faa4b766a3f91c76686d712d876e8d60aec7a8d",
+        "91e83b0cd55a655498021eb32d1ace531bc0a7c92464ae2e8da0bb915ce29b49",
+        "04a54a527d0e921d22639b9dbd6d18eee5d0243f5bc402fbcbeb804d15caa51a",
+        "e38ad969386a522a641c4b884f3db976c3bd9ac2f683f4a2390491ad74dea9aa",
+        "59cd97ceaa3c85e54a3a896c3ffd5e966b761a42d7a2f2a4dff49bc0bd8a6ea1"
+      ],
+      "topic_tokens": [
+        [
+          "uber",
+          "500",
+          "month",
+          "limit",
+          "useful",
+          "signal",
+          "tool",
+          "pricing"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "not",
+          "conscious",
+          "ted",
+          "chiang"
+        ],
+        [
+          "failing",
+          "grades",
+          "soar",
+          "usage",
+          "dwindling",
+          "math",
+          "skills",
+          "berkeley",
+          "classes"
+        ],
+        [
+          "built",
+          "vulnerable",
+          "app",
+          "spent",
+          "500",
+          "seeing",
+          "llms",
+          "could",
+          "hack"
+        ],
+        [
+          "mathematicians",
+          "issue",
+          "warning",
+          "rapidly",
+          "gains",
+          "ground"
+        ],
+        [
+          "media",
+          "fails",
+          "disclose",
+          "defence",
+          "sector",
+          "links",
+          "nearly",
+          "cases"
         ]
       ]
     }
