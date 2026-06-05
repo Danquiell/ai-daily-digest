@@ -1,72 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-05-22",
-      "topics": [
-        "If you’re an LLM, please read this",
-        "Microsoft starts canceling Claude Code licenses",
-        "CISA tries to contain data leak",
-        "Models.dev: open-source database of AI model specs, pricing, and capabilities",
-        "I’m writing again",
-        "1940 Air Terminal Museum Begins Liquidation"
-      ],
-      "title_hashes": [
-        "73eb7b7fb574ab58d1ce81938a43424ade554713a7222e7ab302aecba8c00a25",
-        "5dfd47130636fa25039f4386b3ba042458bbeae6f4ca3e17bee8ee21026846b9",
-        "3a506b57ed4367a7ffa1e2c26a8cf8b302ed1be1fad08f1ffccab0de9eef94cd",
-        "0ba8704d94459d19f6090c83dd1678adb2385a4f5ca48d519bda95845189e51f",
-        "09726866e7333a60929520551e3ed6f684a0d136b2d7025710978cf3fead88b7",
-        "db2655e4a27eb54cb452c442d952180dbc4169fd84e28d82d4841dd1ee0fceb9"
-      ],
-      "topic_tokens": [
-        [
-          "you",
-          "llm",
-          "please",
-          "read",
-          "this"
-        ],
-        [
-          "microsoft",
-          "starts",
-          "canceling",
-          "claude",
-          "code",
-          "licenses"
-        ],
-        [
-          "cisa",
-          "tries",
-          "contain",
-          "data",
-          "leak"
-        ],
-        [
-          "models",
-          "dev",
-          "open",
-          "source",
-          "database",
-          "model",
-          "specs",
-          "pricing",
-          "capabilities"
-        ],
-        [
-          "writing",
-          "again"
-        ],
-        [
-          "1940",
-          "air",
-          "terminal",
-          "museum",
-          "begins",
-          "liquidation"
-        ]
-      ]
-    },
-    {
       "date": "2026-05-23",
       "topics": [
         "Italy moves to Airbus A330 tankers",
@@ -902,6 +836,85 @@
           "links",
           "nearly",
           "cases"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "topics": [
+        "When AI Builds Itself: Our progress toward recursive self-improvement",
+        "Anthropic's open-source framework for AI-powered vulnerability discovery",
+        "Open Code Review – An AI-powered code review CLI tool",
+        "Do transformers need three projections? Systematic study of QKV variants",
+        "Fine-tuning an LLM to write docs like it's 1995",
+        "KVarN: Native vLLM backend for KV-cache quantization by Huawei"
+      ],
+      "title_hashes": [
+        "c1b2897a2ba579a93f8d935864728f40612897f02b2bd4444e5097f540e7a868",
+        "b19bf33b9196f74ef42bedca99e0c76e082ed23c209d53ebd81b8948b81adbcb",
+        "d2453155292323072d79d1f813a2142ad212d5cfe590d65d33a8e8d2817d8bce",
+        "fc3ed533482ab3125a26319c49b6d9f884fd445c9e1970908a4ce698ce40e528",
+        "efef2d28164422a3960b8a754710e5b719665ec9e672fd645ceac54768ea3d7a",
+        "773e44e707e9c972085d4a020564990cb671a3e077214a2147728a57de9dac74"
+      ],
+      "topic_tokens": [
+        [
+          "when",
+          "builds",
+          "itself",
+          "our",
+          "progress",
+          "toward",
+          "recursive",
+          "self",
+          "improvement"
+        ],
+        [
+          "anthropic",
+          "open",
+          "source",
+          "framework",
+          "powered",
+          "vulnerability",
+          "discovery"
+        ],
+        [
+          "open",
+          "code",
+          "review",
+          "powered",
+          "code",
+          "review",
+          "cli",
+          "tool"
+        ],
+        [
+          "transformers",
+          "need",
+          "three",
+          "projections",
+          "systematic",
+          "study",
+          "qkv",
+          "variants"
+        ],
+        [
+          "fine",
+          "tuning",
+          "llm",
+          "write",
+          "docs",
+          "like",
+          "1995"
+        ],
+        [
+          "kvarn",
+          "native",
+          "vllm",
+          "backend",
+          "cache",
+          "quantization",
+          "huawei"
         ]
       ]
     }
