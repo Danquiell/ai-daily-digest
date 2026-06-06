@@ -1,93 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-05-23",
-      "topics": [
-        "Italy moves to Airbus A330 tankers",
-        "Making deep learning go brrrr from first principles (2022)",
-        "Air France and Airbus found guilty of manslaughter over 2009 plane crash",
-        "This Artificial Intelligence (AI) Stock Just Became Too Cheap to Ignore - The Motley Fool",
-        "OpenAI offers up to $445,000 for AI safety role as focus shifts to self-improving systems - WION",
-        "Opinion | As a Doctor, I Can Understand the Allure of ChatGPT - The New York Times"
-      ],
-      "title_hashes": [
-        "4952d6ef5bd642a76fcf10912c2b0dd53e41098c73f668bbd0146d2c41d1e4e9",
-        "7707dc9539436832f2902e34595634094f760ece66c4c67bbcd91f649cdcaa41",
-        "d811996ad19d4cc9d163fe4c7ffa0e65eacbe9a36c26008202a78c27321bddd0",
-        "2982baed322a70e7d72535e4ff292cb08ec21d6cc03c6f93ab8ad9f870bed291",
-        "7dbd45719fc02b5052076b08ae970a50473bc63f755d6c2a27855a13feb3204a",
-        "3b257d9f300cc439f502267bb17262c58cd038732e0e1e8f6f5e9171cd08f8c2"
-      ],
-      "topic_tokens": [
-        [
-          "italy",
-          "moves",
-          "airbus",
-          "a330",
-          "tankers"
-        ],
-        [
-          "making",
-          "deep",
-          "learning",
-          "brrrr",
-          "first",
-          "principles",
-          "2022"
-        ],
-        [
-          "air",
-          "france",
-          "airbus",
-          "found",
-          "guilty",
-          "manslaughter",
-          "over",
-          "2009",
-          "plane",
-          "crash"
-        ],
-        [
-          "this",
-          "artificial",
-          "intelligence",
-          "stock",
-          "just",
-          "became",
-          "too",
-          "cheap",
-          "ignore",
-          "motley",
-          "fool"
-        ],
-        [
-          "openai",
-          "offers",
-          "445",
-          "000",
-          "safety",
-          "role",
-          "focus",
-          "shifts",
-          "self",
-          "improving",
-          "systems",
-          "wion"
-        ],
-        [
-          "opinion",
-          "doctor",
-          "can",
-          "understand",
-          "allure",
-          "chatgpt",
-          "new",
-          "york",
-          "times"
-        ]
-      ]
-    },
-    {
       "date": "2026-05-24",
       "topics": [
         "Memory has grown to nearly two-thirds of AI chip component costs",
@@ -915,6 +828,73 @@
           "cache",
           "quantization",
           "huawei"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "topics": [
+        "Did Claude increase bugs in rsync?",
+        "Astronauts told to return to ISS after sheltering over air leak repairs",
+        "Ask HN: What was your \"oh shit\" moment with GenAI?",
+        "How LLMs work",
+        "Ask HN: Why is the HN crowd so anti-AI?",
+        "The intracies of modern camera lens repair (2024)"
+      ],
+      "title_hashes": [
+        "1c19fcfa66f8e843a80b4cba29bd2fda3d157084226b9e9bf710dd7fc8af6ab3",
+        "7c82bbec087eba64c85dac40c2bec75163671e64ed04ce1ce7186e8380c56b2a",
+        "8ebdc8903447885c1f050b7cf986f0915150902c859c21063af82426a4c6f93b",
+        "4c3b1c9526db422d2f8900b5da713726a763674be24eec43ecadeb073e2542af",
+        "ad37a6d141290dd6347299149995106a8808442adb62264268c9fd3673eb0ca9",
+        "3343bd0fa3eed97c3f32a8731fd9f33e12b640177bbd1ea8989b156da0f519b5"
+      ],
+      "topic_tokens": [
+        [
+          "did",
+          "claude",
+          "increase",
+          "bugs",
+          "rsync"
+        ],
+        [
+          "astronauts",
+          "told",
+          "return",
+          "iss",
+          "after",
+          "sheltering",
+          "over",
+          "air",
+          "leak",
+          "repairs"
+        ],
+        [
+          "ask",
+          "what",
+          "your",
+          "shit",
+          "moment",
+          "genai"
+        ],
+        [
+          "how",
+          "llms",
+          "work"
+        ],
+        [
+          "ask",
+          "why",
+          "crowd",
+          "anti"
+        ],
+        [
+          "intracies",
+          "modern",
+          "camera",
+          "lens",
+          "repair",
+          "2024"
         ]
       ]
     }
