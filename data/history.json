@@ -1,92 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-05-24",
-      "topics": [
-        "Memory has grown to nearly two-thirds of AI chip component costs",
-        "Constraint Decay: The Fragility of LLM Agents in Back End Code Generation",
-        "GPT Guesses Between 1 and 100",
-        "SpaceX and OpenAI IPOs could push the AI trade deeper into bubble territory: Chart of the day - MSN",
-        "People Are Loading Their Writing With Typos to Prove They’re Not AI - Futurism",
-        "Pope Leo warns of dangers of Artificial Intelligence - Religion Media Centre"
-      ],
-      "title_hashes": [
-        "17dece88013c720893dd9c807c2aea83485b200de2e36881729814765a8e2ad0",
-        "066e29302eee6df2abcb29b1bc19699133c1d9454925d7b920a93b7b0f55cd26",
-        "3cad0cbb9c4b463f4f286c90b2708c3efa508c18105ca22725faa856b55abd47",
-        "b5000bcb1ef71c46dd9490545142c19a779887faefca253e5b4c05f7eda3b7d9",
-        "ecae8baf9414564e7832161833ff8350ba52aeec6414197556025ab1c0b3ba7e",
-        "7f8e1ac93b5b8bc6df8332261410c7e3cff5a8dcb1b2a91bdb672adcaa2792f6"
-      ],
-      "topic_tokens": [
-        [
-          "memory",
-          "has",
-          "grown",
-          "nearly",
-          "two",
-          "thirds",
-          "chip",
-          "component",
-          "costs"
-        ],
-        [
-          "constraint",
-          "decay",
-          "fragility",
-          "llm",
-          "agents",
-          "back",
-          "end",
-          "code",
-          "generation"
-        ],
-        [
-          "gpt",
-          "guesses",
-          "between",
-          "100"
-        ],
-        [
-          "spacex",
-          "openai",
-          "ipos",
-          "could",
-          "push",
-          "trade",
-          "deeper",
-          "into",
-          "bubble",
-          "territory",
-          "chart",
-          "day",
-          "msn"
-        ],
-        [
-          "people",
-          "loading",
-          "their",
-          "writing",
-          "typos",
-          "prove",
-          "they",
-          "not",
-          "futurism"
-        ],
-        [
-          "pope",
-          "leo",
-          "warns",
-          "dangers",
-          "artificial",
-          "intelligence",
-          "religion",
-          "media",
-          "centre"
-        ]
-      ]
-    },
-    {
       "date": "2026-05-26",
       "topics": [
         "Using AI to write better code more slowly",
@@ -895,6 +809,84 @@
           "lens",
           "repair",
           "2024"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "topics": [
+        "Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot",
+        "Pentagon raised threat of Israeli spying on U.S. to highest level, sources say",
+        "Nvidia is proposing a beast of a CPU system for Windows PCs",
+        "I design with Claude more than Figma now",
+        "Google to pay SpaceX $920M a month for compute capacity at xAI data centers",
+        "Public Domain Image Archive"
+      ],
+      "title_hashes": [
+        "9a043a46bba32fec7224c2f13ec8b8fc8fde073a60a411da9492f2524f06c136",
+        "fb4480356c569bc847ff94af9a7adb99b3a267663808f5114d595976238505b8",
+        "ee2cc8b40091307491a3aba8579f277e6e0340e2ab0a430f95d917700c43e315",
+        "a9d101c445199f344babad3136f41b0071ada110018c07344799ede154980252",
+        "c4d56cb72ab61ebc68519310034335e63dd8920be0c3ad4c728e21bba21320c0",
+        "007ee965606cf28d224f000079501df89c638a1ef28f28f304c10fcc84429483"
+      ],
+      "topic_tokens": [
+        [
+          "meta",
+          "confirms",
+          "1000s",
+          "instagram",
+          "accounts",
+          "hacked",
+          "abusing",
+          "its",
+          "chatbot"
+        ],
+        [
+          "pentagon",
+          "raised",
+          "threat",
+          "israeli",
+          "spying",
+          "highest",
+          "level",
+          "sources",
+          "say"
+        ],
+        [
+          "nvidia",
+          "proposing",
+          "beast",
+          "cpu",
+          "system",
+          "windows",
+          "pcs"
+        ],
+        [
+          "design",
+          "claude",
+          "more",
+          "than",
+          "figma",
+          "now"
+        ],
+        [
+          "google",
+          "pay",
+          "spacex",
+          "920m",
+          "month",
+          "compute",
+          "capacity",
+          "xai",
+          "data",
+          "centers"
+        ],
+        [
+          "public",
+          "domain",
+          "image",
+          "archive"
         ]
       ]
     }
