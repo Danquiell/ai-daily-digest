@@ -889,6 +889,88 @@
           "archive"
         ]
       ]
+    },
+    {
+      "date": "2026-06-07",
+      "topics": [
+        "LLMs are eroding my software engineering career and I don't know what to do",
+        "Anthropic, please ship an official Claude Desktop for Linux",
+        "DeepSeek V4 Pro beats GPT-5.5 Pro on precision",
+        "Show HN: Lathe – Use LLMs to learn a new domain, not skip past it",
+        "The Smallest Brain You Can Build: A Perceptron in Python",
+        "Texas grid flags risks as data centers, crypto sites fail voltage tests"
+      ],
+      "title_hashes": [
+        "c6adf186b3c0e110f275f877204473bb87d6db1aaf3942b31e6ce74ccff1db97",
+        "fbe65c82f7db5adf3699bc709fed8f00b1496030a66e553e46ff381a47d57be7",
+        "ada5e3cbcf7602f027f19c28972de23e49d040f0ce7f56aa6b3506a3f91fb95d",
+        "aa45b2143ca8da59dde96975f7221a32dd4d0a2124e1ddb678b86660f3b2102f",
+        "d5885e092c88c458cf2d2d8f224fe4fb5a0085f0fa592e54fa87daddb13d4669",
+        "a95551b279b57be5b50ad86627cf997ee7967fc13ce36857522080c7b267ce50"
+      ],
+      "topic_tokens": [
+        [
+          "llms",
+          "eroding",
+          "software",
+          "engineering",
+          "career",
+          "don",
+          "know",
+          "what"
+        ],
+        [
+          "anthropic",
+          "please",
+          "ship",
+          "official",
+          "claude",
+          "desktop",
+          "linux"
+        ],
+        [
+          "deepseek",
+          "pro",
+          "beats",
+          "gpt",
+          "pro",
+          "precision"
+        ],
+        [
+          "show",
+          "lathe",
+          "use",
+          "llms",
+          "learn",
+          "new",
+          "domain",
+          "not",
+          "skip",
+          "past"
+        ],
+        [
+          "smallest",
+          "brain",
+          "you",
+          "can",
+          "build",
+          "perceptron",
+          "python"
+        ],
+        [
+          "texas",
+          "grid",
+          "flags",
+          "risks",
+          "data",
+          "centers",
+          "crypto",
+          "sites",
+          "fail",
+          "voltage",
+          "tests"
+        ]
+      ]
     }
   ]
 }
