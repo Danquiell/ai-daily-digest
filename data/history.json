@@ -1,85 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-05-26",
-      "topics": [
-        "Using AI to write better code more slowly",
-        "Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licence",
-        "Outsourcing plus local AI will soon become more economical vs. frontier labs",
-        "I'm Tired of Talking to AI",
-        "Claude Code as a Daily Driver: Claude.md, Skills, Subagents, Plugins, and MCPs",
-        "Nvidia Vera CPU Benchmarks: Olympus Cores Delivering Great Performance"
-      ],
-      "title_hashes": [
-        "50a6e250aec41f9e8fa8daf47d61d66bf5e0aea52293822d37b5a89763a436c4",
-        "d7cc88c3503c9b6502290ce151ac35449f282a645eec53323546957d0afe0bc0",
-        "4e97d2d91c816125c3e052e0e1b11d36f239d7fdd55f29d74c4762f1128bbe78",
-        "50fafb35b3633e685d898cf13e6b8291010630a503360ebd6381a9f73716ae83",
-        "d267d007fb77ffd81d7b1fd858842d6cbf0aaa96cfa9d972cd956550b36f87fe",
-        "cf0566fcc5467beec8d7ed998dc456433ce5a4ec8e50014193c7ce7acde2b269"
-      ],
-      "topic_tokens": [
-        [
-          "using",
-          "write",
-          "better",
-          "code",
-          "more",
-          "slowly"
-        ],
-        [
-          "spain",
-          "blocks",
-          "prediction",
-          "markets",
-          "polymarket",
-          "kalshi",
-          "over",
-          "lack",
-          "gambling",
-          "licence"
-        ],
-        [
-          "outsourcing",
-          "plus",
-          "local",
-          "will",
-          "soon",
-          "become",
-          "more",
-          "economical",
-          "frontier",
-          "labs"
-        ],
-        [
-          "tired",
-          "talking"
-        ],
-        [
-          "claude",
-          "code",
-          "daily",
-          "driver",
-          "claude",
-          "skills",
-          "subagents",
-          "plugins",
-          "mcps"
-        ],
-        [
-          "nvidia",
-          "vera",
-          "cpu",
-          "benchmarks",
-          "olympus",
-          "cores",
-          "delivering",
-          "great",
-          "performance"
-        ]
-      ]
-    },
-    {
       "date": "2026-05-27",
       "topics": [
         "YouTube to automatically label AI-generated videos",
@@ -969,6 +890,72 @@
           "fail",
           "voltage",
           "tests"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "topics": [
+        "Apple reveals new AI architecture built around Google Gemini models",
+        "Siri AI",
+        "AI is slowing down",
+        "xAI is looking more like a datacentre REIT than a frontier lab",
+        "Ask HN: What are tools you have made for yourself since the advent of AI?",
+        "Apple Core AI Framework"
+      ],
+      "title_hashes": [
+        "ee02deabf6a3ad5e60caea177e6493ae33fadb27277109fb648e025873637e67",
+        "62ac3a205be42434884e4209dadf8d69fb7d3a14d78fd13e273fa8c22152051e",
+        "ac3e2b1462d71c53dd51d806b4bfc25bb233040f4c188b1bf34c53fa514d6748",
+        "0240ec2ba57983efc75583c06cb29223ece6f488713cc88aee75bace1cd64102",
+        "e5c9b19a7e1c64e1ffd69231a2ce22f05a903c5a1b02e058a2a2bab9d575ed82",
+        "7e1fe0437ea36cb80fc5226e74321d8e1fc9b2830fd1ed222729d9666b71380e"
+      ],
+      "topic_tokens": [
+        [
+          "apple",
+          "reveals",
+          "new",
+          "architecture",
+          "built",
+          "around",
+          "google",
+          "gemini",
+          "models"
+        ],
+        [
+          "siri"
+        ],
+        [
+          "slowing",
+          "down"
+        ],
+        [
+          "xai",
+          "looking",
+          "more",
+          "like",
+          "datacentre",
+          "reit",
+          "than",
+          "frontier",
+          "lab"
+        ],
+        [
+          "ask",
+          "what",
+          "tools",
+          "you",
+          "have",
+          "made",
+          "yourself",
+          "since",
+          "advent"
+        ],
+        [
+          "apple",
+          "core",
+          "framework"
         ]
       ]
     }
