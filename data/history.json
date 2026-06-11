@@ -1,77 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-05-28",
-      "topics": [
-        "Claude Opus 4.8",
-        "Various LLM Smells",
-        "Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue",
-        "SF startup is testing robots in Airbnbs, and trashing them, lawsuit claims",
-        "Claude Code – Everything You Can Configure That the Docs Don't Tell You",
-        "Is AI causing a repeat of Front end's Lost Decade?"
-      ],
-      "title_hashes": [
-        "d291dc3f54f6fd06fb1285c77dd870d5bc9b0b691867396ca6a068473c684ea3",
-        "ac3452da3437b9387372f8f4871bd4a152dd51c9613b6fa39be171ec3f610b47",
-        "bfe724068ae551db763081fb6dcbd7b95abe6066ce3bbb119da402c1a0135222",
-        "043b4be4e6e218617f1af4f56902826f624a6acd471ad0a056790ef43e9ec744",
-        "0788db5566ffe3451aefa5f324ea93502302f3ec5d4c29eefa5213b5e0733613",
-        "a9296428c7b75da410a944c912b13851d1bc462d2b44c33acf53843ef914df55"
-      ],
-      "topic_tokens": [
-        [
-          "claude",
-          "opus"
-        ],
-        [
-          "various",
-          "llm",
-          "smells"
-        ],
-        [
-          "show",
-          "continue",
-          "second",
-          "game",
-          "about",
-          "agent",
-          "permission",
-          "fatigue"
-        ],
-        [
-          "startup",
-          "testing",
-          "robots",
-          "airbnbs",
-          "trashing",
-          "them",
-          "lawsuit",
-          "claims"
-        ],
-        [
-          "claude",
-          "code",
-          "everything",
-          "you",
-          "can",
-          "configure",
-          "that",
-          "docs",
-          "don",
-          "tell",
-          "you"
-        ],
-        [
-          "causing",
-          "repeat",
-          "front",
-          "end",
-          "lost",
-          "decade"
-        ]
-      ]
-    },
-    {
       "date": "2026-05-29",
       "topics": [
         "Notes from the Mistral AI Now Summit",
@@ -946,6 +875,83 @@
           "kolmogorov",
           "arnold",
           "networks"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-10",
+      "topics": [
+        "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+        "AI agent runs amok in Fedora and elsewhere",
+        "Pokémon Go Scans Trained the Navigation Tech for Military Drones",
+        "Anthropic requires 30 day data retention for Fable and Mythos",
+        "All 9,300 Japanese train station, animated by the year it opened (1872–2026)",
+        "Apache Burr: Build reliable AI agents and applications"
+      ],
+      "title_hashes": [
+        "94fd90a2536e67f2164a2f7fc343901e744440985861f202c19ec22269d5503b",
+        "e189188733e5ba3b28ab15d4ce88cc3e3011891f1c2ff3636127783f0192a207",
+        "4ede32c7d5dacdbb9a494023c238573adc2ad67433d38773459a5ac2b8eac025",
+        "0ad0a6f8375587413751e6979e761f7910e549a5c7d8d2a51ce4a1c8d97b9541",
+        "35c7f2567367eec79cdd29e49657efffcd9d1085f1d9c3f2c052d948c7a6eb6c",
+        "4d04cf18461439919b0d3544c3b3f5d905ceb0bc0dbb122d87058c4ea7df3fda"
+      ],
+      "topic_tokens": [
+        [
+          "cybersecurity",
+          "researchers",
+          "aren",
+          "happy",
+          "about",
+          "guardrails",
+          "anthropic",
+          "fable"
+        ],
+        [
+          "agent",
+          "runs",
+          "amok",
+          "fedora",
+          "elsewhere"
+        ],
+        [
+          "pok",
+          "mon",
+          "scans",
+          "trained",
+          "navigation",
+          "tech",
+          "military",
+          "drones"
+        ],
+        [
+          "anthropic",
+          "requires",
+          "day",
+          "data",
+          "retention",
+          "fable",
+          "mythos"
+        ],
+        [
+          "all",
+          "300",
+          "japanese",
+          "train",
+          "station",
+          "animated",
+          "year",
+          "opened",
+          "1872",
+          "2026"
+        ],
+        [
+          "apache",
+          "burr",
+          "build",
+          "reliable",
+          "agents",
+          "applications"
         ]
       ]
     }
