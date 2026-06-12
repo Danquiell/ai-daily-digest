@@ -1,80 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-05-29",
-      "topics": [
-        "Notes from the Mistral AI Now Summit",
-        "Is AI causing a repeat of frontend’s lost decade?",
-        "Liquid AI reveals 8B-A1B MoE trained on 38T",
-        "Real-time LLM Inference on Standard GPUs: 3k tokens/s per request",
-        "Show HN: Tiny-vLLM – high performance LLM inference engine in C++ and CUDA",
-        "Shift will clean homes for free to train future robots"
-      ],
-      "title_hashes": [
-        "d4d949378d45f81d24db58d4faa6818c7abd0b43c374c457e882e75ff0491304",
-        "9c3e93df7abd84a1395275e03f604c46dcde2f77dfcbe84590d399929d45fc9b",
-        "964f3278049d1b2f1937431fe08c17ed17f182b694b1a18ef5016201db992efc",
-        "38f6129dccfa29e55fb551aa63b3428dae7ec7e2dbce1c84e7865150bd9884d1",
-        "a88c4860037514d5017cb9d7e173169272bed16f85fc3f392284c12f2980402a",
-        "eb2f84d1516988abe6883cc3a8b77f3eda5ad892bfe9a32d4ab67c1bc8fd5edc"
-      ],
-      "topic_tokens": [
-        [
-          "notes",
-          "mistral",
-          "now",
-          "summit"
-        ],
-        [
-          "causing",
-          "repeat",
-          "frontend",
-          "lost",
-          "decade"
-        ],
-        [
-          "liquid",
-          "reveals",
-          "a1b",
-          "moe",
-          "trained",
-          "38t"
-        ],
-        [
-          "real",
-          "time",
-          "llm",
-          "inference",
-          "standard",
-          "gpus",
-          "tokens",
-          "per",
-          "request"
-        ],
-        [
-          "show",
-          "tiny",
-          "vllm",
-          "high",
-          "performance",
-          "llm",
-          "inference",
-          "engine",
-          "cuda"
-        ],
-        [
-          "shift",
-          "will",
-          "clean",
-          "homes",
-          "free",
-          "train",
-          "future",
-          "robots"
-        ]
-      ]
-    },
-    {
       "date": "2026-05-30",
       "topics": [
         "Domain expertise has always been the real moat",
@@ -952,6 +878,72 @@
           "reliable",
           "agents",
           "applications"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-11",
+      "topics": [
+        "AI agent bankrupted their operator while trying to scan DN42",
+        "Claude Fable is relentlessly proactive",
+        "Anthropic apologizes for invisible Claude Fable guardrails",
+        "Claude Fable 5: mid-tier results on coding tasks",
+        "A jacket that harvests drinking water from the air",
+        "The Future of Email"
+      ],
+      "title_hashes": [
+        "661eae2c2f0c42692fb4101e1815188e87b0791cc46f8c44403eb6b96a35a572",
+        "0a0173c28397c9a42b5e9a9eada5217da9708f70a6af85ea7116a21486f8125a",
+        "fa9a8db24ed468c222997dfc1623aea118cc3205bbb1358f359e020f70cdd2b3",
+        "b746c583eaef42ba65754797465037583d9000abeb35482a185f9804e20a57a9",
+        "9791c14e60f2883a22988985322ea3dda191b59562a2d54174bc49eee6bfe0e5",
+        "b06de440476cd6c0a4990842f9aa7a6cd85fecbc1f65ae1b04e48a7db024d07e"
+      ],
+      "topic_tokens": [
+        [
+          "agent",
+          "bankrupted",
+          "their",
+          "operator",
+          "while",
+          "trying",
+          "scan",
+          "dn42"
+        ],
+        [
+          "claude",
+          "fable",
+          "relentlessly",
+          "proactive"
+        ],
+        [
+          "anthropic",
+          "apologizes",
+          "invisible",
+          "claude",
+          "fable",
+          "guardrails"
+        ],
+        [
+          "claude",
+          "fable",
+          "mid",
+          "tier",
+          "results",
+          "coding",
+          "tasks"
+        ],
+        [
+          "jacket",
+          "that",
+          "harvests",
+          "drinking",
+          "water",
+          "air"
+        ],
+        [
+          "future",
+          "email"
         ]
       ]
     }
