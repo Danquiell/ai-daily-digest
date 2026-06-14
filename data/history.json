@@ -1,80 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-05-31",
-      "topics": [
-        "1-Bit Bonsai Image 4B Image Generation for Local Devices",
-        "United Airlines 767 returns to Newark after Bluetooth name sparks alert",
-        "ChatGPT for Google Sheets exfiltrates workbooks",
-        "When AI Crosses the Line: The Matplotlib Incident",
-        "No Raise, No Promotion: 1 in 4 White-Collar Workers Are Stalling Out",
-        "The Pirate Bay Remains Resilient, 20 Years After the Raid"
-      ],
-      "title_hashes": [
-        "c4ff8d69ce238a63da057b560aada3521f53df295a944604b00083937d1e3410",
-        "6f3279ceaa4ccbd5dc66c6f11246a54a0d10d3d18ee5beb788478cbc2854e76f",
-        "e2c50e0bc906e8dcc82b3fe6261c772a1cba2739ce34b41eb9d35d342e96ae09",
-        "942d8f165338ee2232955d5ddcc90714e264af721e2dab8d41cd01b29c18df8e",
-        "e48b4fa68f80335959cfa66b7f5afff67e9a76385cc55c026788f1fc70daf356",
-        "2d355859253bd22a58e80415260fb0ff7f0a6c0880928f9f79f18db962ef0e15"
-      ],
-      "topic_tokens": [
-        [
-          "bit",
-          "bonsai",
-          "image",
-          "image",
-          "generation",
-          "local",
-          "devices"
-        ],
-        [
-          "united",
-          "airlines",
-          "767",
-          "returns",
-          "newark",
-          "after",
-          "bluetooth",
-          "name",
-          "sparks",
-          "alert"
-        ],
-        [
-          "chatgpt",
-          "google",
-          "sheets",
-          "exfiltrates",
-          "workbooks"
-        ],
-        [
-          "when",
-          "crosses",
-          "line",
-          "matplotlib",
-          "incident"
-        ],
-        [
-          "raise",
-          "promotion",
-          "white",
-          "collar",
-          "workers",
-          "stalling",
-          "out"
-        ],
-        [
-          "pirate",
-          "bay",
-          "remains",
-          "resilient",
-          "years",
-          "after",
-          "raid"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-01",
       "topics": [
         "Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",
@@ -937,6 +863,80 @@
           "most",
           "dangerous",
           "model"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-13",
+      "topics": [
+        "Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models",
+        "Police officer investigated for using AI to 'create evidence' in multiple cases",
+        "AI coding at home without going broke",
+        "AI OSS tool repo goes archived over night after raising $7.3M Seed",
+        "Show HN: Paca – Lightweight Jira alternative for human-AI collaboration",
+        "Making Claude a Chemist"
+      ],
+      "title_hashes": [
+        "50354680a8789309486f4862cfbfb3b1e2dcd89f7fb1885e1f78250221db21e7",
+        "a2ccbfc47a80068a9e69ded480c30670102801bc046a40cf67820f5c332f5dda",
+        "c46a272a9e62d73615d0eb9525a3d5262e5e75194c3c567e125c97951d2304a5",
+        "c7d82630221ed37e4611ea383b5774562e27bd3c802a669cbc86ac84348c4be7",
+        "772b4be3545cbf794680a5ae2f58250938cde5aa4675d62343fcaa93c3926d9c",
+        "625355c4ee255558d9257415a0b8e6b3ff1717b0d2938c4d35cf2473ad4345ba"
+      ],
+      "topic_tokens": [
+        [
+          "amazon",
+          "ceo",
+          "talks",
+          "officials",
+          "triggered",
+          "crackdown",
+          "anthropic",
+          "models"
+        ],
+        [
+          "police",
+          "officer",
+          "investigated",
+          "using",
+          "create",
+          "evidence",
+          "multiple",
+          "cases"
+        ],
+        [
+          "coding",
+          "home",
+          "without",
+          "going",
+          "broke"
+        ],
+        [
+          "oss",
+          "tool",
+          "repo",
+          "goes",
+          "archived",
+          "over",
+          "night",
+          "after",
+          "raising",
+          "seed"
+        ],
+        [
+          "show",
+          "paca",
+          "lightweight",
+          "jira",
+          "alternative",
+          "human",
+          "collaboration"
+        ],
+        [
+          "making",
+          "claude",
+          "chemist"
         ]
       ]
     }
