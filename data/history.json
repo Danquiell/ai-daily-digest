@@ -1,74 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-01",
-      "topics": [
-        "Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",
-        "AI Agent Guidelines for CS336 at Stanford",
-        "OpenAI frontier models and Codex are now available on AWS",
-        "Chipotlai Max",
-        "Florida sues OpenAI and Sam Altman over AI risks",
-        "Alphabet announces $80B equity capital raise to expand AI infra and compute"
-      ],
-      "title_hashes": [
-        "f2e659f739709f4a1aef8251cf62e09cbbfba81c0b00951a29bf57050082c52f",
-        "a123d9236efb31f5248b75681b735d234ba42ed242fdfffbbaf0f90dd538709d",
-        "4cef53de13322269312516756373068d96b114f6cd6d52e475eed8d072c4f07b",
-        "02dc89cc140c79b787631e5e6ee27ec5782ea1af1194d16c53267459423ee1d5",
-        "6885017ce18044d48ee3f91f52e43e9f45fd98ecaae7fe70252f819cc712c684",
-        "a917d6a62560fa429ef5a66da70c80ff289ad3949e1dd801b5a221ce84d93a04"
-      ],
-      "topic_tokens": [
-        [
-          "can",
-          "stockmarket",
-          "swallow",
-          "anthropic",
-          "spacex",
-          "openai"
-        ],
-        [
-          "agent",
-          "guidelines",
-          "cs336",
-          "stanford"
-        ],
-        [
-          "openai",
-          "frontier",
-          "models",
-          "codex",
-          "now",
-          "available",
-          "aws"
-        ],
-        [
-          "chipotlai",
-          "max"
-        ],
-        [
-          "florida",
-          "sues",
-          "openai",
-          "sam",
-          "altman",
-          "over",
-          "risks"
-        ],
-        [
-          "alphabet",
-          "announces",
-          "80b",
-          "equity",
-          "capital",
-          "raise",
-          "expand",
-          "infra",
-          "compute"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-02",
       "topics": [
         "Gmail thinks I'm stupid, so I left",
@@ -937,6 +869,69 @@
           "making",
           "claude",
           "chemist"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-14",
+      "topics": [
+        "Not everyone is using AI for everything",
+        "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
+        "CrankGPT",
+        "Anthropic's Safety Superpower",
+        "Show HN: I wrote a C++ ray tracer from scratch without AI",
+        "Show HN: Can Europe train a frontier AI model on the compute it owns?"
+      ],
+      "title_hashes": [
+        "d39a541edc4a042a21258d679eeedf9ba73ced4e6cb5d9c673136f3c1f491170",
+        "ac911b877fb91effadd7188ca6a855d86a6b9bfd80b1db7aac8cb1eca62c05f8",
+        "4693d8cc89d4336f5fbba55fc43c5317e02fe8e06a1227c579307a9f048d6b56",
+        "e374d3472727b7ba8d585884de244fb35b610cc1209a3d498339e698a89c72e5",
+        "dde8f466dd3fee7a028ef08531884c9e1fcf970ae5ddf221a4d54d36ba3d1e11",
+        "ce15541ea432c63932ba8f3300a48015e31cc6b4fa13ddf14eb96a210fa738a8"
+      ],
+      "topic_tokens": [
+        [
+          "not",
+          "everyone",
+          "using",
+          "everything"
+        ],
+        [
+          "rio",
+          "janeiro",
+          "homegrown",
+          "llm",
+          "appears",
+          "merge",
+          "existing",
+          "model"
+        ],
+        [
+          "crankgpt"
+        ],
+        [
+          "anthropic",
+          "safety",
+          "superpower"
+        ],
+        [
+          "show",
+          "wrote",
+          "ray",
+          "tracer",
+          "scratch",
+          "without"
+        ],
+        [
+          "show",
+          "can",
+          "europe",
+          "train",
+          "frontier",
+          "model",
+          "compute",
+          "owns"
         ]
       ]
     }
