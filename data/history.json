@@ -1,72 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-02",
-      "topics": [
-        "Gmail thinks I'm stupid, so I left",
-        "MAI-Code-1-Flash",
-        "Use your Nvidia GPU's VRAM as swap space on Linux",
-        "AI outperforms law professors in Stanford Law study",
-        "Open Repair Data Standard",
-        "U of T researchers demonstrate AI worm could target any online device"
-      ],
-      "title_hashes": [
-        "f77eb9338835251daca36c82ffb5f0adc2b56714cd6ab3b11027ff3b8dc98105",
-        "10e74558a890b18ff9e483020399c282005595a1260c68deae5cc9c4fdbaf26a",
-        "492174420c4748b4a09225ec67411f38f0553185cd6597f38bc557a3583fb88b",
-        "234c3e84b7e25b2e7ed5d384af98072ecbf1e3b9bb660a21275267c5608d539f",
-        "e32bdb511c011bdad542d0df41af0c3d80fe9e65f2db974fba77852c22e12a52",
-        "82023a343cd66732e1b1d61c927f33efe9964e339ee7b39064397e154aaef36b"
-      ],
-      "topic_tokens": [
-        [
-          "gmail",
-          "thinks",
-          "stupid",
-          "left"
-        ],
-        [
-          "mai",
-          "code",
-          "flash"
-        ],
-        [
-          "use",
-          "your",
-          "nvidia",
-          "gpu",
-          "vram",
-          "swap",
-          "space",
-          "linux"
-        ],
-        [
-          "outperforms",
-          "law",
-          "professors",
-          "stanford",
-          "law",
-          "study"
-        ],
-        [
-          "open",
-          "repair",
-          "data",
-          "standard"
-        ],
-        [
-          "researchers",
-          "demonstrate",
-          "worm",
-          "could",
-          "target",
-          "any",
-          "online",
-          "device"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-03",
       "topics": [
         "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
@@ -932,6 +866,87 @@
           "model",
           "compute",
           "owns"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-15",
+      "topics": [
+        "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
+        "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
+        "Feds freaked over Fable 5 after simple 'fix this code' prompt, not jailbreak",
+        "My Homelab AI Dev Platform",
+        "SpaceX to buy Cursor AI coding agent operator Anysphere for $60B",
+        "Why I email complete strangers"
+      ],
+      "title_hashes": [
+        "83b13b1394fe187be3dcedbf6a167d64b56b609065823d93f69c3b478be85962",
+        "cd78348a8edd5e728d47e60bc7231b86a690336bf38917978a0bb690fb3db0a2",
+        "f55aad6cc30be69d84ff5e0aaddcd2c06e04301d3da01ece39d8fdc50679d2c6",
+        "cb216f78f7d7dfd236c99ea67ead19f7ffc9a92e5f279218e2634875389970a4",
+        "6dd936cf650a8875a91fe9518b2151706c09b4f0ba836469b9cbfc627d8a6f88",
+        "8e7bf44c3bd5f42a2ff3ea255e3b7d9a8c038df8f06e1ba4efda8a3a2fedbff5"
+      ],
+      "topic_tokens": [
+        [
+          "ask",
+          "has",
+          "anyone",
+          "replaced",
+          "claude",
+          "gpt",
+          "local",
+          "model",
+          "daily",
+          "coding"
+        ],
+        [
+          "tinywind",
+          "pixel",
+          "pirate",
+          "sailing",
+          "game",
+          "real",
+          "wind",
+          "physics",
+          "380k",
+          "kms",
+          "sailed"
+        ],
+        [
+          "feds",
+          "freaked",
+          "over",
+          "fable",
+          "after",
+          "simple",
+          "fix",
+          "this",
+          "code",
+          "prompt",
+          "not",
+          "jailbreak"
+        ],
+        [
+          "homelab",
+          "dev",
+          "platform"
+        ],
+        [
+          "spacex",
+          "buy",
+          "cursor",
+          "coding",
+          "agent",
+          "operator",
+          "anysphere",
+          "60b"
+        ],
+        [
+          "why",
+          "email",
+          "complete",
+          "strangers"
         ]
       ]
     }
