@@ -1,85 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-03",
-      "topics": [
-        "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
-        "Artificial intelligence is not conscious – Ted Chiang",
-        "Failing grades soar with AI usage, dwindling math skills in Berkeley CS classes",
-        "I built a vulnerable app and spent $1,500 seeing if LLMs could hack it",
-        "Mathematicians issue warning as AI rapidly gains ground",
-        "UK media fails to disclose defence sector links in nearly 60% of cases"
-      ],
-      "title_hashes": [
-        "ea1c96f2623cb4be965ad5fa9668bbb153ebd26ae416d33f190453759a59e867",
-        "9f21c01d51c104bf6de274af7faa4b766a3f91c76686d712d876e8d60aec7a8d",
-        "91e83b0cd55a655498021eb32d1ace531bc0a7c92464ae2e8da0bb915ce29b49",
-        "04a54a527d0e921d22639b9dbd6d18eee5d0243f5bc402fbcbeb804d15caa51a",
-        "e38ad969386a522a641c4b884f3db976c3bd9ac2f683f4a2390491ad74dea9aa",
-        "59cd97ceaa3c85e54a3a896c3ffd5e966b761a42d7a2f2a4dff49bc0bd8a6ea1"
-      ],
-      "topic_tokens": [
-        [
-          "uber",
-          "500",
-          "month",
-          "limit",
-          "useful",
-          "signal",
-          "tool",
-          "pricing"
-        ],
-        [
-          "artificial",
-          "intelligence",
-          "not",
-          "conscious",
-          "ted",
-          "chiang"
-        ],
-        [
-          "failing",
-          "grades",
-          "soar",
-          "usage",
-          "dwindling",
-          "math",
-          "skills",
-          "berkeley",
-          "classes"
-        ],
-        [
-          "built",
-          "vulnerable",
-          "app",
-          "spent",
-          "500",
-          "seeing",
-          "llms",
-          "could",
-          "hack"
-        ],
-        [
-          "mathematicians",
-          "issue",
-          "warning",
-          "rapidly",
-          "gains",
-          "ground"
-        ],
-        [
-          "media",
-          "fails",
-          "disclose",
-          "defence",
-          "sector",
-          "links",
-          "nearly",
-          "cases"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-04",
       "topics": [
         "When AI Builds Itself: Our progress toward recursive self-improvement",
@@ -947,6 +868,80 @@
           "email",
           "complete",
           "strangers"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-16",
+      "topics": [
+        "I admire Fabrice Bellard. He is almost certainly a better overall programmer",
+        "Has AI already killed self-help nonfiction books?",
+        "Stop Killing Games fails to secure EU law despite 1.3M signatures",
+        "Humiliating IIS servers for fun and jail time",
+        "GPT‑NL: a sovereign language model for the Netherlands",
+        "Sixty percent of US consumers say 'AI' in brand messaging is a turnoff"
+      ],
+      "title_hashes": [
+        "57a563de497c8680263e06ac51b72457eec3e9f0b1fe414ccbc6b077c93bac25",
+        "eb14f9f27ec9a6fa2f9f22e50f3f5c3eba04c17d23f982dc723286e37150cca9",
+        "4fb8ef6917f18f2d2f54766cfd3e2e41114ef455a8781df27b0ba3a1069752ab",
+        "1e35aa48fef7c74188f2e2cf6c48705aca1114af795fa3bf78021346387c750a",
+        "b3c544d0414d03afbb9d1a56478beb54ac55668e191add89bc5eff4e9afbd35d",
+        "05860c898c07eafc26e175850ddf45d268646c908fb52e0786226dead42c7818"
+      ],
+      "topic_tokens": [
+        [
+          "admire",
+          "fabrice",
+          "bellard",
+          "almost",
+          "certainly",
+          "better",
+          "overall",
+          "programmer"
+        ],
+        [
+          "has",
+          "already",
+          "killed",
+          "self",
+          "help",
+          "nonfiction",
+          "books"
+        ],
+        [
+          "stop",
+          "killing",
+          "games",
+          "fails",
+          "secure",
+          "law",
+          "despite",
+          "signatures"
+        ],
+        [
+          "humiliating",
+          "iis",
+          "servers",
+          "fun",
+          "jail",
+          "time"
+        ],
+        [
+          "gpt",
+          "sovereign",
+          "language",
+          "model",
+          "netherlands"
+        ],
+        [
+          "sixty",
+          "percent",
+          "consumers",
+          "say",
+          "brand",
+          "messaging",
+          "turnoff"
         ]
       ]
     }
