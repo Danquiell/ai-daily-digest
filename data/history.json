@@ -1,85 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-04",
-      "topics": [
-        "When AI Builds Itself: Our progress toward recursive self-improvement",
-        "Anthropic's open-source framework for AI-powered vulnerability discovery",
-        "Open Code Review – An AI-powered code review CLI tool",
-        "Do transformers need three projections? Systematic study of QKV variants",
-        "Fine-tuning an LLM to write docs like it's 1995",
-        "KVarN: Native vLLM backend for KV-cache quantization by Huawei"
-      ],
-      "title_hashes": [
-        "c1b2897a2ba579a93f8d935864728f40612897f02b2bd4444e5097f540e7a868",
-        "b19bf33b9196f74ef42bedca99e0c76e082ed23c209d53ebd81b8948b81adbcb",
-        "d2453155292323072d79d1f813a2142ad212d5cfe590d65d33a8e8d2817d8bce",
-        "fc3ed533482ab3125a26319c49b6d9f884fd445c9e1970908a4ce698ce40e528",
-        "efef2d28164422a3960b8a754710e5b719665ec9e672fd645ceac54768ea3d7a",
-        "773e44e707e9c972085d4a020564990cb671a3e077214a2147728a57de9dac74"
-      ],
-      "topic_tokens": [
-        [
-          "when",
-          "builds",
-          "itself",
-          "our",
-          "progress",
-          "toward",
-          "recursive",
-          "self",
-          "improvement"
-        ],
-        [
-          "anthropic",
-          "open",
-          "source",
-          "framework",
-          "powered",
-          "vulnerability",
-          "discovery"
-        ],
-        [
-          "open",
-          "code",
-          "review",
-          "powered",
-          "code",
-          "review",
-          "cli",
-          "tool"
-        ],
-        [
-          "transformers",
-          "need",
-          "three",
-          "projections",
-          "systematic",
-          "study",
-          "qkv",
-          "variants"
-        ],
-        [
-          "fine",
-          "tuning",
-          "llm",
-          "write",
-          "docs",
-          "like",
-          "1995"
-        ],
-        [
-          "kvarn",
-          "native",
-          "vllm",
-          "backend",
-          "cache",
-          "quantization",
-          "huawei"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-05",
       "topics": [
         "Did Claude increase bugs in rsync?",
@@ -942,6 +863,74 @@
           "brand",
           "messaging",
           "turnoff"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-17",
+      "topics": [
+        "Midjourney Medical",
+        "AI demands more engineering discipline. Not less",
+        "The founder's playbook: Building an AI-native startup",
+        "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+        "The Australian Government to Require SMS/MMS Sender ID Registraion",
+        "ChatGPT's image generator can be manipulated to produce violent, sexual content"
+      ],
+      "title_hashes": [
+        "430fdf7b3fe6925c6f0155aabed745fffbb124bec4d59269636f16283276dbed",
+        "a0639e8cd363a53d53f30a119844034ee67110844d0ab679993c4987f535d8a3",
+        "72cc7a3526128c4d6aa29f0b41f72eb050f51efee2e21ecca06f3d9a85e4508b",
+        "48ccb6e50b016740832b41db9fc7612acad2531601177ee8ba4e2792a438f989",
+        "0aeb778207e93c29717d9b0e0f3b7f8fdc881b6c15ada228553f4493cec0de9b",
+        "6a1d93e4fe1504c676471cbc7620e7c9b689e97e01c79ec7a6697da92f37ad91"
+      ],
+      "topic_tokens": [
+        [
+          "midjourney",
+          "medical"
+        ],
+        [
+          "demands",
+          "more",
+          "engineering",
+          "discipline",
+          "not",
+          "less"
+        ],
+        [
+          "founder",
+          "playbook",
+          "building",
+          "native",
+          "startup"
+        ],
+        [
+          "launch",
+          "adam",
+          "w25",
+          "open",
+          "source",
+          "cad"
+        ],
+        [
+          "australian",
+          "government",
+          "require",
+          "sms",
+          "mms",
+          "sender",
+          "registraion"
+        ],
+        [
+          "chatgpt",
+          "image",
+          "generator",
+          "can",
+          "manipulated",
+          "produce",
+          "violent",
+          "sexual",
+          "content"
         ]
       ]
     }
