@@ -1,73 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-05",
-      "topics": [
-        "Did Claude increase bugs in rsync?",
-        "Astronauts told to return to ISS after sheltering over air leak repairs",
-        "Ask HN: What was your \"oh shit\" moment with GenAI?",
-        "How LLMs work",
-        "Ask HN: Why is the HN crowd so anti-AI?",
-        "The intracies of modern camera lens repair (2024)"
-      ],
-      "title_hashes": [
-        "1c19fcfa66f8e843a80b4cba29bd2fda3d157084226b9e9bf710dd7fc8af6ab3",
-        "7c82bbec087eba64c85dac40c2bec75163671e64ed04ce1ce7186e8380c56b2a",
-        "8ebdc8903447885c1f050b7cf986f0915150902c859c21063af82426a4c6f93b",
-        "4c3b1c9526db422d2f8900b5da713726a763674be24eec43ecadeb073e2542af",
-        "ad37a6d141290dd6347299149995106a8808442adb62264268c9fd3673eb0ca9",
-        "3343bd0fa3eed97c3f32a8731fd9f33e12b640177bbd1ea8989b156da0f519b5"
-      ],
-      "topic_tokens": [
-        [
-          "did",
-          "claude",
-          "increase",
-          "bugs",
-          "rsync"
-        ],
-        [
-          "astronauts",
-          "told",
-          "return",
-          "iss",
-          "after",
-          "sheltering",
-          "over",
-          "air",
-          "leak",
-          "repairs"
-        ],
-        [
-          "ask",
-          "what",
-          "your",
-          "shit",
-          "moment",
-          "genai"
-        ],
-        [
-          "how",
-          "llms",
-          "work"
-        ],
-        [
-          "ask",
-          "why",
-          "crowd",
-          "anti"
-        ],
-        [
-          "intracies",
-          "modern",
-          "camera",
-          "lens",
-          "repair",
-          "2024"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-06",
       "topics": [
         "Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot",
@@ -931,6 +864,76 @@
           "violent",
           "sexual",
           "content"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-18",
+      "topics": [
+        "Emacs 31 is around the corner: The changes I'm daily driving",
+        "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28",
+        "Noam Shazeer Joins OpenAI",
+        "The AirPods Effect",
+        "Show HN: Gerrymandle - Daily puzzle game where you redraw electoral districts",
+        "The Korean telecom giant at the center of Anthropic's Mythos controversy"
+      ],
+      "title_hashes": [
+        "50ef413b87357e448fd4fafea4e807c3359909ba0d85659c0ea6c774dc1a6730",
+        "dfe4bcb6e50d63282f31c5ddc52fd106545c4ea4ac96706bbf52146ce21d6282",
+        "d16650a611102dc75b3420a6fa13e41daacb5f6ca9a31d6ab0d18a112870b4b6",
+        "a48ba0b8f094b881314b8456396be8ff235b83f39e26170a0058d4c86945510a",
+        "f64fe01f7833dd0c244a1df00a684178d0a2f732f8e4119a947d7fba691e7d16",
+        "7a0bbd4905589faa4ff19eb5531b08808a90c3ddfa62720d8d4225ba5d548524"
+      ],
+      "topic_tokens": [
+        [
+          "emacs",
+          "around",
+          "corner",
+          "changes",
+          "daily",
+          "driving"
+        ],
+        [
+          "project",
+          "valhalla",
+          "explained",
+          "how",
+          "decade",
+          "work",
+          "arrives",
+          "jdk"
+        ],
+        [
+          "noam",
+          "shazeer",
+          "joins",
+          "openai"
+        ],
+        [
+          "airpods",
+          "effect"
+        ],
+        [
+          "show",
+          "gerrymandle",
+          "daily",
+          "puzzle",
+          "game",
+          "where",
+          "you",
+          "redraw",
+          "electoral",
+          "districts"
+        ],
+        [
+          "korean",
+          "telecom",
+          "giant",
+          "center",
+          "anthropic",
+          "mythos",
+          "controversy"
         ]
       ]
     }
