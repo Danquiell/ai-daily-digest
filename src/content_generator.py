@@ -18,6 +18,8 @@ class GeneratedContent:
     linkedin_en: str
     main_url: str
     sources: list[str]
+    image_teaser: str = ""
+    image_query: str = ""
 
 
 _OPENING_STYLES = """\
@@ -68,6 +70,10 @@ Formate a resposta assim — use EXATAMENTE estes separadores:
 [post em português]
 ---EN---
 [post em inglês]
+---TEASER---
+[chamada curtíssima em português, MÁXIMO 6 palavras, que desperta curiosidade e dá vontade de abrir o post. Vai sobreposta numa foto. Sem ponto final, sem aspas. Ex: A IA que programa sozinha chegou]
+---IMGQUERY---
+[2 a 4 palavras EM INGLÊS descrevendo uma CENA VISUAL concreta e fotografável ligada ao tema principal, para buscar uma foto de banco de imagens. NÃO use nomes de marcas/empresas nem "logo". Prefira conceitos visuais reais. Ex: humanoid robot closeup / data center servers / glowing circuit board / developer coding laptop]
 ---END---
 
 Versão PT: sem hashtags.
@@ -154,18 +160,32 @@ def generate_content(
     if dry_run:
         linkedin_raw = (
             "---PT---\n🇧🇷 [DRY RUN — post PT de exemplo]\n---EN---\n"
-            "🇺🇸 [DRY RUN — EN post example]\n#AI #Tech\n---END---"
+            "🇺🇸 [DRY RUN — EN post example]\n#AI #Tech\n"
+            "---TEASER---\nA IA que muda tudo chegou\n"
+            "---IMGQUERY---\nhumanoid robot closeup\n---END---"
         )
     else:
         linkedin_raw = _call_claude(_LINKEDIN_SYSTEM, linkedin_prompt)
 
     linkedin_pt = _extract_block(linkedin_raw, "---PT---", "---EN---")
-    linkedin_en = _extract_block(linkedin_raw, "---EN---", "---END---")
+    linkedin_en = _extract_block(linkedin_raw, "---EN---", "---TEASER---")
+    image_teaser = _extract_block(linkedin_raw, "---TEASER---", "---IMGQUERY---")
+    image_query = _extract_block(linkedin_raw, "---IMGQUERY---", "---END---")
+
+    # Backward-compatible parse if the model skipped the new EN/END boundary.
+    if not linkedin_en:
+        linkedin_en = _extract_block(linkedin_raw, "---EN---", "---END---")
 
     if not linkedin_pt or not linkedin_en:
         parts = linkedin_raw.split("---")
         linkedin_pt = parts[0].strip() if parts else linkedin_raw
         linkedin_en = parts[-1].strip() if len(parts) > 1 else linkedin_raw
+
+    # Sensible fallbacks so the image step never breaks.
+    if not image_teaser:
+        image_teaser = main_story.get("title", "")[:60]
+    if not image_query:
+        image_query = "artificial intelligence technology"
 
     sources = list({s["source"] for s in stories})
     main_url = main_story.get("url", "")
@@ -175,6 +195,8 @@ def generate_content(
         linkedin_en=linkedin_en,
         main_url=main_url,
         sources=sources,
+        image_teaser=image_teaser,
+        image_query=image_query,
     )
 
     if dry_run:
