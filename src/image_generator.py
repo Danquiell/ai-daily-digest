@@ -168,14 +168,15 @@ def _readability_overlay(accent: tuple) -> Image.Image:
     overlay = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))
     px = overlay.load()
     top_dark_until = 230
-    bottom_start = int(HEIGHT * 0.40)
+    bottom_start = int(HEIGHT * 0.36)
     for y in range(HEIGHT):
         a = 0
         if y < top_dark_until:
             a = int(150 * (1 - y / top_dark_until))
         if y >= bottom_start:
+            # Start at alpha 0 (no visible seam) and ramp smoothly to the bottom.
             t = (y - bottom_start) / (HEIGHT - bottom_start)
-            a = max(a, int(20 + 215 * (t ** 1.3)))
+            a = max(a, int(238 * (t ** 1.05)))
         if a:
             for x in range(WIDTH):
                 px[x, y] = (4, 6, 14, a)
@@ -189,6 +190,7 @@ def _generate_photo_card(
     username: str,
     today: date,
     output_filename: str,
+    subtitle: str = "",
 ) -> Path | None:
     photo = _fetch_pexels_photo(image_query, today)
     if photo is None:
@@ -212,28 +214,47 @@ def _generate_photo_card(
     dw = _text_w(draw, date_str, font_date)
     _draw_text_shadow(draw, (WIDTH - 60 - dw, 86), date_str, font_date, TEXT_GRAY, offset=2)
 
-    # ── Bottom teaser (the hook) ───────────────────────────────────
+    # ── Bottom teaser (the hook) + subtitle (the concrete fact) ────
     teaser = (teaser or "").strip().strip('"').strip()
     if not teaser:
         teaser = "Novidades de IA que você precisa ver"
+    subtitle = (subtitle or "").strip().strip('"').strip()
 
-    font_teaser = _load_font(72, bold=True)
-    wrapped = textwrap.fill(teaser, width=20).split("\n")[:3]
-    line_gap = 14
-    line_hs = [_text_h(draw, ln, font_teaser) for ln in wrapped]
-    block_h = sum(line_hs) + line_gap * (len(wrapped) - 1)
+    font_teaser = _load_font(58, bold=True)
+    teaser_lines = textwrap.fill(teaser, width=24).split("\n")[:3]
+    teaser_gap = 12
+    teaser_hs = [_text_h(draw, ln, font_teaser) for ln in teaser_lines]
+    teaser_h = sum(teaser_hs) + teaser_gap * (len(teaser_lines) - 1)
 
-    username_y = HEIGHT - 88
-    kicker_gap = 34
-    start_y = username_y - 40 - block_h
+    font_sub = _load_font(31)
+    sub_lines = textwrap.fill(subtitle, width=46).split("\n")[:2] if subtitle else []
+    sub_gap = 8
+    sub_hs = [_text_h(draw, ln, font_sub) for ln in sub_lines]
+    sub_h = (sum(sub_hs) + sub_gap * (len(sub_lines) - 1)) if sub_lines else 0
+    teaser_sub_gap = 22 if sub_lines else 0
+
+    username_y = HEIGHT - 84
+    kicker_h = 7
+    kicker_gap = 24
+
+    # Lay the whole block out so its bottom sits just above the footer.
+    block_bottom = username_y - 30
+    block_top = block_bottom - (sub_h + teaser_sub_gap + teaser_h)
 
     # Accent kicker bar above the teaser
-    draw.rectangle([(60, start_y - kicker_gap), (60 + 80, start_y - kicker_gap + 7)], fill=accent)
+    draw.rectangle(
+        [(60, block_top - kicker_gap - kicker_h), (60 + 80, block_top - kicker_gap)],
+        fill=accent,
+    )
 
-    y = start_y
-    for ln, lh in zip(wrapped, line_hs):
+    y = block_top
+    for ln, lh in zip(teaser_lines, teaser_hs):
         _draw_text_shadow(draw, (60, y), ln, font_teaser, TEXT_WHITE, offset=3)
-        y += lh + line_gap
+        y += lh + teaser_gap
+    y += teaser_sub_gap - teaser_gap
+    for ln, lh in zip(sub_lines, sub_hs):
+        _draw_text_shadow(draw, (60, y), ln, font_sub, TEXT_GRAY, offset=2)
+        y += lh + sub_gap
 
     # ── Footer: handle + source ────────────────────────────────────
     font_wm = _load_font(28, bold=True)
@@ -360,6 +381,7 @@ def generate_card(
     headline: str,
     stories: list[dict],
     teaser: str | None = None,
+    subtitle: str | None = None,
     image_query: str | None = None,
     username: str = "@danquiell",
     today: date | None = None,
@@ -373,6 +395,7 @@ def generate_card(
     try:
         path = _generate_photo_card(
             teaser=teaser or headline,
+            subtitle=subtitle or "",
             image_query=image_query or PEXELS_FALLBACK_QUERY,
             main_source=main_source,
             username=username,
@@ -396,6 +419,7 @@ if __name__ == "__main__":
             {"title": "Anthropic levanta US$3bi na maior rodada da história da IA", "source": "Bloomberg"},
         ],
         teaser="A IA que programa sozinha chegou",
+        subtitle="OpenAI lançou um modelo que resolve tarefas de programação sozinho",
         image_query="humanoid robot closeup",
         username="@danquiell",
     )

@@ -19,6 +19,7 @@ class GeneratedContent:
     main_url: str
     sources: list[str]
     image_teaser: str = ""
+    image_subtitle: str = ""
     image_query: str = ""
 
 
@@ -72,6 +73,8 @@ Formate a resposta assim — use EXATAMENTE estes separadores:
 [post em inglês]
 ---TEASER---
 [chamada curtíssima em português, MÁXIMO 6 palavras, que desperta curiosidade e dá vontade de abrir o post. Vai sobreposta numa foto. Sem ponto final, sem aspas. Ex: A IA que programa sozinha chegou]
+---SUBTITLE---
+[uma linha em português, MÁXIMO 12 palavras, com o FATO concreto da notícia principal — quem fez o quê. Complementa o teaser sem repeti-lo. Sem ponto final, sem aspas. Ex: OpenAI lançou um modelo que resolve tarefas de programação sozinho]
 ---IMGQUERY---
 [2 a 4 palavras EM INGLÊS descrevendo uma CENA VISUAL concreta e fotografável ligada ao tema principal, para buscar uma foto de banco de imagens. NÃO use nomes de marcas/empresas nem "logo". Prefira conceitos visuais reais. Ex: humanoid robot closeup / data center servers / glowing circuit board / developer coding laptop]
 ---END---
@@ -162,6 +165,7 @@ def generate_content(
             "---PT---\n🇧🇷 [DRY RUN — post PT de exemplo]\n---EN---\n"
             "🇺🇸 [DRY RUN — EN post example]\n#AI #Tech\n"
             "---TEASER---\nA IA que muda tudo chegou\n"
+            "---SUBTITLE---\nOpenAI lançou um modelo que programa sozinho\n"
             "---IMGQUERY---\nhumanoid robot closeup\n---END---"
         )
     else:
@@ -169,8 +173,13 @@ def generate_content(
 
     linkedin_pt = _extract_block(linkedin_raw, "---PT---", "---EN---")
     linkedin_en = _extract_block(linkedin_raw, "---EN---", "---TEASER---")
-    image_teaser = _extract_block(linkedin_raw, "---TEASER---", "---IMGQUERY---")
+    image_teaser = _extract_block(linkedin_raw, "---TEASER---", "---SUBTITLE---")
+    image_subtitle = _extract_block(linkedin_raw, "---SUBTITLE---", "---IMGQUERY---")
     image_query = _extract_block(linkedin_raw, "---IMGQUERY---", "---END---")
+
+    # Backward-compatible parse if the model skipped the SUBTITLE block.
+    if not image_teaser:
+        image_teaser = _extract_block(linkedin_raw, "---TEASER---", "---IMGQUERY---")
 
     # Backward-compatible parse if the model skipped the new EN/END boundary.
     if not linkedin_en:
@@ -184,6 +193,8 @@ def generate_content(
     # Sensible fallbacks so the image step never breaks.
     if not image_teaser:
         image_teaser = main_story.get("title", "")[:60]
+    if not image_subtitle:
+        image_subtitle = main_story.get("title", "")[:90]
     if not image_query:
         image_query = "artificial intelligence technology"
 
@@ -196,6 +207,7 @@ def generate_content(
         main_url=main_url,
         sources=sources,
         image_teaser=image_teaser,
+        image_subtitle=image_subtitle,
         image_query=image_query,
     )
 

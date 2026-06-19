@@ -78,6 +78,7 @@ def run(dry_run: bool = False):
             headline=stories[0]["title"],
             stories=stories[:4],
             teaser=content.image_teaser,
+            subtitle=content.image_subtitle,
             image_query=content.image_query,
             username=LINKEDIN_USERNAME,
             today=today,
