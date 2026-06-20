@@ -1,84 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-06",
-      "topics": [
-        "Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot",
-        "Pentagon raised threat of Israeli spying on U.S. to highest level, sources say",
-        "Nvidia is proposing a beast of a CPU system for Windows PCs",
-        "I design with Claude more than Figma now",
-        "Google to pay SpaceX $920M a month for compute capacity at xAI data centers",
-        "Public Domain Image Archive"
-      ],
-      "title_hashes": [
-        "9a043a46bba32fec7224c2f13ec8b8fc8fde073a60a411da9492f2524f06c136",
-        "fb4480356c569bc847ff94af9a7adb99b3a267663808f5114d595976238505b8",
-        "ee2cc8b40091307491a3aba8579f277e6e0340e2ab0a430f95d917700c43e315",
-        "a9d101c445199f344babad3136f41b0071ada110018c07344799ede154980252",
-        "c4d56cb72ab61ebc68519310034335e63dd8920be0c3ad4c728e21bba21320c0",
-        "007ee965606cf28d224f000079501df89c638a1ef28f28f304c10fcc84429483"
-      ],
-      "topic_tokens": [
-        [
-          "meta",
-          "confirms",
-          "1000s",
-          "instagram",
-          "accounts",
-          "hacked",
-          "abusing",
-          "its",
-          "chatbot"
-        ],
-        [
-          "pentagon",
-          "raised",
-          "threat",
-          "israeli",
-          "spying",
-          "highest",
-          "level",
-          "sources",
-          "say"
-        ],
-        [
-          "nvidia",
-          "proposing",
-          "beast",
-          "cpu",
-          "system",
-          "windows",
-          "pcs"
-        ],
-        [
-          "design",
-          "claude",
-          "more",
-          "than",
-          "figma",
-          "now"
-        ],
-        [
-          "google",
-          "pay",
-          "spacex",
-          "920m",
-          "month",
-          "compute",
-          "capacity",
-          "xai",
-          "data",
-          "centers"
-        ],
-        [
-          "public",
-          "domain",
-          "image",
-          "archive"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-07",
       "topics": [
         "LLMs are eroding my software engineering career and I don't know what to do",
@@ -934,6 +856,79 @@
           "anthropic",
           "mythos",
           "controversy"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "topics": [
+        "Hyundai buys Boston Dynamics",
+        "Norway imposes near ban on AI in elementary school",
+        "GPT-5.5 hallucinates 3x more than MIT-licensed GLM-5.2",
+        "John Jumper to join Anthropic",
+        "OpenAI admits enterprises need better control over AI costs - thestreet.com",
+        "Google Home Speaker: a smart speaker with artificial intelligence as if from a magical world - hi-Tech.ua"
+      ],
+      "title_hashes": [
+        "2d373cc9c243e8bd6c0ac1c8dc44707c2b94f3676a760a0e6b8b19ddd35d1422",
+        "973ce883de23b49b86796bf28e63fe9f7306179f285cb06cb695733107b21c0f",
+        "8a88a7d3ca31435848b172a960297cbd6c5fdd5e9c9486288e0b978691d4496c",
+        "8745a5f46d6976ae9c27ac3a41ace9a5d9521d6d5a8c233e5de8b9a1d1cade9c",
+        "124d9ff8669ec2bcebc5973d33ae4e7a3d26d53429bb51e9c0b73272c9a33321",
+        "58e1e930fcd9a75d0752667340076516cdc0d02b833e8e29b9d85b1bd639c51c"
+      ],
+      "topic_tokens": [
+        [
+          "hyundai",
+          "buys",
+          "boston",
+          "dynamics"
+        ],
+        [
+          "norway",
+          "imposes",
+          "near",
+          "ban",
+          "elementary",
+          "school"
+        ],
+        [
+          "gpt",
+          "hallucinates",
+          "more",
+          "than",
+          "mit",
+          "licensed",
+          "glm"
+        ],
+        [
+          "john",
+          "jumper",
+          "join",
+          "anthropic"
+        ],
+        [
+          "openai",
+          "admits",
+          "enterprises",
+          "need",
+          "better",
+          "control",
+          "over",
+          "costs",
+          "thestreet"
+        ],
+        [
+          "google",
+          "home",
+          "speaker",
+          "smart",
+          "speaker",
+          "artificial",
+          "intelligence",
+          "magical",
+          "world",
+          "tech"
         ]
       ]
     }
