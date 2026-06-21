@@ -1,88 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-07",
-      "topics": [
-        "LLMs are eroding my software engineering career and I don't know what to do",
-        "Anthropic, please ship an official Claude Desktop for Linux",
-        "DeepSeek V4 Pro beats GPT-5.5 Pro on precision",
-        "Show HN: Lathe – Use LLMs to learn a new domain, not skip past it",
-        "The Smallest Brain You Can Build: A Perceptron in Python",
-        "Texas grid flags risks as data centers, crypto sites fail voltage tests"
-      ],
-      "title_hashes": [
-        "c6adf186b3c0e110f275f877204473bb87d6db1aaf3942b31e6ce74ccff1db97",
-        "fbe65c82f7db5adf3699bc709fed8f00b1496030a66e553e46ff381a47d57be7",
-        "ada5e3cbcf7602f027f19c28972de23e49d040f0ce7f56aa6b3506a3f91fb95d",
-        "aa45b2143ca8da59dde96975f7221a32dd4d0a2124e1ddb678b86660f3b2102f",
-        "d5885e092c88c458cf2d2d8f224fe4fb5a0085f0fa592e54fa87daddb13d4669",
-        "a95551b279b57be5b50ad86627cf997ee7967fc13ce36857522080c7b267ce50"
-      ],
-      "topic_tokens": [
-        [
-          "llms",
-          "eroding",
-          "software",
-          "engineering",
-          "career",
-          "don",
-          "know",
-          "what"
-        ],
-        [
-          "anthropic",
-          "please",
-          "ship",
-          "official",
-          "claude",
-          "desktop",
-          "linux"
-        ],
-        [
-          "deepseek",
-          "pro",
-          "beats",
-          "gpt",
-          "pro",
-          "precision"
-        ],
-        [
-          "show",
-          "lathe",
-          "use",
-          "llms",
-          "learn",
-          "new",
-          "domain",
-          "not",
-          "skip",
-          "past"
-        ],
-        [
-          "smallest",
-          "brain",
-          "you",
-          "can",
-          "build",
-          "perceptron",
-          "python"
-        ],
-        [
-          "texas",
-          "grid",
-          "flags",
-          "risks",
-          "data",
-          "centers",
-          "crypto",
-          "sites",
-          "fail",
-          "voltage",
-          "tests"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-08",
       "topics": [
         "Apple reveals new AI architecture built around Google Gemini models",
@@ -929,6 +847,79 @@
           "magical",
           "world",
           "tech"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-20",
+      "topics": [
+        "The Wholesale Plagiarism of Obscure Sorrows",
+        "Loupe – A iOS app that raises awareness about what native apps can see",
+        "Your brain was never designed for this much bad news",
+        "Slow breathing modulates brain function and risk behavior",
+        "When I reject AI code even if it works",
+        "Temporary Cloudflare accounts for AI agents"
+      ],
+      "title_hashes": [
+        "766f39bc1af6848cb680c891ae1a206c1ad9abf4ae64336cae21d9d417476659",
+        "b04cd455d7d0e4a03520d43d10de44aab3eeb448aa8d591e0499eeedfd52c129",
+        "23cfb358b23188c32b66483a24830320d2cea3f47d019d3aa7ad76c07af68257",
+        "40ec69e8539d6499d05480d163e8d9c8a08031c15df8b9f91fe7d70ac5848314",
+        "f74b01fb562611c8699e987a639789ff2d53db32139c57a2b2ab41c14f97f1d0",
+        "dcef119c082bbd79f142e8c0970b71641f787738e81328e5411be090bb514ddf"
+      ],
+      "topic_tokens": [
+        [
+          "wholesale",
+          "plagiarism",
+          "obscure",
+          "sorrows"
+        ],
+        [
+          "loupe",
+          "ios",
+          "app",
+          "that",
+          "raises",
+          "awareness",
+          "about",
+          "what",
+          "native",
+          "apps",
+          "can",
+          "see"
+        ],
+        [
+          "your",
+          "brain",
+          "never",
+          "designed",
+          "this",
+          "much",
+          "bad",
+          "news"
+        ],
+        [
+          "slow",
+          "breathing",
+          "modulates",
+          "brain",
+          "function",
+          "risk",
+          "behavior"
+        ],
+        [
+          "when",
+          "reject",
+          "code",
+          "even",
+          "works"
+        ],
+        [
+          "temporary",
+          "cloudflare",
+          "accounts",
+          "agents"
         ]
       ]
     }
