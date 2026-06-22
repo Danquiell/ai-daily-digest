@@ -1,72 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-08",
-      "topics": [
-        "Apple reveals new AI architecture built around Google Gemini models",
-        "Siri AI",
-        "AI is slowing down",
-        "xAI is looking more like a datacentre REIT than a frontier lab",
-        "Ask HN: What are tools you have made for yourself since the advent of AI?",
-        "Apple Core AI Framework"
-      ],
-      "title_hashes": [
-        "ee02deabf6a3ad5e60caea177e6493ae33fadb27277109fb648e025873637e67",
-        "62ac3a205be42434884e4209dadf8d69fb7d3a14d78fd13e273fa8c22152051e",
-        "ac3e2b1462d71c53dd51d806b4bfc25bb233040f4c188b1bf34c53fa514d6748",
-        "0240ec2ba57983efc75583c06cb29223ece6f488713cc88aee75bace1cd64102",
-        "e5c9b19a7e1c64e1ffd69231a2ce22f05a903c5a1b02e058a2a2bab9d575ed82",
-        "7e1fe0437ea36cb80fc5226e74321d8e1fc9b2830fd1ed222729d9666b71380e"
-      ],
-      "topic_tokens": [
-        [
-          "apple",
-          "reveals",
-          "new",
-          "architecture",
-          "built",
-          "around",
-          "google",
-          "gemini",
-          "models"
-        ],
-        [
-          "siri"
-        ],
-        [
-          "slowing",
-          "down"
-        ],
-        [
-          "xai",
-          "looking",
-          "more",
-          "like",
-          "datacentre",
-          "reit",
-          "than",
-          "frontier",
-          "lab"
-        ],
-        [
-          "ask",
-          "what",
-          "tools",
-          "you",
-          "have",
-          "made",
-          "yourself",
-          "since",
-          "advent"
-        ],
-        [
-          "apple",
-          "core",
-          "framework"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-09",
       "topics": [
         "Claude Fable 5",
@@ -920,6 +854,75 @@
           "cloudflare",
           "accounts",
           "agents"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-21",
+      "topics": [
+        "Identity verification on Claude",
+        "Apertus – Open Foundation Model for Sovereign AI",
+        "Danish privacy activist Lars Andersen raided by police",
+        "JSON-LD explained for personal websites",
+        "Good results fine tuning a local LLM like Qwen 3:0.6B to categorize questions",
+        "Show HN: Recall – Local project memory for Claude Code"
+      ],
+      "title_hashes": [
+        "f970a797c45144949be60b5ad851eaca2754a57721bed29982711c6a18ad52c6",
+        "dd6cec99aa72f9a8fbee9755c378505ea31da060e4158f1f098beb64ef361017",
+        "1b38468279ffddfed17ec8d28cb524c949598dbc5379ef25ae73ad6a862fad01",
+        "14b9d8d5fdefb6cfd6b6a053e8bb07a7cbb85e1d84c2a06de9198ccd223c4e2f",
+        "6163690d04d2b8beafd557449385eaf3619864337477865e848304434a1b3cfb",
+        "3905335b399830d8168810d80017904ce4bad39c138f6d50338dbf205d3ae14f"
+      ],
+      "topic_tokens": [
+        [
+          "identity",
+          "verification",
+          "claude"
+        ],
+        [
+          "apertus",
+          "open",
+          "foundation",
+          "model",
+          "sovereign"
+        ],
+        [
+          "danish",
+          "privacy",
+          "activist",
+          "lars",
+          "andersen",
+          "raided",
+          "police"
+        ],
+        [
+          "json",
+          "explained",
+          "personal",
+          "websites"
+        ],
+        [
+          "good",
+          "results",
+          "fine",
+          "tuning",
+          "local",
+          "llm",
+          "like",
+          "qwen",
+          "categorize",
+          "questions"
+        ],
+        [
+          "show",
+          "recall",
+          "local",
+          "project",
+          "memory",
+          "claude",
+          "code"
         ]
       ]
     }
