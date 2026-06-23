@@ -1,75 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-09",
-      "topics": [
-        "Claude Fable 5",
-        "macOS Container Machines",
-        "If Claude Fable stops helping you, you'll never know",
-        "German ruling declares Google liable for false answers in AI Overviews",
-        "OpenCV 5 Is Here: The Biggest Leap in Years for Computer Vision",
-        "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks"
-      ],
-      "title_hashes": [
-        "ac903d62af455e87a117f4b89e11188a673d01a01b630acf2f81d458b00086fd",
-        "1203ff9623f1247ac337367b6d193fa00bab53e415c46ab6c295c8999fcfaf37",
-        "25553b0b44d1892ad8d09f1a15ad19845f78cbb5cdceed5c868ff01d4d8fa649",
-        "7da988d1e0578bcda4b04ee603ba4218e2e86c93f8f96bfeb6ba815a9e5e58d6",
-        "7ac2a33a06e3b5855cdbf8d878dce86bdbf58d221011e7c4c28034963e4bf70d",
-        "c0f7696185848e7d4a51f2b936e1b6e56c7c17caf436dd6d718282ecbdad0040"
-      ],
-      "topic_tokens": [
-        [
-          "claude",
-          "fable"
-        ],
-        [
-          "macos",
-          "container",
-          "machines"
-        ],
-        [
-          "claude",
-          "fable",
-          "stops",
-          "helping",
-          "you",
-          "you",
-          "never",
-          "know"
-        ],
-        [
-          "german",
-          "ruling",
-          "declares",
-          "google",
-          "liable",
-          "false",
-          "answers",
-          "overviews"
-        ],
-        [
-          "opencv",
-          "here",
-          "biggest",
-          "leap",
-          "years",
-          "computer",
-          "vision"
-        ],
-        [
-          "ultrafast",
-          "machine",
-          "learning",
-          "fpgas",
-          "via",
-          "kolmogorov",
-          "arnold",
-          "networks"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-10",
       "topics": [
         "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
@@ -923,6 +854,75 @@
           "memory",
           "claude",
           "code"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-22",
+      "topics": [
+        "Canada plans 'nuclear renaissance' with up to 10 reactors built by 2040",
+        "The text in Claude Code’s “Extended Thinking” output",
+        "Moebius: 0.2B image inpainting model with 10B-level performance",
+        "Polymarket has flooded social media with deceptive videos by paid creators",
+        "The new HTTP QUERY method explained",
+        "In praise of memcached"
+      ],
+      "title_hashes": [
+        "d27cf4a8b05487ce5e4e1ca1695f29bd996691b73b7837501d673f009d0658f4",
+        "966e920df7b8f216488bb5ad68d2f5bdefa633a2b84b414ac62dac4e6be19f2a",
+        "b669a4c6d328ac71a8dde29b99a432ace06630c48d1c82eb919e2940ed329486",
+        "8bc75664e8a2c9b2dd3d784afaad0460594207217bdc70a58ebfb7250ec3b161",
+        "cff284b810a35f3ff56b847f4979f36f10c796fd48a447a9843f53b4ec7c92d3",
+        "9e3bd1b93e4d19921602653e859a890f97b0d693f2da65fb6284c01018e52292"
+      ],
+      "topic_tokens": [
+        [
+          "canada",
+          "plans",
+          "nuclear",
+          "renaissance",
+          "reactors",
+          "built",
+          "2040"
+        ],
+        [
+          "text",
+          "claude",
+          "code",
+          "extended",
+          "thinking",
+          "output"
+        ],
+        [
+          "moebius",
+          "image",
+          "inpainting",
+          "model",
+          "10b",
+          "level",
+          "performance"
+        ],
+        [
+          "polymarket",
+          "has",
+          "flooded",
+          "social",
+          "media",
+          "deceptive",
+          "videos",
+          "paid",
+          "creators"
+        ],
+        [
+          "new",
+          "http",
+          "query",
+          "method",
+          "explained"
+        ],
+        [
+          "praise",
+          "memcached"
         ]
       ]
     }
