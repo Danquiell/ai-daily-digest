@@ -1,75 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-12",
-      "topics": [
-        "Open source AI must win",
-        "\"Don't You Just Upload It to ChatGPT?\"",
-        "Palantir loses legal challenge against Swiss investigative magazine",
-        "Show HN: Putt.day a daily mini golf game",
-        "Slightly reducing the sloppiness of AI generated front end",
-        "Shepherd's Dog: A Game by the Most Dangerous AI Model"
-      ],
-      "title_hashes": [
-        "b04e9abdd1faef47fa5ae716141f86efc7fc6c6d69b7aa5370e2816e2a563fdf",
-        "3ed41ee76d21de478c80ae25e99ba966299fc2e9d59e5e1766f66009699d2cd4",
-        "c378f33ebb15c94f27e3ae7a1cee5a2bb667afb2326619c3aa6da3d42d685fec",
-        "ba073c684e7ee6d3ff4f5b366b0d03061dfa82b1d57b3330c0afe6759f484908",
-        "ca5108ec61e8659b2904758a0c77da50bf3fe4cc8835bfda6563d9b05aac6444",
-        "4f4eda96fabc85cababa7b42b8d29bf52d3b85cf40b2d3517fa63cdb8e158579"
-      ],
-      "topic_tokens": [
-        [
-          "open",
-          "source",
-          "must",
-          "win"
-        ],
-        [
-          "don",
-          "you",
-          "just",
-          "upload",
-          "chatgpt"
-        ],
-        [
-          "palantir",
-          "loses",
-          "legal",
-          "challenge",
-          "against",
-          "swiss",
-          "investigative",
-          "magazine"
-        ],
-        [
-          "show",
-          "putt",
-          "day",
-          "daily",
-          "mini",
-          "golf",
-          "game"
-        ],
-        [
-          "slightly",
-          "reducing",
-          "sloppiness",
-          "generated",
-          "front",
-          "end"
-        ],
-        [
-          "shepherd",
-          "dog",
-          "game",
-          "most",
-          "dangerous",
-          "model"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-13",
       "topics": [
         "Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models",
@@ -919,6 +850,81 @@
           "banking",
           "finance",
           "review"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "topics": [
+        "Apple raises prices of MacBooks, iPads",
+        "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+        "Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line",
+        "What happened after 2k people tried to hack my AI assistant",
+        "Political bias in AI: Where the AI models stand",
+        "Financial regulators scramble to counter AI rise with own tools - Reuters"
+      ],
+      "title_hashes": [
+        "8bc555671429f412477cb8c35d629cbf5e13111029c8c9ba16f8d83bc99edd1f",
+        "3129f85a5b6bdc7a023963708ddad84480a3d56c9041a539b3b0291a75a75481",
+        "25bcddc69b96f1ca0e233deaf753c99953753dd42379925bc26aa62966d4d9b4",
+        "50eec4adcf0639b8f231c91f162d5c8e8d4e8354a3ad24a8435d23624e3a8d1b",
+        "1672b886ed44684c895a3ab3230ac87ad895b48043447a828e2ac826a02678d0",
+        "1ba121c81e63f189ae75a3d0db4304a0079149d6aa3c982707a2770e7209039e"
+      ],
+      "topic_tokens": [
+        [
+          "apple",
+          "raises",
+          "prices",
+          "macbooks",
+          "ipads"
+        ],
+        [
+          "show",
+          "openknowledge",
+          "open",
+          "source",
+          "first",
+          "alternative",
+          "obsidian",
+          "notion"
+        ],
+        [
+          "apple",
+          "skip",
+          "high",
+          "end",
+          "mac",
+          "chips",
+          "favor",
+          "focused",
+          "line"
+        ],
+        [
+          "what",
+          "happened",
+          "after",
+          "people",
+          "tried",
+          "hack",
+          "assistant"
+        ],
+        [
+          "political",
+          "bias",
+          "where",
+          "models",
+          "stand"
+        ],
+        [
+          "financial",
+          "regulators",
+          "scramble",
+          "counter",
+          "rise",
+          "own",
+          "tools",
+          "reuters"
         ]
       ]
     }
