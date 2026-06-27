@@ -1,80 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-13",
-      "topics": [
-        "Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models",
-        "Police officer investigated for using AI to 'create evidence' in multiple cases",
-        "AI coding at home without going broke",
-        "AI OSS tool repo goes archived over night after raising $7.3M Seed",
-        "Show HN: Paca – Lightweight Jira alternative for human-AI collaboration",
-        "Making Claude a Chemist"
-      ],
-      "title_hashes": [
-        "50354680a8789309486f4862cfbfb3b1e2dcd89f7fb1885e1f78250221db21e7",
-        "a2ccbfc47a80068a9e69ded480c30670102801bc046a40cf67820f5c332f5dda",
-        "c46a272a9e62d73615d0eb9525a3d5262e5e75194c3c567e125c97951d2304a5",
-        "c7d82630221ed37e4611ea383b5774562e27bd3c802a669cbc86ac84348c4be7",
-        "772b4be3545cbf794680a5ae2f58250938cde5aa4675d62343fcaa93c3926d9c",
-        "625355c4ee255558d9257415a0b8e6b3ff1717b0d2938c4d35cf2473ad4345ba"
-      ],
-      "topic_tokens": [
-        [
-          "amazon",
-          "ceo",
-          "talks",
-          "officials",
-          "triggered",
-          "crackdown",
-          "anthropic",
-          "models"
-        ],
-        [
-          "police",
-          "officer",
-          "investigated",
-          "using",
-          "create",
-          "evidence",
-          "multiple",
-          "cases"
-        ],
-        [
-          "coding",
-          "home",
-          "without",
-          "going",
-          "broke"
-        ],
-        [
-          "oss",
-          "tool",
-          "repo",
-          "goes",
-          "archived",
-          "over",
-          "night",
-          "after",
-          "raising",
-          "seed"
-        ],
-        [
-          "show",
-          "paca",
-          "lightweight",
-          "jira",
-          "alternative",
-          "human",
-          "collaboration"
-        ],
-        [
-          "making",
-          "claude",
-          "chemist"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-14",
       "topics": [
         "Not everyone is using AI for everything",
@@ -925,6 +851,77 @@
           "own",
           "tools",
           "reuters"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "topics": [
+        "U.S. government will decide who gets to use GPT-5.6",
+        "Previewing GPT‑5.6 Sol: a next-generation model",
+        "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
+        "Ultrasound imaging of the brain",
+        "The gap between open weights LLMs and closed source LLMs",
+        "Show HN: Smart model routing directly in Claude, Codex and Cursor"
+      ],
+      "title_hashes": [
+        "dcd2e1a9c5ccf422c82e12ef27b05e5a4951147502e76b1e2fa9c4e4ec7fd341",
+        "52ac5aacbceae1d36ec7d6fcc95bb47d1126ae9a42f90234daf2af430035def7",
+        "08c3b6034aa53a78db72c8dbc11d397e0f3cba33b9e3e41b4c6d4b10e059e71a",
+        "9becfa0f40769fdb7e2e6f94001d16e5fcc970fe3a82b4f2368012217112ae8f",
+        "ab3803eaadf10d5ae1b812384273d1f41e8e6e0750c9359ef9a7b576cf6bb2d6",
+        "a664295f28ead0410afb65eb8b779e572055d05ac05590c3a3215299ab0fbdb4"
+      ],
+      "topic_tokens": [
+        [
+          "government",
+          "will",
+          "decide",
+          "who",
+          "gets",
+          "use",
+          "gpt"
+        ],
+        [
+          "previewing",
+          "gpt",
+          "sol",
+          "next",
+          "generation",
+          "model"
+        ],
+        [
+          "allows",
+          "anthropic",
+          "release",
+          "mythos",
+          "trusted",
+          "organizations"
+        ],
+        [
+          "ultrasound",
+          "imaging",
+          "brain"
+        ],
+        [
+          "gap",
+          "between",
+          "open",
+          "weights",
+          "llms",
+          "closed",
+          "source",
+          "llms"
+        ],
+        [
+          "show",
+          "smart",
+          "model",
+          "routing",
+          "directly",
+          "claude",
+          "codex",
+          "cursor"
         ]
       ]
     }
