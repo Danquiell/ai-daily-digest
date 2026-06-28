@@ -1,69 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-14",
-      "topics": [
-        "Not everyone is using AI for everything",
-        "Rio de Janeiro's \"homegrown\" LLM appears to be a merge of an existing model",
-        "CrankGPT",
-        "Anthropic's Safety Superpower",
-        "Show HN: I wrote a C++ ray tracer from scratch without AI",
-        "Show HN: Can Europe train a frontier AI model on the compute it owns?"
-      ],
-      "title_hashes": [
-        "d39a541edc4a042a21258d679eeedf9ba73ced4e6cb5d9c673136f3c1f491170",
-        "ac911b877fb91effadd7188ca6a855d86a6b9bfd80b1db7aac8cb1eca62c05f8",
-        "4693d8cc89d4336f5fbba55fc43c5317e02fe8e06a1227c579307a9f048d6b56",
-        "e374d3472727b7ba8d585884de244fb35b610cc1209a3d498339e698a89c72e5",
-        "dde8f466dd3fee7a028ef08531884c9e1fcf970ae5ddf221a4d54d36ba3d1e11",
-        "ce15541ea432c63932ba8f3300a48015e31cc6b4fa13ddf14eb96a210fa738a8"
-      ],
-      "topic_tokens": [
-        [
-          "not",
-          "everyone",
-          "using",
-          "everything"
-        ],
-        [
-          "rio",
-          "janeiro",
-          "homegrown",
-          "llm",
-          "appears",
-          "merge",
-          "existing",
-          "model"
-        ],
-        [
-          "crankgpt"
-        ],
-        [
-          "anthropic",
-          "safety",
-          "superpower"
-        ],
-        [
-          "show",
-          "wrote",
-          "ray",
-          "tracer",
-          "scratch",
-          "without"
-        ],
-        [
-          "show",
-          "can",
-          "europe",
-          "train",
-          "frontier",
-          "model",
-          "compute",
-          "owns"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-15",
       "topics": [
         "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
@@ -922,6 +859,79 @@
           "claude",
           "codex",
           "cursor"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-27",
+      "topics": [
+        "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+        "The best response to AI slop and online noise is from Robin Williams",
+        "Asian AI startups launch Mythos-like models",
+        "What Ozempic does to the gut-brain axis",
+        "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+        "Anatomy of a Failed (Nation-State?) Attack"
+      ],
+      "title_hashes": [
+        "098f560c459a509c7551614d92f8f75d00ca725467bf72b9d4cf2fdddde3027a",
+        "52d3a04051cd5f0da1d5bcd9ed5fab0cc2cb6fb4e39cf783fb397586539fcb33",
+        "7bf4e72b64b9893b1389b95ae1b07fef2d3746faa5c7af812b85df482ebbb55b",
+        "efd2bea94ee1f0107edc72e7e9ae5ac935ec2244301925baa53ad173d7626c6f",
+        "52d061f9704a2445ae74343ed5a9d6c7fc5a17f8e60ecd0fc9c862eed21be04e",
+        "c19619fda5916627705b952d2de8279c693b8e797ab0de01111360091240426e"
+      ],
+      "topic_tokens": [
+        [
+          "dspark",
+          "speculative",
+          "decoding",
+          "accelerates",
+          "llm",
+          "inference",
+          "pdf"
+        ],
+        [
+          "best",
+          "response",
+          "slop",
+          "online",
+          "noise",
+          "robin",
+          "williams"
+        ],
+        [
+          "asian",
+          "startups",
+          "launch",
+          "mythos",
+          "like",
+          "models"
+        ],
+        [
+          "what",
+          "ozempic",
+          "does",
+          "gut",
+          "brain",
+          "axis"
+        ],
+        [
+          "wayfinder",
+          "router",
+          "deterministic",
+          "routing",
+          "queries",
+          "between",
+          "local",
+          "hosted",
+          "llm"
+        ],
+        [
+          "anatomy",
+          "failed",
+          "nation",
+          "state",
+          "attack"
         ]
       ]
     }
