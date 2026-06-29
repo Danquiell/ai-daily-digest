@@ -1,87 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-15",
-      "topics": [
-        "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
-        "TinyWind: A pixel pirate sailing game with real wind physics (380k+ kms sailed)",
-        "Feds freaked over Fable 5 after simple 'fix this code' prompt, not jailbreak",
-        "My Homelab AI Dev Platform",
-        "SpaceX to buy Cursor AI coding agent operator Anysphere for $60B",
-        "Why I email complete strangers"
-      ],
-      "title_hashes": [
-        "83b13b1394fe187be3dcedbf6a167d64b56b609065823d93f69c3b478be85962",
-        "cd78348a8edd5e728d47e60bc7231b86a690336bf38917978a0bb690fb3db0a2",
-        "f55aad6cc30be69d84ff5e0aaddcd2c06e04301d3da01ece39d8fdc50679d2c6",
-        "cb216f78f7d7dfd236c99ea67ead19f7ffc9a92e5f279218e2634875389970a4",
-        "6dd936cf650a8875a91fe9518b2151706c09b4f0ba836469b9cbfc627d8a6f88",
-        "8e7bf44c3bd5f42a2ff3ea255e3b7d9a8c038df8f06e1ba4efda8a3a2fedbff5"
-      ],
-      "topic_tokens": [
-        [
-          "ask",
-          "has",
-          "anyone",
-          "replaced",
-          "claude",
-          "gpt",
-          "local",
-          "model",
-          "daily",
-          "coding"
-        ],
-        [
-          "tinywind",
-          "pixel",
-          "pirate",
-          "sailing",
-          "game",
-          "real",
-          "wind",
-          "physics",
-          "380k",
-          "kms",
-          "sailed"
-        ],
-        [
-          "feds",
-          "freaked",
-          "over",
-          "fable",
-          "after",
-          "simple",
-          "fix",
-          "this",
-          "code",
-          "prompt",
-          "not",
-          "jailbreak"
-        ],
-        [
-          "homelab",
-          "dev",
-          "platform"
-        ],
-        [
-          "spacex",
-          "buy",
-          "cursor",
-          "coding",
-          "agent",
-          "operator",
-          "anysphere",
-          "60b"
-        ],
-        [
-          "why",
-          "email",
-          "complete",
-          "strangers"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-16",
       "topics": [
         "I admire Fabrice Bellard. He is almost certainly a better overall programmer",
@@ -932,6 +851,78 @@
           "nation",
           "state",
           "attack"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-28",
+      "topics": [
+        "GLM 5.2 beats Claude in our benchmarks",
+        "HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88",
+        "I used Claude Code to get a second opinion on my MRI",
+        "Professor denounces mass AI fraud on an exam at Brown",
+        "Librepods: AirPods liberated",
+        "A way to exclude sensitive files issue still open for OpenAI Codex"
+      ],
+      "title_hashes": [
+        "c7439ab5f2858122425cc6bbcbe3721524ac021205dc9af4c5b3588bd338f48b",
+        "634274489cfc8613740eda2bf83ec7d741c91209e65febd19177ac3c44adfe0f",
+        "5199a543f4c5eda4b9f5b9e69de11735adeb3e93a9858b7993ea1c68be35213e",
+        "0a1d99964b92cdfbdd3781c55e2a307f353bb67f5a9cbf0128a44b1990246954",
+        "21995979cb7251ad3d151aa84b7ded6706a7d2d96942466cf142ec55afca1879",
+        "0862235584c941589d07c35833dbfaacde0d45f4aff57f699c192c4a962cf76d"
+      ],
+      "topic_tokens": [
+        [
+          "glm",
+          "beats",
+          "claude",
+          "our",
+          "benchmarks"
+        ],
+        [
+          "hackerrank",
+          "open",
+          "sourced",
+          "its",
+          "ats",
+          "resume",
+          "scored",
+          "100",
+          "wait"
+        ],
+        [
+          "used",
+          "claude",
+          "code",
+          "get",
+          "second",
+          "opinion",
+          "mri"
+        ],
+        [
+          "professor",
+          "denounces",
+          "mass",
+          "fraud",
+          "exam",
+          "brown"
+        ],
+        [
+          "librepods",
+          "airpods",
+          "liberated"
+        ],
+        [
+          "way",
+          "exclude",
+          "sensitive",
+          "files",
+          "issue",
+          "still",
+          "open",
+          "openai",
+          "codex"
         ]
       ]
     }
