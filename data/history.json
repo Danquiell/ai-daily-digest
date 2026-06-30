@@ -1,80 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-16",
-      "topics": [
-        "I admire Fabrice Bellard. He is almost certainly a better overall programmer",
-        "Has AI already killed self-help nonfiction books?",
-        "Stop Killing Games fails to secure EU law despite 1.3M signatures",
-        "Humiliating IIS servers for fun and jail time",
-        "GPT‑NL: a sovereign language model for the Netherlands",
-        "Sixty percent of US consumers say 'AI' in brand messaging is a turnoff"
-      ],
-      "title_hashes": [
-        "57a563de497c8680263e06ac51b72457eec3e9f0b1fe414ccbc6b077c93bac25",
-        "eb14f9f27ec9a6fa2f9f22e50f3f5c3eba04c17d23f982dc723286e37150cca9",
-        "4fb8ef6917f18f2d2f54766cfd3e2e41114ef455a8781df27b0ba3a1069752ab",
-        "1e35aa48fef7c74188f2e2cf6c48705aca1114af795fa3bf78021346387c750a",
-        "b3c544d0414d03afbb9d1a56478beb54ac55668e191add89bc5eff4e9afbd35d",
-        "05860c898c07eafc26e175850ddf45d268646c908fb52e0786226dead42c7818"
-      ],
-      "topic_tokens": [
-        [
-          "admire",
-          "fabrice",
-          "bellard",
-          "almost",
-          "certainly",
-          "better",
-          "overall",
-          "programmer"
-        ],
-        [
-          "has",
-          "already",
-          "killed",
-          "self",
-          "help",
-          "nonfiction",
-          "books"
-        ],
-        [
-          "stop",
-          "killing",
-          "games",
-          "fails",
-          "secure",
-          "law",
-          "despite",
-          "signatures"
-        ],
-        [
-          "humiliating",
-          "iis",
-          "servers",
-          "fun",
-          "jail",
-          "time"
-        ],
-        [
-          "gpt",
-          "sovereign",
-          "language",
-          "model",
-          "netherlands"
-        ],
-        [
-          "sixty",
-          "percent",
-          "consumers",
-          "say",
-          "brand",
-          "messaging",
-          "turnoff"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-17",
       "topics": [
         "Midjourney Medical",
@@ -923,6 +849,87 @@
           "open",
           "openai",
           "codex"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "topics": [
+        "The CEO of Mullvad is the main financer of the Swedish Örebro party",
+        ".self: A new top-level domain designed to support self-hosting",
+        "What happens when you run a CUDA kernel?",
+        "Working With AI: A concrete example",
+        "Why did OpenAI delay rollout of its latest artificial intelligence model? - Baltimore Sun",
+        "Artificial intelligence and tax disputes: top five risks for trustees using AI - Farrer & Co"
+      ],
+      "title_hashes": [
+        "2d2867d15a680e41c8c8eea090277f5829fff03598695ff6a664d11362531af2",
+        "5541b27edb546179377cfab7d9214e846b7aaa25914605c610aed493d927c7d8",
+        "c4532c70d844f918f16fba3a588a60bab2fa38582a0420c7c699fa7d895b7420",
+        "fd01be6ff4262fa7c7b907911866e41ff32e8e3fb085c952a8d0ce3b6de0dac7",
+        "6e2c37a74167900e3b4f41a99cb122f2be8e9b2964cf272356ae66f058a68c4f",
+        "525cd305fe9f2b3c1f3ba3c56bd27be0e55dcfe15e502478f39b8d63fb1f7cc9"
+      ],
+      "topic_tokens": [
+        [
+          "ceo",
+          "mullvad",
+          "main",
+          "financer",
+          "swedish",
+          "rebro",
+          "party"
+        ],
+        [
+          "self",
+          "new",
+          "top",
+          "level",
+          "domain",
+          "designed",
+          "support",
+          "self",
+          "hosting"
+        ],
+        [
+          "what",
+          "happens",
+          "when",
+          "you",
+          "run",
+          "cuda",
+          "kernel"
+        ],
+        [
+          "working",
+          "concrete",
+          "example"
+        ],
+        [
+          "why",
+          "did",
+          "openai",
+          "delay",
+          "rollout",
+          "its",
+          "latest",
+          "artificial",
+          "intelligence",
+          "model",
+          "baltimore",
+          "sun"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "tax",
+          "disputes",
+          "top",
+          "five",
+          "risks",
+          "trustees",
+          "using",
+          "farrer"
         ]
       ]
     }
