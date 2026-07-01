@@ -1,74 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-17",
-      "topics": [
-        "Midjourney Medical",
-        "AI demands more engineering discipline. Not less",
-        "The founder's playbook: Building an AI-native startup",
-        "Launch HN: Adam (YC W25) – Open-Source AI CAD",
-        "The Australian Government to Require SMS/MMS Sender ID Registraion",
-        "ChatGPT's image generator can be manipulated to produce violent, sexual content"
-      ],
-      "title_hashes": [
-        "430fdf7b3fe6925c6f0155aabed745fffbb124bec4d59269636f16283276dbed",
-        "a0639e8cd363a53d53f30a119844034ee67110844d0ab679993c4987f535d8a3",
-        "72cc7a3526128c4d6aa29f0b41f72eb050f51efee2e21ecca06f3d9a85e4508b",
-        "48ccb6e50b016740832b41db9fc7612acad2531601177ee8ba4e2792a438f989",
-        "0aeb778207e93c29717d9b0e0f3b7f8fdc881b6c15ada228553f4493cec0de9b",
-        "6a1d93e4fe1504c676471cbc7620e7c9b689e97e01c79ec7a6697da92f37ad91"
-      ],
-      "topic_tokens": [
-        [
-          "midjourney",
-          "medical"
-        ],
-        [
-          "demands",
-          "more",
-          "engineering",
-          "discipline",
-          "not",
-          "less"
-        ],
-        [
-          "founder",
-          "playbook",
-          "building",
-          "native",
-          "startup"
-        ],
-        [
-          "launch",
-          "adam",
-          "w25",
-          "open",
-          "source",
-          "cad"
-        ],
-        [
-          "australian",
-          "government",
-          "require",
-          "sms",
-          "mms",
-          "sender",
-          "registraion"
-        ],
-        [
-          "chatgpt",
-          "image",
-          "generator",
-          "can",
-          "manipulated",
-          "produce",
-          "violent",
-          "sexual",
-          "content"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-18",
       "topics": [
         "Emacs 31 is around the corner: The changes I'm daily driving",
@@ -930,6 +862,72 @@
           "trustees",
           "using",
           "farrer"
+        ]
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "topics": [
+        "Claude Code is steganographically marking requests",
+        "Claude Sonnet 5",
+        "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
+        "Claude Science",
+        "Godot will no longer accept AI-authored code contributions",
+        "From brain waves to words: a new path to communication without surgery"
+      ],
+      "title_hashes": [
+        "e2a348a0c48c8b1ae5d49c7cacc29a5a56ca509dae7c13626789b27d4b8fae45",
+        "bf5e428568630b8b81b99b5a1a33f1106d7835cb782a6867d7b11a3407e26b56",
+        "c301c5c56090a73933c5d2c6bde4a24ae5419439aa1f01ea727c99af3acd7792",
+        "1c498f330553c5c4ea86c70f283dce53ec5a99b61a4f480e16b8854f8a808bca",
+        "5c03dc19c5915f71a31ce5f4fda0e21c11d8856babdbdf3f4467c296f37fa511",
+        "11c37f80f8e0fb9d8558dc80906cf18bf8af7eb89fa8141a3bc776564946439c"
+      ],
+      "topic_tokens": [
+        [
+          "claude",
+          "code",
+          "steganographically",
+          "marking",
+          "requests"
+        ],
+        [
+          "claude",
+          "sonnet"
+        ],
+        [
+          "department",
+          "commerce",
+          "has",
+          "lifted",
+          "export",
+          "controls",
+          "claude",
+          "fable",
+          "mythos"
+        ],
+        [
+          "claude",
+          "science"
+        ],
+        [
+          "godot",
+          "will",
+          "longer",
+          "accept",
+          "authored",
+          "code",
+          "contributions"
+        ],
+        [
+          "brain",
+          "waves",
+          "words",
+          "new",
+          "path",
+          "communication",
+          "without",
+          "surgery"
         ]
       ]
     }
