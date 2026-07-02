@@ -1,76 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-18",
-      "topics": [
-        "Emacs 31 is around the corner: The changes I'm daily driving",
-        "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28",
-        "Noam Shazeer Joins OpenAI",
-        "The AirPods Effect",
-        "Show HN: Gerrymandle - Daily puzzle game where you redraw electoral districts",
-        "The Korean telecom giant at the center of Anthropic's Mythos controversy"
-      ],
-      "title_hashes": [
-        "50ef413b87357e448fd4fafea4e807c3359909ba0d85659c0ea6c774dc1a6730",
-        "dfe4bcb6e50d63282f31c5ddc52fd106545c4ea4ac96706bbf52146ce21d6282",
-        "d16650a611102dc75b3420a6fa13e41daacb5f6ca9a31d6ab0d18a112870b4b6",
-        "a48ba0b8f094b881314b8456396be8ff235b83f39e26170a0058d4c86945510a",
-        "f64fe01f7833dd0c244a1df00a684178d0a2f732f8e4119a947d7fba691e7d16",
-        "7a0bbd4905589faa4ff19eb5531b08808a90c3ddfa62720d8d4225ba5d548524"
-      ],
-      "topic_tokens": [
-        [
-          "emacs",
-          "around",
-          "corner",
-          "changes",
-          "daily",
-          "driving"
-        ],
-        [
-          "project",
-          "valhalla",
-          "explained",
-          "how",
-          "decade",
-          "work",
-          "arrives",
-          "jdk"
-        ],
-        [
-          "noam",
-          "shazeer",
-          "joins",
-          "openai"
-        ],
-        [
-          "airpods",
-          "effect"
-        ],
-        [
-          "show",
-          "gerrymandle",
-          "daily",
-          "puzzle",
-          "game",
-          "where",
-          "you",
-          "redraw",
-          "electoral",
-          "districts"
-        ],
-        [
-          "korean",
-          "telecom",
-          "giant",
-          "center",
-          "anthropic",
-          "mythos",
-          "controversy"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-19",
       "topics": [
         "Hyundai buys Boston Dynamics",
@@ -928,6 +858,84 @@
           "communication",
           "without",
           "surgery"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "topics": [
+        "Sony Deletes 551 Movies PlayStation Owners Paid For",
+        "Nintendo has raised its employees base salary by 10%",
+        "Oomwoo, an open-source robot vacuum you build yourself",
+        "Kimi K2.7 Code is generally available in GitHub Copilot",
+        "Weave Robotics launches Isaac 1, a $7,999 home robot with Fall 2026 deliveries",
+        "Meta building cloud business to sell excess AI capacity"
+      ],
+      "title_hashes": [
+        "4ec6046cfa35b0e9986afddfc13dcca9e112117a29df50873f07ef4714cd4091",
+        "9c68ce663c6641e275a43410843debcdac9a0bc9deddf619a875928eae3b9ba0",
+        "6713522b11912f5e974cfdcbbb5ee7445d452947640765b12b760351a2393ac3",
+        "2243a97a9cdcec9843ab8ccb68705c06784a63d322fd50497c9134196a505c4e",
+        "37dd85046db2632008a91a8852db24e44293fd9c28bb8d2e19a9eeee6beb0820",
+        "9c2d73f284534f73ba7b1d6f717f34bacc3804eec24cf871d763f050bf065530"
+      ],
+      "topic_tokens": [
+        [
+          "sony",
+          "deletes",
+          "551",
+          "movies",
+          "playstation",
+          "owners",
+          "paid"
+        ],
+        [
+          "nintendo",
+          "has",
+          "raised",
+          "its",
+          "employees",
+          "base",
+          "salary"
+        ],
+        [
+          "oomwoo",
+          "open",
+          "source",
+          "robot",
+          "vacuum",
+          "you",
+          "build",
+          "yourself"
+        ],
+        [
+          "kimi",
+          "code",
+          "generally",
+          "available",
+          "github",
+          "copilot"
+        ],
+        [
+          "weave",
+          "robotics",
+          "launches",
+          "isaac",
+          "999",
+          "home",
+          "robot",
+          "fall",
+          "2026",
+          "deliveries"
+        ],
+        [
+          "meta",
+          "building",
+          "cloud",
+          "business",
+          "sell",
+          "excess",
+          "capacity"
         ]
       ]
     }
