@@ -1,79 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-19",
-      "topics": [
-        "Hyundai buys Boston Dynamics",
-        "Norway imposes near ban on AI in elementary school",
-        "GPT-5.5 hallucinates 3x more than MIT-licensed GLM-5.2",
-        "John Jumper to join Anthropic",
-        "OpenAI admits enterprises need better control over AI costs - thestreet.com",
-        "Google Home Speaker: a smart speaker with artificial intelligence as if from a magical world - hi-Tech.ua"
-      ],
-      "title_hashes": [
-        "2d373cc9c243e8bd6c0ac1c8dc44707c2b94f3676a760a0e6b8b19ddd35d1422",
-        "973ce883de23b49b86796bf28e63fe9f7306179f285cb06cb695733107b21c0f",
-        "8a88a7d3ca31435848b172a960297cbd6c5fdd5e9c9486288e0b978691d4496c",
-        "8745a5f46d6976ae9c27ac3a41ace9a5d9521d6d5a8c233e5de8b9a1d1cade9c",
-        "124d9ff8669ec2bcebc5973d33ae4e7a3d26d53429bb51e9c0b73272c9a33321",
-        "58e1e930fcd9a75d0752667340076516cdc0d02b833e8e29b9d85b1bd639c51c"
-      ],
-      "topic_tokens": [
-        [
-          "hyundai",
-          "buys",
-          "boston",
-          "dynamics"
-        ],
-        [
-          "norway",
-          "imposes",
-          "near",
-          "ban",
-          "elementary",
-          "school"
-        ],
-        [
-          "gpt",
-          "hallucinates",
-          "more",
-          "than",
-          "mit",
-          "licensed",
-          "glm"
-        ],
-        [
-          "john",
-          "jumper",
-          "join",
-          "anthropic"
-        ],
-        [
-          "openai",
-          "admits",
-          "enterprises",
-          "need",
-          "better",
-          "control",
-          "over",
-          "costs",
-          "thestreet"
-        ],
-        [
-          "google",
-          "home",
-          "speaker",
-          "smart",
-          "speaker",
-          "artificial",
-          "intelligence",
-          "magical",
-          "world",
-          "tech"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-20",
       "topics": [
         "The Wholesale Plagiarism of Obscure Sorrows",
@@ -936,6 +863,90 @@
           "sell",
           "excess",
           "capacity"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "topics": [
+        "Spain Orders Blacklist of Palantir from Public and Private Companies",
+        "AI can't be listed as inventor on patent applications, Japan's top court rules",
+        "Alibaba to ban Claude Code in workplace over alleged backdoor risks, source says",
+        "The short leash AI coding method for beating Fable",
+        "Claude-real-video － any LLM can watch a video",
+        "Is One Layer Enough? A Single Transformer Layer Matches Full-Parameter RL Train"
+      ],
+      "title_hashes": [
+        "6a729534b0c4bae1d926f75dd43938e05ade1dcc6116cf8aeeb93fed271dd168",
+        "cbe512f78431706de65597a03042f3927c87827008a5395ea590ff7bc15e1e6e",
+        "104a6aca4d3a34080899eb41f94a24a4d767be463498c895b1528a09670bd9da",
+        "07c25a2f29dbb39859f27f54abbd6026f36f48e97bf8ec6961055f6fe39a2ab9",
+        "5b7d35dd5a35d7aa0022281aca90217de6d2e18e54ee075b883d76e01c5c182b",
+        "ecaf671e5a83c2a5faa669e7377f54008de9c3aca45ce83d2a89b3811ab425b8"
+      ],
+      "topic_tokens": [
+        [
+          "spain",
+          "orders",
+          "blacklist",
+          "palantir",
+          "public",
+          "private",
+          "companies"
+        ],
+        [
+          "can",
+          "listed",
+          "inventor",
+          "patent",
+          "applications",
+          "japan",
+          "top",
+          "court",
+          "rules"
+        ],
+        [
+          "alibaba",
+          "ban",
+          "claude",
+          "code",
+          "workplace",
+          "over",
+          "alleged",
+          "backdoor",
+          "risks",
+          "source",
+          "says"
+        ],
+        [
+          "short",
+          "leash",
+          "coding",
+          "method",
+          "beating",
+          "fable"
+        ],
+        [
+          "claude",
+          "real",
+          "video",
+          "any",
+          "llm",
+          "can",
+          "watch",
+          "video"
+        ],
+        [
+          "one",
+          "layer",
+          "enough",
+          "single",
+          "transformer",
+          "layer",
+          "matches",
+          "full",
+          "parameter",
+          "train"
         ]
       ]
     }
