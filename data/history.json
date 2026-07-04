@@ -1,79 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-20",
-      "topics": [
-        "The Wholesale Plagiarism of Obscure Sorrows",
-        "Loupe – A iOS app that raises awareness about what native apps can see",
-        "Your brain was never designed for this much bad news",
-        "Slow breathing modulates brain function and risk behavior",
-        "When I reject AI code even if it works",
-        "Temporary Cloudflare accounts for AI agents"
-      ],
-      "title_hashes": [
-        "766f39bc1af6848cb680c891ae1a206c1ad9abf4ae64336cae21d9d417476659",
-        "b04cd455d7d0e4a03520d43d10de44aab3eeb448aa8d591e0499eeedfd52c129",
-        "23cfb358b23188c32b66483a24830320d2cea3f47d019d3aa7ad76c07af68257",
-        "40ec69e8539d6499d05480d163e8d9c8a08031c15df8b9f91fe7d70ac5848314",
-        "f74b01fb562611c8699e987a639789ff2d53db32139c57a2b2ab41c14f97f1d0",
-        "dcef119c082bbd79f142e8c0970b71641f787738e81328e5411be090bb514ddf"
-      ],
-      "topic_tokens": [
-        [
-          "wholesale",
-          "plagiarism",
-          "obscure",
-          "sorrows"
-        ],
-        [
-          "loupe",
-          "ios",
-          "app",
-          "that",
-          "raises",
-          "awareness",
-          "about",
-          "what",
-          "native",
-          "apps",
-          "can",
-          "see"
-        ],
-        [
-          "your",
-          "brain",
-          "never",
-          "designed",
-          "this",
-          "much",
-          "bad",
-          "news"
-        ],
-        [
-          "slow",
-          "breathing",
-          "modulates",
-          "brain",
-          "function",
-          "risk",
-          "behavior"
-        ],
-        [
-          "when",
-          "reject",
-          "code",
-          "even",
-          "works"
-        ],
-        [
-          "temporary",
-          "cloudflare",
-          "accounts",
-          "agents"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-21",
       "topics": [
         "Identity verification on Claude",
@@ -947,6 +874,77 @@
           "full",
           "parameter",
           "train"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "topics": [
+        "Protect your right to run local AI",
+        "Espionage Against the European Parliament",
+        "Jamesob's guide to running SOTA LLMs locally",
+        "The bottleneck might be the air in the room",
+        "I Wasn't Allowed Prompting ChatGPT During My Chalk Talk: This Is Discrimination (2025)",
+        "New serious vulnerabilities spiked around release of Claude Mythos Preview"
+      ],
+      "title_hashes": [
+        "14fcaa7817b01ceb0f04521bb5ed53ec58d8a76023204876394506ee66a7cad0",
+        "dcfa503fbb9a03b94ab55690e31949ffa259243a8e153eb4cb479212cb14dbd4",
+        "d43b004c71cbdef579515403b4856eae2785d2ec36d70f42f99af3265c753611",
+        "247f7732afc5638f32835b86261e41a649a88b0ac2849b614a3841b251ebf4ba",
+        "491ea2aa37ec8721cfb41dab270b1a3304771c85a9e0b6ec616d59d9659095b1",
+        "22b7e14784dfc7764d5f7df2ec0dbf00698a9a3842947fd436a34cdd5590dea3"
+      ],
+      "topic_tokens": [
+        [
+          "protect",
+          "your",
+          "right",
+          "run",
+          "local"
+        ],
+        [
+          "espionage",
+          "against",
+          "european",
+          "parliament"
+        ],
+        [
+          "jamesob",
+          "guide",
+          "running",
+          "sota",
+          "llms",
+          "locally"
+        ],
+        [
+          "bottleneck",
+          "might",
+          "air",
+          "room"
+        ],
+        [
+          "wasn",
+          "allowed",
+          "prompting",
+          "chatgpt",
+          "during",
+          "chalk",
+          "talk",
+          "this",
+          "discrimination",
+          "2025"
+        ],
+        [
+          "new",
+          "serious",
+          "vulnerabilities",
+          "spiked",
+          "around",
+          "release",
+          "claude",
+          "mythos",
+          "preview"
         ]
       ]
     }
