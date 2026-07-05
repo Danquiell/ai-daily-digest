@@ -1,75 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-21",
-      "topics": [
-        "Identity verification on Claude",
-        "Apertus – Open Foundation Model for Sovereign AI",
-        "Danish privacy activist Lars Andersen raided by police",
-        "JSON-LD explained for personal websites",
-        "Good results fine tuning a local LLM like Qwen 3:0.6B to categorize questions",
-        "Show HN: Recall – Local project memory for Claude Code"
-      ],
-      "title_hashes": [
-        "f970a797c45144949be60b5ad851eaca2754a57721bed29982711c6a18ad52c6",
-        "dd6cec99aa72f9a8fbee9755c378505ea31da060e4158f1f098beb64ef361017",
-        "1b38468279ffddfed17ec8d28cb524c949598dbc5379ef25ae73ad6a862fad01",
-        "14b9d8d5fdefb6cfd6b6a053e8bb07a7cbb85e1d84c2a06de9198ccd223c4e2f",
-        "6163690d04d2b8beafd557449385eaf3619864337477865e848304434a1b3cfb",
-        "3905335b399830d8168810d80017904ce4bad39c138f6d50338dbf205d3ae14f"
-      ],
-      "topic_tokens": [
-        [
-          "identity",
-          "verification",
-          "claude"
-        ],
-        [
-          "apertus",
-          "open",
-          "foundation",
-          "model",
-          "sovereign"
-        ],
-        [
-          "danish",
-          "privacy",
-          "activist",
-          "lars",
-          "andersen",
-          "raided",
-          "police"
-        ],
-        [
-          "json",
-          "explained",
-          "personal",
-          "websites"
-        ],
-        [
-          "good",
-          "results",
-          "fine",
-          "tuning",
-          "local",
-          "llm",
-          "like",
-          "qwen",
-          "categorize",
-          "questions"
-        ],
-        [
-          "show",
-          "recall",
-          "local",
-          "project",
-          "memory",
-          "claude",
-          "code"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-22",
       "topics": [
         "Canada plans 'nuclear renaissance' with up to 10 reactors built by 2040",
@@ -945,6 +876,94 @@
           "claude",
           "mythos",
           "preview"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "topics": [
+        "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
+        "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+        "Record-breaking solo rower Kelsey Pfendler arrives in Hawaii",
+        "Mouse: Precision Editing Tools for AI Coding Agents",
+        "OpenAI in talks with US govt for 5% stake: Why would a company do that? | Hindustan Times - Hindustan Times",
+        "Texas program targets future of farming with training in AI and robotics - San Antonio Express-News"
+      ],
+      "title_hashes": [
+        "e15dcb5da67ed9a36a516b0bb3e9f951f4fb0da073d9c3bc718f3884978ea5cd",
+        "c359ba3263afda252d436baa36aee1a8b5807fa8360c2c085f3948b379050fc8",
+        "fb94e2fd60b947fbcc7e1daf7219aad2649794ca8ae96f6459f712fdf560be25",
+        "ce49d1c01ecc9077bc7f6f6ad0bd3cb52375881d0e648a9ddabb1197a93a48db",
+        "4a21436b04cb1e28c48513bcf25d100c8fac169d245d184407d3e277694143ee",
+        "e88a778b5eebf97aed1d8b64538ebb108d9dee06b75d34aa7091caa9cdd93cf1"
+      ],
+      "topic_tokens": [
+        [
+          "gpt",
+          "codex",
+          "reasoning",
+          "token",
+          "clustering",
+          "may",
+          "leading",
+          "degraded",
+          "performance"
+        ],
+        [
+          "sqlite",
+          "utils",
+          "0rc2",
+          "mostly",
+          "written",
+          "claude",
+          "fable",
+          "about",
+          "149"
+        ],
+        [
+          "record",
+          "breaking",
+          "solo",
+          "rower",
+          "kelsey",
+          "pfendler",
+          "arrives",
+          "hawaii"
+        ],
+        [
+          "mouse",
+          "precision",
+          "editing",
+          "tools",
+          "coding",
+          "agents"
+        ],
+        [
+          "openai",
+          "talks",
+          "govt",
+          "stake",
+          "why",
+          "would",
+          "company",
+          "that",
+          "hindustan",
+          "times",
+          "hindustan",
+          "times"
+        ],
+        [
+          "texas",
+          "program",
+          "targets",
+          "future",
+          "farming",
+          "training",
+          "robotics",
+          "san",
+          "antonio",
+          "express",
+          "news"
         ]
       ]
     }
