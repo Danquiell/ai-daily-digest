@@ -1,75 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-22",
-      "topics": [
-        "Canada plans 'nuclear renaissance' with up to 10 reactors built by 2040",
-        "The text in Claude Code’s “Extended Thinking” output",
-        "Moebius: 0.2B image inpainting model with 10B-level performance",
-        "Polymarket has flooded social media with deceptive videos by paid creators",
-        "The new HTTP QUERY method explained",
-        "In praise of memcached"
-      ],
-      "title_hashes": [
-        "d27cf4a8b05487ce5e4e1ca1695f29bd996691b73b7837501d673f009d0658f4",
-        "966e920df7b8f216488bb5ad68d2f5bdefa633a2b84b414ac62dac4e6be19f2a",
-        "b669a4c6d328ac71a8dde29b99a432ace06630c48d1c82eb919e2940ed329486",
-        "8bc75664e8a2c9b2dd3d784afaad0460594207217bdc70a58ebfb7250ec3b161",
-        "cff284b810a35f3ff56b847f4979f36f10c796fd48a447a9843f53b4ec7c92d3",
-        "9e3bd1b93e4d19921602653e859a890f97b0d693f2da65fb6284c01018e52292"
-      ],
-      "topic_tokens": [
-        [
-          "canada",
-          "plans",
-          "nuclear",
-          "renaissance",
-          "reactors",
-          "built",
-          "2040"
-        ],
-        [
-          "text",
-          "claude",
-          "code",
-          "extended",
-          "thinking",
-          "output"
-        ],
-        [
-          "moebius",
-          "image",
-          "inpainting",
-          "model",
-          "10b",
-          "level",
-          "performance"
-        ],
-        [
-          "polymarket",
-          "has",
-          "flooded",
-          "social",
-          "media",
-          "deceptive",
-          "videos",
-          "paid",
-          "creators"
-        ],
-        [
-          "new",
-          "http",
-          "query",
-          "method",
-          "explained"
-        ],
-        [
-          "praise",
-          "memcached"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-23",
       "topics": [
         "Mistral OCR 4",
@@ -964,6 +895,84 @@
           "antonio",
           "express",
           "news"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-05",
+      "topics": [
+        "GPT-5.6 Sol Ultra will be in Codex",
+        "Real-time map of Great Britain's rail network",
+        "Does code cleanliness affect coding agents? A controlled minimal-pair study",
+        "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
+        "When AI Costs More Than the Engineer",
+        "Delta flight hit by firework while landing at Midway Airport on Fourth of July"
+      ],
+      "title_hashes": [
+        "8aa08ed2d2e58f01550eaf939b52b96aa973f5caaa0194b1884181baab137733",
+        "4c7c0ee5b7bf4b941f0af3dedcc22c9f9d149a7d8f4a279dd407295dc93c1d77",
+        "bf78b64c90580c565398bff012ed440c16c4592004b3e218a95af2ab6781264d",
+        "049033f2a9a4c4b8e8b653f1f47699f7689735439ab764e7b2e732979a29a0f7",
+        "97747054c9929ca93e4eef8d9426c68736f357861e264e9b98f0c36f31b824c9",
+        "9aa99355466d93c4a727da7c628d1bb8593d7c8e9e6c7b578a1f222a9a2e762d"
+      ],
+      "topic_tokens": [
+        [
+          "gpt",
+          "sol",
+          "ultra",
+          "will",
+          "codex"
+        ],
+        [
+          "real",
+          "time",
+          "map",
+          "great",
+          "britain",
+          "rail",
+          "network"
+        ],
+        [
+          "does",
+          "code",
+          "cleanliness",
+          "affect",
+          "coding",
+          "agents",
+          "controlled",
+          "minimal",
+          "pair",
+          "study"
+        ],
+        [
+          "new",
+          "tutor",
+          "achieves",
+          "effect",
+          "size",
+          "dartmouth",
+          "course",
+          "pdf"
+        ],
+        [
+          "when",
+          "costs",
+          "more",
+          "than",
+          "engineer"
+        ],
+        [
+          "delta",
+          "flight",
+          "hit",
+          "firework",
+          "while",
+          "landing",
+          "midway",
+          "airport",
+          "fourth",
+          "july"
         ]
       ]
     }
