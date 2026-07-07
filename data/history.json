@@ -1,67 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-23",
-      "topics": [
-        "Mistral OCR 4",
-        "AI's Affordability Crisis",
-        "Don't verify email addresses by sending spam to them",
-        "The Low-Tech AI of Elden Ring",
-        "Apple is going to raise device prices, but when?",
-        "Bob Iger’s Disney wanted Apple, Twitter, and 007"
-      ],
-      "title_hashes": [
-        "ebfc77d71ef7a6fe349f159842a586d0f7b00b9b34f5e8210cf2aedeca440f09",
-        "035d287fc9aa2241ad07e041a9612ec6f86a0fba7a9e8c4148de265ccaea725e",
-        "776f6da7d3ed441a317998ef1785b94b7ab68f38280326c772e486de7765bb42",
-        "a3d90149277e01c86be7f269a7e63b799abe4a9a437a29863faaedf481304675",
-        "60f6ccac4c2507c2e2f16227fa137e86f05be753cef5062cdfaf3566e965b141",
-        "4a4b55cb37698977ce00088b8545049e8dff129d286eeefc6e3baa90e6f19bfd"
-      ],
-      "topic_tokens": [
-        [
-          "mistral",
-          "ocr"
-        ],
-        [
-          "affordability",
-          "crisis"
-        ],
-        [
-          "don",
-          "verify",
-          "email",
-          "addresses",
-          "sending",
-          "spam",
-          "them"
-        ],
-        [
-          "low",
-          "tech",
-          "elden",
-          "ring"
-        ],
-        [
-          "apple",
-          "going",
-          "raise",
-          "device",
-          "prices",
-          "when"
-        ],
-        [
-          "bob",
-          "iger",
-          "disney",
-          "wanted",
-          "apple",
-          "twitter",
-          "007"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-24",
       "topics": [
         "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
@@ -973,6 +912,74 @@
           "airport",
           "fourth",
           "july"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "topics": [
+        "GLM 5.2 and the coming AI margin collapse",
+        "AMD Ryzen AI Halo – $4k AI Dev Kit",
+        "Small AI Models Gain Traction In places with unreliable networks",
+        "OfficeCLI: Office suite for AI agents to read and edit Microsoft Office files",
+        "NSA and IETF: Fairness",
+        "Marshall upgrades the bass and repairability of two wireless speakers"
+      ],
+      "title_hashes": [
+        "b57bbe4bdc3bdbd34c3df3c430577019c4da38591d65c0376b1b011f2640d08d",
+        "5df5835f78c4ad55ce367327750288e286c1a6947b75cbbf9087cf8cb3430ad1",
+        "56e42af2455f7db5efd3800fbacd253d8f5f30b19d9bdc18b90dd4fdb35060b1",
+        "f1dd0731628238a39fe845c5ed1a17e21bfeef75233af72dbebd24d35380003a",
+        "5e9c121af92a394e4493f6d7f5ce1d900ebfe6d467e53530727055becb73772a",
+        "a1d85ed6733c64097798d9d60b9ba26c43279db446f4414fe405ea4900db944d"
+      ],
+      "topic_tokens": [
+        [
+          "glm",
+          "coming",
+          "margin",
+          "collapse"
+        ],
+        [
+          "amd",
+          "ryzen",
+          "halo",
+          "dev",
+          "kit"
+        ],
+        [
+          "small",
+          "models",
+          "gain",
+          "traction",
+          "places",
+          "unreliable",
+          "networks"
+        ],
+        [
+          "officecli",
+          "office",
+          "suite",
+          "agents",
+          "read",
+          "edit",
+          "microsoft",
+          "office",
+          "files"
+        ],
+        [
+          "nsa",
+          "ietf",
+          "fairness"
+        ],
+        [
+          "marshall",
+          "upgrades",
+          "bass",
+          "repairability",
+          "two",
+          "wireless",
+          "speakers"
         ]
       ]
     }
