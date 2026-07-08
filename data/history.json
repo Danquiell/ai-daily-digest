@@ -1,84 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-24",
-      "topics": [
-        "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
-        "RubyLLM: A Ruby framework for all major AI providers",
-        "Computer use in Gemini 3.5 Flash",
-        "PR spam today looks like email spam in the early 2000s",
-        "Wikipedia Workers in Britain set global first by seeking union recognition",
-        "Anthropic Hires Orange's AI Chief for European Expansion - Global Banking & Finance Review"
-      ],
-      "title_hashes": [
-        "3dde59c3edf60327bdf63e87378d1da0a258657949ff211a9c11d6124552c9ba",
-        "88bfaa5fc6e8d26fd62d50f9c371ebfecb9e7e746a59926c56ee67c8bb0ba975",
-        "ef2a5ccebf664bea2d08247df4b01b3f4d491c1b13da3995cb470d57e1600f6e",
-        "f3a3165f2c9024d4db7e0b36fd26dc14f1ea34ad0ea60f28531eca274079be46",
-        "6e7026102397e0dc98e030d7b76706cb5713dffb5e07203e10d90ddc3647ed26",
-        "0d257f183639c8e7ba516783fb06ec6de4a18944e1d40e2ff8e477132bed89ec"
-      ],
-      "topic_tokens": [
-        [
-          "anthropic",
-          "says",
-          "alibaba",
-          "illicitly",
-          "extracted",
-          "claude",
-          "model",
-          "capabilities"
-        ],
-        [
-          "rubyllm",
-          "ruby",
-          "framework",
-          "all",
-          "major",
-          "providers"
-        ],
-        [
-          "computer",
-          "use",
-          "gemini",
-          "flash"
-        ],
-        [
-          "spam",
-          "today",
-          "looks",
-          "like",
-          "email",
-          "spam",
-          "early",
-          "2000s"
-        ],
-        [
-          "wikipedia",
-          "workers",
-          "britain",
-          "set",
-          "global",
-          "first",
-          "seeking",
-          "union",
-          "recognition"
-        ],
-        [
-          "anthropic",
-          "hires",
-          "orange",
-          "chief",
-          "european",
-          "expansion",
-          "global",
-          "banking",
-          "finance",
-          "review"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-25",
       "topics": [
         "Apple raises prices of MacBooks, iPads",
@@ -980,6 +902,79 @@
           "two",
           "wireless",
           "speakers"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "topics": [
+        "Chat Control 1.0 and 2.0 Explained",
+        "Show HN: Davit, a Apple Containers UI",
+        "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+        "Tenda firmware (multiple versions) contains hidden authentication backdoor",
+        "We're extending access to Fable 5 on all paid plans through July 12",
+        "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop"
+      ],
+      "title_hashes": [
+        "dc6d44d25abdd7a42be0ee3623819179d1cf1580ad26cf9d911ef2bf2c126356",
+        "812ea93979575ec124303608956163629648ffc414afca3fd03f416e2db6dd49",
+        "e995db5be742c60494002e735f2bccaaba03ac754b8cac553eb43d2b402db7ae",
+        "9dea45aed8c5039f4a485eba3cfdb0f4a96f1866307e43d8af49379b9bc00301",
+        "2b66ddf2c5ed750e71c316c8b27071f3ced886162ce38294ad43781fdd760167",
+        "aff7b688ddc90ec9b812d969d4cb5c5bed7d7be7bd3b0883d0edb2258153ad45"
+      ],
+      "topic_tokens": [
+        [
+          "chat",
+          "control",
+          "explained"
+        ],
+        [
+          "show",
+          "davit",
+          "apple",
+          "containers"
+        ],
+        [
+          "gitlost",
+          "tricked",
+          "github",
+          "agent",
+          "into",
+          "leaking",
+          "private",
+          "repos"
+        ],
+        [
+          "tenda",
+          "firmware",
+          "multiple",
+          "versions",
+          "contains",
+          "hidden",
+          "authentication",
+          "backdoor"
+        ],
+        [
+          "extending",
+          "access",
+          "fable",
+          "all",
+          "paid",
+          "plans",
+          "through",
+          "july"
+        ],
+        [
+          "show",
+          "rowboat",
+          "open",
+          "source",
+          "local",
+          "first",
+          "alternative",
+          "claude",
+          "desktop"
         ]
       ]
     }
