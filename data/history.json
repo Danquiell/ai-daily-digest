@@ -1,81 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-25",
-      "topics": [
-        "Apple raises prices of MacBooks, iPads",
-        "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
-        "Apple to skip high-end M6 Mac chips in favor of AI-focused M7 line",
-        "What happened after 2k people tried to hack my AI assistant",
-        "Political bias in AI: Where the AI models stand",
-        "Financial regulators scramble to counter AI rise with own tools - Reuters"
-      ],
-      "title_hashes": [
-        "8bc555671429f412477cb8c35d629cbf5e13111029c8c9ba16f8d83bc99edd1f",
-        "3129f85a5b6bdc7a023963708ddad84480a3d56c9041a539b3b0291a75a75481",
-        "25bcddc69b96f1ca0e233deaf753c99953753dd42379925bc26aa62966d4d9b4",
-        "50eec4adcf0639b8f231c91f162d5c8e8d4e8354a3ad24a8435d23624e3a8d1b",
-        "1672b886ed44684c895a3ab3230ac87ad895b48043447a828e2ac826a02678d0",
-        "1ba121c81e63f189ae75a3d0db4304a0079149d6aa3c982707a2770e7209039e"
-      ],
-      "topic_tokens": [
-        [
-          "apple",
-          "raises",
-          "prices",
-          "macbooks",
-          "ipads"
-        ],
-        [
-          "show",
-          "openknowledge",
-          "open",
-          "source",
-          "first",
-          "alternative",
-          "obsidian",
-          "notion"
-        ],
-        [
-          "apple",
-          "skip",
-          "high",
-          "end",
-          "mac",
-          "chips",
-          "favor",
-          "focused",
-          "line"
-        ],
-        [
-          "what",
-          "happened",
-          "after",
-          "people",
-          "tried",
-          "hack",
-          "assistant"
-        ],
-        [
-          "political",
-          "bias",
-          "where",
-          "models",
-          "stand"
-        ],
-        [
-          "financial",
-          "regulators",
-          "scramble",
-          "counter",
-          "rise",
-          "own",
-          "tools",
-          "reuters"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-26",
       "topics": [
         "U.S. government will decide who gets to use GPT-5.6",
@@ -975,6 +900,81 @@
           "alternative",
           "claude",
           "desktop"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "topics": [
+        "John Deere owners will get the right to repair equipment under FTC settlement",
+        "GPT‑Live",
+        "Mistral's Robostral Navigate: a state of the art robotics navigation model",
+        "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+        "SWE-1.7 Reach Near GPT 5.5 and Opus Intelligence",
+        "MIRA: Multiplayer Interactive World Models Trained on Rocket League"
+      ],
+      "title_hashes": [
+        "7ecff20f237256e39a37983c9d636247ebf9378042e6021f06e329111cf21d4b",
+        "fcabe3620ab7d38498907bdbb71c79b43108c13546d1bb186a47c6472e736aeb",
+        "ff2ac6b2831ce40b2112fa5f4fd0dd6146107e317bbad562312b77270d4eb65a",
+        "688310886ea35d98e8136b91e4960218c021eac117ad250caecb2c28c21dd19f",
+        "21c14267cf6b1b92621d2af840308b5016ada5be9753c9b6f9c452eb39b60b9f",
+        "110c5ab28819ed8d8de72f4c1ab86deb7e141d79dac1c17b0442163f202522c9"
+      ],
+      "topic_tokens": [
+        [
+          "john",
+          "deere",
+          "owners",
+          "will",
+          "get",
+          "right",
+          "repair",
+          "equipment",
+          "under",
+          "ftc",
+          "settlement"
+        ],
+        [
+          "gpt",
+          "live"
+        ],
+        [
+          "mistral",
+          "robostral",
+          "navigate",
+          "state",
+          "art",
+          "robotics",
+          "navigation",
+          "model"
+        ],
+        [
+          "show",
+          "microsoft",
+          "releases",
+          "flint",
+          "visualization",
+          "language",
+          "agents"
+        ],
+        [
+          "swe",
+          "reach",
+          "near",
+          "gpt",
+          "opus",
+          "intelligence"
+        ],
+        [
+          "mira",
+          "multiplayer",
+          "interactive",
+          "world",
+          "models",
+          "trained",
+          "rocket",
+          "league"
         ]
       ]
     }
