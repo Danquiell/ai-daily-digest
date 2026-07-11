@@ -1,79 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-27",
-      "topics": [
-        "DSpark: Speculative decoding accelerates LLM inference [pdf]",
-        "The best response to AI slop and online noise is from Robin Williams",
-        "Asian AI startups launch Mythos-like models",
-        "What Ozempic does to the gut-brain axis",
-        "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
-        "Anatomy of a Failed (Nation-State?) Attack"
-      ],
-      "title_hashes": [
-        "098f560c459a509c7551614d92f8f75d00ca725467bf72b9d4cf2fdddde3027a",
-        "52d3a04051cd5f0da1d5bcd9ed5fab0cc2cb6fb4e39cf783fb397586539fcb33",
-        "7bf4e72b64b9893b1389b95ae1b07fef2d3746faa5c7af812b85df482ebbb55b",
-        "efd2bea94ee1f0107edc72e7e9ae5ac935ec2244301925baa53ad173d7626c6f",
-        "52d061f9704a2445ae74343ed5a9d6c7fc5a17f8e60ecd0fc9c862eed21be04e",
-        "c19619fda5916627705b952d2de8279c693b8e797ab0de01111360091240426e"
-      ],
-      "topic_tokens": [
-        [
-          "dspark",
-          "speculative",
-          "decoding",
-          "accelerates",
-          "llm",
-          "inference",
-          "pdf"
-        ],
-        [
-          "best",
-          "response",
-          "slop",
-          "online",
-          "noise",
-          "robin",
-          "williams"
-        ],
-        [
-          "asian",
-          "startups",
-          "launch",
-          "mythos",
-          "like",
-          "models"
-        ],
-        [
-          "what",
-          "ozempic",
-          "does",
-          "gut",
-          "brain",
-          "axis"
-        ],
-        [
-          "wayfinder",
-          "router",
-          "deterministic",
-          "routing",
-          "queries",
-          "between",
-          "local",
-          "hosted",
-          "llm"
-        ],
-        [
-          "anatomy",
-          "failed",
-          "nation",
-          "state",
-          "attack"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-28",
       "topics": [
         "GLM 5.2 beats Claude in our benchmarks",
@@ -970,6 +897,80 @@
           "tutor",
           "year",
           "olds"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "topics": [
+        "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
+        "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
+        "How the terrorist group Boko Haram uses frontier AI",
+        "Snails' teeth beats spider silk as nature's strongest material (2015)",
+        "AI 2040: Plan A",
+        "Companies are scrambling to curtail soaring AI costs"
+      ],
+      "title_hashes": [
+        "60a215b9502e1e24d18987192e71b17e6e803195aecff1e422708ba85a0f8762",
+        "43843d2c1af2df0ac15136e23a56157fe36f098f994200c61d5d366906c7dd90",
+        "4885042e5684736cb9244b154e612154d2948a9ddc95e1a5fba6347e8f5963d1",
+        "405d30a9b6f081dbff19193edd749243106cfbd5a92d3aa7a08c0fc37af1fda2",
+        "3588ceed79a0ffc5eee51be57e1973ae2f9e44b268322e46770e9fa5a5c14e95",
+        "f37f658eaca6cf7ca1058174d584ae5f7b458b17dd86b43735ce6c433180752c"
+      ],
+      "topic_tokens": [
+        [
+          "apple",
+          "sues",
+          "openai",
+          "accuses",
+          "employees",
+          "stealing",
+          "trade",
+          "secrets"
+        ],
+        [
+          "gpt",
+          "sol",
+          "ultra",
+          "produces",
+          "proof",
+          "cycle",
+          "double",
+          "cover",
+          "conjecture",
+          "pdf"
+        ],
+        [
+          "how",
+          "terrorist",
+          "group",
+          "boko",
+          "haram",
+          "uses",
+          "frontier"
+        ],
+        [
+          "snails",
+          "teeth",
+          "beats",
+          "spider",
+          "silk",
+          "nature",
+          "strongest",
+          "material",
+          "2015"
+        ],
+        [
+          "2040",
+          "plan"
+        ],
+        [
+          "companies",
+          "scrambling",
+          "curtail",
+          "soaring",
+          "costs"
         ]
       ]
     }
