@@ -1,87 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-29",
-      "topics": [
-        "The CEO of Mullvad is the main financer of the Swedish Örebro party",
-        ".self: A new top-level domain designed to support self-hosting",
-        "What happens when you run a CUDA kernel?",
-        "Working With AI: A concrete example",
-        "Why did OpenAI delay rollout of its latest artificial intelligence model? - Baltimore Sun",
-        "Artificial intelligence and tax disputes: top five risks for trustees using AI - Farrer & Co"
-      ],
-      "title_hashes": [
-        "2d2867d15a680e41c8c8eea090277f5829fff03598695ff6a664d11362531af2",
-        "5541b27edb546179377cfab7d9214e846b7aaa25914605c610aed493d927c7d8",
-        "c4532c70d844f918f16fba3a588a60bab2fa38582a0420c7c699fa7d895b7420",
-        "fd01be6ff4262fa7c7b907911866e41ff32e8e3fb085c952a8d0ce3b6de0dac7",
-        "6e2c37a74167900e3b4f41a99cb122f2be8e9b2964cf272356ae66f058a68c4f",
-        "525cd305fe9f2b3c1f3ba3c56bd27be0e55dcfe15e502478f39b8d63fb1f7cc9"
-      ],
-      "topic_tokens": [
-        [
-          "ceo",
-          "mullvad",
-          "main",
-          "financer",
-          "swedish",
-          "rebro",
-          "party"
-        ],
-        [
-          "self",
-          "new",
-          "top",
-          "level",
-          "domain",
-          "designed",
-          "support",
-          "self",
-          "hosting"
-        ],
-        [
-          "what",
-          "happens",
-          "when",
-          "you",
-          "run",
-          "cuda",
-          "kernel"
-        ],
-        [
-          "working",
-          "concrete",
-          "example"
-        ],
-        [
-          "why",
-          "did",
-          "openai",
-          "delay",
-          "rollout",
-          "its",
-          "latest",
-          "artificial",
-          "intelligence",
-          "model",
-          "baltimore",
-          "sun"
-        ],
-        [
-          "artificial",
-          "intelligence",
-          "tax",
-          "disputes",
-          "top",
-          "five",
-          "risks",
-          "trustees",
-          "using",
-          "farrer"
-        ]
-      ]
-    },
-    {
       "date": "2026-06-30",
       "topics": [
         "Claude Code is steganographically marking requests",
@@ -975,6 +894,81 @@
           "can",
           "read",
           "cannot"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "topics": [
+        "Ask HN: Add flag for AI-generated articles",
+        "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+        "Zig Creator Calls Spade a Spade, Anthropic Blows Smoke",
+        "What xAI's Grok build CLI sends to xAI: A wire-level analysis",
+        "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+        "I Learned to Read Again"
+      ],
+      "title_hashes": [
+        "97787aff155b798ac6bab6a6d6d8e9153ecb13fd3f26481f6d2905f7688b550c",
+        "27f4fc0d5e7218bb8df429144ac652b996129ae9d9c845a60fcaf3cca8495f98",
+        "06a0892f1c5313af1b2096c4eb58fd8fb9a49a66c37862766622dc9b65294d6b",
+        "6d379ed3741b866deedf26aeb5ec220a9ba28c44473214d90e70e8c17155d5b6",
+        "e21fd47752aa4b05441f860159b684f7f8611db554089b9adf37f9fdb60c9770",
+        "17b5ab5c58b46cf421696939d177f3719a89f2f95f12768e82f9c8e0cca16b2f"
+      ],
+      "topic_tokens": [
+        [
+          "ask",
+          "add",
+          "flag",
+          "generated",
+          "articles"
+        ],
+        [
+          "claude",
+          "code",
+          "sends",
+          "33k",
+          "tokens",
+          "before",
+          "reading",
+          "prompt",
+          "opencode",
+          "sends"
+        ],
+        [
+          "zig",
+          "creator",
+          "calls",
+          "spade",
+          "spade",
+          "anthropic",
+          "blows",
+          "smoke"
+        ],
+        [
+          "what",
+          "xai",
+          "grok",
+          "build",
+          "cli",
+          "sends",
+          "xai",
+          "wire",
+          "level",
+          "analysis"
+        ],
+        [
+          "migrating",
+          "production",
+          "agent",
+          "gpt",
+          "faster",
+          "cheaper"
+        ],
+        [
+          "learned",
+          "read",
+          "again"
         ]
       ]
     }
