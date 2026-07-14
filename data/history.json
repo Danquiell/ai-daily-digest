@@ -1,72 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-06-30",
-      "topics": [
-        "Claude Code is steganographically marking requests",
-        "Claude Sonnet 5",
-        "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
-        "Claude Science",
-        "Godot will no longer accept AI-authored code contributions",
-        "From brain waves to words: a new path to communication without surgery"
-      ],
-      "title_hashes": [
-        "e2a348a0c48c8b1ae5d49c7cacc29a5a56ca509dae7c13626789b27d4b8fae45",
-        "bf5e428568630b8b81b99b5a1a33f1106d7835cb782a6867d7b11a3407e26b56",
-        "c301c5c56090a73933c5d2c6bde4a24ae5419439aa1f01ea727c99af3acd7792",
-        "1c498f330553c5c4ea86c70f283dce53ec5a99b61a4f480e16b8854f8a808bca",
-        "5c03dc19c5915f71a31ce5f4fda0e21c11d8856babdbdf3f4467c296f37fa511",
-        "11c37f80f8e0fb9d8558dc80906cf18bf8af7eb89fa8141a3bc776564946439c"
-      ],
-      "topic_tokens": [
-        [
-          "claude",
-          "code",
-          "steganographically",
-          "marking",
-          "requests"
-        ],
-        [
-          "claude",
-          "sonnet"
-        ],
-        [
-          "department",
-          "commerce",
-          "has",
-          "lifted",
-          "export",
-          "controls",
-          "claude",
-          "fable",
-          "mythos"
-        ],
-        [
-          "claude",
-          "science"
-        ],
-        [
-          "godot",
-          "will",
-          "longer",
-          "accept",
-          "authored",
-          "code",
-          "contributions"
-        ],
-        [
-          "brain",
-          "waves",
-          "words",
-          "new",
-          "path",
-          "communication",
-          "without",
-          "surgery"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-01",
       "topics": [
         "Sony Deletes 551 Movies PlayStation Owners Paid For",
@@ -969,6 +903,85 @@
           "learned",
           "read",
           "again"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "topics": [
+        "Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
+        "Australian energy retailers must provide three hours of free daytime electricity",
+        "Indian scientists produce most detailed 3D atlas of the human brainstem",
+        "Show HN: I implemented a neural network in SQL",
+        "Alternative(s) to run CUDA on non-Nvidia hardware",
+        "Show HN: Jacquard, a programming language for AI-written, human-reviewed code"
+      ],
+      "title_hashes": [
+        "015dc23d5d4ccdb312b5a04c775ea1b9cb809941e709d350408b5dcc337c2b4f",
+        "a94ccda0d779d2a13afcf1e3fca15fe54ee0224bfa714523e03952c9e874564f",
+        "6ed98d629b697545c775930570acd001c7429c7bb1bb7170903db43f005929b3",
+        "e7f9dd4be5fdd4af150bf1c4fb07cac4e540a712526d1305d8f9651517de8b9a",
+        "255680008a5e61bca443c7a79e6d7f81e76d26ebcacda6ee6116e1a3b72b2d08",
+        "eb5daff1ce7a0ce756d776b7cb84d08c497acb29dca82bd871c49fa05f7864eb"
+      ],
+      "topic_tokens": [
+        [
+          "apple",
+          "new",
+          "speechanalyzer",
+          "api",
+          "benchmarked",
+          "against",
+          "whisper",
+          "its",
+          "predecessor"
+        ],
+        [
+          "australian",
+          "energy",
+          "retailers",
+          "must",
+          "provide",
+          "three",
+          "hours",
+          "free",
+          "daytime",
+          "electricity"
+        ],
+        [
+          "indian",
+          "scientists",
+          "produce",
+          "most",
+          "detailed",
+          "atlas",
+          "human",
+          "brainstem"
+        ],
+        [
+          "show",
+          "implemented",
+          "neural",
+          "network",
+          "sql"
+        ],
+        [
+          "alternative",
+          "run",
+          "cuda",
+          "non",
+          "nvidia",
+          "hardware"
+        ],
+        [
+          "show",
+          "jacquard",
+          "programming",
+          "language",
+          "written",
+          "human",
+          "reviewed",
+          "code"
         ]
       ]
     }
