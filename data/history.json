@@ -1,84 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-01",
-      "topics": [
-        "Sony Deletes 551 Movies PlayStation Owners Paid For",
-        "Nintendo has raised its employees base salary by 10%",
-        "Oomwoo, an open-source robot vacuum you build yourself",
-        "Kimi K2.7 Code is generally available in GitHub Copilot",
-        "Weave Robotics launches Isaac 1, a $7,999 home robot with Fall 2026 deliveries",
-        "Meta building cloud business to sell excess AI capacity"
-      ],
-      "title_hashes": [
-        "4ec6046cfa35b0e9986afddfc13dcca9e112117a29df50873f07ef4714cd4091",
-        "9c68ce663c6641e275a43410843debcdac9a0bc9deddf619a875928eae3b9ba0",
-        "6713522b11912f5e974cfdcbbb5ee7445d452947640765b12b760351a2393ac3",
-        "2243a97a9cdcec9843ab8ccb68705c06784a63d322fd50497c9134196a505c4e",
-        "37dd85046db2632008a91a8852db24e44293fd9c28bb8d2e19a9eeee6beb0820",
-        "9c2d73f284534f73ba7b1d6f717f34bacc3804eec24cf871d763f050bf065530"
-      ],
-      "topic_tokens": [
-        [
-          "sony",
-          "deletes",
-          "551",
-          "movies",
-          "playstation",
-          "owners",
-          "paid"
-        ],
-        [
-          "nintendo",
-          "has",
-          "raised",
-          "its",
-          "employees",
-          "base",
-          "salary"
-        ],
-        [
-          "oomwoo",
-          "open",
-          "source",
-          "robot",
-          "vacuum",
-          "you",
-          "build",
-          "yourself"
-        ],
-        [
-          "kimi",
-          "code",
-          "generally",
-          "available",
-          "github",
-          "copilot"
-        ],
-        [
-          "weave",
-          "robotics",
-          "launches",
-          "isaac",
-          "999",
-          "home",
-          "robot",
-          "fall",
-          "2026",
-          "deliveries"
-        ],
-        [
-          "meta",
-          "building",
-          "cloud",
-          "business",
-          "sell",
-          "excess",
-          "capacity"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-02",
       "topics": [
         "Spain Orders Blacklist of Palantir from Public and Private Companies",
@@ -982,6 +904,81 @@
           "human",
           "reviewed",
           "code"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "topics": [
+        "Bonsai 27B: A 27B-Class model that runs on a phone",
+        "Jurassic Park computers in excruciating detail",
+        "How to stop Claude from saying load-bearing",
+        "Are we offloading too much of our thinking to AI?",
+        "I tricked Claude into leaking your deepest, darkest secrets",
+        "TS-2026-009: Insecure argument handling in Tailscale SSH permitted root access"
+      ],
+      "title_hashes": [
+        "40d3284afdbe6cf0a430ae48ba5e973894c62bdc4e27c2c52bd9c1d50f2ebb7c",
+        "86f0818303cda254cfac737f1db6e79ff688410b4f82b0b51168143ab2cac3a1",
+        "29c90255de6e6e1451ba10380e68d53bb40eeb66737dc1c48e44d6701987e43d",
+        "a2cae8d85e06e31706c790a0be42043eeb47c92307ad1f0242904471fc571eb7",
+        "6cb171cc7b2bfa627d875302cd28d4038241e6151f219289ead60957ad530f9b",
+        "beb763c7f3ebf928f22097d18096290e17d9bdd66663c803cacf15058d591f65"
+      ],
+      "topic_tokens": [
+        [
+          "bonsai",
+          "27b",
+          "27b",
+          "class",
+          "model",
+          "that",
+          "runs",
+          "phone"
+        ],
+        [
+          "jurassic",
+          "park",
+          "computers",
+          "excruciating",
+          "detail"
+        ],
+        [
+          "how",
+          "stop",
+          "claude",
+          "saying",
+          "load",
+          "bearing"
+        ],
+        [
+          "offloading",
+          "too",
+          "much",
+          "our",
+          "thinking"
+        ],
+        [
+          "tricked",
+          "claude",
+          "into",
+          "leaking",
+          "your",
+          "deepest",
+          "darkest",
+          "secrets"
+        ],
+        [
+          "2026",
+          "009",
+          "insecure",
+          "argument",
+          "handling",
+          "tailscale",
+          "ssh",
+          "permitted",
+          "root",
+          "access"
         ]
       ]
     }
