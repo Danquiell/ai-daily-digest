@@ -1,90 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-02",
-      "topics": [
-        "Spain Orders Blacklist of Palantir from Public and Private Companies",
-        "AI can't be listed as inventor on patent applications, Japan's top court rules",
-        "Alibaba to ban Claude Code in workplace over alleged backdoor risks, source says",
-        "The short leash AI coding method for beating Fable",
-        "Claude-real-video － any LLM can watch a video",
-        "Is One Layer Enough? A Single Transformer Layer Matches Full-Parameter RL Train"
-      ],
-      "title_hashes": [
-        "6a729534b0c4bae1d926f75dd43938e05ade1dcc6116cf8aeeb93fed271dd168",
-        "cbe512f78431706de65597a03042f3927c87827008a5395ea590ff7bc15e1e6e",
-        "104a6aca4d3a34080899eb41f94a24a4d767be463498c895b1528a09670bd9da",
-        "07c25a2f29dbb39859f27f54abbd6026f36f48e97bf8ec6961055f6fe39a2ab9",
-        "5b7d35dd5a35d7aa0022281aca90217de6d2e18e54ee075b883d76e01c5c182b",
-        "ecaf671e5a83c2a5faa669e7377f54008de9c3aca45ce83d2a89b3811ab425b8"
-      ],
-      "topic_tokens": [
-        [
-          "spain",
-          "orders",
-          "blacklist",
-          "palantir",
-          "public",
-          "private",
-          "companies"
-        ],
-        [
-          "can",
-          "listed",
-          "inventor",
-          "patent",
-          "applications",
-          "japan",
-          "top",
-          "court",
-          "rules"
-        ],
-        [
-          "alibaba",
-          "ban",
-          "claude",
-          "code",
-          "workplace",
-          "over",
-          "alleged",
-          "backdoor",
-          "risks",
-          "source",
-          "says"
-        ],
-        [
-          "short",
-          "leash",
-          "coding",
-          "method",
-          "beating",
-          "fable"
-        ],
-        [
-          "claude",
-          "real",
-          "video",
-          "any",
-          "llm",
-          "can",
-          "watch",
-          "video"
-        ],
-        [
-          "one",
-          "layer",
-          "enough",
-          "single",
-          "transformer",
-          "layer",
-          "matches",
-          "full",
-          "parameter",
-          "train"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-03",
       "topics": [
         "Protect your right to run local AI",
@@ -979,6 +895,75 @@
           "permitted",
           "root",
           "access"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "topics": [
+        "OpenAI loses trademark dispute at EU court",
+        "Governments, companies, nonprofits should invest in free, open source AI [pdf]",
+        "Briar is in maintenance mode",
+        "Brainless: Shadcn components that look like Claude Code, Codex and Grok",
+        "Where are YC founders now? OpenAI and Anthropic, mostly",
+        "LLM Networking with MikroTik"
+      ],
+      "title_hashes": [
+        "e6547d2d2b74f9dd4fd54e203dda461e79b5e0b8c09156231e4b98a22e95a668",
+        "cbc4225c0426a68724ca6b829f624f0551b356a182c9d6a4c8b14df9a2868e46",
+        "ee6c1c0e5c890d3feff5e940812127150aa8b9cb020ad8bbdc9bd03bb5ab467a",
+        "71ea2f4bc2552f7834c18fc38444eae95f729d2c2d2c4109715ae73e16874bfd",
+        "737131fed5e685e36114bd329aec3c0d0ce6f9fe8444a3185f9630051ff926df",
+        "e900127c12ed4e0d0d14c36106e083ac889ac8db5a795f35999dd9b9c8eee359"
+      ],
+      "topic_tokens": [
+        [
+          "openai",
+          "loses",
+          "trademark",
+          "dispute",
+          "court"
+        ],
+        [
+          "governments",
+          "companies",
+          "nonprofits",
+          "should",
+          "invest",
+          "free",
+          "open",
+          "source",
+          "pdf"
+        ],
+        [
+          "briar",
+          "maintenance",
+          "mode"
+        ],
+        [
+          "brainless",
+          "shadcn",
+          "components",
+          "that",
+          "look",
+          "like",
+          "claude",
+          "code",
+          "codex",
+          "grok"
+        ],
+        [
+          "where",
+          "founders",
+          "now",
+          "openai",
+          "anthropic",
+          "mostly"
+        ],
+        [
+          "llm",
+          "networking",
+          "mikrotik"
         ]
       ]
     }
