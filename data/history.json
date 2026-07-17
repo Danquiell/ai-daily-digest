@@ -1,77 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-03",
-      "topics": [
-        "Protect your right to run local AI",
-        "Espionage Against the European Parliament",
-        "Jamesob's guide to running SOTA LLMs locally",
-        "The bottleneck might be the air in the room",
-        "I Wasn't Allowed Prompting ChatGPT During My Chalk Talk: This Is Discrimination (2025)",
-        "New serious vulnerabilities spiked around release of Claude Mythos Preview"
-      ],
-      "title_hashes": [
-        "14fcaa7817b01ceb0f04521bb5ed53ec58d8a76023204876394506ee66a7cad0",
-        "dcfa503fbb9a03b94ab55690e31949ffa259243a8e153eb4cb479212cb14dbd4",
-        "d43b004c71cbdef579515403b4856eae2785d2ec36d70f42f99af3265c753611",
-        "247f7732afc5638f32835b86261e41a649a88b0ac2849b614a3841b251ebf4ba",
-        "491ea2aa37ec8721cfb41dab270b1a3304771c85a9e0b6ec616d59d9659095b1",
-        "22b7e14784dfc7764d5f7df2ec0dbf00698a9a3842947fd436a34cdd5590dea3"
-      ],
-      "topic_tokens": [
-        [
-          "protect",
-          "your",
-          "right",
-          "run",
-          "local"
-        ],
-        [
-          "espionage",
-          "against",
-          "european",
-          "parliament"
-        ],
-        [
-          "jamesob",
-          "guide",
-          "running",
-          "sota",
-          "llms",
-          "locally"
-        ],
-        [
-          "bottleneck",
-          "might",
-          "air",
-          "room"
-        ],
-        [
-          "wasn",
-          "allowed",
-          "prompting",
-          "chatgpt",
-          "during",
-          "chalk",
-          "talk",
-          "this",
-          "discrimination",
-          "2025"
-        ],
-        [
-          "new",
-          "serious",
-          "vulnerabilities",
-          "spiked",
-          "around",
-          "release",
-          "claude",
-          "mythos",
-          "preview"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-04",
       "topics": [
         "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
@@ -964,6 +893,72 @@
           "llm",
           "networking",
           "mikrotik"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "topics": [
+        "NotebookLM is now Gemini Notebook",
+        "$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol",
+        "LM Studio Bionic: the AI agent for open models",
+        "The LLM Critics Are Right. I Use LLMs Anyway",
+        "Detecting LLM-Generated Texts with “Classical” Machine Learning",
+        "The Little Book of Reinforcement Learning"
+      ],
+      "title_hashes": [
+        "32491295203fa1db1736d9d57f651de96773ac23819522dc485e3b8f368931be",
+        "8b448278f07b679b6185c8a11999ff27ff5a89c6cc5c350d48f5e38603f30bae",
+        "3a4c036853fc6eae412e8510a8aefe4dfbcfe27e16c210c66966fa4425030e9a",
+        "0eaee9df1b6848bd1a8f04c5494d97a1eb74a4dae1e69abf01d4b129b47c32a1",
+        "3ffc7206d983785cdcd9adc1c5f9bfb378afb6598015002365eafb97789fc286",
+        "4f5bfb30f23ff14e82756eb90147e34c965cea40ba18da80bc2f2814ec45d90a"
+      ],
+      "topic_tokens": [
+        [
+          "notebooklm",
+          "now",
+          "gemini",
+          "notebook"
+        ],
+        [
+          "100",
+          "music",
+          "video",
+          "claude",
+          "fable",
+          "gpt",
+          "sol"
+        ],
+        [
+          "studio",
+          "bionic",
+          "agent",
+          "open",
+          "models"
+        ],
+        [
+          "llm",
+          "critics",
+          "right",
+          "use",
+          "llms",
+          "anyway"
+        ],
+        [
+          "detecting",
+          "llm",
+          "generated",
+          "texts",
+          "classical",
+          "machine",
+          "learning"
+        ],
+        [
+          "little",
+          "book",
+          "reinforcement",
+          "learning"
         ]
       ]
     }
