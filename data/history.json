@@ -1,94 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-04",
-      "topics": [
-        "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
-        "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
-        "Record-breaking solo rower Kelsey Pfendler arrives in Hawaii",
-        "Mouse: Precision Editing Tools for AI Coding Agents",
-        "OpenAI in talks with US govt for 5% stake: Why would a company do that? | Hindustan Times - Hindustan Times",
-        "Texas program targets future of farming with training in AI and robotics - San Antonio Express-News"
-      ],
-      "title_hashes": [
-        "e15dcb5da67ed9a36a516b0bb3e9f951f4fb0da073d9c3bc718f3884978ea5cd",
-        "c359ba3263afda252d436baa36aee1a8b5807fa8360c2c085f3948b379050fc8",
-        "fb94e2fd60b947fbcc7e1daf7219aad2649794ca8ae96f6459f712fdf560be25",
-        "ce49d1c01ecc9077bc7f6f6ad0bd3cb52375881d0e648a9ddabb1197a93a48db",
-        "4a21436b04cb1e28c48513bcf25d100c8fac169d245d184407d3e277694143ee",
-        "e88a778b5eebf97aed1d8b64538ebb108d9dee06b75d34aa7091caa9cdd93cf1"
-      ],
-      "topic_tokens": [
-        [
-          "gpt",
-          "codex",
-          "reasoning",
-          "token",
-          "clustering",
-          "may",
-          "leading",
-          "degraded",
-          "performance"
-        ],
-        [
-          "sqlite",
-          "utils",
-          "0rc2",
-          "mostly",
-          "written",
-          "claude",
-          "fable",
-          "about",
-          "149"
-        ],
-        [
-          "record",
-          "breaking",
-          "solo",
-          "rower",
-          "kelsey",
-          "pfendler",
-          "arrives",
-          "hawaii"
-        ],
-        [
-          "mouse",
-          "precision",
-          "editing",
-          "tools",
-          "coding",
-          "agents"
-        ],
-        [
-          "openai",
-          "talks",
-          "govt",
-          "stake",
-          "why",
-          "would",
-          "company",
-          "that",
-          "hindustan",
-          "times",
-          "hindustan",
-          "times"
-        ],
-        [
-          "texas",
-          "program",
-          "targets",
-          "future",
-          "farming",
-          "training",
-          "robotics",
-          "san",
-          "antonio",
-          "express",
-          "news"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-05",
       "topics": [
         "GPT-5.6 Sol Ultra will be in Codex",
@@ -959,6 +871,83 @@
           "book",
           "reinforcement",
           "learning"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "topics": [
+        "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
+        "The state of open source AI",
+        "Apple targets dozens of OpenAI employees with legal letters",
+        "FAA lets Boeing sign off on 737 MAX, 787 airworthiness certificates again",
+        "Painting the sides of railroad rails white to reduce derailment",
+        "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM"
+      ],
+      "title_hashes": [
+        "a2b90c767e297b3e5b7abcd15e2663a7cd3d7fdfceafa58631ba8c9ca2715e8f",
+        "956702b26bc04fea6f3098bd71e5ed841598104dee69c5aa1d115fdcbea7ab3a",
+        "47ffb3b65309de44a37f032948e805a60d64967cbea79682b2a81df5e2c71237",
+        "3a3713716fcbb7960848ed16fdd5f0fe85af67853e0e8962a04a1a39b35279e2",
+        "a00c71369c725bf475929eba232fe09f6b9135fcaa37cc1ea17161f0ffc6b0c5",
+        "30e577b8b854c8059875ad983e58cabcd830254a8f78e868f5307ea4d1e7fe1d"
+      ],
+      "topic_tokens": [
+        [
+          "kaiser",
+          "nurses",
+          "say",
+          "surveillance",
+          "making",
+          "their",
+          "jobs",
+          "patient",
+          "care",
+          "worse"
+        ],
+        [
+          "state",
+          "open",
+          "source"
+        ],
+        [
+          "apple",
+          "targets",
+          "dozens",
+          "openai",
+          "employees",
+          "legal",
+          "letters"
+        ],
+        [
+          "faa",
+          "lets",
+          "boeing",
+          "sign",
+          "off",
+          "737",
+          "max",
+          "787",
+          "airworthiness",
+          "certificates",
+          "again"
+        ],
+        [
+          "painting",
+          "sides",
+          "railroad",
+          "rails",
+          "white",
+          "reduce",
+          "derailment"
+        ],
+        [
+          "meets",
+          "cryptography",
+          "what",
+          "found",
+          "openvm",
+          "zkvm"
         ]
       ]
     }
