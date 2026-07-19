@@ -1,84 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-05",
-      "topics": [
-        "GPT-5.6 Sol Ultra will be in Codex",
-        "Real-time map of Great Britain's rail network",
-        "Does code cleanliness affect coding agents? A controlled minimal-pair study",
-        "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
-        "When AI Costs More Than the Engineer",
-        "Delta flight hit by firework while landing at Midway Airport on Fourth of July"
-      ],
-      "title_hashes": [
-        "8aa08ed2d2e58f01550eaf939b52b96aa973f5caaa0194b1884181baab137733",
-        "4c7c0ee5b7bf4b941f0af3dedcc22c9f9d149a7d8f4a279dd407295dc93c1d77",
-        "bf78b64c90580c565398bff012ed440c16c4592004b3e218a95af2ab6781264d",
-        "049033f2a9a4c4b8e8b653f1f47699f7689735439ab764e7b2e732979a29a0f7",
-        "97747054c9929ca93e4eef8d9426c68736f357861e264e9b98f0c36f31b824c9",
-        "9aa99355466d93c4a727da7c628d1bb8593d7c8e9e6c7b578a1f222a9a2e762d"
-      ],
-      "topic_tokens": [
-        [
-          "gpt",
-          "sol",
-          "ultra",
-          "will",
-          "codex"
-        ],
-        [
-          "real",
-          "time",
-          "map",
-          "great",
-          "britain",
-          "rail",
-          "network"
-        ],
-        [
-          "does",
-          "code",
-          "cleanliness",
-          "affect",
-          "coding",
-          "agents",
-          "controlled",
-          "minimal",
-          "pair",
-          "study"
-        ],
-        [
-          "new",
-          "tutor",
-          "achieves",
-          "effect",
-          "size",
-          "dartmouth",
-          "course",
-          "pdf"
-        ],
-        [
-          "when",
-          "costs",
-          "more",
-          "than",
-          "engineer"
-        ],
-        [
-          "delta",
-          "flight",
-          "hit",
-          "firework",
-          "while",
-          "landing",
-          "midway",
-          "airport",
-          "fourth",
-          "july"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-06",
       "topics": [
         "GLM 5.2 and the coming AI margin collapse",
@@ -948,6 +870,81 @@
           "found",
           "openvm",
           "zkvm"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "topics": [
+        "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
+        "NYC may require landlords and realtors to disclose the use of AI in listings",
+        "What AI did to stackoverflow in a graph",
+        "AI Mania Is Eviscerating Global Decision-Making",
+        "Setting up your spare Mac for Claude Code to control, a step-by-step guide",
+        "Claude Code uses Bun written in Rust now"
+      ],
+      "title_hashes": [
+        "954b18888cd31dcf574ce2cab30e5a5b4e8eda629b661bd6f52d0ed152557611",
+        "1b694b5faed6cc84855ff3cf6da0c60be6df5d203d35fa14bd298c6c9db4f005",
+        "b9c711b86d897e72d63920db4a9a5dbea579b78fa1f239cde2d92c458274c8b3",
+        "d19fc397291e6d4416e6b727a5a7507657f50a78ba8862e02c12a5eae53c03a1",
+        "dcffaa349c9447bea913102d6579cb3125e274c4780ce6b0de08700c329669cc",
+        "75881612d03714535b399d17174284e0cf0b43b9598cce21a3e903eb35d09083"
+      ],
+      "topic_tokens": [
+        [
+          "gpt",
+          "used",
+          "prompt",
+          "close",
+          "year",
+          "gap",
+          "convex",
+          "optimization"
+        ],
+        [
+          "nyc",
+          "may",
+          "require",
+          "landlords",
+          "realtors",
+          "disclose",
+          "use",
+          "listings"
+        ],
+        [
+          "what",
+          "did",
+          "stackoverflow",
+          "graph"
+        ],
+        [
+          "mania",
+          "eviscerating",
+          "global",
+          "decision",
+          "making"
+        ],
+        [
+          "setting",
+          "your",
+          "spare",
+          "mac",
+          "claude",
+          "code",
+          "control",
+          "step",
+          "step",
+          "guide"
+        ],
+        [
+          "claude",
+          "code",
+          "uses",
+          "bun",
+          "written",
+          "rust",
+          "now"
         ]
       ]
     }
