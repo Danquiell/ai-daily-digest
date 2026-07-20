@@ -1,74 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-06",
-      "topics": [
-        "GLM 5.2 and the coming AI margin collapse",
-        "AMD Ryzen AI Halo – $4k AI Dev Kit",
-        "Small AI Models Gain Traction In places with unreliable networks",
-        "OfficeCLI: Office suite for AI agents to read and edit Microsoft Office files",
-        "NSA and IETF: Fairness",
-        "Marshall upgrades the bass and repairability of two wireless speakers"
-      ],
-      "title_hashes": [
-        "b57bbe4bdc3bdbd34c3df3c430577019c4da38591d65c0376b1b011f2640d08d",
-        "5df5835f78c4ad55ce367327750288e286c1a6947b75cbbf9087cf8cb3430ad1",
-        "56e42af2455f7db5efd3800fbacd253d8f5f30b19d9bdc18b90dd4fdb35060b1",
-        "f1dd0731628238a39fe845c5ed1a17e21bfeef75233af72dbebd24d35380003a",
-        "5e9c121af92a394e4493f6d7f5ce1d900ebfe6d467e53530727055becb73772a",
-        "a1d85ed6733c64097798d9d60b9ba26c43279db446f4414fe405ea4900db944d"
-      ],
-      "topic_tokens": [
-        [
-          "glm",
-          "coming",
-          "margin",
-          "collapse"
-        ],
-        [
-          "amd",
-          "ryzen",
-          "halo",
-          "dev",
-          "kit"
-        ],
-        [
-          "small",
-          "models",
-          "gain",
-          "traction",
-          "places",
-          "unreliable",
-          "networks"
-        ],
-        [
-          "officecli",
-          "office",
-          "suite",
-          "agents",
-          "read",
-          "edit",
-          "microsoft",
-          "office",
-          "files"
-        ],
-        [
-          "nsa",
-          "ietf",
-          "fairness"
-        ],
-        [
-          "marshall",
-          "upgrades",
-          "bass",
-          "repairability",
-          "two",
-          "wireless",
-          "speakers"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-07",
       "topics": [
         "Chat Control 1.0 and 2.0 Explained",
@@ -945,6 +877,75 @@
           "written",
           "rust",
           "now"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "topics": [
+        "Xiaomi-Robotics-1",
+        "Orion Browser by Kagi",
+        "Exploit brokers pay $500k for WordPress RCEs. I found one with GPT5.6 and $25",
+        "How proprietary formats have become Microsoft’s main tool for lock-in",
+        "LoRA Speedrun – a public wall-clock leaderboard for fine-tuning techniques",
+        "Airbus Takes Flight from AWS"
+      ],
+      "title_hashes": [
+        "6931d9f14ac6c796d2c91ceb3ea22377a9319b1ebf4863fa2dc539da714a4ea9",
+        "ba7182f4d1126c0a981256dd066acaca5a5e6ee51c1011c3ed83c1f92ba93f92",
+        "ffd09e721e437ac1fb963356e489029430b9c7f4ee577ecf4d4324bc7f3272cd",
+        "d7273e7ff343185bf865bde068c9fcb5c913f2f3b20f73bc1521a6cef5d4783a",
+        "dd3cc709a38aa446cb60b3e508b83abaef43296cff2df8bb00709d54825ea3df",
+        "1e2cdfbc9ef0d28591d9874b570a915c5a8df83db08d10ee16df6439331115e2"
+      ],
+      "topic_tokens": [
+        [
+          "xiaomi",
+          "robotics"
+        ],
+        [
+          "orion",
+          "browser",
+          "kagi"
+        ],
+        [
+          "exploit",
+          "brokers",
+          "pay",
+          "500k",
+          "wordpress",
+          "rces",
+          "found",
+          "one",
+          "gpt5"
+        ],
+        [
+          "how",
+          "proprietary",
+          "formats",
+          "have",
+          "become",
+          "microsoft",
+          "main",
+          "tool",
+          "lock"
+        ],
+        [
+          "lora",
+          "speedrun",
+          "public",
+          "wall",
+          "clock",
+          "leaderboard",
+          "fine",
+          "tuning",
+          "techniques"
+        ],
+        [
+          "airbus",
+          "takes",
+          "flight",
+          "aws"
         ]
       ]
     }
