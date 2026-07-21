@@ -1,79 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-07",
-      "topics": [
-        "Chat Control 1.0 and 2.0 Explained",
-        "Show HN: Davit, a Apple Containers UI",
-        "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
-        "Tenda firmware (multiple versions) contains hidden authentication backdoor",
-        "We're extending access to Fable 5 on all paid plans through July 12",
-        "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop"
-      ],
-      "title_hashes": [
-        "dc6d44d25abdd7a42be0ee3623819179d1cf1580ad26cf9d911ef2bf2c126356",
-        "812ea93979575ec124303608956163629648ffc414afca3fd03f416e2db6dd49",
-        "e995db5be742c60494002e735f2bccaaba03ac754b8cac553eb43d2b402db7ae",
-        "9dea45aed8c5039f4a485eba3cfdb0f4a96f1866307e43d8af49379b9bc00301",
-        "2b66ddf2c5ed750e71c316c8b27071f3ced886162ce38294ad43781fdd760167",
-        "aff7b688ddc90ec9b812d969d4cb5c5bed7d7be7bd3b0883d0edb2258153ad45"
-      ],
-      "topic_tokens": [
-        [
-          "chat",
-          "control",
-          "explained"
-        ],
-        [
-          "show",
-          "davit",
-          "apple",
-          "containers"
-        ],
-        [
-          "gitlost",
-          "tricked",
-          "github",
-          "agent",
-          "into",
-          "leaking",
-          "private",
-          "repos"
-        ],
-        [
-          "tenda",
-          "firmware",
-          "multiple",
-          "versions",
-          "contains",
-          "hidden",
-          "authentication",
-          "backdoor"
-        ],
-        [
-          "extending",
-          "access",
-          "fable",
-          "all",
-          "paid",
-          "plans",
-          "through",
-          "july"
-        ],
-        [
-          "show",
-          "rowboat",
-          "open",
-          "source",
-          "local",
-          "first",
-          "alternative",
-          "claude",
-          "desktop"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-08",
       "topics": [
         "John Deere owners will get the right to repair equipment under FTC settlement",
@@ -946,6 +873,71 @@
           "takes",
           "flight",
           "aws"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "topics": [
+        "China’s open-weights AI strategy is winning",
+        "Airport Simulator",
+        "Who's afraid of Chinese models?",
+        "Kimi K3, Qwen 3.8, and Anthropic's (Potential) Unravelling",
+        "How we measured AI writing across arXiv, and where the measurement breaks",
+        "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge"
+      ],
+      "title_hashes": [
+        "b18c49cb26a1ff9bfd1b8459670d035eab282293a539bb5288606acf90b0d50b",
+        "8b224d12709e8ae37777ff1b0a78b8768802d4c767720eecd8f21b1f191b1bfa",
+        "eebcb5871c32f05a383f01dbe5c88240d5c5c16aa0f3ecae0c53dcc1849920ed",
+        "194fc1529dd84396a0a6e333daea3b1f73977e6966f99a760603827d8fe8d1d0",
+        "4023ed63fc6a89944293da16cf6dac7c51445416eab0a818f60b78f57cf904c0",
+        "5ccad68ba3da44b054d45c6f6a84989d19659bbaa7ca968871f3040702401cd0"
+      ],
+      "topic_tokens": [
+        [
+          "china",
+          "open",
+          "weights",
+          "strategy",
+          "winning"
+        ],
+        [
+          "airport",
+          "simulator"
+        ],
+        [
+          "who",
+          "afraid",
+          "chinese",
+          "models"
+        ],
+        [
+          "kimi",
+          "qwen",
+          "anthropic",
+          "potential",
+          "unravelling"
+        ],
+        [
+          "how",
+          "measured",
+          "writing",
+          "across",
+          "arxiv",
+          "where",
+          "measurement",
+          "breaks"
+        ],
+        [
+          "qwen",
+          "image",
+          "rich",
+          "content",
+          "authentic",
+          "details",
+          "deep",
+          "knowledge"
         ]
       ]
     }
