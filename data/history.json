@@ -1,81 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-08",
-      "topics": [
-        "John Deere owners will get the right to repair equipment under FTC settlement",
-        "GPT‑Live",
-        "Mistral's Robostral Navigate: a state of the art robotics navigation model",
-        "Show HN: Microsoft releases Flint, a visualization language for AI agents",
-        "SWE-1.7 Reach Near GPT 5.5 and Opus Intelligence",
-        "MIRA: Multiplayer Interactive World Models Trained on Rocket League"
-      ],
-      "title_hashes": [
-        "7ecff20f237256e39a37983c9d636247ebf9378042e6021f06e329111cf21d4b",
-        "fcabe3620ab7d38498907bdbb71c79b43108c13546d1bb186a47c6472e736aeb",
-        "ff2ac6b2831ce40b2112fa5f4fd0dd6146107e317bbad562312b77270d4eb65a",
-        "688310886ea35d98e8136b91e4960218c021eac117ad250caecb2c28c21dd19f",
-        "21c14267cf6b1b92621d2af840308b5016ada5be9753c9b6f9c452eb39b60b9f",
-        "110c5ab28819ed8d8de72f4c1ab86deb7e141d79dac1c17b0442163f202522c9"
-      ],
-      "topic_tokens": [
-        [
-          "john",
-          "deere",
-          "owners",
-          "will",
-          "get",
-          "right",
-          "repair",
-          "equipment",
-          "under",
-          "ftc",
-          "settlement"
-        ],
-        [
-          "gpt",
-          "live"
-        ],
-        [
-          "mistral",
-          "robostral",
-          "navigate",
-          "state",
-          "art",
-          "robotics",
-          "navigation",
-          "model"
-        ],
-        [
-          "show",
-          "microsoft",
-          "releases",
-          "flint",
-          "visualization",
-          "language",
-          "agents"
-        ],
-        [
-          "swe",
-          "reach",
-          "near",
-          "gpt",
-          "opus",
-          "intelligence"
-        ],
-        [
-          "mira",
-          "multiplayer",
-          "interactive",
-          "world",
-          "models",
-          "trained",
-          "rocket",
-          "league"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-09",
       "topics": [
         "GPT-5.6",
@@ -938,6 +863,82 @@
           "details",
           "deep",
           "knowledge"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "topics": [
+        "OpenAI and Hugging Face address security incident during model evaluation",
+        "Advertise in ChatGPT",
+        "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
+        "Judge approves $1.5B Anthropic settlement for pirated books used to train Claude",
+        "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
+        "\"Drawing\" the Mona Lisa with GPT-5.6, Claude, Gemini, and Grok"
+      ],
+      "title_hashes": [
+        "9e4d3a6abe827bd3879b1a79ac38ca707461c9eae9a9ad5b9a252001954d2e40",
+        "acb43ba3e3acdbf8ea9c9447d12d7828689a2b1009ecb378ca8f38223985f02b",
+        "5f6e4bb56739a50977c6093afeb3bea586e341d931396a83cf3d69f17c2b8341",
+        "f42f3cf4814873bf6ef351ac79e17f0d9459fb337dfed812e02f6449d1580c9c",
+        "76e59c2f4400948a31c7945869a32327acacf71674c41a5e5020576342678c19",
+        "dde0dfe02404a215026fe0079b14c192fbc3fd5411bfdad83a46d32d61195e29"
+      ],
+      "topic_tokens": [
+        [
+          "openai",
+          "hugging",
+          "face",
+          "address",
+          "security",
+          "incident",
+          "during",
+          "model",
+          "evaluation"
+        ],
+        [
+          "advertise",
+          "chatgpt"
+        ],
+        [
+          "gemini",
+          "flash",
+          "flash",
+          "lite",
+          "flash",
+          "cyber"
+        ],
+        [
+          "judge",
+          "approves",
+          "anthropic",
+          "settlement",
+          "pirated",
+          "books",
+          "used",
+          "train",
+          "claude"
+        ],
+        [
+          "jack",
+          "dorsey",
+          "launches",
+          "buzz",
+          "combine",
+          "team",
+          "chat",
+          "agents",
+          "git",
+          "hosting"
+        ],
+        [
+          "drawing",
+          "mona",
+          "lisa",
+          "gpt",
+          "claude",
+          "gemini",
+          "grok"
         ]
       ]
     }
