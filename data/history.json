@@ -1,72 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-09",
-      "topics": [
-        "GPT-5.6",
-        "ChatGPT Work",
-        "Train sim created by just one person is being called the best ever made",
-        "AI content is everywhere on social media, especially LinkedIn",
-        "AI-generated videos to maximally drive a target brain region",
-        "Building a real-time AI tutor for 5-year-olds"
-      ],
-      "title_hashes": [
-        "b2eb13c61b299154bbc8af7301698bc457b8e948d08543a9945c9315536ee5b8",
-        "13a1a7306c5957ecf0e176c2c0bb435e72b7d823afacb1d33cd09f7a564ecd74",
-        "4bed0ffd6a28931ca8cc8bcb52d99c98eab6acbc2fc789799d8e959c05d25898",
-        "f5bf4a6c30ebf9d6d8447d4de92fef98c9db90b64ee0a7ef6d19840c09888e7e",
-        "ca8a7c2c859f1eb5ed8affef4ac03c96fe86a88ca7af9f687e80145f17ed146e",
-        "2c21d4ccb7f937f4ad9f4fa13f44ff9b01626be59c878ea3bf10ecd51f76c1e2"
-      ],
-      "topic_tokens": [
-        [
-          "gpt"
-        ],
-        [
-          "chatgpt",
-          "work"
-        ],
-        [
-          "train",
-          "sim",
-          "created",
-          "just",
-          "one",
-          "person",
-          "being",
-          "called",
-          "best",
-          "ever",
-          "made"
-        ],
-        [
-          "content",
-          "everywhere",
-          "social",
-          "media",
-          "especially",
-          "linkedin"
-        ],
-        [
-          "generated",
-          "videos",
-          "maximally",
-          "drive",
-          "target",
-          "brain",
-          "region"
-        ],
-        [
-          "building",
-          "real",
-          "time",
-          "tutor",
-          "year",
-          "olds"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-10",
       "topics": [
         "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
@@ -939,6 +873,68 @@
           "claude",
           "gemini",
           "grok"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "topics": [
+        "Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample",
+        "Are AI labs pelicanmaxxing?",
+        "So Reddit has decided that plain HTML is unsafe",
+        "Quality non-fiction books are the antithesis of AI slop",
+        "Businesses with ugly AI menu redesigns",
+        "Back to Kagi"
+      ],
+      "title_hashes": [
+        "4923f61294889febcfbfe1bdfbab437eb7f6a41d32e3fa916592defaec5d923a",
+        "0de886a9591dc32710f74baa6688871a3570e0a3ec61127c3f9a29ff48b47670",
+        "cd846a2d41bb7c89c2757e069445a3d1dbaa0c78a7aa931c3315601c470f74d0",
+        "f9d6a53804eb6222d4d2fbfa6a170678bbde08362fdfe3aadd1f370b7c806425",
+        "baf0fef4dd6a8fe540d5742a0e8cf568e4b35630168d882567aadfbaea87e3ca",
+        "8dda97566461d104b5a866be2397d864e567c487ed02e1654d3480460687ab11"
+      ],
+      "topic_tokens": [
+        [
+          "terence",
+          "tao",
+          "chatgpt",
+          "conversation",
+          "about",
+          "jacobian",
+          "conjecture",
+          "counterexample"
+        ],
+        [
+          "labs",
+          "pelicanmaxxing"
+        ],
+        [
+          "reddit",
+          "has",
+          "decided",
+          "that",
+          "plain",
+          "html",
+          "unsafe"
+        ],
+        [
+          "quality",
+          "non",
+          "fiction",
+          "books",
+          "antithesis",
+          "slop"
+        ],
+        [
+          "businesses",
+          "ugly",
+          "menu",
+          "redesigns"
+        ],
+        [
+          "back",
+          "kagi"
         ]
       ]
     }
