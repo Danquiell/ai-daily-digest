@@ -1,80 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-10",
-      "topics": [
-        "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
-        "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
-        "How the terrorist group Boko Haram uses frontier AI",
-        "Snails' teeth beats spider silk as nature's strongest material (2015)",
-        "AI 2040: Plan A",
-        "Companies are scrambling to curtail soaring AI costs"
-      ],
-      "title_hashes": [
-        "60a215b9502e1e24d18987192e71b17e6e803195aecff1e422708ba85a0f8762",
-        "43843d2c1af2df0ac15136e23a56157fe36f098f994200c61d5d366906c7dd90",
-        "4885042e5684736cb9244b154e612154d2948a9ddc95e1a5fba6347e8f5963d1",
-        "405d30a9b6f081dbff19193edd749243106cfbd5a92d3aa7a08c0fc37af1fda2",
-        "3588ceed79a0ffc5eee51be57e1973ae2f9e44b268322e46770e9fa5a5c14e95",
-        "f37f658eaca6cf7ca1058174d584ae5f7b458b17dd86b43735ce6c433180752c"
-      ],
-      "topic_tokens": [
-        [
-          "apple",
-          "sues",
-          "openai",
-          "accuses",
-          "employees",
-          "stealing",
-          "trade",
-          "secrets"
-        ],
-        [
-          "gpt",
-          "sol",
-          "ultra",
-          "produces",
-          "proof",
-          "cycle",
-          "double",
-          "cover",
-          "conjecture",
-          "pdf"
-        ],
-        [
-          "how",
-          "terrorist",
-          "group",
-          "boko",
-          "haram",
-          "uses",
-          "frontier"
-        ],
-        [
-          "snails",
-          "teeth",
-          "beats",
-          "spider",
-          "silk",
-          "nature",
-          "strongest",
-          "material",
-          "2015"
-        ],
-        [
-          "2040",
-          "plan"
-        ],
-        [
-          "companies",
-          "scrambling",
-          "curtail",
-          "soaring",
-          "costs"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-11",
       "topics": [
         "What xAI's Grok Build CLI Actually Sends to xAI",
@@ -935,6 +861,83 @@
         [
           "back",
           "kagi"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "topics": [
+        "Writing by hand is good for your brain",
+        "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+        "AI Companies Are Trying to Hide a Staggering Amount of Debt",
+        "OpenAI’s accidental attack against Hugging Face is science fiction that happened",
+        "Why Software Factories Fail (or: harness engineering is not enough)",
+        "The arguments against open source AI are bad"
+      ],
+      "title_hashes": [
+        "1f93a2bbbcd2ff6e4ddd43ef8d466420e5039e200fb1d23afc37c865836f1452",
+        "7a085cdbd4eee5faef08d461446a247580cf25b2845d575907355bb218ff1927",
+        "3c0295d60962410785c756200f7cc31b02802436da25b363c33ab9a69198c32d",
+        "0e404c624901f93e5cfe5fd51de8a289e0b18eb5062562d94ba0bec15b6f3438",
+        "98666cd927d55c8f6a7a461540cb375d3c4b2633f4763f5fd0da1752664cb55b",
+        "1a7653059a347fe6a093d6dc4099d83ca6dfab6b18cd6075d86630c7c3fa31c1"
+      ],
+      "topic_tokens": [
+        [
+          "writing",
+          "hand",
+          "good",
+          "your",
+          "brain"
+        ],
+        [
+          "startup",
+          "founders",
+          "urge",
+          "government",
+          "not",
+          "shut",
+          "off",
+          "chinese",
+          "open",
+          "weight"
+        ],
+        [
+          "companies",
+          "trying",
+          "hide",
+          "staggering",
+          "amount",
+          "debt"
+        ],
+        [
+          "openai",
+          "accidental",
+          "attack",
+          "against",
+          "hugging",
+          "face",
+          "science",
+          "fiction",
+          "that",
+          "happened"
+        ],
+        [
+          "why",
+          "software",
+          "factories",
+          "fail",
+          "harness",
+          "engineering",
+          "not",
+          "enough"
+        ],
+        [
+          "arguments",
+          "against",
+          "open",
+          "source",
+          "bad"
         ]
       ]
     }
