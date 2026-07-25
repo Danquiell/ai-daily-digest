@@ -1,82 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-11",
-      "topics": [
-        "What xAI's Grok Build CLI Actually Sends to xAI",
-        "Female US rower completes historic solo journey from California to Hawaii",
-        "Mesh LLM: distributed AI computing on iroh",
-        "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
-        "Modern decor may be straining people's brains",
-        "Ghost Font: A font that humans can read but AI cannot"
-      ],
-      "title_hashes": [
-        "2feac925fc4af61995c861fa3c2b8281e71788f1239c58c1eedba6a8f05befaa",
-        "6fd5cb185110907f146799c6425f5938c47fd4e28fca8c4f04928a874b2b2016",
-        "dea4f6c6fb1f497c8b7d516e7c93d1cb66d3a737b047d8ff307ae3d70d7f4372",
-        "288c4e3e685658ee83d269ee5a29c14e13bff31cdbdbe1d5d8c3387674a5c351",
-        "50e5e4f7bc4a1eb4edf7725435bb958882ca9b6bedaf2badce7106aae8abf761",
-        "622e588ecb9e7b449680e2b4b22161167a6e031f4b6799e93b0bc55efe434816"
-      ],
-      "topic_tokens": [
-        [
-          "what",
-          "xai",
-          "grok",
-          "build",
-          "cli",
-          "actually",
-          "sends",
-          "xai"
-        ],
-        [
-          "female",
-          "rower",
-          "completes",
-          "historic",
-          "solo",
-          "journey",
-          "california",
-          "hawaii"
-        ],
-        [
-          "mesh",
-          "llm",
-          "distributed",
-          "computing",
-          "iroh"
-        ],
-        [
-          "nvidia",
-          "coreweave",
-          "nebius",
-          "inside",
-          "circular",
-          "financing",
-          "gpu",
-          "boom"
-        ],
-        [
-          "modern",
-          "decor",
-          "may",
-          "straining",
-          "people",
-          "brains"
-        ],
-        [
-          "ghost",
-          "font",
-          "font",
-          "that",
-          "humans",
-          "can",
-          "read",
-          "cannot"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-12",
       "topics": [
         "Ask HN: Add flag for AI-generated articles",
@@ -938,6 +862,67 @@
           "open",
           "source",
           "bad"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "topics": [
+        "Claude Opus 5",
+        "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
+        "Half-Life 2 running natively on HaikuOS",
+        "IRGC claims it destroyed Amazon's Bahrain data center",
+        "Claude Cookbook",
+        "ARC-AGI Leaderboard"
+      ],
+      "title_hashes": [
+        "0b9a44f2d0c155d92a073852bce7fed9455536d76a5e53520de265db6617cc35",
+        "76aa7ffa0c9a947b2b1fe29c448702f660022c10096b3807c223cb2d220a3ad6",
+        "06e1ee6f65bfe8aebaa2d6744975f049a8e7bcc98785b5a0682bcb81fb3aa8d0",
+        "fe973907e85d1059ade42220073a212baec633631d9b6dd921f3bdec443219bf",
+        "e93611c55b6a834754a7029e5aafa620aa0518fa99c31e680bcc4746db0b6816",
+        "5fdc02e215f33046caee253aef06020d1510aba5fe0db00a35ad14ba2c8e9858"
+      ],
+      "topic_tokens": [
+        [
+          "claude",
+          "opus"
+        ],
+        [
+          "nvidia",
+          "microsoft",
+          "meta",
+          "warn",
+          "against",
+          "overregulating",
+          "open",
+          "weight",
+          "models"
+        ],
+        [
+          "half",
+          "life",
+          "running",
+          "natively",
+          "haikuos"
+        ],
+        [
+          "irgc",
+          "claims",
+          "destroyed",
+          "amazon",
+          "bahrain",
+          "data",
+          "center"
+        ],
+        [
+          "claude",
+          "cookbook"
+        ],
+        [
+          "arc",
+          "agi",
+          "leaderboard"
         ]
       ]
     }
