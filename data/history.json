@@ -1,81 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-12",
-      "topics": [
-        "Ask HN: Add flag for AI-generated articles",
-        "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
-        "Zig Creator Calls Spade a Spade, Anthropic Blows Smoke",
-        "What xAI's Grok build CLI sends to xAI: A wire-level analysis",
-        "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
-        "I Learned to Read Again"
-      ],
-      "title_hashes": [
-        "97787aff155b798ac6bab6a6d6d8e9153ecb13fd3f26481f6d2905f7688b550c",
-        "27f4fc0d5e7218bb8df429144ac652b996129ae9d9c845a60fcaf3cca8495f98",
-        "06a0892f1c5313af1b2096c4eb58fd8fb9a49a66c37862766622dc9b65294d6b",
-        "6d379ed3741b866deedf26aeb5ec220a9ba28c44473214d90e70e8c17155d5b6",
-        "e21fd47752aa4b05441f860159b684f7f8611db554089b9adf37f9fdb60c9770",
-        "17b5ab5c58b46cf421696939d177f3719a89f2f95f12768e82f9c8e0cca16b2f"
-      ],
-      "topic_tokens": [
-        [
-          "ask",
-          "add",
-          "flag",
-          "generated",
-          "articles"
-        ],
-        [
-          "claude",
-          "code",
-          "sends",
-          "33k",
-          "tokens",
-          "before",
-          "reading",
-          "prompt",
-          "opencode",
-          "sends"
-        ],
-        [
-          "zig",
-          "creator",
-          "calls",
-          "spade",
-          "spade",
-          "anthropic",
-          "blows",
-          "smoke"
-        ],
-        [
-          "what",
-          "xai",
-          "grok",
-          "build",
-          "cli",
-          "sends",
-          "xai",
-          "wire",
-          "level",
-          "analysis"
-        ],
-        [
-          "migrating",
-          "production",
-          "agent",
-          "gpt",
-          "faster",
-          "cheaper"
-        ],
-        [
-          "learned",
-          "read",
-          "again"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-13",
       "topics": [
         "Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
@@ -923,6 +848,77 @@
           "arc",
           "agi",
           "leaderboard"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-25",
+      "topics": [
+        "The new rules of context engineering for Claude 5 generation models",
+        "Running a 28.9M parameter LLM on an $8 microcontroller",
+        "Show HN: Brolly, a plain-text weather forecast site",
+        "DeepSeek pause fundraise after comments on compute gap to US leaked (transcript) [pdf]",
+        "LLM Usage in Debian: Three Proposals",
+        "Cloudflare's new AI traffic options for customers"
+      ],
+      "title_hashes": [
+        "00fe5f47fccb98724358d2f402681873538e8772bf11e313e96a17c980e9617d",
+        "c054cd8e0b5273bc46d68e6ab8de911df3b63c22529c5b68ab91e9c4671dc2de",
+        "ff568f47c0074dd49af8219a1d451068e08bacd5d82c7f827adc966f3adec8d7",
+        "475e5e697fb0f49906b08debb822a7eba2c3d9bd007e7bf4926917c623352831",
+        "a88ed18c375bd0279914e87bb9b388ba54b7cb6d06e28270abe31e89aea5ab4e",
+        "2759f0cf395bba4105acbd0c2a13f609ed1300b5dcbffa9ba7f1ab5f68e2b740"
+      ],
+      "topic_tokens": [
+        [
+          "new",
+          "rules",
+          "context",
+          "engineering",
+          "claude",
+          "generation",
+          "models"
+        ],
+        [
+          "running",
+          "parameter",
+          "llm",
+          "microcontroller"
+        ],
+        [
+          "show",
+          "brolly",
+          "plain",
+          "text",
+          "weather",
+          "forecast",
+          "site"
+        ],
+        [
+          "deepseek",
+          "pause",
+          "fundraise",
+          "after",
+          "comments",
+          "compute",
+          "gap",
+          "leaked",
+          "transcript",
+          "pdf"
+        ],
+        [
+          "llm",
+          "usage",
+          "debian",
+          "three",
+          "proposals"
+        ],
+        [
+          "cloudflare",
+          "new",
+          "traffic",
+          "options",
+          "customers"
         ]
       ]
     }
