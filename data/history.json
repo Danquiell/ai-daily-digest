@@ -1,85 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-13",
-      "topics": [
-        "Apple's new SpeechAnalyzer API, benchmarked against Whisper and its predecessor",
-        "Australian energy retailers must provide three hours of free daytime electricity",
-        "Indian scientists produce most detailed 3D atlas of the human brainstem",
-        "Show HN: I implemented a neural network in SQL",
-        "Alternative(s) to run CUDA on non-Nvidia hardware",
-        "Show HN: Jacquard, a programming language for AI-written, human-reviewed code"
-      ],
-      "title_hashes": [
-        "015dc23d5d4ccdb312b5a04c775ea1b9cb809941e709d350408b5dcc337c2b4f",
-        "a94ccda0d779d2a13afcf1e3fca15fe54ee0224bfa714523e03952c9e874564f",
-        "6ed98d629b697545c775930570acd001c7429c7bb1bb7170903db43f005929b3",
-        "e7f9dd4be5fdd4af150bf1c4fb07cac4e540a712526d1305d8f9651517de8b9a",
-        "255680008a5e61bca443c7a79e6d7f81e76d26ebcacda6ee6116e1a3b72b2d08",
-        "eb5daff1ce7a0ce756d776b7cb84d08c497acb29dca82bd871c49fa05f7864eb"
-      ],
-      "topic_tokens": [
-        [
-          "apple",
-          "new",
-          "speechanalyzer",
-          "api",
-          "benchmarked",
-          "against",
-          "whisper",
-          "its",
-          "predecessor"
-        ],
-        [
-          "australian",
-          "energy",
-          "retailers",
-          "must",
-          "provide",
-          "three",
-          "hours",
-          "free",
-          "daytime",
-          "electricity"
-        ],
-        [
-          "indian",
-          "scientists",
-          "produce",
-          "most",
-          "detailed",
-          "atlas",
-          "human",
-          "brainstem"
-        ],
-        [
-          "show",
-          "implemented",
-          "neural",
-          "network",
-          "sql"
-        ],
-        [
-          "alternative",
-          "run",
-          "cuda",
-          "non",
-          "nvidia",
-          "hardware"
-        ],
-        [
-          "show",
-          "jacquard",
-          "programming",
-          "language",
-          "written",
-          "human",
-          "reviewed",
-          "code"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-14",
       "topics": [
         "Bonsai 27B: A 27B-Class model that runs on a phone",
@@ -919,6 +840,75 @@
           "traffic",
           "options",
           "customers"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-26",
+      "topics": [
+        "US citizen charged after GrapheneOS phone wipes during airport search",
+        "London Gatwick has launched a robotic airport parking service",
+        "We have proof automation now",
+        "What is happening to jobs? Separating AI hype from reality",
+        "Why I Left Google DeepMind",
+        "Terence Tao: Mathematics in the Age of AI [pdf]"
+      ],
+      "title_hashes": [
+        "fa37617b084ce27228cf9c7567bb7751912c95ab401f936190e8b5dbfd221828",
+        "4d97b6d41c5359174f4430d8165acab6a897cb4ffebd52d38c5589c5d636a084",
+        "80274f9ae499da2a2afd1a9e96ae9bbd9b69b3414cad2c4521d512f82aef146c",
+        "dc96ace716004262d6dde7e48bfb9714d3f6d4e0a459fe6795334d1e5bc55e32",
+        "13920b894954254b08ae8ace56f31b3dafdb39d37fcc67a134abb15cad8bbe27",
+        "8129d3425fc07a3b26b02c0974e6430231917b624fa69a7fa936cd8560002462"
+      ],
+      "topic_tokens": [
+        [
+          "citizen",
+          "charged",
+          "after",
+          "grapheneos",
+          "phone",
+          "wipes",
+          "during",
+          "airport",
+          "search"
+        ],
+        [
+          "london",
+          "gatwick",
+          "has",
+          "launched",
+          "robotic",
+          "airport",
+          "parking",
+          "service"
+        ],
+        [
+          "have",
+          "proof",
+          "automation",
+          "now"
+        ],
+        [
+          "what",
+          "happening",
+          "jobs",
+          "separating",
+          "hype",
+          "reality"
+        ],
+        [
+          "why",
+          "left",
+          "google",
+          "deepmind"
+        ],
+        [
+          "terence",
+          "tao",
+          "mathematics",
+          "age",
+          "pdf"
         ]
       ]
     }
