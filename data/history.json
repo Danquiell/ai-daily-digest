@@ -1,81 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-14",
-      "topics": [
-        "Bonsai 27B: A 27B-Class model that runs on a phone",
-        "Jurassic Park computers in excruciating detail",
-        "How to stop Claude from saying load-bearing",
-        "Are we offloading too much of our thinking to AI?",
-        "I tricked Claude into leaking your deepest, darkest secrets",
-        "TS-2026-009: Insecure argument handling in Tailscale SSH permitted root access"
-      ],
-      "title_hashes": [
-        "40d3284afdbe6cf0a430ae48ba5e973894c62bdc4e27c2c52bd9c1d50f2ebb7c",
-        "86f0818303cda254cfac737f1db6e79ff688410b4f82b0b51168143ab2cac3a1",
-        "29c90255de6e6e1451ba10380e68d53bb40eeb66737dc1c48e44d6701987e43d",
-        "a2cae8d85e06e31706c790a0be42043eeb47c92307ad1f0242904471fc571eb7",
-        "6cb171cc7b2bfa627d875302cd28d4038241e6151f219289ead60957ad530f9b",
-        "beb763c7f3ebf928f22097d18096290e17d9bdd66663c803cacf15058d591f65"
-      ],
-      "topic_tokens": [
-        [
-          "bonsai",
-          "27b",
-          "27b",
-          "class",
-          "model",
-          "that",
-          "runs",
-          "phone"
-        ],
-        [
-          "jurassic",
-          "park",
-          "computers",
-          "excruciating",
-          "detail"
-        ],
-        [
-          "how",
-          "stop",
-          "claude",
-          "saying",
-          "load",
-          "bearing"
-        ],
-        [
-          "offloading",
-          "too",
-          "much",
-          "our",
-          "thinking"
-        ],
-        [
-          "tricked",
-          "claude",
-          "into",
-          "leaking",
-          "your",
-          "deepest",
-          "darkest",
-          "secrets"
-        ],
-        [
-          "2026",
-          "009",
-          "insecure",
-          "argument",
-          "handling",
-          "tailscale",
-          "ssh",
-          "permitted",
-          "root",
-          "access"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-15",
       "topics": [
         "OpenAI loses trademark dispute at EU court",
@@ -909,6 +834,91 @@
           "mathematics",
           "age",
           "pdf"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-27",
+      "topics": [
+        "Netflix employee fired for sharing personal details in retreat trust exercise",
+        "Self-contained highly-portable Python distributions",
+        "Exploiting Volvo/Eicher's fleet platform to gain control over all users/vehicles",
+        "Kimi K3 Now Available via Telnyx Inference API",
+        "Show HN: FeyNoBg – Automatic background removal model and training library",
+        "News outlet killed story on plagiarism after Cambridge prof hired law firm"
+      ],
+      "title_hashes": [
+        "6513c8489d84972d1671f0f3e25b8debe15c5d51247a1a62f0a210c3ac2ae0a6",
+        "46031b2a75c85f7ef8f115935b380bcdddd649848543a59e4d6a661effe44466",
+        "b9709d597e7217dbded5082db7a9df24d6b3ac885f18ec13f9fd4f46e7bef465",
+        "767c9f2f505c3105ea208b6a353478d7605a2d970ba562f754ff3eb8aa2ef732",
+        "0952a6765b847bdc1664581dcad2c875895631aa5a45e2d40e161ac8d16b721e",
+        "fbccc59d07aefea7c7173321f91d14ab02ac16eac0fc850926965c6c517f60f4"
+      ],
+      "topic_tokens": [
+        [
+          "netflix",
+          "employee",
+          "fired",
+          "sharing",
+          "personal",
+          "details",
+          "retreat",
+          "trust",
+          "exercise"
+        ],
+        [
+          "self",
+          "contained",
+          "highly",
+          "portable",
+          "python",
+          "distributions"
+        ],
+        [
+          "exploiting",
+          "volvo",
+          "eicher",
+          "fleet",
+          "platform",
+          "gain",
+          "control",
+          "over",
+          "all",
+          "users",
+          "vehicles"
+        ],
+        [
+          "kimi",
+          "now",
+          "available",
+          "via",
+          "telnyx",
+          "inference",
+          "api"
+        ],
+        [
+          "show",
+          "feynobg",
+          "automatic",
+          "background",
+          "removal",
+          "model",
+          "training",
+          "library"
+        ],
+        [
+          "news",
+          "outlet",
+          "killed",
+          "story",
+          "plagiarism",
+          "after",
+          "cambridge",
+          "prof",
+          "hired",
+          "law",
+          "firm"
         ]
       ]
     }
