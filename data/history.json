@@ -1,75 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-15",
-      "topics": [
-        "OpenAI loses trademark dispute at EU court",
-        "Governments, companies, nonprofits should invest in free, open source AI [pdf]",
-        "Briar is in maintenance mode",
-        "Brainless: Shadcn components that look like Claude Code, Codex and Grok",
-        "Where are YC founders now? OpenAI and Anthropic, mostly",
-        "LLM Networking with MikroTik"
-      ],
-      "title_hashes": [
-        "e6547d2d2b74f9dd4fd54e203dda461e79b5e0b8c09156231e4b98a22e95a668",
-        "cbc4225c0426a68724ca6b829f624f0551b356a182c9d6a4c8b14df9a2868e46",
-        "ee6c1c0e5c890d3feff5e940812127150aa8b9cb020ad8bbdc9bd03bb5ab467a",
-        "71ea2f4bc2552f7834c18fc38444eae95f729d2c2d2c4109715ae73e16874bfd",
-        "737131fed5e685e36114bd329aec3c0d0ce6f9fe8444a3185f9630051ff926df",
-        "e900127c12ed4e0d0d14c36106e083ac889ac8db5a795f35999dd9b9c8eee359"
-      ],
-      "topic_tokens": [
-        [
-          "openai",
-          "loses",
-          "trademark",
-          "dispute",
-          "court"
-        ],
-        [
-          "governments",
-          "companies",
-          "nonprofits",
-          "should",
-          "invest",
-          "free",
-          "open",
-          "source",
-          "pdf"
-        ],
-        [
-          "briar",
-          "maintenance",
-          "mode"
-        ],
-        [
-          "brainless",
-          "shadcn",
-          "components",
-          "that",
-          "look",
-          "like",
-          "claude",
-          "code",
-          "codex",
-          "grok"
-        ],
-        [
-          "where",
-          "founders",
-          "now",
-          "openai",
-          "anthropic",
-          "mostly"
-        ],
-        [
-          "llm",
-          "networking",
-          "mikrotik"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-16",
       "topics": [
         "NotebookLM is now Gemini Notebook",
@@ -919,6 +850,85 @@
           "hired",
           "law",
           "firm"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-28",
+      "topics": [
+        "More Tailscale tricks for your jailbroken Kindle",
+        "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
+        "Una GPS smart watch – Repairable, USB-C charging, developer-friendly",
+        "Discovering Cryptographic Weaknesses with Claude",
+        "DMARC has been public since 2012 but most company domains still don't enforce it",
+        "Now is the time to give LLMs access to the ACM digital library"
+      ],
+      "title_hashes": [
+        "f63ddbd44e4613a0c77d4d2f966bf570b86b2cf157b838d3b3b0fd51bb6da0b0",
+        "34407dbdb1c643014fc2229832801596bb7dc83107feadee596571ebb5a61b32",
+        "b021415177cf6ba6fdc75cf64a52e44cc9cd1fc11ecc06d9e00e4a6aa8ebd666",
+        "c22d28db1b6ae51c0f5c535d8f255e504ef56ea59cf506586af2a576a0190fec",
+        "2a58ebd252bd3f05c8f37e5c4db42bb21ec281b278602c37cc5f672d91a62e41",
+        "16fd9f7dc8202d62c12fb67dd4b452cc4fe179f798f21f51ca2eae34f0590c70"
+      ],
+      "topic_tokens": [
+        [
+          "more",
+          "tailscale",
+          "tricks",
+          "your",
+          "jailbroken",
+          "kindle"
+        ],
+        [
+          "learnvector",
+          "andrew",
+          "company",
+          "building",
+          "one",
+          "one",
+          "learning",
+          "experiences"
+        ],
+        [
+          "una",
+          "gps",
+          "smart",
+          "watch",
+          "repairable",
+          "usb",
+          "charging",
+          "developer",
+          "friendly"
+        ],
+        [
+          "discovering",
+          "cryptographic",
+          "weaknesses",
+          "claude"
+        ],
+        [
+          "dmarc",
+          "has",
+          "public",
+          "since",
+          "2012",
+          "most",
+          "company",
+          "domains",
+          "still",
+          "don",
+          "enforce"
+        ],
+        [
+          "now",
+          "time",
+          "give",
+          "llms",
+          "access",
+          "acm",
+          "digital",
+          "library"
         ]
       ]
     }
