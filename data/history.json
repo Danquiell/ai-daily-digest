@@ -1,72 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-16",
-      "topics": [
-        "NotebookLM is now Gemini Notebook",
-        "$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol",
-        "LM Studio Bionic: the AI agent for open models",
-        "The LLM Critics Are Right. I Use LLMs Anyway",
-        "Detecting LLM-Generated Texts with “Classical” Machine Learning",
-        "The Little Book of Reinforcement Learning"
-      ],
-      "title_hashes": [
-        "32491295203fa1db1736d9d57f651de96773ac23819522dc485e3b8f368931be",
-        "8b448278f07b679b6185c8a11999ff27ff5a89c6cc5c350d48f5e38603f30bae",
-        "3a4c036853fc6eae412e8510a8aefe4dfbcfe27e16c210c66966fa4425030e9a",
-        "0eaee9df1b6848bd1a8f04c5494d97a1eb74a4dae1e69abf01d4b129b47c32a1",
-        "3ffc7206d983785cdcd9adc1c5f9bfb378afb6598015002365eafb97789fc286",
-        "4f5bfb30f23ff14e82756eb90147e34c965cea40ba18da80bc2f2814ec45d90a"
-      ],
-      "topic_tokens": [
-        [
-          "notebooklm",
-          "now",
-          "gemini",
-          "notebook"
-        ],
-        [
-          "100",
-          "music",
-          "video",
-          "claude",
-          "fable",
-          "gpt",
-          "sol"
-        ],
-        [
-          "studio",
-          "bionic",
-          "agent",
-          "open",
-          "models"
-        ],
-        [
-          "llm",
-          "critics",
-          "right",
-          "use",
-          "llms",
-          "anyway"
-        ],
-        [
-          "detecting",
-          "llm",
-          "generated",
-          "texts",
-          "classical",
-          "machine",
-          "learning"
-        ],
-        [
-          "little",
-          "book",
-          "reinforcement",
-          "learning"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-17",
       "topics": [
         "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
@@ -929,6 +863,72 @@
           "acm",
           "digital",
           "library"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-29",
+      "topics": [
+        "AI's top startups are barely publishing their research",
+        "Document-borne AI worms can self-propagate through Copilot for Word",
+        "LLM Honeypot",
+        "The Cold Email",
+        "Some thoughts about Anthropic's new cryptanalysis results",
+        "GPT-5.6 vs. Claude Fable 5 for Physical AI, which performs best?"
+      ],
+      "title_hashes": [
+        "2ede2b3fbedcff1de02cf62473d9fe02682a4e29d5b8dba3a0d2771ab5ab2f7f",
+        "c9f867f86c087a47254ab8db9c81135f4d4fd3ea54a60e0636d0bc9f067d3245",
+        "497f9b583f1ef027f12ce13f3fdabdf28e914d095b7c51dcf561ef5fb64115f1",
+        "f4a6dce799cfb156e3ee57ef5191ff65e675c9b4742562aa5076a9cfa395127d",
+        "e62df0fea9f0e41f6d2cf86864d57390b6ba5ef77b58c997db28bd0d409c51ff",
+        "5db4f2f96d1e861fd1d3aba40a5bd1bea459e9c9bc3bfb5bfa370df8b4c17561"
+      ],
+      "topic_tokens": [
+        [
+          "top",
+          "startups",
+          "barely",
+          "publishing",
+          "their",
+          "research"
+        ],
+        [
+          "document",
+          "borne",
+          "worms",
+          "can",
+          "self",
+          "propagate",
+          "through",
+          "copilot",
+          "word"
+        ],
+        [
+          "llm",
+          "honeypot"
+        ],
+        [
+          "cold",
+          "email"
+        ],
+        [
+          "some",
+          "thoughts",
+          "about",
+          "anthropic",
+          "new",
+          "cryptanalysis",
+          "results"
+        ],
+        [
+          "gpt",
+          "claude",
+          "fable",
+          "physical",
+          "which",
+          "performs",
+          "best"
         ]
       ]
     }
