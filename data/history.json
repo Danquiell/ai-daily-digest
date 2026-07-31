@@ -1,83 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-17",
-      "topics": [
-        "Kaiser nurses say AI, surveillance are making their jobs and patient care worse",
-        "The state of open source AI",
-        "Apple targets dozens of OpenAI employees with legal letters",
-        "FAA lets Boeing sign off on 737 MAX, 787 airworthiness certificates again",
-        "Painting the sides of railroad rails white to reduce derailment",
-        "AI Meets Cryptography 2: What AI Found in OpenVM's ZkVM"
-      ],
-      "title_hashes": [
-        "a2b90c767e297b3e5b7abcd15e2663a7cd3d7fdfceafa58631ba8c9ca2715e8f",
-        "956702b26bc04fea6f3098bd71e5ed841598104dee69c5aa1d115fdcbea7ab3a",
-        "47ffb3b65309de44a37f032948e805a60d64967cbea79682b2a81df5e2c71237",
-        "3a3713716fcbb7960848ed16fdd5f0fe85af67853e0e8962a04a1a39b35279e2",
-        "a00c71369c725bf475929eba232fe09f6b9135fcaa37cc1ea17161f0ffc6b0c5",
-        "30e577b8b854c8059875ad983e58cabcd830254a8f78e868f5307ea4d1e7fe1d"
-      ],
-      "topic_tokens": [
-        [
-          "kaiser",
-          "nurses",
-          "say",
-          "surveillance",
-          "making",
-          "their",
-          "jobs",
-          "patient",
-          "care",
-          "worse"
-        ],
-        [
-          "state",
-          "open",
-          "source"
-        ],
-        [
-          "apple",
-          "targets",
-          "dozens",
-          "openai",
-          "employees",
-          "legal",
-          "letters"
-        ],
-        [
-          "faa",
-          "lets",
-          "boeing",
-          "sign",
-          "off",
-          "737",
-          "max",
-          "787",
-          "airworthiness",
-          "certificates",
-          "again"
-        ],
-        [
-          "painting",
-          "sides",
-          "railroad",
-          "rails",
-          "white",
-          "reduce",
-          "derailment"
-        ],
-        [
-          "meets",
-          "cryptography",
-          "what",
-          "found",
-          "openvm",
-          "zkvm"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-18",
       "topics": [
         "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
@@ -929,6 +852,78 @@
           "which",
           "performs",
           "best"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "topics": [
+        "Advancing the price-performance frontier with GPT‑5.6",
+        "Gemini Robotics 2 brings whole body intelligence to robots",
+        "We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447",
+        "The AI Aesthetic",
+        "GCC steering committee announces AI policy",
+        "Google fixed more Chrome bugs in June than over the past two years, thanks to AI"
+      ],
+      "title_hashes": [
+        "9f4de4a139b307b35dbd8b40c347a0f2a574b5e6310f94f6327c94fade4956eb",
+        "7570056ce8596dd5d97e6dc8a310da7ceae20c372f8a763c8158bdb05af816fd",
+        "0f136ade630fb40c839d4d0a2219dae1f1e4b44a6b8f5087da84787ba0c17cbc",
+        "c76adf57b0122223ab6b092682d65c4511d5a9d3070fadeaf53383109895a96c",
+        "04ff1b808fc7d69e8b7d861d3f95c2a0e8dd441f9d8b6e37e1d050c37fd26729",
+        "d48228f73c45a750addbc9249b3306c5a66af0ce104251dee36857d42b6f8b4f"
+      ],
+      "topic_tokens": [
+        [
+          "advancing",
+          "price",
+          "performance",
+          "frontier",
+          "gpt"
+        ],
+        [
+          "gemini",
+          "robotics",
+          "brings",
+          "whole",
+          "body",
+          "intelligence",
+          "robots"
+        ],
+        [
+          "gave",
+          "gpt",
+          "sol",
+          "real",
+          "business",
+          "lied",
+          "spammed",
+          "lost",
+          "447"
+        ],
+        [
+          "aesthetic"
+        ],
+        [
+          "gcc",
+          "steering",
+          "committee",
+          "announces",
+          "policy"
+        ],
+        [
+          "google",
+          "fixed",
+          "more",
+          "chrome",
+          "bugs",
+          "june",
+          "than",
+          "over",
+          "past",
+          "two",
+          "years",
+          "thanks"
         ]
       ]
     }
