@@ -1,81 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-18",
-      "topics": [
-        "GPT-5.6 used a prompt to close a 30-year gap in convex optimization",
-        "NYC may require landlords and realtors to disclose the use of AI in listings",
-        "What AI did to stackoverflow in a graph",
-        "AI Mania Is Eviscerating Global Decision-Making",
-        "Setting up your spare Mac for Claude Code to control, a step-by-step guide",
-        "Claude Code uses Bun written in Rust now"
-      ],
-      "title_hashes": [
-        "954b18888cd31dcf574ce2cab30e5a5b4e8eda629b661bd6f52d0ed152557611",
-        "1b694b5faed6cc84855ff3cf6da0c60be6df5d203d35fa14bd298c6c9db4f005",
-        "b9c711b86d897e72d63920db4a9a5dbea579b78fa1f239cde2d92c458274c8b3",
-        "d19fc397291e6d4416e6b727a5a7507657f50a78ba8862e02c12a5eae53c03a1",
-        "dcffaa349c9447bea913102d6579cb3125e274c4780ce6b0de08700c329669cc",
-        "75881612d03714535b399d17174284e0cf0b43b9598cce21a3e903eb35d09083"
-      ],
-      "topic_tokens": [
-        [
-          "gpt",
-          "used",
-          "prompt",
-          "close",
-          "year",
-          "gap",
-          "convex",
-          "optimization"
-        ],
-        [
-          "nyc",
-          "may",
-          "require",
-          "landlords",
-          "realtors",
-          "disclose",
-          "use",
-          "listings"
-        ],
-        [
-          "what",
-          "did",
-          "stackoverflow",
-          "graph"
-        ],
-        [
-          "mania",
-          "eviscerating",
-          "global",
-          "decision",
-          "making"
-        ],
-        [
-          "setting",
-          "your",
-          "spare",
-          "mac",
-          "claude",
-          "code",
-          "control",
-          "step",
-          "step",
-          "guide"
-        ],
-        [
-          "claude",
-          "code",
-          "uses",
-          "bun",
-          "written",
-          "rust",
-          "now"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-19",
       "topics": [
         "Xiaomi-Robotics-1",
@@ -924,6 +849,73 @@
           "two",
           "years",
           "thanks"
+        ]
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "topics": [
+        "Tailscale didn't stop the Hugging Face intrusion",
+        "Flint: A Visualization Language for the AI Era",
+        "Golang proposal: container/: generic collection types",
+        "Is AI reasoning right for the wrong reasons?",
+        "AI doesn't generate working products, that's still your job",
+        "Everyone is building LLM routers, we deprecated ours"
+      ],
+      "title_hashes": [
+        "65dbc1b200e7956a527b59a6693cd6fdebe18e47e49e35e27d082a1a3a152071",
+        "79b3e48d159a0f842fcc2fa7491fa681df9120f7927b203427a0f790f691135e",
+        "e8cb152bcd8d9b7f91042d170080a5b6d30d069443b067a009552beff93b2178",
+        "dbdf0683ceea824e638fc0c0b6ce45ed54ecc119ace1f90b4fd7ca79dc1eea11",
+        "524bb49d192e0377eb4b5550420cd8d6e4f6e5eaf2f39fdc3cef54fd42817902",
+        "21816863e7a627dfda9b19bf6e0c198377962113834ac4227d0117df22d11cf2"
+      ],
+      "topic_tokens": [
+        [
+          "tailscale",
+          "didn",
+          "stop",
+          "hugging",
+          "face",
+          "intrusion"
+        ],
+        [
+          "flint",
+          "visualization",
+          "language",
+          "era"
+        ],
+        [
+          "golang",
+          "proposal",
+          "container",
+          "generic",
+          "collection",
+          "types"
+        ],
+        [
+          "reasoning",
+          "right",
+          "wrong",
+          "reasons"
+        ],
+        [
+          "doesn",
+          "generate",
+          "working",
+          "products",
+          "that",
+          "still",
+          "your",
+          "job"
+        ],
+        [
+          "everyone",
+          "building",
+          "llm",
+          "routers",
+          "deprecated",
+          "ours"
         ]
       ]
     }
