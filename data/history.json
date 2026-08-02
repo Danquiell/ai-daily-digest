@@ -1,75 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-19",
-      "topics": [
-        "Xiaomi-Robotics-1",
-        "Orion Browser by Kagi",
-        "Exploit brokers pay $500k for WordPress RCEs. I found one with GPT5.6 and $25",
-        "How proprietary formats have become Microsoft’s main tool for lock-in",
-        "LoRA Speedrun – a public wall-clock leaderboard for fine-tuning techniques",
-        "Airbus Takes Flight from AWS"
-      ],
-      "title_hashes": [
-        "6931d9f14ac6c796d2c91ceb3ea22377a9319b1ebf4863fa2dc539da714a4ea9",
-        "ba7182f4d1126c0a981256dd066acaca5a5e6ee51c1011c3ed83c1f92ba93f92",
-        "ffd09e721e437ac1fb963356e489029430b9c7f4ee577ecf4d4324bc7f3272cd",
-        "d7273e7ff343185bf865bde068c9fcb5c913f2f3b20f73bc1521a6cef5d4783a",
-        "dd3cc709a38aa446cb60b3e508b83abaef43296cff2df8bb00709d54825ea3df",
-        "1e2cdfbc9ef0d28591d9874b570a915c5a8df83db08d10ee16df6439331115e2"
-      ],
-      "topic_tokens": [
-        [
-          "xiaomi",
-          "robotics"
-        ],
-        [
-          "orion",
-          "browser",
-          "kagi"
-        ],
-        [
-          "exploit",
-          "brokers",
-          "pay",
-          "500k",
-          "wordpress",
-          "rces",
-          "found",
-          "one",
-          "gpt5"
-        ],
-        [
-          "how",
-          "proprietary",
-          "formats",
-          "have",
-          "become",
-          "microsoft",
-          "main",
-          "tool",
-          "lock"
-        ],
-        [
-          "lora",
-          "speedrun",
-          "public",
-          "wall",
-          "clock",
-          "leaderboard",
-          "fine",
-          "tuning",
-          "techniques"
-        ],
-        [
-          "airbus",
-          "takes",
-          "flight",
-          "aws"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-20",
       "topics": [
         "China’s open-weights AI strategy is winning",
@@ -916,6 +847,79 @@
           "routers",
           "deprecated",
           "ours"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "topics": [
+        "AI financial advice is surprisingly good, especially if you ask right questions",
+        "I don't recommend Tailwind CSS",
+        "Explorative modeling: Train on the best of K guesses",
+        "Campaigns in Oklahoma are using AI. Regulators are trying to catch up - The Oklahoman",
+        "Medical journals, law reviews, and literary magazines are grappling with AI-generated submissions - The Boston Globe",
+        "Adopt AI or Die? - The New Republic"
+      ],
+      "title_hashes": [
+        "c6e41479ee31bfb9297464e8bb4bf9650afeca22e2d0954ce5c7adb58ed16782",
+        "4c376b2947564ed0aa83d905ac8a0efbe0a73058ec951b92ac87aff13988cb01",
+        "6f9b4955afd3693a8ff8ef580e996e6d0b63da82828ce91d0860d2ac840309d5",
+        "189990a486b38953f875a7a9d6fdf9c0b8db559b35a5699e7db8519fbe562b10",
+        "37e1ff8a5f0f09df86452c4af3cf8a7b5f625b2894a89366232f856c7c77a871",
+        "f304e1871fe5a98beba1c02bc9773f87a1ca5f35cc1d23e6f31b4e343c1eefcb"
+      ],
+      "topic_tokens": [
+        [
+          "financial",
+          "advice",
+          "surprisingly",
+          "good",
+          "especially",
+          "you",
+          "ask",
+          "right",
+          "questions"
+        ],
+        [
+          "don",
+          "recommend",
+          "tailwind",
+          "css"
+        ],
+        [
+          "explorative",
+          "modeling",
+          "train",
+          "best",
+          "guesses"
+        ],
+        [
+          "campaigns",
+          "oklahoma",
+          "using",
+          "regulators",
+          "trying",
+          "catch",
+          "oklahoman"
+        ],
+        [
+          "medical",
+          "journals",
+          "law",
+          "reviews",
+          "literary",
+          "magazines",
+          "grappling",
+          "generated",
+          "submissions",
+          "boston",
+          "globe"
+        ],
+        [
+          "adopt",
+          "die",
+          "new",
+          "republic"
         ]
       ]
     }
