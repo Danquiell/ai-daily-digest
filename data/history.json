@@ -1,71 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-20",
-      "topics": [
-        "China’s open-weights AI strategy is winning",
-        "Airport Simulator",
-        "Who's afraid of Chinese models?",
-        "Kimi K3, Qwen 3.8, and Anthropic's (Potential) Unravelling",
-        "How we measured AI writing across arXiv, and where the measurement breaks",
-        "Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge"
-      ],
-      "title_hashes": [
-        "b18c49cb26a1ff9bfd1b8459670d035eab282293a539bb5288606acf90b0d50b",
-        "8b224d12709e8ae37777ff1b0a78b8768802d4c767720eecd8f21b1f191b1bfa",
-        "eebcb5871c32f05a383f01dbe5c88240d5c5c16aa0f3ecae0c53dcc1849920ed",
-        "194fc1529dd84396a0a6e333daea3b1f73977e6966f99a760603827d8fe8d1d0",
-        "4023ed63fc6a89944293da16cf6dac7c51445416eab0a818f60b78f57cf904c0",
-        "5ccad68ba3da44b054d45c6f6a84989d19659bbaa7ca968871f3040702401cd0"
-      ],
-      "topic_tokens": [
-        [
-          "china",
-          "open",
-          "weights",
-          "strategy",
-          "winning"
-        ],
-        [
-          "airport",
-          "simulator"
-        ],
-        [
-          "who",
-          "afraid",
-          "chinese",
-          "models"
-        ],
-        [
-          "kimi",
-          "qwen",
-          "anthropic",
-          "potential",
-          "unravelling"
-        ],
-        [
-          "how",
-          "measured",
-          "writing",
-          "across",
-          "arxiv",
-          "where",
-          "measurement",
-          "breaks"
-        ],
-        [
-          "qwen",
-          "image",
-          "rich",
-          "content",
-          "authentic",
-          "details",
-          "deep",
-          "knowledge"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-21",
       "topics": [
         "OpenAI and Hugging Face address security incident during model evaluation",
@@ -920,6 +855,76 @@
           "die",
           "new",
           "republic"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "topics": [
+        "'Crush this lady': how eBay harassment campaign led to $56M payout",
+        "Prevent cognitive debt by manually retyping LLM-generated code",
+        "My personal AI benchmark: “Generate an SVG of a frog with a Habsburg jaw”",
+        "Bonsai: Janestreet's UI Library",
+        "The AI Productivity Gap",
+        "AI migrated legacy COBOL programs to Java, bugs included"
+      ],
+      "title_hashes": [
+        "fab3f05f0c98afd56612a35d2bca864d6bf97e916a8cd33b042ae276633e48d3",
+        "2b2595285f303f13b3f9e88789a51f60d811595277379b0a48f5004785d473b7",
+        "6f33c984c8697282935640bf37cc475dad4d9885e077697ebe749d72f6b7cac0",
+        "28fe3a912476b1bdda5cc34055c95b2aa35348d39e3f8592560617b9759aed62",
+        "8a6d7c0a524d3fdb8b72711e749274dc25961c4afa156ee203aca6c026db4d0e",
+        "ba33c965ea44ae50e7f2a17b51fbba2996d85f777667824dcba15d7fcafe93da"
+      ],
+      "topic_tokens": [
+        [
+          "crush",
+          "this",
+          "lady",
+          "how",
+          "ebay",
+          "harassment",
+          "campaign",
+          "led",
+          "56m",
+          "payout"
+        ],
+        [
+          "prevent",
+          "cognitive",
+          "debt",
+          "manually",
+          "retyping",
+          "llm",
+          "generated",
+          "code"
+        ],
+        [
+          "personal",
+          "benchmark",
+          "generate",
+          "svg",
+          "frog",
+          "habsburg",
+          "jaw"
+        ],
+        [
+          "bonsai",
+          "janestreet",
+          "library"
+        ],
+        [
+          "productivity",
+          "gap"
+        ],
+        [
+          "migrated",
+          "legacy",
+          "cobol",
+          "programs",
+          "java",
+          "bugs",
+          "included"
         ]
       ]
     }
