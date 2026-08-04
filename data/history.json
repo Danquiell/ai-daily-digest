@@ -1,82 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-21",
-      "topics": [
-        "OpenAI and Hugging Face address security incident during model evaluation",
-        "Advertise in ChatGPT",
-        "Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",
-        "Judge approves $1.5B Anthropic settlement for pirated books used to train Claude",
-        "Jack Dorsey launches Buzz to combine team chat, AI agents and Git hosting",
-        "\"Drawing\" the Mona Lisa with GPT-5.6, Claude, Gemini, and Grok"
-      ],
-      "title_hashes": [
-        "9e4d3a6abe827bd3879b1a79ac38ca707461c9eae9a9ad5b9a252001954d2e40",
-        "acb43ba3e3acdbf8ea9c9447d12d7828689a2b1009ecb378ca8f38223985f02b",
-        "5f6e4bb56739a50977c6093afeb3bea586e341d931396a83cf3d69f17c2b8341",
-        "f42f3cf4814873bf6ef351ac79e17f0d9459fb337dfed812e02f6449d1580c9c",
-        "76e59c2f4400948a31c7945869a32327acacf71674c41a5e5020576342678c19",
-        "dde0dfe02404a215026fe0079b14c192fbc3fd5411bfdad83a46d32d61195e29"
-      ],
-      "topic_tokens": [
-        [
-          "openai",
-          "hugging",
-          "face",
-          "address",
-          "security",
-          "incident",
-          "during",
-          "model",
-          "evaluation"
-        ],
-        [
-          "advertise",
-          "chatgpt"
-        ],
-        [
-          "gemini",
-          "flash",
-          "flash",
-          "lite",
-          "flash",
-          "cyber"
-        ],
-        [
-          "judge",
-          "approves",
-          "anthropic",
-          "settlement",
-          "pirated",
-          "books",
-          "used",
-          "train",
-          "claude"
-        ],
-        [
-          "jack",
-          "dorsey",
-          "launches",
-          "buzz",
-          "combine",
-          "team",
-          "chat",
-          "agents",
-          "git",
-          "hosting"
-        ],
-        [
-          "drawing",
-          "mona",
-          "lisa",
-          "gpt",
-          "claude",
-          "gemini",
-          "grok"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-22",
       "topics": [
         "Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample",
@@ -925,6 +849,77 @@
           "java",
           "bugs",
           "included"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "topics": [
+        "LLMs reward expertise",
+        "SQLite Critical CVEs or LLM Slop?",
+        "AirLLM 70B inference with single 4GB GPU",
+        "There Will Come Soft Rains (1950) [pdf]",
+        "Bending Spoons makes first post-IPO acquisition with $1.3B Airtable deal",
+        "What's the largest software project AI can complete on its own?"
+      ],
+      "title_hashes": [
+        "7a054a73902634a9eb370855b482de2c8b60d117c34fba6e4aeebba9531800a4",
+        "c8039df8738e15cf7581ea23a30375db93de03f6605957cb98dc6b9fa5d50fbb",
+        "707191e4751c98e25bbddf487ed089c34f18df212d6ffc801def52cc4b62266b",
+        "d42700c21ae7e82fa74dd456b4be43e136559f9ccac8ff236cdb8a4486ca8973",
+        "9424d5e869e29a8f0589b3f57c33f2246145bc722edd046267c3c0c992bc88c1",
+        "b423d2b22ff6ff98275420144b180cc968c5accdffd586e72e4b088e172083c9"
+      ],
+      "topic_tokens": [
+        [
+          "llms",
+          "reward",
+          "expertise"
+        ],
+        [
+          "sqlite",
+          "critical",
+          "cves",
+          "llm",
+          "slop"
+        ],
+        [
+          "airllm",
+          "70b",
+          "inference",
+          "single",
+          "4gb",
+          "gpu"
+        ],
+        [
+          "there",
+          "will",
+          "come",
+          "soft",
+          "rains",
+          "1950",
+          "pdf"
+        ],
+        [
+          "bending",
+          "spoons",
+          "makes",
+          "first",
+          "post",
+          "ipo",
+          "acquisition",
+          "airtable",
+          "deal"
+        ],
+        [
+          "what",
+          "largest",
+          "software",
+          "project",
+          "can",
+          "complete",
+          "its",
+          "own"
         ]
       ]
     }
