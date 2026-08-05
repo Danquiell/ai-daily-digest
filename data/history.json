@@ -1,68 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-22",
-      "topics": [
-        "Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample",
-        "Are AI labs pelicanmaxxing?",
-        "So Reddit has decided that plain HTML is unsafe",
-        "Quality non-fiction books are the antithesis of AI slop",
-        "Businesses with ugly AI menu redesigns",
-        "Back to Kagi"
-      ],
-      "title_hashes": [
-        "4923f61294889febcfbfe1bdfbab437eb7f6a41d32e3fa916592defaec5d923a",
-        "0de886a9591dc32710f74baa6688871a3570e0a3ec61127c3f9a29ff48b47670",
-        "cd846a2d41bb7c89c2757e069445a3d1dbaa0c78a7aa931c3315601c470f74d0",
-        "f9d6a53804eb6222d4d2fbfa6a170678bbde08362fdfe3aadd1f370b7c806425",
-        "baf0fef4dd6a8fe540d5742a0e8cf568e4b35630168d882567aadfbaea87e3ca",
-        "8dda97566461d104b5a866be2397d864e567c487ed02e1654d3480460687ab11"
-      ],
-      "topic_tokens": [
-        [
-          "terence",
-          "tao",
-          "chatgpt",
-          "conversation",
-          "about",
-          "jacobian",
-          "conjecture",
-          "counterexample"
-        ],
-        [
-          "labs",
-          "pelicanmaxxing"
-        ],
-        [
-          "reddit",
-          "has",
-          "decided",
-          "that",
-          "plain",
-          "html",
-          "unsafe"
-        ],
-        [
-          "quality",
-          "non",
-          "fiction",
-          "books",
-          "antithesis",
-          "slop"
-        ],
-        [
-          "businesses",
-          "ugly",
-          "menu",
-          "redesigns"
-        ],
-        [
-          "back",
-          "kagi"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-23",
       "topics": [
         "Writing by hand is good for your brain",
@@ -920,6 +858,81 @@
           "complete",
           "its",
           "own"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "topics": [
+        "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
+        "AI fuels more than half of cybercrime in Africa as scams surge – Interpol",
+        "Oxide Computer raises $445M (SEC Form D)",
+        "Eight Myths on Software Engineering and GenAI",
+        "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
+        "Zero-Mem: Zero-Token Memory Operations for LLM Agents"
+      ],
+      "title_hashes": [
+        "798b53906782991d39356d83200477886a0858a442f7d2dbecd98395fb5ee13e",
+        "f62355f03216b0687dd9c297805b26720bc735aad43dba9e7738823ce2e7736a",
+        "f2026b05aabe7a21e7b671165baae472581aebeeec66da9cd8169735686695a3",
+        "05d6f881dc2cbecb7c5c3f54580cc08ee9ba46f48dcdf393927846960276fce2",
+        "740e7cacf3dc24eff992402efe177492f43c30bcabe7e265a6174d4f2a289962",
+        "0b1d711630c1a2ced7700cf2b048efa9f1349850dbdb44317f7dc89bcd10a804"
+      ],
+      "topic_tokens": [
+        [
+          "mistral",
+          "shieldstral",
+          "open",
+          "weights",
+          "model",
+          "multimodal",
+          "moderation"
+        ],
+        [
+          "fuels",
+          "more",
+          "than",
+          "half",
+          "cybercrime",
+          "africa",
+          "scams",
+          "surge",
+          "interpol"
+        ],
+        [
+          "oxide",
+          "computer",
+          "raises",
+          "445m",
+          "sec",
+          "form"
+        ],
+        [
+          "eight",
+          "myths",
+          "software",
+          "engineering",
+          "genai"
+        ],
+        [
+          "when",
+          "benchmarks",
+          "plateau",
+          "systematic",
+          "study",
+          "benchmark",
+          "saturation"
+        ],
+        [
+          "zero",
+          "mem",
+          "zero",
+          "token",
+          "memory",
+          "operations",
+          "llm",
+          "agents"
         ]
       ]
     }
