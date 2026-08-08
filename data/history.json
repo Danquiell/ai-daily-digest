@@ -1,77 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-25",
-      "topics": [
-        "The new rules of context engineering for Claude 5 generation models",
-        "Running a 28.9M parameter LLM on an $8 microcontroller",
-        "Show HN: Brolly, a plain-text weather forecast site",
-        "DeepSeek pause fundraise after comments on compute gap to US leaked (transcript) [pdf]",
-        "LLM Usage in Debian: Three Proposals",
-        "Cloudflare's new AI traffic options for customers"
-      ],
-      "title_hashes": [
-        "00fe5f47fccb98724358d2f402681873538e8772bf11e313e96a17c980e9617d",
-        "c054cd8e0b5273bc46d68e6ab8de911df3b63c22529c5b68ab91e9c4671dc2de",
-        "ff568f47c0074dd49af8219a1d451068e08bacd5d82c7f827adc966f3adec8d7",
-        "475e5e697fb0f49906b08debb822a7eba2c3d9bd007e7bf4926917c623352831",
-        "a88ed18c375bd0279914e87bb9b388ba54b7cb6d06e28270abe31e89aea5ab4e",
-        "2759f0cf395bba4105acbd0c2a13f609ed1300b5dcbffa9ba7f1ab5f68e2b740"
-      ],
-      "topic_tokens": [
-        [
-          "new",
-          "rules",
-          "context",
-          "engineering",
-          "claude",
-          "generation",
-          "models"
-        ],
-        [
-          "running",
-          "parameter",
-          "llm",
-          "microcontroller"
-        ],
-        [
-          "show",
-          "brolly",
-          "plain",
-          "text",
-          "weather",
-          "forecast",
-          "site"
-        ],
-        [
-          "deepseek",
-          "pause",
-          "fundraise",
-          "after",
-          "comments",
-          "compute",
-          "gap",
-          "leaked",
-          "transcript",
-          "pdf"
-        ],
-        [
-          "llm",
-          "usage",
-          "debian",
-          "three",
-          "proposals"
-        ],
-        [
-          "cloudflare",
-          "new",
-          "traffic",
-          "options",
-          "customers"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-26",
       "topics": [
         "US citizen charged after GrapheneOS phone wipes during airport search",
@@ -958,6 +887,85 @@
           "call",
           "triage",
           "software"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "topics": [
+        "What happens if an entire class of workers loses faith in their careers",
+        "Oracle bans AI-generated code from OpenJDK",
+        "Managing AI Coding Costs at Scale",
+        "Mythos social engineering AISI INC-2026-07-28-01",
+        "Pa. attorney general joins states seeking answers from OpenAI after AI security breach - fox56.com",
+        "Lifetime access to Claude, GPT, Gemini, and 17+ other AI models is $60 with this promo code - Mashable"
+      ],
+      "title_hashes": [
+        "bf01a6a78f2d48f8fa1db81311b128928086002b9db90d8f7c4e9de2520eef25",
+        "cce0ba49d225da0869f86879db2c6b9d6d936d001c19cb099e948cd2d40f1a5c",
+        "311e3917881e9a6113eb0ef84a2e7eb0cc4e70846c3d3590b9ecdc55f2d62bcc",
+        "852d08049685f6668d9136a72e6b691cf6028f88d33456ca1f491287f37ffc0e",
+        "99df3cd4a273edc77beca6f4371eb7157081bd918c9f9fe572d62a93e5cbdb58",
+        "3b89f31ba73a4d5c4b9a5a50e57cd986277e3030afa64970412e940abc47bddc"
+      ],
+      "topic_tokens": [
+        [
+          "what",
+          "happens",
+          "entire",
+          "class",
+          "workers",
+          "loses",
+          "faith",
+          "their",
+          "careers"
+        ],
+        [
+          "oracle",
+          "bans",
+          "generated",
+          "code",
+          "openjdk"
+        ],
+        [
+          "managing",
+          "coding",
+          "costs",
+          "scale"
+        ],
+        [
+          "mythos",
+          "social",
+          "engineering",
+          "aisi",
+          "inc",
+          "2026"
+        ],
+        [
+          "attorney",
+          "general",
+          "joins",
+          "states",
+          "seeking",
+          "answers",
+          "openai",
+          "after",
+          "security",
+          "breach",
+          "fox56"
+        ],
+        [
+          "lifetime",
+          "access",
+          "claude",
+          "gpt",
+          "gemini",
+          "other",
+          "models",
+          "this",
+          "promo",
+          "code",
+          "mashable"
         ]
       ]
     }
