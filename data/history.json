@@ -1,75 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-26",
-      "topics": [
-        "US citizen charged after GrapheneOS phone wipes during airport search",
-        "London Gatwick has launched a robotic airport parking service",
-        "We have proof automation now",
-        "What is happening to jobs? Separating AI hype from reality",
-        "Why I Left Google DeepMind",
-        "Terence Tao: Mathematics in the Age of AI [pdf]"
-      ],
-      "title_hashes": [
-        "fa37617b084ce27228cf9c7567bb7751912c95ab401f936190e8b5dbfd221828",
-        "4d97b6d41c5359174f4430d8165acab6a897cb4ffebd52d38c5589c5d636a084",
-        "80274f9ae499da2a2afd1a9e96ae9bbd9b69b3414cad2c4521d512f82aef146c",
-        "dc96ace716004262d6dde7e48bfb9714d3f6d4e0a459fe6795334d1e5bc55e32",
-        "13920b894954254b08ae8ace56f31b3dafdb39d37fcc67a134abb15cad8bbe27",
-        "8129d3425fc07a3b26b02c0974e6430231917b624fa69a7fa936cd8560002462"
-      ],
-      "topic_tokens": [
-        [
-          "citizen",
-          "charged",
-          "after",
-          "grapheneos",
-          "phone",
-          "wipes",
-          "during",
-          "airport",
-          "search"
-        ],
-        [
-          "london",
-          "gatwick",
-          "has",
-          "launched",
-          "robotic",
-          "airport",
-          "parking",
-          "service"
-        ],
-        [
-          "have",
-          "proof",
-          "automation",
-          "now"
-        ],
-        [
-          "what",
-          "happening",
-          "jobs",
-          "separating",
-          "hype",
-          "reality"
-        ],
-        [
-          "why",
-          "left",
-          "google",
-          "deepmind"
-        ],
-        [
-          "terence",
-          "tao",
-          "mathematics",
-          "age",
-          "pdf"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-27",
       "topics": [
         "Netflix employee fired for sharing personal details in retreat trust exercise",
@@ -966,6 +897,83 @@
           "promo",
           "code",
           "mashable"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "topics": [
+        "Fastmail offers EU data region",
+        "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+        "Timeline of the OpenAI accidental attack against Hugging Face",
+        "Lost my phone at the office. Claude suggested tracking Bluetooth signal strength",
+        "The original URL for this prediction will no longer be available in 11 years (2011)",
+        "Melatonin impairs morning cognition in healthy young adults (2023)"
+      ],
+      "title_hashes": [
+        "2f969e8c2c963f0ab6255806005a6b9edd82440324be3486ab346cbd346b64b9",
+        "b996977675b819d05555e91b6cec510f2fa22dbafb2ade102052151311cd8087",
+        "f424e082db891bea7fd95a1723edbe1c379a1d1db4d60c75979b17e4094dddfe",
+        "1bb88b375740d7130bf10baf96808055f456679b5acc553f0ea9bcdcf5a75796",
+        "d0b910f652dd77302af7ced76dda5abf74c8bd9b4fd363426ca551bf2a9e92d0",
+        "73efb9d8c08a241c4eb499f2848746ebd0f3c9ce3e7192da12fa3d8bbad43a85"
+      ],
+      "topic_tokens": [
+        [
+          "fastmail",
+          "offers",
+          "data",
+          "region"
+        ],
+        [
+          "deepmind",
+          "weathernext",
+          "model",
+          "achieves",
+          "breakthrough",
+          "forecasting",
+          "cyclones"
+        ],
+        [
+          "timeline",
+          "openai",
+          "accidental",
+          "attack",
+          "against",
+          "hugging",
+          "face"
+        ],
+        [
+          "lost",
+          "phone",
+          "office",
+          "claude",
+          "suggested",
+          "tracking",
+          "bluetooth",
+          "signal",
+          "strength"
+        ],
+        [
+          "original",
+          "url",
+          "this",
+          "prediction",
+          "will",
+          "longer",
+          "available",
+          "years",
+          "2011"
+        ],
+        [
+          "melatonin",
+          "impairs",
+          "morning",
+          "cognition",
+          "healthy",
+          "young",
+          "adults",
+          "2023"
         ]
       ]
     }
