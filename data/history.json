@@ -1,91 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-27",
-      "topics": [
-        "Netflix employee fired for sharing personal details in retreat trust exercise",
-        "Self-contained highly-portable Python distributions",
-        "Exploiting Volvo/Eicher's fleet platform to gain control over all users/vehicles",
-        "Kimi K3 Now Available via Telnyx Inference API",
-        "Show HN: FeyNoBg – Automatic background removal model and training library",
-        "News outlet killed story on plagiarism after Cambridge prof hired law firm"
-      ],
-      "title_hashes": [
-        "6513c8489d84972d1671f0f3e25b8debe15c5d51247a1a62f0a210c3ac2ae0a6",
-        "46031b2a75c85f7ef8f115935b380bcdddd649848543a59e4d6a661effe44466",
-        "b9709d597e7217dbded5082db7a9df24d6b3ac885f18ec13f9fd4f46e7bef465",
-        "767c9f2f505c3105ea208b6a353478d7605a2d970ba562f754ff3eb8aa2ef732",
-        "0952a6765b847bdc1664581dcad2c875895631aa5a45e2d40e161ac8d16b721e",
-        "fbccc59d07aefea7c7173321f91d14ab02ac16eac0fc850926965c6c517f60f4"
-      ],
-      "topic_tokens": [
-        [
-          "netflix",
-          "employee",
-          "fired",
-          "sharing",
-          "personal",
-          "details",
-          "retreat",
-          "trust",
-          "exercise"
-        ],
-        [
-          "self",
-          "contained",
-          "highly",
-          "portable",
-          "python",
-          "distributions"
-        ],
-        [
-          "exploiting",
-          "volvo",
-          "eicher",
-          "fleet",
-          "platform",
-          "gain",
-          "control",
-          "over",
-          "all",
-          "users",
-          "vehicles"
-        ],
-        [
-          "kimi",
-          "now",
-          "available",
-          "via",
-          "telnyx",
-          "inference",
-          "api"
-        ],
-        [
-          "show",
-          "feynobg",
-          "automatic",
-          "background",
-          "removal",
-          "model",
-          "training",
-          "library"
-        ],
-        [
-          "news",
-          "outlet",
-          "killed",
-          "story",
-          "plagiarism",
-          "after",
-          "cambridge",
-          "prof",
-          "hired",
-          "law",
-          "firm"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-28",
       "topics": [
         "More Tailscale tricks for your jailbroken Kindle",
@@ -974,6 +889,77 @@
           "young",
           "adults",
           "2023"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-09",
+      "topics": [
+        "How I use LLMs to learn complex topics",
+        "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
+        "Auto mode is now the default in Claude Code",
+        "The tragedy of the commons, AI edition",
+        "The main way I've seen people turn ideologically crazy (2025)",
+        "Show HN: Voice driven murder mystery, Interview AI suspects with your voice"
+      ],
+      "title_hashes": [
+        "589fdacc082174473b10aca7fd7436cf0836b942fed8f68c44689cb38f581863",
+        "570b4214c570ad45063babc3512dd02fe0c87d86076de6c219948f256917328a",
+        "494d0162b35379193543037e4460dc36888b6c814d3701357773103f41728f6f",
+        "937713001d1ca9552bf4164feae959667a3ebbffaf5aa39947dd138015c39e3b",
+        "da6a740b6f731b1d4f332c967704760aac8258c0449b94cf6c1b30f751b1fd1c",
+        "0b9c270cd92db11ab061d95ff8835441ce5a65386b301e88f963d46019656f4b"
+      ],
+      "topic_tokens": [
+        [
+          "how",
+          "use",
+          "llms",
+          "learn",
+          "complex",
+          "topics"
+        ],
+        [
+          "docker",
+          "sandboxes",
+          "disposable",
+          "isolated",
+          "sandboxes",
+          "agents"
+        ],
+        [
+          "auto",
+          "mode",
+          "now",
+          "default",
+          "claude",
+          "code"
+        ],
+        [
+          "tragedy",
+          "commons",
+          "edition"
+        ],
+        [
+          "main",
+          "way",
+          "seen",
+          "people",
+          "turn",
+          "ideologically",
+          "crazy",
+          "2025"
+        ],
+        [
+          "show",
+          "voice",
+          "driven",
+          "murder",
+          "mystery",
+          "interview",
+          "suspects",
+          "your",
+          "voice"
         ]
       ]
     }
