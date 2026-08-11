@@ -1,85 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-28",
-      "topics": [
-        "More Tailscale tricks for your jailbroken Kindle",
-        "LearnVector – Andrew Ng's AI company building one‑to‑one learning experiences",
-        "Una GPS smart watch – Repairable, USB-C charging, developer-friendly",
-        "Discovering Cryptographic Weaknesses with Claude",
-        "DMARC has been public since 2012 but most company domains still don't enforce it",
-        "Now is the time to give LLMs access to the ACM digital library"
-      ],
-      "title_hashes": [
-        "f63ddbd44e4613a0c77d4d2f966bf570b86b2cf157b838d3b3b0fd51bb6da0b0",
-        "34407dbdb1c643014fc2229832801596bb7dc83107feadee596571ebb5a61b32",
-        "b021415177cf6ba6fdc75cf64a52e44cc9cd1fc11ecc06d9e00e4a6aa8ebd666",
-        "c22d28db1b6ae51c0f5c535d8f255e504ef56ea59cf506586af2a576a0190fec",
-        "2a58ebd252bd3f05c8f37e5c4db42bb21ec281b278602c37cc5f672d91a62e41",
-        "16fd9f7dc8202d62c12fb67dd4b452cc4fe179f798f21f51ca2eae34f0590c70"
-      ],
-      "topic_tokens": [
-        [
-          "more",
-          "tailscale",
-          "tricks",
-          "your",
-          "jailbroken",
-          "kindle"
-        ],
-        [
-          "learnvector",
-          "andrew",
-          "company",
-          "building",
-          "one",
-          "one",
-          "learning",
-          "experiences"
-        ],
-        [
-          "una",
-          "gps",
-          "smart",
-          "watch",
-          "repairable",
-          "usb",
-          "charging",
-          "developer",
-          "friendly"
-        ],
-        [
-          "discovering",
-          "cryptographic",
-          "weaknesses",
-          "claude"
-        ],
-        [
-          "dmarc",
-          "has",
-          "public",
-          "since",
-          "2012",
-          "most",
-          "company",
-          "domains",
-          "still",
-          "don",
-          "enforce"
-        ],
-        [
-          "now",
-          "time",
-          "give",
-          "llms",
-          "access",
-          "acm",
-          "digital",
-          "library"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-29",
       "topics": [
         "AI's top startups are barely publishing their research",
@@ -960,6 +881,79 @@
           "suspects",
           "your",
           "voice"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "topics": [
+        "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
+        "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
+        "As AI eats the web, the internet’s collective memory is disappearing",
+        "Learning more about Claude's mathematical capabilities",
+        "Humanising LLM Outputs Is Dumb",
+        "How Claude marks AI-generated content"
+      ],
+      "title_hashes": [
+        "25cabe1eb1fa55570f04092084c18d9616dcee7a8f46c70f1ffa4ac568aee213",
+        "29009f23a8a2d7fb4803770a2f4ec3856791a0520223c98e17738919ef55598b",
+        "c77ed63ad7bc118d39240fc5cbc06a2de7c75a561a442372b9dbcd920dfb6b0e",
+        "efb65b730863202c29f5715a106dfe22b31487ac5e831efe6458e8ed53612d1d",
+        "85a1feb9fc684c2b9be11da43fc6a59dd31443b592182c1f14bc79e1fc769617",
+        "fe9c126fd9a9b50b2f03f3fe189e3ee4087d8ff5b15677045916012a63c8e418"
+      ],
+      "topic_tokens": [
+        [
+          "mark",
+          "zuckerberg",
+          "attacks",
+          "closed",
+          "rivals",
+          "meta",
+          "returns",
+          "open",
+          "models"
+        ],
+        [
+          "show",
+          "needle2",
+          "14mb",
+          "agentic",
+          "llm",
+          "phones",
+          "wearables",
+          "smart",
+          "home",
+          "robots"
+        ],
+        [
+          "eats",
+          "web",
+          "internet",
+          "collective",
+          "memory",
+          "disappearing"
+        ],
+        [
+          "learning",
+          "more",
+          "about",
+          "claude",
+          "mathematical",
+          "capabilities"
+        ],
+        [
+          "humanising",
+          "llm",
+          "outputs",
+          "dumb"
+        ],
+        [
+          "how",
+          "claude",
+          "marks",
+          "generated",
+          "content"
         ]
       ]
     }
