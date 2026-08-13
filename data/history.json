@@ -1,78 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-30",
-      "topics": [
-        "Advancing the price-performance frontier with GPT‑5.6",
-        "Gemini Robotics 2 brings whole body intelligence to robots",
-        "We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447",
-        "The AI Aesthetic",
-        "GCC steering committee announces AI policy",
-        "Google fixed more Chrome bugs in June than over the past two years, thanks to AI"
-      ],
-      "title_hashes": [
-        "9f4de4a139b307b35dbd8b40c347a0f2a574b5e6310f94f6327c94fade4956eb",
-        "7570056ce8596dd5d97e6dc8a310da7ceae20c372f8a763c8158bdb05af816fd",
-        "0f136ade630fb40c839d4d0a2219dae1f1e4b44a6b8f5087da84787ba0c17cbc",
-        "c76adf57b0122223ab6b092682d65c4511d5a9d3070fadeaf53383109895a96c",
-        "04ff1b808fc7d69e8b7d861d3f95c2a0e8dd441f9d8b6e37e1d050c37fd26729",
-        "d48228f73c45a750addbc9249b3306c5a66af0ce104251dee36857d42b6f8b4f"
-      ],
-      "topic_tokens": [
-        [
-          "advancing",
-          "price",
-          "performance",
-          "frontier",
-          "gpt"
-        ],
-        [
-          "gemini",
-          "robotics",
-          "brings",
-          "whole",
-          "body",
-          "intelligence",
-          "robots"
-        ],
-        [
-          "gave",
-          "gpt",
-          "sol",
-          "real",
-          "business",
-          "lied",
-          "spammed",
-          "lost",
-          "447"
-        ],
-        [
-          "aesthetic"
-        ],
-        [
-          "gcc",
-          "steering",
-          "committee",
-          "announces",
-          "policy"
-        ],
-        [
-          "google",
-          "fixed",
-          "more",
-          "chrome",
-          "bugs",
-          "june",
-          "than",
-          "over",
-          "past",
-          "two",
-          "years",
-          "thanks"
-        ]
-      ]
-    },
-    {
       "date": "2026-07-31",
       "topics": [
         "Tailscale didn't stop the Hugging Face intrusion",
@@ -951,6 +879,74 @@
           "lightning",
           "nemo",
           "switchyard"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "topics": [
+        "AI is removing the middle class of software engineering?",
+        "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
+        "ChatGPT Desktop (Codex Desktop) for Linux",
+        "Delphi 13 Community Edition Is Now Available",
+        "Lovable raises $400M Series C",
+        "US hires over 2k video gamers as air traffic controllers"
+      ],
+      "title_hashes": [
+        "385ade067a11e49039e4c7386704237d977af33dd46f225852fb8e17769078d4",
+        "2393d5a2f6925e49dc4ef75cbbbf72683aa96c6706e1194df8753b1ef0da7a3e",
+        "d0edf5c256b02caa543e2a65c9037a06330314187965373073cba29bf72b83ce",
+        "11cc429b8be6e657c7a797f5d57a1157158ee3f3369885f0b0c75871e9e8ce1b",
+        "f8ca4d19763b4360fa21f7ffefde47c4f47cf50f65b4dc334111642dd2e333ca",
+        "74aa6526271cfabbf042bb9f948e7b7952c24baf71f488433a654c0c2e46c060"
+      ],
+      "topic_tokens": [
+        [
+          "removing",
+          "middle",
+          "class",
+          "software",
+          "engineering"
+        ],
+        [
+          "someone",
+          "running",
+          "mass",
+          "vulnerability",
+          "scans",
+          "spoofing",
+          "bots",
+          "like",
+          "claudebot"
+        ],
+        [
+          "chatgpt",
+          "desktop",
+          "codex",
+          "desktop",
+          "linux"
+        ],
+        [
+          "delphi",
+          "community",
+          "edition",
+          "now",
+          "available"
+        ],
+        [
+          "lovable",
+          "raises",
+          "400m",
+          "series"
+        ],
+        [
+          "hires",
+          "over",
+          "video",
+          "gamers",
+          "air",
+          "traffic",
+          "controllers"
         ]
       ]
     }
