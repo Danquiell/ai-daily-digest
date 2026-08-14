@@ -1,73 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-07-31",
-      "topics": [
-        "Tailscale didn't stop the Hugging Face intrusion",
-        "Flint: A Visualization Language for the AI Era",
-        "Golang proposal: container/: generic collection types",
-        "Is AI reasoning right for the wrong reasons?",
-        "AI doesn't generate working products, that's still your job",
-        "Everyone is building LLM routers, we deprecated ours"
-      ],
-      "title_hashes": [
-        "65dbc1b200e7956a527b59a6693cd6fdebe18e47e49e35e27d082a1a3a152071",
-        "79b3e48d159a0f842fcc2fa7491fa681df9120f7927b203427a0f790f691135e",
-        "e8cb152bcd8d9b7f91042d170080a5b6d30d069443b067a009552beff93b2178",
-        "dbdf0683ceea824e638fc0c0b6ce45ed54ecc119ace1f90b4fd7ca79dc1eea11",
-        "524bb49d192e0377eb4b5550420cd8d6e4f6e5eaf2f39fdc3cef54fd42817902",
-        "21816863e7a627dfda9b19bf6e0c198377962113834ac4227d0117df22d11cf2"
-      ],
-      "topic_tokens": [
-        [
-          "tailscale",
-          "didn",
-          "stop",
-          "hugging",
-          "face",
-          "intrusion"
-        ],
-        [
-          "flint",
-          "visualization",
-          "language",
-          "era"
-        ],
-        [
-          "golang",
-          "proposal",
-          "container",
-          "generic",
-          "collection",
-          "types"
-        ],
-        [
-          "reasoning",
-          "right",
-          "wrong",
-          "reasons"
-        ],
-        [
-          "doesn",
-          "generate",
-          "working",
-          "products",
-          "that",
-          "still",
-          "your",
-          "job"
-        ],
-        [
-          "everyone",
-          "building",
-          "llm",
-          "routers",
-          "deprecated",
-          "ours"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-01",
       "topics": [
         "AI financial advice is surprisingly good, especially if you ask right questions",
@@ -947,6 +880,72 @@
           "air",
           "traffic",
           "controllers"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "topics": [
+        "Gemini 3.7 Flash",
+        "Accelerating GPT-5.6 Sol Ultrafast",
+        "Mistral OCR 4.1",
+        "Nine PBS sues Iron Mountain over blocked access to archival data",
+        "Choosing an AI model: one prompt, 11 models, different results",
+        "Heart aerospace completes first flight of largest electric aircraft"
+      ],
+      "title_hashes": [
+        "8cac6796db996fc5b72e1a6185b890a9f0ecf4a67093f716219b375b932a7f78",
+        "2f9a1cddcfb21d6235f8bf3ee8f2630d8855740dd51fe47c37309c6425d46c09",
+        "4d4a55d9edf7f6201e24f861be13023618f2f0ed9944f29321d6f3b90ae0c1d8",
+        "283bb18a418eeb60a4815185b30c76344537a7dd79fcd5d24f0fea3e45b4fbf8",
+        "ba432cb31a379b2b18f12693b283cd905df6c52dabba8bb7ea383e493a8a0c63",
+        "642b378e8bf59ef2e7b8296325856c1518021ceb478ebb6ecd7b8656258fe742"
+      ],
+      "topic_tokens": [
+        [
+          "gemini",
+          "flash"
+        ],
+        [
+          "accelerating",
+          "gpt",
+          "sol",
+          "ultrafast"
+        ],
+        [
+          "mistral",
+          "ocr"
+        ],
+        [
+          "nine",
+          "pbs",
+          "sues",
+          "iron",
+          "mountain",
+          "over",
+          "blocked",
+          "access",
+          "archival",
+          "data"
+        ],
+        [
+          "choosing",
+          "model",
+          "one",
+          "prompt",
+          "models",
+          "different",
+          "results"
+        ],
+        [
+          "heart",
+          "aerospace",
+          "completes",
+          "first",
+          "flight",
+          "largest",
+          "electric",
+          "aircraft"
         ]
       ]
     }
