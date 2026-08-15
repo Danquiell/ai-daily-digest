@@ -1,79 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-01",
-      "topics": [
-        "AI financial advice is surprisingly good, especially if you ask right questions",
-        "I don't recommend Tailwind CSS",
-        "Explorative modeling: Train on the best of K guesses",
-        "Campaigns in Oklahoma are using AI. Regulators are trying to catch up - The Oklahoman",
-        "Medical journals, law reviews, and literary magazines are grappling with AI-generated submissions - The Boston Globe",
-        "Adopt AI or Die? - The New Republic"
-      ],
-      "title_hashes": [
-        "c6e41479ee31bfb9297464e8bb4bf9650afeca22e2d0954ce5c7adb58ed16782",
-        "4c376b2947564ed0aa83d905ac8a0efbe0a73058ec951b92ac87aff13988cb01",
-        "6f9b4955afd3693a8ff8ef580e996e6d0b63da82828ce91d0860d2ac840309d5",
-        "189990a486b38953f875a7a9d6fdf9c0b8db559b35a5699e7db8519fbe562b10",
-        "37e1ff8a5f0f09df86452c4af3cf8a7b5f625b2894a89366232f856c7c77a871",
-        "f304e1871fe5a98beba1c02bc9773f87a1ca5f35cc1d23e6f31b4e343c1eefcb"
-      ],
-      "topic_tokens": [
-        [
-          "financial",
-          "advice",
-          "surprisingly",
-          "good",
-          "especially",
-          "you",
-          "ask",
-          "right",
-          "questions"
-        ],
-        [
-          "don",
-          "recommend",
-          "tailwind",
-          "css"
-        ],
-        [
-          "explorative",
-          "modeling",
-          "train",
-          "best",
-          "guesses"
-        ],
-        [
-          "campaigns",
-          "oklahoma",
-          "using",
-          "regulators",
-          "trying",
-          "catch",
-          "oklahoman"
-        ],
-        [
-          "medical",
-          "journals",
-          "law",
-          "reviews",
-          "literary",
-          "magazines",
-          "grappling",
-          "generated",
-          "submissions",
-          "boston",
-          "globe"
-        ],
-        [
-          "adopt",
-          "die",
-          "new",
-          "republic"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-02",
       "topics": [
         "'Crush this lady': how eBay harassment campaign led to $56M payout",
@@ -946,6 +873,75 @@
           "largest",
           "electric",
           "aircraft"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "topics": [
+        "Google is making private AI practical with homomorphic encryption",
+        "AI by Hand",
+        "Maximizing the value of your Claude Code sessions",
+        "Artificial Intelligence in Predicting Systemic Complications From Retinal Findings: A New Frontier in Precision Medicine - Cureus",
+        "Show HN: ThoughtDAG – An editable context graph for LLM conversations",
+        "Show HN: Deltix – AI Driven Testing"
+      ],
+      "title_hashes": [
+        "9baa312ebe6b33c30d7741a601ddfc8685f5178d64e40825c1f5e355dfd984ed",
+        "53d5ed37dd57a8c39393d9355db6275ed5ecc7b8487d8aad7937c399f23d0185",
+        "5eeaffed783438913e9b21266ce161dbd7f9fe402b56a7d34cbd1f4b77b254eb",
+        "efbc0d598402cb3c1995dc39e6d5840fb140fd9e1a2bd7476b85990176bcf7a5",
+        "7f6b7a42fe73cc926f4505bab5b2161dfb35c9f1a938c7aa21acda1d4d7e192e",
+        "1af0410dcc3b8eaf8dc7ad47d9a76ed1f8fec6b0e7b57fc5666727e1e0940de2"
+      ],
+      "topic_tokens": [
+        [
+          "google",
+          "making",
+          "private",
+          "practical",
+          "homomorphic",
+          "encryption"
+        ],
+        [
+          "hand"
+        ],
+        [
+          "maximizing",
+          "value",
+          "your",
+          "claude",
+          "code",
+          "sessions"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "predicting",
+          "systemic",
+          "complications",
+          "retinal",
+          "findings",
+          "new",
+          "frontier",
+          "precision",
+          "medicine",
+          "cureus"
+        ],
+        [
+          "show",
+          "thoughtdag",
+          "editable",
+          "context",
+          "graph",
+          "llm",
+          "conversations"
+        ],
+        [
+          "show",
+          "deltix",
+          "driven",
+          "testing"
         ]
       ]
     }
