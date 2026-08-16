@@ -1,76 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-02",
-      "topics": [
-        "'Crush this lady': how eBay harassment campaign led to $56M payout",
-        "Prevent cognitive debt by manually retyping LLM-generated code",
-        "My personal AI benchmark: “Generate an SVG of a frog with a Habsburg jaw”",
-        "Bonsai: Janestreet's UI Library",
-        "The AI Productivity Gap",
-        "AI migrated legacy COBOL programs to Java, bugs included"
-      ],
-      "title_hashes": [
-        "fab3f05f0c98afd56612a35d2bca864d6bf97e916a8cd33b042ae276633e48d3",
-        "2b2595285f303f13b3f9e88789a51f60d811595277379b0a48f5004785d473b7",
-        "6f33c984c8697282935640bf37cc475dad4d9885e077697ebe749d72f6b7cac0",
-        "28fe3a912476b1bdda5cc34055c95b2aa35348d39e3f8592560617b9759aed62",
-        "8a6d7c0a524d3fdb8b72711e749274dc25961c4afa156ee203aca6c026db4d0e",
-        "ba33c965ea44ae50e7f2a17b51fbba2996d85f777667824dcba15d7fcafe93da"
-      ],
-      "topic_tokens": [
-        [
-          "crush",
-          "this",
-          "lady",
-          "how",
-          "ebay",
-          "harassment",
-          "campaign",
-          "led",
-          "56m",
-          "payout"
-        ],
-        [
-          "prevent",
-          "cognitive",
-          "debt",
-          "manually",
-          "retyping",
-          "llm",
-          "generated",
-          "code"
-        ],
-        [
-          "personal",
-          "benchmark",
-          "generate",
-          "svg",
-          "frog",
-          "habsburg",
-          "jaw"
-        ],
-        [
-          "bonsai",
-          "janestreet",
-          "library"
-        ],
-        [
-          "productivity",
-          "gap"
-        ],
-        [
-          "migrated",
-          "legacy",
-          "cobol",
-          "programs",
-          "java",
-          "bugs",
-          "included"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-03",
       "topics": [
         "LLMs reward expertise",
@@ -942,6 +872,87 @@
           "deltix",
           "driven",
           "testing"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "topics": [
+        "AI has access to a vastly larger working memory than the human brain",
+        "Working with AI feels more like leadership than coding",
+        "A controversial Alzheimer's surgery is said to reverse symptoms",
+        "What happens when an LLM never sees material beyond fifth grade?",
+        "AI in drug discovery – what it is, where we stand and the path forward",
+        "SK Telecom is shifting the R&D center of its artificial intelligence (AI) service \"Aidat\" to cor.. - 매일경제"
+      ],
+      "title_hashes": [
+        "6706e10a90ccd702e9955d7583192e2634c57f4a0ee61846b8ffd66515f0bc8f",
+        "2343f63967a64da32e9b3bdfcbc47b5624d82de2e8e579aee83eba690b791248",
+        "66845f0605e70e8c9e5d339097ef48e543dec8ab00f5dc04319e02f17db0c170",
+        "8537cd73e42aeb7c10eedafa55d5fcdb27215ccb61cd4a1e134b79b09baac401",
+        "fb179fa05c6fa73eb6927c08ddd0819f7ae0f1ed3fb87dcec43a39ab7ed23925",
+        "c5153040cd0f94e0dd918caa7ed2fba085a0decc3cd374f799bae96694ea3dcc"
+      ],
+      "topic_tokens": [
+        [
+          "has",
+          "access",
+          "vastly",
+          "larger",
+          "working",
+          "memory",
+          "than",
+          "human",
+          "brain"
+        ],
+        [
+          "working",
+          "feels",
+          "more",
+          "like",
+          "leadership",
+          "than",
+          "coding"
+        ],
+        [
+          "controversial",
+          "alzheimer",
+          "surgery",
+          "said",
+          "reverse",
+          "symptoms"
+        ],
+        [
+          "what",
+          "happens",
+          "when",
+          "llm",
+          "never",
+          "sees",
+          "material",
+          "beyond",
+          "fifth",
+          "grade"
+        ],
+        [
+          "drug",
+          "discovery",
+          "what",
+          "where",
+          "stand",
+          "path",
+          "forward"
+        ],
+        [
+          "telecom",
+          "shifting",
+          "center",
+          "its",
+          "artificial",
+          "intelligence",
+          "service",
+          "aidat",
+          "cor"
         ]
       ]
     }
