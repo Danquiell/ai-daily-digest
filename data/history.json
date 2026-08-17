@@ -1,77 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-03",
-      "topics": [
-        "LLMs reward expertise",
-        "SQLite Critical CVEs or LLM Slop?",
-        "AirLLM 70B inference with single 4GB GPU",
-        "There Will Come Soft Rains (1950) [pdf]",
-        "Bending Spoons makes first post-IPO acquisition with $1.3B Airtable deal",
-        "What's the largest software project AI can complete on its own?"
-      ],
-      "title_hashes": [
-        "7a054a73902634a9eb370855b482de2c8b60d117c34fba6e4aeebba9531800a4",
-        "c8039df8738e15cf7581ea23a30375db93de03f6605957cb98dc6b9fa5d50fbb",
-        "707191e4751c98e25bbddf487ed089c34f18df212d6ffc801def52cc4b62266b",
-        "d42700c21ae7e82fa74dd456b4be43e136559f9ccac8ff236cdb8a4486ca8973",
-        "9424d5e869e29a8f0589b3f57c33f2246145bc722edd046267c3c0c992bc88c1",
-        "b423d2b22ff6ff98275420144b180cc968c5accdffd586e72e4b088e172083c9"
-      ],
-      "topic_tokens": [
-        [
-          "llms",
-          "reward",
-          "expertise"
-        ],
-        [
-          "sqlite",
-          "critical",
-          "cves",
-          "llm",
-          "slop"
-        ],
-        [
-          "airllm",
-          "70b",
-          "inference",
-          "single",
-          "4gb",
-          "gpu"
-        ],
-        [
-          "there",
-          "will",
-          "come",
-          "soft",
-          "rains",
-          "1950",
-          "pdf"
-        ],
-        [
-          "bending",
-          "spoons",
-          "makes",
-          "first",
-          "post",
-          "ipo",
-          "acquisition",
-          "airtable",
-          "deal"
-        ],
-        [
-          "what",
-          "largest",
-          "software",
-          "project",
-          "can",
-          "complete",
-          "its",
-          "own"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-04",
       "topics": [
         "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
@@ -953,6 +882,69 @@
           "service",
           "aidat",
           "cor"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "topics": [
+        "Claude: System Prompts",
+        "Anthropic's 'watermark' text adulteration in Claude is a perversion of writing",
+        "The AI Credit Resale Economy",
+        "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee",
+        "AGI-64 Brings Sierra Adventures to the Commodore 64",
+        "Rhombus 1.1 is now available"
+      ],
+      "title_hashes": [
+        "a36b27504d971cb593b1d78530e4bc30f5a9f58066559cbe12a9564abfce07be",
+        "6dff7d92d268531beff7e66b53d49275a08a3f5e368b098706215eeee7a3a022",
+        "e9f81a1bac4b5450e231fd9be8e1a14947094b57d2f0713ee1a5d0ce6c51fe87",
+        "1cd5acf7ff9abc693d271f2d8c6c491a0d07f84627eeb28c26ed0f6ba44a8212",
+        "1327f395a84000bcbac5e0fdeebccda82dabacb4068b1810beeb448c219ad45a",
+        "21de4d23b626884dbcb933b06d2bb9d8ef76d98a67970cd521c8144bf62b64d7"
+      ],
+      "topic_tokens": [
+        [
+          "claude",
+          "system",
+          "prompts"
+        ],
+        [
+          "anthropic",
+          "watermark",
+          "text",
+          "adulteration",
+          "claude",
+          "perversion",
+          "writing"
+        ],
+        [
+          "credit",
+          "resale",
+          "economy"
+        ],
+        [
+          "nvidia",
+          "dramatically",
+          "reduces",
+          "amount",
+          "openai",
+          "infra",
+          "financing",
+          "may",
+          "guarantee"
+        ],
+        [
+          "agi",
+          "brings",
+          "sierra",
+          "adventures",
+          "commodore"
+        ],
+        [
+          "rhombus",
+          "now",
+          "available"
         ]
       ]
     }
