@@ -1,81 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-04",
-      "topics": [
-        "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
-        "AI fuels more than half of cybercrime in Africa as scams surge – Interpol",
-        "Oxide Computer raises $445M (SEC Form D)",
-        "Eight Myths on Software Engineering and GenAI",
-        "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
-        "Zero-Mem: Zero-Token Memory Operations for LLM Agents"
-      ],
-      "title_hashes": [
-        "798b53906782991d39356d83200477886a0858a442f7d2dbecd98395fb5ee13e",
-        "f62355f03216b0687dd9c297805b26720bc735aad43dba9e7738823ce2e7736a",
-        "f2026b05aabe7a21e7b671165baae472581aebeeec66da9cd8169735686695a3",
-        "05d6f881dc2cbecb7c5c3f54580cc08ee9ba46f48dcdf393927846960276fce2",
-        "740e7cacf3dc24eff992402efe177492f43c30bcabe7e265a6174d4f2a289962",
-        "0b1d711630c1a2ced7700cf2b048efa9f1349850dbdb44317f7dc89bcd10a804"
-      ],
-      "topic_tokens": [
-        [
-          "mistral",
-          "shieldstral",
-          "open",
-          "weights",
-          "model",
-          "multimodal",
-          "moderation"
-        ],
-        [
-          "fuels",
-          "more",
-          "than",
-          "half",
-          "cybercrime",
-          "africa",
-          "scams",
-          "surge",
-          "interpol"
-        ],
-        [
-          "oxide",
-          "computer",
-          "raises",
-          "445m",
-          "sec",
-          "form"
-        ],
-        [
-          "eight",
-          "myths",
-          "software",
-          "engineering",
-          "genai"
-        ],
-        [
-          "when",
-          "benchmarks",
-          "plateau",
-          "systematic",
-          "study",
-          "benchmark",
-          "saturation"
-        ],
-        [
-          "zero",
-          "mem",
-          "zero",
-          "token",
-          "memory",
-          "operations",
-          "llm",
-          "agents"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-05",
       "topics": [
         "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
@@ -945,6 +870,74 @@
           "rhombus",
           "now",
           "available"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "topics": [
+        "AI;DR (AI; Didn't Read)",
+        "Israel creates fake think tank in likely attempt to dupe AI chatbots",
+        "GPT-5.6 Sol Pricing Cut by 50%",
+        "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+        "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+        "How to disable or avoid intrusive AI"
+      ],
+      "title_hashes": [
+        "b1a5fb0d1919fade39c8f7e4e5462b304ff5bdc4d283bb87e08f190fa0c0f15a",
+        "15da087781f179e806fbca4012112550d7379c2cfd4aaeaa47023d84f81f6987",
+        "e2e0f93aef7ccda68aa6d840f98dd85a53462ba4166ffd105eb9d478cbb36eed",
+        "b998acfa335a4a9fc92f91ad1749556194b0743b57db3b68ce7f8175f0c1e9d8",
+        "9d47fd6bf1bde2acb25c1fcbea5edc5dc0aa7f5646d433bc9d87e0f172feaf9a",
+        "85ba51d7169ca85b11e43fa0b9963c09998a1c412d2de664631fdff35d0efb47"
+      ],
+      "topic_tokens": [
+        [
+          "didn",
+          "read"
+        ],
+        [
+          "israel",
+          "creates",
+          "fake",
+          "think",
+          "tank",
+          "likely",
+          "attempt",
+          "dupe",
+          "chatbots"
+        ],
+        [
+          "gpt",
+          "sol",
+          "pricing",
+          "cut"
+        ],
+        [
+          "generated",
+          "github",
+          "copilot",
+          "autofix",
+          "allowed",
+          "compromise",
+          "snowflake",
+          "jira"
+        ],
+        [
+          "gpt",
+          "sol",
+          "best",
+          "vision",
+          "model",
+          "openai",
+          "ever",
+          "released"
+        ],
+        [
+          "how",
+          "disable",
+          "avoid",
+          "intrusive"
         ]
       ]
     }
