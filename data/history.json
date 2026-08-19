@@ -1,85 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-05",
-      "topics": [
-        "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
-        "Beating GPT-5.6 Sol on retrieval with 100x cheaper open models",
-        "Born Against, or why hobby programming communities are against LLM usage",
-        "Nashville uses eminent domain to block data center near zoo",
-        "Position: LLMs Can't Jump",
-        "NVIDIA’s Vera Whitepaper Has a Thread Loose"
-      ],
-      "title_hashes": [
-        "cb13a6fd0e4ffe3e47d6b94abc8b00ef94ea998e57665a0eb764421a7ea49a92",
-        "d41347d2816c88c16ff5fcb39a02684dcfb305369ac453ab1b8f153ee752874a",
-        "d4073f107a5a511b643f8dfcfa8ff1fb5bbd0b8124a1b467f4ff044d2160cbf5",
-        "5bdffcf096a44ba42d50c204e82692304eff6302d8f1c634ab5bc0b7334516e7",
-        "5bc814b073c77f40b18684ac0ea79bc2dab1ba65e4d6cd60e8fe8e664a48ed6c",
-        "2c182f6edd2a8baefcc2944ab2af78f8e03fe8a428691436ef7c8cc46356bf2e"
-      ],
-      "topic_tokens": [
-        [
-          "changes",
-          "google",
-          "deepmind",
-          "demis",
-          "hassabis",
-          "ceo",
-          "chair",
-          "jeff",
-          "dean",
-          "departs"
-        ],
-        [
-          "beating",
-          "gpt",
-          "sol",
-          "retrieval",
-          "100x",
-          "cheaper",
-          "open",
-          "models"
-        ],
-        [
-          "born",
-          "against",
-          "why",
-          "hobby",
-          "programming",
-          "communities",
-          "against",
-          "llm",
-          "usage"
-        ],
-        [
-          "nashville",
-          "uses",
-          "eminent",
-          "domain",
-          "block",
-          "data",
-          "center",
-          "near",
-          "zoo"
-        ],
-        [
-          "position",
-          "llms",
-          "can",
-          "jump"
-        ],
-        [
-          "nvidia",
-          "vera",
-          "whitepaper",
-          "has",
-          "thread",
-          "loose"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-06",
       "topics": [
         "GitHub Actions and Pages are experiencing degraded availability",
@@ -938,6 +859,81 @@
           "disable",
           "avoid",
           "intrusive"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "topics": [
+        "Google has acquired the data of failed US airline Spirit",
+        "Using the railway network as a flatbed scanner",
+        "Field measurements of neighborhood-scale air temperature impacts of data centers",
+        "Claude Code May–August 2026 weekly limits promotion",
+        "Norway should buy OpenAI",
+        "Claude writing a macOS driver for my obscure HP printer built only for Windows"
+      ],
+      "title_hashes": [
+        "cb3b09ba8ca18c6f0e9eeb789f66f8193ba8be0170a97cf159b9942df5be1390",
+        "b63bb2f6d41a55e402a3ab180c13f655439a76c6b87f96b590f0fada2de1d186",
+        "01a24e408e47c98de301d4ceaa26aa4a54f3b6e22c06fe3a2a1d319b3a2761bd",
+        "e208f61f1c89aa6cae3af1f9c58c172d14a4a229fd69d52ef5b251cd0f66f644",
+        "547b4773f71a03a8ae3c703f8a406a66ad0553a3dff92baf9a3efe55203bbce3",
+        "00c2fcf8f2591077b12a3864961a311df53c6a6b2d94ba1ba12155bb4dc10f91"
+      ],
+      "topic_tokens": [
+        [
+          "google",
+          "has",
+          "acquired",
+          "data",
+          "failed",
+          "airline",
+          "spirit"
+        ],
+        [
+          "using",
+          "railway",
+          "network",
+          "flatbed",
+          "scanner"
+        ],
+        [
+          "field",
+          "measurements",
+          "neighborhood",
+          "scale",
+          "air",
+          "temperature",
+          "impacts",
+          "data",
+          "centers"
+        ],
+        [
+          "claude",
+          "code",
+          "may",
+          "august",
+          "2026",
+          "weekly",
+          "limits",
+          "promotion"
+        ],
+        [
+          "norway",
+          "should",
+          "buy",
+          "openai"
+        ],
+        [
+          "claude",
+          "writing",
+          "macos",
+          "driver",
+          "obscure",
+          "printer",
+          "built",
+          "only",
+          "windows"
         ]
       ]
     }
