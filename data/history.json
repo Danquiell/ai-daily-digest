@@ -1,90 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-06",
-      "topics": [
-        "GitHub Actions and Pages are experiencing degraded availability",
-        "Software development with AI is starting to feel like cooking steak",
-        "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
-        "Improving GPT‑5.6 Sol in ChatGPT, expanding GPT‑5.6 Luna access for free users",
-        "Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)",
-        "New Orleans is testing Carbyne’s AI-powered Emergency Call Triage software"
-      ],
-      "title_hashes": [
-        "4ed6d187bfb3a727ed05148a4a680915e5bb021db9c42ebd38665259660b0e39",
-        "fdb9c92a04a97b57d4ded02461f2b88dc4df391542fdee301805f06299f19046",
-        "9b5d755c069b71dd8f4fbcadd1879bbcf8b750615b19471c37e0e7c92475c087",
-        "45206733edc7ca5872318c3e557242d2de515252105ec8911b0eb7b4c8a4b840",
-        "2dc3e4f7db7c72e1a7021e40955b87a72b40d527dd19d64e19763240e3a8c93d",
-        "83a59432eea2d54d40ecb511a2757ed6d531ac68287e018958f91b8b04a2588f"
-      ],
-      "topic_tokens": [
-        [
-          "github",
-          "actions",
-          "pages",
-          "experiencing",
-          "degraded",
-          "availability"
-        ],
-        [
-          "software",
-          "development",
-          "starting",
-          "feel",
-          "like",
-          "cooking",
-          "steak"
-        ],
-        [
-          "humans",
-          "missed",
-          "threats",
-          "approving",
-          "agent",
-          "commands",
-          "across",
-          "40k",
-          "game",
-          "runs"
-        ],
-        [
-          "improving",
-          "gpt",
-          "sol",
-          "chatgpt",
-          "expanding",
-          "gpt",
-          "luna",
-          "access",
-          "free",
-          "users"
-        ],
-        [
-          "inside",
-          "vllm",
-          "anatomy",
-          "high",
-          "throughput",
-          "llm",
-          "inference",
-          "system",
-          "2025"
-        ],
-        [
-          "new",
-          "orleans",
-          "testing",
-          "carbyne",
-          "powered",
-          "emergency",
-          "call",
-          "triage",
-          "software"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-07",
       "topics": [
         "What happens if an entire class of workers loses faith in their careers",
@@ -934,6 +850,72 @@
           "built",
           "only",
           "windows"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "topics": [
+        "A joke domain purchase turned in geopolitical warfare",
+        "Devices with GrapheneOS support should be available in 2027",
+        "Geolocating a random island using geometry and CUDA programming",
+        "Air Theremin – A browser theremin you play by waving at your webcam",
+        "Don't Paste the AI, please",
+        "Mathematics in the age of AI"
+      ],
+      "title_hashes": [
+        "a518d20e70c991c09f9295455f65e08154a11ea38e47e0807f7d17ea850007b0",
+        "2a5c0d994d88856485da060f3959912e6532bc3aaebe19a12dc6fcda0c4c8216",
+        "4cb837985a0fddd966327f28c1d87e9e009a354dbf57ff46377091bbcb1b71b4",
+        "a9f81359bbc1ab6dbd96be5195fc0d26f33fe3b4c858abb03f41f89b0d633608",
+        "75040acfa4829a41c23c9be1386fdaf81a399a8fb44f5f6e6a38a64a8915923a",
+        "35e2d7e7846e5d8e3f914fad6d2a2fb7f1e84f7e6aaf4fd3a640f2d8b5e1ae0d"
+      ],
+      "topic_tokens": [
+        [
+          "joke",
+          "domain",
+          "purchase",
+          "turned",
+          "geopolitical",
+          "warfare"
+        ],
+        [
+          "devices",
+          "grapheneos",
+          "support",
+          "should",
+          "available",
+          "2027"
+        ],
+        [
+          "geolocating",
+          "random",
+          "island",
+          "using",
+          "geometry",
+          "cuda",
+          "programming"
+        ],
+        [
+          "air",
+          "theremin",
+          "browser",
+          "theremin",
+          "you",
+          "play",
+          "waving",
+          "your",
+          "webcam"
+        ],
+        [
+          "don",
+          "paste",
+          "please"
+        ],
+        [
+          "mathematics",
+          "age"
         ]
       ]
     }
