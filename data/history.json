@@ -1,85 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-07",
-      "topics": [
-        "What happens if an entire class of workers loses faith in their careers",
-        "Oracle bans AI-generated code from OpenJDK",
-        "Managing AI Coding Costs at Scale",
-        "Mythos social engineering AISI INC-2026-07-28-01",
-        "Pa. attorney general joins states seeking answers from OpenAI after AI security breach - fox56.com",
-        "Lifetime access to Claude, GPT, Gemini, and 17+ other AI models is $60 with this promo code - Mashable"
-      ],
-      "title_hashes": [
-        "bf01a6a78f2d48f8fa1db81311b128928086002b9db90d8f7c4e9de2520eef25",
-        "cce0ba49d225da0869f86879db2c6b9d6d936d001c19cb099e948cd2d40f1a5c",
-        "311e3917881e9a6113eb0ef84a2e7eb0cc4e70846c3d3590b9ecdc55f2d62bcc",
-        "852d08049685f6668d9136a72e6b691cf6028f88d33456ca1f491287f37ffc0e",
-        "99df3cd4a273edc77beca6f4371eb7157081bd918c9f9fe572d62a93e5cbdb58",
-        "3b89f31ba73a4d5c4b9a5a50e57cd986277e3030afa64970412e940abc47bddc"
-      ],
-      "topic_tokens": [
-        [
-          "what",
-          "happens",
-          "entire",
-          "class",
-          "workers",
-          "loses",
-          "faith",
-          "their",
-          "careers"
-        ],
-        [
-          "oracle",
-          "bans",
-          "generated",
-          "code",
-          "openjdk"
-        ],
-        [
-          "managing",
-          "coding",
-          "costs",
-          "scale"
-        ],
-        [
-          "mythos",
-          "social",
-          "engineering",
-          "aisi",
-          "inc",
-          "2026"
-        ],
-        [
-          "attorney",
-          "general",
-          "joins",
-          "states",
-          "seeking",
-          "answers",
-          "openai",
-          "after",
-          "security",
-          "breach",
-          "fox56"
-        ],
-        [
-          "lifetime",
-          "access",
-          "claude",
-          "gpt",
-          "gemini",
-          "other",
-          "models",
-          "this",
-          "promo",
-          "code",
-          "mashable"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-08",
       "topics": [
         "Fastmail offers EU data region",
@@ -916,6 +837,76 @@
         [
           "mathematics",
           "age"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "topics": [
+        "Show HN: I trained a 125M model to autocomplete piano on-device",
+        "AI companies destroy physical books – let's scan rare books before it's too late",
+        "Show HN: Huzzah – a novel approach to coding with AI",
+        "Vomit: Clean up Claude 5's token output with a separate LLM",
+        "Anti-AI fonts are useless and harmful",
+        "DiffusionGemma Technical Report"
+      ],
+      "title_hashes": [
+        "b05252aecd3dbf44d22e91ab5ca25eadfb091f7c5a20adced2648fa2daaddc43",
+        "ef513b7812a69e3746e857042b845cfb36acaae8fd4e956efbd7a0a9525430eb",
+        "46b67f3bbbe8bf72cc3f5e506e169bfcb838b5f3c7740e02382216841eaa3518",
+        "e47329321885a9995a971b8d67c423b8d566f646e0f3c68255b4a4b2b63a074b",
+        "9c079f06a0b19ab43e8293802414da1a75f0d053035566c367803b708e2b00f1",
+        "46f29f13c56652ca81c7cf1445110a5e541b5162859c273472ab851f247ac05c"
+      ],
+      "topic_tokens": [
+        [
+          "show",
+          "trained",
+          "125m",
+          "model",
+          "autocomplete",
+          "piano",
+          "device"
+        ],
+        [
+          "companies",
+          "destroy",
+          "physical",
+          "books",
+          "let",
+          "scan",
+          "rare",
+          "books",
+          "before",
+          "too",
+          "late"
+        ],
+        [
+          "show",
+          "huzzah",
+          "novel",
+          "approach",
+          "coding"
+        ],
+        [
+          "vomit",
+          "clean",
+          "claude",
+          "token",
+          "output",
+          "separate",
+          "llm"
+        ],
+        [
+          "anti",
+          "fonts",
+          "useless",
+          "harmful"
+        ],
+        [
+          "diffusiongemma",
+          "technical",
+          "report"
         ]
       ]
     }
