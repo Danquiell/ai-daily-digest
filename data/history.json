@@ -1,83 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-08",
-      "topics": [
-        "Fastmail offers EU data region",
-        "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
-        "Timeline of the OpenAI accidental attack against Hugging Face",
-        "Lost my phone at the office. Claude suggested tracking Bluetooth signal strength",
-        "The original URL for this prediction will no longer be available in 11 years (2011)",
-        "Melatonin impairs morning cognition in healthy young adults (2023)"
-      ],
-      "title_hashes": [
-        "2f969e8c2c963f0ab6255806005a6b9edd82440324be3486ab346cbd346b64b9",
-        "b996977675b819d05555e91b6cec510f2fa22dbafb2ade102052151311cd8087",
-        "f424e082db891bea7fd95a1723edbe1c379a1d1db4d60c75979b17e4094dddfe",
-        "1bb88b375740d7130bf10baf96808055f456679b5acc553f0ea9bcdcf5a75796",
-        "d0b910f652dd77302af7ced76dda5abf74c8bd9b4fd363426ca551bf2a9e92d0",
-        "73efb9d8c08a241c4eb499f2848746ebd0f3c9ce3e7192da12fa3d8bbad43a85"
-      ],
-      "topic_tokens": [
-        [
-          "fastmail",
-          "offers",
-          "data",
-          "region"
-        ],
-        [
-          "deepmind",
-          "weathernext",
-          "model",
-          "achieves",
-          "breakthrough",
-          "forecasting",
-          "cyclones"
-        ],
-        [
-          "timeline",
-          "openai",
-          "accidental",
-          "attack",
-          "against",
-          "hugging",
-          "face"
-        ],
-        [
-          "lost",
-          "phone",
-          "office",
-          "claude",
-          "suggested",
-          "tracking",
-          "bluetooth",
-          "signal",
-          "strength"
-        ],
-        [
-          "original",
-          "url",
-          "this",
-          "prediction",
-          "will",
-          "longer",
-          "available",
-          "years",
-          "2011"
-        ],
-        [
-          "melatonin",
-          "impairs",
-          "morning",
-          "cognition",
-          "healthy",
-          "young",
-          "adults",
-          "2023"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-09",
       "topics": [
         "How I use LLMs to learn complex topics",
@@ -907,6 +830,78 @@
           "diffusiongemma",
           "technical",
           "report"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "topics": [
+        "Kagi added a setting for removing paywalled links from search results",
+        "I'm becoming AI-blind",
+        "Claudette: Make Claude stop talking like a BuzzFeed article",
+        "GPT 5.6 Sol 20% price reduction",
+        "AI boosted homework scores, then exam scores dropped: study",
+        "Show HN: OzBrain, a shared brain for knowledge between agents and your team"
+      ],
+      "title_hashes": [
+        "6507139cab1c1da76b0200c423333e637dc023fb7273ce5d3a23889a4002fd79",
+        "9539edc6f8bd89ad73843fb4515f09e0bf22bc9f95a7db8a1e7c5d789d66ed5b",
+        "1df2263eaa5bdd74efc083599f4762163e56dd87f58e6a645fc755f245106d5c",
+        "ed0a901663ffdad468e62fb730141ce1485641aa03b28c32c4f1aa98a4023c59",
+        "1ae412dedbb3f1cb708f170d211a00ce66bf98ad6af406e303a577801434bec3",
+        "c4750247292c845303b383ece94afcc62d3aedfcc0869e3fc594c87eb888f255"
+      ],
+      "topic_tokens": [
+        [
+          "kagi",
+          "added",
+          "setting",
+          "removing",
+          "paywalled",
+          "links",
+          "search",
+          "results"
+        ],
+        [
+          "becoming",
+          "blind"
+        ],
+        [
+          "claudette",
+          "make",
+          "claude",
+          "stop",
+          "talking",
+          "like",
+          "buzzfeed",
+          "article"
+        ],
+        [
+          "gpt",
+          "sol",
+          "price",
+          "reduction"
+        ],
+        [
+          "boosted",
+          "homework",
+          "scores",
+          "then",
+          "exam",
+          "scores",
+          "dropped",
+          "study"
+        ],
+        [
+          "show",
+          "ozbrain",
+          "shared",
+          "brain",
+          "knowledge",
+          "between",
+          "agents",
+          "your",
+          "team"
         ]
       ]
     }
