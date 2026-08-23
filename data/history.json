@@ -1,77 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-09",
-      "topics": [
-        "How I use LLMs to learn complex topics",
-        "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
-        "Auto mode is now the default in Claude Code",
-        "The tragedy of the commons, AI edition",
-        "The main way I've seen people turn ideologically crazy (2025)",
-        "Show HN: Voice driven murder mystery, Interview AI suspects with your voice"
-      ],
-      "title_hashes": [
-        "589fdacc082174473b10aca7fd7436cf0836b942fed8f68c44689cb38f581863",
-        "570b4214c570ad45063babc3512dd02fe0c87d86076de6c219948f256917328a",
-        "494d0162b35379193543037e4460dc36888b6c814d3701357773103f41728f6f",
-        "937713001d1ca9552bf4164feae959667a3ebbffaf5aa39947dd138015c39e3b",
-        "da6a740b6f731b1d4f332c967704760aac8258c0449b94cf6c1b30f751b1fd1c",
-        "0b9c270cd92db11ab061d95ff8835441ce5a65386b301e88f963d46019656f4b"
-      ],
-      "topic_tokens": [
-        [
-          "how",
-          "use",
-          "llms",
-          "learn",
-          "complex",
-          "topics"
-        ],
-        [
-          "docker",
-          "sandboxes",
-          "disposable",
-          "isolated",
-          "sandboxes",
-          "agents"
-        ],
-        [
-          "auto",
-          "mode",
-          "now",
-          "default",
-          "claude",
-          "code"
-        ],
-        [
-          "tragedy",
-          "commons",
-          "edition"
-        ],
-        [
-          "main",
-          "way",
-          "seen",
-          "people",
-          "turn",
-          "ideologically",
-          "crazy",
-          "2025"
-        ],
-        [
-          "show",
-          "voice",
-          "driven",
-          "murder",
-          "mystery",
-          "interview",
-          "suspects",
-          "your",
-          "voice"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-10",
       "topics": [
         "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
@@ -902,6 +831,83 @@
           "agents",
           "your",
           "team"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "topics": [
+        "Why your local LLM feels dumber than it is",
+        "NanoGPT Speedrun Frontier",
+        "A week of using Codex more than Claude",
+        "Tragically, as many as 9625 out of every 10k individuals may be neurotypical",
+        "How Big Tech Captured American Schools - The New York Times",
+        "\"Artificial intelligence (AI) can create a goal to preserve itself.\" This is the diagnosis of Richar.. - 매일경제"
+      ],
+      "title_hashes": [
+        "d2b5922759f4cc00a7728cba18acc4aa4d979dffc31269fecdf25fedad4154c0",
+        "678977c6e66f3f6228d6a47dea59247b15cf692a519c68cc3f2bad111017b772",
+        "7f9551600c03f7fe491ff19203892e41287898f33b8e6d49e55200139c8e7ba0",
+        "32752e7e13f5dd01c6264fc00245b6a6d1aeb882f4f3059398a71b577a128f5f",
+        "33c0bace52916c7a53556013480c29c346f1b4dced360ce1fbc8c30ce5900e06",
+        "01c11393613e5d1d8a93563377fa20e0616feed6698b925019da0c838dd847a4"
+      ],
+      "topic_tokens": [
+        [
+          "why",
+          "your",
+          "local",
+          "llm",
+          "feels",
+          "dumber",
+          "than"
+        ],
+        [
+          "nanogpt",
+          "speedrun",
+          "frontier"
+        ],
+        [
+          "week",
+          "using",
+          "codex",
+          "more",
+          "than",
+          "claude"
+        ],
+        [
+          "tragically",
+          "many",
+          "9625",
+          "out",
+          "every",
+          "10k",
+          "individuals",
+          "may",
+          "neurotypical"
+        ],
+        [
+          "how",
+          "big",
+          "tech",
+          "captured",
+          "american",
+          "schools",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "can",
+          "create",
+          "goal",
+          "preserve",
+          "itself",
+          "this",
+          "diagnosis",
+          "richar"
         ]
       ]
     }
