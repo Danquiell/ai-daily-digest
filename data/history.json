@@ -1,79 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-10",
-      "topics": [
-        "Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models",
-        "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
-        "As AI eats the web, the internet’s collective memory is disappearing",
-        "Learning more about Claude's mathematical capabilities",
-        "Humanising LLM Outputs Is Dumb",
-        "How Claude marks AI-generated content"
-      ],
-      "title_hashes": [
-        "25cabe1eb1fa55570f04092084c18d9616dcee7a8f46c70f1ffa4ac568aee213",
-        "29009f23a8a2d7fb4803770a2f4ec3856791a0520223c98e17738919ef55598b",
-        "c77ed63ad7bc118d39240fc5cbc06a2de7c75a561a442372b9dbcd920dfb6b0e",
-        "efb65b730863202c29f5715a106dfe22b31487ac5e831efe6458e8ed53612d1d",
-        "85a1feb9fc684c2b9be11da43fc6a59dd31443b592182c1f14bc79e1fc769617",
-        "fe9c126fd9a9b50b2f03f3fe189e3ee4087d8ff5b15677045916012a63c8e418"
-      ],
-      "topic_tokens": [
-        [
-          "mark",
-          "zuckerberg",
-          "attacks",
-          "closed",
-          "rivals",
-          "meta",
-          "returns",
-          "open",
-          "models"
-        ],
-        [
-          "show",
-          "needle2",
-          "14mb",
-          "agentic",
-          "llm",
-          "phones",
-          "wearables",
-          "smart",
-          "home",
-          "robots"
-        ],
-        [
-          "eats",
-          "web",
-          "internet",
-          "collective",
-          "memory",
-          "disappearing"
-        ],
-        [
-          "learning",
-          "more",
-          "about",
-          "claude",
-          "mathematical",
-          "capabilities"
-        ],
-        [
-          "humanising",
-          "llm",
-          "outputs",
-          "dumb"
-        ],
-        [
-          "how",
-          "claude",
-          "marks",
-          "generated",
-          "content"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-11",
       "topics": [
         "Stealing Reasoning Traces from Proprietary LLM APIs",
@@ -908,6 +835,81 @@
           "this",
           "diagnosis",
           "richar"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "topics": [
+        "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+        "My agent.md to improve LLM-assisted code quality",
+        "Google Workspace thinks my domain is an email provider (2025)",
+        "How Complex Systems Fail (1998)",
+        "I built a low-latency AI companion that plays Skyrim with me",
+        "New EU-wide product repair rules come into force"
+      ],
+      "title_hashes": [
+        "825452cecd3c5d2851ff5e8c37fd5b0cc1bf7373605e157060fd930fedabba46",
+        "960bebed118ec05765ba9c81dc14c5bfa91375cf2beccb10876649390068eb2a",
+        "8b859411c4d08341287f0201e3962bf3ee0146cb6c5a98c6ab3b4269fae39a66",
+        "8a26d5457fa5370510e52bcdc2571e94893c219dd8298fe1e50c65f43ac4bb7e",
+        "8fc0faefed94826f5bacb0daaf61dcaa108951d7495b04aa14248c44aed87bfe",
+        "247567cca7e7ca8e7dd5009bf55302919efa82ae28159f41efedb52bfb3b630e"
+      ],
+      "topic_tokens": [
+        [
+          "anthropic",
+          "best",
+          "model",
+          "struggles",
+          "attract",
+          "users",
+          "cheaper",
+          "tools",
+          "thrive"
+        ],
+        [
+          "agent",
+          "improve",
+          "llm",
+          "assisted",
+          "code",
+          "quality"
+        ],
+        [
+          "google",
+          "workspace",
+          "thinks",
+          "domain",
+          "email",
+          "provider",
+          "2025"
+        ],
+        [
+          "how",
+          "complex",
+          "systems",
+          "fail",
+          "1998"
+        ],
+        [
+          "built",
+          "low",
+          "latency",
+          "companion",
+          "that",
+          "plays",
+          "skyrim"
+        ],
+        [
+          "new",
+          "wide",
+          "product",
+          "repair",
+          "rules",
+          "come",
+          "into",
+          "force"
         ]
       ]
     }
