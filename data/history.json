@@ -1,69 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-11",
-      "topics": [
-        "Stealing Reasoning Traces from Proprietary LLM APIs",
-        "OpenAI’s head of ethics leaves less than a year after joining",
-        "Go is an ideal language for AI-assisted software engineering",
-        "Nvidia's Risky Business",
-        "llama.cpp",
-        "Nvidia Nemotron 3.5 Lightning and NeMo Switchyard"
-      ],
-      "title_hashes": [
-        "0822d9027cd4849c42103074933c9abf5a842b709fcb8d16c95cfffba6e0d945",
-        "72840902bfd3912294cd5a8715dd9cf166b6ec5ea207f14200248fac27fc8cdd",
-        "b38c0a05111f21f93fc5d9f66abeb9b6a4d12d92afb3cdff541cfe15ebd397e9",
-        "fffe8b94665c76d617fe426f8fb111fe84b6fc72d3bdde55aa1fe58dc4762349",
-        "150dc86746a90bad4fc2c3334aeb9b5887b3adad3cc1459446717638605348ef",
-        "cd254bdae03b2fcef88e82078f39ef78970ee8697d88c4a3f18da11d4b3382c1"
-      ],
-      "topic_tokens": [
-        [
-          "stealing",
-          "reasoning",
-          "traces",
-          "proprietary",
-          "llm",
-          "apis"
-        ],
-        [
-          "openai",
-          "head",
-          "ethics",
-          "leaves",
-          "less",
-          "than",
-          "year",
-          "after",
-          "joining"
-        ],
-        [
-          "ideal",
-          "language",
-          "assisted",
-          "software",
-          "engineering"
-        ],
-        [
-          "nvidia",
-          "risky",
-          "business"
-        ],
-        [
-          "llama",
-          "cpp"
-        ],
-        [
-          "nvidia",
-          "nemotron",
-          "lightning",
-          "nemo",
-          "switchyard"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-12",
       "topics": [
         "AI is removing the middle class of software engineering?",
@@ -910,6 +847,81 @@
           "come",
           "into",
           "force"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "topics": [
+        "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
+        "iCloud+ Hide My Email addresses will remain on icloud.com",
+        "I were 17, I'd learn how to build LLMs from scratch",
+        "IPFS Maintainers Winding Down",
+        "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
+        "LLMs could control their host machines by exploiting inference engines"
+      ],
+      "title_hashes": [
+        "13a83621bd090016e54867a51a8ecc1d5aed33445db0d2e505a1c8e38271df00",
+        "eaedc41baea065edb73ec81c37aafd39cea65f098cf10aea45b54faf7e9a85b2",
+        "23a14602cf5e75cec89c57a7896ed9d403d80d0f808616318cbe5d7cc0d0d265",
+        "1b77b883f4906554c2d5ca08698272716571e51efbddae749189219f371bbe83",
+        "898dcd7836aaadcf7f8db42bf5aee11ec43ca79bfb0b31afef5ce38c88e15f4a",
+        "1bc33ba6983772874fd37c376234089ab10ee7919d3466d29878c25c7cc053ff"
+      ],
+      "topic_tokens": [
+        [
+          "paint",
+          "photos",
+          "inivisibly",
+          "watermark",
+          "even",
+          "locally",
+          "generated",
+          "output",
+          "guid"
+        ],
+        [
+          "icloud",
+          "hide",
+          "email",
+          "addresses",
+          "will",
+          "remain",
+          "icloud"
+        ],
+        [
+          "learn",
+          "how",
+          "build",
+          "llms",
+          "scratch"
+        ],
+        [
+          "ipfs",
+          "maintainers",
+          "winding",
+          "down"
+        ],
+        [
+          "openai",
+          "gpt",
+          "sol",
+          "price",
+          "reduction",
+          "until",
+          "least",
+          "nov"
+        ],
+        [
+          "llms",
+          "could",
+          "control",
+          "their",
+          "host",
+          "machines",
+          "exploiting",
+          "inference",
+          "engines"
         ]
       ]
     }
