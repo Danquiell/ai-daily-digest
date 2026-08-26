@@ -1,74 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-12",
-      "topics": [
-        "AI is removing the middle class of software engineering?",
-        "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
-        "ChatGPT Desktop (Codex Desktop) for Linux",
-        "Delphi 13 Community Edition Is Now Available",
-        "Lovable raises $400M Series C",
-        "US hires over 2k video gamers as air traffic controllers"
-      ],
-      "title_hashes": [
-        "385ade067a11e49039e4c7386704237d977af33dd46f225852fb8e17769078d4",
-        "2393d5a2f6925e49dc4ef75cbbbf72683aa96c6706e1194df8753b1ef0da7a3e",
-        "d0edf5c256b02caa543e2a65c9037a06330314187965373073cba29bf72b83ce",
-        "11cc429b8be6e657c7a797f5d57a1157158ee3f3369885f0b0c75871e9e8ce1b",
-        "f8ca4d19763b4360fa21f7ffefde47c4f47cf50f65b4dc334111642dd2e333ca",
-        "74aa6526271cfabbf042bb9f948e7b7952c24baf71f488433a654c0c2e46c060"
-      ],
-      "topic_tokens": [
-        [
-          "removing",
-          "middle",
-          "class",
-          "software",
-          "engineering"
-        ],
-        [
-          "someone",
-          "running",
-          "mass",
-          "vulnerability",
-          "scans",
-          "spoofing",
-          "bots",
-          "like",
-          "claudebot"
-        ],
-        [
-          "chatgpt",
-          "desktop",
-          "codex",
-          "desktop",
-          "linux"
-        ],
-        [
-          "delphi",
-          "community",
-          "edition",
-          "now",
-          "available"
-        ],
-        [
-          "lovable",
-          "raises",
-          "400m",
-          "series"
-        ],
-        [
-          "hires",
-          "over",
-          "video",
-          "gamers",
-          "air",
-          "traffic",
-          "controllers"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-13",
       "topics": [
         "Gemini 3.7 Flash",
@@ -922,6 +854,81 @@
           "exploiting",
           "inference",
           "engines"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "topics": [
+        "OpenAI Jalapeño: Better than Nvidia Blackwell",
+        "Show HN: I made a Raspberry with Qwen my local car AI",
+        "Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
+        "Disrupting a new covert influence campaign from Russia",
+        "Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others",
+        "I miss the old Claude Code"
+      ],
+      "title_hashes": [
+        "051815f273cc47b6ef638437132b37bdf24cd287a8454a78fb0161da5e0d4189",
+        "da1a048fd57010cacd36e18d042c6a017b5048ede842f32b6d1b095cbc5b4851",
+        "0e23b92cf1b2b2f24d25f0a731698a25e0fd55eb2c77723499b883c9920a9144",
+        "0757c9b2a4fac6fccb284e25a780e46d0e0902128093be4356b974dd5b973c29",
+        "5a43a54d81db8f5b9189dba2f212ae8d2a0c21596799050500d4682eca717097",
+        "75c91b1087fb63b40bfd94406ce105dacbe0905960ae74e8e624ec058072c80c"
+      ],
+      "topic_tokens": [
+        [
+          "openai",
+          "jalape",
+          "better",
+          "than",
+          "nvidia",
+          "blackwell"
+        ],
+        [
+          "show",
+          "made",
+          "raspberry",
+          "qwen",
+          "local",
+          "car"
+        ],
+        [
+          "show",
+          "texbrain",
+          "latex",
+          "editor",
+          "that",
+          "runs",
+          "pdftex",
+          "browser",
+          "via",
+          "wasm"
+        ],
+        [
+          "disrupting",
+          "new",
+          "covert",
+          "influence",
+          "campaign",
+          "russia"
+        ],
+        [
+          "maiao",
+          "gerrit",
+          "style",
+          "code",
+          "review",
+          "workflow",
+          "github",
+          "gitlab",
+          "gitea",
+          "others"
+        ],
+        [
+          "miss",
+          "old",
+          "claude",
+          "code"
         ]
       ]
     }
