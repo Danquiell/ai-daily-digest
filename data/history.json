@@ -1,72 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-13",
-      "topics": [
-        "Gemini 3.7 Flash",
-        "Accelerating GPT-5.6 Sol Ultrafast",
-        "Mistral OCR 4.1",
-        "Nine PBS sues Iron Mountain over blocked access to archival data",
-        "Choosing an AI model: one prompt, 11 models, different results",
-        "Heart aerospace completes first flight of largest electric aircraft"
-      ],
-      "title_hashes": [
-        "8cac6796db996fc5b72e1a6185b890a9f0ecf4a67093f716219b375b932a7f78",
-        "2f9a1cddcfb21d6235f8bf3ee8f2630d8855740dd51fe47c37309c6425d46c09",
-        "4d4a55d9edf7f6201e24f861be13023618f2f0ed9944f29321d6f3b90ae0c1d8",
-        "283bb18a418eeb60a4815185b30c76344537a7dd79fcd5d24f0fea3e45b4fbf8",
-        "ba432cb31a379b2b18f12693b283cd905df6c52dabba8bb7ea383e493a8a0c63",
-        "642b378e8bf59ef2e7b8296325856c1518021ceb478ebb6ecd7b8656258fe742"
-      ],
-      "topic_tokens": [
-        [
-          "gemini",
-          "flash"
-        ],
-        [
-          "accelerating",
-          "gpt",
-          "sol",
-          "ultrafast"
-        ],
-        [
-          "mistral",
-          "ocr"
-        ],
-        [
-          "nine",
-          "pbs",
-          "sues",
-          "iron",
-          "mountain",
-          "over",
-          "blocked",
-          "access",
-          "archival",
-          "data"
-        ],
-        [
-          "choosing",
-          "model",
-          "one",
-          "prompt",
-          "models",
-          "different",
-          "results"
-        ],
-        [
-          "heart",
-          "aerospace",
-          "completes",
-          "first",
-          "flight",
-          "largest",
-          "electric",
-          "aircraft"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-14",
       "topics": [
         "Google is making private AI practical with homomorphic encryption",
@@ -929,6 +863,82 @@
           "old",
           "claude",
           "code"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "topics": [
+        "Nvidia agrees to acquire Hugging Face for $13B",
+        "Show HN: The load-bearing vocabulary of Claude",
+        "Two German airport workers die of malaria after 'mosquito arrives on plane'",
+        "Gemini Omni 1.1 Flash",
+        "MIT's Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training",
+        "Show HN: My Claude quota ran out in 10 minutes, so I made a tool to find out why"
+      ],
+      "title_hashes": [
+        "5b4f71bbe4b32a51159827ab1ce583fe4cc79428c713a354a50085a4fc044f54",
+        "000ce95a98c0c6f85ef9d2d7e02ed0081e54c7cc16b1f09dc15a42602b6bfecf",
+        "029235852980eeb26d4f0eaf4d7db60ba28719cb3ea9263a304feb3da73c8551",
+        "0cdf6c1f364a62a34b941a7003a17618dae1fd748893dd5c0e5ce49f5127adc2",
+        "c4c6371fa7988fbe7a11f59a3c699adffd4687893e03b40191b429356c4b39a4",
+        "9e4c7a7be6c9cb6b614bccc091edac6602cc2c8d7d6b60d080da002363efc916"
+      ],
+      "topic_tokens": [
+        [
+          "nvidia",
+          "agrees",
+          "acquire",
+          "hugging",
+          "face",
+          "13b"
+        ],
+        [
+          "show",
+          "load",
+          "bearing",
+          "vocabulary",
+          "claude"
+        ],
+        [
+          "two",
+          "german",
+          "airport",
+          "workers",
+          "die",
+          "malaria",
+          "after",
+          "mosquito",
+          "arrives",
+          "plane"
+        ],
+        [
+          "gemini",
+          "omni",
+          "flash"
+        ],
+        [
+          "mit",
+          "hoc",
+          "committee",
+          "use",
+          "teaching",
+          "learning",
+          "research",
+          "training"
+        ],
+        [
+          "show",
+          "claude",
+          "quota",
+          "ran",
+          "out",
+          "minutes",
+          "made",
+          "tool",
+          "find",
+          "out",
+          "why"
         ]
       ]
     }
