@@ -1,75 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-14",
-      "topics": [
-        "Google is making private AI practical with homomorphic encryption",
-        "AI by Hand",
-        "Maximizing the value of your Claude Code sessions",
-        "Artificial Intelligence in Predicting Systemic Complications From Retinal Findings: A New Frontier in Precision Medicine - Cureus",
-        "Show HN: ThoughtDAG – An editable context graph for LLM conversations",
-        "Show HN: Deltix – AI Driven Testing"
-      ],
-      "title_hashes": [
-        "9baa312ebe6b33c30d7741a601ddfc8685f5178d64e40825c1f5e355dfd984ed",
-        "53d5ed37dd57a8c39393d9355db6275ed5ecc7b8487d8aad7937c399f23d0185",
-        "5eeaffed783438913e9b21266ce161dbd7f9fe402b56a7d34cbd1f4b77b254eb",
-        "efbc0d598402cb3c1995dc39e6d5840fb140fd9e1a2bd7476b85990176bcf7a5",
-        "7f6b7a42fe73cc926f4505bab5b2161dfb35c9f1a938c7aa21acda1d4d7e192e",
-        "1af0410dcc3b8eaf8dc7ad47d9a76ed1f8fec6b0e7b57fc5666727e1e0940de2"
-      ],
-      "topic_tokens": [
-        [
-          "google",
-          "making",
-          "private",
-          "practical",
-          "homomorphic",
-          "encryption"
-        ],
-        [
-          "hand"
-        ],
-        [
-          "maximizing",
-          "value",
-          "your",
-          "claude",
-          "code",
-          "sessions"
-        ],
-        [
-          "artificial",
-          "intelligence",
-          "predicting",
-          "systemic",
-          "complications",
-          "retinal",
-          "findings",
-          "new",
-          "frontier",
-          "precision",
-          "medicine",
-          "cureus"
-        ],
-        [
-          "show",
-          "thoughtdag",
-          "editable",
-          "context",
-          "graph",
-          "llm",
-          "conversations"
-        ],
-        [
-          "show",
-          "deltix",
-          "driven",
-          "testing"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-15",
       "topics": [
         "AI has access to a vastly larger working memory than the human brain",
@@ -939,6 +870,71 @@
           "find",
           "out",
           "why"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "topics": [
+        "U.S. sanctions against the A/I Collective",
+        "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
+        "Luanti removed from Google Play due to baseless AI copyright notice",
+        "I used AWS cognito for a startup. I wouldn't do it again",
+        "The Analytical AI Handbook",
+        "AI & Tech Brief: The UAE’s AI ambitions - The Washington Post"
+      ],
+      "title_hashes": [
+        "ab36417e8be0e5503ac211988d03716ec55ff110866377b1ed3a0589b07e14ad",
+        "49699856cb813c6854f1197fa48780a5595d27dc1d0f16aa4d35c32fe83e98cb",
+        "8ee7a08cb97231282183e1ab95b0eccc1a08762e376396bfc601740d84dbf8cf",
+        "2efe4914ee17a6a4602344e48a9dca10cee7f066a573bf39ae44eee3deec37c5",
+        "02d39e43bb1988051f1f3dd131af60af52c469e3a052cfd635059ea116548d30",
+        "a9e89da06b3c0acb7666245f44dfa6eba74ffa6a441822cefcb0809c815f39b4"
+      ],
+      "topic_tokens": [
+        [
+          "sanctions",
+          "against",
+          "collective"
+        ],
+        [
+          "judge",
+          "rules",
+          "trump",
+          "administration",
+          "blacklisting",
+          "anthropic",
+          "illegal"
+        ],
+        [
+          "luanti",
+          "removed",
+          "google",
+          "play",
+          "due",
+          "baseless",
+          "copyright",
+          "notice"
+        ],
+        [
+          "used",
+          "aws",
+          "cognito",
+          "startup",
+          "wouldn",
+          "again"
+        ],
+        [
+          "analytical",
+          "handbook"
+        ],
+        [
+          "tech",
+          "brief",
+          "uae",
+          "ambitions",
+          "washington",
+          "post"
         ]
       ]
     }
