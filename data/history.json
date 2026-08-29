@@ -1,87 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-15",
-      "topics": [
-        "AI has access to a vastly larger working memory than the human brain",
-        "Working with AI feels more like leadership than coding",
-        "A controversial Alzheimer's surgery is said to reverse symptoms",
-        "What happens when an LLM never sees material beyond fifth grade?",
-        "AI in drug discovery – what it is, where we stand and the path forward",
-        "SK Telecom is shifting the R&D center of its artificial intelligence (AI) service \"Aidat\" to cor.. - 매일경제"
-      ],
-      "title_hashes": [
-        "6706e10a90ccd702e9955d7583192e2634c57f4a0ee61846b8ffd66515f0bc8f",
-        "2343f63967a64da32e9b3bdfcbc47b5624d82de2e8e579aee83eba690b791248",
-        "66845f0605e70e8c9e5d339097ef48e543dec8ab00f5dc04319e02f17db0c170",
-        "8537cd73e42aeb7c10eedafa55d5fcdb27215ccb61cd4a1e134b79b09baac401",
-        "fb179fa05c6fa73eb6927c08ddd0819f7ae0f1ed3fb87dcec43a39ab7ed23925",
-        "c5153040cd0f94e0dd918caa7ed2fba085a0decc3cd374f799bae96694ea3dcc"
-      ],
-      "topic_tokens": [
-        [
-          "has",
-          "access",
-          "vastly",
-          "larger",
-          "working",
-          "memory",
-          "than",
-          "human",
-          "brain"
-        ],
-        [
-          "working",
-          "feels",
-          "more",
-          "like",
-          "leadership",
-          "than",
-          "coding"
-        ],
-        [
-          "controversial",
-          "alzheimer",
-          "surgery",
-          "said",
-          "reverse",
-          "symptoms"
-        ],
-        [
-          "what",
-          "happens",
-          "when",
-          "llm",
-          "never",
-          "sees",
-          "material",
-          "beyond",
-          "fifth",
-          "grade"
-        ],
-        [
-          "drug",
-          "discovery",
-          "what",
-          "where",
-          "stand",
-          "path",
-          "forward"
-        ],
-        [
-          "telecom",
-          "shifting",
-          "center",
-          "its",
-          "artificial",
-          "intelligence",
-          "service",
-          "aidat",
-          "cor"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-16",
       "topics": [
         "Claude: System Prompts",
@@ -933,6 +852,84 @@
           "brief",
           "uae",
           "ambitions",
+          "washington",
+          "post"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "topics": [
+        "I accidentally turned LLM memory into program analysis",
+        "StemDeck, a free, open-source and local AI stem separator",
+        "Accounting education and Artificial Intelligence - The Hindu",
+        "MUSC receives grant to develop AI system for youth suicide prevention - Live 5 News",
+        "The turbulent AI era is here. The choices we make now are critical. - gatesnotes.com",
+        "The Fed confronts a powerful new economic force - The Washington Post"
+      ],
+      "title_hashes": [
+        "a956f32898ef405000aa0152b00f602c238b0a12d93504d72b3e8f5abb0de223",
+        "9a827742c5d9999f3e03ecda5ac2ee2b9ca5b498e0cd379bcf7fa8affd16c0c7",
+        "ed13fc43f0ae19c624d973f24682d33ef38f47f7c4573d163d995a85beccebb1",
+        "01ff781493a5c4e575b159e7e8810fe9ae4145fdd651d74282bfa91b6bb4f5ca",
+        "d2f32ff4d101198a9bff9205632f2f1b1bbe1031c222a27b0e76c3e4559a2509",
+        "ebdceb485b073d138c401c0e1295c15d46659842948a7258edf05ce09bc8337f"
+      ],
+      "topic_tokens": [
+        [
+          "accidentally",
+          "turned",
+          "llm",
+          "memory",
+          "into",
+          "program",
+          "analysis"
+        ],
+        [
+          "stemdeck",
+          "free",
+          "open",
+          "source",
+          "local",
+          "stem",
+          "separator"
+        ],
+        [
+          "accounting",
+          "education",
+          "artificial",
+          "intelligence",
+          "hindu"
+        ],
+        [
+          "musc",
+          "receives",
+          "grant",
+          "develop",
+          "system",
+          "youth",
+          "suicide",
+          "prevention",
+          "live",
+          "news"
+        ],
+        [
+          "turbulent",
+          "era",
+          "here",
+          "choices",
+          "make",
+          "now",
+          "critical",
+          "gatesnotes"
+        ],
+        [
+          "fed",
+          "confronts",
+          "powerful",
+          "new",
+          "economic",
+          "force",
           "washington",
           "post"
         ]
