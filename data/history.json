@@ -1,69 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-16",
-      "topics": [
-        "Claude: System Prompts",
-        "Anthropic's 'watermark' text adulteration in Claude is a perversion of writing",
-        "The AI Credit Resale Economy",
-        "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee",
-        "AGI-64 Brings Sierra Adventures to the Commodore 64",
-        "Rhombus 1.1 is now available"
-      ],
-      "title_hashes": [
-        "a36b27504d971cb593b1d78530e4bc30f5a9f58066559cbe12a9564abfce07be",
-        "6dff7d92d268531beff7e66b53d49275a08a3f5e368b098706215eeee7a3a022",
-        "e9f81a1bac4b5450e231fd9be8e1a14947094b57d2f0713ee1a5d0ce6c51fe87",
-        "1cd5acf7ff9abc693d271f2d8c6c491a0d07f84627eeb28c26ed0f6ba44a8212",
-        "1327f395a84000bcbac5e0fdeebccda82dabacb4068b1810beeb448c219ad45a",
-        "21de4d23b626884dbcb933b06d2bb9d8ef76d98a67970cd521c8144bf62b64d7"
-      ],
-      "topic_tokens": [
-        [
-          "claude",
-          "system",
-          "prompts"
-        ],
-        [
-          "anthropic",
-          "watermark",
-          "text",
-          "adulteration",
-          "claude",
-          "perversion",
-          "writing"
-        ],
-        [
-          "credit",
-          "resale",
-          "economy"
-        ],
-        [
-          "nvidia",
-          "dramatically",
-          "reduces",
-          "amount",
-          "openai",
-          "infra",
-          "financing",
-          "may",
-          "guarantee"
-        ],
-        [
-          "agi",
-          "brings",
-          "sierra",
-          "adventures",
-          "commodore"
-        ],
-        [
-          "rhombus",
-          "now",
-          "available"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-17",
       "topics": [
         "AI;DR (AI; Didn't Read)",
@@ -932,6 +869,82 @@
           "force",
           "washington",
           "post"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "topics": [
+        "Good Culture Is the Biggest Productivity Hack, Not AI",
+        "Lawmakers added $1 to car insurance policies. That money paid for Flock cameras",
+        "Longest Straight Line Paths on Water or Land on the Earth (2018)",
+        "Claude Session URL appended to commit messages and PR descriptions by default",
+        "Fair Work Commission condemns 'plain wrong' AI legal advice",
+        "Domain-Driven Agents"
+      ],
+      "title_hashes": [
+        "59ba21599a3d96dfda29c5a376b31b37a13d3226d873d8460601e8045a56d81f",
+        "a67c3140b2f861f07400de59817b1d84abdcc5170c982ee4a6501570c47843f5",
+        "111a5f217b3d53142a4b09cda2587aafd9043254751adc8d957aab69a9767cd8",
+        "04472cdc69f9d99e79891dffeebb64f0e6e4b0f25342f5f496e1e5ea6969100e",
+        "e2383b279f257e65f31cc928b6aa62b8c1fa91c9bfc3c2b6ce68790bf24a6e96",
+        "feb020ee7a161a8dc3269386743c943aa222326df038b5d8f6344486e9cb3ac5"
+      ],
+      "topic_tokens": [
+        [
+          "good",
+          "culture",
+          "biggest",
+          "productivity",
+          "hack",
+          "not"
+        ],
+        [
+          "lawmakers",
+          "added",
+          "car",
+          "insurance",
+          "policies",
+          "that",
+          "money",
+          "paid",
+          "flock",
+          "cameras"
+        ],
+        [
+          "longest",
+          "straight",
+          "line",
+          "paths",
+          "water",
+          "land",
+          "earth",
+          "2018"
+        ],
+        [
+          "claude",
+          "session",
+          "url",
+          "appended",
+          "commit",
+          "messages",
+          "descriptions",
+          "default"
+        ],
+        [
+          "fair",
+          "work",
+          "commission",
+          "condemns",
+          "plain",
+          "wrong",
+          "legal",
+          "advice"
+        ],
+        [
+          "domain",
+          "driven",
+          "agents"
         ]
       ]
     }
