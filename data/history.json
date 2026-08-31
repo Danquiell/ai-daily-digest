@@ -1,74 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-17",
-      "topics": [
-        "AI;DR (AI; Didn't Read)",
-        "Israel creates fake think tank in likely attempt to dupe AI chatbots",
-        "GPT-5.6 Sol Pricing Cut by 50%",
-        "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
-        "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
-        "How to disable or avoid intrusive AI"
-      ],
-      "title_hashes": [
-        "b1a5fb0d1919fade39c8f7e4e5462b304ff5bdc4d283bb87e08f190fa0c0f15a",
-        "15da087781f179e806fbca4012112550d7379c2cfd4aaeaa47023d84f81f6987",
-        "e2e0f93aef7ccda68aa6d840f98dd85a53462ba4166ffd105eb9d478cbb36eed",
-        "b998acfa335a4a9fc92f91ad1749556194b0743b57db3b68ce7f8175f0c1e9d8",
-        "9d47fd6bf1bde2acb25c1fcbea5edc5dc0aa7f5646d433bc9d87e0f172feaf9a",
-        "85ba51d7169ca85b11e43fa0b9963c09998a1c412d2de664631fdff35d0efb47"
-      ],
-      "topic_tokens": [
-        [
-          "didn",
-          "read"
-        ],
-        [
-          "israel",
-          "creates",
-          "fake",
-          "think",
-          "tank",
-          "likely",
-          "attempt",
-          "dupe",
-          "chatbots"
-        ],
-        [
-          "gpt",
-          "sol",
-          "pricing",
-          "cut"
-        ],
-        [
-          "generated",
-          "github",
-          "copilot",
-          "autofix",
-          "allowed",
-          "compromise",
-          "snowflake",
-          "jira"
-        ],
-        [
-          "gpt",
-          "sol",
-          "best",
-          "vision",
-          "model",
-          "openai",
-          "ever",
-          "released"
-        ],
-        [
-          "how",
-          "disable",
-          "avoid",
-          "intrusive"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-18",
       "topics": [
         "Google has acquired the data of failed US airline Spirit",
@@ -945,6 +877,68 @@
           "domain",
           "driven",
           "agents"
+        ]
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "topics": [
+        "Breaking Claude Code Opus 5 Auto Mode",
+        "Understanding ChatGPT Work",
+        "P99 0 ms* autocomplete for 240M domain names",
+        "How to build a diffusion language model",
+        "ChatGPT Work Tool and Skill Reference",
+        "Continuous Diffusion Language Models (CDLM's)"
+      ],
+      "title_hashes": [
+        "9d114afde56bbf5559835388df5df1604c231c88becc2ba6579c82e111b43c36",
+        "ea88cd88cd38135bac170bfbe095aa8b849a6cbfc9a1bf07f73df6afc0055ee1",
+        "1dc4bc38764d452ce9c16c8afee9bd3486f9fab2399d7d9c02dad9dc2ecc00bd",
+        "c74c6aa8459a658be2d9fef12d8dfbdd948fb1eacf51f555b00e140d7b228867",
+        "d61e650617ccab8546843fa053552f17421fea2a6b2c03eff72304e75b6b1d27",
+        "a781fd2f1c6a32fae77e6acc48c992a09914796475c6397b733c913d08004f4e"
+      ],
+      "topic_tokens": [
+        [
+          "breaking",
+          "claude",
+          "code",
+          "opus",
+          "auto",
+          "mode"
+        ],
+        [
+          "understanding",
+          "chatgpt",
+          "work"
+        ],
+        [
+          "p99",
+          "autocomplete",
+          "240m",
+          "domain",
+          "names"
+        ],
+        [
+          "how",
+          "build",
+          "diffusion",
+          "language",
+          "model"
+        ],
+        [
+          "chatgpt",
+          "work",
+          "tool",
+          "skill",
+          "reference"
+        ],
+        [
+          "continuous",
+          "diffusion",
+          "language",
+          "models",
+          "cdlm"
         ]
       ]
     }
