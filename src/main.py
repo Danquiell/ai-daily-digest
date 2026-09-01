@@ -116,14 +116,19 @@ def run(dry_run: bool = False):
         print(f"[ERROR] LinkedIn post failed: {e}")
         traceback.print_exc()
 
-    # 5. Update history and commit
+    # 5. Update history and commit — only after the post actually went out.
+    # Writing history on a failed post marks the day as done and makes every
+    # later cron attempt skip it, so a token/API failure silently loses the day.
     if not dry_run:
-        try:
-            update_history(stories, date_str)
-            git_commit_history(dry_run=False)
-        except Exception as e:
-            print(f"[ERROR] History update failed: {e}")
-            traceback.print_exc()
+        if linkedin_post_id:
+            try:
+                update_history(stories, date_str)
+                git_commit_history(dry_run=False)
+            except Exception as e:
+                print(f"[ERROR] History update failed: {e}")
+                traceback.print_exc()
+        else:
+            print("[history] Post failed — history NOT updated so the next run retries today")
     else:
         print("[history] DRY RUN — skipping history update")
 
@@ -132,6 +137,12 @@ def run(dry_run: bool = False):
     print(f"  Image card:    {'OK' if card_path and card_path.exists() else 'FAILED'}")
     print(f"  LinkedIn:      {'OK' if linkedin_post_id else 'FAILED'}")
     print(f"{'='*60}\n")
+
+    # Exit non-zero on a failed post so the Actions run turns red and GitHub
+    # sends the failure e-mail. A green run that posted nothing hid an expired
+    # LinkedIn token for 74 days.
+    if not linkedin_post_id and not dry_run:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
