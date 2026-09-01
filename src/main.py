@@ -20,12 +20,16 @@ LINKEDIN_USERNAME = "@danquiell"
 
 
 def build_linkedin_post(content) -> str:
+    """English first (the version most of the feed reads), then PT-BR, then the
+    hashtags once at the end so they do not break the text in half."""
     divider = "\n\n──────────────────\n\n"
-    return f"{content.linkedin_pt}{divider}{content.linkedin_en}"
+    body = divider.join(p for p in (content.linkedin_en, content.linkedin_pt) if p)
+    tags = getattr(content, "hashtags", "").strip()
+    return f"{body}\n\n{tags}" if tags else body
 
 
 def build_sources_comment(stories: list[dict]) -> str:
-    lines = ["🔗 Fontes de hoje / Today's sources:\n"]
+    lines = ["Sources / Fontes:\n"]
     seen = set()
     for s in stories:
         url = s.get("url", "")

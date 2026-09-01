@@ -1,6 +1,6 @@
 """
-Generates bilingual (PT-BR + EN) LinkedIn posts using Claude Haiku.
-Opening style rotates deterministically by day-of-year (10 styles, cycles every 10 days).
+Generates bilingual (EN + PT-BR) LinkedIn posts using Claude Haiku.
+Opening angle rotates deterministically by day-of-year (8 angles, cycles every 8 days).
 """
 import os
 import re
@@ -21,37 +21,56 @@ class GeneratedContent:
     image_teaser: str = ""
     image_subtitle: str = ""
     image_query: str = ""
+    hashtags: str = ""
 
 
 _OPENING_STYLES = """\
-ESTILOS DE ABERTURA (use EXATAMENTE o estilo do número indicado no prompt):
-1. NÚMERO FRIO — Comece com um dado numérico bruto, sem introdução. Deixe o número falar sozinho. Ex: "340 bilhões de dólares em 18 meses."
-2. CENA — Abra como numa cena de série: coloque o leitor dentro de um momento específico, sala, hora. Ex: "São 2h da manhã. Engenheiros do Google abrindo PR às pressas."
-3. CONTRACORRENTE — Discorde abertamente do hype. Questione a narrativa que todo mundo está comprando. Ex: "Todo mundo comemorando. Mas leu a letra miúda?"
-4. REAÇÃO BRUTA — Sua reação emocional sem filtro, curta e intensa. Ex: "Caí da cadeira." / "Não esperava isso hoje."
-5. MEMÓRIA — Conecte a notícia a algo de semanas atrás que as pessoas esqueceram. Ex: "Lembra quando disseram que isso nunca aconteceria?"
-6. PARADOXO — Comece com uma contradição aparente que o post vai resolver. Ex: "Um modelo que erra mais acerta melhor."
-7. TELEGRAMA — Zero contexto. Vai direto ao fato em 1 linha como um recado urgente. Ex: "OpenAI comprou Jony Ive. É isso."
-8. PROVOCAÇÃO — Uma afirmação deliberadamente incômoda que força o leitor a continuar. Ex: "Essa notícia vai envelhecer muito mal."
-9. PERGUNTA INCÔMODA — Uma pergunta que o leitor não tem resposta mas não consegue ignorar. Ex: "Quanto do que você faz hoje ainda vai existir daqui 18 meses?"
-10. BASTIDOR — Revele o detalhe que todo mundo ignorou no anúncio. Ex: "O detalhe que ninguém leu no comunicado de ontem:"
+ÂNGULOS DE ABERTURA (use EXATAMENTE o ângulo do número indicado no prompt).
+Todos abrem por informação, nunca por reação emocional ou suspense:
+1. NÚMERO — Abra com o dado numérico que define a notícia e diga na mesma frase do que ele é medida. Ex: "O modelo resolve 71% do SWE-bench Verified, contra 49% da versão anterior."
+2. O QUE MUDOU — Estado anterior numa frase, estado novo na seguinte. Sem adjetivo entre as duas.
+3. MECANISMO — Abra explicando COMO a coisa funciona, não que ela existe. Ex: "O treinamento roda em duas etapas: primeiro X, depois Y."
+4. CONSEQUÊNCIA DIRETA — Abra pelo efeito prático para quem constrói ou usa a tecnologia hoje, não em teoria.
+5. COMPARAÇÃO — Coloque o anúncio ao lado do concorrente ou da versão anterior e dê o dado que separa os dois.
+6. LETRA MIÚDA — Abra pela condição, limite ou pré-requisito que o anúncio deixou em segundo plano. Só use se a notícia declarar essa condição; nunca deduza.
+7. LINHA DO TEMPO — Ligue a notícia a um fato anterior datado que apareça no material fornecido.
+8. DEFINIÇÃO — Explique em uma frase o termo técnico central antes de dar a notícia, para quem não acompanha a área.
 """
 
 _LINKEDIN_SYSTEM = """\
-Você É Daniel Rios, estudante de tecnologia e entusiasta de IA no Brasil.
-Escreve como se estivesse contando uma novidade pra um amigo próximo que também curte tech —
-casual, direto, às vezes com ironia ou espanto genuíno.
-Parece que você acabou de ver algo e precisou compartilhar. Nunca soa como IA ou post corporativo.
+Você escreve como Daniel Rios, estudante de tecnologia no Brasil que acompanha IA de perto.
+Registro: analítico e informativo, primeira pessoa, sem formalidade corporativa e sem gíria.
+O leitor sai do post sabendo o que aconteceu, quais são os números e por que aquilo importa
+para quem trabalha com tecnologia. Você explica; não vende, não celebra e não se espanta em voz alta.
 
 """ + _OPENING_STYLES + """
-Regras absolutas:
-- NUNCA use "Hoje em dia", "Na era da IA", "Com o avanço da", "É indiscutível", "No cenário atual"
-- NUNCA use bullet points com hífen (-). Use → ou parágrafos fluidos
-- Intercale dado concreto com reação pessoal: "...e honestamente? Isso muda o jogo."
-- Tom: inteligente mas acessível, levemente provocativo, como quem sabe do assunto mas não esnoba
-- Máximo 1300 caracteres por versão (PT e EN separadamente)
-- Termine com pergunta curta e direta, específica ao tema — não genérica ("o que acham?")
-- Versão PT: sem hashtags. Versão EN: 4-5 hashtags ao final
+Fidelidade ao fato (regra mais importante):
+- Todo número, data, nome, empresa, benchmark e valor tem que vir do material fornecido no prompt.
+- Nunca invente, arredonde nem "melhore" um dado. Se falta um número, escreva a frase sem ele.
+- Nunca atribua opinião a "especialistas", "o mercado", "analistas" ou "estudos". Cite o veículo pelo nome ou corte a afirmação.
+- Você pode dar sua leitura pessoal, desde que fique claro que é sua e não venha disfarçada de fato.
+
+Proibido (padrões que fazem o texto soar como IA ou como propaganda):
+- Importância inflada: "muda o jogo", "divisor de águas", "marco histórico", "revolucionário", "nunca mais será o mesmo", "game changer", "watershed moment", "seismic shift".
+- Linguagem de venda: "poderoso", "robusto", "solução completa", "impressionante", "groundbreaking", "powerful", "seamless", "must-watch".
+- Abertura de falsa franqueza: "Olha", "Honestamente", "Vou ser sincero", "A real é que", "Look", "Here's the thing", "Let's be honest".
+- Anunciar o próximo ponto: "vamos ao que interessa", "o que você precisa saber", "let's dive in", "here's the breakdown".
+- Fecho otimista genérico: "o futuro promete", "estamos só começando", "exciting times ahead". Termine no último fato concreto.
+- Sequência de frases-fragmento dramáticas ("Sem aviso. Sem debate. Só o anúncio."). Uma frase curta para ênfase, no máximo.
+- Frase de efeito vazia: "X é a nova moeda de Y", "não é uma ferramenta, é um espelho".
+- Clichês de abertura: "Hoje em dia", "Na era da IA", "Com o avanço da", "No cenário atual", "É indiscutível".
+- Emoji. Nenhum, em nenhuma das duas versões.
+- Bullet com hífen (-). Use → ou parágrafos corridos.
+- Negrito para dar ênfase a frases inteiras.
+
+Forma:
+- Verbo simples: "é", "tem", "faz". Evite "se apresenta como", "se consolida como", "representa um".
+- Prefira o número, o nome próprio e a data ao adjetivo.
+- Varie o comprimento das frases. Parágrafos de 1 a 3 linhas, com linha em branco entre eles.
+- Travessão (—) é permitido.
+- Máximo 1300 caracteres por versão (EN e PT contados separadamente).
+- Termine com uma pergunta específica sobre uma decisão real que o leitor da área enfrenta, ou com o último fato concreto. Nunca "o que vocês acham?".
+- Nenhuma das duas versões leva hashtag no corpo. As hashtags saem em bloco separado.
 """
 
 _LINKEDIN_USER_TMPL = """\
@@ -63,24 +82,31 @@ de ontem ({date}). As notícias são:
 Contexto das últimas 2 semanas (NÃO repita esses tópicos principais):
 {recent_context}
 
-ESTILO OBRIGATÓRIO HOJE: USE O ESTILO #{style_num} conforme descrito no sistema.
-Não desobedeça este estilo. A abertura deve ser reconhecível como o estilo #{style_num}.
+ÂNGULO OBRIGATÓRIO HOJE: USE O ÂNGULO #{style_num} conforme descrito no sistema.
+A primeira frase tem que ser reconhecível como o ângulo #{style_num}.
+
+A versão EN é publicada primeiro e é a que a maioria vai ler. Escreva ela como texto \
+original em inglês, não como tradução literal do português. A versão PT cobre os mesmos \
+fatos e pode ter frases diferentes.
+
+Escolha 1 ou 2 notícias da lista para desenvolver com profundidade — número, nome e o que \
+mudou — e cite as demais em uma linha só, se couberem. Um post que explica bem duas notícias \
+vale mais que um que lista seis.
 
 Formate a resposta assim — use EXATAMENTE estes separadores:
----PT---
-[post em português]
 ---EN---
-[post em inglês]
+[post em inglês, sem hashtags]
+---PT---
+[post em português, sem hashtags]
+---TAGS---
+[4 a 5 hashtags em inglês, separadas por espaço, específicas ao tema do dia. Ex: #AI #OpenSourceLLM #SoftwareEngineering #Benchmarks]
 ---TEASER---
-[chamada curtíssima em português, MÁXIMO 6 palavras, que desperta curiosidade e dá vontade de abrir o post. Vai sobreposta numa foto. Sem ponto final, sem aspas. Ex: A IA que programa sozinha chegou]
+[chamada curtíssima em português, MÁXIMO 6 palavras, com o assunto concreto do post. Vai sobreposta numa foto. Sem ponto final, sem aspas, sem clickbait. Ex: Modelo aberto alcança GPT-4 em código]
 ---SUBTITLE---
-[uma linha em português, MÁXIMO 12 palavras, com o FATO concreto da notícia principal — quem fez o quê. Complementa o teaser sem repeti-lo. Sem ponto final, sem aspas. Ex: OpenAI lançou um modelo que resolve tarefas de programação sozinho]
+[uma linha em português, MÁXIMO 12 palavras, com o FATO concreto da notícia principal — quem fez o quê. Complementa o teaser sem repeti-lo. Sem ponto final, sem aspas. Ex: Meta liberou os pesos do modelo sob licença permissiva]
 ---IMGQUERY---
 [2 a 4 palavras EM INGLÊS descrevendo uma CENA VISUAL concreta e fotografável ligada ao tema principal, para buscar uma foto de banco de imagens. NÃO use nomes de marcas/empresas nem "logo". Prefira conceitos visuais reais. Ex: humanoid robot closeup / data center servers / glowing circuit board / developer coding laptop]
 ---END---
-
-Versão PT: sem hashtags.
-Versão EN: 4-5 hashtags ao final (#AI #MachineLearning etc).
 """
 
 
@@ -132,8 +158,8 @@ def _format_recent_context(history: dict) -> str:
 
 
 def _opening_style_for_date(d: date_type) -> int:
-    """Returns 1-10, cycles every 10 days based on day-of-year."""
-    return (d.timetuple().tm_yday % 10) + 1
+    """Returns 1-8, cycles every 8 days based on day-of-year."""
+    return (d.timetuple().tm_yday % 8) + 1
 
 
 def generate_content(
@@ -152,7 +178,7 @@ def generate_content(
     post_date = date_type.fromisoformat(date_str)
     style_num = _opening_style_for_date(post_date)
 
-    print(f"[content] Generating LinkedIn post (PT-BR + EN) — opening style #{style_num}...")
+    print(f"[content] Generating LinkedIn post (EN + PT-BR) — opening angle #{style_num}...")
     linkedin_prompt = _LINKEDIN_USER_TMPL.format(
         date=date_str,
         stories=stories_text,
@@ -160,35 +186,38 @@ def generate_content(
         style_num=style_num,
     )
 
-    if dry_run:
+    # A dry run still generates real text: the copy is the thing worth previewing,
+    # and Haiku costs a fraction of a cent. Only posting and history are skipped.
+    if dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
+        print("[content] No ANTHROPIC_API_KEY — using placeholder copy")
         linkedin_raw = (
-            "---PT---\n🇧🇷 [DRY RUN — post PT de exemplo]\n---EN---\n"
-            "🇺🇸 [DRY RUN — EN post example]\n#AI #Tech\n"
-            "---TEASER---\nA IA que muda tudo chegou\n"
-            "---SUBTITLE---\nOpenAI lançou um modelo que programa sozinho\n"
+            "---EN---\n[DRY RUN - EN post placeholder]\n"
+            "---PT---\n[DRY RUN - post PT de exemplo]\n"
+            "---TAGS---\n#AI #Tech\n"
+            "---TEASER---\nModelo aberto alcanca GPT-4 em codigo\n"
+            "---SUBTITLE---\nMeta liberou os pesos sob licenca permissiva\n"
             "---IMGQUERY---\nhumanoid robot closeup\n---END---"
         )
     else:
         linkedin_raw = _call_claude(_LINKEDIN_SYSTEM, linkedin_prompt)
 
-    linkedin_pt = _extract_block(linkedin_raw, "---PT---", "---EN---")
-    linkedin_en = _extract_block(linkedin_raw, "---EN---", "---TEASER---")
+    linkedin_en = _extract_block(linkedin_raw, "---EN---", "---PT---")
+    linkedin_pt = _extract_block(linkedin_raw, "---PT---", "---TAGS---")
+    hashtags = _extract_block(linkedin_raw, "---TAGS---", "---TEASER---")
     image_teaser = _extract_block(linkedin_raw, "---TEASER---", "---SUBTITLE---")
     image_subtitle = _extract_block(linkedin_raw, "---SUBTITLE---", "---IMGQUERY---")
     image_query = _extract_block(linkedin_raw, "---IMGQUERY---", "---END---")
 
-    # Backward-compatible parse if the model skipped the SUBTITLE block.
+    # Tolerate a skipped block by falling back to the next separator present.
+    if not linkedin_pt:
+        linkedin_pt = _extract_block(linkedin_raw, "---PT---", "---TEASER---")
     if not image_teaser:
         image_teaser = _extract_block(linkedin_raw, "---TEASER---", "---IMGQUERY---")
 
-    # Backward-compatible parse if the model skipped the new EN/END boundary.
-    if not linkedin_en:
-        linkedin_en = _extract_block(linkedin_raw, "---EN---", "---END---")
-
     if not linkedin_pt or not linkedin_en:
-        parts = linkedin_raw.split("---")
-        linkedin_pt = parts[0].strip() if parts else linkedin_raw
-        linkedin_en = parts[-1].strip() if len(parts) > 1 else linkedin_raw
+        parts = [p.strip() for p in linkedin_raw.split("---") if p.strip()]
+        linkedin_en = linkedin_en or (parts[0] if parts else linkedin_raw)
+        linkedin_pt = linkedin_pt or (parts[1] if len(parts) > 1 else linkedin_raw)
 
     # Sensible fallbacks so the image step never breaks.
     if not image_teaser:
@@ -209,13 +238,18 @@ def generate_content(
         image_teaser=image_teaser,
         image_subtitle=image_subtitle,
         image_query=image_query,
+        hashtags=hashtags,
     )
 
     if dry_run:
-        print("\n--- LINKEDIN PT ---")
-        print(result.linkedin_pt)
         print("\n--- LINKEDIN EN ---")
         print(result.linkedin_en)
+        print("\n--- LINKEDIN PT ---")
+        print(result.linkedin_pt)
+        print(f"\n--- TAGS ---\n{result.hashtags}")
+        print(f"--- TEASER ---\n{result.image_teaser}")
+        print(f"--- SUBTITLE ---\n{result.image_subtitle}")
+        print(f"--- CHARS --- EN {len(result.linkedin_en)} | PT {len(result.linkedin_pt)}")
 
     return result
 
