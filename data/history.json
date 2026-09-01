@@ -866,6 +866,77 @@
           "cdlm"
         ]
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "topics": [
+        "Terence Tao explains 6 essential mathematical concepts [video]",
+        "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+        "44% on ARC-AGI-1 in 67 cents",
+        "EFF to Courts: Don't Rewrite Copyright over AI Hype",
+        "Smartphone LED detects hidden cameras with AI",
+        "Dwarf Fortress is getting the mother of all magic updates"
+      ],
+      "title_hashes": [
+        "9c8491780c3433d047f2f59cb3b7d6d0507b76e54fef20a54da794b841fd7377",
+        "530887598003c0def3bf82b24520d905ab08d6b3a883f9277d12d1571f9201ec",
+        "357a17e9f1df4ff27682253145f2e72978726f699503bcc4f867276a8acc9785",
+        "c73374afe54e9651b315d6a88ae68947f3a959511aed3117ff234cdb4359ca85",
+        "a4ddc617a25314e51152b830be36f7a9a9b579a7bb33b706d9c7f90c6f4dbc46",
+        "5f9270f7bf113234bb39b361f8a0316eb0011d3594080bb73bdeef2cba09301f"
+      ],
+      "topic_tokens": [
+        [
+          "terence",
+          "tao",
+          "explains",
+          "essential",
+          "mathematical",
+          "concepts",
+          "video"
+        ],
+        [
+          "apple",
+          "caught",
+          "off",
+          "guard",
+          "demand",
+          "mac",
+          "mini",
+          "mac",
+          "studio"
+        ],
+        [
+          "arc",
+          "agi",
+          "cents"
+        ],
+        [
+          "eff",
+          "courts",
+          "don",
+          "rewrite",
+          "copyright",
+          "over",
+          "hype"
+        ],
+        [
+          "smartphone",
+          "led",
+          "detects",
+          "hidden",
+          "cameras"
+        ],
+        [
+          "dwarf",
+          "fortress",
+          "getting",
+          "mother",
+          "all",
+          "magic",
+          "updates"
+        ]
+      ]
     }
   ]
 }
