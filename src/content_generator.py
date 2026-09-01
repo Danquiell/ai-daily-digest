@@ -30,7 +30,7 @@ Todos abrem por informação, nunca por reação emocional ou suspense:
 1. NÚMERO — Abra com o dado numérico que define a notícia e diga na mesma frase do que ele é medida. Ex: "O modelo resolve 71% do SWE-bench Verified, contra 49% da versão anterior."
 2. O QUE MUDOU — Estado anterior numa frase, estado novo na seguinte. Sem adjetivo entre as duas.
 3. MECANISMO — Abra explicando COMO a coisa funciona, não que ela existe. Ex: "O treinamento roda em duas etapas: primeiro X, depois Y."
-4. CONSEQUÊNCIA DIRETA — Abra pelo efeito prático para quem constrói ou usa a tecnologia hoje, não em teoria.
+4. CONSEQUÊNCIA DIRETA — Abra pelo efeito prático: o que passa a ser possível, mais barato ou inviável a partir de agora. Comece pelo efeito em si, nunca se dirigindo ao leitor ("se você trabalha com X...").
 5. COMPARAÇÃO — Coloque o anúncio ao lado do concorrente ou da versão anterior e dê o dado que separa os dois.
 6. LETRA MIÚDA — Abra pela condição, limite ou pré-requisito que o anúncio deixou em segundo plano. Só use se a notícia declarar essa condição; nunca deduza.
 7. LINHA DO TEMPO — Ligue a notícia a um fato anterior datado que apareça no material fornecido.
@@ -58,6 +58,8 @@ Proibido (padrões que fazem o texto soar como IA ou como propaganda):
 - Fecho otimista genérico: "o futuro promete", "estamos só começando", "exciting times ahead". Termine no último fato concreto.
 - Sequência de frases-fragmento dramáticas ("Sem aviso. Sem debate. Só o anúncio."). Uma frase curta para ênfase, no máximo.
 - Frase de efeito vazia: "X é a nova moeda de Y", "não é uma ferramenta, é um espelho".
+- Fecho-fórmula que nomeia uma tensão em vez de dar um fato: "é onde mora a tensão real", "é aí que está a verdadeira questão", "is where the real tension lives", "that's the real question here". Se o contraste entre duas notícias importa, diga qual é o dado dos dois lados.
+- Dirigir-se ao leitor para justificar a notícia: "se você trabalha com X, precisa saber que", "if you're hiring right now, you need to know". Dê o fato; a relevância aparece sozinha.
 - Clichês de abertura: "Hoje em dia", "Na era da IA", "Com o avanço da", "No cenário atual", "É indiscutível".
 - Emoji. Nenhum, em nenhuma das duas versões.
 - Bullet com hífen (-). Use → ou parágrafos corridos.
@@ -68,7 +70,7 @@ Forma:
 - Prefira o número, o nome próprio e a data ao adjetivo.
 - Varie o comprimento das frases. Parágrafos de 1 a 3 linhas, com linha em branco entre eles.
 - Travessão (—) é permitido.
-- Máximo 1300 caracteres por versão (EN e PT contados separadamente).
+- Máximo 1300 caracteres por versão (EN e PT contados separadamente). Antes de responder, confira o tamanho; se passar, corte o parágrafo que carrega menos informação, não as frases com número.
 - Termine com uma pergunta específica sobre uma decisão real que o leitor da área enfrenta, ou com o último fato concreto. Nunca "o que vocês acham?".
 - Nenhuma das duas versões leva hashtag no corpo. As hashtags saem em bloco separado.
 """
