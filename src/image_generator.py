@@ -41,6 +41,9 @@ THEMES = [
 
 TEXT_WHITE = (255, 255, 255)
 TEXT_GRAY = (210, 210, 222)
+# Muted tone for the discreet corner brand/date and source line — present but
+# never competing with the photo or the headline for attention.
+BRAND_DIM = (178, 181, 194)
 
 SOURCE_COLORS = {
     "openai":       (16, 163, 127),
@@ -162,9 +165,9 @@ def _cover_crop(img: Image.Image, w: int, h: int) -> Image.Image:
     return img.crop((left, top, left + w, top + h))
 
 
-def _readability_overlay(accent: tuple) -> Image.Image:
-    """Dark gradient: subtle at top (for the brand line), heavy at the bottom
-    (for the teaser). Returns an RGBA layer to composite over the photo."""
+def _readability_overlay() -> Image.Image:
+    """Dark gradient: subtle at top (for the discreet brand/date), heavy at the
+    bottom (for the headline + summary). Returns an RGBA layer to composite."""
     overlay = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))
     px = overlay.load()
     top_dark_until = 230
@@ -187,7 +190,6 @@ def _generate_photo_card(
     teaser: str,
     image_query: str,
     main_source: str,
-    username: str,
     today: date,
     output_filename: str,
     subtitle: str = "",
@@ -196,56 +198,46 @@ def _generate_photo_card(
     if photo is None:
         return None
 
-    theme = THEMES[today.weekday()]
-    accent = theme["accent"]
-    dim = theme["dim"]
-
     img = _cover_crop(photo, WIDTH, HEIGHT)
-    img = Image.alpha_composite(img.convert("RGBA"), _readability_overlay(accent)).convert("RGB")
+    img = Image.alpha_composite(img.convert("RGBA"), _readability_overlay()).convert("RGB")
     draw = ImageDraw.Draw(img)
 
-    # ── Top brand line ─────────────────────────────────────────────
-    draw.rectangle([(60, 64), (60 + 56, 70)], fill=accent)
-    font_brand = _load_font(30, bold=True)
-    _draw_text_shadow(draw, (60, 82), "IA DIÁRIO", font_brand, TEXT_WHITE, offset=2)
+    # ── Discreet top corner: just the brand mark + date ────────────
+    # Muted, small, no accent bar — present for attribution but never the focus.
+    font_brand = _load_font(23, bold=True)
+    _draw_text_shadow(draw, (60, 60), "Rios-News", font_brand, BRAND_DIM, offset=2)
 
-    font_date = _load_font(24)
+    font_date = _load_font(22)
     date_str = today.strftime("%d %b %Y").upper()
     dw = _text_w(draw, date_str, font_date)
-    _draw_text_shadow(draw, (WIDTH - 60 - dw, 86), date_str, font_date, TEXT_GRAY, offset=2)
+    _draw_text_shadow(draw, (WIDTH - 60 - dw, 62), date_str, font_date, BRAND_DIM, offset=2)
 
-    # ── Bottom teaser (the hook) + subtitle (the concrete fact) ────
+    # ── Bottom block: a smaller hook + a longer plain-language summary
+    # of what the news is actually about. Smaller type, more text — a general
+    # idea of the story rather than a single loud line.
     teaser = (teaser or "").strip().strip('"').strip()
     if not teaser:
         teaser = "Novidades de IA que você precisa ver"
     subtitle = (subtitle or "").strip().strip('"').strip()
 
-    font_teaser = _load_font(58, bold=True)
-    teaser_lines = textwrap.fill(teaser, width=24).split("\n")[:3]
-    teaser_gap = 12
+    font_teaser = _load_font(42, bold=True)
+    teaser_lines = textwrap.fill(teaser, width=30).split("\n")[:2]
+    teaser_gap = 10
     teaser_hs = [_text_h(draw, ln, font_teaser) for ln in teaser_lines]
     teaser_h = sum(teaser_hs) + teaser_gap * (len(teaser_lines) - 1)
 
-    font_sub = _load_font(31)
-    sub_lines = textwrap.fill(subtitle, width=46).split("\n")[:2] if subtitle else []
-    sub_gap = 8
+    font_sub = _load_font(27)
+    sub_lines = textwrap.fill(subtitle, width=50).split("\n")[:3] if subtitle else []
+    sub_gap = 9
     sub_hs = [_text_h(draw, ln, font_sub) for ln in sub_lines]
     sub_h = (sum(sub_hs) + sub_gap * (len(sub_lines) - 1)) if sub_lines else 0
-    teaser_sub_gap = 22 if sub_lines else 0
+    teaser_sub_gap = 20 if sub_lines else 0
 
-    username_y = HEIGHT - 84
-    kicker_h = 7
-    kicker_gap = 24
+    footer_y = HEIGHT - 70
 
     # Lay the whole block out so its bottom sits just above the footer.
-    block_bottom = username_y - 30
+    block_bottom = footer_y - 28
     block_top = block_bottom - (sub_h + teaser_sub_gap + teaser_h)
-
-    # Accent kicker bar above the teaser
-    draw.rectangle(
-        [(60, block_top - kicker_gap - kicker_h), (60 + 80, block_top - kicker_gap)],
-        fill=accent,
-    )
 
     y = block_top
     for ln, lh in zip(teaser_lines, teaser_hs):
@@ -256,15 +248,11 @@ def _generate_photo_card(
         _draw_text_shadow(draw, (60, y), ln, font_sub, TEXT_GRAY, offset=2)
         y += lh + sub_gap
 
-    # ── Footer: handle + source ────────────────────────────────────
-    font_wm = _load_font(28, bold=True)
-    _draw_text_shadow(draw, (60, username_y), username, font_wm, dim, offset=2)
-
+    # ── Footer: only the news source, kept muted ───────────────────
     if main_source:
-        font_src = _load_font(22, bold=True)
+        font_src = _load_font(20, bold=True)
         label = f"via {main_source}".upper()
-        lw = _text_w(draw, label, font_src)
-        _draw_text_shadow(draw, (WIDTH - 60 - lw, username_y + 4), label, font_src, TEXT_GRAY, offset=2)
+        _draw_text_shadow(draw, (60, footer_y), label, font_src, BRAND_DIM, offset=2)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = OUTPUT_DIR / output_filename
@@ -311,7 +299,7 @@ def _generate_text_card(headline, stories, username, today, output_filename) -> 
 
     draw.rectangle([(60, 58), (WIDTH - 60, 63)], fill=accent)
     font_brand = _load_font(32, bold=True)
-    draw.text((60, 76), "IA DIÁRIO", font=font_brand, fill=accent)
+    draw.text((60, 76), "Rios-News", font=font_brand, fill=dim)
 
     font_date = _load_font(26)
     date_str = today.strftime("%d %b %Y").upper()
@@ -398,7 +386,6 @@ def generate_card(
             subtitle=subtitle or "",
             image_query=image_query or PEXELS_FALLBACK_QUERY,
             main_source=main_source,
-            username=username,
             today=today,
             output_filename=output_filename,
         )
