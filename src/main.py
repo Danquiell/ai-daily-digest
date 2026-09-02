@@ -103,6 +103,12 @@ def run(dry_run: bool = False):
     try:
         linkedin_text = build_linkedin_post(content)
 
+        # The run log is the only record of what actually went out: the token
+        # cannot read a post back (ugcPosts.GET returns 403 for w_member_social).
+        print(f"\n--- POST TEXT ({len(linkedin_text)} chars) ---")
+        print(linkedin_text)
+        print("--- END POST TEXT ---\n")
+
         if card_path and card_path.exists():
             linkedin_post_id = post_with_image(
                 text=linkedin_text,
