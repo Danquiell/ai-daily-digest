@@ -1,72 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-19",
-      "topics": [
-        "A joke domain purchase turned in geopolitical warfare",
-        "Devices with GrapheneOS support should be available in 2027",
-        "Geolocating a random island using geometry and CUDA programming",
-        "Air Theremin – A browser theremin you play by waving at your webcam",
-        "Don't Paste the AI, please",
-        "Mathematics in the age of AI"
-      ],
-      "title_hashes": [
-        "a518d20e70c991c09f9295455f65e08154a11ea38e47e0807f7d17ea850007b0",
-        "2a5c0d994d88856485da060f3959912e6532bc3aaebe19a12dc6fcda0c4c8216",
-        "4cb837985a0fddd966327f28c1d87e9e009a354dbf57ff46377091bbcb1b71b4",
-        "a9f81359bbc1ab6dbd96be5195fc0d26f33fe3b4c858abb03f41f89b0d633608",
-        "75040acfa4829a41c23c9be1386fdaf81a399a8fb44f5f6e6a38a64a8915923a",
-        "35e2d7e7846e5d8e3f914fad6d2a2fb7f1e84f7e6aaf4fd3a640f2d8b5e1ae0d"
-      ],
-      "topic_tokens": [
-        [
-          "joke",
-          "domain",
-          "purchase",
-          "turned",
-          "geopolitical",
-          "warfare"
-        ],
-        [
-          "devices",
-          "grapheneos",
-          "support",
-          "should",
-          "available",
-          "2027"
-        ],
-        [
-          "geolocating",
-          "random",
-          "island",
-          "using",
-          "geometry",
-          "cuda",
-          "programming"
-        ],
-        [
-          "air",
-          "theremin",
-          "browser",
-          "theremin",
-          "you",
-          "play",
-          "waving",
-          "your",
-          "webcam"
-        ],
-        [
-          "don",
-          "paste",
-          "please"
-        ],
-        [
-          "mathematics",
-          "age"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-20",
       "topics": [
         "Show HN: I trained a 125M model to autocomplete piano on-device",
@@ -935,6 +869,80 @@
           "all",
           "magic",
           "updates"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "topics": [
+        "Claude Fable 5.1 and Claude Mythos 5.1",
+        "How accurate have Ed Zitron's AI skeptic predictions been?",
+        "The ChatGPT/Codex app bundles a full copy of LibreOffice",
+        "The Emergent Symbolic Structure of Artificial Neural Networks",
+        "Launch HN: Nori Robotics (YC S26) – A low-cost humanoid robot for development",
+        "Show HN: Weedout – Safari extension that hides YouTube AI-labeled videos"
+      ],
+      "title_hashes": [
+        "9634ffc1c8dce4817ff63f6b2ce80f5572038651b6e9baca807c643058da49c4",
+        "51682ea7443bf7bb1144620eb04bd9ca6375bf835cb40c76939a966cc4e4ebbb",
+        "72223494fdbe9f3ef9596cd9e2b8c1c773c996b1369fea15b5c874cb0b5fbd7b",
+        "52fdc9fffe3f2bbcc64acf42ef8d2b3ee257bddefcae7f7bddd4ff53355d88b3",
+        "145c1f38bc61e2f955e734768b7fbb34003b9e83189855ba4d6180e554526fc6",
+        "32ca02aa21b9e0aa1c275669c656417fee058001870dbeb4534d053f058f3614"
+      ],
+      "topic_tokens": [
+        [
+          "claude",
+          "fable",
+          "claude",
+          "mythos"
+        ],
+        [
+          "how",
+          "accurate",
+          "have",
+          "zitron",
+          "skeptic",
+          "predictions"
+        ],
+        [
+          "chatgpt",
+          "codex",
+          "app",
+          "bundles",
+          "full",
+          "copy",
+          "libreoffice"
+        ],
+        [
+          "emergent",
+          "symbolic",
+          "structure",
+          "artificial",
+          "neural",
+          "networks"
+        ],
+        [
+          "launch",
+          "nori",
+          "robotics",
+          "s26",
+          "low",
+          "cost",
+          "humanoid",
+          "robot",
+          "development"
+        ],
+        [
+          "show",
+          "weedout",
+          "safari",
+          "extension",
+          "that",
+          "hides",
+          "youtube",
+          "labeled",
+          "videos"
         ]
       ]
     }
