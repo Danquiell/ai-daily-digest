@@ -225,12 +225,25 @@ def fetch_hacker_news(window_start: datetime) -> list[dict]:
             continue
         created = item.get("time", 0)
         pub_date = datetime.fromtimestamp(created, tz=timezone.utc) if created else None
+        story_url = item.get("url") or f"https://news.ycombinator.com/item?id={story_id}"
+
+        # HN has no article summary, and a story that reaches the model as a bare
+        # title gives it nothing to write from. Its own metadata is real data:
+        # score, comment count and the domain the link points at.
+        domain = urllib.parse.urlparse(story_url).netloc.removeprefix("www.")
+        comments = item.get("descendants", 0) or 0
+        summary = f"Hacker News front page: {score} points, {comments} comments"
+        if domain and "ycombinator" not in domain:
+            summary += f", links to {domain}"
+        text = re.sub(r"<[^>]+>", " ", item.get("text") or "").strip()
+        if text:
+            summary += f". Author's text: {text[:200]}"
 
         stories.append({
             "title": title,
-            "url": item.get("url") or f"https://news.ycombinator.com/item?id={story_id}",
+            "url": story_url,
             "pub_date": pub_date,
-            "summary": "",
+            "summary": summary,
             "source": "Hacker News",
             "points": score,
         })
@@ -281,11 +294,39 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
 
     print(f"[news] {len(filtered)} unique stories ready")
 
+    selected = _select_balanced(filtered, limit=6, per_source=3)
+
     if dry_run:
-        for s in filtered[:6]:
+        for s in selected:
             print(f"  [{s['source']}] {s['title'][:80]}")
 
-    return filtered[:6]
+    return selected
+
+
+def _select_balanced(stories: list[dict], limit: int, per_source: int) -> list[dict]:
+    """Pick the top stories with a cap per source.
+
+    On 2026-09-01 the whole digest came from Hacker News, and every entry
+    carried a bare title, so the model had no facts to write from and answered
+    with a refusal instead of a post. A source cap keeps at least half the list
+    coming from feeds that ship a summary.
+    """
+    picked: list[dict] = []
+    counts: dict[str, int] = {}
+    for story in stories:
+        source = story.get("source", "")
+        if counts.get(source, 0) >= per_source:
+            continue
+        picked.append(story)
+        counts[source] = counts.get(source, 0) + 1
+        if len(picked) >= limit:
+            return picked
+
+    # Cap left the list short: fill from what is left, best-ranked first.
+    if len(picked) < limit:
+        chosen = {id(s) for s in picked}
+        picked.extend(s for s in stories if id(s) not in chosen)
+    return picked[:limit]
 
 
 if __name__ == "__main__":

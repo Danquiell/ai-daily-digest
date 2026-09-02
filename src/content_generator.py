@@ -54,6 +54,17 @@ Fidelidade ao fato (regra mais importante):
 - Nunca atribua opinião a "especialistas", "o mercado", "analistas" ou "estudos". Cite o veículo pelo nome ou corte a afirmação.
 - Você pode dar sua leitura pessoal, desde que fique claro que é sua e não venha disfarçada de fato.
 
+Material incompleto (acontece quase todo dia — não é motivo para não escrever):
+- Muita notícia chega só com título, veículo e link, sem resumo. Isso é suficiente.
+- Escreva o que o título afirma, atribuindo ao veículo: "O TechCrunch noticiou que X",
+  "Um post no Hacker News diz que Y". A atribuição é o que mantém a frase verdadeira.
+- Entradas do Hacker News trazem pontuação e número de comentários. Esses são dados reais
+  e podem entrar no texto ("chegou à capa com 412 pontos").
+- Quando um título anuncia algo sem detalhar, diga isso: o que foi anunciado e o que ainda
+  não se sabe. Uma lacuna declarada é informação; um número inventado não é.
+- NUNCA responda pedindo mais material, comentando a qualidade das fontes ou explicando por
+  que não dá para escrever. A resposta é sempre o post nos blocos pedidos, sem exceção.
+
 Proibido (padrões que fazem o texto soar como IA ou como propaganda):
 - Importância inflada: "muda o jogo", "divisor de águas", "marco histórico", "revolucionário", "nunca mais será o mesmo", "game changer", "watershed moment", "seismic shift".
 - Linguagem de venda: "poderoso", "robusto", "solução completa", "impressionante", "groundbreaking", "powerful", "seamless", "must-watch".
@@ -99,6 +110,9 @@ Escolha 1 ou 2 notícias da lista para desenvolver com profundidade — número,
 mudou — e cite as demais em uma linha só, se couberem. Um post que explica bem duas notícias \
 vale mais que um que lista seis.
 
+Responda APENAS com os blocos abaixo. Nenhuma linha antes do primeiro separador, \
+nenhum comentário sobre o material, nenhuma pergunta.
+
 Formate a resposta assim — use EXATAMENTE estes separadores:
 ---EN---
 [post em inglês, sem hashtags]
@@ -118,15 +132,25 @@ Formate a resposta assim — use EXATAMENTE estes separadores:
 
 def _call_claude(system: str, user: str, max_tokens: int) -> tuple[str, str]:
     """Returns (text, stop_reason). The caller has to look at stop_reason:
-    a response cut at max_tokens loses every block after the cut."""
+    a response cut at max_tokens loses every block after the cut.
+
+    The assistant turn is prefilled with the first separator. On 2026-09-01 the
+    model opened with prose asking for fuller source material instead of the
+    post, and that prose went out as the day's LinkedIn post. Starting the turn
+    inside the format leaves no room for a preamble.
+    """
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    prefill = "---EN---"
     msg = client.messages.create(
         model=MODEL,
         max_tokens=max_tokens,
         system=system,
-        messages=[{"role": "user", "content": user}],
+        messages=[
+            {"role": "user", "content": user},
+            {"role": "assistant", "content": prefill},
+        ],
     )
-    return msg.content[0].text.strip(), (msg.stop_reason or "")
+    return f"{prefill}\n{msg.content[0].text.strip()}", (msg.stop_reason or "")
 
 
 # Order matters: the parser slices the response between whichever tags are
@@ -172,7 +196,7 @@ def _format_stories_for_prompt(stories: list[dict]) -> str:
         lines.append(
             f"{i}. [{s['source']}] {s['title']}\n"
             f"   URL: {s.get('url', 'N/A')}\n"
-            f"   Resumo: {s.get('summary', 'Sem resumo disponível')[:150]}"
+            f"   Resumo: {(s.get('summary') or '').strip()[:200] or 'sem resumo — escreva a partir do título, atribuindo ao veículo'}"
         )
     return "\n\n".join(lines)
 
