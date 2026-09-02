@@ -1,0 +1,61 @@
+name: Repost (delete + republish)
+
+# Manual only. Deletes one published LinkedIn post and republishes the digest
+# for the same date. Deletion on LinkedIn is permanent — check the URN first.
+on:
+  workflow_dispatch:
+    inputs:
+      urn:
+        description: "URN of the post to delete (urn:li:share:... or urn:li:ugcPost:...)"
+        required: true
+        type: string
+      dry_run:
+        description: "Read the post and generate the replacement without deleting or posting"
+        required: false
+        default: "false"
+        type: boolean
+
+jobs:
+  repost:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Delete and republish
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          FLAGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            FLAGS="--dry-run"
+          fi
+          python src/repost.py --urn "${{ github.event.inputs.urn }}" $FLAGS
+
+      - name: Upload card preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: repost-card-${{ github.run_id }}
+          path: output/*.jpg
+          retention-days: 7
+          if-no-files-found: ignore

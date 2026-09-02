@@ -23,7 +23,12 @@ def build_linkedin_post(content) -> str:
     """English first (the version most of the feed reads), then PT-BR, then the
     hashtags once at the end so they do not break the text in half."""
     divider = "\n\n──────────────────\n\n"
-    body = divider.join(p for p in (content.linkedin_en, content.linkedin_pt) if p)
+    parts = [p.strip() for p in (content.linkedin_en, content.linkedin_pt) if p.strip()]
+    # Last gate before publishing: never send the same body twice under a
+    # divider that promises a second language.
+    if len(parts) == 2 and parts[0] == parts[1]:
+        parts = parts[:1]
+    body = divider.join(parts)
     tags = getattr(content, "hashtags", "").strip()
     return f"{body}\n\n{tags}" if tags else body
 

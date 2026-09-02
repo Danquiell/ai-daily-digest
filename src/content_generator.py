@@ -10,6 +10,10 @@ from datetime import date as date_type
 import anthropic
 
 MODEL = "claude-haiku-4-5-20251001"
+# EN + PT (1300 chars each) + tags + teaser + subtitle + query. The old 1200 cut
+# the answer mid-PT on 2026-09-01, which killed every block after it.
+MAX_TOKENS = 3000
+MAX_TOKENS_RETRY = 4000
 
 
 @dataclass
@@ -112,24 +116,54 @@ Formate a resposta assim — use EXATAMENTE estes separadores:
 """
 
 
-def _call_claude(system: str, user: str) -> str:
+def _call_claude(system: str, user: str, max_tokens: int) -> tuple[str, str]:
+    """Returns (text, stop_reason). The caller has to look at stop_reason:
+    a response cut at max_tokens loses every block after the cut."""
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
     msg = client.messages.create(
         model=MODEL,
-        max_tokens=1200,
+        max_tokens=max_tokens,
         system=system,
         messages=[{"role": "user", "content": user}],
     )
-    return msg.content[0].text.strip()
+    return msg.content[0].text.strip(), (msg.stop_reason or "")
 
 
-def _extract_block(text: str, start_tag: str, end_tag: str) -> str:
-    pattern = re.compile(
-        rf"{re.escape(start_tag)}\s*(.*?)\s*{re.escape(end_tag)}",
-        re.DOTALL,
+# Order matters: the parser slices the response between whichever tags are
+# actually present, so a skipped tag widens the block before it instead of
+# discarding it.
+_BLOCK_TAGS = (
+    "---EN---",
+    "---PT---",
+    "---TAGS---",
+    "---TEASER---",
+    "---SUBTITLE---",
+    "---IMGQUERY---",
+    "---END---",
+)
+
+
+def _parse_blocks(text: str) -> dict[str, str]:
+    """Split the model answer into named blocks.
+
+    Never falls back to positional guessing: the old `raw.split("---")[1]`
+    fallback silently put the English body into the PT slot when the answer was
+    truncated, and the post went out with the same text twice.
+    """
+    found = sorted(
+        (idx, tag) for tag in _BLOCK_TAGS if (idx := text.find(tag)) != -1
     )
-    m = pattern.search(text)
-    return m.group(1).strip() if m else ""
+    blocks: dict[str, str] = {}
+    for n, (idx, tag) in enumerate(found):
+        start = idx + len(tag)
+        end = found[n + 1][0] if n + 1 < len(found) else len(text)
+        blocks[tag.strip("-")] = text[start:end].strip()
+    return blocks
+
+
+def _same_text(a: str, b: str) -> bool:
+    norm = lambda s: re.sub(r"\s+", " ", s or "").strip().lower()
+    return bool(norm(a)) and norm(a) == norm(b)
 
 
 def _format_stories_for_prompt(stories: list[dict]) -> str:
@@ -201,31 +235,48 @@ def generate_content(
             "---IMGQUERY---\nhumanoid robot closeup\n---END---"
         )
     else:
-        linkedin_raw = _call_claude(_LINKEDIN_SYSTEM, linkedin_prompt)
+        linkedin_raw, stop_reason = _call_claude(
+            _LINKEDIN_SYSTEM, linkedin_prompt, MAX_TOKENS
+        )
+        if stop_reason == "max_tokens":
+            print("[content] Answer hit max_tokens — retrying with a larger budget")
+            linkedin_raw, stop_reason = _call_claude(
+                _LINKEDIN_SYSTEM, linkedin_prompt, MAX_TOKENS_RETRY
+            )
+        if stop_reason == "max_tokens":
+            raise RuntimeError(
+                "Claude answer truncated twice at max_tokens — refusing to post a "
+                "half-generated digest. The next cron attempt retries today."
+            )
 
-    linkedin_en = _extract_block(linkedin_raw, "---EN---", "---PT---")
-    linkedin_pt = _extract_block(linkedin_raw, "---PT---", "---TAGS---")
-    hashtags = _extract_block(linkedin_raw, "---TAGS---", "---TEASER---")
-    image_teaser = _extract_block(linkedin_raw, "---TEASER---", "---SUBTITLE---")
-    image_subtitle = _extract_block(linkedin_raw, "---SUBTITLE---", "---IMGQUERY---")
-    image_query = _extract_block(linkedin_raw, "---IMGQUERY---", "---END---")
+    blocks = _parse_blocks(linkedin_raw)
+    linkedin_en = blocks.get("EN", "")
+    linkedin_pt = blocks.get("PT", "")
+    hashtags = blocks.get("TAGS", "")
+    image_teaser = blocks.get("TEASER", "")
+    image_subtitle = blocks.get("SUBTITLE", "")
+    image_query = blocks.get("IMGQUERY", "")
 
-    # Tolerate a skipped block by falling back to the next separator present.
-    if not linkedin_pt:
-        linkedin_pt = _extract_block(linkedin_raw, "---PT---", "---TEASER---")
-    if not image_teaser:
-        image_teaser = _extract_block(linkedin_raw, "---TEASER---", "---IMGQUERY---")
+    missing = [t.strip("-") for t in _BLOCK_TAGS[:-1] if not blocks.get(t.strip("-"))]
+    if missing:
+        print(f"[content] Blocks missing from the answer: {', '.join(missing)}")
 
-    if not linkedin_pt or not linkedin_en:
-        parts = [p.strip() for p in linkedin_raw.split("---") if p.strip()]
-        linkedin_en = linkedin_en or (parts[0] if parts else linkedin_raw)
-        linkedin_pt = linkedin_pt or (parts[1] if len(parts) > 1 else linkedin_raw)
+    if not linkedin_en and not linkedin_pt:
+        raise ValueError("Claude answer carried neither an EN nor a PT block")
 
-    # Sensible fallbacks so the image step never breaks.
+    # One language repeated twice reads as a bug to anyone scrolling the feed.
+    # Drop the duplicate and publish the single version instead.
+    if _same_text(linkedin_en, linkedin_pt):
+        print("[content] EN and PT blocks are identical — publishing one version only")
+        linkedin_pt = ""
+
+    # Fallbacks so the image step never breaks. The subtitle exists to add a
+    # fact the teaser does not carry, so an empty or echoing subtitle is dropped
+    # rather than filled with the headline a second time.
     if not image_teaser:
         image_teaser = main_story.get("title", "")[:60]
-    if not image_subtitle:
-        image_subtitle = main_story.get("title", "")[:90]
+    if _same_text(image_subtitle, image_teaser) or not image_subtitle:
+        image_subtitle = ""
     if not image_query:
         image_query = "artificial intelligence technology"
 

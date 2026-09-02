@@ -177,6 +177,66 @@ def post_text(text: str, main_url: str = "", dry_run: bool = False) -> str:
     return post_id
 
 
+def get_post_text(post_urn: str) -> str:
+    """Read back the commentary of a published post, so a post is inspected
+    before it is deleted."""
+    token = os.environ.get("LINKEDIN_ACCESS_TOKEN", "")
+    if not token:
+        raise EnvironmentError("LINKEDIN_ACCESS_TOKEN must be set")
+
+    url = f"{API_BASE}/ugcPosts/{urllib.parse.quote(post_urn, safe='')}"
+    req = urllib.request.Request(
+        url,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "X-Restli-Protocol-Version": "2.0.0",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8")
+        raise RuntimeError(f"LinkedIn read failed {e.code}: {body}") from e
+
+    return (
+        data.get("specificContent", {})
+        .get("com.linkedin.ugc.ShareContent", {})
+        .get("shareCommentary", {})
+        .get("text", "")
+    )
+
+
+def delete_post(post_urn: str, dry_run: bool = False):
+    """Delete a published post. LinkedIn removes it from the feed immediately;
+    it cannot be restored."""
+    token = os.environ.get("LINKEDIN_ACCESS_TOKEN", "")
+    if not token:
+        raise EnvironmentError("LINKEDIN_ACCESS_TOKEN must be set")
+
+    if dry_run:
+        print(f"[linkedin] DRY RUN — would delete {post_urn}")
+        return
+
+    url = f"{API_BASE}/ugcPosts/{urllib.parse.quote(post_urn, safe='')}"
+    req = urllib.request.Request(
+        url,
+        method="DELETE",
+        headers={
+            "Authorization": f"Bearer {token}",
+            "X-Restli-Protocol-Version": "2.0.0",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req) as resp:
+            resp.read()
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8")
+        raise RuntimeError(f"LinkedIn delete failed {e.code}: {body}") from e
+
+    print(f"[linkedin] Deleted {post_urn}")
+
+
 def post_sources_comment(post_urn: str, sources_text: str, dry_run: bool = False):
     """Add first comment with source links."""
     token = os.environ.get("LINKEDIN_ACCESS_TOKEN", "")
