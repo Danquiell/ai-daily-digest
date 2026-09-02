@@ -58,8 +58,12 @@ Material incompleto (acontece quase todo dia — não é motivo para não escrev
 - Muita notícia chega só com título, veículo e link, sem resumo. Isso é suficiente.
 - Escreva o que o título afirma, atribuindo ao veículo: "O TechCrunch noticiou que X",
   "Um post no Hacker News diz que Y". A atribuição é o que mantém a frase verdadeira.
-- Entradas do Hacker News trazem pontuação e número de comentários. Esses são dados reais
-  e podem entrar no texto ("chegou à capa com 412 pontos").
+- Entradas do Hacker News trazem pontuação e número de comentários. São dados reais, mas
+  NÃO são a notícia: nunca abra o post com eles, nunca compare duas notícias pela pontuação
+  e nunca use "pontos no HN" como o número que define o parágrafo. No máximo uma menção no
+  post inteiro, e só se ela disser algo que o resto não diz.
+- Não acrescente contexto histórico que não está no material ("a versão anterior era o
+  padrão para X", "isso vinha sendo esperado desde Y"). Se você não leu, não escreva.
 - Quando um título anuncia algo sem detalhar, diga isso: o que foi anunciado e o que ainda
   não se sabe. Uma lacuna declarada é informação; um número inventado não é.
 - NUNCA responda pedindo mais material, comentando a qualidade das fontes ou explicando por
@@ -85,6 +89,9 @@ Forma:
 - Prefira o número, o nome próprio e a data ao adjetivo.
 - Varie o comprimento das frases. Parágrafos de 1 a 3 linhas, com linha em branco entre eles.
 - Travessão (—) é permitido.
+- A versão PT é português brasileiro correto: concordância de gênero e número, artigo antes
+  de nome de empresa quando o uso pede ("a Amazon", "a Mistral"), regência certa. Nome de
+  produto e termo técnico ficam em inglês; o resto da frase, não.
 - Máximo 1300 caracteres por versão (EN e PT contados separadamente). Antes de responder, confira o tamanho; se passar, corte o parágrafo que carrega menos informação, não as frases com número.
 - Termine com uma pergunta específica sobre uma decisão real que o leitor da área enfrenta, ou com o último fato concreto. Nunca "o que vocês acham?".
 - Nenhuma das duas versões leva hashtag no corpo. As hashtags saem em bloco separado.
