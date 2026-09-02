@@ -224,6 +224,7 @@ def generate_content(
 
     # A dry run still generates real text: the copy is the thing worth previewing,
     # and Haiku costs a fraction of a cent. Only posting and history are skipped.
+    stop_reason = ""
     if dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
         print("[content] No ANTHROPIC_API_KEY — using placeholder copy")
         linkedin_raw = (
@@ -249,6 +250,7 @@ def generate_content(
                 "half-generated digest. The next cron attempt retries today."
             )
 
+    print(f"[content] Answer: {len(linkedin_raw)} chars, stop_reason={stop_reason!r}")
     blocks = _parse_blocks(linkedin_raw)
     linkedin_en = blocks.get("EN", "")
     linkedin_pt = blocks.get("PT", "")
@@ -262,6 +264,10 @@ def generate_content(
         print(f"[content] Blocks missing from the answer: {', '.join(missing)}")
 
     if not linkedin_en and not linkedin_pt:
+        print("[content] Raw answer that could not be parsed:")
+        print("-" * 60)
+        print(linkedin_raw[:2000])
+        print("-" * 60)
         raise ValueError("Claude answer carried neither an EN nor a PT block")
 
     # One language repeated twice reads as a bug to anyone scrolling the feed.
