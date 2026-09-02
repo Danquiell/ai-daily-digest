@@ -14,6 +14,9 @@ MODEL = "claude-haiku-4-5-20251001"
 # the answer mid-PT on 2026-09-01, which killed every block after it.
 MAX_TOKENS = 3000
 MAX_TOKENS_RETRY = 4000
+# LinkedIn cuts a post at 3000 characters. Two versions, a divider and the
+# hashtags share that budget.
+MAX_VERSION_CHARS = 1300
 
 
 @dataclass
@@ -54,16 +57,23 @@ Fidelidade ao fato (regra mais importante):
 - Nunca atribua opinião a "especialistas", "o mercado", "analistas" ou "estudos". Cite o veículo pelo nome ou corte a afirmação.
 - Você pode dar sua leitura pessoal, desde que fique claro que é sua e não venha disfarçada de fato.
 
-Material incompleto (acontece quase todo dia — não é motivo para não escrever):
-- Muita notícia chega só com título, veículo e link, sem resumo. Isso é suficiente.
-- Escreva o que o título afirma, atribuindo ao veículo: "O TechCrunch noticiou que X",
-  "Um post no Hacker News diz que Y". A atribuição é o que mantém a frase verdadeira.
+Material desigual (acontece todo dia — não é motivo para não escrever):
+- Cada notícia vem marcada. As que trazem TEXTO DO ARTIGO são as que você desenvolve:
+  o número, o nome e o que mudou saem de lá.
+- As marcadas SÓ TÍTULO entram apenas na linha de menções, em no máximo uma oração cada,
+  dizendo o que o título afirma e atribuindo ao veículo ("o KRON4 noticiou que X").
+  Nunca escreva um parágrafo sobre uma notícia da qual você só tem o título.
+- Nunca descreva o que um produto faz, para que serve ou como se compara a outro se o
+  material não disser. "Feito para respostas de baixa latência", "adiciona capacidades de
+  segurança", "supera os concorrentes em velocidade" — se não está no texto, é invenção.
+- Não acrescente contexto histórico que não está no material ("a versão anterior era o
+  padrão para X", "isso vinha sendo esperado desde Y"). Se você não leu, não escreva.
+- Nome de veículo, empresa, pesquisador ou relatório só entra se aparecer no material.
+  Nunca crie um nome de fonte para dar credibilidade a uma frase.
 - Entradas do Hacker News trazem pontuação e número de comentários. São dados reais, mas
   NÃO são a notícia: nunca abra o post com eles, nunca compare duas notícias pela pontuação
   e nunca use "pontos no HN" como o número que define o parágrafo. No máximo uma menção no
   post inteiro, e só se ela disser algo que o resto não diz.
-- Não acrescente contexto histórico que não está no material ("a versão anterior era o
-  padrão para X", "isso vinha sendo esperado desde Y"). Se você não leu, não escreva.
 - Quando um título anuncia algo sem detalhar, diga isso: o que foi anunciado e o que ainda
   não se sabe. Uma lacuna declarada é informação; um número inventado não é.
 - NUNCA responda pedindo mais material, comentando a qualidade das fontes ou explicando por
@@ -113,9 +123,12 @@ A versão EN é publicada primeiro e é a que a maioria vai ler. Escreva ela com
 original em inglês, não como tradução literal do português. A versão PT cobre os mesmos \
 fatos e pode ter frases diferentes.
 
-Escolha 1 ou 2 notícias da lista para desenvolver com profundidade — número, nome e o que \
-mudou — e cite as demais em uma linha só, se couberem. Um post que explica bem duas notícias \
-vale mais que um que lista seis.
+Escolha 1 ou 2 notícias ENTRE AS QUE TRAZEM TEXTO DO ARTIGO para desenvolver com \
+profundidade — número, nome e o que mudou — e cite as demais em uma linha só, se couberem. \
+Um post que explica bem duas notícias vale mais que um que lista seis.
+
+Cada versão tem no máximo 1300 caracteres. Conte antes de responder: o que passar disso é \
+cortado por parágrafo inteiro na publicação.
 
 Responda APENAS com os blocos abaixo. Nenhuma linha antes do primeiro separador, \
 nenhum comentário sobre o material, nenhuma pergunta.
@@ -192,6 +205,29 @@ def _parse_blocks(text: str) -> dict[str, str]:
     return blocks
 
 
+def _trim_to_paragraph(text: str, limit: int) -> str:
+    """Cut at the last paragraph break that fits.
+
+    LinkedIn caps a post at 3000 characters, and both versions plus the divider
+    and the hashtags share that budget. A draft that ran 1843 + 1936 would have
+    been cut by LinkedIn itself, mid-sentence.
+    """
+    text = (text or "").strip()
+    if len(text) <= limit:
+        return text
+    kept: list[str] = []
+    total = 0
+    for para in text.split("\n\n"):
+        cost = len(para) + (2 if kept else 0)
+        if total + cost > limit:
+            break
+        kept.append(para)
+        total += cost
+    if not kept:
+        return text[:limit].rsplit(" ", 1)[0].rstrip(",;—-")
+    return "\n\n".join(kept)
+
+
 def _same_text(a: str, b: str) -> bool:
     norm = lambda s: re.sub(r"\s+", " ", s or "").strip().lower()
     return bool(norm(a)) and norm(a) == norm(b)
@@ -200,11 +236,19 @@ def _same_text(a: str, b: str) -> bool:
 def _format_stories_for_prompt(stories: list[dict]) -> str:
     lines = []
     for i, s in enumerate(stories, 1):
-        lines.append(
-            f"{i}. [{s['source']}] {s['title']}\n"
-            f"   URL: {s.get('url', 'N/A')}\n"
-            f"   Resumo: {(s.get('summary') or '').strip()[:200] or 'sem resumo — escreva a partir do título, atribuindo ao veículo'}"
-        )
+        summary = (s.get("summary") or "").strip()[:200]
+        article = (s.get("article") or "").strip()
+        block = [
+            f"{i}. [{s['source']}] {s['title']}",
+            f"   URL: {s.get('url', 'N/A')}",
+            f"   Resumo: {summary or 'sem resumo'}",
+        ]
+        if article:
+            block.append(f"   TEXTO DO ARTIGO: {article}")
+            block.append("   -> Tem material. Pode desenvolver em profundidade.")
+        else:
+            block.append("   -> SÓ TÍTULO. Vai para a linha de menções, não para um parágrafo.")
+        lines.append("\n".join(block))
     return "\n\n".join(lines)
 
 
@@ -300,6 +344,12 @@ def generate_content(
         print(linkedin_raw[:2000])
         print("-" * 60)
         raise ValueError("Claude answer carried neither an EN nor a PT block")
+
+    for label, value in (("EN", linkedin_en), ("PT", linkedin_pt)):
+        if len(value) > MAX_VERSION_CHARS:
+            print(f"[content] {label} ran {len(value)} chars — trimming to the last full paragraph")
+    linkedin_en = _trim_to_paragraph(linkedin_en, MAX_VERSION_CHARS)
+    linkedin_pt = _trim_to_paragraph(linkedin_pt, MAX_VERSION_CHARS)
 
     # One language repeated twice reads as a bug to anyone scrolling the feed.
     # Drop the duplicate and publish the single version instead.

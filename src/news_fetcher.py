@@ -256,6 +256,57 @@ def fetch_hacker_news(window_start: datetime) -> list[dict]:
     return stories
 
 
+_TAG_STRIP = re.compile(r"<(script|style|nav|header|footer)[^>]*>.*?</\1>", re.S | re.I)
+_TAGS = re.compile(r"<[^>]+>")
+_WS = re.compile(r"\s+")
+
+
+def fetch_article_text(url: str, limit: int = 1400) -> str:
+    """Download an article and return its visible text, or "" on any failure.
+
+    A headline alone is not enough material: given only titles, the model either
+    refuses to write or invents the details it is missing. Both happened on
+    2026-09-01.
+    """
+    if not url or "news.ycombinator.com" in url:
+        return ""
+    try:
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; AIDigestBot/1.0)",
+                "Accept": "text/html,application/xhtml+xml",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            ctype = resp.headers.get("Content-Type", "")
+            if "html" not in ctype.lower():
+                return ""
+            raw = resp.read(400_000).decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"  [article] {urllib.parse.urlparse(url).netloc}: {type(e).__name__}")
+        return ""
+
+    body = _TAG_STRIP.sub(" ", raw)
+    # Paragraph text carries the article; everything else on the page is chrome.
+    paragraphs = re.findall(r"<p[^>]*>(.*?)</p>", body, re.S | re.I)
+    text = " ".join(_WS.sub(" ", _TAGS.sub(" ", p)).strip() for p in paragraphs)
+    text = _WS.sub(" ", text).strip()
+    if len(text) < 200:
+        return ""
+    return text[:limit]
+
+
+def enrich_with_article_text(stories: list[dict], count: int = 3) -> None:
+    """Attach real article text to the stories the post will develop in depth."""
+    for story in stories[:count]:
+        text = fetch_article_text(story.get("url", ""))
+        if text:
+            story["article"] = text
+            print(f"  [article] {len(text)} chars for: {story['title'][:60]}")
+        time.sleep(0.2)
+
+
 def fetch_news(dry_run: bool = False) -> list[dict]:
     """
     Fetch AI/tech news from the last 48h, deduplicated.
@@ -295,6 +346,9 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
     print(f"[news] {len(filtered)} unique stories ready")
 
     selected = _select_balanced(filtered, limit=6, per_source=3)
+
+    print("[news] Fetching article text for the lead stories...")
+    enrich_with_article_text(selected, count=3)
 
     if dry_run:
         for s in selected:
