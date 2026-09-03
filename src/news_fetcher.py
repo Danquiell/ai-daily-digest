@@ -43,9 +43,33 @@ RSS_SOURCES = [
         "name": "Google News AI",
         "url": "https://news.google.com/rss/search?q=artificial+intelligence+OR+OpenAI+OR+Anthropic+OR+Gemini+OR+ChatGPT&hl=en-US&gl=US&ceid=US:en",
     },
+    # A second Google News query aimed at the events that make a day's news:
+    # money, courts and regulators, not product notes.
+    {
+        "name": "Google News AI Deals",
+        "url": "https://news.google.com/rss/search?q=AI+(acquisition+OR+lawsuit+OR+regulation+OR+funding+OR+antitrust+OR+ban)&hl=en-US&gl=US&ceid=US:en",
+    },
     {
         "name": "9to5Google AI",
         "url": "https://9to5google.com/feed/",
+    },
+    # Techmeme is an editorial front page: what it leads with is what the
+    # industry is arguing about that morning.
+    {
+        "name": "Techmeme",
+        "url": "https://www.techmeme.com/feed.xml",
+    },
+    {
+        "name": "Wired AI",
+        "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+    },
+    {
+        "name": "r/artificial",
+        "url": "https://www.reddit.com/r/artificial/top/.rss?t=day",
+    },
+    {
+        "name": "r/LocalLLaMA",
+        "url": "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day",
     },
 ]
 
@@ -155,7 +179,7 @@ def fetch_rss_stories(window_start: datetime) -> list[dict]:
             pub_date = _parse_feed_entry_date(entry)
 
             # Filter for AI-related content on general feeds
-            if source["name"] in ("Ars Technica", "The Verge", "9to5Google AI"):
+            if source["name"] in ("Ars Technica", "The Verge", "9to5Google AI", "Techmeme"):
                 if not _is_ai_related(title, summary):
                     continue
 
@@ -195,15 +219,21 @@ def fetch_rss_stories(window_start: datetime) -> list[dict]:
 def fetch_hacker_news(window_start: datetime) -> list[dict]:
     """Fetch top AI stories from Hacker News Firebase API."""
     stories = []
-    try:
-        req = urllib.request.Request(
-            "https://hacker-news.firebaseio.com/v0/topstories.json",
-            headers={"User-Agent": "AIDigestBot/1.0"},
-        )
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            ids = json.loads(resp.read())[:60]  # Top 60 stories
-    except Exception as e:
-        print(f"  [warn] HN top stories failed: {e}")
+    ids: list[int] = []
+    # "best" ranks by score over a longer horizon and surfaces the story the
+    # site actually argued about; "top" is the live front page. Both, deduped.
+    for listing in ("beststories", "topstories"):
+        try:
+            req = urllib.request.Request(
+                f"https://hacker-news.firebaseio.com/v0/{listing}.json",
+                headers={"User-Agent": "AIDigestBot/1.0"},
+            )
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                ids.extend(json.loads(resp.read())[:80])
+        except Exception as e:
+            print(f"  [warn] HN {listing} failed: {e}")
+    ids = list(dict.fromkeys(ids))
+    if not ids:
         return stories
 
     for story_id in ids:
@@ -246,14 +276,137 @@ def fetch_hacker_news(window_start: datetime) -> list[dict]:
             "summary": summary,
             "source": "Hacker News",
             "points": score,
+            "comments": comments,
         })
 
-        if len(stories) >= 10:
+        if len(stories) >= 18:
             break
-        time.sleep(0.1)
+        time.sleep(0.05)
 
     print(f"  [Hacker News] {len(stories)} AI stories found")
     return stories
+
+
+# What makes a story the day's story. Tuned against 2026-09-03, when the digest
+# led with a Mistral FAQ page that answers nothing and buried Nvidia buying
+# Hugging Face for $12.93B in a single closing line.
+_SIGNAL_WEIGHTS = [
+    (70, {
+        "acquire", "acquires", "acquired", "acquisition", "buys", "buyout",
+        "merger", "billion", "billions", "raises", "raised", "funding", "ipo",
+        "valuation", "stake", "invests", "investment", "bailout",
+    }),
+    (60, {
+        "lawsuit", "sues", "sued", "suing", "court", "ruling", "rules", "judge",
+        "ban", "banned", "bans", "regulation", "regulator", "antitrust", "fine",
+        "fined", "investigation", "settlement", "injunction", "subpoena",
+        "copyright", "illegal", "sanctions", "probe",
+    }),
+    (55, {
+        "backlash", "controversy", "controversial", "criticized", "accused",
+        "accuses", "leak", "leaked", "breach", "outage", "resigns", "resigned",
+        "fired", "layoffs", "shuts", "shutdown", "scandal", "boycott", "quits",
+        "apologizes", "retracts", "hoax", "fraud", "deceptive",
+    }),
+    (40, {
+        "launches", "launch", "releases", "unveils", "announces", "debuts",
+        "benchmark", "sota", "weights", "opensource", "outperforms", "beats",
+        "record", "breakthrough", "deprecates", "discontinues",
+    }),
+    (25, {
+        "openai", "anthropic", "google", "nvidia", "meta", "microsoft", "apple",
+        "mistral", "deepmind", "xai", "amazon", "tesla", "claude", "gemini",
+        "gpt", "llama", "chatgpt", "perplexity", "huggingface", "sora", "grok",
+    }),
+]
+
+_MONEY = re.compile(r"[$€£]\s?\d|(\d+(\.\d+)?\s?(billion|bilh|million|milh|trillion))", re.I)
+
+
+def _signal_score(story: dict, cluster_size: int) -> float:
+    """Rank by how consequential a story is, not by how recently it appeared.
+
+    Coverage breadth is the strongest signal available: the same story filed by
+    four outlets is the day's news. Hacker News points and comments come next —
+    comments weigh in on their own because an argument is what "polêmica" looks
+    like in the data.
+    """
+    title = story.get("title", "")
+    tokens = set(re.findall(r"[a-z0-9]+", title.lower()))
+
+    score = 90.0 * (cluster_size - 1)
+    score += min(story.get("points", 0) or 0, 1200) * 0.14
+    score += min(story.get("comments", 0) or 0, 800) * 0.16
+
+    for weight, words in _SIGNAL_WEIGHTS:
+        if tokens & words:
+            score += weight
+    if _MONEY.search(title):
+        score += 55
+
+    # A question or a how-to is someone's blog post, not the day's news.
+    if title.rstrip().endswith("?") or title.lower().startswith(("how ", "why ", "can i", "ask hn")):
+        score -= 45
+
+    pub = story.get("pub_date")
+    if pub:
+        hours_old = (datetime.now(timezone.utc) - pub).total_seconds() / 3600
+        score += max(0.0, 24.0 - hours_old)  # tiebreaker only
+    return score
+
+
+# Words two unrelated headlines share by accident. Excluded when counting how
+# much substance two titles have in common.
+_WEAK_TOKENS = {
+    "new", "says", "said", "report", "reports", "reported", "launches", "launch",
+    "announces", "announced", "update", "updates", "first", "more", "now",
+    "using", "use", "after", "over", "into", "with", "how", "why", "his", "her",
+    "their", "this", "that", "you", "your", "can", "all", "out", "about",
+}
+
+
+def _same_story(a: set, b: set) -> bool:
+    """Two headlines about one event.
+
+    Jaccard alone misses it: "Nvidia to acquire Hugging Face for $12.93B" and
+    "Nvidia confirms Hugging Face acquisition at $12.93 billion" score 0.38,
+    because each outlet words the rest of the sentence its own way. Overlap on
+    the substantive tokens catches the pair; dropping the filler words keeps
+    "OpenAI launches new model" and "OpenAI launches new API" apart.
+    """
+    if _jaccard(a, b) >= 0.45:
+        return True
+    shared = (a & b) - _WEAK_TOKENS
+    smaller = min(len(a), len(b)) or 1
+    return len(shared) >= 3 and len(a & b) / smaller >= 0.55
+
+
+def _cluster_stories(stories: list[dict]) -> list[dict]:
+    """Group the same story as filed by different outlets.
+
+    The old pipeline threw near-duplicates away. Their number is the signal.
+    """
+    clusters: list[dict] = []
+    for story in stories:
+        tokens = _normalize(story["title"])
+        for cluster in clusters:
+            if any(_same_story(tokens, m_tokens) for m_tokens in cluster["member_tokens"]):
+                cluster["members"].append(story)
+                cluster["member_tokens"].append(tokens)
+                break
+        else:
+            clusters.append({"member_tokens": [tokens], "members": [story]})
+    return clusters
+
+
+def _pick_representative(members: list[dict]) -> dict:
+    """The member worth writing from: real publisher, longest summary."""
+    def rank(s: dict) -> tuple:
+        url = s.get("url", "")
+        real_publisher = "news.google.com" not in url and "reddit.com" not in url
+        return (real_publisher, len(s.get("summary", "")), s.get("points", 0))
+
+    return max(members, key=rank)
 
 
 _TAG_STRIP = re.compile(r"<(script|style|nav|header|footer)[^>]*>.*?</\1>", re.S | re.I)
@@ -338,21 +491,28 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
             continue
         filtered.append(story)
 
-    filtered.sort(
-        key=lambda s: (s.get("points", 5) * 1000 + (s["pub_date"].timestamp() if s.get("pub_date") else 0)),
-        reverse=True,
-    )
+    clusters = _cluster_stories(filtered)
+    ranked = []
+    for cluster in clusters:
+        story = _pick_representative(cluster["members"])
+        story["cluster_size"] = len(cluster["members"])
+        story["also_covered_by"] = sorted(
+            {m["source"] for m in cluster["members"] if m["source"] != story["source"]}
+        )
+        story["score"] = _signal_score(story, story["cluster_size"])
+        ranked.append(story)
 
-    print(f"[news] {len(filtered)} unique stories ready")
+    ranked.sort(key=lambda s: s["score"], reverse=True)
+    print(f"[news] {len(filtered)} unique stories in {len(ranked)} clusters")
 
-    selected = _select_balanced(filtered, limit=6, per_source=3)
+    selected = _select_balanced(ranked, limit=6, per_source=3)
 
     print("[news] Fetching article text for the lead stories...")
-    enrich_with_article_text(selected, count=3)
+    enrich_with_article_text(selected, count=4)
 
-    if dry_run:
-        for s in selected:
-            print(f"  [{s['source']}] {s['title'][:80]}")
+    for i, s in enumerate(selected, 1):
+        covered = f" +{len(s['also_covered_by'])} outlets" if s.get("also_covered_by") else ""
+        print(f"  {i}. [{s['score']:.0f}{covered}] [{s['source']}] {s['title'][:70]}")
 
     return selected
 

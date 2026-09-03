@@ -16,7 +16,7 @@ MAX_TOKENS = 3000
 MAX_TOKENS_RETRY = 4000
 # LinkedIn cuts a post at 3000 characters. Two versions, a divider and the
 # hashtags share that budget.
-MAX_VERSION_CHARS = 1300
+MAX_VERSION_CHARS = 1250
 
 
 @dataclass
@@ -123,12 +123,25 @@ A versão EN é publicada primeiro e é a que a maioria vai ler. Escreva ela com
 original em inglês, não como tradução literal do português. A versão PT cobre os mesmos \
 fatos e pode ter frases diferentes.
 
+A notícia nº 1 da lista é a mais relevante do dia pelo ranking (cobertura em vários \
+veículos, dinheiro envolvido, processo, regulação, lançamento grande ou polêmica em curso). \
+O post ABRE por ela. Só troque se a nº 1 vier sem TEXTO DO ARTIGO e a nº 2 vier com — nesse \
+caso abra pela nº 2 e cite a nº 1 na primeira linha de menções.
+
+Nunca dê o parágrafo principal para a notícia mais curiosa, mais recente ou mais fácil de \
+comentar. Aquisição bilionária, processo judicial, decisão de regulador, modelo novo de \
+peso e briga pública ganham de página de FAQ, de mudança de menu e de post de blog.
+
 Escolha 1 ou 2 notícias ENTRE AS QUE TRAZEM TEXTO DO ARTIGO para desenvolver com \
 profundidade — número, nome e o que mudou — e cite as demais em uma linha só, se couberem. \
 Um post que explica bem duas notícias vale mais que um que lista seis.
 
-Cada versão tem no máximo 1300 caracteres. Conte antes de responder: o que passar disso é \
-cortado por parágrafo inteiro na publicação.
+As duas versões cobrem os MESMOS fatos. Se a notícia principal e as menções aparecem na \
+versão EN, aparecem na PT também.
+
+Cada versão tem no máximo 1250 caracteres. Conte antes de responder: o que passar disso é \
+cortado por parágrafo inteiro na publicação, e o parágrafo que cai é o último — o das \
+menções.
 
 Responda APENAS com os blocos abaixo. Nenhuma linha antes do primeiro separador, \
 nenhum comentário sobre o material, nenhuma pergunta.
@@ -243,6 +256,9 @@ def _format_stories_for_prompt(stories: list[dict]) -> str:
             f"   URL: {s.get('url', 'N/A')}",
             f"   Resumo: {summary or 'sem resumo'}",
         ]
+        also = s.get("also_covered_by") or []
+        if also:
+            block.append(f"   Também noticiado por: {', '.join(also)}")
         if article:
             block.append(f"   TEXTO DO ARTIGO: {article}")
             block.append("   -> Tem material. Pode desenvolver em profundidade.")

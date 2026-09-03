@@ -21,12 +21,21 @@ LINKEDIN_USERNAME = "@danquiell"
 
 def build_linkedin_post(content) -> str:
     """English first (the version most of the feed reads), then PT-BR, then the
-    hashtags once at the end so they do not break the text in half."""
+    hashtags once at the end so they do not break the text in half.
+
+    Each version is labelled with its locale tag so a reader scrolling past
+    knows which half is theirs before reading a line of it.
+    """
     divider = "\n\n──────────────────\n\n"
-    parts = [p.strip() for p in (content.linkedin_en, content.linkedin_pt) if p.strip()]
+    labelled = [
+        (f"[EN/US]\n\n{content.linkedin_en.strip()}", content.linkedin_en.strip()),
+        (f"[PT/BR]\n\n{content.linkedin_pt.strip()}", content.linkedin_pt.strip()),
+    ]
+    parts = [text for text, raw in labelled if raw]
     # Last gate before publishing: never send the same body twice under a
     # divider that promises a second language.
-    if len(parts) == 2 and parts[0] == parts[1]:
+    raws = [raw for _, raw in labelled if raw]
+    if len(raws) == 2 and raws[0] == raws[1]:
         parts = parts[:1]
     body = divider.join(parts)
     tags = getattr(content, "hashtags", "").strip()
@@ -105,6 +114,9 @@ def run(dry_run: bool = False):
 
         # The run log is the only record of what actually went out: the token
         # cannot read a post back (ugcPosts.GET returns 403 for w_member_social).
+        if len(linkedin_text) > 2900:
+            print(f"[WARN] Post is {len(linkedin_text)} chars — LinkedIn cuts at 3000")
+
         print(f"\n--- POST TEXT ({len(linkedin_text)} chars) ---")
         print(linkedin_text)
         print("--- END POST TEXT ---\n")
