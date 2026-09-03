@@ -505,7 +505,9 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
     ranked.sort(key=lambda s: s["score"], reverse=True)
     print(f"[news] {len(filtered)} unique stories in {len(ranked)} clusters")
 
-    selected = _select_balanced(ranked, limit=6, per_source=3)
+    selected = _select_balanced(
+        ranked, limit=6, per_source=3, df=_document_frequency(filtered)
+    )
 
     print("[news] Fetching article text for the lead stories...")
     enrich_with_article_text(selected, count=4)
@@ -517,26 +519,56 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
     return selected
 
 
-def _select_balanced(stories: list[dict], limit: int, per_source: int) -> list[dict]:
-    """Pick the top stories with a cap per source.
+def _document_frequency(stories: list[dict]) -> dict[str, int]:
+    df: dict[str, int] = {}
+    for story in stories:
+        for token in _normalize(story["title"]):
+            df[token] = df.get(token, 0) + 1
+    return df
+
+
+def _select_balanced(
+    stories: list[dict],
+    limit: int,
+    per_source: int,
+    df: dict[str, int] | None = None,
+) -> list[dict]:
+    """Pick the top stories with a cap per source and no repeated event.
 
     On 2026-09-01 the whole digest came from Hacker News, and every entry
     carried a bare title, so the model had no facts to write from and answered
     with a refusal instead of a post. A source cap keeps at least half the list
     coming from feeds that ship a summary.
+
+    On 2026-09-03 the six slots held three actual stories: the NYC school AI ban
+    arrived worded three different ways and clustering caught none of the pairs.
+    A rare name shared by two headlines — "Mamdani" in two of them — is a better
+    duplicate test than word overlap, because the words around a proper noun are
+    exactly what each outlet rewrites.
     """
+    df = df or {}
+    rare_ceiling = max(3, len(stories) // 40)
+
+    def distinctive(story: dict) -> set[str]:
+        return {t for t in _normalize(story["title"]) if df.get(t, 0) <= rare_ceiling}
+
     picked: list[dict] = []
+    picked_names: list[set[str]] = []
     counts: dict[str, int] = {}
     for story in stories:
         source = story.get("source", "")
         if counts.get(source, 0) >= per_source:
             continue
+        names = distinctive(story)
+        if any(names & seen for seen in picked_names):
+            continue
         picked.append(story)
+        picked_names.append(names)
         counts[source] = counts.get(source, 0) + 1
         if len(picked) >= limit:
             return picked
 
-    # Cap left the list short: fill from what is left, best-ranked first.
+    # Caps left the list short: fill from what is left, best-ranked first.
     if len(picked) < limit:
         chosen = {id(s) for s in picked}
         picked.extend(s for s in stories if id(s) not in chosen)

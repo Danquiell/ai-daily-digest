@@ -136,6 +136,11 @@ Escolha 1 ou 2 notícias ENTRE AS QUE TRAZEM TEXTO DO ARTIGO para desenvolver co
 profundidade — número, nome e o que mudou — e cite as demais em uma linha só, se couberem. \
 Um post que explica bem duas notícias vale mais que um que lista seis.
 
+A lista pode trazer o MESMO acontecimento em duas entradas, com títulos diferentes de \
+veículos diferentes. Trate as duas como uma notícia só: cite o fato uma vez, com o número \
+mais preciso entre os dois títulos. Nunca escreva uma menção que descreve a própria lista \
+("também chegou ao Hacker News junto com a reportagem sobre X").
+
 As duas versões cobrem os MESMOS fatos. Se a notícia principal e as menções aparecem na \
 versão EN, aparecem na PT também.
 
