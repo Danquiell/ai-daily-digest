@@ -113,6 +113,27 @@ def _is_ai_related(title: str, summary: str = "") -> bool:
     return any(kw in text for kw in AI_KEYWORDS)
 
 
+# Press-release syndication. These carry a dollar figure in every headline, so
+# the money signal scores them like real deal news: a market-forecast release
+# reached a published post as "the AI Personal Finance And Wealth Management
+# Platform market is projected to cross $29.81 billion by 2030".
+_WIRE_DOMAINS = (
+    "einnews.com", "einpresswire.com", "prnewswire.com", "businesswire.com",
+    "globenewswire.com", "openpr.com", "digitaljournal.com", "accesswire.com",
+    "prweb.com", "newsfilecorp.com",
+)
+_WIRE_TITLE = re.compile(
+    r"\b(market (size|share|report|research|outlook|analysis)|cagr|forecast to|"
+    r"by 20[3-9]\d|industry report|market to (reach|grow|cross))\b",
+    re.I,
+)
+
+
+def _is_press_release(title: str, url: str) -> bool:
+    host = urllib.parse.urlparse(url or "").netloc.lower()
+    return any(d in host for d in _WIRE_DOMAINS) or bool(_WIRE_TITLE.search(title))
+
+
 def load_history() -> dict:
     if HISTORY_PATH.exists():
         with open(HISTORY_PATH) as f:
@@ -486,6 +507,8 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
         if h in seen:
             continue
         seen.add(h)
+        if _is_press_release(story["title"], story.get("url", "")):
+            continue
         if is_duplicate(story["title"], history):
             print(f"  [skip-dup] {story['title'][:60]}")
             continue
