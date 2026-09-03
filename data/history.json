@@ -1,76 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-20",
-      "topics": [
-        "Show HN: I trained a 125M model to autocomplete piano on-device",
-        "AI companies destroy physical books – let's scan rare books before it's too late",
-        "Show HN: Huzzah – a novel approach to coding with AI",
-        "Vomit: Clean up Claude 5's token output with a separate LLM",
-        "Anti-AI fonts are useless and harmful",
-        "DiffusionGemma Technical Report"
-      ],
-      "title_hashes": [
-        "b05252aecd3dbf44d22e91ab5ca25eadfb091f7c5a20adced2648fa2daaddc43",
-        "ef513b7812a69e3746e857042b845cfb36acaae8fd4e956efbd7a0a9525430eb",
-        "46b67f3bbbe8bf72cc3f5e506e169bfcb838b5f3c7740e02382216841eaa3518",
-        "e47329321885a9995a971b8d67c423b8d566f646e0f3c68255b4a4b2b63a074b",
-        "9c079f06a0b19ab43e8293802414da1a75f0d053035566c367803b708e2b00f1",
-        "46f29f13c56652ca81c7cf1445110a5e541b5162859c273472ab851f247ac05c"
-      ],
-      "topic_tokens": [
-        [
-          "show",
-          "trained",
-          "125m",
-          "model",
-          "autocomplete",
-          "piano",
-          "device"
-        ],
-        [
-          "companies",
-          "destroy",
-          "physical",
-          "books",
-          "let",
-          "scan",
-          "rare",
-          "books",
-          "before",
-          "too",
-          "late"
-        ],
-        [
-          "show",
-          "huzzah",
-          "novel",
-          "approach",
-          "coding"
-        ],
-        [
-          "vomit",
-          "clean",
-          "claude",
-          "token",
-          "output",
-          "separate",
-          "llm"
-        ],
-        [
-          "anti",
-          "fonts",
-          "useless",
-          "harmful"
-        ],
-        [
-          "diffusiongemma",
-          "technical",
-          "report"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-21",
       "topics": [
         "Kagi added a setting for removing paywalled links from search results",
@@ -956,6 +886,89 @@
           "threshold",
           "security",
           "boulevard"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "topics": [
+        "Can I opt out of my input or output data being used for training?",
+        "Aging brains blend memories together instead of just forgetting them",
+        "Qantas Airbus A380 engine failure in 2010 (2023)",
+        "DJI’s new robovac can climb obstacles, vacuum quietly, and claims much improved privacy",
+        "Nvidia confirms it will buy Hugging Face for $12.9 billion",
+        "Nvidia is buying Hugging Face for almost $13 billion"
+      ],
+      "title_hashes": [
+        "73384b46bcb123398f20b6401c5ef9057a15c2b465e64ad58b1c287d9d9302ed",
+        "02c55df6d4387412aff7d1e73b79a8af3a4d2976ec90747827f64c027e8859bd",
+        "353124398c806043eca46ed14eaf18406317d9698538d8e33ad427d4ec7a3f48",
+        "64bbaef36feada1109d9c7f57866a5ddc57efce22d17c8f38c95c44221995801",
+        "4cf2ed51dea02f5edacf324220e7bc868f05ee58fe9863bd0e13283de6be5ad6",
+        "95f50206b3f0a3ee232091560926ee9ef7d7dc14793f1ee7b292966223c4c11e"
+      ],
+      "topic_tokens": [
+        [
+          "can",
+          "opt",
+          "out",
+          "input",
+          "output",
+          "data",
+          "being",
+          "used",
+          "training"
+        ],
+        [
+          "aging",
+          "brains",
+          "blend",
+          "memories",
+          "together",
+          "instead",
+          "just",
+          "forgetting",
+          "them"
+        ],
+        [
+          "qantas",
+          "airbus",
+          "a380",
+          "engine",
+          "failure",
+          "2010",
+          "2023"
+        ],
+        [
+          "dji",
+          "new",
+          "robovac",
+          "can",
+          "climb",
+          "obstacles",
+          "vacuum",
+          "quietly",
+          "claims",
+          "much",
+          "improved",
+          "privacy"
+        ],
+        [
+          "nvidia",
+          "confirms",
+          "will",
+          "buy",
+          "hugging",
+          "face",
+          "billion"
+        ],
+        [
+          "nvidia",
+          "buying",
+          "hugging",
+          "face",
+          "almost",
+          "billion"
         ]
       ]
     }
