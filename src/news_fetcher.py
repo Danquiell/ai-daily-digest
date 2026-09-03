@@ -505,9 +505,7 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
     ranked.sort(key=lambda s: s["score"], reverse=True)
     print(f"[news] {len(filtered)} unique stories in {len(ranked)} clusters")
 
-    selected = _select_balanced(
-        ranked, limit=6, per_source=3, df=_document_frequency(filtered)
-    )
+    selected = _select_balanced(ranked, limit=6, per_source=3)
 
     print("[news] Fetching article text for the lead stories...")
     enrich_with_article_text(selected, count=4)
@@ -519,19 +517,34 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
     return selected
 
 
-def _document_frequency(stories: list[dict]) -> dict[str, int]:
-    df: dict[str, int] = {}
-    for story in stories:
-        for token in _normalize(story["title"]):
-            df[token] = df.get(token, 0) + 1
-    return df
+def _stem(token: str) -> str:
+    """Crude suffix strip, enough to match how two outlets word one event.
+
+    "Mamdani bans AI in NYC schools" and "NYC Public Schools banning AI use
+    through middle school" share nothing until bans/banning and schools/school
+    collapse to the same token.
+    """
+    for suffix in ("ing", "ed", "es", "s"):
+        if token.endswith(suffix) and len(token) > len(suffix) + 2:
+            stem = token[: -len(suffix)]
+            # banning -> bann -> ban, so it meets bans -> ban.
+            if len(stem) > 3 and stem[-1] == stem[-2] and stem[-1] not in "lsfz":
+                stem = stem[:-1]
+            return stem
+    return token
+
+
+_WEAK_STEMS = {_stem(t) for t in _WEAK_TOKENS} | {"artificial", "intelligence"}
+
+
+def _content_stems(title: str) -> set[str]:
+    return {_stem(t) for t in _normalize(title)} - _WEAK_STEMS
 
 
 def _select_balanced(
     stories: list[dict],
     limit: int,
     per_source: int,
-    df: dict[str, int] | None = None,
 ) -> list[dict]:
     """Pick the top stories with a cap per source and no repeated event.
 
@@ -541,29 +554,23 @@ def _select_balanced(
     coming from feeds that ship a summary.
 
     On 2026-09-03 the six slots held three actual stories: the NYC school AI ban
-    arrived worded three different ways and clustering caught none of the pairs.
-    A rare name shared by two headlines — "Mamdani" in two of them — is a better
-    duplicate test than word overlap, because the words around a proper noun are
-    exactly what each outlet rewrites.
+    arrived worded three different ways. Selection rejects a candidate sharing
+    two content stems with one already picked — a looser bar than clustering,
+    which is right here: a repeat in a six-item list costs more than a missed
+    story, and the story below it is one line down the ranking.
     """
-    df = df or {}
-    rare_ceiling = max(3, len(stories) // 40)
-
-    def distinctive(story: dict) -> set[str]:
-        return {t for t in _normalize(story["title"]) if df.get(t, 0) <= rare_ceiling}
-
     picked: list[dict] = []
-    picked_names: list[set[str]] = []
+    picked_stems: list[set[str]] = []
     counts: dict[str, int] = {}
     for story in stories:
         source = story.get("source", "")
         if counts.get(source, 0) >= per_source:
             continue
-        names = distinctive(story)
-        if any(names & seen for seen in picked_names):
+        stems = _content_stems(story["title"])
+        if any(len(stems & seen) >= 2 for seen in picked_stems):
             continue
         picked.append(story)
-        picked_names.append(names)
+        picked_stems.append(stems)
         counts[source] = counts.get(source, 0) + 1
         if len(picked) >= limit:
             return picked

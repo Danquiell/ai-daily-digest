@@ -224,23 +224,40 @@ def _parse_blocks(text: str) -> dict[str, str]:
 
 
 def _trim_to_paragraph(text: str, limit: int) -> str:
-    """Cut at the last paragraph break that fits.
+    """Cut to whole sentences under the limit.
 
     LinkedIn caps a post at 3000 characters, and both versions plus the divider
-    and the hashtags share that budget. A draft that ran 1843 + 1936 would have
-    been cut by LinkedIn itself, mid-sentence.
+    and the hashtags share that budget. Dropping the overflowing paragraph whole
+    is too blunt: a PT version 51 characters over the limit lost its closing
+    paragraph and came out at 625 against the English version's 1209, so the
+    Portuguese reader never saw the other stories at all.
     """
     text = (text or "").strip()
     if len(text) <= limit:
         return text
+
     kept: list[str] = []
-    total = 0
+    used = 0
     for para in text.split("\n\n"):
-        cost = len(para) + (2 if kept else 0)
-        if total + cost > limit:
-            break
-        kept.append(para)
-        total += cost
+        gap = 2 if kept else 0
+        if used + gap + len(para) <= limit:
+            kept.append(para)
+            used += gap + len(para)
+            continue
+
+        # Keep the sentences of this paragraph that still fit.
+        budget = limit - used - gap
+        sentences = re.split(r"(?<=[.!?])\s+", para)
+        partial: list[str] = []
+        for sentence in sentences:
+            candidate = " ".join(partial + [sentence])
+            if len(candidate) > budget:
+                break
+            partial.append(sentence)
+        if partial:
+            kept.append(" ".join(partial))
+        break
+
     if not kept:
         return text[:limit].rsplit(" ", 1)[0].rstrip(",;—-")
     return "\n\n".join(kept)
