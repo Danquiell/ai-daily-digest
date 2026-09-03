@@ -14,9 +14,10 @@ MODEL = "claude-haiku-4-5-20251001"
 # the answer mid-PT on 2026-09-01, which killed every block after it.
 MAX_TOKENS = 3000
 MAX_TOKENS_RETRY = 4000
-# LinkedIn cuts a post at 3000 characters. Two versions, a divider and the
-# hashtags share that budget.
-MAX_VERSION_CHARS = 1250
+# LinkedIn cuts a post at 3000 characters. The labels, the divider and the
+# hashtags cost about 160, leaving ~1420 per version. 1250 was over-cautious
+# and cost a Portuguese version its closing paragraph over a 39-char overflow.
+MAX_VERSION_CHARS = 1400
 
 
 @dataclass
@@ -144,7 +145,7 @@ mais preciso entre os dois títulos. Nunca escreva uma menção que descreve a p
 As duas versões cobrem os MESMOS fatos. Se a notícia principal e as menções aparecem na \
 versão EN, aparecem na PT também.
 
-Cada versão tem no máximo 1250 caracteres. Conte antes de responder: o que passar disso é \
+Cada versão tem no máximo 1400 caracteres. Conte antes de responder: o que passar disso é \
 cortado por parágrafo inteiro na publicação, e o parágrafo que cai é o último — o das \
 menções.
 
@@ -254,8 +255,11 @@ def _trim_to_paragraph(text: str, limit: int) -> str:
             if len(candidate) > budget:
                 break
             partial.append(sentence)
-        if partial:
-            kept.append(" ".join(partial))
+        # A one-line remnant ("O timing importa.") reads worse than no
+        # paragraph at all.
+        remnant = " ".join(partial)
+        if len(remnant) >= 80:
+            kept.append(remnant)
         break
 
     if not kept:
