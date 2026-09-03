@@ -126,15 +126,14 @@ fatos e pode ter frases diferentes.
 
 A notícia nº 1 da lista é a mais relevante do dia pelo ranking (cobertura em vários \
 veículos, dinheiro envolvido, processo, regulação, lançamento grande ou polêmica em curso). \
-O post ABRE por ela. Só troque se a nº 1 vier sem TEXTO DO ARTIGO e a nº 2 vier com — nesse \
-caso abra pela nº 2 e cite a nº 1 na primeira linha de menções.
+O post ABRE por ela. Só desça na lista se a nº 1 estiver marcada como SÓ TÍTULO: aí abra \
+pela primeira que tenha material e cite a nº 1 logo na primeira linha de menções.
 
 Nunca dê o parágrafo principal para a notícia mais curiosa, mais recente ou mais fácil de \
 comentar. Aquisição bilionária, processo judicial, decisão de regulador, modelo novo de \
 peso e briga pública ganham de página de FAQ, de mudança de menu e de post de blog.
 
-Escolha 1 ou 2 notícias ENTRE AS QUE TRAZEM TEXTO DO ARTIGO para desenvolver com \
-profundidade — número, nome e o que mudou — e cite as demais em uma linha só, se couberem. \
+Escolha 1 ou 2 notícias ENTRE AS QUE TÊM MATERIAL para desenvolver com profundidade — número, nome e o que mudou — e cite as demais em uma linha só, se couberem. \
 Um post que explica bem duas notícias vale mais que um que lista seis.
 
 A lista pode trazer o MESMO acontecimento em duas entradas, com títulos diferentes de \
@@ -288,6 +287,8 @@ def _format_stories_for_prompt(stories: list[dict]) -> str:
         if article:
             block.append(f"   TEXTO DO ARTIGO: {article}")
             block.append("   -> Tem material. Pode desenvolver em profundidade.")
+        elif len(summary) >= 150:
+            block.append("   -> Resumo do veículo serve de material. Pode desenvolver, atribuindo ao veículo.")
         else:
             block.append("   -> SÓ TÍTULO. Vai para a linha de menções, não para um parágrafo.")
         lines.append("\n".join(block))
