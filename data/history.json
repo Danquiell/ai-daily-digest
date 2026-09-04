@@ -1,78 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-21",
-      "topics": [
-        "Kagi added a setting for removing paywalled links from search results",
-        "I'm becoming AI-blind",
-        "Claudette: Make Claude stop talking like a BuzzFeed article",
-        "GPT 5.6 Sol 20% price reduction",
-        "AI boosted homework scores, then exam scores dropped: study",
-        "Show HN: OzBrain, a shared brain for knowledge between agents and your team"
-      ],
-      "title_hashes": [
-        "6507139cab1c1da76b0200c423333e637dc023fb7273ce5d3a23889a4002fd79",
-        "9539edc6f8bd89ad73843fb4515f09e0bf22bc9f95a7db8a1e7c5d789d66ed5b",
-        "1df2263eaa5bdd74efc083599f4762163e56dd87f58e6a645fc755f245106d5c",
-        "ed0a901663ffdad468e62fb730141ce1485641aa03b28c32c4f1aa98a4023c59",
-        "1ae412dedbb3f1cb708f170d211a00ce66bf98ad6af406e303a577801434bec3",
-        "c4750247292c845303b383ece94afcc62d3aedfcc0869e3fc594c87eb888f255"
-      ],
-      "topic_tokens": [
-        [
-          "kagi",
-          "added",
-          "setting",
-          "removing",
-          "paywalled",
-          "links",
-          "search",
-          "results"
-        ],
-        [
-          "becoming",
-          "blind"
-        ],
-        [
-          "claudette",
-          "make",
-          "claude",
-          "stop",
-          "talking",
-          "like",
-          "buzzfeed",
-          "article"
-        ],
-        [
-          "gpt",
-          "sol",
-          "price",
-          "reduction"
-        ],
-        [
-          "boosted",
-          "homework",
-          "scores",
-          "then",
-          "exam",
-          "scores",
-          "dropped",
-          "study"
-        ],
-        [
-          "show",
-          "ozbrain",
-          "shared",
-          "brain",
-          "knowledge",
-          "between",
-          "agents",
-          "your",
-          "team"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-22",
       "topics": [
         "Why your local LLM feels dumber than it is",
@@ -969,6 +897,89 @@
           "face",
           "almost",
           "billion"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "topics": [
+        "Nvidia to acquire Hugging Face",
+        "NYC schools ban student use of generative AI in classrooms through middle school - StateScoop",
+        "OpenAI's GPT-6 Astra on ARC-AGI-3",
+        "Broadcom's Artificial Intelligence (AI) Chip Sales Surged 221% to $16.7 Billion Last Quarter: Is the Stock a Screaming Buy Right Now? - The Motley Fool",
+        "It’s not just you; ChatGPT, Claude, and Grok were all down in confirmed outages",
+        "Claude outage – Resolved"
+      ],
+      "title_hashes": [
+        "d6d76acaca793d379f52e6153848a6f2cfb95576f5e3a1a65be66231450f9b57",
+        "5872ff3c8190a8d1cbd84cbce66154acc90e089044240591a055c6ea1209d586",
+        "db1680d4288e1d30345e07966c30c5af89a5aef5a6a9a45c3dc6b9548ae872cc",
+        "988166497a97ad575ec59204e0bc3a1f3a85878ffec071eac9cb63850a724af4",
+        "62091f1da88bf4587d1c4ee12c19bb0ca85dad31a5081b84c253b9305465dd35",
+        "8c1b7bf4a15ae3407d1975bbff107b44c70078484960a5e3f7c83c954cab5e9d"
+      ],
+      "topic_tokens": [
+        [
+          "nvidia",
+          "acquire",
+          "hugging",
+          "face"
+        ],
+        [
+          "nyc",
+          "schools",
+          "ban",
+          "student",
+          "use",
+          "generative",
+          "classrooms",
+          "through",
+          "middle",
+          "school",
+          "statescoop"
+        ],
+        [
+          "openai",
+          "gpt",
+          "astra",
+          "arc",
+          "agi"
+        ],
+        [
+          "broadcom",
+          "artificial",
+          "intelligence",
+          "chip",
+          "sales",
+          "surged",
+          "221",
+          "billion",
+          "last",
+          "quarter",
+          "stock",
+          "screaming",
+          "buy",
+          "right",
+          "now",
+          "motley",
+          "fool"
+        ],
+        [
+          "not",
+          "just",
+          "you",
+          "chatgpt",
+          "claude",
+          "grok",
+          "all",
+          "down",
+          "confirmed",
+          "outages"
+        ],
+        [
+          "claude",
+          "outage",
+          "resolved"
         ]
       ]
     }
