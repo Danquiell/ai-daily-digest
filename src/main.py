@@ -11,12 +11,26 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from news_fetcher import fetch_news, load_history
-from content_generator import generate_content
+from content_generator import generate_content, _trim_to_paragraph
 from image_generator import generate_card
 from linkedin_poster import post_with_image, post_text, post_sources_comment
 from history_updater import update_history, git_commit_history, already_posted
 
 LINKEDIN_USERNAME = "@danquiell"
+
+# LinkedIn cuts a post at 3000 characters, without saying so.
+LINKEDIN_MAX_CHARS = 3000
+
+
+def _assemble(en: str, pt: str, tags: str) -> str:
+    divider = "\n\n──────────────────\n\n"
+    parts = []
+    if en:
+        parts.append(f"[EN/US]\n\n{en}")
+    if pt:
+        parts.append(f"[PT/BR]\n\n{pt}")
+    body = divider.join(parts)
+    return f"{body}\n\n{tags}" if tags else body
 
 
 def build_linkedin_post(content) -> str:
@@ -26,20 +40,24 @@ def build_linkedin_post(content) -> str:
     Each version is labelled with its locale tag so a reader scrolling past
     knows which half is theirs before reading a line of it.
     """
-    divider = "\n\n──────────────────\n\n"
-    labelled = [
-        (f"[EN/US]\n\n{content.linkedin_en.strip()}", content.linkedin_en.strip()),
-        (f"[PT/BR]\n\n{content.linkedin_pt.strip()}", content.linkedin_pt.strip()),
-    ]
-    parts = [text for text, raw in labelled if raw]
+    en = content.linkedin_en.strip()
+    pt = content.linkedin_pt.strip()
     # Last gate before publishing: never send the same body twice under a
     # divider that promises a second language.
-    raws = [raw for _, raw in labelled if raw]
-    if len(raws) == 2 and raws[0] == raws[1]:
-        parts = parts[:1]
-    body = divider.join(parts)
+    if en and en == pt:
+        pt = ""
     tags = getattr(content, "hashtags", "").strip()
-    return f"{body}\n\n{tags}" if tags else body
+
+    post = _assemble(en, pt, tags)
+    if len(post) <= LINKEDIN_MAX_CHARS or not pt:
+        return post
+
+    # Two versions at the per-version cap plus labels, divider and hashtags can
+    # just clear 3000. Give the overflow to the Portuguese version, which sits
+    # second and would be the half LinkedIn cut anyway.
+    overflow = len(post) - LINKEDIN_MAX_CHARS
+    print(f"[post] Assembled post ran {len(post)} chars — trimming PT by {overflow}")
+    return _assemble(en, _trim_to_paragraph(pt, len(pt) - overflow), tags)
 
 
 def build_sources_comment(stories: list[dict]) -> str:
