@@ -10,10 +10,12 @@ from datetime import date as date_type
 import anthropic
 
 MODEL = "claude-haiku-4-5-20251001"
-# EN + PT (1300 chars each) + tags + teaser + subtitle + query. The old 1200 cut
-# the answer mid-PT on 2026-09-01, which killed every block after it.
-MAX_TOKENS = 3000
-MAX_TOKENS_RETRY = 4000
+# EN post plus tags, teaser, subtitle and image query in the first call; the
+# Portuguese version alone in the second. The old single call at 1200 was cut
+# inside the PT block on 2026-09-01, which killed every block after it.
+MAX_TOKENS_EN = 2200
+MAX_TOKENS_PT = 1500
+MAX_TOKENS_RETRY = 3500
 # LinkedIn cuts a post at 3000 characters. The labels, the divider and the
 # hashtags cost about 160, leaving ~1420 per version. 1250 was over-cautious
 # and cost a Portuguese version its closing paragraph over a 39-char overflow.
@@ -107,13 +109,13 @@ Forma:
 - A versão PT é português brasileiro correto: concordância de gênero e número, artigo antes
   de nome de empresa quando o uso pede ("a Amazon", "a Mistral"), regência certa. Nome de
   produto e termo técnico ficam em inglês; o resto da frase, não.
-- Máximo 1300 caracteres por versão (EN e PT contados separadamente). Antes de responder, confira o tamanho; se passar, corte o parágrafo que carrega menos informação, não as frases com número.
+- Máximo 1400 caracteres por versão. Antes de responder, confira o tamanho; se passar, corte o parágrafo que carrega menos informação, não as frases com número.
 - Termine com uma pergunta específica sobre uma decisão real que o leitor da área enfrenta, ou com o último fato concreto. Nunca "o que vocês acham?".
-- Nenhuma das duas versões leva hashtag no corpo. As hashtags saem em bloco separado.
+- O corpo do post não leva hashtag. As hashtags saem em bloco separado.
 """
 
-_LINKEDIN_USER_TMPL = """\
-Escreva UM post bilíngue do LinkedIn sobre as principais notícias de IA e tecnologia \
+_EN_USER_TMPL = """\
+Escreva o post do LinkedIn EM INGLÊS sobre as principais notícias de IA e tecnologia \
 de ontem ({date}). As notícias são:
 
 {stories}
@@ -124,9 +126,7 @@ Contexto das últimas 2 semanas (NÃO repita esses tópicos principais):
 ÂNGULO OBRIGATÓRIO HOJE: USE O ÂNGULO #{style_num} conforme descrito no sistema.
 A primeira frase tem que ser reconhecível como o ângulo #{style_num}.
 
-A versão EN é publicada primeiro e é a que a maioria vai ler. Escreva ela como texto \
-original em inglês, não como tradução literal do português. A versão PT cobre os mesmos \
-fatos e pode ter frases diferentes.
+Escreva em inglês nativo, não em inglês traduzido do português.
 
 A notícia nº 1 da lista é a mais relevante do dia pelo ranking (cobertura em vários \
 veículos, dinheiro envolvido, processo, regulação, lançamento grande ou polêmica em curso). \
@@ -145,10 +145,7 @@ veículos diferentes. Trate as duas como uma notícia só: cite o fato uma vez, 
 mais preciso entre os dois títulos. Nunca escreva uma menção que descreve a própria lista \
 ("também chegou ao Hacker News junto com a reportagem sobre X").
 
-As duas versões cobrem os MESMOS fatos. Se a notícia principal e as menções aparecem na \
-versão EN, aparecem na PT também.
-
-Cada versão tem no máximo 1400 caracteres. Conte antes de responder: o que passar disso é \
+O post tem no máximo 1400 caracteres. Conte antes de responder: o que passar disso é \
 cortado por parágrafo inteiro na publicação, e o parágrafo que cai é o último — o das \
 menções.
 
@@ -158,8 +155,6 @@ nenhum comentário sobre o material, nenhuma pergunta.
 Formate a resposta assim — use EXATAMENTE estes separadores:
 ---EN---
 [post em inglês, sem hashtags]
----PT---
-[post em português, sem hashtags]
 ---TAGS---
 [4 a 5 hashtags em inglês, separadas por espaço, específicas ao tema do dia. Ex: #AI #OpenSourceLLM #SoftwareEngineering #Benchmarks]
 ---TEASER---
@@ -171,8 +166,49 @@ Formate a resposta assim — use EXATAMENTE estes separadores:
 ---END---
 """
 
+_PT_USER_TMPL = """\
+Abaixo está o post em inglês já fechado. Escreva a versão em português brasileiro DO MESMO \
+post, que sai publicada logo abaixo dele.
 
-def _call_claude(system: str, user: str, max_tokens: int) -> tuple[str, str]:
+POST EM INGLÊS:
+{en_post}
+
+MATERIAL DE ORIGEM (para conferir número, nome próprio e grafia — não acrescente nada que \
+não esteja aqui nem no post em inglês):
+
+{stories}
+
+Regras desta versão:
+
+1. MESMA QUANTIDADE DE PARÁGRAFOS, na mesma ordem. O inglês tem {paragraphs} parágrafos; \
+o português tem {paragraphs}. Cada parágrafo do inglês vira um parágrafo em português.
+2. Mesmos fatos, nenhum a mais e nenhum a menos. Se o inglês cita quatro notícias, o \
+português cita as quatro, com os mesmos números.
+3. Não é tradução literal. Escreva como quem pensa em português: ordem da frase, regência, \
+conectivo e pontuação naturais do idioma. Onde o inglês usa uma construção sem equivalente, \
+reescreva a frase mantendo o fato.
+4. Nome de produto, empresa, benchmark e termo técnico consagrado ficam em inglês \
+("open-source", "benchmark", "prompt"). O resto da frase, não. Nada de "performance" onde \
+cabe "desempenho", nem "outage" onde cabe "queda".
+5. Concordância e artigo corretos: "a Nvidia", "a Anthropic", "o Gemini, do Google".
+6. Valor em dólar escreve-se "US$ 13 bilhões", não "$13 bilhões". Decimal com vírgula: \
+"62,7%".
+7. Máximo 1400 caracteres. Sem hashtag.
+
+Responda APENAS com o bloco abaixo, nenhuma linha antes dele:
+---PT---
+[post em português]
+---END---
+"""
+
+
+def _paragraph_count(text: str) -> int:
+    return len([p for p in (text or "").split("\n\n") if p.strip()])
+
+
+def _call_claude(
+    system: str, user: str, max_tokens: int, prefill: str = "---EN---"
+) -> tuple[str, str]:
     """Returns (text, stop_reason). The caller has to look at stop_reason:
     a response cut at max_tokens loses every block after the cut.
 
@@ -182,7 +218,6 @@ def _call_claude(system: str, user: str, max_tokens: int) -> tuple[str, str]:
     inside the format leaves no room for a preamble.
     """
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    prefill = "---EN---"
     msg = client.messages.create(
         model=MODEL,
         max_tokens=max_tokens,
@@ -320,6 +355,68 @@ def _opening_style_for_date(d: date_type) -> int:
     return (d.timetuple().tm_yday % 8) + 1
 
 
+def _call_with_retry(system: str, user: str, max_tokens: int, prefill: str = "---EN---") -> str:
+    """One call, retried once at a larger budget if the answer was cut."""
+    raw, stop_reason = _call_claude(system, user, max_tokens, prefill)
+    if stop_reason == "max_tokens":
+        print("[content] Answer hit max_tokens — retrying with a larger budget")
+        raw, stop_reason = _call_claude(system, user, MAX_TOKENS_RETRY, prefill)
+    if stop_reason == "max_tokens":
+        raise RuntimeError(
+            "Claude answer truncated twice at max_tokens — refusing to post a "
+            "half-generated digest. The next cron attempt retries today."
+        )
+    print(f"[content] Answer: {len(raw)} chars, stop_reason={stop_reason!r}")
+    return raw
+
+
+def _generate_pt(en_post: str, stories_text: str, dry_run: bool = False) -> str:
+    """Write the Portuguese version from the finished English post.
+
+    Returns "" rather than raising: an English-only post is worth publishing,
+    a missing post is not.
+    """
+    if dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
+        return "[DRY RUN - post PT de exemplo]"
+
+    wanted = _paragraph_count(en_post)
+    prompt = _PT_USER_TMPL.format(
+        en_post=en_post, stories=stories_text, paragraphs=wanted
+    )
+
+    print(f"[content] Generating the Portuguese version ({wanted} paragraphs)...")
+    try:
+        raw = _call_with_retry(_LINKEDIN_SYSTEM, prompt, MAX_TOKENS_PT, prefill="---PT---")
+        pt = _parse_blocks(raw).get("PT", "")
+    except Exception as e:
+        print(f"[content] Portuguese call failed: {e}")
+        return ""
+
+    if pt and _paragraph_count(pt) < wanted:
+        print(
+            f"[content] PT came back with {_paragraph_count(pt)} paragraphs against "
+            f"{wanted} in English — asking again"
+        )
+        retry_prompt = prompt + (
+            f"\n\nATENÇÃO: a resposta anterior veio com menos parágrafos que o inglês. "
+            f"Conte os parágrafos antes de responder: são {wanted}, separados por linha "
+            f"em branco. Nenhuma notícia citada no inglês pode ficar de fora."
+        )
+        try:
+            raw = _call_with_retry(
+                _LINKEDIN_SYSTEM, retry_prompt, MAX_TOKENS_PT, prefill="---PT---"
+            )
+            retried = _parse_blocks(raw).get("PT", "")
+            if retried and _paragraph_count(retried) >= _paragraph_count(pt):
+                pt = retried
+        except Exception as e:
+            print(f"[content] Portuguese retry failed: {e}")
+
+    if len(pt) > MAX_VERSION_CHARS:
+        print(f"[content] PT ran {len(pt)} chars — trimming to whole sentences")
+    return _trim_to_paragraph(pt, MAX_VERSION_CHARS)
+
+
 def generate_content(
     stories: list[dict],
     history: dict,
@@ -336,8 +433,8 @@ def generate_content(
     post_date = date_type.fromisoformat(date_str)
     style_num = _opening_style_for_date(post_date)
 
-    print(f"[content] Generating LinkedIn post (EN + PT-BR) — opening angle #{style_num}...")
-    linkedin_prompt = _LINKEDIN_USER_TMPL.format(
+    print(f"[content] Generating the English post — opening angle #{style_num}...")
+    en_prompt = _EN_USER_TMPL.format(
         date=date_str,
         stories=stories_text,
         recent_context=recent_ctx,
@@ -346,57 +443,45 @@ def generate_content(
 
     # A dry run still generates real text: the copy is the thing worth previewing,
     # and Haiku costs a fraction of a cent. Only posting and history are skipped.
-    stop_reason = ""
     if dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
         print("[content] No ANTHROPIC_API_KEY — using placeholder copy")
-        linkedin_raw = (
+        en_raw = (
             "---EN---\n[DRY RUN - EN post placeholder]\n"
-            "---PT---\n[DRY RUN - post PT de exemplo]\n"
             "---TAGS---\n#AI #Tech\n"
             "---TEASER---\nModelo aberto alcanca GPT-4 em codigo\n"
             "---SUBTITLE---\nMeta liberou os pesos sob licenca permissiva\n"
             "---IMGQUERY---\nhumanoid robot closeup\n---END---"
         )
     else:
-        linkedin_raw, stop_reason = _call_claude(
-            _LINKEDIN_SYSTEM, linkedin_prompt, MAX_TOKENS
-        )
-        if stop_reason == "max_tokens":
-            print("[content] Answer hit max_tokens — retrying with a larger budget")
-            linkedin_raw, stop_reason = _call_claude(
-                _LINKEDIN_SYSTEM, linkedin_prompt, MAX_TOKENS_RETRY
-            )
-        if stop_reason == "max_tokens":
-            raise RuntimeError(
-                "Claude answer truncated twice at max_tokens — refusing to post a "
-                "half-generated digest. The next cron attempt retries today."
-            )
+        en_raw = _call_with_retry(_LINKEDIN_SYSTEM, en_prompt, MAX_TOKENS_EN)
 
-    print(f"[content] Answer: {len(linkedin_raw)} chars, stop_reason={stop_reason!r}")
-    blocks = _parse_blocks(linkedin_raw)
+    blocks = _parse_blocks(en_raw)
     linkedin_en = blocks.get("EN", "")
-    linkedin_pt = blocks.get("PT", "")
     hashtags = blocks.get("TAGS", "")
     image_teaser = blocks.get("TEASER", "")
     image_subtitle = blocks.get("SUBTITLE", "")
     image_query = blocks.get("IMGQUERY", "")
 
-    missing = [t.strip("-") for t in _BLOCK_TAGS[:-1] if not blocks.get(t.strip("-"))]
+    missing = [k for k in ("EN", "TAGS", "TEASER", "SUBTITLE", "IMGQUERY") if not blocks.get(k)]
     if missing:
-        print(f"[content] Blocks missing from the answer: {', '.join(missing)}")
+        print(f"[content] Blocks missing from the English answer: {', '.join(missing)}")
 
-    if not linkedin_en and not linkedin_pt:
+    if not linkedin_en:
         print("[content] Raw answer that could not be parsed:")
         print("-" * 60)
-        print(linkedin_raw[:2000])
+        print(en_raw[:2000])
         print("-" * 60)
-        raise ValueError("Claude answer carried neither an EN nor a PT block")
+        raise ValueError("Claude answer carried no EN block")
 
-    for label, value in (("EN", linkedin_en), ("PT", linkedin_pt)):
-        if len(value) > MAX_VERSION_CHARS:
-            print(f"[content] {label} ran {len(value)} chars — trimming to the last full paragraph")
+    if len(linkedin_en) > MAX_VERSION_CHARS:
+        print(f"[content] EN ran {len(linkedin_en)} chars — trimming to whole sentences")
     linkedin_en = _trim_to_paragraph(linkedin_en, MAX_VERSION_CHARS)
-    linkedin_pt = _trim_to_paragraph(linkedin_pt, MAX_VERSION_CHARS)
+
+    # The Portuguese version is written from the finished English post rather
+    # than alongside it. Asking for both in one answer produced a PT version one
+    # paragraph shorter than the EN one on two runs out of five, and the missing
+    # paragraph was the one carrying the other stories.
+    linkedin_pt = _generate_pt(linkedin_en, stories_text, dry_run=dry_run)
 
     # One language repeated twice reads as a bug to anyone scrolling the feed.
     # Drop the duplicate and publish the single version instead.
@@ -436,7 +521,11 @@ def generate_content(
         print(f"\n--- TAGS ---\n{result.hashtags}")
         print(f"--- TEASER ---\n{result.image_teaser}")
         print(f"--- SUBTITLE ---\n{result.image_subtitle}")
-        print(f"--- CHARS --- EN {len(result.linkedin_en)} | PT {len(result.linkedin_pt)}")
+        print(
+            f"--- CHARS --- EN {len(result.linkedin_en)} | PT {len(result.linkedin_pt)}"
+            f"  --- PARAGRAPHS --- EN {_paragraph_count(result.linkedin_en)} | "
+            f"PT {_paragraph_count(result.linkedin_pt)}"
+        )
 
     return result
 
