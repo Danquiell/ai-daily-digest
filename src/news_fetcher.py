@@ -442,31 +442,46 @@ def fetch_article_text(url: str, limit: int = 1400) -> str:
     refuses to write or invents the details it is missing. Both happened on
     2026-09-01.
     """
-    if not url or "news.ycombinator.com" in url:
+    host = urllib.parse.urlparse(url or "").netloc
+    if not url or "news.ycombinator.com" in url or "news.google.com" in host:
         return ""
     try:
         req = urllib.request.Request(
             url,
             headers={
-                "User-Agent": "Mozilla/5.0 (compatible; AIDigestBot/1.0)",
-                "Accept": "text/html,application/xhtml+xml",
+                # A bot user agent gets 403 from most publishers, openai.com
+                # included, and every one of six lead stories came back empty.
+                "User-Agent": (
+                    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+                ),
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "en-US,en;q=0.9",
             },
         )
         with urllib.request.urlopen(req, timeout=12) as resp:
             ctype = resp.headers.get("Content-Type", "")
             if "html" not in ctype.lower():
                 return ""
-            raw = resp.read(400_000).decode("utf-8", errors="replace")
+            raw = resp.read(600_000).decode("utf-8", errors="replace")
     except Exception as e:
-        print(f"  [article] {urllib.parse.urlparse(url).netloc}: {type(e).__name__}")
+        print(f"  [article] {host}: {type(e).__name__}")
         return ""
 
     body = _TAG_STRIP.sub(" ", raw)
     # Paragraph text carries the article; everything else on the page is chrome.
     paragraphs = re.findall(r"<p[^>]*>(.*?)</p>", body, re.S | re.I)
-    text = " ".join(_WS.sub(" ", _TAGS.sub(" ", p)).strip() for p in paragraphs)
-    text = _WS.sub(" ", text).strip()
+    text = _WS.sub(" ", " ".join(_TAGS.sub(" ", p) for p in paragraphs)).strip()
+
     if len(text) < 200:
+        # Pages that build their body out of divs yield no <p> at all. Strip the
+        # whole document instead and keep the longest run of prose in it.
+        stripped = _WS.sub(" ", _TAGS.sub(" ", body)).strip()
+        sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", stripped) if len(s) > 40]
+        text = " ".join(sentences)
+
+    if len(text) < 200:
+        print(f"  [article] {host}: no readable text")
         return ""
     return text[:limit]
 
@@ -531,7 +546,7 @@ def fetch_news(dry_run: bool = False) -> list[dict]:
     selected = _select_balanced(ranked, limit=6, per_source=3)
 
     print("[news] Fetching article text for the lead stories...")
-    enrich_with_article_text(selected, count=4)
+    enrich_with_article_text(selected, count=5)
 
     for i, s in enumerate(selected, 1):
         covered = f" +{len(s['also_covered_by'])} outlets" if s.get("also_covered_by") else ""

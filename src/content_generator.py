@@ -68,7 +68,11 @@ Material desigual (acontece todo dia — não é motivo para não escrever):
   material não disser. "Feito para respostas de baixa latência", "adiciona capacidades de
   segurança", "supera os concorrentes em velocidade" — se não está no texto, é invenção.
 - Não acrescente contexto histórico que não está no material ("a versão anterior era o
-  padrão para X", "isso vinha sendo esperado desde Y"). Se você não leu, não escreva.
+  padrão para X", "isso vinha sendo esperado desde Y", "uma trajetória que começou há três
+  anos"). Se você não leu, não escreva.
+- Número de escala — quantos modelos a plataforma hospeda, quantos usuários tem, há quantos
+  anos existe, qual a fatia de mercado — só entra se estiver escrito no material desta
+  notícia. Você não sabe esses números de cabeça; o que parece memória é chute.
 - Nome de veículo, empresa, pesquisador ou relatório só entra se aparecer no material.
   Nunca crie um nome de fonte para dar credibilidade a uma frase.
 - Entradas do Hacker News trazem pontuação e número de comentários. São dados reais, mas
