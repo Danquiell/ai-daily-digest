@@ -1,83 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-22",
-      "topics": [
-        "Why your local LLM feels dumber than it is",
-        "NanoGPT Speedrun Frontier",
-        "A week of using Codex more than Claude",
-        "Tragically, as many as 9625 out of every 10k individuals may be neurotypical",
-        "How Big Tech Captured American Schools - The New York Times",
-        "\"Artificial intelligence (AI) can create a goal to preserve itself.\" This is the diagnosis of Richar.. - 매일경제"
-      ],
-      "title_hashes": [
-        "d2b5922759f4cc00a7728cba18acc4aa4d979dffc31269fecdf25fedad4154c0",
-        "678977c6e66f3f6228d6a47dea59247b15cf692a519c68cc3f2bad111017b772",
-        "7f9551600c03f7fe491ff19203892e41287898f33b8e6d49e55200139c8e7ba0",
-        "32752e7e13f5dd01c6264fc00245b6a6d1aeb882f4f3059398a71b577a128f5f",
-        "33c0bace52916c7a53556013480c29c346f1b4dced360ce1fbc8c30ce5900e06",
-        "01c11393613e5d1d8a93563377fa20e0616feed6698b925019da0c838dd847a4"
-      ],
-      "topic_tokens": [
-        [
-          "why",
-          "your",
-          "local",
-          "llm",
-          "feels",
-          "dumber",
-          "than"
-        ],
-        [
-          "nanogpt",
-          "speedrun",
-          "frontier"
-        ],
-        [
-          "week",
-          "using",
-          "codex",
-          "more",
-          "than",
-          "claude"
-        ],
-        [
-          "tragically",
-          "many",
-          "9625",
-          "out",
-          "every",
-          "10k",
-          "individuals",
-          "may",
-          "neurotypical"
-        ],
-        [
-          "how",
-          "big",
-          "tech",
-          "captured",
-          "american",
-          "schools",
-          "new",
-          "york",
-          "times"
-        ],
-        [
-          "artificial",
-          "intelligence",
-          "can",
-          "create",
-          "goal",
-          "preserve",
-          "itself",
-          "this",
-          "diagnosis",
-          "richar"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-23",
       "topics": [
         "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
@@ -980,6 +903,83 @@
           "claude",
           "outage",
           "resolved"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "topics": [
+        "GPT-6 Astra",
+        "Discovery of a new OpenAI agent message board",
+        "Nvidia’s Hugging Face Acquisition Is a $12.9 Billion Bet on Open-Source AI",
+        "EXCLUSIVE: Anthropic IPO launch shifts toward mid-October, sources say - Reuters",
+        "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
+        "Authors Wrangle With Publishers Over $1.5 Billion Anthropic A.I. Settlement - The New York Times"
+      ],
+      "title_hashes": [
+        "5151b4d70af26ff6fa4d1168341c74160e41aa9ba2a93522f9e0edc1d84c563d",
+        "bbdcb943c435b5cf3aa8f711e2310242a67f586e7cabc1799d1394996669a1a0",
+        "5579d2843aa7869a1326e7dbb21d6a89c1cbbc81257f9c4bcf2abb97ae6a6e27",
+        "a0323b8ceb260e8d0343cefd85c5e7c028e1c9525a3e09a85b5733ed15dbe90a",
+        "c23df8f95b9641526b558836e6b8edf207cbd02c7fc3a262e9ded1b4b04e15ab",
+        "72076c7438ea595aad6713f6dfcb011c8538f1492d7d9effe9db2fb1d73c14d1"
+      ],
+      "topic_tokens": [
+        [
+          "gpt",
+          "astra"
+        ],
+        [
+          "discovery",
+          "new",
+          "openai",
+          "agent",
+          "message",
+          "board"
+        ],
+        [
+          "nvidia",
+          "hugging",
+          "face",
+          "acquisition",
+          "billion",
+          "bet",
+          "open",
+          "source"
+        ],
+        [
+          "exclusive",
+          "anthropic",
+          "ipo",
+          "launch",
+          "shifts",
+          "toward",
+          "mid",
+          "october",
+          "sources",
+          "say",
+          "reuters"
+        ],
+        [
+          "ask",
+          "why",
+          "openai",
+          "claude",
+          "grok",
+          "simultaneously",
+          "down"
+        ],
+        [
+          "authors",
+          "wrangle",
+          "publishers",
+          "over",
+          "billion",
+          "anthropic",
+          "settlement",
+          "new",
+          "york",
+          "times"
         ]
       ]
     }
