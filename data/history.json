@@ -1,81 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-23",
-      "topics": [
-        "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
-        "My agent.md to improve LLM-assisted code quality",
-        "Google Workspace thinks my domain is an email provider (2025)",
-        "How Complex Systems Fail (1998)",
-        "I built a low-latency AI companion that plays Skyrim with me",
-        "New EU-wide product repair rules come into force"
-      ],
-      "title_hashes": [
-        "825452cecd3c5d2851ff5e8c37fd5b0cc1bf7373605e157060fd930fedabba46",
-        "960bebed118ec05765ba9c81dc14c5bfa91375cf2beccb10876649390068eb2a",
-        "8b859411c4d08341287f0201e3962bf3ee0146cb6c5a98c6ab3b4269fae39a66",
-        "8a26d5457fa5370510e52bcdc2571e94893c219dd8298fe1e50c65f43ac4bb7e",
-        "8fc0faefed94826f5bacb0daaf61dcaa108951d7495b04aa14248c44aed87bfe",
-        "247567cca7e7ca8e7dd5009bf55302919efa82ae28159f41efedb52bfb3b630e"
-      ],
-      "topic_tokens": [
-        [
-          "anthropic",
-          "best",
-          "model",
-          "struggles",
-          "attract",
-          "users",
-          "cheaper",
-          "tools",
-          "thrive"
-        ],
-        [
-          "agent",
-          "improve",
-          "llm",
-          "assisted",
-          "code",
-          "quality"
-        ],
-        [
-          "google",
-          "workspace",
-          "thinks",
-          "domain",
-          "email",
-          "provider",
-          "2025"
-        ],
-        [
-          "how",
-          "complex",
-          "systems",
-          "fail",
-          "1998"
-        ],
-        [
-          "built",
-          "low",
-          "latency",
-          "companion",
-          "that",
-          "plays",
-          "skyrim"
-        ],
-        [
-          "new",
-          "wide",
-          "product",
-          "repair",
-          "rules",
-          "come",
-          "into",
-          "force"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-24",
       "topics": [
         "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
@@ -980,6 +905,101 @@
           "new",
           "york",
           "times"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "topics": [
+        "OpenAI admits to German wiki ‘incident’",
+        "The Seattle Times and Newsday sue OpenAI and Microsoft, alleging the companies trained AI on their journalism; Microsoft and OpenAI are funders of Seattle Times (Todd Bishop/GeekWire)",
+        "DVLT Investors Have Opportunity to Lead Datavault AI Inc. Securities Fraud Lawsuit with SBS Law - GlobeNewswire",
+        "Corporate America is getting hooked on open-source AI",
+        "Anthropic’s $2 trillion IPO puts powerful external trustees in spotlight",
+        "Federal court denies X.AI’s bid to block Minnesota’s AI nudification ban - Valley News Live"
+      ],
+      "title_hashes": [
+        "c3d244756f4eaab5c470cc2be11438c9b5fe8f2c0e84754808fb9fd9d0c062fa",
+        "e824d453b488bae504268063e05bfc3c8237fb52b4a3a044b90d55e5b3549e8d",
+        "7be1c56bad2fbb75364a260818ab4c48032452f461f5f85ab97eb82b0a1b4e1e",
+        "679e3165d8155df5ddebf5726fe18682449a245a1fcdb25505d8c3511c9d496a",
+        "fda61ca6ba87dffae8fb3aca50ef0248b20c52de39e2f6c5c2dab8cd20d6f478",
+        "ed2e79c96810d5fb80b889c9351703e637120400a5862b20cccd305c52c8184b"
+      ],
+      "topic_tokens": [
+        [
+          "openai",
+          "admits",
+          "german",
+          "wiki",
+          "incident"
+        ],
+        [
+          "seattle",
+          "times",
+          "newsday",
+          "sue",
+          "openai",
+          "microsoft",
+          "alleging",
+          "companies",
+          "trained",
+          "their",
+          "journalism",
+          "microsoft",
+          "openai",
+          "funders",
+          "seattle",
+          "times",
+          "todd",
+          "bishop",
+          "geekwire"
+        ],
+        [
+          "dvlt",
+          "investors",
+          "have",
+          "opportunity",
+          "lead",
+          "datavault",
+          "inc",
+          "securities",
+          "fraud",
+          "lawsuit",
+          "sbs",
+          "law",
+          "globenewswire"
+        ],
+        [
+          "corporate",
+          "america",
+          "getting",
+          "hooked",
+          "open",
+          "source"
+        ],
+        [
+          "anthropic",
+          "trillion",
+          "ipo",
+          "puts",
+          "powerful",
+          "external",
+          "trustees",
+          "spotlight"
+        ],
+        [
+          "federal",
+          "court",
+          "denies",
+          "bid",
+          "block",
+          "minnesota",
+          "nudification",
+          "ban",
+          "valley",
+          "news",
+          "live"
         ]
       ]
     }
