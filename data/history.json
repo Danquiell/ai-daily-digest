@@ -1,81 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-24",
-      "topics": [
-        "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
-        "iCloud+ Hide My Email addresses will remain on icloud.com",
-        "I were 17, I'd learn how to build LLMs from scratch",
-        "IPFS Maintainers Winding Down",
-        "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
-        "LLMs could control their host machines by exploiting inference engines"
-      ],
-      "title_hashes": [
-        "13a83621bd090016e54867a51a8ecc1d5aed33445db0d2e505a1c8e38271df00",
-        "eaedc41baea065edb73ec81c37aafd39cea65f098cf10aea45b54faf7e9a85b2",
-        "23a14602cf5e75cec89c57a7896ed9d403d80d0f808616318cbe5d7cc0d0d265",
-        "1b77b883f4906554c2d5ca08698272716571e51efbddae749189219f371bbe83",
-        "898dcd7836aaadcf7f8db42bf5aee11ec43ca79bfb0b31afef5ce38c88e15f4a",
-        "1bc33ba6983772874fd37c376234089ab10ee7919d3466d29878c25c7cc053ff"
-      ],
-      "topic_tokens": [
-        [
-          "paint",
-          "photos",
-          "inivisibly",
-          "watermark",
-          "even",
-          "locally",
-          "generated",
-          "output",
-          "guid"
-        ],
-        [
-          "icloud",
-          "hide",
-          "email",
-          "addresses",
-          "will",
-          "remain",
-          "icloud"
-        ],
-        [
-          "learn",
-          "how",
-          "build",
-          "llms",
-          "scratch"
-        ],
-        [
-          "ipfs",
-          "maintainers",
-          "winding",
-          "down"
-        ],
-        [
-          "openai",
-          "gpt",
-          "sol",
-          "price",
-          "reduction",
-          "until",
-          "least",
-          "nov"
-        ],
-        [
-          "llms",
-          "could",
-          "control",
-          "their",
-          "host",
-          "machines",
-          "exploiting",
-          "inference",
-          "engines"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-25",
       "topics": [
         "OpenAI Jalapeño: Better than Nvidia Blackwell",
@@ -1000,6 +925,98 @@
           "valley",
           "news",
           "live"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "topics": [
+        "OpenAI 2025 financials $38.5B loss ahead of IPO",
+        "NVIDIA Acquires Hugging Face for $13 Billion: A Boost for Europe's Open-Source AI - indexbox.io",
+        "Your intellectual fly is open when you use an LLM to author a post (2025)",
+        "3 Historical Reasons I'll Be Completely Avoiding Anthropic's Upcoming and Potentially Record-Breaking IPO - The Motley Fool",
+        "The complex corporate web behind a $3.2 billion AI data center",
+        "Cato raises €6M led by Keen Venture Partners to bring AI to Italy’s tender market - Tech Funding News"
+      ],
+      "title_hashes": [
+        "d2703b852bc8556cbee6107bf432f9fa0a8c65b6b4c8af56ead8d7e8fc47d797",
+        "f7da7c29642a508b1898060d7d0de85c18efa6eeaaefe0ff35bed67e101c6870",
+        "98db50dd348a2db930984fd19a359e193ad5109d5017cb117acb24de942d0c17",
+        "af17414bc5bfdec6448a6ce5d55131f07e710f57bdbda73592e9a3073575f221",
+        "56b786b156369b5cd13f07e35cec0ecc4cf19330967c8cb0b8a9b1ad6e0b51de",
+        "31d8ed4c6baedb4ae807ca8bb20fbecee2bb64313abc137794151b8fe6948a92"
+      ],
+      "topic_tokens": [
+        [
+          "openai",
+          "2025",
+          "financials",
+          "loss",
+          "ahead",
+          "ipo"
+        ],
+        [
+          "nvidia",
+          "acquires",
+          "hugging",
+          "face",
+          "billion",
+          "boost",
+          "europe",
+          "open",
+          "source",
+          "indexbox"
+        ],
+        [
+          "your",
+          "intellectual",
+          "fly",
+          "open",
+          "when",
+          "you",
+          "use",
+          "llm",
+          "author",
+          "post",
+          "2025"
+        ],
+        [
+          "historical",
+          "reasons",
+          "completely",
+          "avoiding",
+          "anthropic",
+          "upcoming",
+          "potentially",
+          "record",
+          "breaking",
+          "ipo",
+          "motley",
+          "fool"
+        ],
+        [
+          "complex",
+          "corporate",
+          "web",
+          "behind",
+          "billion",
+          "data",
+          "center"
+        ],
+        [
+          "cato",
+          "raises",
+          "led",
+          "keen",
+          "venture",
+          "partners",
+          "bring",
+          "italy",
+          "tender",
+          "market",
+          "tech",
+          "funding",
+          "news"
         ]
       ]
     }
