@@ -1,81 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-25",
-      "topics": [
-        "OpenAI Jalapeño: Better than Nvidia Blackwell",
-        "Show HN: I made a Raspberry with Qwen my local car AI",
-        "Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
-        "Disrupting a new covert influence campaign from Russia",
-        "Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others",
-        "I miss the old Claude Code"
-      ],
-      "title_hashes": [
-        "051815f273cc47b6ef638437132b37bdf24cd287a8454a78fb0161da5e0d4189",
-        "da1a048fd57010cacd36e18d042c6a017b5048ede842f32b6d1b095cbc5b4851",
-        "0e23b92cf1b2b2f24d25f0a731698a25e0fd55eb2c77723499b883c9920a9144",
-        "0757c9b2a4fac6fccb284e25a780e46d0e0902128093be4356b974dd5b973c29",
-        "5a43a54d81db8f5b9189dba2f212ae8d2a0c21596799050500d4682eca717097",
-        "75c91b1087fb63b40bfd94406ce105dacbe0905960ae74e8e624ec058072c80c"
-      ],
-      "topic_tokens": [
-        [
-          "openai",
-          "jalape",
-          "better",
-          "than",
-          "nvidia",
-          "blackwell"
-        ],
-        [
-          "show",
-          "made",
-          "raspberry",
-          "qwen",
-          "local",
-          "car"
-        ],
-        [
-          "show",
-          "texbrain",
-          "latex",
-          "editor",
-          "that",
-          "runs",
-          "pdftex",
-          "browser",
-          "via",
-          "wasm"
-        ],
-        [
-          "disrupting",
-          "new",
-          "covert",
-          "influence",
-          "campaign",
-          "russia"
-        ],
-        [
-          "maiao",
-          "gerrit",
-          "style",
-          "code",
-          "review",
-          "workflow",
-          "github",
-          "gitlab",
-          "gitea",
-          "others"
-        ],
-        [
-          "miss",
-          "old",
-          "claude",
-          "code"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-26",
       "topics": [
         "Nvidia agrees to acquire Hugging Face for $13B",
@@ -1017,6 +942,140 @@
           "tech",
           "funding",
           "news"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "topics": [
+        "Anthropic abandons $6 billion acquisition talks with AI startup Decart AI after due diligence - ET CIO",
+        "Mistral raises €3B",
+        "Samsung-Led Mistral AI Completes $3.3 Billion Funding, Valuation Tops $24 Billion as Europe's AI Arms Race Escalates - TradingKey",
+        "Robots protest in Warsaw to call for improved AI regulation Around 30 robots march, wave flags and chant slogans outside Poland's digital affairs ministry in Warsaw as part of a demonstration organized by the \"Democratism\" initiative. The group says it wants t - LinkedIn",
+        "Fields medalist Jacob Tsimerman, set to join OpenAI later this month, launches the Mathematical AI Safety Institute to apply higher math to AI safety problems (Siobhan Roberts/New York Times)",
+        "Forus, which uses AI to help patients get prescribed drugs more quickly by navigating steps like insurance coverage, raised a $150M Series C at a $3B valuation (Micah Barkley/Bloomberg)"
+      ],
+      "title_hashes": [
+        "831cb6fa1d363e3681fb8114e1d20618ae23b0eb408239011e4b99331fcc6774",
+        "6e4d2ae9626136aed264bdc057c23bc538a76cf2e6192f431577983a8ad88dfc",
+        "6a3746faa2d6e9aa87c0ec0b07b3e986e9d9d98ccd4f84a0f843ce2aac33e065",
+        "b237b83223487e4f67f929a0b02fd216ef1c09d0a95032813b7215334c437f83",
+        "de6f00caf9559913fd50808ae400f5448c54cef639539b7ec888e90d38c06bda",
+        "f8693a46b8979b1abf89c6ab0b43ff942ede6740338c6eb29e79c39976b20eb4"
+      ],
+      "topic_tokens": [
+        [
+          "anthropic",
+          "abandons",
+          "billion",
+          "acquisition",
+          "talks",
+          "startup",
+          "decart",
+          "after",
+          "due",
+          "diligence",
+          "cio"
+        ],
+        [
+          "mistral",
+          "raises"
+        ],
+        [
+          "samsung",
+          "led",
+          "mistral",
+          "completes",
+          "billion",
+          "funding",
+          "valuation",
+          "tops",
+          "billion",
+          "europe",
+          "arms",
+          "race",
+          "escalates",
+          "tradingkey"
+        ],
+        [
+          "robots",
+          "protest",
+          "warsaw",
+          "call",
+          "improved",
+          "regulation",
+          "around",
+          "robots",
+          "march",
+          "wave",
+          "flags",
+          "chant",
+          "slogans",
+          "outside",
+          "poland",
+          "digital",
+          "affairs",
+          "ministry",
+          "warsaw",
+          "part",
+          "demonstration",
+          "organized",
+          "democratism",
+          "initiative",
+          "group",
+          "says",
+          "wants",
+          "linkedin"
+        ],
+        [
+          "fields",
+          "medalist",
+          "jacob",
+          "tsimerman",
+          "set",
+          "join",
+          "openai",
+          "later",
+          "this",
+          "month",
+          "launches",
+          "mathematical",
+          "safety",
+          "institute",
+          "apply",
+          "higher",
+          "math",
+          "safety",
+          "problems",
+          "siobhan",
+          "roberts",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "forus",
+          "which",
+          "uses",
+          "help",
+          "patients",
+          "get",
+          "prescribed",
+          "drugs",
+          "more",
+          "quickly",
+          "navigating",
+          "steps",
+          "like",
+          "insurance",
+          "coverage",
+          "raised",
+          "150m",
+          "series",
+          "valuation",
+          "micah",
+          "barkley",
+          "bloomberg"
         ]
       ]
     }
