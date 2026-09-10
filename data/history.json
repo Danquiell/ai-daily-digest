@@ -1,71 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-27",
-      "topics": [
-        "U.S. sanctions against the A/I Collective",
-        "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
-        "Luanti removed from Google Play due to baseless AI copyright notice",
-        "I used AWS cognito for a startup. I wouldn't do it again",
-        "The Analytical AI Handbook",
-        "AI & Tech Brief: The UAE’s AI ambitions - The Washington Post"
-      ],
-      "title_hashes": [
-        "ab36417e8be0e5503ac211988d03716ec55ff110866377b1ed3a0589b07e14ad",
-        "49699856cb813c6854f1197fa48780a5595d27dc1d0f16aa4d35c32fe83e98cb",
-        "8ee7a08cb97231282183e1ab95b0eccc1a08762e376396bfc601740d84dbf8cf",
-        "2efe4914ee17a6a4602344e48a9dca10cee7f066a573bf39ae44eee3deec37c5",
-        "02d39e43bb1988051f1f3dd131af60af52c469e3a052cfd635059ea116548d30",
-        "a9e89da06b3c0acb7666245f44dfa6eba74ffa6a441822cefcb0809c815f39b4"
-      ],
-      "topic_tokens": [
-        [
-          "sanctions",
-          "against",
-          "collective"
-        ],
-        [
-          "judge",
-          "rules",
-          "trump",
-          "administration",
-          "blacklisting",
-          "anthropic",
-          "illegal"
-        ],
-        [
-          "luanti",
-          "removed",
-          "google",
-          "play",
-          "due",
-          "baseless",
-          "copyright",
-          "notice"
-        ],
-        [
-          "used",
-          "aws",
-          "cognito",
-          "startup",
-          "wouldn",
-          "again"
-        ],
-        [
-          "analytical",
-          "handbook"
-        ],
-        [
-          "tech",
-          "brief",
-          "uae",
-          "ambitions",
-          "washington",
-          "post"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-28",
       "topics": [
         "I accidentally turned LLM memory into program analysis",
@@ -1104,6 +1039,87 @@
           "becomes",
           "big",
           "business"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "topics": [
+        "‘Gambling with our lives’: Anthropic researcher quits, warns against self-improving AI",
+        "Political moves in the US to address the risks of artificial intelligence, amid warnings of a threat to humanity - صوت الإمارات",
+        "Shopify acquires Tailwind",
+        "Claude, change the “Add to Cart” button to blue",
+        "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
+        "Mistral AI Raises $3.5B At $24B Valuation In Another Record European AI Round - Crunchbase News"
+      ],
+      "title_hashes": [
+        "f7892c1d114cf6f1b432ec762ce147c44bcd09058e75f6bb42e34fde1a606eed",
+        "928b5c26df81fba097486bce64e4ab46f14cc543e98306b331a8eb9cf0e3fafb",
+        "e2bccea0125c6eb09ff66d748fd0dd486a9a2b5e3dd86669baa1c39528ce882b",
+        "61920a4c005ed3efd621e3259f93d7ea372b79b92f97fd159307b77e70fe500c",
+        "8fbd63870d4764f5d065a2792070dcde276627bad3f64df56f5b93f2f545385c",
+        "062536bee8b362ff60a6587023b56e8301e3c626849ab352c9b2c564c45a7d84"
+      ],
+      "topic_tokens": [
+        [
+          "gambling",
+          "our",
+          "lives",
+          "anthropic",
+          "researcher",
+          "quits",
+          "warns",
+          "against",
+          "self",
+          "improving"
+        ],
+        [
+          "political",
+          "moves",
+          "address",
+          "risks",
+          "artificial",
+          "intelligence",
+          "amid",
+          "warnings",
+          "threat",
+          "humanity"
+        ],
+        [
+          "shopify",
+          "acquires",
+          "tailwind"
+        ],
+        [
+          "claude",
+          "change",
+          "add",
+          "cart",
+          "button",
+          "blue"
+        ],
+        [
+          "research",
+          "startup",
+          "listen",
+          "labs",
+          "scrubbed",
+          "funding",
+          "round",
+          "salesforce",
+          "talks"
+        ],
+        [
+          "mistral",
+          "raises",
+          "24b",
+          "valuation",
+          "another",
+          "record",
+          "european",
+          "round",
+          "crunchbase",
+          "news"
         ]
       ]
     }
