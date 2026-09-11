@@ -1,84 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-28",
-      "topics": [
-        "I accidentally turned LLM memory into program analysis",
-        "StemDeck, a free, open-source and local AI stem separator",
-        "Accounting education and Artificial Intelligence - The Hindu",
-        "MUSC receives grant to develop AI system for youth suicide prevention - Live 5 News",
-        "The turbulent AI era is here. The choices we make now are critical. - gatesnotes.com",
-        "The Fed confronts a powerful new economic force - The Washington Post"
-      ],
-      "title_hashes": [
-        "a956f32898ef405000aa0152b00f602c238b0a12d93504d72b3e8f5abb0de223",
-        "9a827742c5d9999f3e03ecda5ac2ee2b9ca5b498e0cd379bcf7fa8affd16c0c7",
-        "ed13fc43f0ae19c624d973f24682d33ef38f47f7c4573d163d995a85beccebb1",
-        "01ff781493a5c4e575b159e7e8810fe9ae4145fdd651d74282bfa91b6bb4f5ca",
-        "d2f32ff4d101198a9bff9205632f2f1b1bbe1031c222a27b0e76c3e4559a2509",
-        "ebdceb485b073d138c401c0e1295c15d46659842948a7258edf05ce09bc8337f"
-      ],
-      "topic_tokens": [
-        [
-          "accidentally",
-          "turned",
-          "llm",
-          "memory",
-          "into",
-          "program",
-          "analysis"
-        ],
-        [
-          "stemdeck",
-          "free",
-          "open",
-          "source",
-          "local",
-          "stem",
-          "separator"
-        ],
-        [
-          "accounting",
-          "education",
-          "artificial",
-          "intelligence",
-          "hindu"
-        ],
-        [
-          "musc",
-          "receives",
-          "grant",
-          "develop",
-          "system",
-          "youth",
-          "suicide",
-          "prevention",
-          "live",
-          "news"
-        ],
-        [
-          "turbulent",
-          "era",
-          "here",
-          "choices",
-          "make",
-          "now",
-          "critical",
-          "gatesnotes"
-        ],
-        [
-          "fed",
-          "confronts",
-          "powerful",
-          "new",
-          "economic",
-          "force",
-          "washington",
-          "post"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-29",
       "topics": [
         "Good Culture Is the Biggest Productivity Hack, Not AI",
@@ -1120,6 +1042,113 @@
           "round",
           "crunchbase",
           "news"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "topics": [
+        "More questions about whether researchers can trust OpenAI with unpublished math",
+        "OpenAI Agents API",
+        "A US judge dismisses two lawsuits against LinkedIn over its scanning of browser extensions, saying users voluntarily expose data by downloading extensions (Jon Brodkin/Ars Technica)",
+        "Google makes $15B AI infrastructure investment in Finland",
+        "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+        "Tencent-backed AI chipmaker Enflame's shares surged 188% in their Shanghai debut, giving Enflame a market cap of $26.3B, after raising ~$910M in an IPO (Ann Cao/South China Morning Post)"
+      ],
+      "title_hashes": [
+        "a30f40ac212ab25f1bbceb99c44152ccb10cf9bc4a5362c215cc60cde4bd98cb",
+        "53f7e21c847916f5efbd1a709e28f258ec1f84bfab6cfe336f75289eb7749613",
+        "d8efed86ed0ce270e42a827d573408faf7df88a45b6b4357c07bf7216ea18441",
+        "a0b49f1e171c3ca4154fa46fc72e3c2557e3c79a7c037490666a29c548647d65",
+        "eac102954c0c9cfa0109e2c47eb237738171046f82b123cb01b34f25ec92f76f",
+        "de78a22865c4e7453a8a74f471e852a23d21fa902ac18faa7fa71cb465f3cf5e"
+      ],
+      "topic_tokens": [
+        [
+          "more",
+          "questions",
+          "about",
+          "whether",
+          "researchers",
+          "can",
+          "trust",
+          "openai",
+          "unpublished",
+          "math"
+        ],
+        [
+          "openai",
+          "agents",
+          "api"
+        ],
+        [
+          "judge",
+          "dismisses",
+          "two",
+          "lawsuits",
+          "against",
+          "linkedin",
+          "over",
+          "its",
+          "scanning",
+          "browser",
+          "extensions",
+          "saying",
+          "users",
+          "voluntarily",
+          "expose",
+          "data",
+          "downloading",
+          "extensions",
+          "jon",
+          "brodkin",
+          "ars",
+          "technica"
+        ],
+        [
+          "google",
+          "makes",
+          "15b",
+          "infrastructure",
+          "investment",
+          "finland"
+        ],
+        [
+          "cognition",
+          "launches",
+          "new",
+          "swe",
+          "model",
+          "rivaling",
+          "fable",
+          "gpt",
+          "astra"
+        ],
+        [
+          "tencent",
+          "backed",
+          "chipmaker",
+          "enflame",
+          "shares",
+          "surged",
+          "188",
+          "their",
+          "shanghai",
+          "debut",
+          "giving",
+          "enflame",
+          "market",
+          "cap",
+          "after",
+          "raising",
+          "910m",
+          "ipo",
+          "ann",
+          "cao",
+          "south",
+          "china",
+          "morning",
+          "post"
         ]
       ]
     }
