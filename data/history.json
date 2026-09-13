@@ -1,68 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-30",
-      "topics": [
-        "Breaking Claude Code Opus 5 Auto Mode",
-        "Understanding ChatGPT Work",
-        "P99 0 ms* autocomplete for 240M domain names",
-        "How to build a diffusion language model",
-        "ChatGPT Work Tool and Skill Reference",
-        "Continuous Diffusion Language Models (CDLM's)"
-      ],
-      "title_hashes": [
-        "9d114afde56bbf5559835388df5df1604c231c88becc2ba6579c82e111b43c36",
-        "ea88cd88cd38135bac170bfbe095aa8b849a6cbfc9a1bf07f73df6afc0055ee1",
-        "1dc4bc38764d452ce9c16c8afee9bd3486f9fab2399d7d9c02dad9dc2ecc00bd",
-        "c74c6aa8459a658be2d9fef12d8dfbdd948fb1eacf51f555b00e140d7b228867",
-        "d61e650617ccab8546843fa053552f17421fea2a6b2c03eff72304e75b6b1d27",
-        "a781fd2f1c6a32fae77e6acc48c992a09914796475c6397b733c913d08004f4e"
-      ],
-      "topic_tokens": [
-        [
-          "breaking",
-          "claude",
-          "code",
-          "opus",
-          "auto",
-          "mode"
-        ],
-        [
-          "understanding",
-          "chatgpt",
-          "work"
-        ],
-        [
-          "p99",
-          "autocomplete",
-          "240m",
-          "domain",
-          "names"
-        ],
-        [
-          "how",
-          "build",
-          "diffusion",
-          "language",
-          "model"
-        ],
-        [
-          "chatgpt",
-          "work",
-          "tool",
-          "skill",
-          "reference"
-        ],
-        [
-          "continuous",
-          "diffusion",
-          "language",
-          "models",
-          "cdlm"
-        ]
-      ]
-    },
-    {
       "date": "2026-08-31",
       "topics": [
         "Terence Tao explains 6 essential mathematical concepts [video]",
@@ -1153,6 +1091,108 @@
           "sheet",
           "shows",
           "reuters"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "topics": [
+        "Anthropic CEO calls for ‘pacing the frontier’ of AI race amid safety concerns - KFDA | NewsChannel 10 | Amarillo Texas",
+        "OpenAI agents carried out an undisclosed attack on RubyGems",
+        "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
+        "A Void Linux maintainer orphaned over 100 packages because of an AI usage ban - xda-developers.com",
+        "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
+        "Prediction: This Artificial Intelligence (AI) Chip Stock Will Soar After Sept. 30 (Hint: It's Not Micron) - Yahoo Finance"
+      ],
+      "title_hashes": [
+        "db92575f0175a947d5f36160e744b76cf84f031958f828a9862d06d161b0af7f",
+        "728d0dad4035dfe9493e2fd8f2383842e064775a61e11ef1fa667ae1a72c043e",
+        "887ea751797de525d76d621eede04798de023deb88ce9f752f6357d0ef5ff950",
+        "55e737d6fdcfcdbdd1868f3533efddc20a4fde8fe71d343f2c987c47ac396676",
+        "85acc89fd82a13e264ef2bf97bc220b2f1af7f74ef92e55179784135a9d834ca",
+        "34027025b089e187cb0f2561b18aa4a64337b49b6d0738581913f4c9dc70b8da"
+      ],
+      "topic_tokens": [
+        [
+          "anthropic",
+          "ceo",
+          "calls",
+          "pacing",
+          "frontier",
+          "race",
+          "amid",
+          "safety",
+          "concerns",
+          "kfda",
+          "newschannel",
+          "amarillo",
+          "texas"
+        ],
+        [
+          "openai",
+          "agents",
+          "carried",
+          "out",
+          "undisclosed",
+          "attack",
+          "rubygems"
+        ],
+        [
+          "sam",
+          "altman",
+          "says",
+          "openai",
+          "going",
+          "public",
+          "2026",
+          "would",
+          "ill",
+          "advised"
+        ],
+        [
+          "void",
+          "linux",
+          "maintainer",
+          "orphaned",
+          "over",
+          "100",
+          "packages",
+          "because",
+          "usage",
+          "ban",
+          "xda",
+          "developers"
+        ],
+        [
+          "mecka",
+          "nears",
+          "500m",
+          "valuation",
+          "sequoia",
+          "led",
+          "deal",
+          "amid",
+          "rush",
+          "robot",
+          "training",
+          "data"
+        ],
+        [
+          "prediction",
+          "this",
+          "artificial",
+          "intelligence",
+          "chip",
+          "stock",
+          "will",
+          "soar",
+          "after",
+          "sept",
+          "hint",
+          "not",
+          "micron",
+          "yahoo",
+          "finance"
         ]
       ]
     }
