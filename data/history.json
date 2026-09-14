@@ -1,77 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-08-31",
-      "topics": [
-        "Terence Tao explains 6 essential mathematical concepts [video]",
-        "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
-        "44% on ARC-AGI-1 in 67 cents",
-        "EFF to Courts: Don't Rewrite Copyright over AI Hype",
-        "Smartphone LED detects hidden cameras with AI",
-        "Dwarf Fortress is getting the mother of all magic updates"
-      ],
-      "title_hashes": [
-        "9c8491780c3433d047f2f59cb3b7d6d0507b76e54fef20a54da794b841fd7377",
-        "530887598003c0def3bf82b24520d905ab08d6b3a883f9277d12d1571f9201ec",
-        "357a17e9f1df4ff27682253145f2e72978726f699503bcc4f867276a8acc9785",
-        "c73374afe54e9651b315d6a88ae68947f3a959511aed3117ff234cdb4359ca85",
-        "a4ddc617a25314e51152b830be36f7a9a9b579a7bb33b706d9c7f90c6f4dbc46",
-        "5f9270f7bf113234bb39b361f8a0316eb0011d3594080bb73bdeef2cba09301f"
-      ],
-      "topic_tokens": [
-        [
-          "terence",
-          "tao",
-          "explains",
-          "essential",
-          "mathematical",
-          "concepts",
-          "video"
-        ],
-        [
-          "apple",
-          "caught",
-          "off",
-          "guard",
-          "demand",
-          "mac",
-          "mini",
-          "mac",
-          "studio"
-        ],
-        [
-          "arc",
-          "agi",
-          "cents"
-        ],
-        [
-          "eff",
-          "courts",
-          "don",
-          "rewrite",
-          "copyright",
-          "over",
-          "hype"
-        ],
-        [
-          "smartphone",
-          "led",
-          "detects",
-          "hidden",
-          "cameras"
-        ],
-        [
-          "dwarf",
-          "fortress",
-          "getting",
-          "mother",
-          "all",
-          "magic",
-          "updates"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-01",
       "topics": [
         "Gemini 3.8 Flash and 3.8 Flash Cyber",
@@ -1193,6 +1122,109 @@
           "micron",
           "yahoo",
           "finance"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "topics": [
+        "Trump slams Dario Amodei, saying \"the only control or 'guardrails' that AI needs is a STRONG AND SMART (High IQ!) PRESIDENT, and the USA has that, in spades!\" (Hadriana Lowenkron/Bloomberg)",
+        "Some in Silicon Valley Are Questioning the Calls for an A.I. Slowdown - The New York Times",
+        "Everyone should slow down AI development except for me",
+        "This Could Be the Most Underrated Artificial Intelligence Stock to Buy Right Now - The Globe and Mail",
+        "AIRJ: Acquisition creates a revenue-generating AI infrastructure platform with integrated cooling and water solutions - tradingview.com",
+        "Nvidia dismisses \"circular financing\", says every $1 it invests brings back $100"
+      ],
+      "title_hashes": [
+        "831a41f48a593794d1505e265d44ac46e8624be8a8899628601ca078f02f7652",
+        "5625daa0ebd1301c3935e2c03fd2dddbc898d577c8ef42cf22855247f5fcaade",
+        "b36ffbbcc06b0bd457a2a4cde812a05fa5fc5bfb097003f71b31675e95ae8af1",
+        "8c710f29a66d3401cb323ccfecebf4613bd0e3b446cfcb445ece7c9aba3baa11",
+        "2a7880942e690f147d16e8c34f17a99df8f2c4a93aed68d0bfd5e4820f1a7329",
+        "e25a19648bc4f643d2c05de27522691194656d157916ea2194412583425b47c6"
+      ],
+      "topic_tokens": [
+        [
+          "trump",
+          "slams",
+          "dario",
+          "amodei",
+          "saying",
+          "only",
+          "control",
+          "guardrails",
+          "that",
+          "needs",
+          "strong",
+          "smart",
+          "high",
+          "president",
+          "usa",
+          "has",
+          "that",
+          "spades",
+          "hadriana",
+          "lowenkron",
+          "bloomberg"
+        ],
+        [
+          "some",
+          "silicon",
+          "valley",
+          "questioning",
+          "calls",
+          "slowdown",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "everyone",
+          "should",
+          "slow",
+          "down",
+          "development",
+          "except"
+        ],
+        [
+          "this",
+          "could",
+          "most",
+          "underrated",
+          "artificial",
+          "intelligence",
+          "stock",
+          "buy",
+          "right",
+          "now",
+          "globe",
+          "mail"
+        ],
+        [
+          "airj",
+          "acquisition",
+          "creates",
+          "revenue",
+          "generating",
+          "infrastructure",
+          "platform",
+          "integrated",
+          "cooling",
+          "water",
+          "solutions",
+          "tradingview"
+        ],
+        [
+          "nvidia",
+          "dismisses",
+          "circular",
+          "financing",
+          "says",
+          "every",
+          "invests",
+          "brings",
+          "back",
+          "100"
         ]
       ]
     }
