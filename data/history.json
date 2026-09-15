@@ -1,93 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-01",
-      "topics": [
-        "Gemini 3.8 Flash and 3.8 Flash Cyber",
-        "Mistral now trains on user input by default, except on enterprise tier",
-        "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
-        "Amazon’s AI assistant can now spot fake emails from the company",
-        "Hikers who relied on Google’s Gemini AI rescued from Mount Shasta - KRON4",
-        "OpenAI Reveals Astra, Its First AI Model to Reach ‘Critical’ Cybersecurity Risk Threshold - Security Boulevard"
-      ],
-      "title_hashes": [
-        "765bb019f164d552c5ffad983e2d3840cd1a3f7cb03ccc866c513092cac96e9b",
-        "bf3746446d3cc8fe73accb3ef66f85857f7019f06553192a5c0031d3eb0f70d8",
-        "db558cbc35bc192ccdae3152b88d3711e2d63fec75a5f38b328bb96fcce0c3c8",
-        "5b5d4526409059f9a652cd2476c65c68bbb498aae2fe6625d52f816591b32a23",
-        "25bb8ae21ffdc619e694f513009a60d43f5f0c91bdd34cd4728043e3305641ef",
-        "1908fc17880ffe1dd7bb650fbf6f54a6e53a313d1f1fc22feb14b1f5f4d245e5"
-      ],
-      "topic_tokens": [
-        [
-          "gemini",
-          "flash",
-          "flash",
-          "cyber"
-        ],
-        [
-          "mistral",
-          "now",
-          "trains",
-          "user",
-          "input",
-          "default",
-          "except",
-          "enterprise",
-          "tier"
-        ],
-        [
-          "three",
-          "sites",
-          "made",
-          "215",
-          "128",
-          "best",
-          "software",
-          "pages",
-          "perplexity",
-          "cites",
-          "them"
-        ],
-        [
-          "amazon",
-          "assistant",
-          "can",
-          "now",
-          "spot",
-          "fake",
-          "emails",
-          "company"
-        ],
-        [
-          "hikers",
-          "who",
-          "relied",
-          "google",
-          "gemini",
-          "rescued",
-          "mount",
-          "shasta",
-          "kron4"
-        ],
-        [
-          "openai",
-          "reveals",
-          "astra",
-          "its",
-          "first",
-          "model",
-          "reach",
-          "critical",
-          "cybersecurity",
-          "risk",
-          "threshold",
-          "security",
-          "boulevard"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-02",
       "topics": [
         "Can I opt out of my input or output data being used for training?",
@@ -1225,6 +1138,112 @@
           "brings",
           "back",
           "100"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "topics": [
+        "Tech CEOs call for AI regulation. Trump and Congress are not rushing to act - morning-times.com",
+        "FTC chair suspicious of calls for AI antitrust exemptions By Reuters - Investing.com",
+        "Jensen Huang Just Gave Artificial Intelligence (AI) Investors Trillions of Reasons to Remain Bullish - The Globe and Mail",
+        "New York State Assemblyman Alex Bores launches Who Decides, a nonprofit that raised $10M and aims to raise another $20M in 2027 to shape Democratic AI policy (New York Times)",
+        "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+        "Six Anthropic cofounders join Forbes 400 at $15.5 billion each - qz.com"
+      ],
+      "title_hashes": [
+        "7985d7aaa71d90d2dd0f61169bb3b7126ede63bc842ac676a19cdbd22dd6b53e",
+        "08b29eaac6f81ab4071532cd4b0dfa7cb65a0a8403d9daf569900570eef87c6c",
+        "abb3ec71802b9f4d5a2cc4784f47601b2058919b933958f98c4f16da06cc9d67",
+        "1416afa175f0269971459c94614a7f649616d3bb42fdebd52c8ba4ac77f1be9a",
+        "44f5b9b0a7a2297bf43be4a7d3d007fc430837b6c3c1ed031888ae12d4bee0a9",
+        "ca2e2b955c52cd094e001c001633d4b49ff2b37d356b4ec5de936f8b8dda04d6"
+      ],
+      "topic_tokens": [
+        [
+          "tech",
+          "ceos",
+          "call",
+          "regulation",
+          "trump",
+          "congress",
+          "not",
+          "rushing",
+          "act",
+          "morning",
+          "times"
+        ],
+        [
+          "ftc",
+          "chair",
+          "suspicious",
+          "calls",
+          "antitrust",
+          "exemptions",
+          "reuters",
+          "investing"
+        ],
+        [
+          "jensen",
+          "huang",
+          "just",
+          "gave",
+          "artificial",
+          "intelligence",
+          "investors",
+          "trillions",
+          "reasons",
+          "remain",
+          "bullish",
+          "globe",
+          "mail"
+        ],
+        [
+          "new",
+          "york",
+          "state",
+          "assemblyman",
+          "alex",
+          "bores",
+          "launches",
+          "who",
+          "decides",
+          "nonprofit",
+          "that",
+          "raised",
+          "10m",
+          "aims",
+          "raise",
+          "another",
+          "20m",
+          "2027",
+          "shape",
+          "democratic",
+          "policy",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "gpt",
+          "luna",
+          "gpt",
+          "astra",
+          "model",
+          "good",
+          "enough",
+          "code",
+          "review"
+        ],
+        [
+          "six",
+          "anthropic",
+          "cofounders",
+          "join",
+          "forbes",
+          "400",
+          "billion",
+          "each"
         ]
       ]
     }
