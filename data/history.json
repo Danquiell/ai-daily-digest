@@ -1,89 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-02",
-      "topics": [
-        "Can I opt out of my input or output data being used for training?",
-        "Aging brains blend memories together instead of just forgetting them",
-        "Qantas Airbus A380 engine failure in 2010 (2023)",
-        "DJI’s new robovac can climb obstacles, vacuum quietly, and claims much improved privacy",
-        "Nvidia confirms it will buy Hugging Face for $12.9 billion",
-        "Nvidia is buying Hugging Face for almost $13 billion"
-      ],
-      "title_hashes": [
-        "73384b46bcb123398f20b6401c5ef9057a15c2b465e64ad58b1c287d9d9302ed",
-        "02c55df6d4387412aff7d1e73b79a8af3a4d2976ec90747827f64c027e8859bd",
-        "353124398c806043eca46ed14eaf18406317d9698538d8e33ad427d4ec7a3f48",
-        "64bbaef36feada1109d9c7f57866a5ddc57efce22d17c8f38c95c44221995801",
-        "4cf2ed51dea02f5edacf324220e7bc868f05ee58fe9863bd0e13283de6be5ad6",
-        "95f50206b3f0a3ee232091560926ee9ef7d7dc14793f1ee7b292966223c4c11e"
-      ],
-      "topic_tokens": [
-        [
-          "can",
-          "opt",
-          "out",
-          "input",
-          "output",
-          "data",
-          "being",
-          "used",
-          "training"
-        ],
-        [
-          "aging",
-          "brains",
-          "blend",
-          "memories",
-          "together",
-          "instead",
-          "just",
-          "forgetting",
-          "them"
-        ],
-        [
-          "qantas",
-          "airbus",
-          "a380",
-          "engine",
-          "failure",
-          "2010",
-          "2023"
-        ],
-        [
-          "dji",
-          "new",
-          "robovac",
-          "can",
-          "climb",
-          "obstacles",
-          "vacuum",
-          "quietly",
-          "claims",
-          "much",
-          "improved",
-          "privacy"
-        ],
-        [
-          "nvidia",
-          "confirms",
-          "will",
-          "buy",
-          "hugging",
-          "face",
-          "billion"
-        ],
-        [
-          "nvidia",
-          "buying",
-          "hugging",
-          "face",
-          "almost",
-          "billion"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-03",
       "topics": [
         "Nvidia to acquire Hugging Face",
@@ -1244,6 +1161,113 @@
           "400",
           "billion",
           "each"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "topics": [
+        "Wall Street Lunch: AI Regulation Hopes Fade After Trump Calls AI Concerns A ‘Hoax’ - Seeking Alpha",
+        "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
+        "Congress Has Proposed Many Bills for A.I. Regulation. Lawmakers Have Enacted Few. - The New York Times",
+        "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
+        "Poway council votes to ban artificial intelligence data centers - Times of San Diego",
+        "Researchers: rogue OpenAI agents compromised two Hugging Face accounts as early as May 13 to probe the site's servers, nearly two months before the July breach (Reuters)"
+      ],
+      "title_hashes": [
+        "74ffb48ece1ce0b96bdbd870f26f6898e5f46d9bd672bff3084d3bd45b01c4e9",
+        "6ad5d183516e0770656a31c03f61d21bdd2e1b7349fa2ae3b67c9b92628673cb",
+        "2038763043e50d5ad14d9ea99cd330f77ac9ba6d4339c629bb6e93cb6c989781",
+        "a0ab9cfa38bded432fa35fdb04528e538c9111656f31a3238e77bcac9b5167de",
+        "8cd63627acad9b978ce05a3cfdbbff2c41fc70145a8710a26e72de07eaf361da",
+        "9c087d534efc29b0b742b46aadfcaeeed983ce735998f9fe0f4097d23907c177"
+      ],
+      "topic_tokens": [
+        [
+          "wall",
+          "street",
+          "lunch",
+          "regulation",
+          "hopes",
+          "fade",
+          "after",
+          "trump",
+          "calls",
+          "concerns",
+          "hoax",
+          "seeking",
+          "alpha"
+        ],
+        [
+          "openai",
+          "anthropic",
+          "google",
+          "have",
+          "talks",
+          "safety",
+          "weeks"
+        ],
+        [
+          "congress",
+          "has",
+          "proposed",
+          "many",
+          "bills",
+          "regulation",
+          "lawmakers",
+          "have",
+          "enacted",
+          "few",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "don",
+          "need",
+          "regulation",
+          "leave",
+          "safety",
+          "nvidia",
+          "jensen",
+          "huang",
+          "says"
+        ],
+        [
+          "poway",
+          "council",
+          "votes",
+          "ban",
+          "artificial",
+          "intelligence",
+          "data",
+          "centers",
+          "times",
+          "san",
+          "diego"
+        ],
+        [
+          "researchers",
+          "rogue",
+          "openai",
+          "agents",
+          "compromised",
+          "two",
+          "hugging",
+          "face",
+          "accounts",
+          "early",
+          "may",
+          "probe",
+          "site",
+          "servers",
+          "nearly",
+          "two",
+          "months",
+          "before",
+          "july",
+          "breach",
+          "reuters"
         ]
       ]
     }
