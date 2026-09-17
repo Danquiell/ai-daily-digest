@@ -1,89 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-03",
-      "topics": [
-        "Nvidia to acquire Hugging Face",
-        "NYC schools ban student use of generative AI in classrooms through middle school - StateScoop",
-        "OpenAI's GPT-6 Astra on ARC-AGI-3",
-        "Broadcom's Artificial Intelligence (AI) Chip Sales Surged 221% to $16.7 Billion Last Quarter: Is the Stock a Screaming Buy Right Now? - The Motley Fool",
-        "It’s not just you; ChatGPT, Claude, and Grok were all down in confirmed outages",
-        "Claude outage – Resolved"
-      ],
-      "title_hashes": [
-        "d6d76acaca793d379f52e6153848a6f2cfb95576f5e3a1a65be66231450f9b57",
-        "5872ff3c8190a8d1cbd84cbce66154acc90e089044240591a055c6ea1209d586",
-        "db1680d4288e1d30345e07966c30c5af89a5aef5a6a9a45c3dc6b9548ae872cc",
-        "988166497a97ad575ec59204e0bc3a1f3a85878ffec071eac9cb63850a724af4",
-        "62091f1da88bf4587d1c4ee12c19bb0ca85dad31a5081b84c253b9305465dd35",
-        "8c1b7bf4a15ae3407d1975bbff107b44c70078484960a5e3f7c83c954cab5e9d"
-      ],
-      "topic_tokens": [
-        [
-          "nvidia",
-          "acquire",
-          "hugging",
-          "face"
-        ],
-        [
-          "nyc",
-          "schools",
-          "ban",
-          "student",
-          "use",
-          "generative",
-          "classrooms",
-          "through",
-          "middle",
-          "school",
-          "statescoop"
-        ],
-        [
-          "openai",
-          "gpt",
-          "astra",
-          "arc",
-          "agi"
-        ],
-        [
-          "broadcom",
-          "artificial",
-          "intelligence",
-          "chip",
-          "sales",
-          "surged",
-          "221",
-          "billion",
-          "last",
-          "quarter",
-          "stock",
-          "screaming",
-          "buy",
-          "right",
-          "now",
-          "motley",
-          "fool"
-        ],
-        [
-          "not",
-          "just",
-          "you",
-          "chatgpt",
-          "claude",
-          "grok",
-          "all",
-          "down",
-          "confirmed",
-          "outages"
-        ],
-        [
-          "claude",
-          "outage",
-          "resolved"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-04",
       "topics": [
         "GPT-6 Astra",
@@ -1268,6 +1185,104 @@
           "july",
           "breach",
           "reuters"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "topics": [
+        "The king and AI: UK monarch Charles meets artificial intelligence leaders as safety concerns swirl - marketscreener.com",
+        "OpenAI flags 6 new incidents of ‘concerning’ behavior and unveils plan to track it - NBC News",
+        "Nvidia announces native GPU programming in Rust",
+        "US senators added AI antitrust exemption to defense bill, but effort stymied: report - Seeking Alpha",
+        "Problem Solvers Caucus Announces New Working Group on Artificial Intelligence and Evolving Technologies - Problem Solvers Caucus (.gov)",
+        "OpenAI Considers Pre-IPO Funding Round at More Than $1.2 Trillion Valuation - WSJ"
+      ],
+      "title_hashes": [
+        "dca4f0dd867a72e8c24232479a8c0805cba262786c40b5fa36e5d38330d0bde5",
+        "7e63cab084356fecc8494bd7e8b9c5cb3d0d75acaa13fc28b23639c997f6d4eb",
+        "582e9a6d5f180400300bb7aa4d0a70e1b4a5467d5969780265336c15fc6b4b52",
+        "ad5a5ecfa74b62df036f325f4f3846f13ac55013f0ba3869344b2d3fdcdcc448",
+        "c21db3737c0c475aa08688b4a73e96520c73e85ca2cae8a126b901007fbb2a6c",
+        "7c8c4213e5f4ced94775193e8dc060aa63912e4d40d3281f3acdcabcf66aae26"
+      ],
+      "topic_tokens": [
+        [
+          "king",
+          "monarch",
+          "charles",
+          "meets",
+          "artificial",
+          "intelligence",
+          "leaders",
+          "safety",
+          "concerns",
+          "swirl",
+          "marketscreener"
+        ],
+        [
+          "openai",
+          "flags",
+          "new",
+          "incidents",
+          "concerning",
+          "behavior",
+          "unveils",
+          "plan",
+          "track",
+          "nbc",
+          "news"
+        ],
+        [
+          "nvidia",
+          "announces",
+          "native",
+          "gpu",
+          "programming",
+          "rust"
+        ],
+        [
+          "senators",
+          "added",
+          "antitrust",
+          "exemption",
+          "defense",
+          "bill",
+          "effort",
+          "stymied",
+          "report",
+          "seeking",
+          "alpha"
+        ],
+        [
+          "problem",
+          "solvers",
+          "caucus",
+          "announces",
+          "new",
+          "working",
+          "group",
+          "artificial",
+          "intelligence",
+          "evolving",
+          "technologies",
+          "problem",
+          "solvers",
+          "caucus",
+          "gov"
+        ],
+        [
+          "openai",
+          "considers",
+          "pre",
+          "ipo",
+          "funding",
+          "round",
+          "more",
+          "than",
+          "trillion",
+          "valuation",
+          "wsj"
         ]
       ]
     }
