@@ -1,83 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-04",
-      "topics": [
-        "GPT-6 Astra",
-        "Discovery of a new OpenAI agent message board",
-        "Nvidia’s Hugging Face Acquisition Is a $12.9 Billion Bet on Open-Source AI",
-        "EXCLUSIVE: Anthropic IPO launch shifts toward mid-October, sources say - Reuters",
-        "Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?",
-        "Authors Wrangle With Publishers Over $1.5 Billion Anthropic A.I. Settlement - The New York Times"
-      ],
-      "title_hashes": [
-        "5151b4d70af26ff6fa4d1168341c74160e41aa9ba2a93522f9e0edc1d84c563d",
-        "bbdcb943c435b5cf3aa8f711e2310242a67f586e7cabc1799d1394996669a1a0",
-        "5579d2843aa7869a1326e7dbb21d6a89c1cbbc81257f9c4bcf2abb97ae6a6e27",
-        "a0323b8ceb260e8d0343cefd85c5e7c028e1c9525a3e09a85b5733ed15dbe90a",
-        "c23df8f95b9641526b558836e6b8edf207cbd02c7fc3a262e9ded1b4b04e15ab",
-        "72076c7438ea595aad6713f6dfcb011c8538f1492d7d9effe9db2fb1d73c14d1"
-      ],
-      "topic_tokens": [
-        [
-          "gpt",
-          "astra"
-        ],
-        [
-          "discovery",
-          "new",
-          "openai",
-          "agent",
-          "message",
-          "board"
-        ],
-        [
-          "nvidia",
-          "hugging",
-          "face",
-          "acquisition",
-          "billion",
-          "bet",
-          "open",
-          "source"
-        ],
-        [
-          "exclusive",
-          "anthropic",
-          "ipo",
-          "launch",
-          "shifts",
-          "toward",
-          "mid",
-          "october",
-          "sources",
-          "say",
-          "reuters"
-        ],
-        [
-          "ask",
-          "why",
-          "openai",
-          "claude",
-          "grok",
-          "simultaneously",
-          "down"
-        ],
-        [
-          "authors",
-          "wrangle",
-          "publishers",
-          "over",
-          "billion",
-          "anthropic",
-          "settlement",
-          "new",
-          "york",
-          "times"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-05",
       "topics": [
         "OpenAI admits to German wiki ‘incident’",
@@ -1283,6 +1206,103 @@
           "trillion",
           "valuation",
           "wsj"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "topics": [
+        "The king and AI: UK monarch Charles meets artificial intelligence leaders as safety concerns swirl - ABC News - Breaking News, Latest News and Videos",
+        "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+        "Raindrop Announces Series A and $50M in Total Funding Led by CRV to Protect the World from AI Agent Failures - Business Wire",
+        "The AI ‘Slowdown’ Is an Antitrust Mess",
+        "DOJ antitrust official says AI safety coordination does not appear anticompetitive - Reuters",
+        "AI Investment Cycle: Opportunities and Regulation - Funds Society"
+      ],
+      "title_hashes": [
+        "e8152cd740a284dd20b44c5f80b431e04c2bc13a8cc2d6a7bf7a8d5f6ca90044",
+        "d550cc4f2fc0b4cb171fd6fb8c28de3af68827274ef2332c60ce9903cd5c222e",
+        "114169fbf0f6be7f1ced59cf7c2b43edb558e524cad462f7034975df6d7f24f8",
+        "8519f702c557d86405a7d855fee8878bf56ce324d7ab3ef7b0e9bc47ec8f0d1c",
+        "0ca2cf37a78bafd9de6011334a0b8e4754a00956f6b989efd5128967b978dc79",
+        "e597ac9adf07274cd803f111de011fb78d30f38b59ff6fb6be396d3fcadec199"
+      ],
+      "topic_tokens": [
+        [
+          "king",
+          "monarch",
+          "charles",
+          "meets",
+          "artificial",
+          "intelligence",
+          "leaders",
+          "safety",
+          "concerns",
+          "swirl",
+          "abc",
+          "news",
+          "breaking",
+          "news",
+          "latest",
+          "news",
+          "videos"
+        ],
+        [
+          "microsoft",
+          "exec",
+          "called",
+          "scraping",
+          "largest",
+          "theft",
+          "labor",
+          "human",
+          "history",
+          "new",
+          "unredacted",
+          "filings",
+          "reveal"
+        ],
+        [
+          "raindrop",
+          "announces",
+          "series",
+          "50m",
+          "total",
+          "funding",
+          "led",
+          "crv",
+          "protect",
+          "world",
+          "agent",
+          "failures",
+          "business",
+          "wire"
+        ],
+        [
+          "slowdown",
+          "antitrust",
+          "mess"
+        ],
+        [
+          "doj",
+          "antitrust",
+          "official",
+          "says",
+          "safety",
+          "coordination",
+          "does",
+          "not",
+          "appear",
+          "anticompetitive",
+          "reuters"
+        ],
+        [
+          "investment",
+          "cycle",
+          "opportunities",
+          "regulation",
+          "funds",
+          "society"
         ]
       ]
     }
