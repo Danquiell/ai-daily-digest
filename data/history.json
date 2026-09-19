@@ -1,101 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-05",
-      "topics": [
-        "OpenAI admits to German wiki ‘incident’",
-        "The Seattle Times and Newsday sue OpenAI and Microsoft, alleging the companies trained AI on their journalism; Microsoft and OpenAI are funders of Seattle Times (Todd Bishop/GeekWire)",
-        "DVLT Investors Have Opportunity to Lead Datavault AI Inc. Securities Fraud Lawsuit with SBS Law - GlobeNewswire",
-        "Corporate America is getting hooked on open-source AI",
-        "Anthropic’s $2 trillion IPO puts powerful external trustees in spotlight",
-        "Federal court denies X.AI’s bid to block Minnesota’s AI nudification ban - Valley News Live"
-      ],
-      "title_hashes": [
-        "c3d244756f4eaab5c470cc2be11438c9b5fe8f2c0e84754808fb9fd9d0c062fa",
-        "e824d453b488bae504268063e05bfc3c8237fb52b4a3a044b90d55e5b3549e8d",
-        "7be1c56bad2fbb75364a260818ab4c48032452f461f5f85ab97eb82b0a1b4e1e",
-        "679e3165d8155df5ddebf5726fe18682449a245a1fcdb25505d8c3511c9d496a",
-        "fda61ca6ba87dffae8fb3aca50ef0248b20c52de39e2f6c5c2dab8cd20d6f478",
-        "ed2e79c96810d5fb80b889c9351703e637120400a5862b20cccd305c52c8184b"
-      ],
-      "topic_tokens": [
-        [
-          "openai",
-          "admits",
-          "german",
-          "wiki",
-          "incident"
-        ],
-        [
-          "seattle",
-          "times",
-          "newsday",
-          "sue",
-          "openai",
-          "microsoft",
-          "alleging",
-          "companies",
-          "trained",
-          "their",
-          "journalism",
-          "microsoft",
-          "openai",
-          "funders",
-          "seattle",
-          "times",
-          "todd",
-          "bishop",
-          "geekwire"
-        ],
-        [
-          "dvlt",
-          "investors",
-          "have",
-          "opportunity",
-          "lead",
-          "datavault",
-          "inc",
-          "securities",
-          "fraud",
-          "lawsuit",
-          "sbs",
-          "law",
-          "globenewswire"
-        ],
-        [
-          "corporate",
-          "america",
-          "getting",
-          "hooked",
-          "open",
-          "source"
-        ],
-        [
-          "anthropic",
-          "trillion",
-          "ipo",
-          "puts",
-          "powerful",
-          "external",
-          "trustees",
-          "spotlight"
-        ],
-        [
-          "federal",
-          "court",
-          "denies",
-          "bid",
-          "block",
-          "minnesota",
-          "nudification",
-          "ban",
-          "valley",
-          "news",
-          "live"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-06",
       "topics": [
         "OpenAI 2025 financials $38.5B loss ahead of IPO",
@@ -1303,6 +1208,95 @@
           "regulation",
           "funds",
           "society"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "topics": [
+        "Gemini hacked three companies in first known breakout by Google's AI",
+        "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+        "US Military had close call after using AI for hallucinated intelligence report",
+        "The new AgentCore runtime: Elastic, optimized, and consistently fast starts - Amazon Web Services (AWS)",
+        "Applied Materials vs. Broadcom: Comparing Sales Growth Trajectories for These Artificial Intelligence Companies - The Globe and Mail",
+        "Gavin Newsom is pushing for an AI kill switch"
+      ],
+      "title_hashes": [
+        "6d8769a3efe10cd260d9b81960871e7738bbb45a875cce1aafe4a274ba4a2a69",
+        "c0849ffe50bf5e0a7082db20eae420ff1f6bb8c8c6996b1635d9632a7c03475d",
+        "16fe5273b1cb73f98f8c71dba3d3cd4f6af59723e59bd9727be0df6356257a1b",
+        "37d50642ecaed5a07b954bd456d2d588a44b6b28f9f12c102ed88b384cf84400",
+        "15fdd9a1998c48628277a9ff3e95811527572c26a0a38f99d5481e42e2c56713",
+        "b5fd4ec896809a486d66b80bbd6179a7ac6e9910c3827636cb1a406d3fada52d"
+      ],
+      "topic_tokens": [
+        [
+          "gemini",
+          "hacked",
+          "three",
+          "companies",
+          "first",
+          "known",
+          "breakout",
+          "google"
+        ],
+        [
+          "microsoft",
+          "exec",
+          "called",
+          "scraping",
+          "largest",
+          "theft",
+          "labor",
+          "human",
+          "history"
+        ],
+        [
+          "military",
+          "had",
+          "close",
+          "call",
+          "after",
+          "using",
+          "hallucinated",
+          "intelligence",
+          "report"
+        ],
+        [
+          "new",
+          "agentcore",
+          "runtime",
+          "elastic",
+          "optimized",
+          "consistently",
+          "fast",
+          "starts",
+          "amazon",
+          "web",
+          "services",
+          "aws"
+        ],
+        [
+          "applied",
+          "materials",
+          "broadcom",
+          "comparing",
+          "sales",
+          "growth",
+          "trajectories",
+          "these",
+          "artificial",
+          "intelligence",
+          "companies",
+          "globe",
+          "mail"
+        ],
+        [
+          "gavin",
+          "newsom",
+          "pushing",
+          "kill",
+          "switch"
         ]
       ]
     }
