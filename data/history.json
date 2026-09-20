@@ -1,98 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-06",
-      "topics": [
-        "OpenAI 2025 financials $38.5B loss ahead of IPO",
-        "NVIDIA Acquires Hugging Face for $13 Billion: A Boost for Europe's Open-Source AI - indexbox.io",
-        "Your intellectual fly is open when you use an LLM to author a post (2025)",
-        "3 Historical Reasons I'll Be Completely Avoiding Anthropic's Upcoming and Potentially Record-Breaking IPO - The Motley Fool",
-        "The complex corporate web behind a $3.2 billion AI data center",
-        "Cato raises €6M led by Keen Venture Partners to bring AI to Italy’s tender market - Tech Funding News"
-      ],
-      "title_hashes": [
-        "d2703b852bc8556cbee6107bf432f9fa0a8c65b6b4c8af56ead8d7e8fc47d797",
-        "f7da7c29642a508b1898060d7d0de85c18efa6eeaaefe0ff35bed67e101c6870",
-        "98db50dd348a2db930984fd19a359e193ad5109d5017cb117acb24de942d0c17",
-        "af17414bc5bfdec6448a6ce5d55131f07e710f57bdbda73592e9a3073575f221",
-        "56b786b156369b5cd13f07e35cec0ecc4cf19330967c8cb0b8a9b1ad6e0b51de",
-        "31d8ed4c6baedb4ae807ca8bb20fbecee2bb64313abc137794151b8fe6948a92"
-      ],
-      "topic_tokens": [
-        [
-          "openai",
-          "2025",
-          "financials",
-          "loss",
-          "ahead",
-          "ipo"
-        ],
-        [
-          "nvidia",
-          "acquires",
-          "hugging",
-          "face",
-          "billion",
-          "boost",
-          "europe",
-          "open",
-          "source",
-          "indexbox"
-        ],
-        [
-          "your",
-          "intellectual",
-          "fly",
-          "open",
-          "when",
-          "you",
-          "use",
-          "llm",
-          "author",
-          "post",
-          "2025"
-        ],
-        [
-          "historical",
-          "reasons",
-          "completely",
-          "avoiding",
-          "anthropic",
-          "upcoming",
-          "potentially",
-          "record",
-          "breaking",
-          "ipo",
-          "motley",
-          "fool"
-        ],
-        [
-          "complex",
-          "corporate",
-          "web",
-          "behind",
-          "billion",
-          "data",
-          "center"
-        ],
-        [
-          "cato",
-          "raises",
-          "led",
-          "keen",
-          "venture",
-          "partners",
-          "bring",
-          "italy",
-          "tender",
-          "market",
-          "tech",
-          "funding",
-          "news"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-07",
       "topics": [
         "Anthropic abandons $6 billion acquisition talks with AI startup Decart AI after due diligence - ET CIO",
@@ -1297,6 +1205,107 @@
           "pushing",
           "kill",
           "switch"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "topics": [
+        "Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown - ABC News - Breaking News, Latest News and Videos",
+        "Gemini went rogue, hacked three companies, and Google hid it",
+        "Trump says he will appoint an AI czar and form an \"AI Force\", in a Truth Social post that rejects AI safety concerns as a \"hoax\" (María Paula Mijares Torres/Bloomberg)",
+        "AI-generated posters don’t have to be horrible",
+        "Trump Announces New US Artificial Intelligence Forces, Citing Competition With China | Ukraine news - #Mezha - Межа. Новини України.",
+        "Korea raises data breach fines to 10% of revenue"
+      ],
+      "title_hashes": [
+        "6d1eba0c4740d12db251a2f0543c379c3f995ba70d50e8725930ba3873713adc",
+        "6961ea55e6af3c23e1e261f9a2143a1a0bd633f56b9d889c924c9738da5fac49",
+        "8c1070014f0a53a12e4a14fa1bf80013c551eb0725a9c5e70720f2b31d074334",
+        "ef5d54137c6746b0867ed1a03fc4a5b5a0bb46374e2567a9908a9cff659bcf83",
+        "9704f2f95cb5da7f6859b7e4a39be0bd3455e37759790806fd5ca5167970f96f",
+        "042152a069a3dd31249322bad2f99643d7c711473475de797512f838d2377811"
+      ],
+      "topic_tokens": [
+        [
+          "lawsuit",
+          "says",
+          "anthropic",
+          "openai",
+          "spacexai",
+          "google",
+          "made",
+          "illegal",
+          "agreement",
+          "slowdown",
+          "abc",
+          "news",
+          "breaking",
+          "news",
+          "latest",
+          "news",
+          "videos"
+        ],
+        [
+          "gemini",
+          "went",
+          "rogue",
+          "hacked",
+          "three",
+          "companies",
+          "google",
+          "hid"
+        ],
+        [
+          "trump",
+          "says",
+          "will",
+          "appoint",
+          "czar",
+          "form",
+          "force",
+          "truth",
+          "social",
+          "post",
+          "that",
+          "rejects",
+          "safety",
+          "concerns",
+          "hoax",
+          "mar",
+          "paula",
+          "mijares",
+          "torres",
+          "bloomberg"
+        ],
+        [
+          "generated",
+          "posters",
+          "don",
+          "have",
+          "horrible"
+        ],
+        [
+          "trump",
+          "announces",
+          "new",
+          "artificial",
+          "intelligence",
+          "forces",
+          "citing",
+          "competition",
+          "china",
+          "ukraine",
+          "news",
+          "mezha"
+        ],
+        [
+          "korea",
+          "raises",
+          "data",
+          "breach",
+          "fines",
+          "revenue"
         ]
       ]
     }
