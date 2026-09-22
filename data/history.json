@@ -1,110 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-08",
-      "topics": [
-        "Samsung Leads Mistral AI’s €3 Billion Funding Round Valuing Company Above €21 Billion: how 21 outlets framed it - NewsCord",
-        "University announces $20 million gift toward new college of artificial intelligence and advanced analytics - ntdaily.com",
-        "Anthropic researcher says AI has more than 10% chance of 'killing all humans' after colleague quits - CNBC",
-        "Google plans to invest €13B+ in Finland over two years, its biggest investment in Europe to date, to build three new data centers and expand an existing one (Bloomberg)",
-        "I resigned from Anthropic today",
-        "Mistral raises €3B as sovereign AI becomes big business"
-      ],
-      "title_hashes": [
-        "6912e34640a2f94ffe7c04f97655ab152590fd18ab2871b14c8bc9bcade988ed",
-        "4efec3a53a8baad729a3fb5111c68413d10e4b56f3bc83d6c4db8be2435da343",
-        "c78eb79d10f73d6409eb9c24cf04835cb8d765b1b35a008fab622367cbb6a55f",
-        "e8ec8fc3cac9948f1705c044ae4646c544793312702a26a8c88063c777475bd0",
-        "b468228d119a7747e5a5f0361d12285a60acb6042ed8f2056b6585a06c453b6e",
-        "e4eabd8c126edd5e11d80d2fee5bac6a5bd9de7ab0a25b0fd1ab44858b9e206f"
-      ],
-      "topic_tokens": [
-        [
-          "samsung",
-          "leads",
-          "mistral",
-          "billion",
-          "funding",
-          "round",
-          "valuing",
-          "company",
-          "above",
-          "billion",
-          "how",
-          "outlets",
-          "framed",
-          "newscord"
-        ],
-        [
-          "university",
-          "announces",
-          "million",
-          "gift",
-          "toward",
-          "new",
-          "college",
-          "artificial",
-          "intelligence",
-          "advanced",
-          "analytics",
-          "ntdaily"
-        ],
-        [
-          "anthropic",
-          "researcher",
-          "says",
-          "has",
-          "more",
-          "than",
-          "chance",
-          "killing",
-          "all",
-          "humans",
-          "after",
-          "colleague",
-          "quits",
-          "cnbc"
-        ],
-        [
-          "google",
-          "plans",
-          "invest",
-          "13b",
-          "finland",
-          "over",
-          "two",
-          "years",
-          "its",
-          "biggest",
-          "investment",
-          "europe",
-          "date",
-          "build",
-          "three",
-          "new",
-          "data",
-          "centers",
-          "expand",
-          "existing",
-          "one",
-          "bloomberg"
-        ],
-        [
-          "resigned",
-          "anthropic",
-          "today"
-        ],
-        [
-          "mistral",
-          "raises",
-          "sovereign",
-          "becomes",
-          "big",
-          "business"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-09",
       "topics": [
         "‘Gambling with our lives’: Anthropic researcher quits, warns against self-improving AI",
@@ -1279,6 +1175,129 @@
           "brock",
           "turner",
           "axios"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "topics": [
+        "Meta’s AI agent has been blocked from using Amazon.com",
+        "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
+        "Baselayer, which uses AI to help financial institutions verify businesses and assess fraud risk, raised a $35M Series A led by M13, for ~$40M in total funding (Mary Ann Azevedo/Crunchbase News)",
+        "Not Micron. Not Alphabet. Here's My Top Artificial Intelligence (AI) Stock Pick for the Next 3 Years. - The Globe and Mail",
+        "a16z invests $35M in Horowitz Andreessen Academy, an independent, unaccredited two-year alternative to college; Anthropic, Meta, and others will provide compute (Katherine Bindley/Wall Street Journal)",
+        "Marco Rubio on Iran War, Soaring Gas Prices, AI, Media Ban, More - TODAY.com"
+      ],
+      "title_hashes": [
+        "b519d52183e55d799867e9162edc125c1e1319c41273077acca0255985c33e93",
+        "dd80868701213ea3394a8fbd310cc3c6671825fa0e790ebc29e468df348fdcb9",
+        "825a33cc319d80943cb8c826fd6033e8250330f9aeba4a8152cb2900b8730d4e",
+        "7a5523323ce73766f3696b474ac703f7e91f50c86f468c3b4ae5786b8488be3f",
+        "f230d88dc3df3edf80722cf4fbfa598486c0c020e93063fe3d222076e6143bdf",
+        "d306666152c16cacf250337fd10f69ba15937bd124f7c8e8e7f5e5c824bf25fb"
+      ],
+      "topic_tokens": [
+        [
+          "meta",
+          "agent",
+          "has",
+          "blocked",
+          "using",
+          "amazon"
+        ],
+        [
+          "openai",
+          "forms",
+          "math",
+          "advisory",
+          "group",
+          "its",
+          "resolves",
+          "more",
+          "than",
+          "100",
+          "open",
+          "problems"
+        ],
+        [
+          "baselayer",
+          "which",
+          "uses",
+          "help",
+          "financial",
+          "institutions",
+          "verify",
+          "businesses",
+          "assess",
+          "fraud",
+          "risk",
+          "raised",
+          "35m",
+          "series",
+          "led",
+          "m13",
+          "40m",
+          "total",
+          "funding",
+          "mary",
+          "ann",
+          "azevedo",
+          "crunchbase",
+          "news"
+        ],
+        [
+          "not",
+          "micron",
+          "not",
+          "alphabet",
+          "here",
+          "top",
+          "artificial",
+          "intelligence",
+          "stock",
+          "pick",
+          "next",
+          "years",
+          "globe",
+          "mail"
+        ],
+        [
+          "a16z",
+          "invests",
+          "35m",
+          "horowitz",
+          "andreessen",
+          "academy",
+          "independent",
+          "unaccredited",
+          "two",
+          "year",
+          "alternative",
+          "college",
+          "anthropic",
+          "meta",
+          "others",
+          "will",
+          "provide",
+          "compute",
+          "katherine",
+          "bindley",
+          "wall",
+          "street",
+          "journal"
+        ],
+        [
+          "marco",
+          "rubio",
+          "iran",
+          "war",
+          "soaring",
+          "gas",
+          "prices",
+          "media",
+          "ban",
+          "more",
+          "today"
         ]
       ]
     }
