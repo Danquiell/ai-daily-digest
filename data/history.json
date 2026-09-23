@@ -1,87 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-09",
-      "topics": [
-        "‘Gambling with our lives’: Anthropic researcher quits, warns against self-improving AI",
-        "Political moves in the US to address the risks of artificial intelligence, amid warnings of a threat to humanity - صوت الإمارات",
-        "Shopify acquires Tailwind",
-        "Claude, change the “Add to Cart” button to blue",
-        "AI research startup Listen Labs scrubbed a $1.5B funding round for Salesforce talks",
-        "Mistral AI Raises $3.5B At $24B Valuation In Another Record European AI Round - Crunchbase News"
-      ],
-      "title_hashes": [
-        "f7892c1d114cf6f1b432ec762ce147c44bcd09058e75f6bb42e34fde1a606eed",
-        "928b5c26df81fba097486bce64e4ab46f14cc543e98306b331a8eb9cf0e3fafb",
-        "e2bccea0125c6eb09ff66d748fd0dd486a9a2b5e3dd86669baa1c39528ce882b",
-        "61920a4c005ed3efd621e3259f93d7ea372b79b92f97fd159307b77e70fe500c",
-        "8fbd63870d4764f5d065a2792070dcde276627bad3f64df56f5b93f2f545385c",
-        "062536bee8b362ff60a6587023b56e8301e3c626849ab352c9b2c564c45a7d84"
-      ],
-      "topic_tokens": [
-        [
-          "gambling",
-          "our",
-          "lives",
-          "anthropic",
-          "researcher",
-          "quits",
-          "warns",
-          "against",
-          "self",
-          "improving"
-        ],
-        [
-          "political",
-          "moves",
-          "address",
-          "risks",
-          "artificial",
-          "intelligence",
-          "amid",
-          "warnings",
-          "threat",
-          "humanity"
-        ],
-        [
-          "shopify",
-          "acquires",
-          "tailwind"
-        ],
-        [
-          "claude",
-          "change",
-          "add",
-          "cart",
-          "button",
-          "blue"
-        ],
-        [
-          "research",
-          "startup",
-          "listen",
-          "labs",
-          "scrubbed",
-          "funding",
-          "round",
-          "salesforce",
-          "talks"
-        ],
-        [
-          "mistral",
-          "raises",
-          "24b",
-          "valuation",
-          "another",
-          "record",
-          "european",
-          "round",
-          "crunchbase",
-          "news"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-10",
       "topics": [
         "More questions about whether researchers can trust OpenAI with unpublished math",
@@ -1298,6 +1217,101 @@
           "ban",
           "more",
           "today"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "topics": [
+        "Trump Addresses United Nations to Declare That the United States Is Now Calling Artificial Intelligence \"Super Intelligence\" in \"All Official Documents\" - Futurism",
+        "Sen. Bernie Sanders unveils bill to ban artificial superintelligence and create Department of AI - ABC News - Breaking News, Latest News and Videos",
+        "Claude Opus 5.5",
+        "I said no and Apple said yes",
+        "Ema raises $77M as AI starts eating into enterprise software and services",
+        "Discover what’s next: 5 days left to save up to $200 on your TechCrunch Disrupt 2026 ticket"
+      ],
+      "title_hashes": [
+        "93a0f31ce4a8ea08cef9228c4e3606f889d32277d6dadf70f07da5c38a7063bc",
+        "c3d1b281829104cbebe346171e89018e7ba164f6fa706fac7091bd6cd8877a00",
+        "2ad9765b2b791487ade4ad85c43941c6a5d4435c7e65cb021ff1d1e24a5fa026",
+        "457dcb83c4e8be35d8d69dc2769bce90fe62275113a26f2e26b3ab55d8971f86",
+        "0506b12b36a4fe9ca2cab96201f2bd9168bbf35acbca424dc33efea832f31dbd",
+        "54b7b920a5784cbb389153c8c1e57207c8ccdb847f8e18f46edc04bbca91e934"
+      ],
+      "topic_tokens": [
+        [
+          "trump",
+          "addresses",
+          "united",
+          "nations",
+          "declare",
+          "that",
+          "united",
+          "states",
+          "now",
+          "calling",
+          "artificial",
+          "intelligence",
+          "super",
+          "intelligence",
+          "all",
+          "official",
+          "documents",
+          "futurism"
+        ],
+        [
+          "sen",
+          "bernie",
+          "sanders",
+          "unveils",
+          "bill",
+          "ban",
+          "artificial",
+          "superintelligence",
+          "create",
+          "department",
+          "abc",
+          "news",
+          "breaking",
+          "news",
+          "latest",
+          "news",
+          "videos"
+        ],
+        [
+          "claude",
+          "opus"
+        ],
+        [
+          "said",
+          "apple",
+          "said",
+          "yes"
+        ],
+        [
+          "ema",
+          "raises",
+          "77m",
+          "starts",
+          "eating",
+          "into",
+          "enterprise",
+          "software",
+          "services"
+        ],
+        [
+          "discover",
+          "what",
+          "next",
+          "days",
+          "left",
+          "save",
+          "200",
+          "your",
+          "techcrunch",
+          "disrupt",
+          "2026",
+          "ticket"
         ]
       ]
     }
