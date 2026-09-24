@@ -1,113 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-10",
-      "topics": [
-        "More questions about whether researchers can trust OpenAI with unpublished math",
-        "OpenAI Agents API",
-        "A US judge dismisses two lawsuits against LinkedIn over its scanning of browser extensions, saying users voluntarily expose data by downloading extensions (Jon Brodkin/Ars Technica)",
-        "Google makes $15B AI infrastructure investment in Finland",
-        "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
-        "Tencent-backed AI chipmaker Enflame's shares surged 188% in their Shanghai debut, giving Enflame a market cap of $26.3B, after raising ~$910M in an IPO (Ann Cao/South China Morning Post)"
-      ],
-      "title_hashes": [
-        "a30f40ac212ab25f1bbceb99c44152ccb10cf9bc4a5362c215cc60cde4bd98cb",
-        "53f7e21c847916f5efbd1a709e28f258ec1f84bfab6cfe336f75289eb7749613",
-        "d8efed86ed0ce270e42a827d573408faf7df88a45b6b4357c07bf7216ea18441",
-        "a0b49f1e171c3ca4154fa46fc72e3c2557e3c79a7c037490666a29c548647d65",
-        "eac102954c0c9cfa0109e2c47eb237738171046f82b123cb01b34f25ec92f76f",
-        "de78a22865c4e7453a8a74f471e852a23d21fa902ac18faa7fa71cb465f3cf5e"
-      ],
-      "topic_tokens": [
-        [
-          "more",
-          "questions",
-          "about",
-          "whether",
-          "researchers",
-          "can",
-          "trust",
-          "openai",
-          "unpublished",
-          "math"
-        ],
-        [
-          "openai",
-          "agents",
-          "api"
-        ],
-        [
-          "judge",
-          "dismisses",
-          "two",
-          "lawsuits",
-          "against",
-          "linkedin",
-          "over",
-          "its",
-          "scanning",
-          "browser",
-          "extensions",
-          "saying",
-          "users",
-          "voluntarily",
-          "expose",
-          "data",
-          "downloading",
-          "extensions",
-          "jon",
-          "brodkin",
-          "ars",
-          "technica"
-        ],
-        [
-          "google",
-          "makes",
-          "15b",
-          "infrastructure",
-          "investment",
-          "finland"
-        ],
-        [
-          "cognition",
-          "launches",
-          "new",
-          "swe",
-          "model",
-          "rivaling",
-          "fable",
-          "gpt",
-          "astra"
-        ],
-        [
-          "tencent",
-          "backed",
-          "chipmaker",
-          "enflame",
-          "shares",
-          "surged",
-          "188",
-          "their",
-          "shanghai",
-          "debut",
-          "giving",
-          "enflame",
-          "market",
-          "cap",
-          "after",
-          "raising",
-          "910m",
-          "ipo",
-          "ann",
-          "cao",
-          "south",
-          "china",
-          "morning",
-          "post"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-11",
       "topics": [
         "A misalignment of AI in mathematics",
@@ -1312,6 +1205,120 @@
           "disrupt",
           "2026",
           "ticket"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "topics": [
+        "Meta VR Glasses, Ray-Ban Meta Audio, Ray-Ban Meta Gen 3: Specs, Features, Prices",
+        "Claude discovers a novel enzyme system with CRISPR-like repeats",
+        "NEWS: Casar, Sanders Introduce Legislation to Create New Federal Agency to Ban Artificial Superintelligence, Pause Advanced AI Development - House.gov",
+        "OpenAI, Anthropic CEOs at UN call for global cooperation on AI: 'We are at a crossroads' - ABC News - Breaking News, Latest News and Videos",
+        "i think someone got Trump to rename artificial intelligence as super intelligence, in order to make it harder to talk about Artificial Super Intelligence",
+        "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later"
+      ],
+      "title_hashes": [
+        "277c0ea132b30421e8bc27d5e369a5cf7653347da669c51184b266f369e2564d",
+        "eef3f0d68d882cce956662c77ad72c3bba0dfa4fb9a76eddf4135556d013a088",
+        "bc9a9c8a70bba039379056b463a7f68d271bfe8e904c0576015c1ccf708efa3a",
+        "e12319167abae267602474cc813ce75002c96587617b67e165c1774c913327e3",
+        "2cfcf0c636180474a60730c1a54cf331654800f85b82d43efebe6618c9c63dde",
+        "ee80305b11bc29691db4d856168fcfd82cba5dd4f36f053b60e8b89b69fd5c6b"
+      ],
+      "topic_tokens": [
+        [
+          "meta",
+          "glasses",
+          "ray",
+          "ban",
+          "meta",
+          "audio",
+          "ray",
+          "ban",
+          "meta",
+          "gen",
+          "specs",
+          "features",
+          "prices"
+        ],
+        [
+          "claude",
+          "discovers",
+          "novel",
+          "enzyme",
+          "system",
+          "crispr",
+          "like",
+          "repeats"
+        ],
+        [
+          "news",
+          "casar",
+          "sanders",
+          "introduce",
+          "legislation",
+          "create",
+          "new",
+          "federal",
+          "agency",
+          "ban",
+          "artificial",
+          "superintelligence",
+          "pause",
+          "advanced",
+          "development",
+          "house",
+          "gov"
+        ],
+        [
+          "openai",
+          "anthropic",
+          "ceos",
+          "call",
+          "global",
+          "cooperation",
+          "crossroads",
+          "abc",
+          "news",
+          "breaking",
+          "news",
+          "latest",
+          "news",
+          "videos"
+        ],
+        [
+          "think",
+          "someone",
+          "got",
+          "trump",
+          "rename",
+          "artificial",
+          "intelligence",
+          "super",
+          "intelligence",
+          "order",
+          "make",
+          "harder",
+          "talk",
+          "about",
+          "artificial",
+          "super",
+          "intelligence"
+        ],
+        [
+          "openai",
+          "agent",
+          "hacked",
+          "australia",
+          "health",
+          "service",
+          "their",
+          "government",
+          "found",
+          "out",
+          "months",
+          "later"
         ]
       ]
     }
