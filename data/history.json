@@ -1,86 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-11",
-      "topics": [
-        "A misalignment of AI in mathematics",
-        "I spent $220 on Google app ads and 60% of the installs were robots",
-        "Claude is only available to people over 18 years",
-        "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
-        "Mistral AI Valuation Tops €21B After Samsung €3B Deal [2026] - tech-insider.org",
-        "China AI developer Z.AI launches $5 billion Hong Kong share, convertible bond sales, term sheet shows - Reuters"
-      ],
-      "title_hashes": [
-        "48ab3fbaeec5adafa0ad7cb9f8200a32304f6e5c3075ba8c1304a8d181d38335",
-        "abe562f926fd8be56a729f6c1afc12c41a58b03c0a1d2464f53de14f56255f1f",
-        "17afe4b6f619521e8df63e1c44a02c419085efa0326dc69543ba841ced490b43",
-        "bd63a5233cb73462ed7f0c10201f14d35f7fca8002e76f74a6a2fd1bb6a7a5c6",
-        "626f292b39c9504411dd13176ff4b3cbc9789a8eb1fb1f08bbb60984b2046b92",
-        "a9ec1199ab36054d8865a42e78660ee61606ea73848e8e95ae26b547a8784566"
-      ],
-      "topic_tokens": [
-        [
-          "misalignment",
-          "mathematics"
-        ],
-        [
-          "spent",
-          "220",
-          "google",
-          "app",
-          "ads",
-          "installs",
-          "robots"
-        ],
-        [
-          "claude",
-          "only",
-          "available",
-          "people",
-          "over",
-          "years"
-        ],
-        [
-          "lawyer",
-          "fined",
-          "over",
-          "hallucinated",
-          "witnesses",
-          "murder",
-          "case"
-        ],
-        [
-          "mistral",
-          "valuation",
-          "tops",
-          "21b",
-          "after",
-          "samsung",
-          "deal",
-          "2026",
-          "tech",
-          "insider",
-          "org"
-        ],
-        [
-          "china",
-          "developer",
-          "launches",
-          "billion",
-          "hong",
-          "kong",
-          "share",
-          "convertible",
-          "bond",
-          "sales",
-          "term",
-          "sheet",
-          "shows",
-          "reuters"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-12",
       "topics": [
         "Anthropic CEO calls for ‘pacing the frontier’ of AI race amid safety concerns - KFDA | NewsChannel 10 | Amarillo Texas",
@@ -1319,6 +1239,110 @@
           "out",
           "months",
           "later"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "topics": [
+        "Sanders, Casar Unveil Bill to Ban AI Superintelligence That 'Could Kill Countless Numbers of People' - Common Dreams",
+        "Oracle cut 21,000 jobs and paid $1.8B in severance while announcing record AI infrastructure spending. The layoffs aren't because of AI. They're funding it.",
+        "No Nvidia Needed: Akamai Lands $11.6 Billion Anthropic AI Deal - Investor's Business Daily",
+        "OpenAI agent “didn’t accept no for an answer” in Australian government breach",
+        "Meta takes down a critical video about meta AI Glasses after filming at Meta",
+        "Last 24 hours to save up to $200 on TechCrunch Disrupt 2026. Reason 5/5 to attend: Leave further ahead."
+      ],
+      "title_hashes": [
+        "9332593c1ac1383a63f91e6d145fe08714d47ce8acdcbd15b9d0ec359e3d6639",
+        "762dc2ffcdf0e16623ecc66b55be8671323a22685626508f288d4f69c73717bc",
+        "459367517f7af943c797252fb2eb4cc6dd83724ea8c5d19f0f3ca004f39b8a33",
+        "1a4c771f243d71fc864e291253d87d6d79094a1f20d8aeebe1fa7748bdaecab7",
+        "1ea82eea34e6cf4c45b8d07dfc6e4d3277ff33a98e24470b94d4733cd4bf6a0c",
+        "c80907e7b96f5c77c92494937853a5957ffe46e68daed39b37efda41d5a28ea5"
+      ],
+      "topic_tokens": [
+        [
+          "sanders",
+          "casar",
+          "unveil",
+          "bill",
+          "ban",
+          "superintelligence",
+          "that",
+          "could",
+          "kill",
+          "countless",
+          "numbers",
+          "people",
+          "common",
+          "dreams"
+        ],
+        [
+          "oracle",
+          "cut",
+          "000",
+          "jobs",
+          "paid",
+          "severance",
+          "while",
+          "announcing",
+          "record",
+          "infrastructure",
+          "spending",
+          "layoffs",
+          "aren",
+          "because",
+          "they",
+          "funding"
+        ],
+        [
+          "nvidia",
+          "needed",
+          "akamai",
+          "lands",
+          "billion",
+          "anthropic",
+          "deal",
+          "investor",
+          "business",
+          "daily"
+        ],
+        [
+          "openai",
+          "agent",
+          "didn",
+          "accept",
+          "answer",
+          "australian",
+          "government",
+          "breach"
+        ],
+        [
+          "meta",
+          "takes",
+          "down",
+          "critical",
+          "video",
+          "about",
+          "meta",
+          "glasses",
+          "after",
+          "filming",
+          "meta"
+        ],
+        [
+          "last",
+          "hours",
+          "save",
+          "200",
+          "techcrunch",
+          "disrupt",
+          "2026",
+          "reason",
+          "attend",
+          "leave",
+          "further",
+          "ahead"
         ]
       ]
     }
