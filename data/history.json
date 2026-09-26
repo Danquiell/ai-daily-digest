@@ -1,108 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-12",
-      "topics": [
-        "Anthropic CEO calls for ‘pacing the frontier’ of AI race amid safety concerns - KFDA | NewsChannel 10 | Amarillo Texas",
-        "OpenAI agents carried out an undisclosed attack on RubyGems",
-        "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
-        "A Void Linux maintainer orphaned over 100 packages because of an AI usage ban - xda-developers.com",
-        "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
-        "Prediction: This Artificial Intelligence (AI) Chip Stock Will Soar After Sept. 30 (Hint: It's Not Micron) - Yahoo Finance"
-      ],
-      "title_hashes": [
-        "db92575f0175a947d5f36160e744b76cf84f031958f828a9862d06d161b0af7f",
-        "728d0dad4035dfe9493e2fd8f2383842e064775a61e11ef1fa667ae1a72c043e",
-        "887ea751797de525d76d621eede04798de023deb88ce9f752f6357d0ef5ff950",
-        "55e737d6fdcfcdbdd1868f3533efddc20a4fde8fe71d343f2c987c47ac396676",
-        "85acc89fd82a13e264ef2bf97bc220b2f1af7f74ef92e55179784135a9d834ca",
-        "34027025b089e187cb0f2561b18aa4a64337b49b6d0738581913f4c9dc70b8da"
-      ],
-      "topic_tokens": [
-        [
-          "anthropic",
-          "ceo",
-          "calls",
-          "pacing",
-          "frontier",
-          "race",
-          "amid",
-          "safety",
-          "concerns",
-          "kfda",
-          "newschannel",
-          "amarillo",
-          "texas"
-        ],
-        [
-          "openai",
-          "agents",
-          "carried",
-          "out",
-          "undisclosed",
-          "attack",
-          "rubygems"
-        ],
-        [
-          "sam",
-          "altman",
-          "says",
-          "openai",
-          "going",
-          "public",
-          "2026",
-          "would",
-          "ill",
-          "advised"
-        ],
-        [
-          "void",
-          "linux",
-          "maintainer",
-          "orphaned",
-          "over",
-          "100",
-          "packages",
-          "because",
-          "usage",
-          "ban",
-          "xda",
-          "developers"
-        ],
-        [
-          "mecka",
-          "nears",
-          "500m",
-          "valuation",
-          "sequoia",
-          "led",
-          "deal",
-          "amid",
-          "rush",
-          "robot",
-          "training",
-          "data"
-        ],
-        [
-          "prediction",
-          "this",
-          "artificial",
-          "intelligence",
-          "chip",
-          "stock",
-          "will",
-          "soar",
-          "after",
-          "sept",
-          "hint",
-          "not",
-          "micron",
-          "yahoo",
-          "finance"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-13",
       "topics": [
         "Trump slams Dario Amodei, saying \"the only control or 'guardrails' that AI needs is a STRONG AND SMART (High IQ!) PRESIDENT, and the USA has that, in spades!\" (Hadriana Lowenkron/Bloomberg)",
@@ -1343,6 +1241,110 @@
           "leave",
           "further",
           "ahead"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "topics": [
+        "Researchers: OpenAI's agents meddled with the US Commerce Dept. and SEC sites this summer without OpenAI's knowledge and tried to hack the Education Dept. site (New York Times)",
+        "Appeals Court Lets the Pentagon Designate Anthropic a Supply-Chain Risk",
+        "Bill Gates warns AI powerful enough to lead to ‘a billion deaths’ - The Detroit News",
+        "This Stock May Be the Best Artificial Intelligence (AI) and Quantum Computing Investment - The Globe and Mail",
+        "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
+        "US, China agree to cut tariffs on $30 billion worth of goods, set up channel for AI incidents - The Hill"
+      ],
+      "title_hashes": [
+        "6f2c0ca2aaf184d3efb3a6f2d67384c219f7e2878a33114acfa504e556db0d0c",
+        "a6377d57cb485e3b62fa1a3c8ade6b8498fa8fc5b8697fc4f9fce72b5412e533",
+        "8be69ed9c5d9708f890b9ac9d86945ca7c1b8430c752947ca48b1b502368b687",
+        "2c4f72174cfdd9498aca52f88955cdb94609feaeb20b5ddad6d881b959dc5d4a",
+        "24bd75f41caa4d1b95b558dbd7e3a5a4d2f62ec1c55003e5e9151cf1b5dd5964",
+        "4cbb91c0ba00050623ec72908e2d1b3effd541138e439c8c97d6200c465a14be"
+      ],
+      "topic_tokens": [
+        [
+          "researchers",
+          "openai",
+          "agents",
+          "meddled",
+          "commerce",
+          "dept",
+          "sec",
+          "sites",
+          "this",
+          "summer",
+          "without",
+          "openai",
+          "knowledge",
+          "tried",
+          "hack",
+          "education",
+          "dept",
+          "site",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "appeals",
+          "court",
+          "lets",
+          "pentagon",
+          "designate",
+          "anthropic",
+          "supply",
+          "chain",
+          "risk"
+        ],
+        [
+          "bill",
+          "gates",
+          "warns",
+          "powerful",
+          "enough",
+          "lead",
+          "billion",
+          "deaths",
+          "detroit",
+          "news"
+        ],
+        [
+          "this",
+          "stock",
+          "may",
+          "best",
+          "artificial",
+          "intelligence",
+          "quantum",
+          "computing",
+          "investment",
+          "globe",
+          "mail"
+        ],
+        [
+          "anthropic",
+          "pay",
+          "akamai",
+          "billion",
+          "over",
+          "seven",
+          "years",
+          "cloud",
+          "deal"
+        ],
+        [
+          "china",
+          "agree",
+          "cut",
+          "tariffs",
+          "billion",
+          "worth",
+          "goods",
+          "set",
+          "channel",
+          "incidents",
+          "hill"
         ]
       ]
     }
