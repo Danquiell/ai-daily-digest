@@ -1,109 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-13",
-      "topics": [
-        "Trump slams Dario Amodei, saying \"the only control or 'guardrails' that AI needs is a STRONG AND SMART (High IQ!) PRESIDENT, and the USA has that, in spades!\" (Hadriana Lowenkron/Bloomberg)",
-        "Some in Silicon Valley Are Questioning the Calls for an A.I. Slowdown - The New York Times",
-        "Everyone should slow down AI development except for me",
-        "This Could Be the Most Underrated Artificial Intelligence Stock to Buy Right Now - The Globe and Mail",
-        "AIRJ: Acquisition creates a revenue-generating AI infrastructure platform with integrated cooling and water solutions - tradingview.com",
-        "Nvidia dismisses \"circular financing\", says every $1 it invests brings back $100"
-      ],
-      "title_hashes": [
-        "831a41f48a593794d1505e265d44ac46e8624be8a8899628601ca078f02f7652",
-        "5625daa0ebd1301c3935e2c03fd2dddbc898d577c8ef42cf22855247f5fcaade",
-        "b36ffbbcc06b0bd457a2a4cde812a05fa5fc5bfb097003f71b31675e95ae8af1",
-        "8c710f29a66d3401cb323ccfecebf4613bd0e3b446cfcb445ece7c9aba3baa11",
-        "2a7880942e690f147d16e8c34f17a99df8f2c4a93aed68d0bfd5e4820f1a7329",
-        "e25a19648bc4f643d2c05de27522691194656d157916ea2194412583425b47c6"
-      ],
-      "topic_tokens": [
-        [
-          "trump",
-          "slams",
-          "dario",
-          "amodei",
-          "saying",
-          "only",
-          "control",
-          "guardrails",
-          "that",
-          "needs",
-          "strong",
-          "smart",
-          "high",
-          "president",
-          "usa",
-          "has",
-          "that",
-          "spades",
-          "hadriana",
-          "lowenkron",
-          "bloomberg"
-        ],
-        [
-          "some",
-          "silicon",
-          "valley",
-          "questioning",
-          "calls",
-          "slowdown",
-          "new",
-          "york",
-          "times"
-        ],
-        [
-          "everyone",
-          "should",
-          "slow",
-          "down",
-          "development",
-          "except"
-        ],
-        [
-          "this",
-          "could",
-          "most",
-          "underrated",
-          "artificial",
-          "intelligence",
-          "stock",
-          "buy",
-          "right",
-          "now",
-          "globe",
-          "mail"
-        ],
-        [
-          "airj",
-          "acquisition",
-          "creates",
-          "revenue",
-          "generating",
-          "infrastructure",
-          "platform",
-          "integrated",
-          "cooling",
-          "water",
-          "solutions",
-          "tradingview"
-        ],
-        [
-          "nvidia",
-          "dismisses",
-          "circular",
-          "financing",
-          "says",
-          "every",
-          "invests",
-          "brings",
-          "back",
-          "100"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-14",
       "topics": [
         "Tech CEOs call for AI regulation. Trump and Congress are not rushing to act - morning-times.com",
@@ -1345,6 +1242,94 @@
           "channel",
           "incidents",
           "hill"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "topics": [
+        "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+        "Bill Gates says unchecked AI could ‘cause a billion deaths’ in call for regulation - The Guardian",
+        "Anthropic and OpenAI sound the alarm on AI safety — and seek to shape how it's controlled - Bozeman Daily Chronicle",
+        "OpenAI pauses training of its ‘most capable models’",
+        "AI risks: Will artificial intelligence really kill us all? - CBS News",
+        "Revealing the details of how OpenAI agents hacked Hugging Face"
+      ],
+      "title_hashes": [
+        "1ef9eca78460fa1754d8dbe0ef75589e942d96cd93db787c63a63d2a0466af42",
+        "04cfbb6a71ba8d235a88f3f32d1d69094e26891197241eb891cf1e83d60a5829",
+        "b836b742a6eff076a40fba0662f5a79bfc6366eac97048bdca3f3fa888672bbc",
+        "27f346baf84a271f30ad081020629ebdfa314d87512cb3cbd5f56a297fb77fc9",
+        "9df5c89296779ce1778f242c5aa01b4726eae08c2489074353d4dfdbb4544127",
+        "805ba14978645eb25aad7eadfdaccb1ba5b3cf0e74f93cd1092b68b25861682e"
+      ],
+      "topic_tokens": [
+        [
+          "appeals",
+          "court",
+          "upholds",
+          "designation",
+          "anthropic",
+          "supply",
+          "chain",
+          "risk"
+        ],
+        [
+          "bill",
+          "gates",
+          "says",
+          "unchecked",
+          "could",
+          "cause",
+          "billion",
+          "deaths",
+          "call",
+          "regulation",
+          "guardian"
+        ],
+        [
+          "anthropic",
+          "openai",
+          "sound",
+          "alarm",
+          "safety",
+          "seek",
+          "shape",
+          "how",
+          "controlled",
+          "bozeman",
+          "daily",
+          "chronicle"
+        ],
+        [
+          "openai",
+          "pauses",
+          "training",
+          "its",
+          "most",
+          "capable",
+          "models"
+        ],
+        [
+          "risks",
+          "will",
+          "artificial",
+          "intelligence",
+          "really",
+          "kill",
+          "all",
+          "cbs",
+          "news"
+        ],
+        [
+          "revealing",
+          "details",
+          "how",
+          "openai",
+          "agents",
+          "hacked",
+          "hugging",
+          "face"
         ]
       ]
     }
