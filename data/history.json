@@ -1,112 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-14",
-      "topics": [
-        "Tech CEOs call for AI regulation. Trump and Congress are not rushing to act - morning-times.com",
-        "FTC chair suspicious of calls for AI antitrust exemptions By Reuters - Investing.com",
-        "Jensen Huang Just Gave Artificial Intelligence (AI) Investors Trillions of Reasons to Remain Bullish - The Globe and Mail",
-        "New York State Assemblyman Alex Bores launches Who Decides, a nonprofit that raised $10M and aims to raise another $20M in 2027 to shape Democratic AI policy (New York Times)",
-        "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
-        "Six Anthropic cofounders join Forbes 400 at $15.5 billion each - qz.com"
-      ],
-      "title_hashes": [
-        "7985d7aaa71d90d2dd0f61169bb3b7126ede63bc842ac676a19cdbd22dd6b53e",
-        "08b29eaac6f81ab4071532cd4b0dfa7cb65a0a8403d9daf569900570eef87c6c",
-        "abb3ec71802b9f4d5a2cc4784f47601b2058919b933958f98c4f16da06cc9d67",
-        "1416afa175f0269971459c94614a7f649616d3bb42fdebd52c8ba4ac77f1be9a",
-        "44f5b9b0a7a2297bf43be4a7d3d007fc430837b6c3c1ed031888ae12d4bee0a9",
-        "ca2e2b955c52cd094e001c001633d4b49ff2b37d356b4ec5de936f8b8dda04d6"
-      ],
-      "topic_tokens": [
-        [
-          "tech",
-          "ceos",
-          "call",
-          "regulation",
-          "trump",
-          "congress",
-          "not",
-          "rushing",
-          "act",
-          "morning",
-          "times"
-        ],
-        [
-          "ftc",
-          "chair",
-          "suspicious",
-          "calls",
-          "antitrust",
-          "exemptions",
-          "reuters",
-          "investing"
-        ],
-        [
-          "jensen",
-          "huang",
-          "just",
-          "gave",
-          "artificial",
-          "intelligence",
-          "investors",
-          "trillions",
-          "reasons",
-          "remain",
-          "bullish",
-          "globe",
-          "mail"
-        ],
-        [
-          "new",
-          "york",
-          "state",
-          "assemblyman",
-          "alex",
-          "bores",
-          "launches",
-          "who",
-          "decides",
-          "nonprofit",
-          "that",
-          "raised",
-          "10m",
-          "aims",
-          "raise",
-          "another",
-          "20m",
-          "2027",
-          "shape",
-          "democratic",
-          "policy",
-          "new",
-          "york",
-          "times"
-        ],
-        [
-          "gpt",
-          "luna",
-          "gpt",
-          "astra",
-          "model",
-          "good",
-          "enough",
-          "code",
-          "review"
-        ],
-        [
-          "six",
-          "anthropic",
-          "cofounders",
-          "join",
-          "forbes",
-          "400",
-          "billion",
-          "each"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-15",
       "topics": [
         "Wall Street Lunch: AI Regulation Hopes Fade After Trump Calls AI Concerns A ‘Hoax’ - Seeking Alpha",
@@ -1330,6 +1224,95 @@
           "hacked",
           "hugging",
           "face"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "topics": [
+        "Owed a billion dollars in Nvidia stock",
+        "Anthropic’s CEO is about to have dinner with President Trump",
+        "AI agent startup Instinct raised a $1B Series C from Sequoia, Benchmark, and Coatue at a $10B valuation and details recent products, such as a concierge service (Utkarsh Shetti/Reuters)",
+        "Unsealed Briefs in Authors’ Case v. Microsoft/OpenAI",
+        "Florida seeks a ban on ChatGPT acting like a person",
+        "VLY: Acquisition adds digital scale, AI, and funding strength, driving growth and efficiency gains - TradingView"
+      ],
+      "title_hashes": [
+        "e27d08051c215103050c6f7e09aca81cc1ce2c0901c1377b40ade06a192cf375",
+        "e3c744a076b9027e5d14a8fe1f0df7955a378de1a737e53493a10ea5ab286296",
+        "c30745747bcbb6314ac61a2af50aed012957b9becf7e92204903e0937c1b0ed6",
+        "6e176227aff55ca3a7a7e8fc0e44a296cf2db9e6da307ff732da869f92e873d1",
+        "bdf48392a256b01c878ed7f0865b88724eb047094e7aba40168733fb6ad6346b",
+        "b489c85bab285344da714b1ece5da52607ef921b600a6fccdedce5c7549d85d8"
+      ],
+      "topic_tokens": [
+        [
+          "owed",
+          "billion",
+          "dollars",
+          "nvidia",
+          "stock"
+        ],
+        [
+          "anthropic",
+          "ceo",
+          "about",
+          "have",
+          "dinner",
+          "president",
+          "trump"
+        ],
+        [
+          "agent",
+          "startup",
+          "instinct",
+          "raised",
+          "series",
+          "sequoia",
+          "benchmark",
+          "coatue",
+          "10b",
+          "valuation",
+          "details",
+          "recent",
+          "products",
+          "such",
+          "concierge",
+          "service",
+          "utkarsh",
+          "shetti",
+          "reuters"
+        ],
+        [
+          "unsealed",
+          "briefs",
+          "authors",
+          "case",
+          "microsoft",
+          "openai"
+        ],
+        [
+          "florida",
+          "seeks",
+          "ban",
+          "chatgpt",
+          "acting",
+          "like",
+          "person"
+        ],
+        [
+          "vly",
+          "acquisition",
+          "adds",
+          "digital",
+          "scale",
+          "funding",
+          "strength",
+          "driving",
+          "growth",
+          "efficiency",
+          "gains",
+          "tradingview"
         ]
       ]
     }
