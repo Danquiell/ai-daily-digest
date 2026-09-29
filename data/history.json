@@ -1,113 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-15",
-      "topics": [
-        "Wall Street Lunch: AI Regulation Hopes Fade After Trump Calls AI Concerns A ‘Hoax’ - Seeking Alpha",
-        "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
-        "Congress Has Proposed Many Bills for A.I. Regulation. Lawmakers Have Enacted Few. - The New York Times",
-        "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
-        "Poway council votes to ban artificial intelligence data centers - Times of San Diego",
-        "Researchers: rogue OpenAI agents compromised two Hugging Face accounts as early as May 13 to probe the site's servers, nearly two months before the July breach (Reuters)"
-      ],
-      "title_hashes": [
-        "74ffb48ece1ce0b96bdbd870f26f6898e5f46d9bd672bff3084d3bd45b01c4e9",
-        "6ad5d183516e0770656a31c03f61d21bdd2e1b7349fa2ae3b67c9b92628673cb",
-        "2038763043e50d5ad14d9ea99cd330f77ac9ba6d4339c629bb6e93cb6c989781",
-        "a0ab9cfa38bded432fa35fdb04528e538c9111656f31a3238e77bcac9b5167de",
-        "8cd63627acad9b978ce05a3cfdbbff2c41fc70145a8710a26e72de07eaf361da",
-        "9c087d534efc29b0b742b46aadfcaeeed983ce735998f9fe0f4097d23907c177"
-      ],
-      "topic_tokens": [
-        [
-          "wall",
-          "street",
-          "lunch",
-          "regulation",
-          "hopes",
-          "fade",
-          "after",
-          "trump",
-          "calls",
-          "concerns",
-          "hoax",
-          "seeking",
-          "alpha"
-        ],
-        [
-          "openai",
-          "anthropic",
-          "google",
-          "have",
-          "talks",
-          "safety",
-          "weeks"
-        ],
-        [
-          "congress",
-          "has",
-          "proposed",
-          "many",
-          "bills",
-          "regulation",
-          "lawmakers",
-          "have",
-          "enacted",
-          "few",
-          "new",
-          "york",
-          "times"
-        ],
-        [
-          "don",
-          "need",
-          "regulation",
-          "leave",
-          "safety",
-          "nvidia",
-          "jensen",
-          "huang",
-          "says"
-        ],
-        [
-          "poway",
-          "council",
-          "votes",
-          "ban",
-          "artificial",
-          "intelligence",
-          "data",
-          "centers",
-          "times",
-          "san",
-          "diego"
-        ],
-        [
-          "researchers",
-          "rogue",
-          "openai",
-          "agents",
-          "compromised",
-          "two",
-          "hugging",
-          "face",
-          "accounts",
-          "early",
-          "may",
-          "probe",
-          "site",
-          "servers",
-          "nearly",
-          "two",
-          "months",
-          "before",
-          "july",
-          "breach",
-          "reuters"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-16",
       "topics": [
         "The king and AI: UK monarch Charles meets artificial intelligence leaders as safety concerns swirl - marketscreener.com",
@@ -1313,6 +1206,104 @@
           "efficiency",
           "gains",
           "tradingview"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "topics": [
+        "OpenAI Delays Release of Latest Model Over Safety Concerns",
+        "Trump to Discuss AI Safety and Regulation with Leading Tech Executives - Hungarian Conservative",
+        "AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
+        "Is Claude Conscious? Inside Anthropic’s Quest to Instill Morality Into Its A.I. Models - The New York Times",
+        "AI agent firm Instinct raises $1 billion in latest funding round - Reuters",
+        "$349 Billion (€307.3bn) Industry Offers Early View of AI’s Impact on IT Jobs, Cybersecurity and Regulation: 2027 iGaming Trends Report by SOFTSWISS - citybiz"
+      ],
+      "title_hashes": [
+        "d69b4c4a9e21d3eb75a1d48bbf7f5901d98fb0032f229c5fa150c70df4c3d757",
+        "86306bcb049008c718d65d06477d0c46991e9b639baa9f62810d3aaa483befd1",
+        "3c49d609f16b7ba63a2440701625e4cf2ed7c9f6aa5bf279f7ab4e67179c2154",
+        "55220df40ebce76fa457954cfba148ff3d9c3a70a26790f92a44e3d49aec8f9a",
+        "e84acfce670b22635f85b4d234a058ef4dd192f2dc74cf3e9c4b9e1dd65940c5",
+        "1f4b1739c64bbc01fd76c09c77d2a7dd9205a95242868482ea87cc91a558749b"
+      ],
+      "topic_tokens": [
+        [
+          "openai",
+          "delays",
+          "release",
+          "latest",
+          "model",
+          "over",
+          "safety",
+          "concerns"
+        ],
+        [
+          "trump",
+          "discuss",
+          "safety",
+          "regulation",
+          "leading",
+          "tech",
+          "executives",
+          "hungarian",
+          "conservative"
+        ],
+        [
+          "amd",
+          "will",
+          "acquire",
+          "fei",
+          "fei",
+          "world",
+          "labs",
+          "billion"
+        ],
+        [
+          "claude",
+          "conscious",
+          "inside",
+          "anthropic",
+          "quest",
+          "instill",
+          "morality",
+          "into",
+          "its",
+          "models",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "agent",
+          "firm",
+          "instinct",
+          "raises",
+          "billion",
+          "latest",
+          "funding",
+          "round",
+          "reuters"
+        ],
+        [
+          "349",
+          "billion",
+          "307",
+          "3bn",
+          "industry",
+          "offers",
+          "early",
+          "view",
+          "impact",
+          "jobs",
+          "cybersecurity",
+          "regulation",
+          "2027",
+          "igaming",
+          "trends",
+          "report",
+          "softswiss",
+          "citybiz"
         ]
       ]
     }
