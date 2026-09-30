@@ -1,104 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-16",
-      "topics": [
-        "The king and AI: UK monarch Charles meets artificial intelligence leaders as safety concerns swirl - marketscreener.com",
-        "OpenAI flags 6 new incidents of ‘concerning’ behavior and unveils plan to track it - NBC News",
-        "Nvidia announces native GPU programming in Rust",
-        "US senators added AI antitrust exemption to defense bill, but effort stymied: report - Seeking Alpha",
-        "Problem Solvers Caucus Announces New Working Group on Artificial Intelligence and Evolving Technologies - Problem Solvers Caucus (.gov)",
-        "OpenAI Considers Pre-IPO Funding Round at More Than $1.2 Trillion Valuation - WSJ"
-      ],
-      "title_hashes": [
-        "dca4f0dd867a72e8c24232479a8c0805cba262786c40b5fa36e5d38330d0bde5",
-        "7e63cab084356fecc8494bd7e8b9c5cb3d0d75acaa13fc28b23639c997f6d4eb",
-        "582e9a6d5f180400300bb7aa4d0a70e1b4a5467d5969780265336c15fc6b4b52",
-        "ad5a5ecfa74b62df036f325f4f3846f13ac55013f0ba3869344b2d3fdcdcc448",
-        "c21db3737c0c475aa08688b4a73e96520c73e85ca2cae8a126b901007fbb2a6c",
-        "7c8c4213e5f4ced94775193e8dc060aa63912e4d40d3281f3acdcabcf66aae26"
-      ],
-      "topic_tokens": [
-        [
-          "king",
-          "monarch",
-          "charles",
-          "meets",
-          "artificial",
-          "intelligence",
-          "leaders",
-          "safety",
-          "concerns",
-          "swirl",
-          "marketscreener"
-        ],
-        [
-          "openai",
-          "flags",
-          "new",
-          "incidents",
-          "concerning",
-          "behavior",
-          "unveils",
-          "plan",
-          "track",
-          "nbc",
-          "news"
-        ],
-        [
-          "nvidia",
-          "announces",
-          "native",
-          "gpu",
-          "programming",
-          "rust"
-        ],
-        [
-          "senators",
-          "added",
-          "antitrust",
-          "exemption",
-          "defense",
-          "bill",
-          "effort",
-          "stymied",
-          "report",
-          "seeking",
-          "alpha"
-        ],
-        [
-          "problem",
-          "solvers",
-          "caucus",
-          "announces",
-          "new",
-          "working",
-          "group",
-          "artificial",
-          "intelligence",
-          "evolving",
-          "technologies",
-          "problem",
-          "solvers",
-          "caucus",
-          "gov"
-        ],
-        [
-          "openai",
-          "considers",
-          "pre",
-          "ipo",
-          "funding",
-          "round",
-          "more",
-          "than",
-          "trillion",
-          "valuation",
-          "wsj"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-17",
       "topics": [
         "The king and AI: UK monarch Charles meets artificial intelligence leaders as safety concerns swirl - ABC News - Breaking News, Latest News and Videos",
@@ -1304,6 +1206,100 @@
           "report",
           "softswiss",
           "citybiz"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "topics": [
+        "Trump signs executive order rebranding AI as 'Super Intelligence' as tech titans ink separate SI accord - Fox Business",
+        "OpenAI targets $30 billion funding at $1.4 trillion valuation, Bloomberg News reports - Reuters",
+        "Realset AI and Flatkey Raise 10 million Dollars in Series A Funding to Build Real World Training Data for Frontier Models and Embodied Agents - The Lawton Constitution",
+        "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+        "OpenAI Gets Sued Over the Hugging Face Hack",
+        "Kanu AI Raises USD11.7M in Funding - finsmes.com"
+      ],
+      "title_hashes": [
+        "ccf293f5188bf5ce4b35f1d2f5476f11ceac8b6c7f7e8ca52657981482f69f3c",
+        "ef5957f2a7a2d6d139624f32f6fdbfb73eac9e940f24a21c816cb24fe013ae03",
+        "493db4169df0d3b9b0eabc91acbf71fa00329402f201e66c0638357d5360c787",
+        "b6fcfb092d56201c906c2f4e9b60a760d55efec15a709994118d6e45be4bf7fa",
+        "229d8f95cef3395da9b5ebdccce4cfb2fc948f4a3e6270f7f64130b23e69b39d",
+        "ec29a1decea4a03cbd10950012ae933e18c0d5878ad56fd3cb07f80715095eed"
+      ],
+      "topic_tokens": [
+        [
+          "trump",
+          "signs",
+          "executive",
+          "order",
+          "rebranding",
+          "super",
+          "intelligence",
+          "tech",
+          "titans",
+          "ink",
+          "separate",
+          "accord",
+          "fox",
+          "business"
+        ],
+        [
+          "openai",
+          "targets",
+          "billion",
+          "funding",
+          "trillion",
+          "valuation",
+          "bloomberg",
+          "news",
+          "reports",
+          "reuters"
+        ],
+        [
+          "realset",
+          "flatkey",
+          "raise",
+          "million",
+          "dollars",
+          "series",
+          "funding",
+          "build",
+          "real",
+          "world",
+          "training",
+          "data",
+          "frontier",
+          "models",
+          "embodied",
+          "agents",
+          "lawton",
+          "constitution"
+        ],
+        [
+          "gpt",
+          "sol",
+          "near",
+          "astra",
+          "intelligence",
+          "fifth",
+          "price"
+        ],
+        [
+          "openai",
+          "gets",
+          "sued",
+          "over",
+          "hugging",
+          "face",
+          "hack"
+        ],
+        [
+          "kanu",
+          "raises",
+          "usd11",
+          "funding",
+          "finsmes"
         ]
       ]
     }
