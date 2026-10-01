@@ -1,103 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-17",
-      "topics": [
-        "The king and AI: UK monarch Charles meets artificial intelligence leaders as safety concerns swirl - ABC News - Breaking News, Latest News and Videos",
-        "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
-        "Raindrop Announces Series A and $50M in Total Funding Led by CRV to Protect the World from AI Agent Failures - Business Wire",
-        "The AI ‘Slowdown’ Is an Antitrust Mess",
-        "DOJ antitrust official says AI safety coordination does not appear anticompetitive - Reuters",
-        "AI Investment Cycle: Opportunities and Regulation - Funds Society"
-      ],
-      "title_hashes": [
-        "e8152cd740a284dd20b44c5f80b431e04c2bc13a8cc2d6a7bf7a8d5f6ca90044",
-        "d550cc4f2fc0b4cb171fd6fb8c28de3af68827274ef2332c60ce9903cd5c222e",
-        "114169fbf0f6be7f1ced59cf7c2b43edb558e524cad462f7034975df6d7f24f8",
-        "8519f702c557d86405a7d855fee8878bf56ce324d7ab3ef7b0e9bc47ec8f0d1c",
-        "0ca2cf37a78bafd9de6011334a0b8e4754a00956f6b989efd5128967b978dc79",
-        "e597ac9adf07274cd803f111de011fb78d30f38b59ff6fb6be396d3fcadec199"
-      ],
-      "topic_tokens": [
-        [
-          "king",
-          "monarch",
-          "charles",
-          "meets",
-          "artificial",
-          "intelligence",
-          "leaders",
-          "safety",
-          "concerns",
-          "swirl",
-          "abc",
-          "news",
-          "breaking",
-          "news",
-          "latest",
-          "news",
-          "videos"
-        ],
-        [
-          "microsoft",
-          "exec",
-          "called",
-          "scraping",
-          "largest",
-          "theft",
-          "labor",
-          "human",
-          "history",
-          "new",
-          "unredacted",
-          "filings",
-          "reveal"
-        ],
-        [
-          "raindrop",
-          "announces",
-          "series",
-          "50m",
-          "total",
-          "funding",
-          "led",
-          "crv",
-          "protect",
-          "world",
-          "agent",
-          "failures",
-          "business",
-          "wire"
-        ],
-        [
-          "slowdown",
-          "antitrust",
-          "mess"
-        ],
-        [
-          "doj",
-          "antitrust",
-          "official",
-          "says",
-          "safety",
-          "coordination",
-          "does",
-          "not",
-          "appear",
-          "anticompetitive",
-          "reuters"
-        ],
-        [
-          "investment",
-          "cycle",
-          "opportunities",
-          "regulation",
-          "funds",
-          "society"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-18",
       "topics": [
         "Gemini hacked three companies in first known breakout by Google's AI",
@@ -1300,6 +1203,115 @@
           "usd11",
           "funding",
           "finsmes"
+        ]
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "topics": [
+        "Gemini 4 Argon must reverse Google’s AI inertia",
+        "\"An AI did it\" is no defense, says nonprofit suing OpenAI over Hugging Face hack",
+        "Samsung raised prices on the Galaxy S26 by $100",
+        "The US government no longer calls it AI. President Donald Trump has signed an executive order renaming artificial intelligence as Super Intelligence, or SI. On the same day, the heads of Google, Meta, Anthropic, OpenAI, Nvidia and xAI signed the White Hous - LinkedIn",
+        "Sharon AI Enters Into GPU-Backed Debt Facility, Expanding Funding Flexibility for AI Factory Deployments - PR Newswire",
+        "DraftKings faces proposed class-action lawsuit over alleged AI-driven gambling promotions - CDC Gaming"
+      ],
+      "title_hashes": [
+        "afafd7da7e1c73acecf4befa83ed72d317abeb8769d2a9af7e9b24e26093d59e",
+        "8263d18ec08384f67ebe58b38d86b36300700069ca13c149c0c07c4eba794ee7",
+        "ad84617c070ee12a971320a5db2ca16eed7155f33ab12bb4a4c1c67972306f1b",
+        "2b5de367fbf405dc555b08255385317fdc02ff79124b7ffaa2f56d03a54c680c",
+        "09de26fdf3e0551e05a8b7896e0b09f4ce8e594c025b34c2aff1206d6f82a247",
+        "339842ccecfe1edbe94ca54dca89a5b55a2d2f9697d43af4d284f43beb66193a"
+      ],
+      "topic_tokens": [
+        [
+          "gemini",
+          "argon",
+          "must",
+          "reverse",
+          "google",
+          "inertia"
+        ],
+        [
+          "did",
+          "defense",
+          "says",
+          "nonprofit",
+          "suing",
+          "openai",
+          "over",
+          "hugging",
+          "face",
+          "hack"
+        ],
+        [
+          "samsung",
+          "raised",
+          "prices",
+          "galaxy",
+          "s26",
+          "100"
+        ],
+        [
+          "government",
+          "longer",
+          "calls",
+          "president",
+          "donald",
+          "trump",
+          "has",
+          "signed",
+          "executive",
+          "order",
+          "renaming",
+          "artificial",
+          "intelligence",
+          "super",
+          "intelligence",
+          "same",
+          "day",
+          "heads",
+          "google",
+          "meta",
+          "anthropic",
+          "openai",
+          "nvidia",
+          "xai",
+          "signed",
+          "white",
+          "hous",
+          "linkedin"
+        ],
+        [
+          "sharon",
+          "enters",
+          "into",
+          "gpu",
+          "backed",
+          "debt",
+          "facility",
+          "expanding",
+          "funding",
+          "flexibility",
+          "factory",
+          "deployments",
+          "newswire"
+        ],
+        [
+          "draftkings",
+          "faces",
+          "proposed",
+          "class",
+          "action",
+          "lawsuit",
+          "over",
+          "alleged",
+          "driven",
+          "gambling",
+          "promotions",
+          "cdc",
+          "gaming"
         ]
       ]
     }
