@@ -1,95 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-18",
-      "topics": [
-        "Gemini hacked three companies in first known breakout by Google's AI",
-        "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
-        "US Military had close call after using AI for hallucinated intelligence report",
-        "The new AgentCore runtime: Elastic, optimized, and consistently fast starts - Amazon Web Services (AWS)",
-        "Applied Materials vs. Broadcom: Comparing Sales Growth Trajectories for These Artificial Intelligence Companies - The Globe and Mail",
-        "Gavin Newsom is pushing for an AI kill switch"
-      ],
-      "title_hashes": [
-        "6d8769a3efe10cd260d9b81960871e7738bbb45a875cce1aafe4a274ba4a2a69",
-        "c0849ffe50bf5e0a7082db20eae420ff1f6bb8c8c6996b1635d9632a7c03475d",
-        "16fe5273b1cb73f98f8c71dba3d3cd4f6af59723e59bd9727be0df6356257a1b",
-        "37d50642ecaed5a07b954bd456d2d588a44b6b28f9f12c102ed88b384cf84400",
-        "15fdd9a1998c48628277a9ff3e95811527572c26a0a38f99d5481e42e2c56713",
-        "b5fd4ec896809a486d66b80bbd6179a7ac6e9910c3827636cb1a406d3fada52d"
-      ],
-      "topic_tokens": [
-        [
-          "gemini",
-          "hacked",
-          "three",
-          "companies",
-          "first",
-          "known",
-          "breakout",
-          "google"
-        ],
-        [
-          "microsoft",
-          "exec",
-          "called",
-          "scraping",
-          "largest",
-          "theft",
-          "labor",
-          "human",
-          "history"
-        ],
-        [
-          "military",
-          "had",
-          "close",
-          "call",
-          "after",
-          "using",
-          "hallucinated",
-          "intelligence",
-          "report"
-        ],
-        [
-          "new",
-          "agentcore",
-          "runtime",
-          "elastic",
-          "optimized",
-          "consistently",
-          "fast",
-          "starts",
-          "amazon",
-          "web",
-          "services",
-          "aws"
-        ],
-        [
-          "applied",
-          "materials",
-          "broadcom",
-          "comparing",
-          "sales",
-          "growth",
-          "trajectories",
-          "these",
-          "artificial",
-          "intelligence",
-          "companies",
-          "globe",
-          "mail"
-        ],
-        [
-          "gavin",
-          "newsom",
-          "pushing",
-          "kill",
-          "switch"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-19",
       "topics": [
         "Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown - ABC News - Breaking News, Latest News and Videos",
@@ -1312,6 +1223,83 @@
           "promotions",
           "cdc",
           "gaming"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "topics": [
+        "Judge dismisses Chegg and Penske antitrust lawsuits targeting Google AI search",
+        "Gemini 4 Argon",
+        "Anthropic's IPO Prospectus Is a Fucking Doozy",
+        "Dynatrace completes Arize acquisition for AI observability - Developer Tech News",
+        "Clef: Open-weight decision models, and new RL fine-tuning platform",
+        "Got $1,000? 2 Growth Stocks Building the Software Backbone of Artificial Intelligence. - The Globe and Mail"
+      ],
+      "title_hashes": [
+        "fdd2c98d3a37b3df5dc012186a12041c20cb182323067723f25b1a9e257a8e5e",
+        "7411d53bc8f6240617a31890b21f7ce3ada8420b0eff1d1e8d85fbd55a278447",
+        "f30f3d8f1829f4f9364bd63218a0815aa3ffeb382678a82ecaf25f25dd67aea9",
+        "2dc69169d0326067a92c79daf52e9523f39e5b0d0f03d4a9e47b1a762c95fd73",
+        "f4be1cbc0898016ea7616e080137b6ca148990013a34b07bc2343801aae592b7",
+        "57bb1e99a356ca7f08ed0a8989b2f97817b140ffefdebf85f7acf90944a04e83"
+      ],
+      "topic_tokens": [
+        [
+          "judge",
+          "dismisses",
+          "chegg",
+          "penske",
+          "antitrust",
+          "lawsuits",
+          "targeting",
+          "google",
+          "search"
+        ],
+        [
+          "gemini",
+          "argon"
+        ],
+        [
+          "anthropic",
+          "ipo",
+          "prospectus",
+          "fucking",
+          "doozy"
+        ],
+        [
+          "dynatrace",
+          "completes",
+          "arize",
+          "acquisition",
+          "observability",
+          "developer",
+          "tech",
+          "news"
+        ],
+        [
+          "clef",
+          "open",
+          "weight",
+          "decision",
+          "models",
+          "new",
+          "fine",
+          "tuning",
+          "platform"
+        ],
+        [
+          "got",
+          "000",
+          "growth",
+          "stocks",
+          "building",
+          "software",
+          "backbone",
+          "artificial",
+          "intelligence",
+          "globe",
+          "mail"
         ]
       ]
     }
