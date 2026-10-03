@@ -1,107 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-19",
-      "topics": [
-        "Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown - ABC News - Breaking News, Latest News and Videos",
-        "Gemini went rogue, hacked three companies, and Google hid it",
-        "Trump says he will appoint an AI czar and form an \"AI Force\", in a Truth Social post that rejects AI safety concerns as a \"hoax\" (María Paula Mijares Torres/Bloomberg)",
-        "AI-generated posters don’t have to be horrible",
-        "Trump Announces New US Artificial Intelligence Forces, Citing Competition With China | Ukraine news - #Mezha - Межа. Новини України.",
-        "Korea raises data breach fines to 10% of revenue"
-      ],
-      "title_hashes": [
-        "6d1eba0c4740d12db251a2f0543c379c3f995ba70d50e8725930ba3873713adc",
-        "6961ea55e6af3c23e1e261f9a2143a1a0bd633f56b9d889c924c9738da5fac49",
-        "8c1070014f0a53a12e4a14fa1bf80013c551eb0725a9c5e70720f2b31d074334",
-        "ef5d54137c6746b0867ed1a03fc4a5b5a0bb46374e2567a9908a9cff659bcf83",
-        "9704f2f95cb5da7f6859b7e4a39be0bd3455e37759790806fd5ca5167970f96f",
-        "042152a069a3dd31249322bad2f99643d7c711473475de797512f838d2377811"
-      ],
-      "topic_tokens": [
-        [
-          "lawsuit",
-          "says",
-          "anthropic",
-          "openai",
-          "spacexai",
-          "google",
-          "made",
-          "illegal",
-          "agreement",
-          "slowdown",
-          "abc",
-          "news",
-          "breaking",
-          "news",
-          "latest",
-          "news",
-          "videos"
-        ],
-        [
-          "gemini",
-          "went",
-          "rogue",
-          "hacked",
-          "three",
-          "companies",
-          "google",
-          "hid"
-        ],
-        [
-          "trump",
-          "says",
-          "will",
-          "appoint",
-          "czar",
-          "form",
-          "force",
-          "truth",
-          "social",
-          "post",
-          "that",
-          "rejects",
-          "safety",
-          "concerns",
-          "hoax",
-          "mar",
-          "paula",
-          "mijares",
-          "torres",
-          "bloomberg"
-        ],
-        [
-          "generated",
-          "posters",
-          "don",
-          "have",
-          "horrible"
-        ],
-        [
-          "trump",
-          "announces",
-          "new",
-          "artificial",
-          "intelligence",
-          "forces",
-          "citing",
-          "competition",
-          "china",
-          "ukraine",
-          "news",
-          "mezha"
-        ],
-        [
-          "korea",
-          "raises",
-          "data",
-          "breach",
-          "fines",
-          "revenue"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-20",
       "topics": [
         "Obama says the government should ‘act fast’ and regulate AI - Alaska's News Source",
@@ -1300,6 +1199,97 @@
           "intelligence",
           "globe",
           "mail"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "topics": [
+        "Experts eye Alberta referendum as case study on impacts of artificial intelligence - The Hamilton Spectator",
+        "Trump expected to name intelligence chief Jay Clayton as new AI czar - washingtonpost.com",
+        "Fact Check Team: What’s the difference between artificial intelligence & superintelligence - local21news.com",
+        "Watch Google’s James Manyika on AI Regulation - Bloomberg.com",
+        "Dynatrace Completes Acquisition of Arize, Extending AI Observability Across Full Development Lifecycle - HPCwire",
+        "GSA issued an AI acquisition policy for new contracts. Here’s what it says. - FedScoop"
+      ],
+      "title_hashes": [
+        "43949bd27d3033c67b072ee150cdd8d6ce6335834b37ec618a2a000107ad78fd",
+        "3cbe1dd9a57980e102b975b99773c9b887bbe9655245747a843dc13d44e2565e",
+        "5ecaec6f33de7b292790512e39dd67935455e491c5b1eed8debaec73e34fd479",
+        "2a93916293eebb704329f1e1abc73c1431e5f01f3174a4dfc7cfff6e426e5580",
+        "4902cb5135fe6829810f525bb2a38382dab593d0857b57af21e8186e70360f25",
+        "2dde8b59bba34baf3b79ffd4fe049fd716f89a4b89c3a25b2d35415ce7f53466"
+      ],
+      "topic_tokens": [
+        [
+          "experts",
+          "eye",
+          "alberta",
+          "referendum",
+          "case",
+          "study",
+          "impacts",
+          "artificial",
+          "intelligence",
+          "hamilton",
+          "spectator"
+        ],
+        [
+          "trump",
+          "expected",
+          "name",
+          "intelligence",
+          "chief",
+          "jay",
+          "clayton",
+          "new",
+          "czar",
+          "washingtonpost"
+        ],
+        [
+          "fact",
+          "check",
+          "team",
+          "what",
+          "difference",
+          "between",
+          "artificial",
+          "intelligence",
+          "superintelligence",
+          "local21news"
+        ],
+        [
+          "watch",
+          "google",
+          "james",
+          "manyika",
+          "regulation",
+          "bloomberg"
+        ],
+        [
+          "dynatrace",
+          "completes",
+          "acquisition",
+          "arize",
+          "extending",
+          "observability",
+          "across",
+          "full",
+          "development",
+          "lifecycle",
+          "hpcwire"
+        ],
+        [
+          "gsa",
+          "issued",
+          "acquisition",
+          "policy",
+          "new",
+          "contracts",
+          "here",
+          "what",
+          "says",
+          "fedscoop"
         ]
       ]
     }
