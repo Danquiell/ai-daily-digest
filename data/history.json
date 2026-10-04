@@ -1,113 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-20",
-      "topics": [
-        "Obama says the government should ‘act fast’ and regulate AI - Alaska's News Source",
-        "iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement",
-        "Lawsuit Accuses Anthropic, OpenAI, Google, and SpaceXAI of Illegally Coordinating an AI Slowdown - CDO Magazine",
-        "DataMEDS AI launches new corporate website following acquisition By Investing.com - Investing.com Nigeria",
-        "ChatGPT now knows what you do on other websites via ad collector",
-        "NYC-based Corridor, which uses AI to offer health benefits for small businesses, raised a $16M seed led by Bain Capital Ventures, following a $9M pre-seed (Brock E.W. Turner/Axios)"
-      ],
-      "title_hashes": [
-        "b9176897338c0a599d6f935c86bf3d9f18ee317ca460f3752a815f8b6f285969",
-        "8621fb251b73f97795fb488db619248683db511e6b8be0f4bb9fb195c239ec9f",
-        "8516efc1fd1710d102733250ac570318293147f8c08adfe2e5746c575fc12e6b",
-        "a33899a1d1a473b8ba2f98b2118c80710909aeb4f164efe6ce83f9c669c8e968",
-        "d2e73c34ecdd5713ffbcbd51cd6f696a22a588422efb2f5f492e4596e151dc4f",
-        "d0beccf3da9472109a294553294e6eb28b9d58aa4a2adc402255b90f7176fd88"
-      ],
-      "topic_tokens": [
-        [
-          "obama",
-          "says",
-          "government",
-          "should",
-          "act",
-          "fast",
-          "regulate",
-          "alaska",
-          "news",
-          "source"
-        ],
-        [
-          "iphone",
-          "owners",
-          "can",
-          "now",
-          "submit",
-          "claims",
-          "apple",
-          "250",
-          "million",
-          "siri",
-          "settlement"
-        ],
-        [
-          "lawsuit",
-          "accuses",
-          "anthropic",
-          "openai",
-          "google",
-          "spacexai",
-          "illegally",
-          "coordinating",
-          "slowdown",
-          "cdo",
-          "magazine"
-        ],
-        [
-          "datameds",
-          "launches",
-          "new",
-          "corporate",
-          "website",
-          "following",
-          "acquisition",
-          "investing",
-          "investing",
-          "nigeria"
-        ],
-        [
-          "chatgpt",
-          "now",
-          "knows",
-          "what",
-          "you",
-          "other",
-          "websites",
-          "via",
-          "collector"
-        ],
-        [
-          "nyc",
-          "based",
-          "corridor",
-          "which",
-          "uses",
-          "offer",
-          "health",
-          "benefits",
-          "small",
-          "businesses",
-          "raised",
-          "16m",
-          "seed",
-          "led",
-          "bain",
-          "capital",
-          "ventures",
-          "following",
-          "pre",
-          "seed",
-          "brock",
-          "turner",
-          "axios"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-21",
       "topics": [
         "Meta’s AI agent has been blocked from using Amazon.com",
@@ -1290,6 +1183,119 @@
           "what",
           "says",
           "fedscoop"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "topics": [
+        "Trump announces a new Super Intelligence Force, to be led by DNI Jay Clayton, along with FTC's Andrew Ferguson, DOD's Emil Michael, and OPM's Scott Kupor (Politico)",
+        "Fact Check Team: What’s the difference between artificial intelligence & superintelligence - National News Desk",
+        "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+        "Google prepares to defend a £1.2B UK class action lawsuit over claims it levied \"excessive\" charges on Android apps downloaded from Google Play since 2015 (Financial Times)",
+        "Amazon’s $1B plan to combat data center backlash draws more backlash",
+        "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China"
+      ],
+      "title_hashes": [
+        "f5981b2f31c4dade86f1aa39817ab45333fba0de5c1803ec509959a9e8d5370c",
+        "3ebc39d9daeddb61cacf89ff0adc65fbfeba5cebc51d2ebffd39592cfa799cd1",
+        "5c9bb845f28e8282eae81f5362e142e7342b851971f08a1b48be41795e83053b",
+        "84388c3deca03e762ca213d44b59be0090fa7ae0783fd69dd1d6450387cb0ccf",
+        "b6fdfcddc1a5c3bd19414a60413ddd3f171d8204e5c489e41ad9aac4b9eb0d52",
+        "1f16de463a299477c0c07515f219fdc396a3496346501c9a5259327a409905c8"
+      ],
+      "topic_tokens": [
+        [
+          "trump",
+          "announces",
+          "new",
+          "super",
+          "intelligence",
+          "force",
+          "led",
+          "dni",
+          "jay",
+          "clayton",
+          "along",
+          "ftc",
+          "andrew",
+          "ferguson",
+          "dod",
+          "emil",
+          "michael",
+          "opm",
+          "scott",
+          "kupor",
+          "politico"
+        ],
+        [
+          "fact",
+          "check",
+          "team",
+          "what",
+          "difference",
+          "between",
+          "artificial",
+          "intelligence",
+          "superintelligence",
+          "national",
+          "news",
+          "desk"
+        ],
+        [
+          "openai",
+          "safety",
+          "employee",
+          "resigns",
+          "claiming",
+          "company",
+          "culture",
+          "broken"
+        ],
+        [
+          "google",
+          "prepares",
+          "defend",
+          "class",
+          "action",
+          "lawsuit",
+          "over",
+          "claims",
+          "levied",
+          "excessive",
+          "charges",
+          "android",
+          "apps",
+          "downloaded",
+          "google",
+          "play",
+          "since",
+          "2015",
+          "financial",
+          "times"
+        ],
+        [
+          "amazon",
+          "plan",
+          "combat",
+          "data",
+          "center",
+          "backlash",
+          "draws",
+          "more",
+          "backlash"
+        ],
+        [
+          "arrests",
+          "tech",
+          "ceo",
+          "accused",
+          "smuggling",
+          "300m",
+          "nvidia",
+          "chips",
+          "into",
+          "china"
         ]
       ]
     }
