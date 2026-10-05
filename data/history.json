@@ -1,129 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-21",
-      "topics": [
-        "Meta’s AI agent has been blocked from using Amazon.com",
-        "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
-        "Baselayer, which uses AI to help financial institutions verify businesses and assess fraud risk, raised a $35M Series A led by M13, for ~$40M in total funding (Mary Ann Azevedo/Crunchbase News)",
-        "Not Micron. Not Alphabet. Here's My Top Artificial Intelligence (AI) Stock Pick for the Next 3 Years. - The Globe and Mail",
-        "a16z invests $35M in Horowitz Andreessen Academy, an independent, unaccredited two-year alternative to college; Anthropic, Meta, and others will provide compute (Katherine Bindley/Wall Street Journal)",
-        "Marco Rubio on Iran War, Soaring Gas Prices, AI, Media Ban, More - TODAY.com"
-      ],
-      "title_hashes": [
-        "b519d52183e55d799867e9162edc125c1e1319c41273077acca0255985c33e93",
-        "dd80868701213ea3394a8fbd310cc3c6671825fa0e790ebc29e468df348fdcb9",
-        "825a33cc319d80943cb8c826fd6033e8250330f9aeba4a8152cb2900b8730d4e",
-        "7a5523323ce73766f3696b474ac703f7e91f50c86f468c3b4ae5786b8488be3f",
-        "f230d88dc3df3edf80722cf4fbfa598486c0c020e93063fe3d222076e6143bdf",
-        "d306666152c16cacf250337fd10f69ba15937bd124f7c8e8e7f5e5c824bf25fb"
-      ],
-      "topic_tokens": [
-        [
-          "meta",
-          "agent",
-          "has",
-          "blocked",
-          "using",
-          "amazon"
-        ],
-        [
-          "openai",
-          "forms",
-          "math",
-          "advisory",
-          "group",
-          "its",
-          "resolves",
-          "more",
-          "than",
-          "100",
-          "open",
-          "problems"
-        ],
-        [
-          "baselayer",
-          "which",
-          "uses",
-          "help",
-          "financial",
-          "institutions",
-          "verify",
-          "businesses",
-          "assess",
-          "fraud",
-          "risk",
-          "raised",
-          "35m",
-          "series",
-          "led",
-          "m13",
-          "40m",
-          "total",
-          "funding",
-          "mary",
-          "ann",
-          "azevedo",
-          "crunchbase",
-          "news"
-        ],
-        [
-          "not",
-          "micron",
-          "not",
-          "alphabet",
-          "here",
-          "top",
-          "artificial",
-          "intelligence",
-          "stock",
-          "pick",
-          "next",
-          "years",
-          "globe",
-          "mail"
-        ],
-        [
-          "a16z",
-          "invests",
-          "35m",
-          "horowitz",
-          "andreessen",
-          "academy",
-          "independent",
-          "unaccredited",
-          "two",
-          "year",
-          "alternative",
-          "college",
-          "anthropic",
-          "meta",
-          "others",
-          "will",
-          "provide",
-          "compute",
-          "katherine",
-          "bindley",
-          "wall",
-          "street",
-          "journal"
-        ],
-        [
-          "marco",
-          "rubio",
-          "iran",
-          "war",
-          "soaring",
-          "gas",
-          "prices",
-          "media",
-          "ban",
-          "more",
-          "today"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-22",
       "topics": [
         "Trump Addresses United Nations to Declare That the United States Is Now Calling Artificial Intelligence \"Super Intelligence\" in \"All Official Documents\" - Futurism",
@@ -1296,6 +1173,84 @@
           "chips",
           "into",
           "china"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "topics": [
+        "Norway is first to propose temporary ban on AI glasses in public places - Financial Times",
+        "APTOPIX New York City Artificial Intelligence - dailyrecordnews.com",
+        "Trump unveils his new Super Intelligence Force",
+        "Minnesota’s ban on AI ‘nudification’ paused after ruling by federal appeals court - kaaltv.com",
+        "Schneider Expands in AI With Record $23 Billion Acquisition - energyconnects.com",
+        "OpenAI is sticking more ads in ChatGPT"
+      ],
+      "title_hashes": [
+        "b31adeaab4abc239cfd5f2e9fcbafe09245f1f3c0d992592ab385ce4fd3b14fb",
+        "26881726972afd58639a16b1fcd182e332b42bbe9e99c60def35ec9f19580055",
+        "b86700761d2943fc7ff886c7403abb1f82d1d27d75faddf524ae32742e9c25df",
+        "1359d5f89d54c586f5a6aee25b4244c4973c73623b4a31baaf81a4c54111d454",
+        "37fa80b434b919e3b14427a375c3a3882afcd932ed29ea98907ee7c1cb4b7c7c",
+        "875101ba1d111496b34a27477cea8400b4b8727b7be4404e30bb2da0e39ab786"
+      ],
+      "topic_tokens": [
+        [
+          "norway",
+          "first",
+          "propose",
+          "temporary",
+          "ban",
+          "glasses",
+          "public",
+          "places",
+          "financial",
+          "times"
+        ],
+        [
+          "aptopix",
+          "new",
+          "york",
+          "city",
+          "artificial",
+          "intelligence",
+          "dailyrecordnews"
+        ],
+        [
+          "trump",
+          "unveils",
+          "his",
+          "new",
+          "super",
+          "intelligence",
+          "force"
+        ],
+        [
+          "minnesota",
+          "ban",
+          "nudification",
+          "paused",
+          "after",
+          "ruling",
+          "federal",
+          "appeals",
+          "court",
+          "kaaltv"
+        ],
+        [
+          "schneider",
+          "expands",
+          "record",
+          "billion",
+          "acquisition",
+          "energyconnects"
+        ],
+        [
+          "openai",
+          "sticking",
+          "more",
+          "ads",
+          "chatgpt"
         ]
       ]
     }
