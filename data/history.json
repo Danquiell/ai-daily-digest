@@ -1,101 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-22",
-      "topics": [
-        "Trump Addresses United Nations to Declare That the United States Is Now Calling Artificial Intelligence \"Super Intelligence\" in \"All Official Documents\" - Futurism",
-        "Sen. Bernie Sanders unveils bill to ban artificial superintelligence and create Department of AI - ABC News - Breaking News, Latest News and Videos",
-        "Claude Opus 5.5",
-        "I said no and Apple said yes",
-        "Ema raises $77M as AI starts eating into enterprise software and services",
-        "Discover what’s next: 5 days left to save up to $200 on your TechCrunch Disrupt 2026 ticket"
-      ],
-      "title_hashes": [
-        "93a0f31ce4a8ea08cef9228c4e3606f889d32277d6dadf70f07da5c38a7063bc",
-        "c3d1b281829104cbebe346171e89018e7ba164f6fa706fac7091bd6cd8877a00",
-        "2ad9765b2b791487ade4ad85c43941c6a5d4435c7e65cb021ff1d1e24a5fa026",
-        "457dcb83c4e8be35d8d69dc2769bce90fe62275113a26f2e26b3ab55d8971f86",
-        "0506b12b36a4fe9ca2cab96201f2bd9168bbf35acbca424dc33efea832f31dbd",
-        "54b7b920a5784cbb389153c8c1e57207c8ccdb847f8e18f46edc04bbca91e934"
-      ],
-      "topic_tokens": [
-        [
-          "trump",
-          "addresses",
-          "united",
-          "nations",
-          "declare",
-          "that",
-          "united",
-          "states",
-          "now",
-          "calling",
-          "artificial",
-          "intelligence",
-          "super",
-          "intelligence",
-          "all",
-          "official",
-          "documents",
-          "futurism"
-        ],
-        [
-          "sen",
-          "bernie",
-          "sanders",
-          "unveils",
-          "bill",
-          "ban",
-          "artificial",
-          "superintelligence",
-          "create",
-          "department",
-          "abc",
-          "news",
-          "breaking",
-          "news",
-          "latest",
-          "news",
-          "videos"
-        ],
-        [
-          "claude",
-          "opus"
-        ],
-        [
-          "said",
-          "apple",
-          "said",
-          "yes"
-        ],
-        [
-          "ema",
-          "raises",
-          "77m",
-          "starts",
-          "eating",
-          "into",
-          "enterprise",
-          "software",
-          "services"
-        ],
-        [
-          "discover",
-          "what",
-          "next",
-          "days",
-          "left",
-          "save",
-          "200",
-          "your",
-          "techcrunch",
-          "disrupt",
-          "2026",
-          "ticket"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-23",
       "topics": [
         "Meta VR Glasses, Ray-Ban Meta Audio, Ray-Ban Meta Gen 3: Specs, Features, Prices",
@@ -1251,6 +1156,96 @@
           "more",
           "ads",
           "chatgpt"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "topics": [
+        "Federal appeals court sides with Elon Musk, pauses Minnesota’s AI ‘nudification’ ban - Bring Me The News",
+        "The Only 2 Artificial Intelligence (AI) Stocks I'd Buy With $1,000 Today and Never Sell - The Globe and Mail",
+        "Mistral Large 4",
+        "Schneider Expands in AI With Record $23 Billion Acquisition - Energy Connects",
+        "Norway Plans Temporary Ban On AI Glasses In Public Places Over Privacy Concerns: how 12 outlets framed it - NewsCord",
+        "OpenAI, Anthropic tell Australia they would welcome data breach rules - Reuters"
+      ],
+      "title_hashes": [
+        "c122d968407c41dfa912e86dacd748efff16c09b13cd51379ae46c196d259fa9",
+        "d36b84dfb520a8fd2eb6c28a3f8528c976a28d98aad45d0a5e0456f1696f6236",
+        "5f2749c5e6a7fb76e5cfbb0d8f0e4729913efa3b738bec781709d96d73153f09",
+        "98c8d143ae46dd92267ace3537269d56618094fd721bb8217c8266f79b36554a",
+        "8356052775b55463358370d77a3f0228d7c02d1162835ade8c31284a633b9532",
+        "ef3e70a942c2eb2a8743db684edec5fd68e1216af9bf9aacacc463b2cdac24f9"
+      ],
+      "topic_tokens": [
+        [
+          "federal",
+          "appeals",
+          "court",
+          "sides",
+          "elon",
+          "musk",
+          "pauses",
+          "minnesota",
+          "nudification",
+          "ban",
+          "bring",
+          "news"
+        ],
+        [
+          "only",
+          "artificial",
+          "intelligence",
+          "stocks",
+          "buy",
+          "000",
+          "today",
+          "never",
+          "sell",
+          "globe",
+          "mail"
+        ],
+        [
+          "mistral",
+          "large"
+        ],
+        [
+          "schneider",
+          "expands",
+          "record",
+          "billion",
+          "acquisition",
+          "energy",
+          "connects"
+        ],
+        [
+          "norway",
+          "plans",
+          "temporary",
+          "ban",
+          "glasses",
+          "public",
+          "places",
+          "over",
+          "privacy",
+          "concerns",
+          "how",
+          "outlets",
+          "framed",
+          "newscord"
+        ],
+        [
+          "openai",
+          "anthropic",
+          "tell",
+          "australia",
+          "they",
+          "would",
+          "welcome",
+          "data",
+          "breach",
+          "rules",
+          "reuters"
         ]
       ]
     }
