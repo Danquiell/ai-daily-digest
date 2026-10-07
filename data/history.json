@@ -1,120 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-23",
-      "topics": [
-        "Meta VR Glasses, Ray-Ban Meta Audio, Ray-Ban Meta Gen 3: Specs, Features, Prices",
-        "Claude discovers a novel enzyme system with CRISPR-like repeats",
-        "NEWS: Casar, Sanders Introduce Legislation to Create New Federal Agency to Ban Artificial Superintelligence, Pause Advanced AI Development - House.gov",
-        "OpenAI, Anthropic CEOs at UN call for global cooperation on AI: 'We are at a crossroads' - ABC News - Breaking News, Latest News and Videos",
-        "i think someone got Trump to rename artificial intelligence as super intelligence, in order to make it harder to talk about Artificial Super Intelligence",
-        "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later"
-      ],
-      "title_hashes": [
-        "277c0ea132b30421e8bc27d5e369a5cf7653347da669c51184b266f369e2564d",
-        "eef3f0d68d882cce956662c77ad72c3bba0dfa4fb9a76eddf4135556d013a088",
-        "bc9a9c8a70bba039379056b463a7f68d271bfe8e904c0576015c1ccf708efa3a",
-        "e12319167abae267602474cc813ce75002c96587617b67e165c1774c913327e3",
-        "2cfcf0c636180474a60730c1a54cf331654800f85b82d43efebe6618c9c63dde",
-        "ee80305b11bc29691db4d856168fcfd82cba5dd4f36f053b60e8b89b69fd5c6b"
-      ],
-      "topic_tokens": [
-        [
-          "meta",
-          "glasses",
-          "ray",
-          "ban",
-          "meta",
-          "audio",
-          "ray",
-          "ban",
-          "meta",
-          "gen",
-          "specs",
-          "features",
-          "prices"
-        ],
-        [
-          "claude",
-          "discovers",
-          "novel",
-          "enzyme",
-          "system",
-          "crispr",
-          "like",
-          "repeats"
-        ],
-        [
-          "news",
-          "casar",
-          "sanders",
-          "introduce",
-          "legislation",
-          "create",
-          "new",
-          "federal",
-          "agency",
-          "ban",
-          "artificial",
-          "superintelligence",
-          "pause",
-          "advanced",
-          "development",
-          "house",
-          "gov"
-        ],
-        [
-          "openai",
-          "anthropic",
-          "ceos",
-          "call",
-          "global",
-          "cooperation",
-          "crossroads",
-          "abc",
-          "news",
-          "breaking",
-          "news",
-          "latest",
-          "news",
-          "videos"
-        ],
-        [
-          "think",
-          "someone",
-          "got",
-          "trump",
-          "rename",
-          "artificial",
-          "intelligence",
-          "super",
-          "intelligence",
-          "order",
-          "make",
-          "harder",
-          "talk",
-          "about",
-          "artificial",
-          "super",
-          "intelligence"
-        ],
-        [
-          "openai",
-          "agent",
-          "hacked",
-          "australia",
-          "health",
-          "service",
-          "their",
-          "government",
-          "found",
-          "out",
-          "months",
-          "later"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-24",
       "topics": [
         "Sanders, Casar Unveil Bill to Ban AI Superintelligence That 'Could Kill Countless Numbers of People' - Common Dreams",
@@ -1246,6 +1132,101 @@
           "breach",
           "rules",
           "reuters"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "topics": [
+        "Sharing AI progress in mathematics",
+        "Building a context-aware AI assistant on AgentCore and OpenClaw | Amazon Web Services - Amazon Web Services (AWS)",
+        "The Download: 10 climate tech companies to watch",
+        "WeLion New Energy and its semi-solid-state batteries",
+        "Google launches SynthID Detector, a website that lets users detect AI-generated image, video, and audio media across dozens of common file formats (Ivan Mehta/TechCrunch)",
+        "AI regulation must be federal, New York City council speaker warns - Fox News"
+      ],
+      "title_hashes": [
+        "4a12763560a85f25ffa4452a7b692bd836ccb2777bb88c2a6508e38820dad9d8",
+        "ad6029e85a88c9ead2e0d99189b32e33d4e9cc577837798ef9043f1934575f04",
+        "99a6ceee2948bfeaa5b2660bffc6932588044369ba2744cedae092698c31aca5",
+        "95f2b2b6d3bbd05d272940271e9524cc84ffd4344e09a7e8e2bd9525ce3cd3e0",
+        "d7790468394859d439bfe666dc139e451a1847f7553eac5ed10772b7236c0c34",
+        "dc9ede35041be49b83ad517235fdb9c6bd77d060e9feba7f3a2ad5a784d60397"
+      ],
+      "topic_tokens": [
+        [
+          "sharing",
+          "progress",
+          "mathematics"
+        ],
+        [
+          "building",
+          "context",
+          "aware",
+          "assistant",
+          "agentcore",
+          "openclaw",
+          "amazon",
+          "web",
+          "services",
+          "amazon",
+          "web",
+          "services",
+          "aws"
+        ],
+        [
+          "download",
+          "climate",
+          "tech",
+          "companies",
+          "watch"
+        ],
+        [
+          "welion",
+          "new",
+          "energy",
+          "its",
+          "semi",
+          "solid",
+          "state",
+          "batteries"
+        ],
+        [
+          "google",
+          "launches",
+          "synthid",
+          "detector",
+          "website",
+          "that",
+          "lets",
+          "users",
+          "detect",
+          "generated",
+          "image",
+          "video",
+          "audio",
+          "media",
+          "across",
+          "dozens",
+          "common",
+          "file",
+          "formats",
+          "ivan",
+          "mehta",
+          "techcrunch"
+        ],
+        [
+          "regulation",
+          "must",
+          "federal",
+          "new",
+          "york",
+          "city",
+          "council",
+          "speaker",
+          "warns",
+          "fox",
+          "news"
         ]
       ]
     }
