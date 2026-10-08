@@ -1,110 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-24",
-      "topics": [
-        "Sanders, Casar Unveil Bill to Ban AI Superintelligence That 'Could Kill Countless Numbers of People' - Common Dreams",
-        "Oracle cut 21,000 jobs and paid $1.8B in severance while announcing record AI infrastructure spending. The layoffs aren't because of AI. They're funding it.",
-        "No Nvidia Needed: Akamai Lands $11.6 Billion Anthropic AI Deal - Investor's Business Daily",
-        "OpenAI agent “didn’t accept no for an answer” in Australian government breach",
-        "Meta takes down a critical video about meta AI Glasses after filming at Meta",
-        "Last 24 hours to save up to $200 on TechCrunch Disrupt 2026. Reason 5/5 to attend: Leave further ahead."
-      ],
-      "title_hashes": [
-        "9332593c1ac1383a63f91e6d145fe08714d47ce8acdcbd15b9d0ec359e3d6639",
-        "762dc2ffcdf0e16623ecc66b55be8671323a22685626508f288d4f69c73717bc",
-        "459367517f7af943c797252fb2eb4cc6dd83724ea8c5d19f0f3ca004f39b8a33",
-        "1a4c771f243d71fc864e291253d87d6d79094a1f20d8aeebe1fa7748bdaecab7",
-        "1ea82eea34e6cf4c45b8d07dfc6e4d3277ff33a98e24470b94d4733cd4bf6a0c",
-        "c80907e7b96f5c77c92494937853a5957ffe46e68daed39b37efda41d5a28ea5"
-      ],
-      "topic_tokens": [
-        [
-          "sanders",
-          "casar",
-          "unveil",
-          "bill",
-          "ban",
-          "superintelligence",
-          "that",
-          "could",
-          "kill",
-          "countless",
-          "numbers",
-          "people",
-          "common",
-          "dreams"
-        ],
-        [
-          "oracle",
-          "cut",
-          "000",
-          "jobs",
-          "paid",
-          "severance",
-          "while",
-          "announcing",
-          "record",
-          "infrastructure",
-          "spending",
-          "layoffs",
-          "aren",
-          "because",
-          "they",
-          "funding"
-        ],
-        [
-          "nvidia",
-          "needed",
-          "akamai",
-          "lands",
-          "billion",
-          "anthropic",
-          "deal",
-          "investor",
-          "business",
-          "daily"
-        ],
-        [
-          "openai",
-          "agent",
-          "didn",
-          "accept",
-          "answer",
-          "australian",
-          "government",
-          "breach"
-        ],
-        [
-          "meta",
-          "takes",
-          "down",
-          "critical",
-          "video",
-          "about",
-          "meta",
-          "glasses",
-          "after",
-          "filming",
-          "meta"
-        ],
-        [
-          "last",
-          "hours",
-          "save",
-          "200",
-          "techcrunch",
-          "disrupt",
-          "2026",
-          "reason",
-          "attend",
-          "leave",
-          "further",
-          "ahead"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-25",
       "topics": [
         "Researchers: OpenAI's agents meddled with the US Commerce Dept. and SEC sites this summer without OpenAI's knowledge and tried to hack the Education Dept. site (New York Times)",
@@ -1227,6 +1123,105 @@
           "warns",
           "fox",
           "news"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "topics": [
+        "China’s Manus raises over $500M in first funding round since split with Meta",
+        "Sources: the IPO of Nvidia-backed data center provider Firmus is uncertain after failing to attract adequate support, underscoring concerns over AI funding (Bloomberg)",
+        "Claude Haiku 5.5",
+        "Google is launching a one-stop Gemini agent for your work tasks",
+        "Anthropic launches third Claude 5.5 model, expanding AI lineup before planned IPO - Reuters",
+        "Most Americans think artificial intelligence is developing too fast, a new AP-NORC poll finds - morning-times.com"
+      ],
+      "title_hashes": [
+        "3b49f4c0c54f892701cfbcb97c0416ae649ab70c8e0158aed6f4c8ff0cc588da",
+        "41818df6e7da12a3f6dff1e976c7557545c5a7f44bc7c638d520a4576cf4f488",
+        "0b47278aeb7669fe00e16bdcad971a3fc4c940195fe1b39fd69b823afd3f8a6e",
+        "d2e8e9f03f56a665deeb33d10111d0be152b71397396cdddc7a976c9672042db",
+        "af398682fd6190112fe9602368a539e0a087541f89e0fcd3aea7013e9ee1dd8e",
+        "2cc7549a1678045753c080b81bc3cfbf652eb4ec1d95114aca95a9271c97816f"
+      ],
+      "topic_tokens": [
+        [
+          "china",
+          "manus",
+          "raises",
+          "over",
+          "500m",
+          "first",
+          "funding",
+          "round",
+          "since",
+          "split",
+          "meta"
+        ],
+        [
+          "sources",
+          "ipo",
+          "nvidia",
+          "backed",
+          "data",
+          "center",
+          "provider",
+          "firmus",
+          "uncertain",
+          "after",
+          "failing",
+          "attract",
+          "adequate",
+          "support",
+          "underscoring",
+          "concerns",
+          "over",
+          "funding",
+          "bloomberg"
+        ],
+        [
+          "claude",
+          "haiku"
+        ],
+        [
+          "google",
+          "launching",
+          "one",
+          "stop",
+          "gemini",
+          "agent",
+          "your",
+          "work",
+          "tasks"
+        ],
+        [
+          "anthropic",
+          "launches",
+          "third",
+          "claude",
+          "model",
+          "expanding",
+          "lineup",
+          "before",
+          "planned",
+          "ipo",
+          "reuters"
+        ],
+        [
+          "most",
+          "americans",
+          "think",
+          "artificial",
+          "intelligence",
+          "developing",
+          "too",
+          "fast",
+          "new",
+          "norc",
+          "poll",
+          "finds",
+          "morning",
+          "times"
         ]
       ]
     }
