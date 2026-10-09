@@ -1,110 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-25",
-      "topics": [
-        "Researchers: OpenAI's agents meddled with the US Commerce Dept. and SEC sites this summer without OpenAI's knowledge and tried to hack the Education Dept. site (New York Times)",
-        "Appeals Court Lets the Pentagon Designate Anthropic a Supply-Chain Risk",
-        "Bill Gates warns AI powerful enough to lead to ‘a billion deaths’ - The Detroit News",
-        "This Stock May Be the Best Artificial Intelligence (AI) and Quantum Computing Investment - The Globe and Mail",
-        "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
-        "US, China agree to cut tariffs on $30 billion worth of goods, set up channel for AI incidents - The Hill"
-      ],
-      "title_hashes": [
-        "6f2c0ca2aaf184d3efb3a6f2d67384c219f7e2878a33114acfa504e556db0d0c",
-        "a6377d57cb485e3b62fa1a3c8ade6b8498fa8fc5b8697fc4f9fce72b5412e533",
-        "8be69ed9c5d9708f890b9ac9d86945ca7c1b8430c752947ca48b1b502368b687",
-        "2c4f72174cfdd9498aca52f88955cdb94609feaeb20b5ddad6d881b959dc5d4a",
-        "24bd75f41caa4d1b95b558dbd7e3a5a4d2f62ec1c55003e5e9151cf1b5dd5964",
-        "4cbb91c0ba00050623ec72908e2d1b3effd541138e439c8c97d6200c465a14be"
-      ],
-      "topic_tokens": [
-        [
-          "researchers",
-          "openai",
-          "agents",
-          "meddled",
-          "commerce",
-          "dept",
-          "sec",
-          "sites",
-          "this",
-          "summer",
-          "without",
-          "openai",
-          "knowledge",
-          "tried",
-          "hack",
-          "education",
-          "dept",
-          "site",
-          "new",
-          "york",
-          "times"
-        ],
-        [
-          "appeals",
-          "court",
-          "lets",
-          "pentagon",
-          "designate",
-          "anthropic",
-          "supply",
-          "chain",
-          "risk"
-        ],
-        [
-          "bill",
-          "gates",
-          "warns",
-          "powerful",
-          "enough",
-          "lead",
-          "billion",
-          "deaths",
-          "detroit",
-          "news"
-        ],
-        [
-          "this",
-          "stock",
-          "may",
-          "best",
-          "artificial",
-          "intelligence",
-          "quantum",
-          "computing",
-          "investment",
-          "globe",
-          "mail"
-        ],
-        [
-          "anthropic",
-          "pay",
-          "akamai",
-          "billion",
-          "over",
-          "seven",
-          "years",
-          "cloud",
-          "deal"
-        ],
-        [
-          "china",
-          "agree",
-          "cut",
-          "tariffs",
-          "billion",
-          "worth",
-          "goods",
-          "set",
-          "channel",
-          "incidents",
-          "hill"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-26",
       "topics": [
         "U.S. appeals court upholds designation of Anthropic as supply chain risk",
@@ -1222,6 +1118,95 @@
           "finds",
           "morning",
           "times"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "topics": [
+        "Trump Says Anyone Using ‘Artificial Intelligence Instead of Super Intelligence Is Enemy’: What We Know - News18",
+        "Anthropic bans 'abusive or cruel behavior' towards Claude",
+        "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
+        "OpenAI’s revenue is reportedly $20 billion less than previously projected",
+        "OpenAI doubles down on decision to fire three AI safety researchers",
+        "Analysis-AI pricing lawsuit against McDonald’s raises new antitrust questions By Reuters - Investing.com"
+      ],
+      "title_hashes": [
+        "447eedda3fc965d86a71757b57c0500aeeba75b128b1d75f8fc605a612378285",
+        "d794306300bfeafeb1f30e85b24242931311845c174e315ad36696089d9a7935",
+        "f171779dcb1d18efbaac0ecdae970cc0bbf4e4f20d5bd007641ed04d9ed705ba",
+        "f1be42d85cb877d3f562b41647cad0ce91e8efde2627c00c1be1523f0a4d6350",
+        "d9263fe6e535edadea29aec4148e6fd4373a0aeacb17388c1c0694a65deac5c9",
+        "f538dea0520d36306a26b07b3b8c2e65ae2147a0474452fd0566941f347d7f9c"
+      ],
+      "topic_tokens": [
+        [
+          "trump",
+          "says",
+          "anyone",
+          "using",
+          "artificial",
+          "intelligence",
+          "instead",
+          "super",
+          "intelligence",
+          "enemy",
+          "what",
+          "know",
+          "news18"
+        ],
+        [
+          "anthropic",
+          "bans",
+          "abusive",
+          "cruel",
+          "behavior",
+          "towards",
+          "claude"
+        ],
+        [
+          "nous",
+          "research",
+          "confirms",
+          "hit",
+          "valuation",
+          "launches",
+          "agents",
+          "business",
+          "users"
+        ],
+        [
+          "openai",
+          "revenue",
+          "reportedly",
+          "billion",
+          "less",
+          "than",
+          "previously",
+          "projected"
+        ],
+        [
+          "openai",
+          "doubles",
+          "down",
+          "decision",
+          "fire",
+          "three",
+          "safety",
+          "researchers"
+        ],
+        [
+          "analysis",
+          "pricing",
+          "lawsuit",
+          "against",
+          "mcdonald",
+          "raises",
+          "new",
+          "antitrust",
+          "questions",
+          "reuters",
+          "investing"
         ]
       ]
     }
