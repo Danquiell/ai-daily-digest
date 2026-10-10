@@ -1,94 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-26",
-      "topics": [
-        "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-        "Bill Gates says unchecked AI could ‘cause a billion deaths’ in call for regulation - The Guardian",
-        "Anthropic and OpenAI sound the alarm on AI safety — and seek to shape how it's controlled - Bozeman Daily Chronicle",
-        "OpenAI pauses training of its ‘most capable models’",
-        "AI risks: Will artificial intelligence really kill us all? - CBS News",
-        "Revealing the details of how OpenAI agents hacked Hugging Face"
-      ],
-      "title_hashes": [
-        "1ef9eca78460fa1754d8dbe0ef75589e942d96cd93db787c63a63d2a0466af42",
-        "04cfbb6a71ba8d235a88f3f32d1d69094e26891197241eb891cf1e83d60a5829",
-        "b836b742a6eff076a40fba0662f5a79bfc6366eac97048bdca3f3fa888672bbc",
-        "27f346baf84a271f30ad081020629ebdfa314d87512cb3cbd5f56a297fb77fc9",
-        "9df5c89296779ce1778f242c5aa01b4726eae08c2489074353d4dfdbb4544127",
-        "805ba14978645eb25aad7eadfdaccb1ba5b3cf0e74f93cd1092b68b25861682e"
-      ],
-      "topic_tokens": [
-        [
-          "appeals",
-          "court",
-          "upholds",
-          "designation",
-          "anthropic",
-          "supply",
-          "chain",
-          "risk"
-        ],
-        [
-          "bill",
-          "gates",
-          "says",
-          "unchecked",
-          "could",
-          "cause",
-          "billion",
-          "deaths",
-          "call",
-          "regulation",
-          "guardian"
-        ],
-        [
-          "anthropic",
-          "openai",
-          "sound",
-          "alarm",
-          "safety",
-          "seek",
-          "shape",
-          "how",
-          "controlled",
-          "bozeman",
-          "daily",
-          "chronicle"
-        ],
-        [
-          "openai",
-          "pauses",
-          "training",
-          "its",
-          "most",
-          "capable",
-          "models"
-        ],
-        [
-          "risks",
-          "will",
-          "artificial",
-          "intelligence",
-          "really",
-          "kill",
-          "all",
-          "cbs",
-          "news"
-        ],
-        [
-          "revealing",
-          "details",
-          "how",
-          "openai",
-          "agents",
-          "hacked",
-          "hugging",
-          "face"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-27",
       "topics": [
         "Owed a billion dollars in Nvidia stock",
@@ -1207,6 +1119,98 @@
           "questions",
           "reuters",
           "investing"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "topics": [
+        "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+        "President Donald Trump says anyone using the term ‘artificial intelligence’ is ‘the enemy’ - The Next Web",
+        "Typesafe AI raises $870M at $7.5B",
+        "OpenAI annualised revenues $20B less than previously signalled",
+        "Anthropic changes usage policy to ban model abuse and election interference",
+        "The Frederick County Board of Education voted on Wednesday to ban the use of AI by students at all grade levels. What do you think? - The Frederick News-Post"
+      ],
+      "title_hashes": [
+        "aa6cba68d435122ee4cb61b6c564f5d61be7cce1f145ae7b45c32c6ba0a9afa0",
+        "5362c27284fd32ae1aa6828239ff25644d385e70e308fbd2b6f019349ff83440",
+        "6aef07cde3695f7fb75a878b6728d38918c98d2b74f85c6edbfde8a1f6a1797d",
+        "377f4f00328bff7b876f99678cb6d015f04bcdd03e60c8d5b5a08075db178675",
+        "f61fcce7061edd568759e1be1c5e5a55c151b884d3b2f0412cf353890d4f502f",
+        "6cb0ee8c9289a5a3228ff324a8788206b9be1899bf6d532d9b0d9177f33b2952"
+      ],
+      "topic_tokens": [
+        [
+          "anthropic",
+          "gave",
+          "philadelphia",
+          "police",
+          "fake",
+          "tip",
+          "about",
+          "unsolved",
+          "homicide"
+        ],
+        [
+          "president",
+          "donald",
+          "trump",
+          "says",
+          "anyone",
+          "using",
+          "term",
+          "artificial",
+          "intelligence",
+          "enemy",
+          "next",
+          "web"
+        ],
+        [
+          "typesafe",
+          "raises",
+          "870m"
+        ],
+        [
+          "openai",
+          "annualised",
+          "revenues",
+          "20b",
+          "less",
+          "than",
+          "previously",
+          "signalled"
+        ],
+        [
+          "anthropic",
+          "changes",
+          "usage",
+          "policy",
+          "ban",
+          "model",
+          "abuse",
+          "election",
+          "interference"
+        ],
+        [
+          "frederick",
+          "county",
+          "board",
+          "education",
+          "voted",
+          "wednesday",
+          "ban",
+          "use",
+          "students",
+          "all",
+          "grade",
+          "levels",
+          "what",
+          "you",
+          "think",
+          "frederick",
+          "news",
+          "post"
         ]
       ]
     }
