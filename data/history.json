@@ -1,95 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-27",
-      "topics": [
-        "Owed a billion dollars in Nvidia stock",
-        "Anthropic’s CEO is about to have dinner with President Trump",
-        "AI agent startup Instinct raised a $1B Series C from Sequoia, Benchmark, and Coatue at a $10B valuation and details recent products, such as a concierge service (Utkarsh Shetti/Reuters)",
-        "Unsealed Briefs in Authors’ Case v. Microsoft/OpenAI",
-        "Florida seeks a ban on ChatGPT acting like a person",
-        "VLY: Acquisition adds digital scale, AI, and funding strength, driving growth and efficiency gains - TradingView"
-      ],
-      "title_hashes": [
-        "e27d08051c215103050c6f7e09aca81cc1ce2c0901c1377b40ade06a192cf375",
-        "e3c744a076b9027e5d14a8fe1f0df7955a378de1a737e53493a10ea5ab286296",
-        "c30745747bcbb6314ac61a2af50aed012957b9becf7e92204903e0937c1b0ed6",
-        "6e176227aff55ca3a7a7e8fc0e44a296cf2db9e6da307ff732da869f92e873d1",
-        "bdf48392a256b01c878ed7f0865b88724eb047094e7aba40168733fb6ad6346b",
-        "b489c85bab285344da714b1ece5da52607ef921b600a6fccdedce5c7549d85d8"
-      ],
-      "topic_tokens": [
-        [
-          "owed",
-          "billion",
-          "dollars",
-          "nvidia",
-          "stock"
-        ],
-        [
-          "anthropic",
-          "ceo",
-          "about",
-          "have",
-          "dinner",
-          "president",
-          "trump"
-        ],
-        [
-          "agent",
-          "startup",
-          "instinct",
-          "raised",
-          "series",
-          "sequoia",
-          "benchmark",
-          "coatue",
-          "10b",
-          "valuation",
-          "details",
-          "recent",
-          "products",
-          "such",
-          "concierge",
-          "service",
-          "utkarsh",
-          "shetti",
-          "reuters"
-        ],
-        [
-          "unsealed",
-          "briefs",
-          "authors",
-          "case",
-          "microsoft",
-          "openai"
-        ],
-        [
-          "florida",
-          "seeks",
-          "ban",
-          "chatgpt",
-          "acting",
-          "like",
-          "person"
-        ],
-        [
-          "vly",
-          "acquisition",
-          "adds",
-          "digital",
-          "scale",
-          "funding",
-          "strength",
-          "driving",
-          "growth",
-          "efficiency",
-          "gains",
-          "tradingview"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-28",
       "topics": [
         "OpenAI Delays Release of Latest Model Over Safety Concerns",
@@ -1211,6 +1122,106 @@
           "frederick",
           "news",
           "post"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "topics": [
+        "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+        "Sources: Nvidia is in talks to acquire or invest more into US open-weights AI startup Reflection AI; the deal may be an acquihire to avoid antitrust scrutiny (Financial Times)",
+        "Satya Nadella says we should assume all AI models are ‘compromised’",
+        "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+        "Artificial intelligence answers: what is the expected result of the Manchester United v Tottenham clash? - Goal.com",
+        "USA Today files $250 million copyright lawsuit against OpenAI - TheDesk.net"
+      ],
+      "title_hashes": [
+        "4f7d594b498a66eab12ac1a2d588a61f1aca5db046ae4d09739793ea71c647dc",
+        "a0d50eb66a91ddbe7e031392b5aac51e36f7b56cf9330a14eaa9bbb6e9374c4c",
+        "5107c2731c3e45481964513b9881b471d17d6ac3c2077baf181a7773bbd0e601",
+        "ca8b97be56c27093eaa507b7f5b155ce6cdc855056dbb9bf360bdee5a0784be2",
+        "9036178e0623405ae9c9fb2b2e0c1650acaf5cd122b5579ac743919b345e0115",
+        "12671dc96ce7ae6f458c8a2d66aad85cc838e4fa3022f8484575a839bcc099d3"
+      ],
+      "topic_tokens": [
+        [
+          "anthropic",
+          "model",
+          "sent",
+          "false",
+          "homicide",
+          "tip",
+          "philadelphia",
+          "police"
+        ],
+        [
+          "sources",
+          "nvidia",
+          "talks",
+          "acquire",
+          "invest",
+          "more",
+          "into",
+          "open",
+          "weights",
+          "startup",
+          "reflection",
+          "deal",
+          "may",
+          "acquihire",
+          "avoid",
+          "antitrust",
+          "scrutiny",
+          "financial",
+          "times"
+        ],
+        [
+          "satya",
+          "nadella",
+          "says",
+          "should",
+          "assume",
+          "all",
+          "models",
+          "compromised"
+        ],
+        [
+          "maker",
+          "non",
+          "text",
+          "model",
+          "jev",
+          "valued",
+          "just",
+          "weeks",
+          "after",
+          "launch"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "answers",
+          "what",
+          "expected",
+          "result",
+          "manchester",
+          "united",
+          "tottenham",
+          "clash",
+          "goal"
+        ],
+        [
+          "usa",
+          "today",
+          "files",
+          "250",
+          "million",
+          "copyright",
+          "lawsuit",
+          "against",
+          "openai",
+          "thedesk",
+          "net"
         ]
       ]
     }
