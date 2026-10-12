@@ -1,104 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-28",
-      "topics": [
-        "OpenAI Delays Release of Latest Model Over Safety Concerns",
-        "Trump to Discuss AI Safety and Regulation with Leading Tech Executives - Hungarian Conservative",
-        "AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
-        "Is Claude Conscious? Inside Anthropic’s Quest to Instill Morality Into Its A.I. Models - The New York Times",
-        "AI agent firm Instinct raises $1 billion in latest funding round - Reuters",
-        "$349 Billion (€307.3bn) Industry Offers Early View of AI’s Impact on IT Jobs, Cybersecurity and Regulation: 2027 iGaming Trends Report by SOFTSWISS - citybiz"
-      ],
-      "title_hashes": [
-        "d69b4c4a9e21d3eb75a1d48bbf7f5901d98fb0032f229c5fa150c70df4c3d757",
-        "86306bcb049008c718d65d06477d0c46991e9b639baa9f62810d3aaa483befd1",
-        "3c49d609f16b7ba63a2440701625e4cf2ed7c9f6aa5bf279f7ab4e67179c2154",
-        "55220df40ebce76fa457954cfba148ff3d9c3a70a26790f92a44e3d49aec8f9a",
-        "e84acfce670b22635f85b4d234a058ef4dd192f2dc74cf3e9c4b9e1dd65940c5",
-        "1f4b1739c64bbc01fd76c09c77d2a7dd9205a95242868482ea87cc91a558749b"
-      ],
-      "topic_tokens": [
-        [
-          "openai",
-          "delays",
-          "release",
-          "latest",
-          "model",
-          "over",
-          "safety",
-          "concerns"
-        ],
-        [
-          "trump",
-          "discuss",
-          "safety",
-          "regulation",
-          "leading",
-          "tech",
-          "executives",
-          "hungarian",
-          "conservative"
-        ],
-        [
-          "amd",
-          "will",
-          "acquire",
-          "fei",
-          "fei",
-          "world",
-          "labs",
-          "billion"
-        ],
-        [
-          "claude",
-          "conscious",
-          "inside",
-          "anthropic",
-          "quest",
-          "instill",
-          "morality",
-          "into",
-          "its",
-          "models",
-          "new",
-          "york",
-          "times"
-        ],
-        [
-          "agent",
-          "firm",
-          "instinct",
-          "raises",
-          "billion",
-          "latest",
-          "funding",
-          "round",
-          "reuters"
-        ],
-        [
-          "349",
-          "billion",
-          "307",
-          "3bn",
-          "industry",
-          "offers",
-          "early",
-          "view",
-          "impact",
-          "jobs",
-          "cybersecurity",
-          "regulation",
-          "2027",
-          "igaming",
-          "trends",
-          "report",
-          "softswiss",
-          "citybiz"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-29",
       "topics": [
         "Trump signs executive order rebranding AI as 'Super Intelligence' as tech titans ink separate SI accord - Fox Business",
@@ -1222,6 +1124,109 @@
           "openai",
           "thedesk",
           "net"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "topics": [
+        "Microsoft president says UK is best placed to drive AI regulation",
+        "HR Path accelerates its Artificial Intelligence strategy with the acquisition of SnapAI - The Globe and Mail",
+        "DeepSeek leads $400 million funding round for ex-Tencent scientist's robot AI startup - Startup Fortune",
+        "An interview with Mark Zuckerberg, who says Meta has caught up with rivals at the frontier of AI with its Wonder model and rejects calls for a slowdown (Hannah Murphy/Financial Times)",
+        "The gap in shared understanding of LLM capability is widening",
+        "Nvidia Eyes Reflection AI Acquisition: A Major Move That Could Reshape the Future of Open-Source Artificial Intelligence - Kingy AI"
+      ],
+      "title_hashes": [
+        "58f9367d0e047df7f24e5066171935562f30c8020f67361260bf1d452070a1d8",
+        "de0a15aac2c7ab14abba18d0f3d1efa565068c9d9bf07558748e6aa22e27ac15",
+        "1fa201b1c19ae9616c60cbf409e1aee2202ffefbc644b314ba7dc4f24740610f",
+        "44b22d1d72b631aa9288c7cd4d7da030f36f1cbe95dba7db8a1cfb8bdd46bb91",
+        "183c569c66439f7055329417c6fccb0fd75a230d1e662a000dafcc2bac6e53df",
+        "5174b7390d07a819dde6a5c2b575a47cba1fa5ff525997cc673f95e2f4eda0df"
+      ],
+      "topic_tokens": [
+        [
+          "microsoft",
+          "president",
+          "says",
+          "best",
+          "placed",
+          "drive",
+          "regulation"
+        ],
+        [
+          "path",
+          "accelerates",
+          "its",
+          "artificial",
+          "intelligence",
+          "strategy",
+          "acquisition",
+          "snapai",
+          "globe",
+          "mail"
+        ],
+        [
+          "deepseek",
+          "leads",
+          "400",
+          "million",
+          "funding",
+          "round",
+          "tencent",
+          "scientist",
+          "robot",
+          "startup",
+          "startup",
+          "fortune"
+        ],
+        [
+          "interview",
+          "mark",
+          "zuckerberg",
+          "who",
+          "says",
+          "meta",
+          "has",
+          "caught",
+          "rivals",
+          "frontier",
+          "its",
+          "wonder",
+          "model",
+          "rejects",
+          "calls",
+          "slowdown",
+          "hannah",
+          "murphy",
+          "financial",
+          "times"
+        ],
+        [
+          "gap",
+          "shared",
+          "understanding",
+          "llm",
+          "capability",
+          "widening"
+        ],
+        [
+          "nvidia",
+          "eyes",
+          "reflection",
+          "acquisition",
+          "major",
+          "move",
+          "that",
+          "could",
+          "reshape",
+          "future",
+          "open",
+          "source",
+          "artificial",
+          "intelligence",
+          "kingy"
         ]
       ]
     }
