@@ -1,100 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-09-29",
-      "topics": [
-        "Trump signs executive order rebranding AI as 'Super Intelligence' as tech titans ink separate SI accord - Fox Business",
-        "OpenAI targets $30 billion funding at $1.4 trillion valuation, Bloomberg News reports - Reuters",
-        "Realset AI and Flatkey Raise 10 million Dollars in Series A Funding to Build Real World Training Data for Frontier Models and Embodied Agents - The Lawton Constitution",
-        "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-        "OpenAI Gets Sued Over the Hugging Face Hack",
-        "Kanu AI Raises USD11.7M in Funding - finsmes.com"
-      ],
-      "title_hashes": [
-        "ccf293f5188bf5ce4b35f1d2f5476f11ceac8b6c7f7e8ca52657981482f69f3c",
-        "ef5957f2a7a2d6d139624f32f6fdbfb73eac9e940f24a21c816cb24fe013ae03",
-        "493db4169df0d3b9b0eabc91acbf71fa00329402f201e66c0638357d5360c787",
-        "b6fcfb092d56201c906c2f4e9b60a760d55efec15a709994118d6e45be4bf7fa",
-        "229d8f95cef3395da9b5ebdccce4cfb2fc948f4a3e6270f7f64130b23e69b39d",
-        "ec29a1decea4a03cbd10950012ae933e18c0d5878ad56fd3cb07f80715095eed"
-      ],
-      "topic_tokens": [
-        [
-          "trump",
-          "signs",
-          "executive",
-          "order",
-          "rebranding",
-          "super",
-          "intelligence",
-          "tech",
-          "titans",
-          "ink",
-          "separate",
-          "accord",
-          "fox",
-          "business"
-        ],
-        [
-          "openai",
-          "targets",
-          "billion",
-          "funding",
-          "trillion",
-          "valuation",
-          "bloomberg",
-          "news",
-          "reports",
-          "reuters"
-        ],
-        [
-          "realset",
-          "flatkey",
-          "raise",
-          "million",
-          "dollars",
-          "series",
-          "funding",
-          "build",
-          "real",
-          "world",
-          "training",
-          "data",
-          "frontier",
-          "models",
-          "embodied",
-          "agents",
-          "lawton",
-          "constitution"
-        ],
-        [
-          "gpt",
-          "sol",
-          "near",
-          "astra",
-          "intelligence",
-          "fifth",
-          "price"
-        ],
-        [
-          "openai",
-          "gets",
-          "sued",
-          "over",
-          "hugging",
-          "face",
-          "hack"
-        ],
-        [
-          "kanu",
-          "raises",
-          "usd11",
-          "funding",
-          "finsmes"
-        ]
-      ]
-    },
-    {
       "date": "2026-09-30",
       "topics": [
         "Gemini 4 Argon must reverse Google’s AI inertia",
@@ -1227,6 +1133,121 @@
           "artificial",
           "intelligence",
           "kingy"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "topics": [
+        "Microsoft’s Brad Smith calls for global AI safety rules, says milk faces more regulation than AI - The American Bazaar",
+        "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
+        "Kroger to lay off 3,000 corporate employees over 3 years as it leans into artificial intelligence - ABC News - Breaking News, Latest News and Videos",
+        "Apple’s HomePod Mini 2 is available to preorder",
+        "Broadcom CEO sees viable OpenAI business but warns of AI funding constraints - Seeking Alpha",
+        "ELECTRA AI and Iron Horse Acquisition II Corp. (Nasdaq: IRHO) Selected by Westbrook Racing by Visit Angola to Bring AI Battery Intelligence to E1 Electric Powerboat Racing - Yahoo Finance UK"
+      ],
+      "title_hashes": [
+        "357c15fe28ad58968bdd21f11906a0ea9f7d91f042205f7262e06e7ad394fe61",
+        "aafa080ffe1253deb9a99bd37e882085fb500099e07f6242f161fdf1554394b1",
+        "d28a12c1c441dc1f568bdd0abd7959e8c21c0c7d075e97bf568477f30c70615d",
+        "985819bce037f43a7879e1852cba6732e7a7d020b216f580b56c17511446add7",
+        "1e1334fee83e5ca9f54594274ec4ba5b534b5d3f0cb1152afa9d0bd6bc7a0286",
+        "4ea2c73bd962f3e36b8c27711450c01955714d6f58bb811d9ff21a4ca8fadb82"
+      ],
+      "topic_tokens": [
+        [
+          "microsoft",
+          "brad",
+          "smith",
+          "calls",
+          "global",
+          "safety",
+          "rules",
+          "says",
+          "milk",
+          "faces",
+          "more",
+          "regulation",
+          "than",
+          "american",
+          "bazaar"
+        ],
+        [
+          "techcrunch",
+          "disrupt",
+          "2026",
+          "starts",
+          "tomorrow",
+          "your",
+          "final",
+          "chance",
+          "secure",
+          "100",
+          "ticket",
+          "savings"
+        ],
+        [
+          "kroger",
+          "lay",
+          "off",
+          "000",
+          "corporate",
+          "employees",
+          "over",
+          "years",
+          "leans",
+          "into",
+          "artificial",
+          "intelligence",
+          "abc",
+          "news",
+          "breaking",
+          "news",
+          "latest",
+          "news",
+          "videos"
+        ],
+        [
+          "apple",
+          "homepod",
+          "mini",
+          "available",
+          "preorder"
+        ],
+        [
+          "broadcom",
+          "ceo",
+          "sees",
+          "viable",
+          "openai",
+          "business",
+          "warns",
+          "funding",
+          "constraints",
+          "seeking",
+          "alpha"
+        ],
+        [
+          "electra",
+          "iron",
+          "horse",
+          "acquisition",
+          "corp",
+          "nasdaq",
+          "irho",
+          "selected",
+          "westbrook",
+          "racing",
+          "visit",
+          "angola",
+          "bring",
+          "battery",
+          "intelligence",
+          "electric",
+          "powerboat",
+          "racing",
+          "yahoo",
+          "finance"
         ]
       ]
     }
