@@ -1,83 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-01",
-      "topics": [
-        "Judge dismisses Chegg and Penske antitrust lawsuits targeting Google AI search",
-        "Gemini 4 Argon",
-        "Anthropic's IPO Prospectus Is a Fucking Doozy",
-        "Dynatrace completes Arize acquisition for AI observability - Developer Tech News",
-        "Clef: Open-weight decision models, and new RL fine-tuning platform",
-        "Got $1,000? 2 Growth Stocks Building the Software Backbone of Artificial Intelligence. - The Globe and Mail"
-      ],
-      "title_hashes": [
-        "fdd2c98d3a37b3df5dc012186a12041c20cb182323067723f25b1a9e257a8e5e",
-        "7411d53bc8f6240617a31890b21f7ce3ada8420b0eff1d1e8d85fbd55a278447",
-        "f30f3d8f1829f4f9364bd63218a0815aa3ffeb382678a82ecaf25f25dd67aea9",
-        "2dc69169d0326067a92c79daf52e9523f39e5b0d0f03d4a9e47b1a762c95fd73",
-        "f4be1cbc0898016ea7616e080137b6ca148990013a34b07bc2343801aae592b7",
-        "57bb1e99a356ca7f08ed0a8989b2f97817b140ffefdebf85f7acf90944a04e83"
-      ],
-      "topic_tokens": [
-        [
-          "judge",
-          "dismisses",
-          "chegg",
-          "penske",
-          "antitrust",
-          "lawsuits",
-          "targeting",
-          "google",
-          "search"
-        ],
-        [
-          "gemini",
-          "argon"
-        ],
-        [
-          "anthropic",
-          "ipo",
-          "prospectus",
-          "fucking",
-          "doozy"
-        ],
-        [
-          "dynatrace",
-          "completes",
-          "arize",
-          "acquisition",
-          "observability",
-          "developer",
-          "tech",
-          "news"
-        ],
-        [
-          "clef",
-          "open",
-          "weight",
-          "decision",
-          "models",
-          "new",
-          "fine",
-          "tuning",
-          "platform"
-        ],
-        [
-          "got",
-          "000",
-          "growth",
-          "stocks",
-          "building",
-          "software",
-          "backbone",
-          "artificial",
-          "intelligence",
-          "globe",
-          "mail"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-02",
       "topics": [
         "Experts eye Alberta referendum as case study on impacts of artificial intelligence - The Hamilton Spectator",
@@ -1232,6 +1155,99 @@
           "executive",
           "conference",
           "room"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "topics": [
+        "Gemini 4 Argon",
+        "Source: the US FTC issues ~50-page civil investigative demands to OpenAI and Anthropic over safety incidents, safeguarding practices, and consumer protection (Maria Curi/Axios)",
+        "Containment and monitoring failures are to blame for AI hacking reports: experts",
+        "Is artificial intelligence making weather forecasts better? - Key Biscayne Portal",
+        "Save 50% on your TechCrunch Disrupt 2026 ticket and join the last 2 days in San Francisco’s Moscone West",
+        "Anthropic's quarterly revenue hits $16.8B ahead of planned IPO: Report - Anadolu Ajansı"
+      ],
+      "title_hashes": [
+        "7411d53bc8f6240617a31890b21f7ce3ada8420b0eff1d1e8d85fbd55a278447",
+        "2306e72635b2701c1f438063897bd6d077b5edcf2b223cb2ac811b9c7b228aa5",
+        "6896f298c387b47e1f3ebd44d85a8db3e43ba57a91f50827010ba41a52e741f3",
+        "5d124853e03f41a8d6c47e6ac6e4b8ad3939809c77569cac87d3f5878433bb41",
+        "a624ae64322029f99e2fcc85d105a75bcb4d47aac867a01b29be4aeb55a03abb",
+        "9e955a3407223d09294910bd4c0840363ea8ea65fd369dd32ea94e7dc820fcae"
+      ],
+      "topic_tokens": [
+        [
+          "gemini",
+          "argon"
+        ],
+        [
+          "source",
+          "ftc",
+          "issues",
+          "page",
+          "civil",
+          "investigative",
+          "demands",
+          "openai",
+          "anthropic",
+          "over",
+          "safety",
+          "incidents",
+          "safeguarding",
+          "practices",
+          "consumer",
+          "protection",
+          "maria",
+          "curi",
+          "axios"
+        ],
+        [
+          "containment",
+          "monitoring",
+          "failures",
+          "blame",
+          "hacking",
+          "reports",
+          "experts"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "making",
+          "weather",
+          "forecasts",
+          "better",
+          "key",
+          "biscayne",
+          "portal"
+        ],
+        [
+          "save",
+          "your",
+          "techcrunch",
+          "disrupt",
+          "2026",
+          "ticket",
+          "join",
+          "last",
+          "days",
+          "san",
+          "francisco",
+          "moscone",
+          "west"
+        ],
+        [
+          "anthropic",
+          "quarterly",
+          "revenue",
+          "hits",
+          "ahead",
+          "planned",
+          "ipo",
+          "report",
+          "anadolu",
+          "ajans"
         ]
       ]
     }
