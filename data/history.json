@@ -1,97 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-02",
-      "topics": [
-        "Experts eye Alberta referendum as case study on impacts of artificial intelligence - The Hamilton Spectator",
-        "Trump expected to name intelligence chief Jay Clayton as new AI czar - washingtonpost.com",
-        "Fact Check Team: What’s the difference between artificial intelligence & superintelligence - local21news.com",
-        "Watch Google’s James Manyika on AI Regulation - Bloomberg.com",
-        "Dynatrace Completes Acquisition of Arize, Extending AI Observability Across Full Development Lifecycle - HPCwire",
-        "GSA issued an AI acquisition policy for new contracts. Here’s what it says. - FedScoop"
-      ],
-      "title_hashes": [
-        "43949bd27d3033c67b072ee150cdd8d6ce6335834b37ec618a2a000107ad78fd",
-        "3cbe1dd9a57980e102b975b99773c9b887bbe9655245747a843dc13d44e2565e",
-        "5ecaec6f33de7b292790512e39dd67935455e491c5b1eed8debaec73e34fd479",
-        "2a93916293eebb704329f1e1abc73c1431e5f01f3174a4dfc7cfff6e426e5580",
-        "4902cb5135fe6829810f525bb2a38382dab593d0857b57af21e8186e70360f25",
-        "2dde8b59bba34baf3b79ffd4fe049fd716f89a4b89c3a25b2d35415ce7f53466"
-      ],
-      "topic_tokens": [
-        [
-          "experts",
-          "eye",
-          "alberta",
-          "referendum",
-          "case",
-          "study",
-          "impacts",
-          "artificial",
-          "intelligence",
-          "hamilton",
-          "spectator"
-        ],
-        [
-          "trump",
-          "expected",
-          "name",
-          "intelligence",
-          "chief",
-          "jay",
-          "clayton",
-          "new",
-          "czar",
-          "washingtonpost"
-        ],
-        [
-          "fact",
-          "check",
-          "team",
-          "what",
-          "difference",
-          "between",
-          "artificial",
-          "intelligence",
-          "superintelligence",
-          "local21news"
-        ],
-        [
-          "watch",
-          "google",
-          "james",
-          "manyika",
-          "regulation",
-          "bloomberg"
-        ],
-        [
-          "dynatrace",
-          "completes",
-          "acquisition",
-          "arize",
-          "extending",
-          "observability",
-          "across",
-          "full",
-          "development",
-          "lifecycle",
-          "hpcwire"
-        ],
-        [
-          "gsa",
-          "issued",
-          "acquisition",
-          "policy",
-          "new",
-          "contracts",
-          "here",
-          "what",
-          "says",
-          "fedscoop"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-03",
       "topics": [
         "Trump announces a new Super Intelligence Force, to be led by DNI Jay Clayton, along with FTC's Andrew Ferguson, DOD's Emil Michael, and OPM's Scott Kupor (Politico)",
@@ -1248,6 +1157,104 @@
           "report",
           "anadolu",
           "ajans"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "topics": [
+        "Accenture caps central funding for Claude AI at $29 per employee per month - HR Katha",
+        "FourNet Expands £65m Customer Experience and AI Business With SVL Acquisition - Yahoo Finance",
+        "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Overview of consultation responses - Financial Stability Board",
+        "More on Anthropic's Scion ripping off Mononoke",
+        "Sources detail Nscale's setbacks ahead of an IPO at up to a $35B valuation, including a six-month delay in Norway and penalties owed to Microsoft and ByteDance (Bloomberg)",
+        "Simons Foundation launches $15M effort to help mathematicians navigate AI era"
+      ],
+      "title_hashes": [
+        "2d987743078226a17672286b661ba7c07e09db095ec04bfe24767a252209114f",
+        "56b75f26c21827457a17f3ce3b246852a22e57b49ab984f17b9a2db826f8b325",
+        "fe75224a3bd0c3ec55622ef6ec43d00e678dc1d2f420f06efa8be9ae723f69aa",
+        "281b452878ecfe8feba4057266292f0fb7ef9ea85d52b94ce98c449280ae3378",
+        "73edf61ffb6ab767e40998191060f3f3f398b0aee0a948ed248c3b4eb7edfb49",
+        "7b9c342ee19ed7193fe39d68f4af7163b9e13bb9127e56dfbf2fe9a87796964a"
+      ],
+      "topic_tokens": [
+        [
+          "accenture",
+          "caps",
+          "central",
+          "funding",
+          "claude",
+          "per",
+          "employee",
+          "per",
+          "month",
+          "katha"
+        ],
+        [
+          "fournet",
+          "expands",
+          "65m",
+          "customer",
+          "experience",
+          "business",
+          "svl",
+          "acquisition",
+          "yahoo",
+          "finance"
+        ],
+        [
+          "sound",
+          "practices",
+          "responsible",
+          "adoption",
+          "artificial",
+          "intelligence",
+          "overview",
+          "consultation",
+          "responses",
+          "financial",
+          "stability",
+          "board"
+        ],
+        [
+          "more",
+          "anthropic",
+          "scion",
+          "ripping",
+          "off",
+          "mononoke"
+        ],
+        [
+          "sources",
+          "detail",
+          "nscale",
+          "setbacks",
+          "ahead",
+          "ipo",
+          "35b",
+          "valuation",
+          "including",
+          "six",
+          "month",
+          "delay",
+          "norway",
+          "penalties",
+          "owed",
+          "microsoft",
+          "bytedance",
+          "bloomberg"
+        ],
+        [
+          "simons",
+          "foundation",
+          "launches",
+          "15m",
+          "effort",
+          "help",
+          "mathematicians",
+          "navigate",
+          "era"
         ]
       ]
     }
