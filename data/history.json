@@ -1,84 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-04",
-      "topics": [
-        "Norway is first to propose temporary ban on AI glasses in public places - Financial Times",
-        "APTOPIX New York City Artificial Intelligence - dailyrecordnews.com",
-        "Trump unveils his new Super Intelligence Force",
-        "Minnesota’s ban on AI ‘nudification’ paused after ruling by federal appeals court - kaaltv.com",
-        "Schneider Expands in AI With Record $23 Billion Acquisition - energyconnects.com",
-        "OpenAI is sticking more ads in ChatGPT"
-      ],
-      "title_hashes": [
-        "b31adeaab4abc239cfd5f2e9fcbafe09245f1f3c0d992592ab385ce4fd3b14fb",
-        "26881726972afd58639a16b1fcd182e332b42bbe9e99c60def35ec9f19580055",
-        "b86700761d2943fc7ff886c7403abb1f82d1d27d75faddf524ae32742e9c25df",
-        "1359d5f89d54c586f5a6aee25b4244c4973c73623b4a31baaf81a4c54111d454",
-        "37fa80b434b919e3b14427a375c3a3882afcd932ed29ea98907ee7c1cb4b7c7c",
-        "875101ba1d111496b34a27477cea8400b4b8727b7be4404e30bb2da0e39ab786"
-      ],
-      "topic_tokens": [
-        [
-          "norway",
-          "first",
-          "propose",
-          "temporary",
-          "ban",
-          "glasses",
-          "public",
-          "places",
-          "financial",
-          "times"
-        ],
-        [
-          "aptopix",
-          "new",
-          "york",
-          "city",
-          "artificial",
-          "intelligence",
-          "dailyrecordnews"
-        ],
-        [
-          "trump",
-          "unveils",
-          "his",
-          "new",
-          "super",
-          "intelligence",
-          "force"
-        ],
-        [
-          "minnesota",
-          "ban",
-          "nudification",
-          "paused",
-          "after",
-          "ruling",
-          "federal",
-          "appeals",
-          "court",
-          "kaaltv"
-        ],
-        [
-          "schneider",
-          "expands",
-          "record",
-          "billion",
-          "acquisition",
-          "energyconnects"
-        ],
-        [
-          "openai",
-          "sticking",
-          "more",
-          "ads",
-          "chatgpt"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-05",
       "topics": [
         "Federal appeals court sides with Elon Musk, pauses Minnesota’s AI ‘nudification’ ban - Bring Me The News",
@@ -1241,6 +1163,123 @@
           "new",
           "reality",
           "aol"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "topics": [
+        "ai ai Artificial Intelligence at Work aip ai - Universidad de Córdoba (UCO)",
+        "President Trump Sells Micron Stock and Buys Another Mega-Cap Artificial Intelligence (AI) Stock - The Motley Fool",
+        "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+        "Anthropic’s proposed AI safety bill only kicks in if 50 deaths or $1 billion in damages are on the line — proposal would effectively make the Commerce Department the only agency capable of stopping an AI model - Tom's Hardware",
+        "Funding strains, construction delays test America’s $10T AI buildout: FT (NVDA:NASDAQ) - Seeking Alpha",
+        "Holyvolt, which develops AI tools for making and testing new battery materials, raised $45M from Zone II, CC.VC, and others, a source says at a $245M valuation (Nick Lichtenberg/Fortune)"
+      ],
+      "title_hashes": [
+        "5e4ce9dd152c1bb0a8dce7ca5ae081ce973954c4bce2ed21348da7166a8c02b9",
+        "fd61537856e27902e42c788517938ae94035879b8aa38b79a265f3f4b19a84ef",
+        "e1a1726375da82c7d2e2f66a13b9460f97c908579cccc8ca1231755b7c9c03f9",
+        "83346bed813c878b93c0bf69943436111eb8eb6f678d4f842a625af5712d12ad",
+        "2f3397b16bb440f4318eec08a045caec33e54936d0ad923806de32d8445c4c4b",
+        "729ecef6b4fde16243c35bcc701babfc7de1181be88a4076e2810395f52373fe"
+      ],
+      "topic_tokens": [
+        [
+          "artificial",
+          "intelligence",
+          "work",
+          "aip",
+          "universidad",
+          "rdoba",
+          "uco"
+        ],
+        [
+          "president",
+          "trump",
+          "sells",
+          "micron",
+          "stock",
+          "buys",
+          "another",
+          "mega",
+          "cap",
+          "artificial",
+          "intelligence",
+          "stock",
+          "motley",
+          "fool"
+        ],
+        [
+          "working",
+          "hours",
+          "spent",
+          "tasks",
+          "not",
+          "covered",
+          "well",
+          "benchmarks"
+        ],
+        [
+          "anthropic",
+          "proposed",
+          "safety",
+          "bill",
+          "only",
+          "kicks",
+          "deaths",
+          "billion",
+          "damages",
+          "line",
+          "proposal",
+          "would",
+          "effectively",
+          "make",
+          "commerce",
+          "department",
+          "only",
+          "agency",
+          "capable",
+          "stopping",
+          "model",
+          "tom",
+          "hardware"
+        ],
+        [
+          "funding",
+          "strains",
+          "construction",
+          "delays",
+          "test",
+          "america",
+          "10t",
+          "buildout",
+          "nvda",
+          "nasdaq",
+          "seeking",
+          "alpha"
+        ],
+        [
+          "holyvolt",
+          "which",
+          "develops",
+          "tools",
+          "making",
+          "testing",
+          "new",
+          "battery",
+          "materials",
+          "raised",
+          "45m",
+          "zone",
+          "others",
+          "source",
+          "says",
+          "245m",
+          "valuation",
+          "nick",
+          "lichtenberg",
+          "fortune"
         ]
       ]
     }
