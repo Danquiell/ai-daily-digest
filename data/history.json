@@ -1,96 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-05",
-      "topics": [
-        "Federal appeals court sides with Elon Musk, pauses Minnesota’s AI ‘nudification’ ban - Bring Me The News",
-        "The Only 2 Artificial Intelligence (AI) Stocks I'd Buy With $1,000 Today and Never Sell - The Globe and Mail",
-        "Mistral Large 4",
-        "Schneider Expands in AI With Record $23 Billion Acquisition - Energy Connects",
-        "Norway Plans Temporary Ban On AI Glasses In Public Places Over Privacy Concerns: how 12 outlets framed it - NewsCord",
-        "OpenAI, Anthropic tell Australia they would welcome data breach rules - Reuters"
-      ],
-      "title_hashes": [
-        "c122d968407c41dfa912e86dacd748efff16c09b13cd51379ae46c196d259fa9",
-        "d36b84dfb520a8fd2eb6c28a3f8528c976a28d98aad45d0a5e0456f1696f6236",
-        "5f2749c5e6a7fb76e5cfbb0d8f0e4729913efa3b738bec781709d96d73153f09",
-        "98c8d143ae46dd92267ace3537269d56618094fd721bb8217c8266f79b36554a",
-        "8356052775b55463358370d77a3f0228d7c02d1162835ade8c31284a633b9532",
-        "ef3e70a942c2eb2a8743db684edec5fd68e1216af9bf9aacacc463b2cdac24f9"
-      ],
-      "topic_tokens": [
-        [
-          "federal",
-          "appeals",
-          "court",
-          "sides",
-          "elon",
-          "musk",
-          "pauses",
-          "minnesota",
-          "nudification",
-          "ban",
-          "bring",
-          "news"
-        ],
-        [
-          "only",
-          "artificial",
-          "intelligence",
-          "stocks",
-          "buy",
-          "000",
-          "today",
-          "never",
-          "sell",
-          "globe",
-          "mail"
-        ],
-        [
-          "mistral",
-          "large"
-        ],
-        [
-          "schneider",
-          "expands",
-          "record",
-          "billion",
-          "acquisition",
-          "energy",
-          "connects"
-        ],
-        [
-          "norway",
-          "plans",
-          "temporary",
-          "ban",
-          "glasses",
-          "public",
-          "places",
-          "over",
-          "privacy",
-          "concerns",
-          "how",
-          "outlets",
-          "framed",
-          "newscord"
-        ],
-        [
-          "openai",
-          "anthropic",
-          "tell",
-          "australia",
-          "they",
-          "would",
-          "welcome",
-          "data",
-          "breach",
-          "rules",
-          "reuters"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-06",
       "topics": [
         "Sharing AI progress in mathematics",
@@ -1280,6 +1190,104 @@
           "nick",
           "lichtenberg",
           "fortune"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "topics": [
+        "AI chip startup Tenstorrent more than doubles its valuation to $6.2 billion in funding round - Reuters",
+        "Not Nvidia. Not Micron. This Artificial Intelligence (AI) Chip Stock Has the Most Upside Through 2030. - The Globe and Mail",
+        "Amazon’s workforce reset: Balancing layoffs, regulation, and AI growth - HR Katha",
+        "West Virginia AI lawsuit raises questions about chatbot safety and consumer protection - WV News",
+        "Namecheap just seized and disabled all my domains",
+        "Google announces new Gemini AI-powered anti-fraud features for Android phones - Deccan Herald"
+      ],
+      "title_hashes": [
+        "c26f4c39bdd0ab35f3b2a761dd09d345a2d981c39fa8b5d24c54ed08041e4cf2",
+        "31f260448659a72f33b82685e0000ce1935f9719e4a8feb9c55efc885d3555b8",
+        "430827f3960a9f6dd70592b9001ef04a21a2448ea6d5e986238178d418f8b8cc",
+        "617814fb9adf96d7a4a9ed14a784f3887fdfaada0974cc402d3e7f3cf3823683",
+        "46fbb9f705281e05253256c11e8441409bdcc2a8b13a935cc1d180bbd28eaca8",
+        "8e3d1931512416395a10f2c342539edb0c9fe0a8e7c1c92f85d9015415742078"
+      ],
+      "topic_tokens": [
+        [
+          "chip",
+          "startup",
+          "tenstorrent",
+          "more",
+          "than",
+          "doubles",
+          "its",
+          "valuation",
+          "billion",
+          "funding",
+          "round",
+          "reuters"
+        ],
+        [
+          "not",
+          "nvidia",
+          "not",
+          "micron",
+          "this",
+          "artificial",
+          "intelligence",
+          "chip",
+          "stock",
+          "has",
+          "most",
+          "upside",
+          "through",
+          "2030",
+          "globe",
+          "mail"
+        ],
+        [
+          "amazon",
+          "workforce",
+          "reset",
+          "balancing",
+          "layoffs",
+          "regulation",
+          "growth",
+          "katha"
+        ],
+        [
+          "west",
+          "virginia",
+          "lawsuit",
+          "raises",
+          "questions",
+          "about",
+          "chatbot",
+          "safety",
+          "consumer",
+          "protection",
+          "news"
+        ],
+        [
+          "namecheap",
+          "just",
+          "seized",
+          "disabled",
+          "all",
+          "domains"
+        ],
+        [
+          "google",
+          "announces",
+          "new",
+          "gemini",
+          "powered",
+          "anti",
+          "fraud",
+          "features",
+          "android",
+          "phones",
+          "deccan",
+          "herald"
         ]
       ]
     }
