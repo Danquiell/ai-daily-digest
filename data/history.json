@@ -1,101 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-06",
-      "topics": [
-        "Sharing AI progress in mathematics",
-        "Building a context-aware AI assistant on AgentCore and OpenClaw | Amazon Web Services - Amazon Web Services (AWS)",
-        "The Download: 10 climate tech companies to watch",
-        "WeLion New Energy and its semi-solid-state batteries",
-        "Google launches SynthID Detector, a website that lets users detect AI-generated image, video, and audio media across dozens of common file formats (Ivan Mehta/TechCrunch)",
-        "AI regulation must be federal, New York City council speaker warns - Fox News"
-      ],
-      "title_hashes": [
-        "4a12763560a85f25ffa4452a7b692bd836ccb2777bb88c2a6508e38820dad9d8",
-        "ad6029e85a88c9ead2e0d99189b32e33d4e9cc577837798ef9043f1934575f04",
-        "99a6ceee2948bfeaa5b2660bffc6932588044369ba2744cedae092698c31aca5",
-        "95f2b2b6d3bbd05d272940271e9524cc84ffd4344e09a7e8e2bd9525ce3cd3e0",
-        "d7790468394859d439bfe666dc139e451a1847f7553eac5ed10772b7236c0c34",
-        "dc9ede35041be49b83ad517235fdb9c6bd77d060e9feba7f3a2ad5a784d60397"
-      ],
-      "topic_tokens": [
-        [
-          "sharing",
-          "progress",
-          "mathematics"
-        ],
-        [
-          "building",
-          "context",
-          "aware",
-          "assistant",
-          "agentcore",
-          "openclaw",
-          "amazon",
-          "web",
-          "services",
-          "amazon",
-          "web",
-          "services",
-          "aws"
-        ],
-        [
-          "download",
-          "climate",
-          "tech",
-          "companies",
-          "watch"
-        ],
-        [
-          "welion",
-          "new",
-          "energy",
-          "its",
-          "semi",
-          "solid",
-          "state",
-          "batteries"
-        ],
-        [
-          "google",
-          "launches",
-          "synthid",
-          "detector",
-          "website",
-          "that",
-          "lets",
-          "users",
-          "detect",
-          "generated",
-          "image",
-          "video",
-          "audio",
-          "media",
-          "across",
-          "dozens",
-          "common",
-          "file",
-          "formats",
-          "ivan",
-          "mehta",
-          "techcrunch"
-        ],
-        [
-          "regulation",
-          "must",
-          "federal",
-          "new",
-          "york",
-          "city",
-          "council",
-          "speaker",
-          "warns",
-          "fox",
-          "news"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-07",
       "topics": [
         "China’s Manus raises over $500M in first funding round since split with Meta",
@@ -1288,6 +1193,109 @@
           "phones",
           "deccan",
           "herald"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "topics": [
+        "China defends DeepSeek after US ban of its AI from government systems - The Batesville Daily Guard",
+        "Pharmuna Announces $5 Million Funding Round Led by FasterCapital to Expand AI-Powered Pharmacy Platform - citybiz",
+        "Not Anthropic. Not OpenAI. This Is the Artificial Intelligence (AI) Stock I'd Buy Before the Next Mega-IPO. - The Globe and Mail",
+        "SoftBank credit risk hits four-year high on AI funding strain - The Edge Malaysia",
+        "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+        "AfD Leak: What 421,179 Hacked Emails Show about the German Far Right"
+      ],
+      "title_hashes": [
+        "23cbf82d30e02bd89973e241df03c4c6fd57c01b5c58ef483748114067c745ff",
+        "d66e9bd3a548f304c098e82461d3f9a39b5582404a2bf19074d43a0f8759033b",
+        "cb5d69e79162b45e9afa41e93acc22e3182503c6455538b4213fc7cf5bfa8969",
+        "5b92153055556d957ac169fe9ac5120904134bd33d608f19f5d033d0dea035ae",
+        "36a688cedd83cfa9557b022c5593a6200d9dbf6227b4e796dbf1146ac7ee893d",
+        "35a92e7d2a93f482235c270b650c8a213e067067737f7f7131b8bd223e5adc4a"
+      ],
+      "topic_tokens": [
+        [
+          "china",
+          "defends",
+          "deepseek",
+          "after",
+          "ban",
+          "its",
+          "government",
+          "systems",
+          "batesville",
+          "daily",
+          "guard"
+        ],
+        [
+          "pharmuna",
+          "announces",
+          "million",
+          "funding",
+          "round",
+          "led",
+          "fastercapital",
+          "expand",
+          "powered",
+          "pharmacy",
+          "platform",
+          "citybiz"
+        ],
+        [
+          "not",
+          "anthropic",
+          "not",
+          "openai",
+          "this",
+          "artificial",
+          "intelligence",
+          "stock",
+          "buy",
+          "before",
+          "next",
+          "mega",
+          "ipo",
+          "globe",
+          "mail"
+        ],
+        [
+          "softbank",
+          "credit",
+          "risk",
+          "hits",
+          "four",
+          "year",
+          "high",
+          "funding",
+          "strain",
+          "edge",
+          "malaysia"
+        ],
+        [
+          "whatsapp",
+          "help",
+          "pages",
+          "hid",
+          "llm",
+          "instructions",
+          "dont",
+          "recommend",
+          "regulator"
+        ],
+        [
+          "afd",
+          "leak",
+          "what",
+          "421",
+          "179",
+          "hacked",
+          "emails",
+          "show",
+          "about",
+          "german",
+          "far",
+          "right"
         ]
       ]
     }
