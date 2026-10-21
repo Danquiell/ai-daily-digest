@@ -1,105 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-07",
-      "topics": [
-        "China’s Manus raises over $500M in first funding round since split with Meta",
-        "Sources: the IPO of Nvidia-backed data center provider Firmus is uncertain after failing to attract adequate support, underscoring concerns over AI funding (Bloomberg)",
-        "Claude Haiku 5.5",
-        "Google is launching a one-stop Gemini agent for your work tasks",
-        "Anthropic launches third Claude 5.5 model, expanding AI lineup before planned IPO - Reuters",
-        "Most Americans think artificial intelligence is developing too fast, a new AP-NORC poll finds - morning-times.com"
-      ],
-      "title_hashes": [
-        "3b49f4c0c54f892701cfbcb97c0416ae649ab70c8e0158aed6f4c8ff0cc588da",
-        "41818df6e7da12a3f6dff1e976c7557545c5a7f44bc7c638d520a4576cf4f488",
-        "0b47278aeb7669fe00e16bdcad971a3fc4c940195fe1b39fd69b823afd3f8a6e",
-        "d2e8e9f03f56a665deeb33d10111d0be152b71397396cdddc7a976c9672042db",
-        "af398682fd6190112fe9602368a539e0a087541f89e0fcd3aea7013e9ee1dd8e",
-        "2cc7549a1678045753c080b81bc3cfbf652eb4ec1d95114aca95a9271c97816f"
-      ],
-      "topic_tokens": [
-        [
-          "china",
-          "manus",
-          "raises",
-          "over",
-          "500m",
-          "first",
-          "funding",
-          "round",
-          "since",
-          "split",
-          "meta"
-        ],
-        [
-          "sources",
-          "ipo",
-          "nvidia",
-          "backed",
-          "data",
-          "center",
-          "provider",
-          "firmus",
-          "uncertain",
-          "after",
-          "failing",
-          "attract",
-          "adequate",
-          "support",
-          "underscoring",
-          "concerns",
-          "over",
-          "funding",
-          "bloomberg"
-        ],
-        [
-          "claude",
-          "haiku"
-        ],
-        [
-          "google",
-          "launching",
-          "one",
-          "stop",
-          "gemini",
-          "agent",
-          "your",
-          "work",
-          "tasks"
-        ],
-        [
-          "anthropic",
-          "launches",
-          "third",
-          "claude",
-          "model",
-          "expanding",
-          "lineup",
-          "before",
-          "planned",
-          "ipo",
-          "reuters"
-        ],
-        [
-          "most",
-          "americans",
-          "think",
-          "artificial",
-          "intelligence",
-          "developing",
-          "too",
-          "fast",
-          "new",
-          "norc",
-          "poll",
-          "finds",
-          "morning",
-          "times"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-08",
       "topics": [
         "Trump Says Anyone Using ‘Artificial Intelligence Instead of Super Intelligence Is Enemy’: What We Know - News18",
@@ -1296,6 +1197,103 @@
           "german",
           "far",
           "right"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "topics": [
+        "China defends DeepSeek after US ban of its AI from government systems - The Killeen Daily Herald",
+        "Otter AI raises $320M from General Catalyst’s growth fund for its meeting tool",
+        "OpenAI President Funds Anti‑Regulation Group While Calling for AI Safeguards - Forth.News",
+        "Ray-Ban maker's shares jump as strong eyewear sales temper AI glasses worries - TradingView",
+        "Anthropic logged net loss of over $80B in first half of 2026",
+        "Ukraine’s drone rescue of wounded soldier puts much touted idea into practice"
+      ],
+      "title_hashes": [
+        "21e9d472ab4c6fd323b465c912b0a659988c5768aa818747e357c21f19d6c886",
+        "5ff38199197ab37c121a0010cc29104d6d577b865c5ef7a2ac445d4010d466f4",
+        "bad57dbcfc85ba0daf23ac6c07224abbe4474b411d2ddb79e9ac010c495148c3",
+        "c80d59d2866779216bee1d259f8f22d06adf9a39a13f3b3f60e0b0743095239f",
+        "35525d67951dcbd29ed31843a2c0183d3d4e496b7ea42716a4f5e466479583e2",
+        "e7296ba1fac325a94ba682f10d4d7671828fd7befde02c11c8c8865c35e8f263"
+      ],
+      "topic_tokens": [
+        [
+          "china",
+          "defends",
+          "deepseek",
+          "after",
+          "ban",
+          "its",
+          "government",
+          "systems",
+          "killeen",
+          "daily",
+          "herald"
+        ],
+        [
+          "otter",
+          "raises",
+          "320m",
+          "general",
+          "catalyst",
+          "growth",
+          "fund",
+          "its",
+          "meeting",
+          "tool"
+        ],
+        [
+          "openai",
+          "president",
+          "funds",
+          "anti",
+          "regulation",
+          "group",
+          "while",
+          "calling",
+          "safeguards",
+          "forth",
+          "news"
+        ],
+        [
+          "ray",
+          "ban",
+          "maker",
+          "shares",
+          "jump",
+          "strong",
+          "eyewear",
+          "sales",
+          "temper",
+          "glasses",
+          "worries",
+          "tradingview"
+        ],
+        [
+          "anthropic",
+          "logged",
+          "net",
+          "loss",
+          "over",
+          "80b",
+          "first",
+          "half",
+          "2026"
+        ],
+        [
+          "ukraine",
+          "drone",
+          "rescue",
+          "wounded",
+          "soldier",
+          "puts",
+          "much",
+          "touted",
+          "idea",
+          "into",
+          "practice"
         ]
       ]
     }
