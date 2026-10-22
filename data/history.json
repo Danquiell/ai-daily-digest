@@ -1,95 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-08",
-      "topics": [
-        "Trump Says Anyone Using ‘Artificial Intelligence Instead of Super Intelligence Is Enemy’: What We Know - News18",
-        "Anthropic bans 'abusive or cruel behavior' towards Claude",
-        "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
-        "OpenAI’s revenue is reportedly $20 billion less than previously projected",
-        "OpenAI doubles down on decision to fire three AI safety researchers",
-        "Analysis-AI pricing lawsuit against McDonald’s raises new antitrust questions By Reuters - Investing.com"
-      ],
-      "title_hashes": [
-        "447eedda3fc965d86a71757b57c0500aeeba75b128b1d75f8fc605a612378285",
-        "d794306300bfeafeb1f30e85b24242931311845c174e315ad36696089d9a7935",
-        "f171779dcb1d18efbaac0ecdae970cc0bbf4e4f20d5bd007641ed04d9ed705ba",
-        "f1be42d85cb877d3f562b41647cad0ce91e8efde2627c00c1be1523f0a4d6350",
-        "d9263fe6e535edadea29aec4148e6fd4373a0aeacb17388c1c0694a65deac5c9",
-        "f538dea0520d36306a26b07b3b8c2e65ae2147a0474452fd0566941f347d7f9c"
-      ],
-      "topic_tokens": [
-        [
-          "trump",
-          "says",
-          "anyone",
-          "using",
-          "artificial",
-          "intelligence",
-          "instead",
-          "super",
-          "intelligence",
-          "enemy",
-          "what",
-          "know",
-          "news18"
-        ],
-        [
-          "anthropic",
-          "bans",
-          "abusive",
-          "cruel",
-          "behavior",
-          "towards",
-          "claude"
-        ],
-        [
-          "nous",
-          "research",
-          "confirms",
-          "hit",
-          "valuation",
-          "launches",
-          "agents",
-          "business",
-          "users"
-        ],
-        [
-          "openai",
-          "revenue",
-          "reportedly",
-          "billion",
-          "less",
-          "than",
-          "previously",
-          "projected"
-        ],
-        [
-          "openai",
-          "doubles",
-          "down",
-          "decision",
-          "fire",
-          "three",
-          "safety",
-          "researchers"
-        ],
-        [
-          "analysis",
-          "pricing",
-          "lawsuit",
-          "against",
-          "mcdonald",
-          "raises",
-          "new",
-          "antitrust",
-          "questions",
-          "reuters",
-          "investing"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-09",
       "topics": [
         "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
@@ -1294,6 +1205,90 @@
           "idea",
           "into",
           "practice"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "topics": [
+        "DeepSeek raises $15 billion in funding as it steps up AI competition with OpenAI, Anthropic - Storyboard18",
+        "China defends DeepSeek after US ban of its AI from government systems - Bozeman Daily Chronicle",
+        "OpenAI GPT models are coming to Google Antigravity ‘soon,’ Cloud ‘in the coming weeks’",
+        "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+        "Claude Duet",
+        "Will Workday's C1.ai Acquisition Boost Its Enterprise AI Position? - Zacks Investment Research"
+      ],
+      "title_hashes": [
+        "8b8fa55a1f5fd54ce7af6009758549e5c466fc398e40e675078b1d181811102a",
+        "ca92d02625980929b16c5e0d51975a3230894922644e6e8a9f6d0ee486d25bf3",
+        "04e5d1dccc45cca96fedc60d5a7379afdc602bc598f48c3b921125c20caa5ad0",
+        "71f3ec59bfef539cb42c8995832fefe155fce756970f9eda202472c9e5de6415",
+        "83ef0349227f23bc50e8494e476bafc9e6130ffd41d17dd4c4071d7465ba4e49",
+        "7d68f03a7450246cb5103d62c1ecb8ae0fc4b05c85ee6a8315d7753a8249a11d"
+      ],
+      "topic_tokens": [
+        [
+          "deepseek",
+          "raises",
+          "billion",
+          "funding",
+          "steps",
+          "competition",
+          "openai",
+          "anthropic",
+          "storyboard18"
+        ],
+        [
+          "china",
+          "defends",
+          "deepseek",
+          "after",
+          "ban",
+          "its",
+          "government",
+          "systems",
+          "bozeman",
+          "daily",
+          "chronicle"
+        ],
+        [
+          "openai",
+          "gpt",
+          "models",
+          "coming",
+          "google",
+          "antigravity",
+          "soon",
+          "cloud",
+          "coming",
+          "weeks"
+        ],
+        [
+          "openai",
+          "acquires",
+          "startup",
+          "orchestra",
+          "bio",
+          "beef",
+          "its",
+          "biotech",
+          "business"
+        ],
+        [
+          "claude",
+          "duet"
+        ],
+        [
+          "will",
+          "workday",
+          "acquisition",
+          "boost",
+          "its",
+          "enterprise",
+          "position",
+          "zacks",
+          "investment",
+          "research"
         ]
       ]
     }
