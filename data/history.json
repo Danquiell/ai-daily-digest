@@ -1,98 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-09",
-      "topics": [
-        "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
-        "President Donald Trump says anyone using the term ‘artificial intelligence’ is ‘the enemy’ - The Next Web",
-        "Typesafe AI raises $870M at $7.5B",
-        "OpenAI annualised revenues $20B less than previously signalled",
-        "Anthropic changes usage policy to ban model abuse and election interference",
-        "The Frederick County Board of Education voted on Wednesday to ban the use of AI by students at all grade levels. What do you think? - The Frederick News-Post"
-      ],
-      "title_hashes": [
-        "aa6cba68d435122ee4cb61b6c564f5d61be7cce1f145ae7b45c32c6ba0a9afa0",
-        "5362c27284fd32ae1aa6828239ff25644d385e70e308fbd2b6f019349ff83440",
-        "6aef07cde3695f7fb75a878b6728d38918c98d2b74f85c6edbfde8a1f6a1797d",
-        "377f4f00328bff7b876f99678cb6d015f04bcdd03e60c8d5b5a08075db178675",
-        "f61fcce7061edd568759e1be1c5e5a55c151b884d3b2f0412cf353890d4f502f",
-        "6cb0ee8c9289a5a3228ff324a8788206b9be1899bf6d532d9b0d9177f33b2952"
-      ],
-      "topic_tokens": [
-        [
-          "anthropic",
-          "gave",
-          "philadelphia",
-          "police",
-          "fake",
-          "tip",
-          "about",
-          "unsolved",
-          "homicide"
-        ],
-        [
-          "president",
-          "donald",
-          "trump",
-          "says",
-          "anyone",
-          "using",
-          "term",
-          "artificial",
-          "intelligence",
-          "enemy",
-          "next",
-          "web"
-        ],
-        [
-          "typesafe",
-          "raises",
-          "870m"
-        ],
-        [
-          "openai",
-          "annualised",
-          "revenues",
-          "20b",
-          "less",
-          "than",
-          "previously",
-          "signalled"
-        ],
-        [
-          "anthropic",
-          "changes",
-          "usage",
-          "policy",
-          "ban",
-          "model",
-          "abuse",
-          "election",
-          "interference"
-        ],
-        [
-          "frederick",
-          "county",
-          "board",
-          "education",
-          "voted",
-          "wednesday",
-          "ban",
-          "use",
-          "students",
-          "all",
-          "grade",
-          "levels",
-          "what",
-          "you",
-          "think",
-          "frederick",
-          "news",
-          "post"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-10",
       "topics": [
         "An Anthropic AI model sent a false homicide tip to Philadelphia police",
@@ -1289,6 +1197,84 @@
           "zacks",
           "investment",
           "research"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "topics": [
+        "Nirva raises $33M for a pendant that only listens to you",
+        "Every AI model has the same \"controversial\" take on humans",
+        "Appeals court allows Mississippi ban on DEI, removes judge over use of AI - Baltimore Sun",
+        "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+        "Jailbreaking the Switch 2",
+        "U.S. Treasury tightens outbound investment rules on AI, supercomputing in China"
+      ],
+      "title_hashes": [
+        "b4000d0724f50c45685d3b0bfcea071f60838807e6e2b19297074516734fa721",
+        "9ef5800229c3e663418d50ca4251dd3ebabd7ed01a5ea10fdaf5ba58bf559bf9",
+        "49ca12c1ec309e98f956819a966399bce8670c13a5225392cd6b1e7575fdcf7f",
+        "77c9d6d0549c69518dc0908985db94a2bfd2ea3100f94a305260b3ccc7f1c9ed",
+        "e18251934c38134d5948051dc69633d8da9927ebb5cda61458cd7d112c51cc29",
+        "33f8045a6e7665ec5fa9048d9d0e12ac8fa532b9a204a9a950c8fcfeb3841470"
+      ],
+      "topic_tokens": [
+        [
+          "nirva",
+          "raises",
+          "33m",
+          "pendant",
+          "that",
+          "only",
+          "listens",
+          "you"
+        ],
+        [
+          "every",
+          "model",
+          "has",
+          "same",
+          "controversial",
+          "take",
+          "humans"
+        ],
+        [
+          "appeals",
+          "court",
+          "allows",
+          "mississippi",
+          "ban",
+          "dei",
+          "removes",
+          "judge",
+          "over",
+          "use",
+          "baltimore",
+          "sun"
+        ],
+        [
+          "openai",
+          "working",
+          "new",
+          "30b",
+          "raise",
+          "25t",
+          "valuation",
+          "ahead",
+          "ipo"
+        ],
+        [
+          "jailbreaking",
+          "switch"
+        ],
+        [
+          "treasury",
+          "tightens",
+          "outbound",
+          "investment",
+          "rules",
+          "supercomputing",
+          "china"
         ]
       ]
     }
