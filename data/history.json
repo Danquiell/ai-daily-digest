@@ -1,106 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-10",
-      "topics": [
-        "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-        "Sources: Nvidia is in talks to acquire or invest more into US open-weights AI startup Reflection AI; the deal may be an acquihire to avoid antitrust scrutiny (Financial Times)",
-        "Satya Nadella says we should assume all AI models are ‘compromised’",
-        "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-        "Artificial intelligence answers: what is the expected result of the Manchester United v Tottenham clash? - Goal.com",
-        "USA Today files $250 million copyright lawsuit against OpenAI - TheDesk.net"
-      ],
-      "title_hashes": [
-        "4f7d594b498a66eab12ac1a2d588a61f1aca5db046ae4d09739793ea71c647dc",
-        "a0d50eb66a91ddbe7e031392b5aac51e36f7b56cf9330a14eaa9bbb6e9374c4c",
-        "5107c2731c3e45481964513b9881b471d17d6ac3c2077baf181a7773bbd0e601",
-        "ca8b97be56c27093eaa507b7f5b155ce6cdc855056dbb9bf360bdee5a0784be2",
-        "9036178e0623405ae9c9fb2b2e0c1650acaf5cd122b5579ac743919b345e0115",
-        "12671dc96ce7ae6f458c8a2d66aad85cc838e4fa3022f8484575a839bcc099d3"
-      ],
-      "topic_tokens": [
-        [
-          "anthropic",
-          "model",
-          "sent",
-          "false",
-          "homicide",
-          "tip",
-          "philadelphia",
-          "police"
-        ],
-        [
-          "sources",
-          "nvidia",
-          "talks",
-          "acquire",
-          "invest",
-          "more",
-          "into",
-          "open",
-          "weights",
-          "startup",
-          "reflection",
-          "deal",
-          "may",
-          "acquihire",
-          "avoid",
-          "antitrust",
-          "scrutiny",
-          "financial",
-          "times"
-        ],
-        [
-          "satya",
-          "nadella",
-          "says",
-          "should",
-          "assume",
-          "all",
-          "models",
-          "compromised"
-        ],
-        [
-          "maker",
-          "non",
-          "text",
-          "model",
-          "jev",
-          "valued",
-          "just",
-          "weeks",
-          "after",
-          "launch"
-        ],
-        [
-          "artificial",
-          "intelligence",
-          "answers",
-          "what",
-          "expected",
-          "result",
-          "manchester",
-          "united",
-          "tottenham",
-          "clash",
-          "goal"
-        ],
-        [
-          "usa",
-          "today",
-          "files",
-          "250",
-          "million",
-          "copyright",
-          "lawsuit",
-          "against",
-          "openai",
-          "thedesk",
-          "net"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-11",
       "topics": [
         "Microsoft president says UK is best placed to drive AI regulation",
@@ -1275,6 +1175,106 @@
           "rules",
           "supercomputing",
           "china"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "topics": [
+        "UK government sets out $800 million of AI security funding - Reuters",
+        "Google will target ads based on Gmail, Photos data if Personal Intelligence is enabled",
+        "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+        "Not Intel. Not CoreWeave. This Underappreciated Nvidia-Backed Company Is Growing Artificial Intelligence (AI) Revenue by 123%. Here's Why It's a Buy Today for $8. - Yahoo Finance",
+        "Nirva Announces $25M in Funding for AI Pendant That Listens Only to Its Wearer - AI Insider",
+        "Javier Milei's Case Against AI Regulation - Reason Magazine"
+      ],
+      "title_hashes": [
+        "a26ec174660e963058e6b0df18435cb4e0e7aa980ed5e75cd22692edda58b3f9",
+        "3386d83c4714a81eb5fd58662ca9da44c8d84c4b5217034e29191ab502e73c26",
+        "316ce280820ca49fa256c4be223b4dff631e7ec369be28ed95b0c643d65403a5",
+        "5a12d61c7194a030bb9c5c6e37a674a7d272090f6e0804d9dab0158ce2ee0bcb",
+        "666923b461cccaf550c3702faaeaaf6d1e8935f3c6b5737890770e82d64fd4d2",
+        "b354f28d674d5915d7c283d87c391711779fe23b82f4b15a4cd7b00793592442"
+      ],
+      "topic_tokens": [
+        [
+          "government",
+          "sets",
+          "out",
+          "800",
+          "million",
+          "security",
+          "funding",
+          "reuters"
+        ],
+        [
+          "google",
+          "will",
+          "target",
+          "ads",
+          "based",
+          "gmail",
+          "photos",
+          "data",
+          "personal",
+          "intelligence",
+          "enabled"
+        ],
+        [
+          "ask",
+          "models",
+          "good",
+          "why",
+          "doesn",
+          "openai",
+          "just",
+          "start",
+          "100",
+          "companies"
+        ],
+        [
+          "not",
+          "intel",
+          "not",
+          "coreweave",
+          "this",
+          "underappreciated",
+          "nvidia",
+          "backed",
+          "company",
+          "growing",
+          "artificial",
+          "intelligence",
+          "revenue",
+          "123",
+          "here",
+          "why",
+          "buy",
+          "today",
+          "yahoo",
+          "finance"
+        ],
+        [
+          "nirva",
+          "announces",
+          "25m",
+          "funding",
+          "pendant",
+          "that",
+          "listens",
+          "only",
+          "its",
+          "wearer",
+          "insider"
+        ],
+        [
+          "javier",
+          "milei",
+          "case",
+          "against",
+          "regulation",
+          "reason",
+          "magazine"
         ]
       ]
     }
