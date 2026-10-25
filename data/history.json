@@ -1,109 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-11",
-      "topics": [
-        "Microsoft president says UK is best placed to drive AI regulation",
-        "HR Path accelerates its Artificial Intelligence strategy with the acquisition of SnapAI - The Globe and Mail",
-        "DeepSeek leads $400 million funding round for ex-Tencent scientist's robot AI startup - Startup Fortune",
-        "An interview with Mark Zuckerberg, who says Meta has caught up with rivals at the frontier of AI with its Wonder model and rejects calls for a slowdown (Hannah Murphy/Financial Times)",
-        "The gap in shared understanding of LLM capability is widening",
-        "Nvidia Eyes Reflection AI Acquisition: A Major Move That Could Reshape the Future of Open-Source Artificial Intelligence - Kingy AI"
-      ],
-      "title_hashes": [
-        "58f9367d0e047df7f24e5066171935562f30c8020f67361260bf1d452070a1d8",
-        "de0a15aac2c7ab14abba18d0f3d1efa565068c9d9bf07558748e6aa22e27ac15",
-        "1fa201b1c19ae9616c60cbf409e1aee2202ffefbc644b314ba7dc4f24740610f",
-        "44b22d1d72b631aa9288c7cd4d7da030f36f1cbe95dba7db8a1cfb8bdd46bb91",
-        "183c569c66439f7055329417c6fccb0fd75a230d1e662a000dafcc2bac6e53df",
-        "5174b7390d07a819dde6a5c2b575a47cba1fa5ff525997cc673f95e2f4eda0df"
-      ],
-      "topic_tokens": [
-        [
-          "microsoft",
-          "president",
-          "says",
-          "best",
-          "placed",
-          "drive",
-          "regulation"
-        ],
-        [
-          "path",
-          "accelerates",
-          "its",
-          "artificial",
-          "intelligence",
-          "strategy",
-          "acquisition",
-          "snapai",
-          "globe",
-          "mail"
-        ],
-        [
-          "deepseek",
-          "leads",
-          "400",
-          "million",
-          "funding",
-          "round",
-          "tencent",
-          "scientist",
-          "robot",
-          "startup",
-          "startup",
-          "fortune"
-        ],
-        [
-          "interview",
-          "mark",
-          "zuckerberg",
-          "who",
-          "says",
-          "meta",
-          "has",
-          "caught",
-          "rivals",
-          "frontier",
-          "its",
-          "wonder",
-          "model",
-          "rejects",
-          "calls",
-          "slowdown",
-          "hannah",
-          "murphy",
-          "financial",
-          "times"
-        ],
-        [
-          "gap",
-          "shared",
-          "understanding",
-          "llm",
-          "capability",
-          "widening"
-        ],
-        [
-          "nvidia",
-          "eyes",
-          "reflection",
-          "acquisition",
-          "major",
-          "move",
-          "that",
-          "could",
-          "reshape",
-          "future",
-          "open",
-          "source",
-          "artificial",
-          "intelligence",
-          "kingy"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-12",
       "topics": [
         "Microsoft’s Brad Smith calls for global AI safety rules, says milk faces more regulation than AI - The American Bazaar",
@@ -1275,6 +1172,131 @@
           "regulation",
           "reason",
           "magazine"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "topics": [
+        "UK unveils $800 million AI security funding plan - Investing.com",
+        "Baba, which develops AI tools to help Medicare and Medicaid patients connect to care teams and handle advocacy tasks, raised a $40M Series A led by FirstMark (Cailey Gleeson/Fierce Healthcare)",
+        "LSEG agrees to acquire Octus, an NY-based provider of credit intelligence, data, and workflow software, from Permira and Octus' management for $3.54B in cash (Dominic Chopping/Wall Street Journal)",
+        "Elon Musk Just Gave Europe a Reason to Replace American Technology",
+        "Block unveils Dessa, a \"true speech-to-speech\" AI model trained on \"nothing but human conversation\" that it says runs locally on a MacBook Pro M4 Max or newer (Jay Peters/The Verge)",
+        "AI Funding Rounds This Week: Tenstorrent $1.5B [2026] - https://tech-insider.org/"
+      ],
+      "title_hashes": [
+        "ea2b2b92945aada62d08d4411918e4c19b1f240ac9212acb374afedbf9f3cb0d",
+        "ff225a06b77b116b7ce03a117165d797ae994d10791d2650b80bd30e1914cc26",
+        "5fe0cda45039ff67e8072b22a36ba1de5551e04a6a29d09b18e6895bdd619a24",
+        "bf0be72bafa814d5a179a784a231a1ae206a2492430d2a42cd1a9fb49c1f8ce9",
+        "6cc2cef73ff70f040c73130070a847a0cd431d600a043910aa146f0ed13c44ac",
+        "2781f88e0fea11589f709ac12864b092efea407804ba666fb935d9e42ab0e792"
+      ],
+      "topic_tokens": [
+        [
+          "unveils",
+          "800",
+          "million",
+          "security",
+          "funding",
+          "plan",
+          "investing"
+        ],
+        [
+          "baba",
+          "which",
+          "develops",
+          "tools",
+          "help",
+          "medicare",
+          "medicaid",
+          "patients",
+          "connect",
+          "care",
+          "teams",
+          "handle",
+          "advocacy",
+          "tasks",
+          "raised",
+          "40m",
+          "series",
+          "led",
+          "firstmark",
+          "cailey",
+          "gleeson",
+          "fierce",
+          "healthcare"
+        ],
+        [
+          "lseg",
+          "agrees",
+          "acquire",
+          "octus",
+          "based",
+          "provider",
+          "credit",
+          "intelligence",
+          "data",
+          "workflow",
+          "software",
+          "permira",
+          "octus",
+          "management",
+          "54b",
+          "cash",
+          "dominic",
+          "chopping",
+          "wall",
+          "street",
+          "journal"
+        ],
+        [
+          "elon",
+          "musk",
+          "just",
+          "gave",
+          "europe",
+          "reason",
+          "replace",
+          "american",
+          "technology"
+        ],
+        [
+          "block",
+          "unveils",
+          "dessa",
+          "true",
+          "speech",
+          "speech",
+          "model",
+          "trained",
+          "nothing",
+          "human",
+          "conversation",
+          "that",
+          "says",
+          "runs",
+          "locally",
+          "macbook",
+          "pro",
+          "max",
+          "newer",
+          "jay",
+          "peters",
+          "verge"
+        ],
+        [
+          "funding",
+          "rounds",
+          "this",
+          "week",
+          "tenstorrent",
+          "2026",
+          "https",
+          "tech",
+          "insider",
+          "org"
         ]
       ]
     }
