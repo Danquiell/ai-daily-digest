@@ -1,121 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-12",
-      "topics": [
-        "Microsoft’s Brad Smith calls for global AI safety rules, says milk faces more regulation than AI - The American Bazaar",
-        "TechCrunch Disrupt 2026 starts tomorrow: Your final chance to secure up to $100 ticket savings",
-        "Kroger to lay off 3,000 corporate employees over 3 years as it leans into artificial intelligence - ABC News - Breaking News, Latest News and Videos",
-        "Apple’s HomePod Mini 2 is available to preorder",
-        "Broadcom CEO sees viable OpenAI business but warns of AI funding constraints - Seeking Alpha",
-        "ELECTRA AI and Iron Horse Acquisition II Corp. (Nasdaq: IRHO) Selected by Westbrook Racing by Visit Angola to Bring AI Battery Intelligence to E1 Electric Powerboat Racing - Yahoo Finance UK"
-      ],
-      "title_hashes": [
-        "357c15fe28ad58968bdd21f11906a0ea9f7d91f042205f7262e06e7ad394fe61",
-        "aafa080ffe1253deb9a99bd37e882085fb500099e07f6242f161fdf1554394b1",
-        "d28a12c1c441dc1f568bdd0abd7959e8c21c0c7d075e97bf568477f30c70615d",
-        "985819bce037f43a7879e1852cba6732e7a7d020b216f580b56c17511446add7",
-        "1e1334fee83e5ca9f54594274ec4ba5b534b5d3f0cb1152afa9d0bd6bc7a0286",
-        "4ea2c73bd962f3e36b8c27711450c01955714d6f58bb811d9ff21a4ca8fadb82"
-      ],
-      "topic_tokens": [
-        [
-          "microsoft",
-          "brad",
-          "smith",
-          "calls",
-          "global",
-          "safety",
-          "rules",
-          "says",
-          "milk",
-          "faces",
-          "more",
-          "regulation",
-          "than",
-          "american",
-          "bazaar"
-        ],
-        [
-          "techcrunch",
-          "disrupt",
-          "2026",
-          "starts",
-          "tomorrow",
-          "your",
-          "final",
-          "chance",
-          "secure",
-          "100",
-          "ticket",
-          "savings"
-        ],
-        [
-          "kroger",
-          "lay",
-          "off",
-          "000",
-          "corporate",
-          "employees",
-          "over",
-          "years",
-          "leans",
-          "into",
-          "artificial",
-          "intelligence",
-          "abc",
-          "news",
-          "breaking",
-          "news",
-          "latest",
-          "news",
-          "videos"
-        ],
-        [
-          "apple",
-          "homepod",
-          "mini",
-          "available",
-          "preorder"
-        ],
-        [
-          "broadcom",
-          "ceo",
-          "sees",
-          "viable",
-          "openai",
-          "business",
-          "warns",
-          "funding",
-          "constraints",
-          "seeking",
-          "alpha"
-        ],
-        [
-          "electra",
-          "iron",
-          "horse",
-          "acquisition",
-          "corp",
-          "nasdaq",
-          "irho",
-          "selected",
-          "westbrook",
-          "racing",
-          "visit",
-          "angola",
-          "bring",
-          "battery",
-          "intelligence",
-          "electric",
-          "powerboat",
-          "racing",
-          "yahoo",
-          "finance"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-13",
       "topics": [
         "Anthropic warns small AI models could self-replicate through IoT devices",
@@ -1297,6 +1182,95 @@
           "tech",
           "insider",
           "org"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "topics": [
+        "Artificial intelligence giant Anthropic files papers to sell shares to the public for the first time - The Frederick News-Post",
+        "Anthropic reveals $80 billion loss, huge spending spree ahead of IPO - NBC News",
+        "Anthropic S-1",
+        "No signs of AI payoff outside the tech sector",
+        "Computer Vision Design Platform QBlack AI Raises Seed Funding from Partners Lounge and Korea Investment Accelerator - Wowtale",
+        "Dot Ai Appoints Avi Cohen to Board of Directors After Envoy Acquisition - Quiver Quantitative"
+      ],
+      "title_hashes": [
+        "1502a63dfe84fe7b74fd82aec248727740590077be70773440c54f0cb98bd26e",
+        "9fe7d0fb7f633f472031feb8586bcc67bd61e3d2b5204162da255a3883a5e8db",
+        "a2675030db53217466efdd647aa7f8004398caae2f8ad58210fc1a53b0b4d47e",
+        "b7fae33623e93fb091e46ced94dfb4ac0a685e3c4f030559f92bf981ccdd8f91",
+        "e3bed8546e5b500ebd7f96aef15d353b25450d04a7a237da676d0d9724c71cf3",
+        "d577c9ceda969455c1ad63a38c298bf7d09a08e972b299fad380e5bb30427d43"
+      ],
+      "topic_tokens": [
+        [
+          "artificial",
+          "intelligence",
+          "giant",
+          "anthropic",
+          "files",
+          "papers",
+          "sell",
+          "shares",
+          "public",
+          "first",
+          "time",
+          "frederick",
+          "news",
+          "post"
+        ],
+        [
+          "anthropic",
+          "reveals",
+          "billion",
+          "loss",
+          "huge",
+          "spending",
+          "spree",
+          "ahead",
+          "ipo",
+          "nbc",
+          "news"
+        ],
+        [
+          "anthropic"
+        ],
+        [
+          "signs",
+          "payoff",
+          "outside",
+          "tech",
+          "sector"
+        ],
+        [
+          "computer",
+          "vision",
+          "design",
+          "platform",
+          "qblack",
+          "raises",
+          "seed",
+          "funding",
+          "partners",
+          "lounge",
+          "korea",
+          "investment",
+          "accelerator",
+          "wowtale"
+        ],
+        [
+          "dot",
+          "appoints",
+          "avi",
+          "cohen",
+          "board",
+          "directors",
+          "after",
+          "envoy",
+          "acquisition",
+          "quiver",
+          "quantitative"
         ]
       ]
     }
