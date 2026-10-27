@@ -1,99 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-13",
-      "topics": [
-        "Anthropic warns small AI models could self-replicate through IoT devices",
-        "Ray-Ban Meta Audio glasses: Order the camera-free AI frames starting at $349 - Mashable",
-        "Alphabet vs. Meta Platforms: Here's What Revenue Trends Tell Investors About These Media Giants Turned Artificial Intelligence Companies - Yahoo Finance",
-        "Redesigning source control at Anthropic",
-        "Scimplify raises $25M to challenge China’s grip on critical materials with AI",
-        "OpenAI engineer arrested in bugging of executive conference room"
-      ],
-      "title_hashes": [
-        "8e0c3ada97a6f2c10941073f19c6fcf0f7085d9862d1dae6e57d9e22b6ab3bb3",
-        "85b02661af3fd36439ef54022e41eb16a877a522ab4bed0da8b937da91393809",
-        "2cc144178d9f20433fb875db3437c527f9e5c6e5e2c1ee77446bebba3c1be88b",
-        "03c419c75361419c9d86e6277dd289eb44d8f16b785a6daebca1b226b0a2f20f",
-        "48a6961ce2fa62d382d1f64277298358f90516ca1d25387352ada5606df8cac2",
-        "d863c1ccfa3e245481ddae928a1b313bc04cc36c31ed35bee2969a0d9cb811be"
-      ],
-      "topic_tokens": [
-        [
-          "anthropic",
-          "warns",
-          "small",
-          "models",
-          "could",
-          "self",
-          "replicate",
-          "through",
-          "iot",
-          "devices"
-        ],
-        [
-          "ray",
-          "ban",
-          "meta",
-          "audio",
-          "glasses",
-          "order",
-          "camera",
-          "free",
-          "frames",
-          "starting",
-          "349",
-          "mashable"
-        ],
-        [
-          "alphabet",
-          "meta",
-          "platforms",
-          "here",
-          "what",
-          "revenue",
-          "trends",
-          "tell",
-          "investors",
-          "about",
-          "these",
-          "media",
-          "giants",
-          "turned",
-          "artificial",
-          "intelligence",
-          "companies",
-          "yahoo",
-          "finance"
-        ],
-        [
-          "redesigning",
-          "source",
-          "control",
-          "anthropic"
-        ],
-        [
-          "scimplify",
-          "raises",
-          "25m",
-          "challenge",
-          "china",
-          "grip",
-          "critical",
-          "materials"
-        ],
-        [
-          "openai",
-          "engineer",
-          "arrested",
-          "bugging",
-          "executive",
-          "conference",
-          "room"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-14",
       "topics": [
         "Gemini 4 Argon",
@@ -1271,6 +1178,107 @@
           "acquisition",
           "quiver",
           "quantitative"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "topics": [
+        "Owners of Elvis Presley’s Music Sue Anthropic for Copyright Infringement - The New York Times",
+        "Meta reverses losses to rise as investors weigh $35 billion AI funding plan By Investing.com - Investing.com",
+        "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect' - CNBC",
+        "Artificial intelligence giant Anthropic files papers to sell shares to the public for the first time - The Daily Reporter - Greenfield Indiana",
+        "‍‍‍Artificial Intelligence at Work {CV45RT} - NYC Health + Hospitals",
+        "BOB AI Secures $5.5M Seed Funding to Launch Autonomous AI Finance Employee for Small Businesses - FF News"
+      ],
+      "title_hashes": [
+        "0dd83cd5c8a3758898d64ae63fc1515a0c634b6b194ce80ed894e9d2518291f0",
+        "7706bd5e0bf57763f12dcb529403422a54e836f03cc1820b1f91d389446ef3ec",
+        "c861ad4c0bbfb63e2fee4bd2c62bec6fc2996b68b197e5f0955a01460c6a0d22",
+        "93b0fca51d5f5a840b1eb1edf29249f80ef2c3f17db08a77ec827f34755d3717",
+        "c85fe7376ab38808e75e96c53d49b66aa27dfafb90fe74c9238539d2e8a14dc6",
+        "b8a83849da793d0186cbabb6e3780cf1d334c769f219576799094e0482c674f6"
+      ],
+      "topic_tokens": [
+        [
+          "owners",
+          "elvis",
+          "presley",
+          "music",
+          "sue",
+          "anthropic",
+          "copyright",
+          "infringement",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "meta",
+          "reverses",
+          "losses",
+          "rise",
+          "investors",
+          "weigh",
+          "billion",
+          "funding",
+          "plan",
+          "investing",
+          "investing"
+        ],
+        [
+          "wall",
+          "street",
+          "silicon",
+          "valley",
+          "anthropic",
+          "ipo",
+          "poised",
+          "have",
+          "massive",
+          "trickle",
+          "down",
+          "effect",
+          "cnbc"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "giant",
+          "anthropic",
+          "files",
+          "papers",
+          "sell",
+          "shares",
+          "public",
+          "first",
+          "time",
+          "daily",
+          "reporter",
+          "greenfield",
+          "indiana"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "work",
+          "cv45rt",
+          "nyc",
+          "health",
+          "hospitals"
+        ],
+        [
+          "bob",
+          "secures",
+          "seed",
+          "funding",
+          "launch",
+          "autonomous",
+          "finance",
+          "employee",
+          "small",
+          "businesses",
+          "news"
         ]
       ]
     }
