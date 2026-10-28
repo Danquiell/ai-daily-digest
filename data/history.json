@@ -1,99 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-14",
-      "topics": [
-        "Gemini 4 Argon",
-        "Source: the US FTC issues ~50-page civil investigative demands to OpenAI and Anthropic over safety incidents, safeguarding practices, and consumer protection (Maria Curi/Axios)",
-        "Containment and monitoring failures are to blame for AI hacking reports: experts",
-        "Is artificial intelligence making weather forecasts better? - Key Biscayne Portal",
-        "Save 50% on your TechCrunch Disrupt 2026 ticket and join the last 2 days in San Francisco’s Moscone West",
-        "Anthropic's quarterly revenue hits $16.8B ahead of planned IPO: Report - Anadolu Ajansı"
-      ],
-      "title_hashes": [
-        "7411d53bc8f6240617a31890b21f7ce3ada8420b0eff1d1e8d85fbd55a278447",
-        "2306e72635b2701c1f438063897bd6d077b5edcf2b223cb2ac811b9c7b228aa5",
-        "6896f298c387b47e1f3ebd44d85a8db3e43ba57a91f50827010ba41a52e741f3",
-        "5d124853e03f41a8d6c47e6ac6e4b8ad3939809c77569cac87d3f5878433bb41",
-        "a624ae64322029f99e2fcc85d105a75bcb4d47aac867a01b29be4aeb55a03abb",
-        "9e955a3407223d09294910bd4c0840363ea8ea65fd369dd32ea94e7dc820fcae"
-      ],
-      "topic_tokens": [
-        [
-          "gemini",
-          "argon"
-        ],
-        [
-          "source",
-          "ftc",
-          "issues",
-          "page",
-          "civil",
-          "investigative",
-          "demands",
-          "openai",
-          "anthropic",
-          "over",
-          "safety",
-          "incidents",
-          "safeguarding",
-          "practices",
-          "consumer",
-          "protection",
-          "maria",
-          "curi",
-          "axios"
-        ],
-        [
-          "containment",
-          "monitoring",
-          "failures",
-          "blame",
-          "hacking",
-          "reports",
-          "experts"
-        ],
-        [
-          "artificial",
-          "intelligence",
-          "making",
-          "weather",
-          "forecasts",
-          "better",
-          "key",
-          "biscayne",
-          "portal"
-        ],
-        [
-          "save",
-          "your",
-          "techcrunch",
-          "disrupt",
-          "2026",
-          "ticket",
-          "join",
-          "last",
-          "days",
-          "san",
-          "francisco",
-          "moscone",
-          "west"
-        ],
-        [
-          "anthropic",
-          "quarterly",
-          "revenue",
-          "hits",
-          "ahead",
-          "planned",
-          "ipo",
-          "report",
-          "anadolu",
-          "ajans"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-15",
       "topics": [
         "Accenture caps central funding for Claude AI at $29 per employee per month - HR Katha",
@@ -1279,6 +1186,120 @@
           "small",
           "businesses",
           "news"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "topics": [
+        "Trump says he’ll “ban” the term “AI” in federal documents and beyond. A September order already requires “Super Intelligence” (with video) - Plataforma Media",
+        "AI giants' funding ambitions test Wall Street's appetite for risk - The Economic Times",
+        "Amazon unveils the $500 Echo Show 16, the $200 Echo Time alarm, and the $200+ Alexa Photo Frame, raises smart speaker prices, and previews Alexa Home Map (Chris Welch/Bloomberg)",
+        "AI promised less work. I've never worked more",
+        "Luxor Announces $16M Funding Round To Scale AI Compute, Derivatives - Bitcoin Magazine",
+        "Event tech startup Easol secures $30M in new funding, launches AI agents for festival promoters - Music Business Worldwide"
+      ],
+      "title_hashes": [
+        "ebd86a3dc6d98bb03816a01bec6fb74a2d677393f220587598fb9133a95c80a4",
+        "758b9901e57859ca90f8ff4844ab8925fe8be032878e1eca495cb4d0b5abe4d1",
+        "740931f3fd1806c89ba40f51202ce17f0c65983f6d34e06ae7211a9820518eff",
+        "6058b94e771d691a9f6dd9ebe1c7a72f48505028fb74bd05c111905ba0d9c94e",
+        "84fc7fe4857edef3209c26fdd981e7c56993518af0b70a143e6cc67bfbac2d66",
+        "84d0ba97f8a49096073446709a4c3d3ed918e17a5a4a7cbce3c5a078be8f402c"
+      ],
+      "topic_tokens": [
+        [
+          "trump",
+          "says",
+          "ban",
+          "term",
+          "federal",
+          "documents",
+          "beyond",
+          "september",
+          "order",
+          "already",
+          "requires",
+          "super",
+          "intelligence",
+          "video",
+          "plataforma",
+          "media"
+        ],
+        [
+          "giants",
+          "funding",
+          "ambitions",
+          "test",
+          "wall",
+          "street",
+          "appetite",
+          "risk",
+          "economic",
+          "times"
+        ],
+        [
+          "amazon",
+          "unveils",
+          "500",
+          "echo",
+          "show",
+          "200",
+          "echo",
+          "time",
+          "alarm",
+          "200",
+          "alexa",
+          "photo",
+          "frame",
+          "raises",
+          "smart",
+          "speaker",
+          "prices",
+          "previews",
+          "alexa",
+          "home",
+          "map",
+          "chris",
+          "welch",
+          "bloomberg"
+        ],
+        [
+          "promised",
+          "less",
+          "work",
+          "never",
+          "worked",
+          "more"
+        ],
+        [
+          "luxor",
+          "announces",
+          "16m",
+          "funding",
+          "round",
+          "scale",
+          "compute",
+          "derivatives",
+          "bitcoin",
+          "magazine"
+        ],
+        [
+          "event",
+          "tech",
+          "startup",
+          "easol",
+          "secures",
+          "30m",
+          "new",
+          "funding",
+          "launches",
+          "agents",
+          "festival",
+          "promoters",
+          "music",
+          "business",
+          "worldwide"
         ]
       ]
     }
