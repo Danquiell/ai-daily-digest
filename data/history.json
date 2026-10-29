@@ -1,104 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-15",
-      "topics": [
-        "Accenture caps central funding for Claude AI at $29 per employee per month - HR Katha",
-        "FourNet Expands £65m Customer Experience and AI Business With SVL Acquisition - Yahoo Finance",
-        "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Overview of consultation responses - Financial Stability Board",
-        "More on Anthropic's Scion ripping off Mononoke",
-        "Sources detail Nscale's setbacks ahead of an IPO at up to a $35B valuation, including a six-month delay in Norway and penalties owed to Microsoft and ByteDance (Bloomberg)",
-        "Simons Foundation launches $15M effort to help mathematicians navigate AI era"
-      ],
-      "title_hashes": [
-        "2d987743078226a17672286b661ba7c07e09db095ec04bfe24767a252209114f",
-        "56b75f26c21827457a17f3ce3b246852a22e57b49ab984f17b9a2db826f8b325",
-        "fe75224a3bd0c3ec55622ef6ec43d00e678dc1d2f420f06efa8be9ae723f69aa",
-        "281b452878ecfe8feba4057266292f0fb7ef9ea85d52b94ce98c449280ae3378",
-        "73edf61ffb6ab767e40998191060f3f3f398b0aee0a948ed248c3b4eb7edfb49",
-        "7b9c342ee19ed7193fe39d68f4af7163b9e13bb9127e56dfbf2fe9a87796964a"
-      ],
-      "topic_tokens": [
-        [
-          "accenture",
-          "caps",
-          "central",
-          "funding",
-          "claude",
-          "per",
-          "employee",
-          "per",
-          "month",
-          "katha"
-        ],
-        [
-          "fournet",
-          "expands",
-          "65m",
-          "customer",
-          "experience",
-          "business",
-          "svl",
-          "acquisition",
-          "yahoo",
-          "finance"
-        ],
-        [
-          "sound",
-          "practices",
-          "responsible",
-          "adoption",
-          "artificial",
-          "intelligence",
-          "overview",
-          "consultation",
-          "responses",
-          "financial",
-          "stability",
-          "board"
-        ],
-        [
-          "more",
-          "anthropic",
-          "scion",
-          "ripping",
-          "off",
-          "mononoke"
-        ],
-        [
-          "sources",
-          "detail",
-          "nscale",
-          "setbacks",
-          "ahead",
-          "ipo",
-          "35b",
-          "valuation",
-          "including",
-          "six",
-          "month",
-          "delay",
-          "norway",
-          "penalties",
-          "owed",
-          "microsoft",
-          "bytedance",
-          "bloomberg"
-        ],
-        [
-          "simons",
-          "foundation",
-          "launches",
-          "15m",
-          "effort",
-          "help",
-          "mathematicians",
-          "navigate",
-          "era"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-16",
       "topics": [
         "Claude reveals ECDSA curve origins",
@@ -1300,6 +1202,89 @@
           "music",
           "business",
           "worldwide"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "topics": [
+        "Artificial intelligence transforms the workforce, regulations - K8 News | Jonesboro, Arkansas",
+        "New York enacts ban on 'unsafe' chatbot behavior with kids as states push AI regulation boundaries - Marietta Daily Journal",
+        "Artificial Intelligence is killing and creating jobs - WALB.com",
+        "President Donald Trump says he'll ban the term artificial intelligence - The Detroit News",
+        "Evidence of a spying operation by ICE against left-wing social movements",
+        "Gemini 4 Carbon"
+      ],
+      "title_hashes": [
+        "6827ec7b9d1aa9fc8c9c2947794a8159110992a38009a17ebfe5b847defad789",
+        "a36cb52ca067f0e9f46b226b0a797328a43417ca47f360f957e0fa9d0035eeb1",
+        "1770994150cf55817968788e7308457528ae77fc287ff88758d0e71b290aa84a",
+        "c6e8131d9b3aa60617c999f64cf5dc64dcd5818c1be3505d9775d2cba721ee75",
+        "c236fdef522108e99ef0ec190d2e2cee7713d8050bf9c5fa86d8e0f7fa512a6a",
+        "855d92c216b524117e0e0275a02ca67b28fc864226b2efaeaba6d91d2eb56cd6"
+      ],
+      "topic_tokens": [
+        [
+          "artificial",
+          "intelligence",
+          "transforms",
+          "workforce",
+          "regulations",
+          "news",
+          "jonesboro",
+          "arkansas"
+        ],
+        [
+          "new",
+          "york",
+          "enacts",
+          "ban",
+          "unsafe",
+          "chatbot",
+          "behavior",
+          "kids",
+          "states",
+          "push",
+          "regulation",
+          "boundaries",
+          "marietta",
+          "daily",
+          "journal"
+        ],
+        [
+          "artificial",
+          "intelligence",
+          "killing",
+          "creating",
+          "jobs",
+          "walb"
+        ],
+        [
+          "president",
+          "donald",
+          "trump",
+          "says",
+          "ban",
+          "term",
+          "artificial",
+          "intelligence",
+          "detroit",
+          "news"
+        ],
+        [
+          "evidence",
+          "spying",
+          "operation",
+          "ice",
+          "against",
+          "left",
+          "wing",
+          "social",
+          "movements"
+        ],
+        [
+          "gemini",
+          "carbon"
         ]
       ]
     }
