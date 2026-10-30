@@ -1,105 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-10-16",
-      "topics": [
-        "Claude reveals ECDSA curve origins",
-        "US chip startup Bolt Graphics seeks $100 million funding, sidesteps AI battlefield to take on Nvidia and AMD - BigGo Finance",
-        "Mistlabs, which develops Ambi, an ambient AI app for iPhone, Apple Watch, and Mac that learns about users from conversations, raised a $26M pre-Series A (Duncan Riley/SiliconANGLE)",
-        "Neural networks are clean",
-        "Meta releases 816B-parameter Muse Spark Open model, runs locally on paired Mac Studios",
-        "Anthropic’s $2 trillion IPO dream hits a new reality - AOL.com"
-      ],
-      "title_hashes": [
-        "3f69b8f904490c067f1430f6a664f8bf9df4fd7d69509424db1b15619904c157",
-        "5da426219b3ecd3be9943fa0ca39dcc3ecde3052fb94b4c79d5a425b80397277",
-        "083461082e4229f5c8682629dad78b0a2fbdc5bb8cba0966e59645631c6b4c8d",
-        "8fe1977dfa8ff337bf4c72d5a5ca01ab36e1d2f7dd4f93b5a62af56b26e39c82",
-        "c8620b07ddbc26db95608254bf408cd3b056b570b822f5456e9371dd92017828",
-        "80454f8c4472fada5a971c42137f07aab1ff9f64af4a93e04951a265a4e5030e"
-      ],
-      "topic_tokens": [
-        [
-          "claude",
-          "reveals",
-          "ecdsa",
-          "curve",
-          "origins"
-        ],
-        [
-          "chip",
-          "startup",
-          "bolt",
-          "graphics",
-          "seeks",
-          "100",
-          "million",
-          "funding",
-          "sidesteps",
-          "battlefield",
-          "take",
-          "nvidia",
-          "amd",
-          "biggo",
-          "finance"
-        ],
-        [
-          "mistlabs",
-          "which",
-          "develops",
-          "ambi",
-          "ambient",
-          "app",
-          "iphone",
-          "apple",
-          "watch",
-          "mac",
-          "that",
-          "learns",
-          "about",
-          "users",
-          "conversations",
-          "raised",
-          "26m",
-          "pre",
-          "series",
-          "duncan",
-          "riley",
-          "siliconangle"
-        ],
-        [
-          "neural",
-          "networks",
-          "clean"
-        ],
-        [
-          "meta",
-          "releases",
-          "816b",
-          "parameter",
-          "muse",
-          "spark",
-          "open",
-          "model",
-          "runs",
-          "locally",
-          "paired",
-          "mac",
-          "studios"
-        ],
-        [
-          "anthropic",
-          "trillion",
-          "ipo",
-          "dream",
-          "hits",
-          "new",
-          "reality",
-          "aol"
-        ]
-      ]
-    },
-    {
       "date": "2026-10-17",
       "topics": [
         "ai ai Artificial Intelligence at Work aip ai - Universidad de Córdoba (UCO)",
@@ -1285,6 +1186,92 @@
         [
           "gemini",
           "carbon"
+        ]
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "topics": [
+        "Artificial intelligence transforms the workforce, regulations - KALB | News Channel 5",
+        "Kuaishou's Kling AI unit completes a near $3 billion funding round - marketscreener.com",
+        "We're releasing the weights of Mistral Large 4",
+        "Microsoft recorded $10 billion in revenue from OpenAI",
+        "IBS Proposes HK$563 Million Acquisition of AI Chip Enterprise - The Manila Times",
+        "Solink Raises More Than $100 Million in New Funding to Bring its AI Vision Intelligence to Physical Business Operations Around the World - AiThority"
+      ],
+      "title_hashes": [
+        "5d5fa04104e54f297b208a26d065a8dfa39a5c3905491d9c7de8d76ea10abbcf",
+        "4f2367e7498803e93a9c1ff80ad39f7538cf10405817e68eadd85ffc71812a87",
+        "911de34b5df70eac2f5203808e778693934897b5db70b4e0b35d280f65e16ce6",
+        "6a681c0c9351be08db79ce1c7c06a67e30d830b2e42756f3a867536a62fdf32c",
+        "baed5859dd17abd9a3abf847571e3122719f7a3680046954e6c5c59acec857c2",
+        "3f34a048001c2d8f17a143eb8cb9f2adc0795201b9375adc0cd07183c61d3da0"
+      ],
+      "topic_tokens": [
+        [
+          "artificial",
+          "intelligence",
+          "transforms",
+          "workforce",
+          "regulations",
+          "kalb",
+          "news",
+          "channel"
+        ],
+        [
+          "kuaishou",
+          "kling",
+          "unit",
+          "completes",
+          "near",
+          "billion",
+          "funding",
+          "round",
+          "marketscreener"
+        ],
+        [
+          "releasing",
+          "weights",
+          "mistral",
+          "large"
+        ],
+        [
+          "microsoft",
+          "recorded",
+          "billion",
+          "revenue",
+          "openai"
+        ],
+        [
+          "ibs",
+          "proposes",
+          "563",
+          "million",
+          "acquisition",
+          "chip",
+          "enterprise",
+          "manila",
+          "times"
+        ],
+        [
+          "solink",
+          "raises",
+          "more",
+          "than",
+          "100",
+          "million",
+          "new",
+          "funding",
+          "bring",
+          "its",
+          "vision",
+          "intelligence",
+          "physical",
+          "business",
+          "operations",
+          "around",
+          "world",
+          "aithority"
         ]
       ]
     }
