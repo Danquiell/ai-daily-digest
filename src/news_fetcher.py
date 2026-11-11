@@ -212,6 +212,15 @@ def fetch_rss_stories(window_start: datetime) -> list[dict]:
                 "source": source["name"],
                 "points": 10,
             }
+            # Google News is an aggregator: the outlet that wrote the story is
+            # in the entry, and "via Google News AI Deals" on a slide credits
+            # nobody. "source" stays the feed name because the per-feed cap
+            # counts on it.
+            outlet = (getattr(entry, "source", None) or {}).get("title", "")
+            if source["name"].startswith("Google News") and outlet:
+                story["outlet"] = outlet.strip()
+                if title.endswith(f" - {outlet}"):
+                    story["title"] = title[: -len(outlet) - 3].strip()
 
             if pub_date and pub_date >= window_start:
                 in_window.append(story)
@@ -435,7 +444,7 @@ _TAGS = re.compile(r"<[^>]+>")
 _WS = re.compile(r"\s+")
 
 
-def fetch_article_text(url: str, limit: int = 1400) -> str:
+def fetch_article_text(url: str, limit: int = 4000) -> str:
     """Download an article and return its visible text, or "" on any failure.
 
     A headline alone is not enough material: given only titles, the model either

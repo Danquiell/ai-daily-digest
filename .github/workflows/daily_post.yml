@@ -41,6 +41,7 @@ jobs:
     # never expires. No personal access token (PAT) needed.
     permissions:
       contents: write
+      issues: write
 
     steps:
       - name: Checkout repository
@@ -57,6 +58,30 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Headless Chromium renders the carousel slides from HTML.
+      - name: Install Chromium for the carousel
+        run: python -m playwright install --with-deps chromium
+
+      # The LinkedIn token lasts 60 days and cannot renew itself. The date is
+      # written by scripts/linkedin_auth.py; a week before it, open one issue so
+      # the warning arrives by e-mail before the posts stop.
+      - name: Warn when the LinkedIn token is about to expire
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPIRES: ${{ vars.LINKEDIN_TOKEN_EXPIRES_AT }}
+        run: |
+          if [ -z "$EXPIRES" ]; then echo "No expiry date recorded."; exit 0; fi
+          days=$(( ( $(date -d "$EXPIRES" +%s) - $(date +%s) ) / 86400 ))
+          echo "LinkedIn token expires on $EXPIRES ($days days)."
+          if [ "$days" -le 7 ]; then
+            title="LinkedIn token expires on $EXPIRES"
+            open=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "\"$title\" in:title" --json number --jq 'length')
+            if [ "$open" = "0" ]; then
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" \
+                --body "The daily post stops on that date. Renew the token from the repository root: \`python scripts/linkedin_auth.py --paste\`"
+            fi
+          fi
+
       - name: Run AI Daily Digest
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -71,11 +96,17 @@ jobs:
           fi
           python src/main.py $FLAGS
 
-      - name: Upload card preview (on failure or dry run)
+      # Slides, PDF, caption and deck data: what went out, or what a dry run
+      # would have posted.
+      - name: Upload post preview
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: linkedin-card-${{ github.run_id }}
-          path: output/*.jpg
+          name: linkedin-post-${{ github.run_id }}
+          path: |
+            output/*.jpg
+            output/*.pdf
+            output/caption.txt
+            output/deck.json
           retention-days: 7
           if-no-files-found: ignore

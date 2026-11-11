@@ -3,6 +3,7 @@ Main orchestrator for AI Daily Digest.
 Triggered daily via GitHub Actions (see .github/workflows/daily_post.yml).
 """
 import argparse
+import json
 import sys
 import traceback
 from datetime import date, timedelta
@@ -11,53 +12,38 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from news_fetcher import fetch_news, load_history
-from content_generator import generate_content, _trim_to_paragraph
+from content_generator import generate_content
 from image_generator import generate_card
-from linkedin_poster import post_with_image, post_text, post_sources_comment
+from linkedin_poster import (
+    TokenExpired,
+    check_token,
+    post_document,
+    post_multi_image,
+    post_sources_comment,
+    post_text,
+    post_with_image,
+)
 from history_updater import update_history, git_commit_history, already_posted
 
 LINKEDIN_USERNAME = "@danquiell"
+OUTPUT_DIR = Path(__file__).parent.parent / "output"
 
 # LinkedIn cuts a post at 3000 characters, without saying so.
 LINKEDIN_MAX_CHARS = 3000
 
 
-def _assemble(en: str, pt: str, tags: str) -> str:
-    divider = "\n\n──────────────────\n\n"
-    parts = []
-    if en:
-        parts.append(f"[EN/US]\n\n{en}")
-    if pt:
-        parts.append(f"[PT/BR]\n\n{pt}")
-    body = divider.join(parts)
-    return f"{body}\n\n{tags}" if tags else body
-
-
-def build_linkedin_post(content) -> str:
-    """English first (the version most of the feed reads), then PT-BR, then the
-    hashtags once at the end so they do not break the text in half.
-
-    Each version is labelled with its locale tag so a reader scrolling past
-    knows which half is theirs before reading a line of it.
+def build_caption(content) -> str:
+    """English first, with no label above it: the first line of the post is the
+    only thing the feed shows before "see more", and "[EN/US]" used to spend it.
+    Portuguese follows under its own label. Hashtags are added by the poster.
     """
     en = content.linkedin_en.strip()
     pt = content.linkedin_pt.strip()
-    # Last gate before publishing: never send the same body twice under a
-    # divider that promises a second language.
-    if en and en == pt:
-        pt = ""
-    tags = getattr(content, "hashtags", "").strip()
-
-    post = _assemble(en, pt, tags)
-    if len(post) <= LINKEDIN_MAX_CHARS or not pt:
-        return post
-
-    # Two versions at the per-version cap plus labels, divider and hashtags can
-    # just clear 3000. Give the overflow to the Portuguese version, which sits
-    # second and would be the half LinkedIn cut anyway.
-    overflow = len(post) - LINKEDIN_MAX_CHARS
-    print(f"[post] Assembled post ran {len(post)} chars — trimming PT by {overflow}")
-    return _assemble(en, _trim_to_paragraph(pt, len(pt) - overflow), tags)
+    parts = [en]
+    if pt and pt != en:
+        parts.append(f"[PT/BR]\n\n{pt}")
+    parts.append("Sources in the first comment. / Fontes no primeiro comentário.")
+    return "\n\n──────────────────\n\n".join(parts[:-1]) + "\n\n" + parts[-1]
 
 
 def build_sources_comment(stories: list[dict]) -> str:
@@ -67,7 +53,7 @@ def build_sources_comment(stories: list[dict]) -> str:
         url = s.get("url", "")
         if url and url not in seen:
             seen.add(url)
-            lines.append(f"• {s['source']}: {url}")
+            lines.append(f"• {s.get('outlet') or s['source']}: {url}")
     return "\n".join(lines[:8])
 
 
@@ -85,6 +71,14 @@ def run(dry_run: bool = False):
         print(f"[skip] history.json already has entry for {date_str} — exiting cleanly.")
         sys.exit(0)
 
+    # 0. A dead token fails here, before the news fetch and the Claude call.
+    if not dry_run:
+        try:
+            check_token()
+        except TokenExpired as e:
+            print(f"[FATAL] {e}")
+            sys.exit(1)
+
     # 1. Fetch news
     try:
         stories = fetch_news(dry_run=dry_run)
@@ -99,7 +93,7 @@ def run(dry_run: bool = False):
 
     history = load_history()
 
-    # 2. Generate content
+    # 2. Generate caption and slide content
     try:
         content = generate_content(stories, history, date_str, dry_run=dry_run)
     except Exception as e:
@@ -107,59 +101,89 @@ def run(dry_run: bool = False):
         traceback.print_exc()
         sys.exit(1)
 
-    # 3. Generate image card
+    caption = build_caption(content)
+    full_text = f"{caption}\n\n{content.hashtags}".strip()
+    if len(full_text) > LINKEDIN_MAX_CHARS:
+        print(f"[WARN] Post is {len(full_text)} chars — LinkedIn cuts at {LINKEDIN_MAX_CHARS}")
+
+    # The run log and the artifact are the only record of what went out: the
+    # token cannot read a post back (403 for w_member_social).
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    (OUTPUT_DIR / "caption.txt").write_text(full_text, encoding="utf-8")
+    (OUTPUT_DIR / "deck.json").write_text(
+        json.dumps(content.deck, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    print(f"\n--- POST TEXT ({len(full_text)} chars) ---")
+    print(full_text)
+    print("--- END POST TEXT ---\n")
+
+    # 3. Render the carousel; keep the single card as the fallback image.
+    carousel = None
+    if content.deck.get("slides"):
+        try:
+            from carousel import render_carousel
+
+            deck = dict(content.deck, username=LINKEDIN_USERNAME, outlets=sorted(content.sources))
+            carousel = render_carousel(
+                deck, today, stem=f"digest_{today.isoformat()}", image_query=content.image_query
+            )
+        except Exception as e:
+            print(f"[ERROR] Carousel rendering failed: {e}")
+            traceback.print_exc()
+    else:
+        print("[carousel] No slide survived the number check — using the single card")
+
     card_path = None
-    try:
-        card_path = generate_card(
-            headline=stories[0]["title"],
-            stories=stories[:4],
-            teaser=content.image_teaser,
-            subtitle=content.image_subtitle,
-            image_query=content.image_query,
-            username=LINKEDIN_USERNAME,
-            today=today,
-            output_filename=f"card_{today.isoformat()}.jpg",
-        )
-        print(f"[image] Card generated: {card_path.name}")
-    except Exception as e:
-        print(f"[ERROR] Image generation failed: {e}")
-        traceback.print_exc()
+    if carousel is None:
+        try:
+            card_path = generate_card(
+                headline=stories[0]["title"],
+                stories=stories[:4],
+                teaser=content.image_teaser,
+                subtitle=content.image_subtitle,
+                image_query=content.image_query,
+                username=LINKEDIN_USERNAME,
+                today=today,
+                output_filename=f"card_{today.isoformat()}.jpg",
+            )
+        except Exception as e:
+            print(f"[ERROR] Image generation failed: {e}")
+            traceback.print_exc()
 
-    # 4. Post to LinkedIn
+    # 4. Post to LinkedIn: carousel, then multi-image, then single image, then
+    # text. Each step down is a format LinkedIn shows smaller, so the order is
+    # by reach, and a failure in one never loses the day.
     linkedin_post_id = None
-    try:
-        linkedin_text = build_linkedin_post(content)
+    post_format = "none"
+    title = content.deck.get("headline") or stories[0]["title"]
+    attempts = []
+    if carousel:
+        attempts.append(("carousel", lambda: post_document(caption, content.hashtags, carousel["pdf"], title)))
+        attempts.append(("multi-image", lambda: post_multi_image(
+            caption, content.hashtags, carousel["images"], content.alt_text or title)))
+        attempts.append(("single image", lambda: post_with_image(
+            text=full_text, image_path=carousel["images"][0], image_title=title[:100])))
+    if card_path and card_path.exists():
+        attempts.append(("single image", lambda: post_with_image(
+            text=full_text, image_path=card_path, image_title=title[:100])))
+    attempts.append(("text", lambda: post_text(full_text, main_url=content.main_url)))
 
-        # The run log is the only record of what actually went out: the token
-        # cannot read a post back (ugcPosts.GET returns 403 for w_member_social).
-        if len(linkedin_text) > 2900:
-            print(f"[WARN] Post is {len(linkedin_text)} chars — LinkedIn cuts at 3000")
+    if dry_run:
+        post_format = attempts[0][0]
+        linkedin_post_id = "dry-run-urn"
+        print(f"[linkedin] DRY RUN — would post as: {post_format}")
+    else:
+        for name, attempt in attempts:
+            try:
+                linkedin_post_id = attempt()
+                post_format = name
+                break
+            except Exception as e:
+                print(f"[ERROR] LinkedIn {name} post failed: {e}")
 
-        print(f"\n--- POST TEXT ({len(linkedin_text)} chars) ---")
-        print(linkedin_text)
-        print("--- END POST TEXT ---\n")
-
-        if card_path and card_path.exists():
-            linkedin_post_id = post_with_image(
-                text=linkedin_text,
-                image_path=card_path,
-                image_title=stories[0]["title"][:100],
-                dry_run=dry_run,
-            )
-        else:
-            print("[linkedin] No image — falling back to text post")
-            linkedin_post_id = post_text(
-                linkedin_text,
-                main_url=content.main_url,
-                dry_run=dry_run,
-            )
-
-        sources_comment = build_sources_comment(stories)
-        post_sources_comment(linkedin_post_id, sources_comment, dry_run=dry_run)
-        print("[OK] LinkedIn post published")
-    except Exception as e:
-        print(f"[ERROR] LinkedIn post failed: {e}")
-        traceback.print_exc()
+    if linkedin_post_id:
+        post_sources_comment(linkedin_post_id, build_sources_comment(stories), dry_run=dry_run)
+        print(f"[OK] LinkedIn post published as {post_format}")
 
     # 5. Update history and commit — only after the post actually went out.
     # Writing history on a failed post marks the day as done and makes every
@@ -179,8 +203,8 @@ def run(dry_run: bool = False):
 
     print(f"\n{'='*60}")
     print(f"  Stories found: {len(stories)}")
-    print(f"  Image card:    {'OK' if card_path and card_path.exists() else 'FAILED'}")
-    print(f"  LinkedIn:      {'OK' if linkedin_post_id else 'FAILED'}")
+    print(f"  Carousel:      {'OK' if carousel else 'FAILED'}")
+    print(f"  LinkedIn:      {post_format if linkedin_post_id else 'FAILED'}")
     print(f"{'='*60}\n")
 
     # Exit non-zero on a failed post so the Actions run turns red and GitHub

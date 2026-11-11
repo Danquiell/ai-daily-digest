@@ -1,25 +1,26 @@
 """
-Generates bilingual (EN + PT-BR) LinkedIn posts using Claude Haiku.
-Opening angle rotates deterministically by day-of-year (8 angles, cycles every 8 days).
+Writes the day's post with Claude: the bilingual caption (EN first, PT-BR below)
+and the content of the carousel slides, in one structured answer.
+
+The caption is short on purpose. The facts live on the slides; the caption has
+to earn the tap on "see more", which LinkedIn puts after roughly the first 140
+characters on a phone.
 """
+import json
 import os
 import re
-from dataclasses import dataclass
-from datetime import date as date_type
+from dataclasses import dataclass, field
 
 import anthropic
 
-MODEL = "claude-haiku-4-5-20251001"
-# EN post plus tags, teaser, subtitle and image query in the first call; the
-# Portuguese version alone in the second. The old single call at 1200 was cut
-# inside the PT block on 2026-09-01, which killed every block after it.
-MAX_TOKENS_EN = 2200
-MAX_TOKENS_PT = 1500
-MAX_TOKENS_RETRY = 3500
-# LinkedIn cuts a post at 3000 characters. The labels, the divider and the
-# hashtags cost about 160, leaving ~1420 per version. 1250 was over-cautious
-# and cost a Portuguese version its closing paragraph over a 39-char overflow.
-MAX_VERSION_CHARS = 1400
+MODEL = "claude-opus-5-5"
+MAX_TOKENS = 16000
+
+# Feed preview before "see more": about 140 characters on mobile.
+MAX_HOOK_CHARS = 140
+# Per language. Two of these plus hooks, labels and hashtags stay far below
+# LinkedIn's 3000-character cap.
+MAX_BODY_CHARS = 700
 
 
 @dataclass
@@ -32,11 +33,15 @@ class GeneratedContent:
     image_subtitle: str = ""
     image_query: str = ""
     hashtags: str = ""
+    deck: dict = field(default_factory=dict)
+    alt_text: str = ""
 
 
 _OPENING_STYLES = """\
-ÂNGULOS DE ABERTURA (use EXATAMENTE o ângulo do número indicado no prompt).
-Todos abrem por informação, nunca por reação emocional ou suspense:
+ÂNGULOS DE ABERTURA. Escolha o ÚNICO ângulo que o material da notícia principal sustenta
+melhor (um rodízio fixo por dia produzia aberturas forçadas, como explicar "o mecanismo"
+de uma notícia que era um número). Todos abrem por informação, nunca por reação emocional
+ou suspense:
 1. NÚMERO — Abra com o dado numérico que define a notícia e diga na mesma frase do que ele é medida. Ex: "O modelo resolve 71% do SWE-bench Verified, contra 49% da versão anterior."
 2. O QUE MUDOU — Estado anterior numa frase, estado novo na seguinte. Sem adjetivo entre as duas.
 3. MECANISMO — Abra explicando COMO a coisa funciona, não que ela existe. Ex: "O treinamento roda em duas etapas: primeiro X, depois Y."
@@ -98,7 +103,7 @@ Proibido (padrões que fazem o texto soar como IA ou como propaganda):
 - Dirigir-se ao leitor para justificar a notícia: "se você trabalha com X, precisa saber que", "if you're hiring right now, you need to know". Dê o fato; a relevância aparece sozinha.
 - Clichês de abertura: "Hoje em dia", "Na era da IA", "Com o avanço da", "No cenário atual", "É indiscutível".
 - Emoji. Nenhum, em nenhuma das duas versões.
-- Bullet com hífen (-). Use → ou parágrafos corridos.
+- Bullet com hífen (-). Use parágrafos corridos.
 - Negrito para dar ênfase a frases inteiras.
 
 Forma:
@@ -109,157 +114,257 @@ Forma:
 - A versão PT é português brasileiro correto: concordância de gênero e número, artigo antes
   de nome de empresa quando o uso pede ("a Amazon", "a Mistral"), regência certa. Nome de
   produto e termo técnico ficam em inglês; o resto da frase, não.
-- Máximo 1400 caracteres por versão. Antes de responder, confira o tamanho; se passar, corte o parágrafo que carrega menos informação, não as frases com número.
-- Termine com uma pergunta específica sobre uma decisão real que o leitor da área enfrenta, ou com o último fato concreto. Nunca "o que vocês acham?".
-- O corpo do post não leva hashtag. As hashtags saem em bloco separado.
+- Respeite os limites de tamanho de cada campo dados no prompt. Se passar, corte a frase que carrega menos informação, não as frases com número.
+- A legenda termina com uma pergunta específica sobre uma decisão real que o leitor da área enfrenta, ou com o último fato concreto. Nunca "o que vocês acham?".
+- Nenhum campo de texto leva hashtag. As hashtags saem no campo próprio.
 """
 
-_EN_USER_TMPL = """\
-Escreva o post do LinkedIn EM INGLÊS sobre as principais notícias de IA e tecnologia \
-de ontem ({date}). As notícias são:
+_USER_TMPL = """\
+Escreva o post do LinkedIn sobre as principais notícias de IA e tecnologia de ontem ({date}).
+O post tem duas partes: um carrossel de slides EM INGLÊS e uma legenda curta em inglês e em
+português. As notícias são:
 
 {stories}
 
 Contexto das últimas 2 semanas (NÃO repita esses tópicos principais):
 {recent_context}
 
-ÂNGULO OBRIGATÓRIO HOJE: USE O ÂNGULO #{style_num} conforme descrito no sistema.
-A primeira frase tem que ser reconhecível como o ângulo #{style_num}.
+ESCOLHA DA NOTÍCIA
+A notícia nº 1 da lista é a mais relevante do dia pelo ranking (cobertura em vários veículos,
+dinheiro envolvido, processo, regulação, lançamento grande ou polêmica em curso). O post é
+sobre ela. Só desça na lista se a nº 1 estiver marcada como SÓ TÍTULO: aí use a primeira que
+tenha material. A lista pode trazer o MESMO acontecimento em duas entradas, de veículos
+diferentes: trate as duas como uma notícia só.
 
-Escreva em inglês nativo, não em inglês traduzido do português.
+CARROSSEL (inglês nativo, não inglês traduzido)
+Quem passa os slides lê pouco texto por tela, em letra grande. Cada slide carrega UM fato.
+- headline: a notícia principal em até 9 palavras, com o sujeito e o fato. Sem ponto final.
+- dek: uma frase de até 18 palavras com o segundo fato mais importante. Não repete a headline.
+- slides: de 2 a 4 slides sobre a notícia principal, cada um de um tipo:
+  · "stat": um número em destaque. value é o número como aparece no material, compacto
+    ("$84.6B", "71%", "825M"), com no máximo 8 caracteres; label diz do que ele é medida, em
+    até 8 palavras; body explica em até 30 palavras.
+  · "bars": comparação entre 2 a 4 números DA MESMA UNIDADE que estejam no material (antes e
+    depois, empresa A e B, faixa mínima e máxima). Em cada barra: label (até 5 palavras),
+    value (o número puro, na mesma unidade em todas as barras), display (como se escreve,
+    "$965B") e highlight (true só na barra que é a notícia). title em até 6 palavras; body é
+    uma frase de até 20 palavras com o que a comparação mostra. Só use "bars" se os números
+    existirem no material; nunca estime um valor para completar o gráfico.
+  · "points": de 2 a 3 frases de até 18 palavras cada, cada uma com um fato. title em até 6
+    palavras.
+  Em todo slide: kicker (rótulo de 1 a 3 palavras, ex. "The numbers") e source (o veículo de
+  onde saiu o fato, pelo nome). Preencha só os campos do tipo escolhido; os outros ficam
+  vazios ("" ou []).
+- roundup: de 0 a 3 outras notícias do dia, uma frase de até 20 palavras cada, com o veículo
+  em source. Notícia SÓ TÍTULO entra aqui dizendo só o que o título afirma.
+- Não repita o mesmo número em dois slides, salvo o da headline.
 
-A notícia nº 1 da lista é a mais relevante do dia pelo ranking (cobertura em vários \
-veículos, dinheiro envolvido, processo, regulação, lançamento grande ou polêmica em curso). \
-O post ABRE por ela. Só desça na lista se a nº 1 estiver marcada como SÓ TÍTULO: aí abra \
-pela primeira que tenha material e cite a nº 1 logo na primeira linha de menções.
+LEGENDA
+- hook_en / hook_pt: a primeira linha do post, no máximo {max_hook} caracteres. É tudo o que
+  aparece antes do "ver mais". Um fato com número ou nome próprio, escrito como frase
+  completa. Sem pergunta retórica, sem dois-pontos de suspense, sem "aqui está o porquê".
+- body_en / body_pt: de 2 a 3 parágrafos curtos, no máximo {max_body} caracteres por idioma.
+  Não repete o hook. O corpo dá a leitura que os slides não dão: o que o fato muda, o que
+  ainda não se sabe, ou como ele se liga a outra notícia do material. A última frase é uma
+  pergunta específica sobre uma decisão real de quem trabalha na área, ou o último fato.
+- A versão em português traz os mesmos fatos e os mesmos números da versão em inglês, na
+  mesma ordem de parágrafos, escrita como quem pensa em português (não é tradução literal).
+  Nome de produto, empresa, benchmark e termo técnico consagrado ficam em inglês; o resto da
+  frase, não: "desempenho" e não "performance", "queda" e não "outage". Artigo antes de nome
+  de empresa ("a Nvidia", "a Anthropic"). Valor em dólar: "US$ 13 bilhões". Decimal com
+  vírgula: "62,7%".
+- hashtags: de 3 a 5, sem o #, sem espaço, específicas ao tema do dia (ex. "OpenSourceLLM").
 
-Nunca dê o parágrafo principal para a notícia mais curiosa, mais recente ou mais fácil de \
-comentar. Aquisição bilionária, processo judicial, decisão de regulador, modelo novo de \
-peso e briga pública ganham de página de FAQ, de mudança de menu e de post de blog.
+IMAGEM
+- image_query: de 2 a 4 palavras EM INGLÊS com uma cena concreta e fotografável ligada ao
+  tema, para buscar a foto da capa em banco de imagens. Sem nome de marca. Ex.: "data center
+  servers", "trading floor screens", "courtroom interior".
+- alt_text: uma frase em inglês descrevendo o carrossel para leitor de tela.
 
-Escolha 1 ou 2 notícias ENTRE AS QUE TÊM MATERIAL para desenvolver com profundidade — número, nome e o que mudou — e cite as demais em uma linha só, se couberem. \
-Um post que explica bem duas notícias vale mais que um que lista seis.
-
-A lista pode trazer o MESMO acontecimento em duas entradas, com títulos diferentes de \
-veículos diferentes. Trate as duas como uma notícia só: cite o fato uma vez, com o número \
-mais preciso entre os dois títulos. Nunca escreva uma menção que descreve a própria lista \
-("também chegou ao Hacker News junto com a reportagem sobre X").
-
-O post tem no máximo 1400 caracteres. Conte antes de responder: o que passar disso é \
-cortado por parágrafo inteiro na publicação, e o parágrafo que cai é o último — o das \
-menções.
-
-Responda APENAS com os blocos abaixo. Nenhuma linha antes do primeiro separador, \
-nenhum comentário sobre o material, nenhuma pergunta.
-
-Formate a resposta assim — use EXATAMENTE estes separadores:
----EN---
-[post em inglês, sem hashtags]
----TAGS---
-[4 a 5 hashtags em inglês, separadas por espaço, específicas ao tema do dia. Ex: #AI #OpenSourceLLM #SoftwareEngineering #Benchmarks]
----TEASER---
-[chamada curtíssima em português, MÁXIMO 6 palavras, com o assunto concreto do post. Vai sobreposta numa foto. Sem ponto final, sem aspas, sem clickbait. Ex: Modelo aberto alcança GPT-4 em código]
----SUBTITLE---
-[uma linha em português, MÁXIMO 12 palavras, com o FATO concreto da notícia principal — quem fez o quê. Complementa o teaser sem repeti-lo. Sem ponto final, sem aspas. Ex: Meta liberou os pesos do modelo sob licença permissiva]
----IMGQUERY---
-[2 a 4 palavras EM INGLÊS descrevendo uma CENA VISUAL concreta e fotografável ligada ao tema principal, para buscar uma foto de banco de imagens. NÃO use nomes de marcas/empresas nem "logo". Prefira conceitos visuais reais. Ex: humanoid robot closeup / data center servers / glowing circuit board / developer coding laptop]
----END---
+Todo número que você escrever, em qualquer campo, é copiado do material como está lá. Um
+programa confere cada número contra o material depois da sua resposta e descarta o slide que
+trouxer um número que não está lá, inclusive número arredondado.
 """
 
-_PT_USER_TMPL = """\
-Abaixo está o post em inglês já fechado. Escreva a versão em português brasileiro DO MESMO \
-post, que sai publicada logo abaixo dele.
+_SLIDE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "type": {"type": "string", "enum": ["stat", "bars", "points"]},
+        "kicker": {"type": "string"},
+        "title": {"type": "string"},
+        "value": {"type": "string"},
+        "label": {"type": "string"},
+        "body": {"type": "string"},
+        "bars": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "label": {"type": "string"},
+                    "value": {"type": "number"},
+                    "display": {"type": "string"},
+                    "highlight": {"type": "boolean"},
+                },
+                "required": ["label", "value", "display", "highlight"],
+                "additionalProperties": False,
+            },
+        },
+        "points": {"type": "array", "items": {"type": "string"}},
+        "source": {"type": "string"},
+    },
+    "required": ["type", "kicker", "title", "value", "label", "body", "bars", "points", "source"],
+    "additionalProperties": False,
+}
 
-POST EM INGLÊS:
-{en_post}
-
-MATERIAL DE ORIGEM (para conferir número, nome próprio e grafia — não acrescente nada que \
-não esteja aqui nem no post em inglês):
-
-{stories}
-
-Regras desta versão:
-
-1. MESMA QUANTIDADE DE PARÁGRAFOS, na mesma ordem. O inglês tem {paragraphs} parágrafos; \
-o português tem {paragraphs}. Cada parágrafo do inglês vira um parágrafo em português.
-2. Mesmos fatos, nenhum a mais e nenhum a menos. Se o inglês cita quatro notícias, o \
-português cita as quatro, com os mesmos números.
-3. Não é tradução literal. Escreva como quem pensa em português: ordem da frase, regência, \
-conectivo e pontuação naturais do idioma. Onde o inglês usa uma construção sem equivalente, \
-reescreva a frase mantendo o fato.
-4. Nome de produto, empresa, benchmark e termo técnico consagrado ficam em inglês \
-("open-source", "benchmark", "prompt"). O resto da frase, não. Nada de "performance" onde \
-cabe "desempenho", nem "outage" onde cabe "queda".
-5. Concordância e artigo corretos: "a Nvidia", "a Anthropic", "o Gemini, do Google".
-6. Valor em dólar escreve-se "US$ 13 bilhões", não "$13 bilhões". Decimal com vírgula: \
-"62,7%".
-7. Máximo 1400 caracteres. Sem hashtag.
-
-Responda APENAS com o bloco abaixo, nenhuma linha antes dele:
----PT---
-[post em português]
----END---
-"""
-
-
-def _paragraph_count(text: str) -> int:
-    return len([p for p in (text or "").split("\n\n") if p.strip()])
+_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "headline": {"type": "string"},
+        "dek": {"type": "string"},
+        "slides": {"type": "array", "items": _SLIDE_SCHEMA},
+        "roundup": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {"text": {"type": "string"}, "source": {"type": "string"}},
+                "required": ["text", "source"],
+                "additionalProperties": False,
+            },
+        },
+        "hook_en": {"type": "string"},
+        "body_en": {"type": "string"},
+        "hook_pt": {"type": "string"},
+        "body_pt": {"type": "string"},
+        "hashtags": {"type": "array", "items": {"type": "string"}},
+        "image_query": {"type": "string"},
+        "alt_text": {"type": "string"},
+    },
+    "required": [
+        "headline", "dek", "slides", "roundup", "hook_en", "body_en",
+        "hook_pt", "body_pt", "hashtags", "image_query", "alt_text",
+    ],
+    "additionalProperties": False,
+}
 
 
-def _call_claude(
-    system: str, user: str, max_tokens: int, prefill: str = "---EN---"
-) -> tuple[str, str]:
-    """Returns (text, stop_reason). The caller has to look at stop_reason:
-    a response cut at max_tokens loses every block after the cut.
-
-    The assistant turn is prefilled with the first separator. On 2026-09-01 the
-    model opened with prose asking for fuller source material instead of the
-    post, and that prose went out as the day's LinkedIn post. Starting the turn
-    inside the format leaves no room for a preamble.
-    """
+def _call_claude(system: str, user: str) -> dict:
+    """One structured answer. The schema replaces the old ---EN--- separators
+    and the assistant prefill, which current models reject with a 400."""
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    msg = client.messages.create(
+    with client.messages.stream(
         model=MODEL,
-        max_tokens=max_tokens,
+        max_tokens=MAX_TOKENS,
+        thinking={"type": "adaptive"},
         system=system,
-        messages=[
-            {"role": "user", "content": user},
-            {"role": "assistant", "content": prefill},
-        ],
+        messages=[{"role": "user", "content": user}],
+        output_config={"format": {"type": "json_schema", "schema": _SCHEMA}},
+    ) as stream:
+        msg = stream.get_final_message()
+
+    usage = msg.usage
+    print(
+        f"[content] {MODEL}: stop_reason={msg.stop_reason!r}, "
+        f"{usage.input_tokens} tokens in, {usage.output_tokens} out"
     )
-    return f"{prefill}\n{msg.content[0].text.strip()}", (msg.stop_reason or "")
+    if msg.stop_reason != "end_turn":
+        raise RuntimeError(
+            f"Claude stopped with {msg.stop_reason!r} — refusing to post a "
+            "half-generated digest. The next cron attempt retries today."
+        )
+    text = next((b.text for b in msg.content if b.type == "text"), "")
+    return json.loads(text)
 
 
-# Order matters: the parser slices the response between whichever tags are
-# actually present, so a skipped tag widens the block before it instead of
-# discarding it.
-_BLOCK_TAGS = (
-    "---EN---",
-    "---PT---",
-    "---TAGS---",
-    "---TEASER---",
-    "---SUBTITLE---",
-    "---IMGQUERY---",
-    "---END---",
-)
+# ── Number check ─────────────────────────────────────────────────────────────
+_NUM = re.compile(r"\d+(?:[.,]\d+)*")
 
 
-def _parse_blocks(text: str) -> dict[str, str]:
-    """Split the model answer into named blocks.
+def _numbers(text: str) -> set[str]:
+    """Numbers in a text, normalised so "62,7" and "62.7" or "1,404" and
+    "1.404" compare equal. Single digits are skipped: "2 companies" is counting,
+    not a figure anyone could look up."""
+    found = set()
+    for raw in _NUM.findall(text or ""):
+        norm = raw.replace(",", ".").strip(".")
+        if len(norm.replace(".", "")) >= 2:
+            found.add(norm)
+    return found
 
-    Never falls back to positional guessing: the old `raw.split("---")[1]`
-    fallback silently put the English body into the PT slot when the answer was
-    truncated, and the post went out with the same text twice.
+
+def _material_numbers(stories: list[dict]) -> set[str]:
+    parts = []
+    for s in stories:
+        parts += [s.get("title", ""), s.get("summary", ""), s.get("article", "")]
+    return _numbers(" ".join(parts))
+
+
+def _slide_text(slide: dict) -> str:
+    bars = " ".join(f"{b.get('label', '')} {b.get('display', '')}" for b in slide.get("bars") or [])
+    return " ".join(
+        [slide.get("title", ""), slide.get("value", ""), slide.get("label", ""),
+         slide.get("body", ""), bars, " ".join(slide.get("points") or [])]
+    )
+
+
+def _valid_slide(slide: dict) -> bool:
+    kind = slide.get("type")
+    if kind == "stat":
+        return bool(slide.get("value") and slide.get("label"))
+    if kind == "bars":
+        bars = slide.get("bars") or []
+        return 2 <= len(bars) <= 4 and all(b.get("value", 0) > 0 for b in bars) and bool(slide.get("title"))
+    if kind == "points":
+        return 2 <= len(slide.get("points") or []) <= 3 and bool(slide.get("title"))
+    return False
+
+
+def _check_deck(raw: dict, stories: list[dict]) -> dict:
+    """Drop every slide carrying a number the source material does not have.
+
+    The model is told to copy figures as written. This is the part that does
+    not take its word for it: a slide puts one number in 250px type, and a
+    wrong one there is the whole post.
     """
-    found = sorted(
-        (idx, tag) for tag in _BLOCK_TAGS if (idx := text.find(tag)) != -1
-    )
-    blocks: dict[str, str] = {}
-    for n, (idx, tag) in enumerate(found):
-        start = idx + len(tag)
-        end = found[n + 1][0] if n + 1 < len(found) else len(text)
-        blocks[tag.strip("-")] = text[start:end].strip()
-    return blocks
+    known = _material_numbers(stories)
+    slides = []
+    for slide in raw.get("slides") or []:
+        if not _valid_slide(slide):
+            print(f"[content] Dropped a malformed {slide.get('type')!r} slide")
+            continue
+        unknown = _numbers(_slide_text(slide)) - known
+        if unknown:
+            print(f"[content] Dropped slide {slide.get('kicker')!r}: numbers not in the material: {sorted(unknown)}")
+            continue
+        slides.append(slide)
+
+    roundup = []
+    for item in (raw.get("roundup") or [])[:3]:
+        unknown = _numbers(item.get("text", "")) - known
+        if unknown or not item.get("text"):
+            print(f"[content] Dropped a roundup line: numbers not in the material: {sorted(unknown)}")
+            continue
+        roundup.append(item)
+
+    for name in ("headline", "dek", "hook_en", "body_en", "hook_pt", "body_pt"):
+        unknown = _numbers(raw.get(name, "")) - known
+        if unknown:
+            # Prose cannot be repaired by deleting a field, so this one is a
+            # loud line in the run log instead of a silent pass.
+            print(f"[WARN] {name} carries numbers not found in the material: {sorted(unknown)}")
+
+    return {
+        "headline": raw.get("headline", "").strip().rstrip("."),
+        "dek": raw.get("dek", "").strip(),
+        "slides": slides[:4],
+        "roundup": roundup,
+    }
+
+
+def _trim_hook(hook: str) -> str:
+    hook = " ".join((hook or "").split())
+    if len(hook) <= MAX_HOOK_CHARS:
+        return hook
+    return hook[:MAX_HOOK_CHARS].rsplit(" ", 1)[0].rstrip(",;:—-") + "…"
 
 
 def _trim_to_paragraph(text: str, limit: int) -> str:
@@ -316,7 +421,7 @@ def _format_stories_for_prompt(stories: list[dict]) -> str:
         summary = (s.get("summary") or "").strip()[:200]
         article = (s.get("article") or "").strip()
         block = [
-            f"{i}. [{s['source']}] {s['title']}",
+            f"{i}. [{s.get('outlet') or s['source']}] {s['title']}",
             f"   URL: {s.get('url', 'N/A')}",
             f"   Resumo: {summary or 'sem resumo'}",
         ]
@@ -350,71 +455,9 @@ def _format_recent_context(history: dict) -> str:
     return "- " + "\n- ".join(topics[:20])
 
 
-def _opening_style_for_date(d: date_type) -> int:
-    """Returns 1-8, cycles every 8 days based on day-of-year."""
-    return (d.timetuple().tm_yday % 8) + 1
-
-
-def _call_with_retry(system: str, user: str, max_tokens: int, prefill: str = "---EN---") -> str:
-    """One call, retried once at a larger budget if the answer was cut."""
-    raw, stop_reason = _call_claude(system, user, max_tokens, prefill)
-    if stop_reason == "max_tokens":
-        print("[content] Answer hit max_tokens — retrying with a larger budget")
-        raw, stop_reason = _call_claude(system, user, MAX_TOKENS_RETRY, prefill)
-    if stop_reason == "max_tokens":
-        raise RuntimeError(
-            "Claude answer truncated twice at max_tokens — refusing to post a "
-            "half-generated digest. The next cron attempt retries today."
-        )
-    print(f"[content] Answer: {len(raw)} chars, stop_reason={stop_reason!r}")
-    return raw
-
-
-def _generate_pt(en_post: str, stories_text: str, dry_run: bool = False) -> str:
-    """Write the Portuguese version from the finished English post.
-
-    Returns "" rather than raising: an English-only post is worth publishing,
-    a missing post is not.
-    """
-    if dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
-        return "[DRY RUN - post PT de exemplo]"
-
-    wanted = _paragraph_count(en_post)
-    prompt = _PT_USER_TMPL.format(
-        en_post=en_post, stories=stories_text, paragraphs=wanted
-    )
-
-    print(f"[content] Generating the Portuguese version ({wanted} paragraphs)...")
-    try:
-        raw = _call_with_retry(_LINKEDIN_SYSTEM, prompt, MAX_TOKENS_PT, prefill="---PT---")
-        pt = _parse_blocks(raw).get("PT", "")
-    except Exception as e:
-        print(f"[content] Portuguese call failed: {e}")
-        return ""
-
-    if pt and _paragraph_count(pt) < wanted:
-        print(
-            f"[content] PT came back with {_paragraph_count(pt)} paragraphs against "
-            f"{wanted} in English — asking again"
-        )
-        retry_prompt = prompt + (
-            f"\n\nATENÇÃO: a resposta anterior veio com menos parágrafos que o inglês. "
-            f"Conte os parágrafos antes de responder: são {wanted}, separados por linha "
-            f"em branco. Nenhuma notícia citada no inglês pode ficar de fora."
-        )
-        try:
-            raw = _call_with_retry(
-                _LINKEDIN_SYSTEM, retry_prompt, MAX_TOKENS_PT, prefill="---PT---"
-            )
-            retried = _parse_blocks(raw).get("PT", "")
-            if retried and _paragraph_count(retried) >= _paragraph_count(pt):
-                pt = retried
-        except Exception as e:
-            print(f"[content] Portuguese retry failed: {e}")
-
-    if len(pt) > MAX_VERSION_CHARS:
-        print(f"[content] PT ran {len(pt)} chars — trimming to whole sentences")
-    return _trim_to_paragraph(pt, MAX_VERSION_CHARS)
+def _join_caption(hook: str, body: str) -> str:
+    body = _trim_to_paragraph(body, MAX_BODY_CHARS)
+    return f"{_trim_hook(hook)}\n\n{body}".strip() if body else _trim_hook(hook)
 
 
 def generate_content(
@@ -427,115 +470,76 @@ def generate_content(
         raise ValueError("No stories to generate content from")
 
     main_story = stories[0]
-    stories_text = _format_stories_for_prompt(stories)
-    recent_ctx = _format_recent_context(history)
-
-    post_date = date_type.fromisoformat(date_str)
-    style_num = _opening_style_for_date(post_date)
-
-    print(f"[content] Generating the English post — opening angle #{style_num}...")
-    en_prompt = _EN_USER_TMPL.format(
+    prompt = _USER_TMPL.format(
         date=date_str,
-        stories=stories_text,
-        recent_context=recent_ctx,
-        style_num=style_num,
+        stories=_format_stories_for_prompt(stories),
+        recent_context=_format_recent_context(history),
+        max_hook=MAX_HOOK_CHARS,
+        max_body=MAX_BODY_CHARS,
     )
 
-    # A dry run still generates real text: the copy is the thing worth previewing,
-    # and Haiku costs a fraction of a cent. Only posting and history are skipped.
+    print("[content] Generating caption and slides...")
+    # A dry run still generates real text: the copy is the thing worth
+    # previewing. Only posting and history are skipped.
     if dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
         print("[content] No ANTHROPIC_API_KEY — using placeholder copy")
-        en_raw = (
-            "---EN---\n[DRY RUN - EN post placeholder]\n"
-            "---TAGS---\n#AI #Tech\n"
-            "---TEASER---\nModelo aberto alcanca GPT-4 em codigo\n"
-            "---SUBTITLE---\nMeta liberou os pesos sob licenca permissiva\n"
-            "---IMGQUERY---\nhumanoid robot closeup\n---END---"
-        )
+        raw = {
+            "headline": main_story.get("title", "")[:70], "dek": "Placeholder deck for a dry run without an API key.",
+            "slides": [{"type": "points", "kicker": "Dry run", "title": "Placeholder slide", "value": "",
+                        "label": "", "body": "", "bars": [], "source": main_story.get("source", ""),
+                        "points": ["First placeholder point.", "Second placeholder point."]}],
+            "roundup": [], "hook_en": "[DRY RUN] EN hook", "body_en": "EN body placeholder.",
+            "hook_pt": "[DRY RUN] gancho PT", "body_pt": "Corpo PT de exemplo.",
+            "hashtags": ["AI", "Tech"], "image_query": "data center servers", "alt_text": "Placeholder",
+        }
     else:
-        en_raw = _call_with_retry(_LINKEDIN_SYSTEM, en_prompt, MAX_TOKENS_EN)
+        raw = _call_claude(_LINKEDIN_SYSTEM, prompt)
 
-    blocks = _parse_blocks(en_raw)
-    linkedin_en = blocks.get("EN", "")
-    hashtags = blocks.get("TAGS", "")
-    image_teaser = blocks.get("TEASER", "")
-    image_subtitle = blocks.get("SUBTITLE", "")
-    image_query = blocks.get("IMGQUERY", "")
+    if not raw.get("hook_en") or not raw.get("body_en"):
+        raise ValueError("Claude answer carried no English caption")
 
-    missing = [k for k in ("EN", "TAGS", "TEASER", "SUBTITLE", "IMGQUERY") if not blocks.get(k)]
-    if missing:
-        print(f"[content] Blocks missing from the English answer: {', '.join(missing)}")
-
-    if not linkedin_en:
-        print("[content] Raw answer that could not be parsed:")
-        print("-" * 60)
-        print(en_raw[:2000])
-        print("-" * 60)
-        raise ValueError("Claude answer carried no EN block")
-
-    if len(linkedin_en) > MAX_VERSION_CHARS:
-        print(f"[content] EN ran {len(linkedin_en)} chars — trimming to whole sentences")
-    linkedin_en = _trim_to_paragraph(linkedin_en, MAX_VERSION_CHARS)
-
-    # The Portuguese version is written from the finished English post rather
-    # than alongside it. Asking for both in one answer produced a PT version one
-    # paragraph shorter than the EN one on two runs out of five, and the missing
-    # paragraph was the one carrying the other stories.
-    linkedin_pt = _generate_pt(linkedin_en, stories_text, dry_run=dry_run)
+    deck = _check_deck(raw, stories)
+    linkedin_en = _join_caption(raw["hook_en"], raw["body_en"])
+    linkedin_pt = _join_caption(raw.get("hook_pt", ""), raw.get("body_pt", ""))
 
     # One language repeated twice reads as a bug to anyone scrolling the feed.
-    # Drop the duplicate and publish the single version instead.
     if _same_text(linkedin_en, linkedin_pt):
-        print("[content] EN and PT blocks are identical — publishing one version only")
+        print("[content] EN and PT captions are identical — publishing one version only")
         linkedin_pt = ""
 
-    # Fallbacks so the image step never breaks. The subtitle exists to add a
-    # fact the teaser does not carry, so an empty or echoing subtitle is dropped
-    # rather than filled with the headline a second time.
-    if not image_teaser:
-        image_teaser = main_story.get("title", "")[:60]
-    if _same_text(image_subtitle, image_teaser) or not image_subtitle:
-        image_subtitle = ""
-    if not image_query:
-        image_query = "artificial intelligence technology"
-
-    sources = list({s["source"] for s in stories})
-    main_url = main_story.get("url", "")
+    tags = []
+    for tag in raw.get("hashtags") or []:
+        tag = re.sub(r"[^0-9A-Za-zÀ-ÿ_]", "", tag)
+        if tag and tag.lower() not in {t.lower() for t in tags}:
+            tags.append(tag)
 
     result = GeneratedContent(
         linkedin_pt=linkedin_pt,
         linkedin_en=linkedin_en,
-        main_url=main_url,
-        sources=sources,
-        image_teaser=image_teaser,
-        image_subtitle=image_subtitle,
-        image_query=image_query,
-        hashtags=hashtags,
+        main_url=main_story.get("url", ""),
+        sources=list({s.get("outlet") or s["source"] for s in stories}),
+        # The single-image fallback card still takes a teaser and a subtitle.
+        image_teaser=deck["headline"] or main_story.get("title", "")[:60],
+        image_subtitle=deck["dek"],
+        image_query=(raw.get("image_query") or "").strip() or "artificial intelligence technology",
+        hashtags=" ".join(f"#{t}" for t in tags[:5]),
+        deck=deck,
+        alt_text=(raw.get("alt_text") or "").strip(),
     )
 
-    if dry_run:
-        print("\n--- LINKEDIN EN ---")
-        print(result.linkedin_en)
-        print("\n--- LINKEDIN PT ---")
-        print(result.linkedin_pt)
-        print(f"\n--- TAGS ---\n{result.hashtags}")
-        print(f"--- TEASER ---\n{result.image_teaser}")
-        print(f"--- SUBTITLE ---\n{result.image_subtitle}")
-        print(
-            f"--- CHARS --- EN {len(result.linkedin_en)} | PT {len(result.linkedin_pt)}"
-            f"  --- PARAGRAPHS --- EN {_paragraph_count(result.linkedin_en)} | "
-            f"PT {_paragraph_count(result.linkedin_pt)}"
-        )
-
+    print(
+        f"[content] Caption EN {len(result.linkedin_en)} chars, PT {len(result.linkedin_pt)} chars; "
+        f"{len(deck['slides'])} content slides, {len(deck['roundup'])} roundup lines"
+    )
     return result
 
 
 if __name__ == "__main__":
     import sys
-    from news_fetcher import fetch_news, load_history
     from datetime import date
+    from news_fetcher import fetch_news, load_history
 
     stories = fetch_news(dry_run=True)
-    history = load_history()
-    content = generate_content(stories, history, str(date.today()), dry_run="--dry-run" in sys.argv)
-    print("\n[OK] Content generated successfully")
+    content = generate_content(stories, load_history(), str(date.today()), dry_run="--dry-run" in sys.argv)
+    print(json.dumps(content.deck, indent=2, ensure_ascii=False))
+    print(content.linkedin_en, "\n\n", content.linkedin_pt, "\n\n", content.hashtags)
