@@ -49,9 +49,10 @@ h1 { font: 800 96px/.98 "Inter Tight", "Inter", sans-serif; letter-spacing: -.02
 h1.long { font-size: 80px; }
 h1.xlong { font-size: 66px; }
 .fact { font-size: 40px; line-height: 1.28; color: #E4E7EC; text-wrap: pretty; padding-left: 26px; border-left: 6px solid var(--accent); }
-.meta { margin-top: 40px; display: flex; justify-content: space-between; gap: 32px; font-size: 21px; color: #A9B0BC; }
+.meta { margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; font-size: 21px; color: #A9B0BC; }
+.meta > span:first-child { white-space: nowrap; }
 .meta b { color: #E4E7EC; font-weight: 600; }
-.meta .credit { text-align: right; max-width: 700px; font-size: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meta .credit { text-align: right; max-width: 560px; font-size: 18px; line-height: 1.3; }
 """
 
 
