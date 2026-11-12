@@ -1,32 +1,38 @@
-# AI Daily Digest 🤖
+# AI Daily Digest
 
 [![AI Daily Digest](https://github.com/Danquiell/ai-daily-digest/actions/workflows/daily_post.yml/badge.svg)](https://github.com/Danquiell/ai-daily-digest/actions/workflows/daily_post.yml)
 
-Postagem automática diária de novidades em IA e tecnologia no **LinkedIn** e **Instagram**,
-às 6h (BRT), com linguagem natural e bilíngue (PT-BR + EN).
-Roda 100% no GitHub Actions — sem servidor, sem máquina ligada.
-
-**Custo:** ~R$3-7/mês (apenas Claude Haiku API).
-
----
+Publica todo dia, às 6h (BRT), um post no **LinkedIn** com as notícias de IA do dia anterior:
+um carrossel de slides em inglês e uma legenda curta em inglês e em português.
+Roda no GitHub Actions, sem servidor.
 
 ## Como funciona
 
+1. O GitHub Actions dispara às 06:00 BRT.
+2. `main.py` confere o token do LinkedIn. Token vencido encerra a execução aqui, antes de qualquer chamada paga.
+3. `news_fetcher.py` busca as notícias das últimas 48 horas (RSS, Hacker News, Reddit), remove o que já saiu nos últimos 14 dias e ordena por relevância.
+4. `content_generator.py` pede ao Claude Opus 5.5, em uma resposta estruturada em JSON, a legenda nos dois idiomas e o conteúdo dos slides. Cada número dos slides é conferido contra o texto das notícias; o slide com número que não está na fonte é descartado.
+5. `carousel.py` monta os slides em HTML (1080x1350, proporção 4:5) e o Chromium os renderiza em um PDF e em um JPEG por slide.
+6. `linkedin_poster.py` publica o PDF como documento, que o LinkedIn exibe como carrossel. Se o LinkedIn recusar, tenta nesta ordem: várias imagens, imagem única, só texto.
+7. Os links das fontes vão no primeiro comentário, e `data/history.json` é atualizado.
+
+Para ver o que seria publicado sem publicar:
+
+```bash
+gh workflow run daily_post.yml -f dry_run=true
 ```
-06:00 BRT → GitHub Actions dispara
-   ↓
-Busca notícias do dia anterior (RSS + Hacker News + Reddit)
-   ↓
-Remove duplicatas (janela de 14 dias)
-   ↓
-Claude Haiku gera post bilíngue (PT-BR + EN)
-   ↓
-Pillow cria card 1080x1080 para Instagram
-   ↓
-Posta no LinkedIn + Instagram
-   ↓
-Atualiza histórico e faz commit [skip ci]
-```
+
+Os slides, o PDF e a legenda ficam no artefato `linkedin-post-<id>` da execução.
+
+## Renovar o token do LinkedIn
+
+O token vale 60 dias e o LinkedIn não fornece renovação automática para este tipo de app.
+O workflow abre uma issue 7 dias antes do vencimento. Para renovar:
+
+1. Gere um token em [linkedin.com/developers/tools/oauth/token-generator](https://www.linkedin.com/developers/tools/oauth/token-generator), com o app selecionado e os escopos `w_member_social`, `openid` e `profile`.
+2. Na raiz do repositório, rode `python scripts/linkedin_auth.py --paste` e cole o token.
+
+O script grava o segredo `LINKEDIN_ACCESS_TOKEN` e a variável `LINKEDIN_TOKEN_EXPIRES_AT` pelo GitHub CLI.
 
 ---
 
@@ -51,7 +57,7 @@ git push -u origin main
 
 ---
 
-### 2. Anthropic API (Claude Haiku)
+### 2. Anthropic API
 
 1. Acesse [console.anthropic.com](https://console.anthropic.com)
 2. Crie uma conta e adicione créditos (mínimo $5 — dura meses)
@@ -224,7 +230,8 @@ ai-daily-digest/
 ├── src/
 │   ├── main.py                 # Orquestrador
 │   ├── news_fetcher.py         # RSS + HN + Reddit
-│   ├── content_generator.py    # Claude Haiku
+│   ├── content_generator.py    # legenda e slides (Claude Opus 5.5)
+│   ├── carousel.py             # slides em HTML, renderizados pelo Chromium
 │   ├── image_generator.py      # Pillow card 1080x1080
 │   ├── linkedin_poster.py      # LinkedIn API v2
 │   ├── instagram_poster.py     # Instagram Graph API
