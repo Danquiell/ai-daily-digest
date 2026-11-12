@@ -18,9 +18,13 @@ MAX_TOKENS = 16000
 
 # Feed preview before "see more": about 140 characters on mobile.
 MAX_HOOK_CHARS = 140
-# Per language. Two of these plus hooks, labels and hashtags stay far below
-# LinkedIn's 3000-character cap.
+# Per language: the size the prompt asks for. Two of these plus hooks, labels
+# and hashtags stay far below LinkedIn's 3000-character cap.
 MAX_BODY_CHARS = 700
+# The size at which a body is actually cut. Portuguese runs longer than English
+# for the same facts, and cutting at 700 dropped the last paragraph from the PT
+# version only, so the two languages no longer said the same thing.
+TRIM_BODY_CHARS = 1000
 
 
 @dataclass
@@ -142,12 +146,17 @@ buscada na Wikimedia Commons pelo nome que você der, então o assunto tem que s
 existe e tem foto: a pessoa citada, a sede ou o prédio da empresa, o produto físico, o chip, o
 data center, o tribunal, a cidade.
 - A imagem 1 é a notícia principal, com a pessoa ou a coisa mais reconhecível dela.
+- Prefira ROSTO a prédio: uma pessoa conhecida para o feed mais do que uma fachada. Se a
+  notícia tem uma pessoa central, é ela. Se a notícia é sobre uma empresa, vale o CEO ou o
+  fundador dessa empresa, como os veículos fazem. Produto físico (chip, robô, aparelho) vem em
+  seguida. Sede ou prédio fica como último termo de busca, para quando não houver foto dos
+  outros. Se o post tiver mais de uma imagem, não use o mesmo tipo de cena em todas.
 - Só acrescente outra imagem quando houver OUTRO assunto real e diferente para mostrar: uma
   segunda pessoa ou empresa da notícia principal, ou outra notícia do dia que tenha material.
   Uma imagem boa vale mais que quatro; não crie imagem para completar número. Máximo 4.
 - Em cada imagem:
-  · subjects: de 1 a 3 termos de busca, do mais específico ao mais geral, cada um o nome de
-    algo real ("Jensen Huang", depois "Nvidia headquarters", depois "Nvidia"). Pessoa pelo nome
+  · subjects: de 2 a 3 termos de busca, na ordem de preferência, cada um o nome de algo real
+    ("Jensen Huang", depois "Nvidia GPU", depois "Nvidia headquarters"). Pessoa pelo nome
     completo. Nunca um conceito ("artificial intelligence", "stock market", "governance").
   · kicker: rótulo de 1 a 3 palavras (a empresa ou o tema).
   · headline: o fato em até 9 palavras, com sujeito e verbo. Sem ponto final.
@@ -155,8 +164,8 @@ data center, o tribunal, a cidade.
   · source: o veículo de onde saiu o fato, pelo nome.
 - Duas imagens não repetem o mesmo assunto nem o mesmo fato.
 - Uma acusação contra uma pessoa só entra atribuída ao veículo ("reportedly", "according to")
-  e a imagem de uma pessoa só acompanha o fato sobre ELA; não ponha a foto de quem foi citado
-  de passagem ou de quem é apenas acusado por terceiros.
+  e nunca ponha a foto de alguém que a notícia só cita de passagem ou que não é figura
+  pública.
 
 LEGENDA
 - hook_en / hook_pt: a primeira linha do post, no máximo {max_hook} caracteres. É tudo o que
@@ -430,7 +439,7 @@ def _format_recent_context(history: dict) -> str:
 
 
 def _join_caption(hook: str, body: str) -> str:
-    body = _trim_to_paragraph(body, MAX_BODY_CHARS)
+    body = _trim_to_paragraph(body, TRIM_BODY_CHARS)
     return f"{_trim_hook(hook)}\n\n{body}".strip() if body else _trim_hook(hook)
 
 
