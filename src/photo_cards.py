@@ -51,7 +51,7 @@ h1.xlong { font-size: 66px; }
 .fact { font-size: 40px; line-height: 1.28; color: #E4E7EC; text-wrap: pretty; padding-left: 26px; border-left: 6px solid var(--accent); }
 .meta { margin-top: 40px; display: flex; justify-content: space-between; gap: 32px; font-size: 21px; color: #A9B0BC; }
 .meta b { color: #E4E7EC; font-weight: 600; }
-.meta .credit { text-align: right; max-width: 600px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meta .credit { text-align: right; max-width: 700px; font-size: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 """
 
 

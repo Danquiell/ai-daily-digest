@@ -137,7 +137,8 @@ def find_photo(subjects: list[str], used: set[str] | None = None) -> dict | None
                 continue
             used.add(f["title"])
             author = f["author"] or "Wikimedia Commons"
-            credit = f"Photo: {author} / {f['license']}, Wikimedia Commons"
+            # The licences require saying the work was changed, not only who made it.
+            credit = f"Photo: {author} / {f['license']}, Wikimedia Commons (cropped, text added)"
             print(f"[photo] {subject!r} → {f['title']} ({f['license']})")
             return {"image": image, "credit": credit, "page": f["page"], "subject": subject}
         print(f"[photo] No freely licensed photo found for {subject!r}")

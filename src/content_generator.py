@@ -146,26 +146,38 @@ buscada na Wikimedia Commons pelo nome que você der, então o assunto tem que s
 existe e tem foto: a pessoa citada, a sede ou o prédio da empresa, o produto físico, o chip, o
 data center, o tribunal, a cidade.
 - A imagem 1 é a notícia principal, com a pessoa ou a coisa mais reconhecível dela.
-- Prefira ROSTO a prédio: uma pessoa conhecida para o feed mais do que uma fachada. Se a
-  notícia tem uma pessoa central, é ela. Se a notícia é sobre uma empresa, vale o CEO ou o
-  fundador dessa empresa, como os veículos fazem. Produto físico (chip, robô, aparelho) vem em
-  seguida. Sede ou prédio fica como último termo de busca, para quando não houver foto dos
-  outros. Se o post tiver mais de uma imagem, não use o mesmo tipo de cena em todas.
+- Rosto chama mais que fachada, mas só entra o rosto de quem É a notícia: a pessoa que o
+  material cita pelo nome como autora ou alvo direto do fato (o CEO que anunciou, o executivo
+  demitido, o pesquisador que publicou). Não ponha o CEO para representar a empresa: processo
+  contra a OpenAI não é foto do Sam Altman, lançamento do Google não é foto de um executivo
+  que o material não cita. Nesses casos use o produto físico (chip, robô, aparelho) ou a sede.
+  Se o post tiver mais de uma imagem, evite o mesmo tipo de cena em todas.
 - Só acrescente outra imagem quando houver OUTRO assunto real e diferente para mostrar: uma
   segunda pessoa ou empresa da notícia principal, ou outra notícia do dia que tenha material.
   Uma imagem boa vale mais que quatro; não crie imagem para completar número. Máximo 4.
 - Em cada imagem:
-  · subjects: de 2 a 3 termos de busca, na ordem de preferência, cada um o nome de algo real
-    ("Jensen Huang", depois "Nvidia GPU", depois "Nvidia headquarters"). Pessoa pelo nome
-    completo. Nunca um conceito ("artificial intelligence", "stock market", "governance").
+  · person: o nome completo da pessoa que é a notícia, como aparece no material, ou "" se a
+    imagem não é de uma pessoa. Um programa confere se esse nome está no material e ignora o
+    campo se não estiver.
+  · subjects: de 1 a 3 termos de busca que NÃO são pessoas, na ordem de preferência, cada um
+    o nome de algo real ("Nvidia GPU", depois "Nvidia headquarters"). São usados quando person
+    está vazio ou não tem foto. Nunca um conceito ("artificial intelligence", "stock market",
+    "governance").
   · kicker: rótulo de 1 a 3 palavras (a empresa ou o tema).
   · headline: o fato em até 9 palavras, com sujeito e verbo. Sem ponto final.
   · fact: uma frase de até 16 palavras com o número ou o detalhe que a headline não deu.
   · source: o veículo de onde saiu o fato, pelo nome.
 - Duas imagens não repetem o mesmo assunto nem o mesmo fato.
-- Uma acusação contra uma pessoa só entra atribuída ao veículo ("reportedly", "according to")
-  e nunca ponha a foto de alguém que a notícia só cita de passagem ou que não é figura
-  pública.
+- Uma acusação só entra atribuída ao veículo ("reportedly", "according to").
+
+VIDA PESSOAL E TERCEIROS (vale para imagens e legenda)
+O post cobre o fato corporativo, técnico, financeiro ou regulatório. Quando a notícia mistura
+isso com vida pessoal, escreva o lado institucional: o que o conselho decidiu, o que a ação
+fez, quem investiga, quanto dinheiro está envolvido. Não descreva relacionamento, caso
+extraconjugal, saúde ou família de ninguém. Não escreva o nome de pessoa que aparece na
+notícia só como acusada ou envolvida por terceiros e que não é o executivo, a empresa ou a
+autoridade no centro do fato; refira-se a ela pela função, se for indispensável ("uma
+executiva de uma empresa cliente").
 
 LEGENDA
 - hook_en / hook_pt: a primeira linha do post, no máximo {max_hook} caracteres. É tudo o que
@@ -196,13 +208,14 @@ trouxer um número que não está lá, inclusive número arredondado.
 _IMAGE_SCHEMA = {
     "type": "object",
     "properties": {
+        "person": {"type": "string"},
         "subjects": {"type": "array", "items": {"type": "string"}},
         "kicker": {"type": "string"},
         "headline": {"type": "string"},
         "fact": {"type": "string"},
         "source": {"type": "string"},
     },
-    "required": ["subjects", "kicker", "headline", "fact", "source"],
+    "required": ["person", "subjects", "kicker", "headline", "fact", "source"],
     "additionalProperties": False,
 }
 
@@ -316,9 +329,23 @@ def _check_images(raw: dict, stories: list[dict]) -> list[dict]:
     because the post needs it; it loses the offending line instead.
     """
     known = _material_numbers(stories)
+    material = " ".join(
+        f"{s.get('title', '')} {s.get('summary', '')} {s.get('article', '')}" for s in stories
+    ).lower()
     images = []
     for n, image in enumerate((raw.get("images") or [])[:4]):
         image = dict(image, headline=image.get("headline", "").strip().rstrip("."))
+        # A face goes on an image only when the story itself names that person.
+        # Otherwise the photo ties someone to a fact the source never tied
+        # them to, e.g. a CEO's face on a lawsuit against the company.
+        person = (image.pop("person", "") or "").strip()
+        subjects = [s for s in image.get("subjects") or [] if s.strip()]
+        if person:
+            if all(part in material for part in person.lower().split()):
+                subjects = [person] + subjects
+            else:
+                print(f"[content] Ignored person {person!r}: not named in the material")
+        image["subjects"] = subjects
         if not image["headline"] or not image.get("subjects"):
             print("[content] Dropped an image with no headline or no subject")
             continue
@@ -467,7 +494,7 @@ def generate_content(
     if dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
         print("[content] No ANTHROPIC_API_KEY — using placeholder copy")
         raw = {
-            "images": [{"subjects": ["Nvidia headquarters"], "kicker": "Dry run",
+            "images": [{"person": "", "subjects": ["Nvidia headquarters"], "kicker": "Dry run",
                         "headline": main_story.get("title", "")[:60], "fact": "",
                         "source": main_story.get("source", "")}],
             "hook_en": "[DRY RUN] EN hook", "body_en": "EN body placeholder.",
