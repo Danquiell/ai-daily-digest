@@ -35,6 +35,9 @@ on:
 
 jobs:
   post:
+    # Setting the repository variable POSTING_PAUSED to "true" stops the
+    # scheduled posts; manual runs (dry runs included) still work.
+    if: github.event_name == 'workflow_dispatch' || vars.POSTING_PAUSED != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     # The built-in GITHUB_TOKEN handles checkout + push back to this repo and
@@ -58,8 +61,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # Headless Chromium renders the carousel slides from HTML.
-      - name: Install Chromium for the carousel
+      # Headless Chromium renders the post images from HTML.
+      - name: Install Chromium for the images
         run: python -m playwright install --with-deps chromium
 
       # The LinkedIn token lasts 60 days and cannot renew itself. The date is
@@ -96,7 +99,7 @@ jobs:
           fi
           python src/main.py $FLAGS
 
-      # Slides, PDF, caption and deck data: what went out, or what a dry run
+      # Images, caption and first comment: what went out, or what a dry run
       # would have posted.
       - name: Upload post preview
         if: always()
@@ -105,8 +108,8 @@ jobs:
           name: linkedin-post-${{ github.run_id }}
           path: |
             output/*.jpg
-            output/*.pdf
             output/caption.txt
-            output/deck.json
+            output/first_comment.txt
+            output/images.json
           retention-days: 7
           if-no-files-found: ignore

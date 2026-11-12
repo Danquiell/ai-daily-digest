@@ -1,8 +1,8 @@
 """
 Writes the day's post with Claude: the bilingual caption (EN first, PT-BR below)
-and the content of the carousel slides, in one structured answer.
+and the copy and photo subject of each image, in one structured answer.
 
-The caption is short on purpose. The facts live on the slides; the caption has
+The caption is short on purpose. The lead fact lives on the image; the caption has
 to earn the tap on "see more", which LinkedIn puts after roughly the first 140
 characters on a phone.
 """
@@ -33,7 +33,7 @@ class GeneratedContent:
     image_subtitle: str = ""
     image_query: str = ""
     hashtags: str = ""
-    deck: dict = field(default_factory=dict)
+    images: list[dict] = field(default_factory=list)
     alt_text: str = ""
 
 
@@ -121,8 +121,8 @@ Forma:
 
 _USER_TMPL = """\
 Escreva o post do LinkedIn sobre as principais notícias de IA e tecnologia de ontem ({date}).
-O post tem duas partes: um carrossel de slides EM INGLÊS e uma legenda curta em inglês e em
-português. As notícias são:
+O post tem duas partes: de 1 a 4 imagens com texto EM INGLÊS e uma legenda curta em inglês e
+em português. As notícias são:
 
 {stories}
 
@@ -136,35 +136,34 @@ sobre ela. Só desça na lista se a nº 1 estiver marcada como SÓ TÍTULO: aí 
 tenha material. A lista pode trazer o MESMO acontecimento em duas entradas, de veículos
 diferentes: trate as duas como uma notícia só.
 
-CARROSSEL (inglês nativo, não inglês traduzido)
-Quem passa os slides lê pouco texto por tela, em letra grande. Cada slide carrega UM fato.
-- headline: a notícia principal em até 9 palavras, com o sujeito e o fato. Sem ponto final.
-- dek: uma frase de até 18 palavras com o segundo fato mais importante. Não repete a headline.
-- slides: de 2 a 4 slides sobre a notícia principal, cada um de um tipo:
-  · "stat": um número em destaque. value é o número como aparece no material, compacto
-    ("$84.6B", "71%", "825M"), com no máximo 8 caracteres; label diz do que ele é medida, em
-    até 8 palavras; body explica em até 30 palavras.
-  · "bars": comparação entre 2 a 4 números DA MESMA UNIDADE que estejam no material (antes e
-    depois, empresa A e B, faixa mínima e máxima). Em cada barra: label (até 5 palavras),
-    value (o número puro, na mesma unidade em todas as barras), display (como se escreve,
-    "$965B") e highlight (true só na barra que é a notícia). title em até 6 palavras; body é
-    uma frase de até 20 palavras com o que a comparação mostra. Só use "bars" se os números
-    existirem no material; nunca estime um valor para completar o gráfico.
-  · "points": de 2 a 3 frases de até 18 palavras cada, cada uma com um fato. title em até 6
-    palavras.
-  Em todo slide: kicker (rótulo de 1 a 3 palavras, ex. "The numbers") e source (o veículo de
-  onde saiu o fato, pelo nome). Preencha só os campos do tipo escolhido; os outros ficam
-  vazios ("" ou []).
-- roundup: de 0 a 3 outras notícias do dia, uma frase de até 20 palavras cada, com o veículo
-  em source. Notícia SÓ TÍTULO entra aqui dizendo só o que o título afirma.
-- Não repita o mesmo número em dois slides, salvo o da headline.
+IMAGENS (inglês nativo, não inglês traduzido)
+Cada imagem é uma FOTO REAL do assunto da notícia, com um título e um fato por cima. A foto é
+buscada na Wikimedia Commons pelo nome que você der, então o assunto tem que ser algo que
+existe e tem foto: a pessoa citada, a sede ou o prédio da empresa, o produto físico, o chip, o
+data center, o tribunal, a cidade.
+- A imagem 1 é a notícia principal, com a pessoa ou a coisa mais reconhecível dela.
+- Só acrescente outra imagem quando houver OUTRO assunto real e diferente para mostrar: uma
+  segunda pessoa ou empresa da notícia principal, ou outra notícia do dia que tenha material.
+  Uma imagem boa vale mais que quatro; não crie imagem para completar número. Máximo 4.
+- Em cada imagem:
+  · subjects: de 1 a 3 termos de busca, do mais específico ao mais geral, cada um o nome de
+    algo real ("Jensen Huang", depois "Nvidia headquarters", depois "Nvidia"). Pessoa pelo nome
+    completo. Nunca um conceito ("artificial intelligence", "stock market", "governance").
+  · kicker: rótulo de 1 a 3 palavras (a empresa ou o tema).
+  · headline: o fato em até 9 palavras, com sujeito e verbo. Sem ponto final.
+  · fact: uma frase de até 16 palavras com o número ou o detalhe que a headline não deu.
+  · source: o veículo de onde saiu o fato, pelo nome.
+- Duas imagens não repetem o mesmo assunto nem o mesmo fato.
+- Uma acusação contra uma pessoa só entra atribuída ao veículo ("reportedly", "according to")
+  e a imagem de uma pessoa só acompanha o fato sobre ELA; não ponha a foto de quem foi citado
+  de passagem ou de quem é apenas acusado por terceiros.
 
 LEGENDA
 - hook_en / hook_pt: a primeira linha do post, no máximo {max_hook} caracteres. É tudo o que
   aparece antes do "ver mais". Um fato com número ou nome próprio, escrito como frase
   completa. Sem pergunta retórica, sem dois-pontos de suspense, sem "aqui está o porquê".
 - body_en / body_pt: de 2 a 3 parágrafos curtos, no máximo {max_body} caracteres por idioma.
-  Não repete o hook. O corpo dá a leitura que os slides não dão: o que o fato muda, o que
+  Não repete o hook. O corpo dá a leitura que as imagens não dão: o que o fato muda, o que
   ainda não se sabe, ou como ele se liga a outra notícia do material. A última frase é uma
   pergunta específica sobre uma decisão real de quem trabalha na área, ou o último fato.
 - A versão em português traz os mesmos fatos e os mesmos números da versão em inglês, na
@@ -175,18 +174,30 @@ LEGENDA
   vírgula: "62,7%".
 - hashtags: de 3 a 5, sem o #, sem espaço, específicas ao tema do dia (ex. "OpenSourceLLM").
 
-IMAGEM
+IMAGEM RESERVA
 - image_query: de 2 a 4 palavras EM INGLÊS com uma cena concreta e fotografável ligada ao
-  tema, para buscar a foto da capa em banco de imagens. Sem nome de marca. Ex.: "data center
-  servers", "trading floor screens", "courtroom interior".
-- alt_text: uma frase em inglês descrevendo o carrossel para leitor de tela.
+  tema, usada só se nenhuma foto real da imagem 1 for encontrada. Sem nome de marca.
+- alt_text: uma frase em inglês descrevendo as imagens para leitor de tela.
 
 Todo número que você escrever, em qualquer campo, é copiado do material como está lá. Um
-programa confere cada número contra o material depois da sua resposta e descarta o slide que
+programa confere cada número contra o material depois da sua resposta e descarta a imagem que
 trouxer um número que não está lá, inclusive número arredondado.
 """
 
-_SLIDE_SCHEMA = {
+_IMAGE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "subjects": {"type": "array", "items": {"type": "string"}},
+        "kicker": {"type": "string"},
+        "headline": {"type": "string"},
+        "fact": {"type": "string"},
+        "source": {"type": "string"},
+    },
+    "required": ["subjects", "kicker", "headline", "fact", "source"],
+    "additionalProperties": False,
+}
+
+_SCHEMA = {
     "type": "object",
     "properties": {
         "type": {"type": "string", "enum": ["stat", "bars", "points"]},
@@ -219,18 +230,7 @@ _SLIDE_SCHEMA = {
 _SCHEMA = {
     "type": "object",
     "properties": {
-        "headline": {"type": "string"},
-        "dek": {"type": "string"},
-        "slides": {"type": "array", "items": _SLIDE_SCHEMA},
-        "roundup": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {"text": {"type": "string"}, "source": {"type": "string"}},
-                "required": ["text", "source"],
-                "additionalProperties": False,
-            },
-        },
+        "images": {"type": "array", "items": _IMAGE_SCHEMA},
         "hook_en": {"type": "string"},
         "body_en": {"type": "string"},
         "hook_pt": {"type": "string"},
@@ -240,7 +240,7 @@ _SCHEMA = {
         "alt_text": {"type": "string"},
     },
     "required": [
-        "headline", "dek", "slides", "roundup", "hook_en", "body_en",
+        "images", "hook_en", "body_en",
         "hook_pt", "body_pt", "hashtags", "image_query", "alt_text",
     ],
     "additionalProperties": False,
@@ -298,66 +298,40 @@ def _material_numbers(stories: list[dict]) -> set[str]:
     return _numbers(" ".join(parts))
 
 
-def _slide_text(slide: dict) -> str:
-    bars = " ".join(f"{b.get('label', '')} {b.get('display', '')}" for b in slide.get("bars") or [])
-    return " ".join(
-        [slide.get("title", ""), slide.get("value", ""), slide.get("label", ""),
-         slide.get("body", ""), bars, " ".join(slide.get("points") or [])]
-    )
-
-
-def _valid_slide(slide: dict) -> bool:
-    kind = slide.get("type")
-    if kind == "stat":
-        return bool(slide.get("value") and slide.get("label"))
-    if kind == "bars":
-        bars = slide.get("bars") or []
-        return 2 <= len(bars) <= 4 and all(b.get("value", 0) > 0 for b in bars) and bool(slide.get("title"))
-    if kind == "points":
-        return 2 <= len(slide.get("points") or []) <= 3 and bool(slide.get("title"))
-    return False
-
-
-def _check_deck(raw: dict, stories: list[dict]) -> dict:
-    """Drop every slide carrying a number the source material does not have.
+def _check_images(raw: dict, stories: list[dict]) -> list[dict]:
+    """Drop every image carrying a number the source material does not have.
 
     The model is told to copy figures as written. This is the part that does
-    not take its word for it: a slide puts one number in 250px type, and a
-    wrong one there is the whole post.
+    not take its word for it: the image puts one fact in large type, and a
+    wrong number there is the whole post. The lead image is never dropped,
+    because the post needs it; it loses the offending line instead.
     """
     known = _material_numbers(stories)
-    slides = []
-    for slide in raw.get("slides") or []:
-        if not _valid_slide(slide):
-            print(f"[content] Dropped a malformed {slide.get('type')!r} slide")
+    images = []
+    for n, image in enumerate((raw.get("images") or [])[:4]):
+        image = dict(image, headline=image.get("headline", "").strip().rstrip("."))
+        if not image["headline"] or not image.get("subjects"):
+            print("[content] Dropped an image with no headline or no subject")
             continue
-        unknown = _numbers(_slide_text(slide)) - known
-        if unknown:
-            print(f"[content] Dropped slide {slide.get('kicker')!r}: numbers not in the material: {sorted(unknown)}")
-            continue
-        slides.append(slide)
+        bad_head = _numbers(image["headline"]) - known
+        bad_fact = _numbers(image.get("fact", "")) - known
+        if bad_fact:
+            print(f"[content] Removed a fact with numbers not in the material: {sorted(bad_fact)}")
+            image["fact"] = ""
+        if bad_head:
+            print(f"[content] Headline with numbers not in the material: {sorted(bad_head)}")
+            if n > 0:
+                continue
+            image["headline"] = stories[0]["title"][:80]
+        images.append(image)
 
-    roundup = []
-    for item in (raw.get("roundup") or [])[:3]:
-        unknown = _numbers(item.get("text", "")) - known
-        if unknown or not item.get("text"):
-            print(f"[content] Dropped a roundup line: numbers not in the material: {sorted(unknown)}")
-            continue
-        roundup.append(item)
-
-    for name in ("headline", "dek", "hook_en", "body_en", "hook_pt", "body_pt"):
+    for name in ("hook_en", "body_en", "hook_pt", "body_pt"):
         unknown = _numbers(raw.get(name, "")) - known
         if unknown:
             # Prose cannot be repaired by deleting a field, so this one is a
             # loud line in the run log instead of a silent pass.
             print(f"[WARN] {name} carries numbers not found in the material: {sorted(unknown)}")
-
-    return {
-        "headline": raw.get("headline", "").strip().rstrip("."),
-        "dek": raw.get("dek", "").strip(),
-        "slides": slides[:4],
-        "roundup": roundup,
-    }
+    return images
 
 
 def _trim_hook(hook: str) -> str:
@@ -478,17 +452,16 @@ def generate_content(
         max_body=MAX_BODY_CHARS,
     )
 
-    print("[content] Generating caption and slides...")
+    print("[content] Generating caption and image copy...")
     # A dry run still generates real text: the copy is the thing worth
     # previewing. Only posting and history are skipped.
     if dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
         print("[content] No ANTHROPIC_API_KEY — using placeholder copy")
         raw = {
-            "headline": main_story.get("title", "")[:70], "dek": "Placeholder deck for a dry run without an API key.",
-            "slides": [{"type": "points", "kicker": "Dry run", "title": "Placeholder slide", "value": "",
-                        "label": "", "body": "", "bars": [], "source": main_story.get("source", ""),
-                        "points": ["First placeholder point.", "Second placeholder point."]}],
-            "roundup": [], "hook_en": "[DRY RUN] EN hook", "body_en": "EN body placeholder.",
+            "images": [{"subjects": ["Nvidia headquarters"], "kicker": "Dry run",
+                        "headline": main_story.get("title", "")[:60], "fact": "",
+                        "source": main_story.get("source", "")}],
+            "hook_en": "[DRY RUN] EN hook", "body_en": "EN body placeholder.",
             "hook_pt": "[DRY RUN] gancho PT", "body_pt": "Corpo PT de exemplo.",
             "hashtags": ["AI", "Tech"], "image_query": "data center servers", "alt_text": "Placeholder",
         }
@@ -498,7 +471,8 @@ def generate_content(
     if not raw.get("hook_en") or not raw.get("body_en"):
         raise ValueError("Claude answer carried no English caption")
 
-    deck = _check_deck(raw, stories)
+    images = _check_images(raw, stories)
+    lead = images[0] if images else {}
     linkedin_en = _join_caption(raw["hook_en"], raw["body_en"])
     linkedin_pt = _join_caption(raw.get("hook_pt", ""), raw.get("body_pt", ""))
 
@@ -519,17 +493,17 @@ def generate_content(
         main_url=main_story.get("url", ""),
         sources=list({s.get("outlet") or s["source"] for s in stories}),
         # The single-image fallback card still takes a teaser and a subtitle.
-        image_teaser=deck["headline"] or main_story.get("title", "")[:60],
-        image_subtitle=deck["dek"],
+        image_teaser=lead.get("headline") or main_story.get("title", "")[:60],
+        image_subtitle=lead.get("fact", ""),
         image_query=(raw.get("image_query") or "").strip() or "artificial intelligence technology",
         hashtags=" ".join(f"#{t}" for t in tags[:5]),
-        deck=deck,
+        images=images,
         alt_text=(raw.get("alt_text") or "").strip(),
     )
 
     print(
         f"[content] Caption EN {len(result.linkedin_en)} chars, PT {len(result.linkedin_pt)} chars; "
-        f"{len(deck['slides'])} content slides, {len(deck['roundup'])} roundup lines"
+        f"{len(images)} image(s) planned"
     )
     return result
 
@@ -541,5 +515,5 @@ if __name__ == "__main__":
 
     stories = fetch_news(dry_run=True)
     content = generate_content(stories, load_history(), str(date.today()), dry_run="--dry-run" in sys.argv)
-    print(json.dumps(content.deck, indent=2, ensure_ascii=False))
+    print(json.dumps(content.images, indent=2, ensure_ascii=False))
     print(content.linkedin_en, "\n\n", content.linkedin_pt, "\n\n", content.hashtags)

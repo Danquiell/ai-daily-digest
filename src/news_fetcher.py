@@ -213,7 +213,7 @@ def fetch_rss_stories(window_start: datetime) -> list[dict]:
                 "points": 10,
             }
             # Google News is an aggregator: the outlet that wrote the story is
-            # in the entry, and "via Google News AI Deals" on a slide credits
+            # in the entry, and "via Google News AI Deals" on an image credits
             # nobody. "source" stays the feed name because the per-feed cap
             # counts on it.
             outlet = (getattr(entry, "source", None) or {}).get("title", "")

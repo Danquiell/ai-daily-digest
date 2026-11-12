@@ -17,7 +17,6 @@ from image_generator import generate_card
 from linkedin_poster import (
     TokenExpired,
     check_token,
-    post_document,
     post_multi_image,
     post_sources_comment,
     post_text,
@@ -93,7 +92,7 @@ def run(dry_run: bool = False):
 
     history = load_history()
 
-    # 2. Generate caption and slide content
+    # 2. Generate caption and image copy
     try:
         content = generate_content(stories, history, date_str, dry_run=dry_run)
     except Exception as e:
@@ -110,31 +109,29 @@ def run(dry_run: bool = False):
     # token cannot read a post back (403 for w_member_social).
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUTPUT_DIR / "caption.txt").write_text(full_text, encoding="utf-8")
-    (OUTPUT_DIR / "deck.json").write_text(
-        json.dumps(content.deck, indent=2, ensure_ascii=False), encoding="utf-8"
+    (OUTPUT_DIR / "images.json").write_text(
+        json.dumps(content.images, indent=2, ensure_ascii=False), encoding="utf-8"
     )
     print(f"\n--- POST TEXT ({len(full_text)} chars) ---")
     print(full_text)
     print("--- END POST TEXT ---\n")
 
-    # 3. Render the carousel; keep the single card as the fallback image.
-    carousel = None
-    if content.deck.get("slides"):
+    # 3. Render the images: real photos of the day's subjects, with the
+    # single stock card as the fallback when none can be built.
+    cards = None
+    if content.images:
         try:
-            from carousel import render_carousel
+            from photo_cards import render_cards
 
-            deck = dict(content.deck, username=LINKEDIN_USERNAME, outlets=sorted(content.sources))
-            carousel = render_carousel(
-                deck, today, stem=f"digest_{today.isoformat()}", image_query=content.image_query
+            cards = render_cards(
+                content.images, today, stem=f"digest_{today.isoformat()}", stock_query=content.image_query
             )
         except Exception as e:
-            print(f"[ERROR] Carousel rendering failed: {e}")
+            print(f"[ERROR] Photo cards failed: {e}")
             traceback.print_exc()
-    else:
-        print("[carousel] No slide survived the number check — using the single card")
 
     card_path = None
-    if carousel is None:
+    if cards is None:
         try:
             card_path = generate_card(
                 headline=stories[0]["title"],
@@ -150,19 +147,19 @@ def run(dry_run: bool = False):
             print(f"[ERROR] Image generation failed: {e}")
             traceback.print_exc()
 
-    # 4. Post to LinkedIn: carousel, then multi-image, then single image, then
-    # text. Each step down is a format LinkedIn shows smaller, so the order is
-    # by reach, and a failure in one never loses the day.
+    # 4. Post to LinkedIn. Several images go out as one multi-image post; if
+    # LinkedIn refuses it, the lead image alone goes through the older API that
+    # ran daily until the token expired. A failure in one never loses the day.
     linkedin_post_id = None
     post_format = "none"
-    title = content.deck.get("headline") or stories[0]["title"]
+    title = content.image_teaser or stories[0]["title"]
     attempts = []
-    if carousel:
-        attempts.append(("carousel", lambda: post_document(caption, content.hashtags, carousel["pdf"], title)))
-        attempts.append(("multi-image", lambda: post_multi_image(
-            caption, content.hashtags, carousel["images"], content.alt_text or title)))
+    if cards:
+        if len(cards["images"]) >= 2:
+            attempts.append((f"{len(cards['images'])} images", lambda: post_multi_image(
+                caption, content.hashtags, cards["images"], content.alt_text or title)))
         attempts.append(("single image", lambda: post_with_image(
-            text=full_text, image_path=carousel["images"][0], image_title=title[:100])))
+            text=full_text, image_path=cards["images"][0], image_title=title[:100])))
     if card_path and card_path.exists():
         attempts.append(("single image", lambda: post_with_image(
             text=full_text, image_path=card_path, image_title=title[:100])))
@@ -182,7 +179,12 @@ def run(dry_run: bool = False):
                 print(f"[ERROR] LinkedIn {name} post failed: {e}")
 
     if linkedin_post_id:
-        post_sources_comment(linkedin_post_id, build_sources_comment(stories), dry_run=dry_run)
+        # The photo licences ask for the author and the licence to be named.
+        comment = build_sources_comment(stories)
+        if cards and cards["credits"]:
+            comment += "\n\nPhotos / Fotos:\n" + "\n".join(f"• {c}" for c in cards["credits"])
+        (OUTPUT_DIR / "first_comment.txt").write_text(comment, encoding="utf-8")
+        post_sources_comment(linkedin_post_id, comment, dry_run=dry_run)
         print(f"[OK] LinkedIn post published as {post_format}")
 
     # 5. Update history and commit — only after the post actually went out.
@@ -203,7 +205,7 @@ def run(dry_run: bool = False):
 
     print(f"\n{'='*60}")
     print(f"  Stories found: {len(stories)}")
-    print(f"  Carousel:      {'OK' if carousel else 'FAILED'}")
+    print(f"  Images:        {len(cards['images']) if cards else 'FALLBACK CARD' if card_path else 'FAILED'}")
     print(f"  LinkedIn:      {post_format if linkedin_post_id else 'FAILED'}")
     print(f"{'='*60}\n")
 

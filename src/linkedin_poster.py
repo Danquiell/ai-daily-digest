@@ -2,8 +2,8 @@
 Posts to LinkedIn. Requires LINKEDIN_ACCESS_TOKEN and LINKEDIN_PERSON_URN.
 
 Two API generations live here on purpose:
-- the versioned REST API (/rest/posts, /rest/documents, /rest/images) publishes
-  the carousel as a document post, or as a multi-image post;
+- the versioned REST API (/rest/posts, /rest/images) publishes the post when
+  it carries more than one image;
 - the legacy v2 API (/v2/ugcPosts) publishes the single-image post. It is the
   path that ran every day until the token expired, so it stays as the last
   fallback.
@@ -87,7 +87,7 @@ def check_token() -> None:
     print("[linkedin] Token accepted")
 
 
-# ── Versioned REST API: document and multi-image posts ───────────────────────
+# ── Versioned REST API: multi-image posts ───────────────────────
 _LITTLE_RESERVED = set('\\|{}@[]()<>#*_~')
 
 
@@ -128,7 +128,7 @@ def _rest_request(method: str, url: str, token: str, payload: dict | None = None
 
 
 def _rest_upload(kind: str, path: Path, token: str, person_urn: str) -> str:
-    """Upload a file through /rest/documents or /rest/images. Returns its URN."""
+    """Upload a file through /rest/images. Returns its URN."""
     _, result = _rest_request(
         "POST",
         f"{REST_BASE}/{kind}s?action=initializeUpload",
@@ -169,7 +169,7 @@ def _rest_create_post(content: dict, text: str, hashtags: str, token: str, perso
         "lifecycleState": "PUBLISHED",
         "isReshareDisabledByAuthor": False,
     }
-    # A document is processed after upload; posting it a moment too early is
+    # Media is processed after upload; posting a moment too early can be
     # refused, and the same call succeeds seconds later.
     last = None
     for attempt in range(4):
@@ -190,20 +190,8 @@ def _rest_create_post(content: dict, text: str, hashtags: str, token: str, perso
     raise last
 
 
-def post_document(text: str, hashtags: str, pdf_path: Path, title: str) -> str:
-    """Publish the carousel: a PDF that LinkedIn shows as swipeable slides."""
-    token = os.environ["LINKEDIN_ACCESS_TOKEN"]
-    person_urn = os.environ["LINKEDIN_PERSON_URN"]
-    document = _rest_upload("document", pdf_path, token, person_urn)
-    post_id = _rest_create_post(
-        {"media": {"title": title[:100], "id": document}}, text, hashtags, token, person_urn
-    )
-    print(f"[linkedin] Posted as document carousel: {post_id}")
-    return post_id
-
-
 def post_multi_image(text: str, hashtags: str, images: list[Path], alt_text: str) -> str:
-    """Publish the slides as a multi-image post (2 to 20 images)."""
+    """Publish 2 to 20 images as one multi-image post."""
     token = os.environ["LINKEDIN_ACCESS_TOKEN"]
     person_urn = os.environ["LINKEDIN_PERSON_URN"]
     urns = [_rest_upload("image", p, token, person_urn) for p in images[:20]]
