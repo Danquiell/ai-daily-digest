@@ -152,9 +152,10 @@ data center, o tribunal, a cidade.
   contra a OpenAI não é foto do Sam Altman, lançamento do Google não é foto de um executivo
   que o material não cita. Nesses casos use o produto físico (chip, robô, aparelho) ou a sede.
   Se o post tiver mais de uma imagem, evite o mesmo tipo de cena em todas.
-- Só acrescente outra imagem quando houver OUTRO assunto real e diferente para mostrar: uma
-  segunda pessoa ou empresa da notícia principal, ou outra notícia do dia que tenha material.
-  Uma imagem boa vale mais que quatro; não crie imagem para completar número. Máximo 4.
+- O número de imagens varia com o dia: o normal é UMA. Só acrescente outra quando ela mostrar
+  algo real e diferente que acrescenta informação: outra pessoa ou empresa que a legenda
+  conta, com um fato próprio. Imagem que só decora, repete o que a primeira já disse ou
+  ilustra um conceito não entra. Na dúvida, não entra. Máximo 4.
 - Em cada imagem:
   · person: o nome completo da pessoa que é a notícia, como aparece no material, ou "" se a
     imagem não é de uma pessoa. Um programa confere se esse nome está no material e ignora o
@@ -201,9 +202,8 @@ LEGENDA
   vírgula: "62,7%".
 - hashtags: de 3 a 5, sem o #, sem espaço, específicas ao tema do dia (ex. "OpenSourceLLM").
 
-IMAGEM RESERVA
-- image_query: de 2 a 4 palavras EM INGLÊS com uma cena concreta e fotografável ligada ao
-  tema, usada só se nenhuma foto real da imagem 1 for encontrada. Sem nome de marca.
+ACESSIBILIDADE
+- image_query: deixe "" (campo sem uso).
 - alt_text: uma frase em inglês descrevendo as imagens para leitor de tela.
 
 Todo número que você escrever, em qualquer campo, é copiado do material como está lá. Um

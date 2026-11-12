@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from news_fetcher import fetch_news, load_history
 from content_generator import generate_content
-from image_generator import generate_card
+from image_generator import _generate_text_card
 from linkedin_poster import (
     TokenExpired,
     check_token,
@@ -116,32 +116,28 @@ def run(dry_run: bool = False):
     print(full_text)
     print("--- END POST TEXT ---\n")
 
-    # 3. Render the images: real photos of the day's subjects, with the
-    # single stock card as the fallback when none can be built.
+    # 3. Render the images: real photos of the day's subjects.
     cards = None
     if content.images:
         try:
             from photo_cards import render_cards
 
-            cards = render_cards(
-                content.images, today, stem=f"digest_{today.isoformat()}", stock_query=content.image_query
-            )
+            cards = render_cards(content.images, today, stem=f"digest_{today.isoformat()}")
         except Exception as e:
             print(f"[ERROR] Photo cards failed: {e}")
             traceback.print_exc()
 
+    # Last resort, reached only if Chromium fails: the plain text card. It is
+    # built without a stock photo, which would be a generic image again.
     card_path = None
     if cards is None:
         try:
-            card_path = generate_card(
-                headline=stories[0]["title"],
-                stories=stories[:4],
-                teaser=content.image_teaser,
-                subtitle=content.image_subtitle,
-                image_query=content.image_query,
-                username=LINKEDIN_USERNAME,
-                today=today,
-                output_filename=f"card_{today.isoformat()}.jpg",
+            card_path = _generate_text_card(
+                content.image_teaser or stories[0]["title"],
+                stories[:4],
+                LINKEDIN_USERNAME,
+                today,
+                f"card_{today.isoformat()}.jpg",
             )
         except Exception as e:
             print(f"[ERROR] Image generation failed: {e}")

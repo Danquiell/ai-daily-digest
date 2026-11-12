@@ -12,7 +12,7 @@ from datetime import date
 from io import BytesIO
 from pathlib import Path
 
-from image_generator import THEMES, _fetch_pexels_photo
+from image_generator import THEMES
 from real_photo import find_photo
 
 ROOT = Path(__file__).parent.parent
@@ -37,6 +37,8 @@ body { font-family: "Inter", "DejaVu Sans", sans-serif; color: #fff; background:
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(6,8,12,.62) 0%%, rgba(6,8,12,0) 16%%, rgba(6,8,12,0) 40%%, rgba(6,8,12,.86) 68%%, rgba(6,8,12,.97) 100%%);
 }
+/* Lead image with no photo available: the accent colour carries the frame. */
+.plain { position: absolute; inset: 0; background: radial-gradient(120%% 70%% at 85%% 0%%, var(--accent) 0%%, rgba(11,13,18,0) 62%%), #0B0D12; opacity: .9; }
 .top {
   position: absolute; top: 60px; left: 72px; right: 72px; display: flex; justify-content: space-between; align-items: center;
   font: 700 24px/1 "Inter", sans-serif; letter-spacing: .16em; text-transform: uppercase;
@@ -71,15 +73,18 @@ def _data_uri(image) -> str:
 
 def _card_html(card: dict, photo: dict, today: date, accent: str, css: str) -> str:
     image = photo["image"]
-    tall = "tall" if image.height > image.width * 1.05 else ""
+    if image is None:
+        picture = '<div class="plain"></div>'
+    else:
+        tall = "tall" if image.height > image.width * 1.05 else ""
+        picture = f'<img class="{tall}" src="{_data_uri(image)}" alt=""><div class="shade"></div>'
     headline = card.get("headline", "")
     size = "xlong" if len(headline) > 64 else "long" if len(headline) > 40 else ""
     fact = f'<p class="fact">{_e(card.get("fact"))}</p>' if card.get("fact") else ""
     source = f'<span>Source: <b>{_e(card.get("source"))}</b></span>' if card.get("source") else "<span></span>"
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><style>{css}</style></head>
 <body style="--accent:{accent}"><div class="card">
-  <img class="{tall}" src="{_data_uri(image)}" alt="">
-  <div class="shade"></div>
+  {picture}
   <div class="top"><span class="brand">{BRAND}</span><span class="date">{today.strftime('%b %d, %Y')}</span></div>
   <div class="text">
     <div class="kicker">{_e(card.get('kicker'))}</div>
@@ -98,13 +103,14 @@ def _launch(playwright):
         return playwright.chromium.launch(channel="chrome")
 
 
-def render_cards(cards: list[dict], today: date, stem: str, stock_query: str = "") -> dict:
+def render_cards(cards: list[dict], today: date, stem: str) -> dict:
     """Render one image per card that has a real photo.
 
     Returns {"images": [Path], "credits": [str]}. A card whose subject has no
     freely licensed photo is left out rather than illustrated with something
-    generic, except the first: the post needs one image, so the lead falls back
-    to a stock photo and says so in the log.
+    generic. The first one is the exception, because the post needs an image:
+    with no photo it is rendered as type on a plain background, never with a
+    stock photo standing in for the subject.
     """
     from playwright.sync_api import sync_playwright
 
@@ -112,20 +118,16 @@ def render_cards(cards: list[dict], today: date, stem: str, stock_query: str = "
     ready = []
     for i, card in enumerate(cards[:MAX_IMAGES]):
         photo = find_photo(card.get("subjects") or [], used)
-        if photo is None and i == 0 and stock_query:
-            stock = _fetch_pexels_photo(stock_query, today)
-            if stock is not None:
-                print("[photo] Lead image fell back to a stock photo")
-                photo = {"image": stock, "credit": "Photo: Pexels", "page": "", "subject": stock_query}
+        if photo is None and i == 0:
+            print("[photo] No real photo for the lead image — rendering it as text only")
+            photo = {"image": None, "credit": "", "page": "", "subject": ""}
         if photo is None:
             print(f"[photo] Left out the image for {card.get('headline', '')[:50]!r}: no real photo")
-            if i == 0:
-                break
             continue
         ready.append((card, photo))
 
     if not ready:
-        raise RuntimeError("no photo found for the lead image")
+        raise RuntimeError("no image to render")
 
     css = _CSS % {
         "inter": base64.b64encode((FONTS_DIR / "Inter-Variable.woff2").read_bytes()).decode("ascii"),
@@ -165,6 +167,8 @@ if __name__ == "__main__":
         {"subjects": ["Jensen Huang"], "kicker": "Nvidia",
          "headline": "Nvidia board reportedly preparing to dismiss Jensen Huang",
          "fact": "The stock fell more than 7% in after-hours trading Wednesday.", "source": "The Verge"},
+        {"subjects": [], "kicker": "No photo", "headline": "A lead image with no photo falls back to type",
+         "fact": "This layout is used only for the first image.", "source": "Sample"},
         {"subjects": ["Nvidia headquarters"], "kicker": "The investigation",
          "headline": "The board may act before its own probe ends",
          "fact": "Nvidia had retained former US attorney Joon H. Kim to investigate.", "source": "The Verge"},
