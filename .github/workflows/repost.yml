@@ -37,6 +37,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Headless Chromium renders the post images from HTML.
+      - name: Install Chromium for the images
+        run: python -m playwright install --with-deps chromium
+
       - name: Delete and republish
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
