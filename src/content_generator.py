@@ -168,6 +168,12 @@ data center, o tribunal, a cidade.
   · fact: uma frase de até 16 palavras com o número ou o detalhe que a headline não deu.
   · source: o veículo de onde saiu o fato, pelo nome.
 - Duas imagens não repetem o mesmo assunto nem o mesmo fato.
+- Toda imagem é de uma notícia que a LEGENDA também conta, nos dois idiomas. Imagem de uma
+  notícia que o texto não menciona fica solta no post: se você quer a imagem, a notícia entra
+  na legenda; se a notícia não cabe na legenda, a imagem não existe. Um programa confere isso.
+- Todo termo de subjects leva um nome próprio que está na headline, no kicker ou no fact da
+  mesma imagem ("Nvidia GPU", "Googleplex"). "Data center", "server room" ou "robot" sozinhos
+  trazem a foto de um lugar qualquer, que não é o da notícia, e são descartados.
 - Uma acusação só entra atribuída ao veículo ("reportedly", "according to").
 
 VIDA PESSOAL E TERCEIROS (vale para imagens e legenda)
@@ -320,6 +326,37 @@ def _material_numbers(stories: list[dict]) -> set[str]:
     return _numbers(" ".join(parts))
 
 
+_WORD = re.compile(r"[A-Za-zÀ-ÿ][\w'’-]+")
+# Capitalised words that open a headline without naming anything.
+_NOT_A_NAME = {
+    "the", "this", "that", "with", "from", "over", "after", "into", "what", "when", "also",
+    "and", "for", "new", "per", "its", "his", "her", "why", "how", "one", "two", "all", "not",
+}
+
+
+def _names(text: str) -> set[str]:
+    """Capitalised words, lowercased: a rough net for the companies, people
+    and products a line of copy names."""
+    return {
+        w.lower() for w in _WORD.findall(text or "")
+        if w[0].isupper() and len(w) >= 3 and w.lower() not in _NOT_A_NAME
+    }
+
+
+def _related(a: str, b: str) -> bool:
+    return a.startswith(b) or b.startswith(a)  # google / googleplex
+
+
+def _specific_subject(subject: str, own_names: set[str]) -> bool:
+    """True when the search term names something from its own image.
+
+    "Data center" fetched a photo of an oil company's data centre in China for
+    a story about a lawsuit in Georgia: a real photo, of the wrong place.
+    """
+    words = [w.lower() for w in _WORD.findall(subject) if len(w) >= 3]
+    return any(_related(w, name) for w in words for name in own_names)
+
+
 def _check_images(raw: dict, stories: list[dict]) -> list[dict]:
     """Drop every image carrying a number the source material does not have.
 
@@ -332,6 +369,7 @@ def _check_images(raw: dict, stories: list[dict]) -> list[dict]:
     material = " ".join(
         f"{s.get('title', '')} {s.get('summary', '')} {s.get('article', '')}" for s in stories
     ).lower()
+    caption_names = _names(f"{raw.get('hook_en', '')} {raw.get('body_en', '')}")
     images = []
     for n, image in enumerate((raw.get("images") or [])[:4]):
         image = dict(image, headline=image.get("headline", "").strip().rstrip("."))
@@ -345,7 +383,20 @@ def _check_images(raw: dict, stories: list[dict]) -> list[dict]:
                 subjects = [person] + subjects
             else:
                 print(f"[content] Ignored person {person!r}: not named in the material")
+        own_names = _names(f"{image.get('kicker', '')} {image['headline']} {image.get('fact', '')}")
+        for subject in [x for x in subjects if not _specific_subject(x, own_names)]:
+            print(f"[content] Ignored generic photo subject {subject!r}")
+            subjects.remove(subject)
         image["subjects"] = subjects
+
+        # An image about a story the caption never mentions is a loose picture:
+        # on 2026-11-12 a Mac Studio closed a post whose text had no Apple in it.
+        if n > 0 and not any(
+            _related(name, word) for name in _names(f"{image.get('kicker', '')} {image['headline']}")
+            for word in caption_names
+        ):
+            print(f"[content] Dropped image {image['headline'][:50]!r}: the caption does not mention it")
+            continue
         if not image["headline"] or not image.get("subjects"):
             print("[content] Dropped an image with no headline or no subject")
             continue
