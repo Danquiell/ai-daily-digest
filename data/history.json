@@ -97,6 +97,111 @@
           "agent"
         ]
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "topics": [
+        "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to \"be his worst self\" (Stephen Witt/New York Times)",
+        "Coalition of Nonprofits Files Landmark Lawsuit to Stop Development of Advanced AI Systems at Anthropic, Google, Meta, OpenAI, and SpaceXSI that Proliferate Bioweapons and Cyberattacks",
+        "Anthropic IPO",
+        "Uforce Raises $700M in Series A Funding to Expand Ukraine-Focused Autonomous Defense Production",
+        "Gemini 4 Hydrogen and Orchestrator",
+        "Finite State Announces $27M in Funding to Help Device Makers Fight the ‘Vulnpocalypse’ with AI-Powered Product Security"
+      ],
+      "title_hashes": [
+        "0bc207af6e8f74344fe7c58872660bced45a906e78d61399cb971e665e2f4e18",
+        "66a8e2de3cb75bb72fd0a0376e442e257b75537c729c15131be46497be23aa63",
+        "45354734aee9895b48b287c10fd71015d849f50ea49d45e5c0a99fd9af2bbdb2",
+        "04e104f361b9f179f8278cddb985a540d27c1d0f2f2b6f453fe12154e528fcce",
+        "fd94c64ece2dfac0ab0093d89171020b154c733e7defbb4dba35352046d83cba",
+        "84e9343c316569ec3a8c125fc685ca79a03a4174e3cc357eef583982aabedcec"
+      ],
+      "topic_tokens": [
+        [
+          "jensen",
+          "huang",
+          "biographer",
+          "says",
+          "nvidia",
+          "had",
+          "culture",
+          "omert",
+          "deference",
+          "toward",
+          "huang",
+          "who",
+          "quite",
+          "arrogant",
+          "that",
+          "enabled",
+          "him",
+          "his",
+          "worst",
+          "self",
+          "stephen",
+          "witt",
+          "new",
+          "york",
+          "times"
+        ],
+        [
+          "coalition",
+          "nonprofits",
+          "files",
+          "landmark",
+          "lawsuit",
+          "stop",
+          "development",
+          "advanced",
+          "systems",
+          "anthropic",
+          "google",
+          "meta",
+          "openai",
+          "spacexsi",
+          "that",
+          "proliferate",
+          "bioweapons",
+          "cyberattacks"
+        ],
+        [
+          "anthropic",
+          "ipo"
+        ],
+        [
+          "uforce",
+          "raises",
+          "700m",
+          "series",
+          "funding",
+          "expand",
+          "ukraine",
+          "focused",
+          "autonomous",
+          "defense",
+          "production"
+        ],
+        [
+          "gemini",
+          "hydrogen",
+          "orchestrator"
+        ],
+        [
+          "finite",
+          "state",
+          "announces",
+          "27m",
+          "funding",
+          "help",
+          "device",
+          "makers",
+          "fight",
+          "vulnpocalypse",
+          "powered",
+          "product",
+          "security"
+        ]
+      ]
     }
   ]
 }
