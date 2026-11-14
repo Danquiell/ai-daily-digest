@@ -202,6 +202,101 @@
           "security"
         ]
       ]
+    },
+    {
+      "date": "2026-11-13",
+      "topics": [
+        "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+        "Nvidia employees petition to bring back Jensen Huang",
+        "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+        "BlueMatrix: Acquisition Of Aiera Completed To Expand AI-Powered Financial Research Distribution Platform",
+        "Cambridge, UK-based Tendrils, which is designing a CPU architecture with thousands of cores operating in parallel, raised $30M led by Benchmark (John Reynolds/Tech.eu)",
+        "Compute AI Acquisition Corp - Announces $75 Million IPO Of 7,500,000 Units"
+      ],
+      "title_hashes": [
+        "695a8fe9676a47cfee486e50c98f038b5ff8beea0d8cae87089b49b49f23f456",
+        "4adcd86b10fc5ea1df3e0afc4ec4591ef9d2ac6c215c4946a2c1e7ec0d4264de",
+        "1fab2a7ba6b16eb204d5811b92d7fd89cd8328db8791119528db03654e5d4257",
+        "54a4651211c8725842959310b17cc98b553a12eca04e8b5467adbd39fc9f1e61",
+        "2f83fb630cb64c48bb4869fffc07cc0a98fb4f51a2ea54a53b74c00708157636",
+        "0f9704a1ac4c6f83b31876030cd7404bbf97dccc84709711de53ab39061c6ffa"
+      ],
+      "topic_tokens": [
+        [
+          "nvidia",
+          "allegedly",
+          "engineered",
+          "scarcity",
+          "funding",
+          "startups",
+          "buy",
+          "its",
+          "gpus"
+        ],
+        [
+          "nvidia",
+          "employees",
+          "petition",
+          "bring",
+          "back",
+          "jensen",
+          "huang"
+        ],
+        [
+          "chatgpt",
+          "wallet",
+          "lets",
+          "openai",
+          "dots",
+          "agents",
+          "make",
+          "purchases",
+          "you"
+        ],
+        [
+          "bluematrix",
+          "acquisition",
+          "aiera",
+          "completed",
+          "expand",
+          "powered",
+          "financial",
+          "research",
+          "distribution",
+          "platform"
+        ],
+        [
+          "cambridge",
+          "based",
+          "tendrils",
+          "which",
+          "designing",
+          "cpu",
+          "architecture",
+          "thousands",
+          "cores",
+          "operating",
+          "parallel",
+          "raised",
+          "30m",
+          "led",
+          "benchmark",
+          "john",
+          "reynolds",
+          "tech"
+        ],
+        [
+          "compute",
+          "acquisition",
+          "corp",
+          "announces",
+          "million",
+          "ipo",
+          "500",
+          "000",
+          "units"
+        ]
+      ]
     }
   ]
 }
