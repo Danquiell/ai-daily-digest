@@ -409,6 +409,111 @@
           "media"
         ]
       ]
+    },
+    {
+      "date": "2026-11-15",
+      "topics": [
+        "AMD finalizes $8.2 billion World Labs acquisition, adds 'godmother of AI' as EVP and chief scientist",
+        "President Trump says he \"would not mind\" if Jensen Huang was reinstated as Nvidia's CEO and \"I don't know that she was a spy at all\" in reference to Alice Huang (Emily Goodin/New York Post)",
+        "All AI-generated code should be Open Source",
+        "Altimeter founder Brad Gerstner plans to invest $5 billion in Anthropic’s IPO — CNBC",
+        "Bharat Semi Raises $24 Million in Seed Funding to Develop AI-Powered Image Sensors",
+        "Nvidia turmoil tests Bitcoin miners' AI funding plans amid leadership changes"
+      ],
+      "title_hashes": [
+        "624ed236f85354d26b88f41ef0a6064bba3b46f06ee14da771f919962d88bdcb",
+        "22ffb0a9737f7bbfc12c061efd1d3dc96251389ecd017c0f8565b1d8cc30c283",
+        "625f19a30b83a6c2745c50cb39f5998b7ca46b96b9ec5b9a6fce9e2867fa8594",
+        "be9ffa246e781455acb6641e6538549211cd3e51b28d0b38a0f53c2cd06b229b",
+        "e73834d73b417260ace1f3b722f29b811c0359f17f1ffa38b20aedfb9de24782",
+        "2fbe9d8fcc70755ad594c16ee480def42f9f853852b139ca0b49666415e98cee"
+      ],
+      "topic_tokens": [
+        [
+          "amd",
+          "finalizes",
+          "billion",
+          "world",
+          "labs",
+          "acquisition",
+          "adds",
+          "godmother",
+          "evp",
+          "chief",
+          "scientist"
+        ],
+        [
+          "president",
+          "trump",
+          "says",
+          "would",
+          "not",
+          "mind",
+          "jensen",
+          "huang",
+          "reinstated",
+          "nvidia",
+          "ceo",
+          "don",
+          "know",
+          "that",
+          "she",
+          "spy",
+          "all",
+          "reference",
+          "alice",
+          "huang",
+          "emily",
+          "goodin",
+          "new",
+          "york",
+          "post"
+        ],
+        [
+          "all",
+          "generated",
+          "code",
+          "should",
+          "open",
+          "source"
+        ],
+        [
+          "altimeter",
+          "founder",
+          "brad",
+          "gerstner",
+          "plans",
+          "invest",
+          "billion",
+          "anthropic",
+          "ipo",
+          "cnbc"
+        ],
+        [
+          "bharat",
+          "semi",
+          "raises",
+          "million",
+          "seed",
+          "funding",
+          "develop",
+          "powered",
+          "image",
+          "sensors"
+        ],
+        [
+          "nvidia",
+          "turmoil",
+          "tests",
+          "bitcoin",
+          "miners",
+          "funding",
+          "plans",
+          "amid",
+          "leadership",
+          "changes"
+        ]
+      ]
     }
   ]
 }
