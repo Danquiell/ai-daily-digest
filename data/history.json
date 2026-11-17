@@ -514,6 +514,107 @@
           "changes"
         ]
       ]
+    },
+    {
+      "date": "2026-11-16",
+      "topics": [
+        "California state AG sues OpenAI over rogue agent incidents",
+        "Jensen Huang says he’s willing to return as Nvidia CEO",
+        "Nvidia's $500 Billion AI Funding Plan Remains Under Discussion",
+        "AIR Launches 'AI in Health Network' to Study How Artificial Intelligence Can Improve Healthcare and Outcomes",
+        "Ex-Freshworks founders’ Dreamteam raises $53M to challenge Salesforce with AI-native CRM and virtual sales coworkers",
+        "GPT-6.2 Astra costs $8/1M input and $40/1M output tokens, down 20% from GPT-6 Astra; GPT-6.2 Sol keeps GPT-6.1 Sol's $2/1M input and $10/1M output token pricing (Zac Hall/9to5Mac)"
+      ],
+      "title_hashes": [
+        "45918e3b504a8f28896754a6d179854660b84f422f1bb6ba70e0bfacf4c28970",
+        "afb7a1d32a879db5863b87653251a774328f933b6a802159e7e82bfdc3f537d9",
+        "4d4a684dcd63aaf5e44062ee48db4e720a3d1f7a65758c8c9629372cf55c1e95",
+        "1d308cf00482912e603268915caba2283921c0608c19f4e049773dc4b2c1272f",
+        "da879563790e1a24db8524b203e054e3e4f2bf409dbd4e995bfd58457577c928",
+        "67592931047d07ea44e9fc3a4e133e320d5a5acfa91bf6931dcd8d6cb3b39659"
+      ],
+      "topic_tokens": [
+        [
+          "california",
+          "state",
+          "sues",
+          "openai",
+          "over",
+          "rogue",
+          "agent",
+          "incidents"
+        ],
+        [
+          "jensen",
+          "huang",
+          "says",
+          "willing",
+          "return",
+          "nvidia",
+          "ceo"
+        ],
+        [
+          "nvidia",
+          "500",
+          "billion",
+          "funding",
+          "plan",
+          "remains",
+          "under",
+          "discussion"
+        ],
+        [
+          "air",
+          "launches",
+          "health",
+          "network",
+          "study",
+          "how",
+          "artificial",
+          "intelligence",
+          "can",
+          "improve",
+          "healthcare",
+          "outcomes"
+        ],
+        [
+          "freshworks",
+          "founders",
+          "dreamteam",
+          "raises",
+          "53m",
+          "challenge",
+          "salesforce",
+          "native",
+          "crm",
+          "virtual",
+          "sales",
+          "coworkers"
+        ],
+        [
+          "gpt",
+          "astra",
+          "costs",
+          "input",
+          "output",
+          "tokens",
+          "down",
+          "gpt",
+          "astra",
+          "gpt",
+          "sol",
+          "keeps",
+          "gpt",
+          "sol",
+          "input",
+          "output",
+          "token",
+          "pricing",
+          "zac",
+          "hall",
+          "9to5mac"
+        ]
+      ]
     }
   ]
 }
