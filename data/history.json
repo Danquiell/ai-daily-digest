@@ -615,6 +615,109 @@
           "9to5mac"
         ]
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "topics": [
+        "California sues OpenAI over safety concerns after rogue agent hacking",
+        "Genesis AI Raises $500M in Series A Funding to Develop General-Purpose Robots",
+        "Sources: Anthropic is weighing upsizing its IPO, setting the price well above $80, up from its price range of $70-$78 per share, as investor demand surges (CNBC)",
+        "OpenAI releases GPT-6.2 Astra to regain performance lead from Claude Fable 5.2",
+        "‘Artificial’ Trailer: Andrew Garfield Stuns in Luca Guadagnino’s Sharp, Shocking, Funny Portrayal of OpenAI CEO Sam Altman",
+        "Nvidia stopped disclosing Singapore sales as revenues hit $104B"
+      ],
+      "title_hashes": [
+        "df0074a37ed6f88182c715720371b8759da74f8e7b024b98df1b0725ce7680f5",
+        "bf0f928c8e1c77667af31f4c0477e9c88bb3dc3251413ccee294741fd9f80d03",
+        "73470d325deda6003291209d8faa34ba8beeef9262a7b73a61da0a1a77495d4d",
+        "b86acd528d42cad0a00c9b5f0600a7cd2d5c4b90d2241d215c5467d9223533dd",
+        "d0ae163a547b7eee506d71dd73a9bd7d21224d6ac4b678bbfa4c33df9e36ada7",
+        "122973b38cd97c139d0dcd9f02bf1e7f575b1066a3300818b91dfdbd2240e692"
+      ],
+      "topic_tokens": [
+        [
+          "california",
+          "sues",
+          "openai",
+          "over",
+          "safety",
+          "concerns",
+          "after",
+          "rogue",
+          "agent",
+          "hacking"
+        ],
+        [
+          "genesis",
+          "raises",
+          "500m",
+          "series",
+          "funding",
+          "develop",
+          "general",
+          "purpose",
+          "robots"
+        ],
+        [
+          "sources",
+          "anthropic",
+          "weighing",
+          "upsizing",
+          "its",
+          "ipo",
+          "setting",
+          "price",
+          "well",
+          "above",
+          "its",
+          "price",
+          "range",
+          "per",
+          "share",
+          "investor",
+          "demand",
+          "surges",
+          "cnbc"
+        ],
+        [
+          "openai",
+          "releases",
+          "gpt",
+          "astra",
+          "regain",
+          "performance",
+          "lead",
+          "claude",
+          "fable"
+        ],
+        [
+          "artificial",
+          "trailer",
+          "andrew",
+          "garfield",
+          "stuns",
+          "luca",
+          "guadagnino",
+          "sharp",
+          "shocking",
+          "funny",
+          "portrayal",
+          "openai",
+          "ceo",
+          "sam",
+          "altman"
+        ],
+        [
+          "nvidia",
+          "stopped",
+          "disclosing",
+          "singapore",
+          "sales",
+          "revenues",
+          "hit",
+          "104b"
+        ]
+      ]
     }
   ]
 }
