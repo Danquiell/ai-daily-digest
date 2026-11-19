@@ -718,6 +718,92 @@
           "104b"
         ]
       ]
+    },
+    {
+      "date": "2026-11-18",
+      "topics": [
+        "Palo Alto Networks Shares Jump 9% on $4.5 Billion AI Acquisition and Raised FY2027 Guidance",
+        "Anthropic set to begin trading as a $1.5 trillion company in the biggest IPO on record",
+        "Trump rejects 'globalist regulation' of artificial intelligence at APEC summit",
+        "Gemini 4 Neon",
+        "Baltimore students file lawsuit after AI allegedly mistakes Doritos for a gun",
+        "New lawsuit alleges AI app 'Bron' used LeBron James’ tattoos, voice and jersey to promote sports-betting tool"
+      ],
+      "title_hashes": [
+        "efbe555a763ddf78e8e56affbf566b32ce16c6447fef6aca6f455449709eff0d",
+        "89c44bdb718d3562a37e4258232db696900998e0dbfd7351d52ccc2506e9fdb0",
+        "19be1a9256c2383fd02b9a95bd3e280c8a69554ef61cba561a6644efba2783f3",
+        "4d688e3a3ec1a86e4695fa8141119773fa2f5a64432e1223fb9f1f4e925a66f5",
+        "d6dcf663eae5189b01609a0aa1198cd611ac220863ae93b0021f76ace0713b5c",
+        "b1b6bc79a4f70a2467ccf2d8290cd641baa738d65d412e8e7ee4f36b63789897"
+      ],
+      "topic_tokens": [
+        [
+          "palo",
+          "alto",
+          "networks",
+          "shares",
+          "jump",
+          "billion",
+          "acquisition",
+          "raised",
+          "fy2027",
+          "guidance"
+        ],
+        [
+          "anthropic",
+          "set",
+          "begin",
+          "trading",
+          "trillion",
+          "company",
+          "biggest",
+          "ipo",
+          "record"
+        ],
+        [
+          "trump",
+          "rejects",
+          "globalist",
+          "regulation",
+          "artificial",
+          "intelligence",
+          "apec",
+          "summit"
+        ],
+        [
+          "gemini",
+          "neon"
+        ],
+        [
+          "baltimore",
+          "students",
+          "file",
+          "lawsuit",
+          "after",
+          "allegedly",
+          "mistakes",
+          "doritos",
+          "gun"
+        ],
+        [
+          "new",
+          "lawsuit",
+          "alleges",
+          "app",
+          "bron",
+          "used",
+          "lebron",
+          "james",
+          "tattoos",
+          "voice",
+          "jersey",
+          "promote",
+          "sports",
+          "betting",
+          "tool"
+        ]
+      ]
     }
   ]
 }
