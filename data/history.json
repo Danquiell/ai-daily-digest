@@ -804,6 +804,103 @@
           "tool"
         ]
       ]
+    },
+    {
+      "date": "2026-11-19",
+      "topics": [
+        "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
+        "Black Teens Handcuffed After AI System Allegedly Mistakes Bag of Doritos for Gun: Lawsuit",
+        "Anthropic’s Nasdaq debut",
+        "Anthropic raises an additional $12.2B as underwriters exercise their \"greenshoe\" overallotment of shares, bringing the total raised in its IPO to $93.5B (Ashley Capoot/CNBC)",
+        "US opposes ‘globalist regulation’ of AI, Trump tells APEC summit in China",
+        "Sources: Shanghai-based Pragmatik Labs, founded by ex-Qwen AI head Junyang Lin, raised tens of millions of dollars at a $5B valuation, up from $2B in August (Bloomberg)"
+      ],
+      "title_hashes": [
+        "d212a05fccf80ff7187187dc27896495cfa4bc7c0d79a64c29a49d3c64fd4ced",
+        "7d68494018815f5f72d02d10b01a1ab3deb6e1dbcea6e500fe57e49b60a8c1c1",
+        "2f87379244ba723a78b0e043ec3245199c9abc04d63a12c9e2a67a2ef2de5d48",
+        "811fca7f2eb6501dfdf3b7f0eaa168736c43d3b776093af6ef47ab9c22554fa2",
+        "66dbafa4d686d353239fa1e05fb0bd713cdaec576c3899a0a7ee0ea94c3fdd38",
+        "92e62ce580e78a195e40bb86fc08888fea2b85b151765b35a6af00a6e05e8380"
+      ],
+      "topic_tokens": [
+        [
+          "palo",
+          "alto",
+          "networks",
+          "bets",
+          "enterprise",
+          "applied",
+          "compute",
+          "acquisition"
+        ],
+        [
+          "black",
+          "teens",
+          "handcuffed",
+          "after",
+          "system",
+          "allegedly",
+          "mistakes",
+          "bag",
+          "doritos",
+          "gun",
+          "lawsuit"
+        ],
+        [
+          "anthropic",
+          "nasdaq",
+          "debut"
+        ],
+        [
+          "anthropic",
+          "raises",
+          "additional",
+          "underwriters",
+          "exercise",
+          "their",
+          "greenshoe",
+          "overallotment",
+          "shares",
+          "bringing",
+          "total",
+          "raised",
+          "its",
+          "ipo",
+          "ashley",
+          "capoot",
+          "cnbc"
+        ],
+        [
+          "opposes",
+          "globalist",
+          "regulation",
+          "trump",
+          "tells",
+          "apec",
+          "summit",
+          "china"
+        ],
+        [
+          "sources",
+          "shanghai",
+          "based",
+          "pragmatik",
+          "labs",
+          "founded",
+          "qwen",
+          "head",
+          "junyang",
+          "lin",
+          "raised",
+          "tens",
+          "millions",
+          "dollars",
+          "valuation",
+          "august",
+          "bloomberg"
+        ]
+      ]
     }
   ]
 }
