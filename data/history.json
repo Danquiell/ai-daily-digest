@@ -901,6 +901,100 @@
           "bloomberg"
         ]
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "topics": [
+        "Video AI mistook Doritos bag for gun, lawsuit claims",
+        "An Anthropic mathematician claims to have solved one of the greatest mysteries in mathematics with AI: the Riemann hypothesis",
+        "Cognition in talks for new funding at $75 billion valuation, Bloomberg News reports",
+        "I'll never buy Framework hardware again",
+        "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+        "Oracle says it has secured funding for its infrastructure contract with OpenAI and \"any further private discussions with vendors are just additional options\" (@oracle)"
+      ],
+      "title_hashes": [
+        "66678a529c5aad624e0f6e6872c81e1d58279a867bbf26fe0a422da77a20d5b3",
+        "06b0a2a1c77dcb8a20795af486e2c3c8caabcc030d2eef340714d0e11638b852",
+        "7b1afb2184e271157d4884906aead7702fdd0721247b4b3b9a6ca8769bc7fb6d",
+        "5320fef8a7d5f98bb370d1918a3928ef810cd25440c11405dd1b3bf58817d712",
+        "8cd02e930af8544c947bf9dbbbec7cfbc9100f08be6d8db4abbee1c73a5a1fe9",
+        "8f49be52df33821034db7641420406e4841f050abd43af871460fa83e9b27a42"
+      ],
+      "topic_tokens": [
+        [
+          "video",
+          "mistook",
+          "doritos",
+          "bag",
+          "gun",
+          "lawsuit",
+          "claims"
+        ],
+        [
+          "anthropic",
+          "mathematician",
+          "claims",
+          "have",
+          "solved",
+          "one",
+          "greatest",
+          "mysteries",
+          "mathematics",
+          "riemann",
+          "hypothesis"
+        ],
+        [
+          "cognition",
+          "talks",
+          "new",
+          "funding",
+          "billion",
+          "valuation",
+          "bloomberg",
+          "news",
+          "reports"
+        ],
+        [
+          "never",
+          "buy",
+          "framework",
+          "hardware",
+          "again"
+        ],
+        [
+          "nasdaq",
+          "erases",
+          "all",
+          "2026",
+          "gains",
+          "sell",
+          "off",
+          "dampens",
+          "anthropic",
+          "second",
+          "day"
+        ],
+        [
+          "oracle",
+          "says",
+          "has",
+          "secured",
+          "funding",
+          "its",
+          "infrastructure",
+          "contract",
+          "openai",
+          "any",
+          "further",
+          "private",
+          "discussions",
+          "vendors",
+          "just",
+          "additional",
+          "options",
+          "oracle"
+        ]
+      ]
     }
   ]
 }
