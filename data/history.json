@@ -995,6 +995,90 @@
           "oracle"
         ]
       ]
+    },
+    {
+      "date": "2026-11-21",
+      "topics": [
+        "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
+        "Anthropic's IPO Bust Deepens $4T AI Wipeout on Wall Street",
+        "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+        "Google commits $5 million to AI research and teaching at IIT Kharagpur",
+        "Weekly roundup: Lawmakers push Chinese auto ban, New vehicle sales rise, VINCUE raises $93M for AI expansion",
+        "OUTSIDE VIEW: NVIDIA mess should lead to AI regulation"
+      ],
+      "title_hashes": [
+        "2d72b1267c87529f1b381d77abf66426fb7a976d94eef6b047154e373f56c7c0",
+        "bf0d2c324de5238493247b520355afc699ed073a6f38945d963527e9a88b2bcc",
+        "e154f65b8e15b1dbe9e33fc601fb99ef6dabda9b67b13d9addb43c08338b0201",
+        "52ec3d0784580ab87e516057a5799269f47b3849c5dd9fce14d9e79ed861ff07",
+        "b8026f917064c9a64065b385c32137ee87cea2fbec97b61348629ec77267d3d7",
+        "aaa95303c8ffca8438cbb596247984b8766e1878930afc4377cfbfbb4b853c39"
+      ],
+      "topic_tokens": [
+        [
+          "pill",
+          "treat",
+          "pancreatic",
+          "cancer",
+          "hailed",
+          "biggest",
+          "breakthrough",
+          "decades"
+        ],
+        [
+          "anthropic",
+          "ipo",
+          "bust",
+          "deepens",
+          "wipeout",
+          "wall",
+          "street"
+        ],
+        [
+          "anthropic",
+          "power",
+          "will",
+          "come",
+          "gas",
+          "coal",
+          "2028"
+        ],
+        [
+          "google",
+          "commits",
+          "million",
+          "research",
+          "teaching",
+          "iit",
+          "kharagpur"
+        ],
+        [
+          "weekly",
+          "roundup",
+          "lawmakers",
+          "push",
+          "chinese",
+          "auto",
+          "ban",
+          "new",
+          "vehicle",
+          "sales",
+          "rise",
+          "vincue",
+          "raises",
+          "93m",
+          "expansion"
+        ],
+        [
+          "outside",
+          "view",
+          "nvidia",
+          "mess",
+          "should",
+          "lead",
+          "regulation"
+        ]
+      ]
     }
   ]
 }
