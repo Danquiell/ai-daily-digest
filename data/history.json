@@ -1079,6 +1079,95 @@
           "regulation"
         ]
       ]
+    },
+    {
+      "date": "2026-11-22",
+      "topics": [
+        "How Jensen Huang ended up as Nvidia CEO again",
+        "Workday Completes C1.ai Acquisition To Expand Identity Governance For People And AI Agents",
+        "Amazon Nears $7.5 Billion Acquisition of AI Startup Decart in Push to Challenge Nvidia",
+        "India AI Funding Nearly Doubles to US$1.6 Billion in January-September 2026, but Funding Rounds Decline",
+        "University of Indianapolis receives $8.5 million grant to establish new Center for Artificial Intelligence for Human Performance, help prepare students for future",
+        "Anthropic Raises $81.3 Billion In Record IPO"
+      ],
+      "title_hashes": [
+        "2ec06015c075966dd6de617e945fefda796259f90f328f2b737d954f62efa29e",
+        "e144220af3caa9ff25a5dfa28ed4c6ae1645eaf64221ec9965758f743e5f4aed",
+        "58f3bf79feb176f999f96f8c1ba5f4839d6e5e254647d76d76ac02aff80d30c4",
+        "3db6315289d2630303cce1283e34f42c5be726c9cdc148ae75b60f64648abc99",
+        "c926d5004e9be58f20616e06f4fd0217090b7e0566477104891fc99c7cffdfff",
+        "1e91c128ecc351626b9734f9e8b9ecb552a676db5c996ab7fb21168a8499bc71"
+      ],
+      "topic_tokens": [
+        [
+          "how",
+          "jensen",
+          "huang",
+          "ended",
+          "nvidia",
+          "ceo",
+          "again"
+        ],
+        [
+          "workday",
+          "completes",
+          "acquisition",
+          "expand",
+          "identity",
+          "governance",
+          "people",
+          "agents"
+        ],
+        [
+          "amazon",
+          "nears",
+          "billion",
+          "acquisition",
+          "startup",
+          "decart",
+          "push",
+          "challenge",
+          "nvidia"
+        ],
+        [
+          "india",
+          "funding",
+          "nearly",
+          "doubles",
+          "billion",
+          "january",
+          "september",
+          "2026",
+          "funding",
+          "rounds",
+          "decline"
+        ],
+        [
+          "university",
+          "indianapolis",
+          "receives",
+          "million",
+          "grant",
+          "establish",
+          "new",
+          "center",
+          "artificial",
+          "intelligence",
+          "human",
+          "performance",
+          "help",
+          "prepare",
+          "students",
+          "future"
+        ],
+        [
+          "anthropic",
+          "raises",
+          "billion",
+          "record",
+          "ipo"
+        ]
+      ]
     }
   ]
 }
