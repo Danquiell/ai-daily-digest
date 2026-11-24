@@ -1168,6 +1168,118 @@
           "ipo"
         ]
       ]
+    },
+    {
+      "date": "2026-11-23",
+      "topics": [
+        "Tidal will ban fully AI-generated music starting December 9 and says such content accounted for ~43% of tracks distributed to its platform over the past 90 days (Ethan Millman/The Hollywood Reporter)",
+        "Nvidia Reinstates Jensen Huang as CEO",
+        "Anthropic falls 12%+ to ~$76, below its $83 IPO price and a sharp fall from its $111.50 IPO pop; Dario and Daniela Amodei each sold 3.37M+ shares worth $280M+ (Medha Singh/Reuters)",
+        "Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia",
+        "Hochul signs five-year ban on AI chatbot toys in New York",
+        "Workday Completes Acquisition of C1.ai to Expand AI Agent Identity Governance and Security"
+      ],
+      "title_hashes": [
+        "5f5bfca4c5080d5e48af5e180568e4d8fa216a5cc825135aea73a9c288b2045e",
+        "d8be04330fb2cef722150f72574a76e43ed68effeafb1d9e6be861d8a8f5696b",
+        "404624235142f81dc5960261c512660810a1dde58a912597567576162aad04fb",
+        "0d8af5266ba0abafa80f12203a44010f988c125aa8502e24c11a67d3222cc546",
+        "e0aebf70fe859abf33a92038ee33eefc3d7390a390b0d58250b8e8d5742326d8",
+        "1d579a78dcf1be4cf20b4ed3757e532f2419827609f0adcb3b5febf943eeba6c"
+      ],
+      "topic_tokens": [
+        [
+          "tidal",
+          "will",
+          "ban",
+          "fully",
+          "generated",
+          "music",
+          "starting",
+          "december",
+          "says",
+          "such",
+          "content",
+          "accounted",
+          "tracks",
+          "distributed",
+          "its",
+          "platform",
+          "over",
+          "past",
+          "days",
+          "ethan",
+          "millman",
+          "hollywood",
+          "reporter"
+        ],
+        [
+          "nvidia",
+          "reinstates",
+          "jensen",
+          "huang",
+          "ceo"
+        ],
+        [
+          "anthropic",
+          "falls",
+          "below",
+          "its",
+          "ipo",
+          "price",
+          "sharp",
+          "fall",
+          "its",
+          "111",
+          "ipo",
+          "pop",
+          "dario",
+          "daniela",
+          "amodei",
+          "each",
+          "sold",
+          "37m",
+          "shares",
+          "worth",
+          "280m",
+          "medha",
+          "singh",
+          "reuters"
+        ],
+        [
+          "amazon",
+          "decart",
+          "acquisition",
+          "bet",
+          "using",
+          "software",
+          "narrow",
+          "silicon",
+          "gap",
+          "nvidia"
+        ],
+        [
+          "hochul",
+          "signs",
+          "five",
+          "year",
+          "ban",
+          "chatbot",
+          "toys",
+          "new",
+          "york"
+        ],
+        [
+          "workday",
+          "completes",
+          "acquisition",
+          "expand",
+          "agent",
+          "identity",
+          "governance",
+          "security"
+        ]
+      ]
     }
   ]
 }
