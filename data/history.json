@@ -1,104 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-11-11",
-      "topics": [
-        "The unfolding Jensen Huang scandal: a timeline",
-        "US-Canadian AI-powered law firm start-up Blackletter raises $6m in seed funding round",
-        "OpenAI and Georgia county leaders hit with Mafia-style RICO racketeering lawsuit over $30 billion AI data center — residents allege closed-door conspiracy and NDAs were used to push 3.2-gigawatt ‘Project Camellia’ through",
-        "Gemini Decisions API",
-        "Apple has new Mac app coming to make running local AI models easy",
-        "Blue J Announces $176M in Funding at $700M Valuation to Scale AI Tax Research Agent"
-      ],
-      "title_hashes": [
-        "97a93fcf6645c9e4d96dc98766b84682d10e586e70942df716f22491925f8f2e",
-        "c8e8613fb7b3031618b6be49b084f039a6d7ed03a06150262661e13d10f94364",
-        "b5d2dfa16a3c2a71437f917372620df53f6299aed6a1896bc0bf072e5c92956d",
-        "f0ed7b80e1629ef98695dae3944fa9b452f19b898c3625dd823a127dd5b975f0",
-        "4beef5d211907ec5edd397332f7a5b62f3de32f856e7a2b9b5ae9a05f0767f17",
-        "3434da465550eff46aa079f2c70c21e31104dca5a411c66b0a159473fa1d8d2f"
-      ],
-      "topic_tokens": [
-        [
-          "unfolding",
-          "jensen",
-          "huang",
-          "scandal",
-          "timeline"
-        ],
-        [
-          "canadian",
-          "powered",
-          "law",
-          "firm",
-          "start",
-          "blackletter",
-          "raises",
-          "seed",
-          "funding",
-          "round"
-        ],
-        [
-          "openai",
-          "georgia",
-          "county",
-          "leaders",
-          "hit",
-          "mafia",
-          "style",
-          "rico",
-          "racketeering",
-          "lawsuit",
-          "over",
-          "billion",
-          "data",
-          "center",
-          "residents",
-          "allege",
-          "closed",
-          "door",
-          "conspiracy",
-          "ndas",
-          "used",
-          "push",
-          "gigawatt",
-          "project",
-          "camellia",
-          "through"
-        ],
-        [
-          "gemini",
-          "decisions",
-          "api"
-        ],
-        [
-          "apple",
-          "has",
-          "new",
-          "mac",
-          "app",
-          "coming",
-          "make",
-          "running",
-          "local",
-          "models",
-          "easy"
-        ],
-        [
-          "blue",
-          "announces",
-          "176m",
-          "funding",
-          "700m",
-          "valuation",
-          "scale",
-          "tax",
-          "research",
-          "agent"
-        ]
-      ]
-    },
-    {
       "date": "2026-11-12",
       "topics": [
         "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to \"be his worst self\" (Stephen Witt/New York Times)",
@@ -1278,6 +1180,91 @@
           "identity",
           "governance",
           "security"
+        ]
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "topics": [
+        "Tidal to ban and remove millions of AI-generated tracks as AI slop inundates music streaming",
+        "As Consumers Begin Their Holiday Shopping Season, Governor Hochul Signs Five-Year Ban on AI Chatbot Toys",
+        "Anthropic breaks below $83 IPO price",
+        "LLM agents work for their parent companies, not for you",
+        "Amazon announces acquisition of Israeli AI startup Decart for reported $7.5 billion",
+        "Saab completes acquisition of maritime autonomy developer Mythos AI"
+      ],
+      "title_hashes": [
+        "6dad2b8576f78b78f6686996bec9b96bb93aa987e9dcd13c592f604307ebc314",
+        "61cf7218c2cd6f296612d4a9d507a215b10bfcb6c15d7b6b5543edc640f31d28",
+        "560bcaf5af58d29a25c727c2f33119f9e8356e9655311eaaba227130d7d04321",
+        "1de9669fc9f56530395ebd5f3e1ad49ed236d59c2a5ad460f51b31b75548a9c4",
+        "6fa70f12353cfa14b208ad5fda5f9040a6739e6352ef9e5cf9fd5f9cc755f553",
+        "f1ef309d8b6a4b361a4228750da277834ee007aa8060edf25eb907b1d7d47af3"
+      ],
+      "topic_tokens": [
+        [
+          "tidal",
+          "ban",
+          "remove",
+          "millions",
+          "generated",
+          "tracks",
+          "slop",
+          "inundates",
+          "music",
+          "streaming"
+        ],
+        [
+          "consumers",
+          "begin",
+          "their",
+          "holiday",
+          "shopping",
+          "season",
+          "governor",
+          "hochul",
+          "signs",
+          "five",
+          "year",
+          "ban",
+          "chatbot",
+          "toys"
+        ],
+        [
+          "anthropic",
+          "breaks",
+          "below",
+          "ipo",
+          "price"
+        ],
+        [
+          "llm",
+          "agents",
+          "work",
+          "their",
+          "parent",
+          "companies",
+          "not",
+          "you"
+        ],
+        [
+          "amazon",
+          "announces",
+          "acquisition",
+          "israeli",
+          "startup",
+          "decart",
+          "reported",
+          "billion"
+        ],
+        [
+          "saab",
+          "completes",
+          "acquisition",
+          "maritime",
+          "autonomy",
+          "developer",
+          "mythos"
         ]
       ]
     }
