@@ -1,111 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-11-12",
-      "topics": [
-        "Jensen Huang's biographer says Nvidia had a culture of omertà and deference toward Huang, who was quite arrogant, that enabled him to \"be his worst self\" (Stephen Witt/New York Times)",
-        "Coalition of Nonprofits Files Landmark Lawsuit to Stop Development of Advanced AI Systems at Anthropic, Google, Meta, OpenAI, and SpaceXSI that Proliferate Bioweapons and Cyberattacks",
-        "Anthropic IPO",
-        "Uforce Raises $700M in Series A Funding to Expand Ukraine-Focused Autonomous Defense Production",
-        "Gemini 4 Hydrogen and Orchestrator",
-        "Finite State Announces $27M in Funding to Help Device Makers Fight the ‘Vulnpocalypse’ with AI-Powered Product Security"
-      ],
-      "title_hashes": [
-        "0bc207af6e8f74344fe7c58872660bced45a906e78d61399cb971e665e2f4e18",
-        "66a8e2de3cb75bb72fd0a0376e442e257b75537c729c15131be46497be23aa63",
-        "45354734aee9895b48b287c10fd71015d849f50ea49d45e5c0a99fd9af2bbdb2",
-        "04e104f361b9f179f8278cddb985a540d27c1d0f2f2b6f453fe12154e528fcce",
-        "fd94c64ece2dfac0ab0093d89171020b154c733e7defbb4dba35352046d83cba",
-        "84e9343c316569ec3a8c125fc685ca79a03a4174e3cc357eef583982aabedcec"
-      ],
-      "topic_tokens": [
-        [
-          "jensen",
-          "huang",
-          "biographer",
-          "says",
-          "nvidia",
-          "had",
-          "culture",
-          "omert",
-          "deference",
-          "toward",
-          "huang",
-          "who",
-          "quite",
-          "arrogant",
-          "that",
-          "enabled",
-          "him",
-          "his",
-          "worst",
-          "self",
-          "stephen",
-          "witt",
-          "new",
-          "york",
-          "times"
-        ],
-        [
-          "coalition",
-          "nonprofits",
-          "files",
-          "landmark",
-          "lawsuit",
-          "stop",
-          "development",
-          "advanced",
-          "systems",
-          "anthropic",
-          "google",
-          "meta",
-          "openai",
-          "spacexsi",
-          "that",
-          "proliferate",
-          "bioweapons",
-          "cyberattacks"
-        ],
-        [
-          "anthropic",
-          "ipo"
-        ],
-        [
-          "uforce",
-          "raises",
-          "700m",
-          "series",
-          "funding",
-          "expand",
-          "ukraine",
-          "focused",
-          "autonomous",
-          "defense",
-          "production"
-        ],
-        [
-          "gemini",
-          "hydrogen",
-          "orchestrator"
-        ],
-        [
-          "finite",
-          "state",
-          "announces",
-          "27m",
-          "funding",
-          "help",
-          "device",
-          "makers",
-          "fight",
-          "vulnpocalypse",
-          "powered",
-          "product",
-          "security"
-        ]
-      ]
-    },
-    {
       "date": "2026-11-13",
       "topics": [
         "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
@@ -1265,6 +1160,120 @@
           "autonomy",
           "developer",
           "mythos"
+        ]
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "topics": [
+        "New York Governor Kathy Hochul signs ban on AI chatbot toys backed by $15,000 daily fines — takes effect in 90 days after holiday rush",
+        "Tidal Becomes First On-Demand Streaming Service to Ban AI Music From Its Platform",
+        "Palo Alto Networks (PANW) Hit With Fraud Lawsuit After $4.5 Billion AI Deal",
+        "XEBO.ai raises $10.5 million in Series A funding from Emirates Growth Fund",
+        "Anthropic CEO Amodei denies wanting humanity to ‘surrender’ free will to AI",
+        "OpenAI says it corrected a GPT-6.2 Astra and Sol launch billing mistake that had incorrectly discounted usage; Astra users will now hit their limits 40% faster (Graham Barlow/TechRadar)"
+      ],
+      "title_hashes": [
+        "d312d25409617392bb741b14dfb0aebdf721afe5dd12675fb344580463306e37",
+        "208406b5e7a3224422fd3aa310d3ee91787b349ebc3b7266cb55a3d0599323df",
+        "e5e9189d3c9f1d41ab480705d3133450c52e6ee7b4a12ce417e35a60978c0c85",
+        "e62ab3083d1203f1e20bbc800a8adada291367c63cf0a082607edea076156c71",
+        "351fbc3d7f06c173ff6ef146ab925b5c92935ffca63d6c944860d32e119a8f8f",
+        "492650b462f0a53d0cb837be8465d35a9efd7c13e9a67c814653fc7ea26b8749"
+      ],
+      "topic_tokens": [
+        [
+          "new",
+          "york",
+          "governor",
+          "kathy",
+          "hochul",
+          "signs",
+          "ban",
+          "chatbot",
+          "toys",
+          "backed",
+          "000",
+          "daily",
+          "fines",
+          "takes",
+          "effect",
+          "days",
+          "after",
+          "holiday",
+          "rush"
+        ],
+        [
+          "tidal",
+          "becomes",
+          "first",
+          "demand",
+          "streaming",
+          "service",
+          "ban",
+          "music",
+          "its",
+          "platform"
+        ],
+        [
+          "palo",
+          "alto",
+          "networks",
+          "panw",
+          "hit",
+          "fraud",
+          "lawsuit",
+          "after",
+          "billion",
+          "deal"
+        ],
+        [
+          "xebo",
+          "raises",
+          "million",
+          "series",
+          "funding",
+          "emirates",
+          "growth",
+          "fund"
+        ],
+        [
+          "anthropic",
+          "ceo",
+          "amodei",
+          "denies",
+          "wanting",
+          "humanity",
+          "surrender",
+          "free",
+          "will"
+        ],
+        [
+          "openai",
+          "says",
+          "corrected",
+          "gpt",
+          "astra",
+          "sol",
+          "launch",
+          "billing",
+          "mistake",
+          "that",
+          "had",
+          "incorrectly",
+          "discounted",
+          "usage",
+          "astra",
+          "users",
+          "will",
+          "now",
+          "hit",
+          "their",
+          "limits",
+          "faster",
+          "graham",
+          "barlow",
+          "techradar"
         ]
       ]
     }
