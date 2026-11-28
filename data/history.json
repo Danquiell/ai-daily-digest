@@ -1,118 +1,6 @@
 {
   "posts": [
     {
-      "date": "2026-11-14",
-      "topics": [
-        "AI agent startup LangChain hits $3B valuation",
-        "Lovable apps expose passport details and more than 200K private messages",
-        "Nvidia insiders say Jensen Huang was prone to wild office tantrums, which a source says some employees were surprised hadn't leaked before his public downfall (Thomas Barrabi/New York Post)",
-        "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-        "AI Development Freeze Lawsuit: Nonprofits Sue 5 Labs, Say Real Freeze Needs Government Inspections",
-        "Nidus, which is developing AI-powered tech for manufacturing robots used by US defense industrial companies, raised $30M across a pre-seed and a seed (Alex Konrad/Upstarts Media)"
-      ],
-      "title_hashes": [
-        "2561930a89977e6e6e388b14f7d175ed702cf2a1beb4a84de01de8dd8c05ebfa",
-        "18c7ac1cca1e2a063808aff4a84cd368e40cbab07edc6943b8ce3647e580d531",
-        "0eadfd75947e05f771635c80347e9c7ce612b40fb732465ee4b721fc32e7b7ab",
-        "927ad09d17c37d37895cf321ab20d36e558ad742a1ffae785331628fce256d75",
-        "d1de543c29b1584328d265ec3d73d32c479b558fafff3492f28b807b9f07f0b8",
-        "df462e6c9ec444a0c96f488cfe014624a92dfb3908c475d0f5a169ee4f2e19a1"
-      ],
-      "topic_tokens": [
-        [
-          "agent",
-          "startup",
-          "langchain",
-          "hits",
-          "valuation"
-        ],
-        [
-          "lovable",
-          "apps",
-          "expose",
-          "passport",
-          "details",
-          "more",
-          "than",
-          "200k",
-          "private",
-          "messages"
-        ],
-        [
-          "nvidia",
-          "insiders",
-          "say",
-          "jensen",
-          "huang",
-          "prone",
-          "wild",
-          "office",
-          "tantrums",
-          "which",
-          "source",
-          "says",
-          "some",
-          "employees",
-          "surprised",
-          "hadn",
-          "leaked",
-          "before",
-          "his",
-          "public",
-          "downfall",
-          "thomas",
-          "barrabi",
-          "new",
-          "york",
-          "post"
-        ],
-        [
-          "nvidia",
-          "hardware",
-          "vanishes",
-          "during",
-          "shipment"
-        ],
-        [
-          "development",
-          "freeze",
-          "lawsuit",
-          "nonprofits",
-          "sue",
-          "labs",
-          "say",
-          "real",
-          "freeze",
-          "needs",
-          "government",
-          "inspections"
-        ],
-        [
-          "nidus",
-          "which",
-          "developing",
-          "powered",
-          "tech",
-          "manufacturing",
-          "robots",
-          "used",
-          "defense",
-          "industrial",
-          "companies",
-          "raised",
-          "30m",
-          "across",
-          "pre",
-          "seed",
-          "seed",
-          "alex",
-          "konrad",
-          "upstarts",
-          "media"
-        ]
-      ]
-    },
-    {
       "date": "2026-11-15",
       "topics": [
         "AMD finalizes $8.2 billion World Labs acquisition, adds 'godmother of AI' as EVP and chief scientist",
@@ -1268,6 +1156,96 @@
           "governance",
           "cannot",
           "wait"
+        ]
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "topics": [
+        "OpenAI countersues Apple for allegedly stealing trade secrets via a staffer who returned to Apple and \"coercing and threatening\" suppliers that work with both (Financial Times)",
+        "Group chat where your AI talks behind your back",
+        "Robotics startup Embo raises $110 million in seed funding to build world-model AI for robots",
+        "Claude Code sabotage: preliminary benchmarking",
+        "Claude sabotaging ML research tasks?",
+        "Tidal To Ban Fully AI-Generated Music, Remove 29 Million Tracks"
+      ],
+      "title_hashes": [
+        "58613e087fba3f6df87d512d74bd1d7cbbe1c39f93d41f9df2ad7b3f5b957101",
+        "aee712c716721badda5d803bd292d3025222fb77d774d303ffe7941602c30caa",
+        "84634846a18e63153fa822cdf8e812fa235831e3c50bce3476c68ce2490f7ad0",
+        "d57885f55265d5360f690122e22e2d3a312e8ce198e40f61ae3a562923867d10",
+        "14fff2c3a028a4ef7a4b7fea2ecff48cc7b0f7f09731d0df13cf02d9714e90cb",
+        "f85db22358a2bb5890595d3c9378756807d21e640fcb3e19a636a09903a8901e"
+      ],
+      "topic_tokens": [
+        [
+          "openai",
+          "countersues",
+          "apple",
+          "allegedly",
+          "stealing",
+          "trade",
+          "secrets",
+          "via",
+          "staffer",
+          "who",
+          "returned",
+          "apple",
+          "coercing",
+          "threatening",
+          "suppliers",
+          "that",
+          "work",
+          "both",
+          "financial",
+          "times"
+        ],
+        [
+          "group",
+          "chat",
+          "where",
+          "your",
+          "talks",
+          "behind",
+          "your",
+          "back"
+        ],
+        [
+          "robotics",
+          "startup",
+          "embo",
+          "raises",
+          "110",
+          "million",
+          "seed",
+          "funding",
+          "build",
+          "world",
+          "model",
+          "robots"
+        ],
+        [
+          "claude",
+          "code",
+          "sabotage",
+          "preliminary",
+          "benchmarking"
+        ],
+        [
+          "claude",
+          "sabotaging",
+          "research",
+          "tasks"
+        ],
+        [
+          "tidal",
+          "ban",
+          "fully",
+          "generated",
+          "music",
+          "remove",
+          "million",
+          "tracks"
         ]
       ]
     }
